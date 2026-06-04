@@ -1,0 +1,63 @@
+{
+	"a_kulkin" :
+	{
+    "class": "guardian",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "卡尔金",
+			"biography" : "卡尔金在克里根恶魔毁灭的那天离开欧弗，他并没有去寻其他的半身人同伴，也不知道他的同伴们最终去往何处。或许他不会相信那所谓的飞船能带他脱离险境。最终他流浪到维尔宁，并在那里和矮妖精们做了朋友。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高矮妖精或棕妖精的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "矮妖精"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/kulkin/UN32HALF.bmp",
+			"specialtyLarge" : "preserve/heroes/kulkin/UN44HALF.bmp",
+			"large" : "preserve/heroes/kulkin/HPL000GN.bmp",
+			"small" : "preserve/heroes/kulkin/HPS000GN.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "halflings",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "halflings",
+				"max" : 20,
+				"min" : 10
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "halflings"
+		}
+	}
+}
+

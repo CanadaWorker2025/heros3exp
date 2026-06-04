@@ -1,0 +1,63 @@
+{
+  "mdtIrrigus" :
+  {
+    "class" : "planeswalker",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "伊瑞格斯",
+      "biography" : "伊瑞格斯从未忠于特里同帝国，尽管该帝国统一了整个无尽海。因此，当他被召唤到元素城之后，他很高兴为元素大师效力。",
+      "specialty" :
+      {
+        "description" : "达到3级以后提高海卫兵或深海卫兵的攻击力与防御力。",
+        "tooltip" : "{Tritons and Abyssal Tritons}\r\n\r\nIncreases the Attack and Defense skills of any Tritons and Abyssal Tritons for each level attained after 3rd level. Additionally, Tritons and Abyssal Tritons get a permanent +1 Speed bonus.",
+        "name" : "海卫兵"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/conflux/irrigus_spec-small.bmp",
+      "specialtyLarge" : "heroes/conflux/irrigus_spec-large.bmp",
+      "large" : "heroes/conflux/irrigus_portrait-large.bmp",
+      "small" : "heroes/conflux/irrigus_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "pixie",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "mdtTriton",
+        "max" : 5,
+        "min" : 3
+      },
+      {
+        "creature" : "mdtTriton",
+        "max" : 3,
+        "min" : 2
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "tactics"
+      },
+      {
+        "level" : "basic",
+        "skill" : "armorer"
+      }
+    ],
+    
+	"specialty" : {
+		"creature" : "mdtTriton"
+	}
+  }
+}

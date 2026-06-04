@@ -1,0 +1,75 @@
+{
+	"mdtMeteorWand":
+	{
+		"type": "combat",
+		"targetType": "LOCATION",
+		"name": "流星火雨魔杖",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 4,
+		"power": 25,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+ 
+		"animation":{
+			"hit":["C08SPE0"]
+		},
+ 
+		"flags" : {
+			"damage": true,
+			"negative": true,
+			"special": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+			}
+		},
+		"graphics":
+		{
+		"iconBook": "spells/wands/meteorWand_iconBook.png",
+		"iconScroll": "spells/wands/meteorWand_iconScroll.png",
+		"iconScenarioBonus": "spells/wands/meteorWand_iconScenarioBonus.png",
+		"iconEffect": "spells/wands/meteorWand_iconEffect.png"
+		},
+
+		"sounds": {
+			"cast": "METEOR"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{	 
+				"description": "{流星火雨魔杖}\r\n\r\n发射流星火雨对敌方选中单位造成伤害。",	 
+				"cost": 0,
+				"range": "0,1",
+				"targetModifier":{"smart":false},
+				"power": 25,
+				"battleEffects" : {
+					"meteor" : {
+						"type" : "core:damage"
+					}
+				}
+			},			
+			"none":
+			{},
+			"basic":
+			{},
+			"advanced":
+			{
+				"power": 50	 
+			},
+			"expert":
+			{
+				"power": 100
+			}
+		}
+	}
+}

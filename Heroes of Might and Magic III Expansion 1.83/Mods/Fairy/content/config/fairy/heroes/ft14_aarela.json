@@ -1,0 +1,73 @@
+{
+	"ftN_Warela" :
+	{
+		"class" : "warden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "瓦瑞拉",
+			"biography" : "瓦瑞拉从来没有想过爱上任何人，她的性格总是及其冷淡，在跟随艾瑞莎修行期间，她的魔法天赋被发现，也让她成为了强大的魔法师。但在性格方面，她从未改变过。",
+			"specialty" :
+			{
+				"description" : "擅长“魔法神箭”魔法(杀伤力+50%)。",
+				"tooltip" : "{Magic Arrow}\r\n\r\nCasts Magic Arrow with increased effect.",
+				"name" : "魔法神箭"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/wanre/UN32Summ.png",
+			"specialtyLarge" : "fairy/heroes/wanre/UN44Summ.png",
+			"large" : "fairy/heroes/wanre/hpl294.png",
+			"small" : "fairy/heroes/wanre/hps294.png"
+		},
+
+		"spellbook" :
+		[
+			"magicArrow"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"magicArrow" : {
+					"subtype" : "spell.magicArrow",
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		}
+	}
+}

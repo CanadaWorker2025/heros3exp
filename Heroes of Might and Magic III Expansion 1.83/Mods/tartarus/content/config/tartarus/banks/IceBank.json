@@ -1,0 +1,94 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"ftIceBank" : 
+			{
+				"name" : "怪物宝屋",
+				"aiValue" : 1500,
+				"templates" : {
+					"base" : { "animation" : "tartarus/map/dwellings/ICEBANK.def", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VVV", "VVV", "VBA" ],
+					"allowedTerrains":["snow","icelands"] 
+					}
+				},
+				"rmg" : {
+					"value"		: 3000,
+					"rarity"	: 100
+				},
+				"onGuardedMessage" : 32,
+				"onVisitedMessage" : 33,
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 20, "type" : "tartarc1" },
+							{ "amount": 20, "type" : "tartarc1" },
+							{ "amount": 20, "type" : "tartarc1", "upgradeChance": 50 },
+							{ "amount": 20, "type" : "tartarc1" },
+							{ "amount": 20, "type" : "tartarc1" }
+						],
+						"resources" :
+						{
+							"gold" : 1000
+						}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards" : [
+							{ "amount" : 30, "type" : "tartarc1" },
+							{ "amount" : 30, "type" : "tartarc1" },
+							{ "amount" : 30, "type" : "tartarc1", "upgradeChance" : 50 },
+							{ "amount" : 30, "type" : "tartarc1" },
+							{ "amount" : 30, "type" : "tartarc1" }
+						],
+						"resources" :
+						{
+							"mercury" : 3,
+							"gold" : 1500
+						}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards" : [
+							{ "amount" : 40, "type" : "tartarc1" },
+							{ "amount" : 40, "type" : "tartarc1" },
+							{ "amount" : 40, "type" : "tartarc1", "upgradeChance" : 50 },
+							{ "amount" : 40, "type" : "tartarc1" },
+							{ "amount" : 40, "type" : "tartarc1" }
+						],
+						"resources" :
+						{
+							"mercury" : 4,
+							"gold" : 2000
+						}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards" : [
+							{ "amount" : 60, "type" : "tartarc1" },
+							{ "amount" : 60, "type" : "tartarc1" },
+							{ "amount" : 60, "type" : "tartarc1", "upgradeChance" : 50 },
+							{ "amount" : 60, "type" : "tartarc1" },
+							{ "amount" : 60, "type" : "tartarc1" }
+						],
+						"resources" :
+						{
+							"mercury" : 6,
+							"gold" : 3000
+						}
+					}
+				]
+			}
+		}
+	}
+}

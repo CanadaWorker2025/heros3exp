@@ -1,0 +1,84 @@
+{
+	"minosRage" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "公牛之怒",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 5,
+		"defaultGainChance": 0, 		
+		"gainChance":
+		{
+			
+		},
+		"counters": {},		
+		"graphics":
+		{
+			"iconEffect": "spells/extraEffect/minosrageEffect.bmp"
+ 
+		},		
+		"animation":
+		{
+			"affect":["C13SPW0"]
+		},
+		"sounds": {
+			"cast": "SLAYER"
+		},
+		
+		"levels" : 
+			{
+			
+			"base":{
+				"description": "{公牛之怒}\r\n\r\n使牛头怪，牛头王和牛头守卫在无士气情况下被激怒，获得攻防+3，速度+3。",
+				"cost": 0,
+				"power": 5,
+				"range" : "X",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 3,
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 3,
+						"duration" : "N_TURNS"
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : 3,
+						"duration" : "N_TURNS"
+					}
+				}
+					},
+					
+					"none":
+					{	 
+					},
+					"basic":
+					{	 
+					},
+					"advanced":
+					{	 
+					},
+					"expert":
+					{
+					}	
+		},
+		"targetCondition" : {
+			"anyOf" : {
+				"core:creature.minotaur":"absolute",
+				"core:creature.minotaurKing":"absolute",
+				"tidesofwar:creature.iDun05":"absolute"
+		}
+	},		
+		"flags" : {
+			"positive": true
+		}
+	}
+}

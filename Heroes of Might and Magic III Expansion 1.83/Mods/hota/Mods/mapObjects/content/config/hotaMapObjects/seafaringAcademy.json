@@ -1,0 +1,30 @@
+{
+	"seafaringAcademy" : {
+		"name" : "航海学院",
+		"handler":"market",
+		"types" : {
+			"seafaringAcademy" : {
+				"speech" : "英雄的脚步声在古老学院的寂静大厅里回响，一位管理员告诉你，你的英雄可以在那里接受指导。",
+				"modes" : ["resource-skill"],
+				"efficiency" : 5,
+				"offer" : ["navigation", "navigation", {}, {}],
+				"aiValue" : 1000,
+				"rmg" : {
+					"value"		: 8000,
+					"rarity"	: 20,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["hota/ACADEMYV"]
+				},
+				"templates" : {
+					"avswacad" : { "animation" : "hota/seafaringAcademy/avswacad", 
+						"mask" : [ "VVVV","VVVV", "VBBV", "VABB" ], 
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains":["water"]
+					}
+				}
+			}
+		}
+	}		
+}

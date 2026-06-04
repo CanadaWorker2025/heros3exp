@@ -1,0 +1,253 @@
+{
+	"warehouses" :{	
+		"name": "仓库",
+		"handler": "configurable",
+		"types" : {
+			"crystalWarehouse" : 
+			{
+				"name": "水晶仓库",
+				"rmg" : {
+					"value"		: 2500,
+					"rarity"	: 25,
+					"zoneLimit" : 1
+				},
+				"sounds": {
+					"ambient": ["hota/WRHSCRST"],
+					"visit" : ["hota/WERHOUSE"]
+				},
+				"rewards" :
+				[
+					{
+						"resources": {"crystal" : 6},
+						"message": "{水晶仓库}\r\n\r\n水晶仓库的主人告诉你，他想要换取你的保护，并且你每次访问都会获得一些水晶以作为他的报酬。"
+					}
+				],
+				"onVisitedMessage": "{水晶仓库}\r\n\r\n水晶仓库的主人告诉你，他想要换取你的保护，但现在他还没有可以送给你的东西。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"visitMode" : "once",
+				"templates" : 
+				{
+					"avwrhscr" : 
+					{
+						"animation" : "hota/warehouses/avwrhscr", 
+						"visitableFrom" : [ "---", "-++", "+++" ], 
+						"mask" : ["VVV","VVV","VBA"]
+					}
+				}
+			},
+			"gemsWarehouse" : 
+			{
+				"name": "宝石仓库",
+				"rmg" : {
+					"value"		: 2500,
+					"rarity"	: 25,
+					"zoneLimit" : 1
+				},
+				"sounds": {
+					"ambient": ["hota/WRHSGEMS"],
+					"visit" : ["hota/WERHOUSE"]
+				},
+				"rewards" :
+				[
+					{ 
+						"resources": {"gems" : 6},
+						"message": "{宝石仓库}\r\n\r\n宝石仓库的主人告诉你，他想要换取你的保护，并且你每次访问都会获得一些宝石以作为他的报酬。"
+					}
+				],
+				"onVisitedMessage": "{宝石仓库}\r\n\r\n宝石仓库的主人告诉你，他想要换取你的保护，但现在他还没有可以送给你的东西。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"visitMode" : "once",
+				"templates" : 
+				{
+					"avwrhsgm" :
+					{
+						"animation" : "hota/warehouses/avwrhsgm",
+						"visitableFrom" : [ "---", "-++", "+++" ], 
+						"mask" : ["VVV","VVV","VBA"]
+					}
+				}
+			},
+			"sulfurWarehouse" : 
+			{
+				"name": "硫磺仓库",
+				"rmg" : {
+					"value"		: 2500,
+					"rarity"	: 25,
+					"zoneLimit" : 1
+				},
+				"sounds": {
+					"ambient": ["hota/WRHSSULF"],
+					"visit" : ["hota/WERHOUSE"]
+				},
+				"rewards" :
+				[
+					{ 
+						"resources": {"sulfur" : 6},
+						"message": "{硫磺仓库}\r\n\r\n硫磺仓库的主人告诉你，他想要换取你的保护，并且你每次访问都会获得一些硫磺以作为他的报酬。"
+					}
+				],
+				"onVisitedMessage": "{硫磺仓库}\r\n\r\n硫磺仓库的主人告诉你，他想要换取你的保护，但现在他还没有可以送给你的东西。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"visitMode" : "once",
+				"templates" : 
+				{
+					"avwrhssf" :
+					{
+						"animation" : "hota/warehouses/avwrhssf",
+						"visitableFrom" : [ "---", "-++", "+++" ], 
+						"mask" : ["VVV","VVV","VBA"]
+					}
+				}
+			},
+			"mercuryWarehouse" : 
+			{
+				"name": "水银仓库",
+				"rmg" : {
+					"value"		: 2500,
+					"rarity"	: 25,
+					"zoneLimit" : 1
+				},
+				"sounds": {
+					"ambient": ["hota/WRHSMERC"],
+					"visit" : ["hota/WERHOUSE"]
+				},
+				"rewards" :
+				[
+					{ 
+						"resources": {"mercury" : 6},
+						"message": "{水银仓库}\r\n\r\n水银仓库的主人告诉你，他想要换取你的保护，并且你每次访问都会获得一些水银以作为他的报酬。"
+					}
+				],
+				"onVisitedMessage": "{水银仓库}\r\n\r\n水银仓库的主人告诉你，他想要换取你的保护，但现在他还没有可以送给你的东西。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"visitMode" : "once",
+				"templates" : 
+				{
+					"avwrhsmc" :
+					{
+						"animation" : "hota/warehouses/avwrhsmc",
+						"visitableFrom" : [ "---", "-++", "+++" ], 
+						"mask" : ["VVV","VVV","VBA"]
+					}
+				}
+			},
+			"woodWarehouse" : 
+			{
+				"name": "木材仓库",
+				"rmg" : {
+					"value"		: 2250,
+					"rarity"	: 30,
+					"zoneLimit" : 1
+				},
+				"sounds": {
+					"ambient": ["hota/WRHSWOOD"],
+					"visit" : ["hota/WERHOUSE"]
+				},
+				"rewards" :
+				[
+					{ 
+						"resources": {"wood" : 10},
+						"message": "{木材仓库}\r\n\r\n木材仓库的主人告诉你，他想要换取你的保护，并且你每次访问都会获得一些木材以作为他的报酬。"
+					}
+				],
+				"onVisitedMessage": "{木材仓库}\r\n\r\n木材仓库的主人告诉你，他想要换取你的保护，但现在他还没有可以送给你的东西。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"visitMode" : "once",
+				"templates" : 
+				{
+					"avwrhswd" :
+					{
+						"animation" : "hota/warehouses/avwrhswd",
+						"visitableFrom" : [ "---", "-++", "+++" ], 
+						"mask" : ["VVV","VVV","VBA"]
+					}
+				}
+			},
+			"oreWarehouse" : 
+			{
+				"name": "矿石仓库",
+				"rmg" : {
+					"value"		: 2250,
+					"rarity"	: 30,
+					"zoneLimit" : 1
+				},
+				"sounds": {
+					"ambient": ["hota/WRHSOREM"],
+					"visit" : ["hota/WERHOUSE"]
+				},
+				"rewards" :
+				[
+					{ 
+						"resources": {"ore" : 10},
+						"message": "{矿石仓库}\r\n\r\n矿石仓库的主人告诉你，他想要换取你的保护，并且你每次访问都会获得一些矿石以作为他的报酬。"
+					}
+				],
+				"onVisitedMessage": "{矿石仓库}\r\n\r\n矿石仓库的主人告诉你，他想要换取你的保护，但现在他还没有可以送给你的东西。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"visitMode" : "once",
+				"templates" : 
+				{
+					"avwrhsor" :
+					{
+						"animation" : "hota/warehouses/avwrhsor",
+						"visitableFrom" : [ "---", "-++", "+++" ], 
+						"mask" : ["VVV","VVV","VBA"]
+					}
+				}
+			},
+			"goldWarehouse" : 
+			{
+				"name": "金库",
+				"rmg" : {
+					"value"		: 6000,
+					"rarity"	: 15,
+					"zoneLimit" : 1
+				},
+				"sounds": {
+					"ambient": ["hota/WRHSGOLD"],
+					"visit" : ["hota/WERHOUSE"]
+				},
+				"rewards" :
+				[
+					{ 
+						"resources": {"gold" : 2000},
+						"message": "{金库}\r\n\r\n金库的主人告诉你，他想要换取你的保护，并且你每次访问都会获得一些黄金以作为他的报酬。"
+					}
+				],
+				"onVisitedMessage": "{金库}\r\n\r\n金库的主人告诉你，他想要换取你的保护，但现在他还没有可以送给你的东西。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"visitMode" : "once",
+				"templates" : 
+				{
+					"avwrhsgl" :
+					{
+						"animation" : "hota/warehouses/avwrhsgl",
+						"visitableFrom" : [ "---", "-++", "+++" ], 
+						"mask" : ["VVV","VVV","VBA"]
+					}
+				}
+			}
+		}	
+	}
+}

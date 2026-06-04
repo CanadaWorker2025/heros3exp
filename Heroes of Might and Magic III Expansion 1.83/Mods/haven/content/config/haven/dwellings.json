@@ -1,0 +1,122 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"havD01" : {
+				"name" : "地穴",
+				"creatures" : [[ "havC01" ]],
+				"sounds" : {
+					"ambient" : ["LOOPCAMP"]
+				},
+				"kingdomOverviewImage" : "haven/adventure-map/flagport/hav1.def",
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav01Map.def",
+						"mask" : [ "VVV", "VAB" ]
+					}
+				}
+			},
+			"havD02" : {
+				"name" : "岩礁通道",
+				"creatures" : [[ "havC03" ]],
+				"sounds" : {
+					"ambient" : ["LOOPCAVE"]
+				},
+				"kingdomOverviewImage" : "haven/adventure-map/flagport/hav2.def",
+				"templates" : {
+					"default" : {	
+						"animation" : "haven/adventure-map/Hav02Map.def",
+						"mask" : [ "VVV", "VBA"  ]
+					}
+				}
+			},			
+			"havD03" : {
+				"name" : "海港公会",
+				"creatures" : [[ "havC05" ]],
+				"sounds" : {
+					"ambient" : ["LOOPCAMP"]
+				},
+				"kingdomOverviewImage" : "haven/adventure-map/flagport/hav3.def",
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav03Map.def",
+						"mask" : [ "VVV", "VBV", "VAB" ]
+					}
+				}
+			},
+			"havD04" : {
+				"name" : "珊瑚礁",
+				"creatures" : [[ "havC07" ]],
+				"sounds" : {
+					"ambient": ["haven/LOOPMERM"]
+				},
+				"kingdomOverviewImage" : "haven/adventure-map/flagport/hav4.def",
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav04Map.def",
+						"mask" : [ "VVV", "VBA" ]
+					}
+				}
+			},
+			"havD05" : {
+				"name" : "灵之泉",
+				"creatures" : [[ "havC09" ]],
+				"sounds" : {
+					"ambient" : ["LOOPFOUN"]
+				},
+				"kingdomOverviewImage" : "haven/adventure-map/flagport/hav5.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav05Map.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"havD06" : {
+				"name" : "潮汐神殿",
+				"creatures" : [[ "havC11B" ]],
+				"sounds" : {
+					"ambient" : ["LOOPMAGI"]
+				},
+				"kingdomOverviewImage" : "haven/adventure-map/flagport/hav6-2.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav06_1Map.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"havD06B" : {
+				"name" : "巨龟洞穴",
+				"creatures" : [[ "havC11" ]],
+				"sounds" : {
+					"ambient" : ["LOOPCAVE"]
+				},
+				"kingdomOverviewImage" : "haven/adventure-map/flagport/hav6.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav06Map.def",
+						"mask" : [ "VVV", "VAB" ]
+					}
+				}
+			},
+			"havD07" : {
+				"name" : "深渊之门",
+				"creatures" : [[ "havC13" ]],
+				"sounds" : {
+					"ambient" : ["LOOPGATE"]
+				},
+				"kingdomOverviewImage" : "haven/adventure-map/flagport/hav7.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav07Map.def",
+						"mask" : [ "VVV", "VBB", "VAB" ]
+					}
+				}
+			}
+		}		
+	}
+}

@@ -1,0 +1,832 @@
+[2026-May-23 14:42:11.779885] TRACE global [33440] - File system loaded, 9 files found
+[2026-May-23 14:42:11.780887] TRACE global [33440] - File system loaded, 6 files found
+[2026-May-23 14:42:11.782886] TRACE global [33440] - File system loaded, 108 files found
+[2026-May-23 14:42:11.782886] TRACE global [33440] - File system loaded, 6 files found
+[2026-May-23 14:42:11.782886] TRACE global [33440] - File system loaded, 48 files found
+[2026-May-23 14:42:11.782886] TRACE global [33440] - File system loaded, 4 files found
+[2026-May-23 14:42:11.783887] TRACE global [33440] - File system loaded, 9 files found
+[2026-May-23 14:42:11.907885] TRACE global [33440] - File system loaded, 3959 files found
+[2026-May-23 14:42:11.907885] TRACE global [33440] - File system loaded, 0 files found
+[2026-May-23 14:42:11.907885] TRACE global [33440] - loading .\config\filesystem.json
+[2026-May-23 14:42:11.907885] TRACE global [33440] - 		Loading resource at config
+[2026-May-23 14:42:11.908887] TRACE global [33440] - File system loaded, 224 files found
+[2026-May-23 14:42:11.909886] TRACE global [33440] - File system loaded, 6 files found
+[2026-May-23 14:42:11.909886] TRACE global [33440] - Resource loaded in 2 ms
+[2026-May-23 14:42:11.909886] TRACE global [33440] - 		Loading resource at Data/H3ab_bmp.lod
+[2026-May-23 14:42:11.916893] TRACE global [33440] - .LODArchive ""H3ab_bmp.lod"" loaded (2491 files found).
+[2026-May-23 14:42:11.916893] TRACE global [33440] - Resource loaded in 7 ms
+[2026-May-23 14:42:11.916893] TRACE global [33440] - 		Loading resource at Data/h3abp_bm.lod
+[2026-May-23 14:42:11.916893] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.916893] TRACE global [33440] - 		Loading resource at Data/H3bitmap.lod
+[2026-May-23 14:42:11.930891] TRACE global [33440] - .LODArchive ""H3bitmap.lod"" loaded (4911 files found).
+[2026-May-23 14:42:11.930891] TRACE global [33440] - Resource loaded in 13 ms
+[2026-May-23 14:42:11.930891] TRACE global [33440] - 		Loading resource at Data/H3pbitma.lod
+[2026-May-23 14:42:11.930891] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.930891] TRACE global [33440] - 		Loading resource at Data
+[2026-May-23 14:42:11.930891] TRACE global [33440] - File system loaded, 10 files found
+[2026-May-23 14:42:11.930891] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.930891] TRACE global [33440] - 		Loading resource at Maps
+[2026-May-23 14:42:11.930891] TRACE global [33440] - File system loaded, 227 files found
+[2026-May-23 14:42:11.931890] TRACE global [33440] - File system loaded, 9 files found
+[2026-May-23 14:42:11.931890] TRACE global [33440] - Resource loaded in 1 ms
+[2026-May-23 14:42:11.931890] TRACE global [33440] - 		Loading resource at Mods
+[2026-May-23 14:42:11.932890] TRACE global [33440] - File system loaded, 80 files found
+[2026-May-23 14:42:11.932890] TRACE global [33440] - File system loaded, 0 files found
+[2026-May-23 14:42:11.932890] TRACE global [33440] - Resource loaded in 1 ms
+[2026-May-23 14:42:11.932890] TRACE global [33440] - 		Loading resource at Mp3
+[2026-May-23 14:42:11.932890] TRACE global [33440] - File system loaded, 68 files found
+[2026-May-23 14:42:11.932890] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.932890] TRACE global [33440] - 		Loading resource at scripts
+[2026-May-23 14:42:11.932890] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.932890] TRACE global [33440] - 		Loading resource at Data/H3ab_ahd.snd
+[2026-May-23 14:42:11.933890] TRACE global [33440] - .SNDArchive ""H3ab_ahd.snd"" loaded (117 files found).
+[2026-May-23 14:42:11.933890] TRACE global [33440] - Resource loaded in 1 ms
+[2026-May-23 14:42:11.933890] TRACE global [33440] - 		Loading resource at Data/Heroes3.snd
+[2026-May-23 14:42:11.935890] TRACE global [33440] - .SNDArchive ""Heroes3.snd"" loaded (1031 files found).
+[2026-May-23 14:42:11.935890] TRACE global [33440] - Resource loaded in 1 ms
+[2026-May-23 14:42:11.935890] TRACE global [33440] - 		Loading resource at Data/Heroes3-cd2.snd
+[2026-May-23 14:42:11.935890] TRACE global [33440] - Resource loaded in 1 ms
+[2026-May-23 14:42:11.935890] TRACE global [33440] - 		Loading resource at Sounds
+[2026-May-23 14:42:11.935890] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.935890] TRACE global [33440] - 		Loading resource at Data/H3ab_spr.lod
+[2026-May-23 14:42:11.936892] TRACE global [33440] - .LODArchive ""H3ab_spr.lod"" loaded (569 files found).
+[2026-May-23 14:42:11.936892] TRACE global [33440] - Resource loaded in 1 ms
+[2026-May-23 14:42:11.936892] TRACE global [33440] - 		Loading resource at Data/h3abp_sp.lod
+[2026-May-23 14:42:11.936892] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.936892] TRACE global [33440] - 		Loading resource at Data/H3sprite.lod
+[2026-May-23 14:42:11.948885] TRACE global [33440] - .LODArchive ""H3sprite.lod"" loaded (4014 files found).
+[2026-May-23 14:42:11.948885] TRACE global [33440] - Resource loaded in 12 ms
+[2026-May-23 14:42:11.948885] TRACE global [33440] - 		Loading resource at Sprites
+[2026-May-23 14:42:11.948885] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.948885] TRACE global [33440] - 		Loading resource at Data/H3ab_ahd.vid
+[2026-May-23 14:42:11.948885] TRACE global [33440] - .VIDArchive ""H3ab_ahd.vid"" loaded (7 files found).
+[2026-May-23 14:42:11.948885] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.948885] TRACE global [33440] - 		Loading resource at Data/Heroes3.vid
+[2026-May-23 14:42:11.948885] TRACE global [33440] - .VIDArchive ""Heroes3.vid"" loaded (113 files found).
+[2026-May-23 14:42:11.948885] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.948885] TRACE global [33440] - 		Loading resource at Data/video.vid
+[2026-May-23 14:42:11.948885] TRACE global [33440] - .VIDArchive ""VIDEO.VID"" loaded (42 files found).
+[2026-May-23 14:42:11.948885] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.949884] TRACE global [33440] - 		Loading resource at Video
+[2026-May-23 14:42:11.949884] TRACE global [33440] - Resource loaded in 0 ms
+[2026-May-23 14:42:11.949884] TRACE global [33440] - loading C:\Users\benya\OneDrive\??\My Games\vcmi\config\settings.json
+[2026-May-23 14:42:11.949884] TRACE global [33440] - loading C:\Users\benya\OneDrive\??\My Games\vcmi\config\settings.json
+[2026-May-23 14:42:11.949884] TRACE global [33440] - loading C:\Users\benya\OneDrive\??\My Games\vcmi\config\settings.json
+[2026-May-23 14:42:11.949884] TRACE global [33440] - loading .\config\schemas\settings.json
+[2026-May-23 14:42:11.949884] TRACE global [33440] - loading C:\Users\benya\OneDrive\??\My Games\vcmi\config\persistentStorage.json
+[2026-May-23 14:42:11.950885] TRACE global [33440] - loading C:\Users\benya\OneDrive\??\My Games\vcmi\config\persistentStorage.json
+[2026-May-23 14:42:11.950885] TRACE global [33440] - loading C:\Users\benya\OneDrive\??\My Games\vcmi\config\persistentStorage.json
+[2026-May-23 14:42:11.950885] INFO global [33440] - Loading translation chinese.qm
+[2026-May-23 14:42:12.122886] TRACE global [33440] - loading C:\Users\benya\OneDrive\??\My Games\vcmi\config\modSettings.json
+[2026-May-23 14:42:12.122886] DEBUG global [33440] - Loading following mod settings: {
+	"activeMods" : null,
+	"activePreset" : "default",
+	"presets" : {
+		"default" : {
+			"mods" : [ "vcmi", "core", "courtyard", "deathvalley", "ensrick-portraits", "haven", "hota", "new pavilion", "newoldspells+", "newtown-terrains", "preserve", "reinforcements", "tidesofwar", "asylum", "bastille", "cathedral", "combinegrail", "fairy", "tartarus", "extra creatures specialty", "vcmi-extras", "chinesetruetypefonts", "monolith2way", "morn's battlefields lite", "new-menu", "tavernvideos" ],
+			"settings" : {
+				"boost-ai" : {
+					"hard" : false,
+					"normal" : false,
+					"simple" : false
+				},
+				"ensrick-portraits" : {
+					"ensrick-portraits-base_game" : true,
+					"ensrick-portraits-campaign_heroes_enabled" : false,
+					"ensrick-portraits-hota-cove" : true,
+					"ensrick-portraits-hota-heroes" : true,
+					"ensrick-portraits-hota-interference_heroes" : true,
+					"ensrick-portraits-nuetralheroes" : false,
+					"ensrick-portraits-nuetralheroes.ensrick-portraits-nuetralheroes-hota" : false,
+					"ensrick-portraits-nuetralheroes.ensrick-portraits-nuetralheroes-wog" : false,
+					"ensrick-portraits-tow" : true
+				},
+				"hota" : {
+					"adventuremapbuttons" : true,
+					"airship" : true,
+					"artifacts" : true,
+					"bulwark" : true,
+					"campaignheroesinrmg" : true,
+					"cannon" : true,
+					"changedshootingvisuals" : true,
+					"cove" : true,
+					"factory" : true,
+					"gamebalance" : true,
+					"heroes" : true,
+					"heroes3datapatch" : true,
+					"heroesorchestracovetheme" : true,
+					"highlandsterrain" : true,
+					"highscorecreatures" : true,
+					"interference" : true,
+					"lessrandomstart" : true,
+					"mapdecorations" : true,
+					"mapobjects" : true,
+					"mapsupport" : true,
+					"neutralcreatures" : true,
+					"neutralcreatures.ancientaltar" : true,
+					"newgraphics" : true,
+					"newmaps" : true,
+					"spellresearch" : true,
+					"supplementary" : true,
+					"terrainoverlays" : true,
+					"wastelandterrain" : true
+				},
+				"new pavilion" : {
+					"dunes-terrain" : true,
+					"new pavillion" : true
+				},
+				"newtown-terrains" : {
+					"fieldgloryterrain" : true,
+					"icelandterrain" : true,
+					"stardustterrain" : true
+				},
+				"vcmi-extras" : {
+					"adventuremap" : true,
+					"adventuremapvertical" : false,
+					"arrowtowericons" : true,
+					"battlefieldactions" : true,
+					"bonusicons" : true,
+					"bonusicons.bonus icons" : true,
+					"bonusicons.immunity icons" : true,
+					"chroniclesicon" : false,
+					"emoji" : true,
+					"extendedlobby" : true,
+					"quick-exchange" : true,
+					"truetypefonts" : true
+				}
+			}
+		}
+	},
+	"validatedMods" : {
+		"asylum" : 163623510,
+		"bastille" : 758397737,
+		"boost-ai" : 1644207397,
+		"boost-ai.hard" : 1233019893,
+		"boost-ai.normal" : 1893616818,
+		"boost-ai.simple" : 1850977353,
+		"cathedral" : 1521442340,
+		"chinesetruetypefonts" : 970043758,
+		"combinegrail" : 4236044294,
+		"core" : 2585841710,
+		"courtyard" : 2151058938,
+		"deathvalley" : 3953815622,
+		"ensrick-portraits" : 624213739,
+		"ensrick-portraits.ensrick-portraits-base_game" : 108947425,
+		"ensrick-portraits.ensrick-portraits-hota-cove" : 4100229827,
+		"ensrick-portraits.ensrick-portraits-hota-heroes" : 1759188080,
+		"ensrick-portraits.ensrick-portraits-hota-interference_heroes" : 90004476,
+		"ensrick-portraits.ensrick-portraits-tow" : 2796575272,
+		"extra creatures specialty" : 180354703,
+		"fairy" : 1758024438,
+		"haven" : 2815774690,
+		"hota" : 2663831410,
+		"hota.adventuremapbuttons" : 1203020560,
+		"hota.airship" : 372634693,
+		"hota.artifacts" : 707222809,
+		"hota.bulwark" : 3569023272,
+		"hota.campaignheroesinrmg" : 4100469140,
+		"hota.cannon" : 1600166070,
+		"hota.changedshootingvisuals" : 1577447123,
+		"hota.cove" : 2760520133,
+		"hota.factory" : 2454332477,
+		"hota.gamebalance" : 185230757,
+		"hota.heroes" : 1015630945,
+		"hota.heroes3datapatch" : 2099899472,
+		"hota.heroesorchestracovetheme" : 96244833,
+		"hota.highlandsterrain" : 122405750,
+		"hota.highscorecreatures" : 1139553445,
+		"hota.interference" : 725400241,
+		"hota.lessrandomstart" : 1283210244,
+		"hota.mapdecorations" : 1168590807,
+		"hota.mapobjects" : 2517219767,
+		"hota.mapsupport" : 1365970960,
+		"hota.neutralcreatures" : 3499740130,
+		"hota.neutralcreatures.ancientaltar" : 2118040769,
+		"hota.newgraphics" : 3699688130,
+		"hota.newmaps" : 337512798,
+		"hota.spellresearch" : 935559891,
+		"hota.supplementary" : 3673352624,
+		"hota.terrainoverlays" : 1303789584,
+		"hota.wastelandterrain" : 2819452253,
+		"monolith2way" : 1860538678,
+		"morn's battlefields lite" : 2818127882,
+		"new pavilion" : 4060851154,
+		"new pavilion.dunes-terrain" : 2823741369,
+		"new pavilion.new pavillion" : 3537864132,
+		"new-menu" : 3319357264,
+		"newoldspells+" : 2557068526,
+		"newtown-terrains" : 4003142106,
+		"newtown-terrains.fieldgloryterrain" : 3643472725,
+		"newtown-terrains.icelandterrain" : 2915945424,
+		"newtown-terrains.stardustterrain" : 4287851447,
+		"preserve" : 962551937,
+		"reinforcements" : 3935589300,
+		"tartarus" : 306265924,
+		"tavernvideos" : 1554673767,
+		"tidesofwar" : 3335145830,
+		"vcmi" : 2618694733,
+		"vcmi-extras" : 1755729302,
+		"vcmi-extras.adventuremap" : 882911509,
+		"vcmi-extras.arrowtowericons" : 2371129473,
+		"vcmi-extras.battlefieldactions" : 1084732981,
+		"vcmi-extras.bonusicons" : 241521898,
+		"vcmi-extras.bonusicons.bonus icons" : 1915192878,
+		"vcmi-extras.bonusicons.immunity icons" : 147422406,
+		"vcmi-extras.emoji" : 2028652195,
+		"vcmi-extras.extendedlobby" : 3948009464,
+		"vcmi-extras.quick-exchange" : 3936617568,
+		"vcmi-extras.truetypefonts" : 1327903207
+	}
+}
+[2026-May-23 14:42:12.122886] TRACE global [33440] - loading .\config\gameConfig.json
+[2026-May-23 14:42:12.122886] TRACE global [33440] - loading .\Mods\vcmi-extras\mod.json
+[2026-May-23 14:42:12.122886] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\battlefieldActions\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\arrowTowerIcons\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\adventureMap\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\extendedLobby\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\quick-exchange\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\bonusIcons\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\bonusIcons\mods\Immunity Icons\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\bonusIcons\mods\Bonus Icons\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\chroniclesIcon\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\trueTypeFonts\mod.json
+[2026-May-23 14:42:12.123887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\adventureMapVertical\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\emoji\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\vcmi\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\tidesOfWar\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\TavernVideos\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\tartarus\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\reinforcements\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\new-menu\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\New Pavilion\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\New Pavilion\Mods\New Pavillion\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\New Pavilion\Mods\dunes-terrain\mod.json
+[2026-May-23 14:42:12.124886] TRACE global [33440] - loading .\Mods\newtown-terrains\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\newtown-terrains\Mods\stardustTerrain\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\newtown-terrains\Mods\icelandTerrain\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\newtown-terrains\Mods\fieldGloryTerrain\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\Morn's Battlefields Lite\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\NewOldSpells+\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\monolith2way\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\hota\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\hota\Mods\wastelandTerrain\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\hota\Mods\terrainOverlays\mod.json
+[2026-May-23 14:42:12.125887] TRACE global [33440] - loading .\Mods\hota\Mods\mapSupport\mod.json
+[2026-May-23 14:42:12.126887] TRACE global [33440] - loading .\Mods\hota\Mods\neutralCreatures\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\neutralCreatures\Mods\ancientAltar\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\spellResearch\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\heroes3DataPatch\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\highscoreCreatures\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\heroes\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\Factory\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\newGraphics\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\campaignHeroesInRMG\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\changedShootingVisuals\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\gameBalance\mod.json
+[2026-May-23 14:42:12.127885] TRACE global [33440] - loading .\Mods\hota\Mods\interference\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\artifacts\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\airShip\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\adventureMapButtons\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\cove\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\supplementary\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\highlandsTerrain\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\heroesOrchestraCoveTheme\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\bulwark\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\mapDecorations\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\newMaps\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\cannon\mod.json
+[2026-May-23 14:42:12.128886] TRACE global [33440] - loading .\Mods\hota\Mods\lessRandomStart\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\hota\Mods\mapObjects\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\Fairy\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\extra creatures specialty\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\ensrick-portraits\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-tow\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-nuetralheroes\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-nuetralheroes\Mods\ensrick-portraits-nuetralheroes-wog\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-nuetralheroes\Mods\ensrick-portraits-nuetralheroes-hota\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-hota-cove\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-hota-heroes\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-campaign_heroes_enabled\mod.json
+[2026-May-23 14:42:12.129887] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-hota-interference_heroes\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-base_game\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\Deathvalley\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\Courtyard\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\boost-ai\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\boost-ai\mods\Simple\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\boost-ai\mods\Normal\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\boost-ai\mods\Hard\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\asylum\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\ChineseTrueTypeFonts\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\bastille\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\preserve\mod.json
+[2026-May-23 14:42:12.130885] TRACE global [33440] - loading .\Mods\cathedral\mod.json
+[2026-May-23 14:42:12.131887] TRACE global [33440] - loading .\Mods\combineGrail\mod.json
+[2026-May-23 14:42:12.131887] TRACE global [33440] - loading .\Mods\haven\mod.json
+[2026-May-23 14:42:12.141885] TRACE global [33440] - loading C:\Users\benya\OneDrive\??\My Games\vcmi\config\modSettings.json
+[2026-May-23 14:42:12.142887] DEBUG global [33440] - Loading following mod settings: {
+	"activeMods" : null,
+	"activePreset" : "default",
+	"presets" : {
+		"default" : {
+			"mods" : [ "vcmi", "core", "courtyard", "deathvalley", "ensrick-portraits", "haven", "hota", "new pavilion", "newoldspells+", "newtown-terrains", "preserve", "reinforcements", "tidesofwar", "asylum", "bastille", "cathedral", "combinegrail", "fairy", "tartarus", "extra creatures specialty", "vcmi-extras", "chinesetruetypefonts", "monolith2way", "morn's battlefields lite", "new-menu", "tavernvideos" ],
+			"settings" : {
+				"boost-ai" : {
+					"hard" : false,
+					"normal" : false,
+					"simple" : false
+				},
+				"ensrick-portraits" : {
+					"ensrick-portraits-base_game" : true,
+					"ensrick-portraits-campaign_heroes_enabled" : false,
+					"ensrick-portraits-hota-cove" : true,
+					"ensrick-portraits-hota-heroes" : true,
+					"ensrick-portraits-hota-interference_heroes" : true,
+					"ensrick-portraits-nuetralheroes" : false,
+					"ensrick-portraits-nuetralheroes.ensrick-portraits-nuetralheroes-hota" : false,
+					"ensrick-portraits-nuetralheroes.ensrick-portraits-nuetralheroes-wog" : false,
+					"ensrick-portraits-tow" : true
+				},
+				"hota" : {
+					"adventuremapbuttons" : true,
+					"airship" : true,
+					"artifacts" : true,
+					"bulwark" : true,
+					"campaignheroesinrmg" : true,
+					"cannon" : true,
+					"changedshootingvisuals" : true,
+					"cove" : true,
+					"factory" : true,
+					"gamebalance" : true,
+					"heroes" : true,
+					"heroes3datapatch" : true,
+					"heroesorchestracovetheme" : true,
+					"highlandsterrain" : true,
+					"highscorecreatures" : true,
+					"interference" : true,
+					"lessrandomstart" : true,
+					"mapdecorations" : true,
+					"mapobjects" : true,
+					"mapsupport" : true,
+					"neutralcreatures" : true,
+					"neutralcreatures.ancientaltar" : true,
+					"newgraphics" : true,
+					"newmaps" : true,
+					"spellresearch" : true,
+					"supplementary" : true,
+					"terrainoverlays" : true,
+					"wastelandterrain" : true
+				},
+				"new pavilion" : {
+					"dunes-terrain" : true,
+					"new pavillion" : true
+				},
+				"newtown-terrains" : {
+					"fieldgloryterrain" : true,
+					"icelandterrain" : true,
+					"stardustterrain" : true
+				},
+				"vcmi-extras" : {
+					"adventuremap" : true,
+					"adventuremapvertical" : false,
+					"arrowtowericons" : true,
+					"battlefieldactions" : true,
+					"bonusicons" : true,
+					"bonusicons.bonus icons" : true,
+					"bonusicons.immunity icons" : true,
+					"chroniclesicon" : false,
+					"emoji" : true,
+					"extendedlobby" : true,
+					"quick-exchange" : true,
+					"truetypefonts" : true
+				}
+			}
+		}
+	},
+	"validatedMods" : {
+		"asylum" : 163623510,
+		"bastille" : 758397737,
+		"boost-ai" : 1644207397,
+		"boost-ai.hard" : 1233019893,
+		"boost-ai.normal" : 1893616818,
+		"boost-ai.simple" : 1850977353,
+		"cathedral" : 1521442340,
+		"chinesetruetypefonts" : 970043758,
+		"combinegrail" : 4236044294,
+		"core" : 2585841710,
+		"courtyard" : 2151058938,
+		"deathvalley" : 3953815622,
+		"ensrick-portraits" : 624213739,
+		"ensrick-portraits.ensrick-portraits-base_game" : 108947425,
+		"ensrick-portraits.ensrick-portraits-hota-cove" : 4100229827,
+		"ensrick-portraits.ensrick-portraits-hota-heroes" : 1759188080,
+		"ensrick-portraits.ensrick-portraits-hota-interference_heroes" : 90004476,
+		"ensrick-portraits.ensrick-portraits-tow" : 2796575272,
+		"extra creatures specialty" : 180354703,
+		"fairy" : 1758024438,
+		"haven" : 2815774690,
+		"hota" : 2663831410,
+		"hota.adventuremapbuttons" : 1203020560,
+		"hota.airship" : 372634693,
+		"hota.artifacts" : 707222809,
+		"hota.bulwark" : 3569023272,
+		"hota.campaignheroesinrmg" : 4100469140,
+		"hota.cannon" : 1600166070,
+		"hota.changedshootingvisuals" : 1577447123,
+		"hota.cove" : 2760520133,
+		"hota.factory" : 2454332477,
+		"hota.gamebalance" : 185230757,
+		"hota.heroes" : 1015630945,
+		"hota.heroes3datapatch" : 2099899472,
+		"hota.heroesorchestracovetheme" : 96244833,
+		"hota.highlandsterrain" : 122405750,
+		"hota.highscorecreatures" : 1139553445,
+		"hota.interference" : 725400241,
+		"hota.lessrandomstart" : 1283210244,
+		"hota.mapdecorations" : 1168590807,
+		"hota.mapobjects" : 2517219767,
+		"hota.mapsupport" : 1365970960,
+		"hota.neutralcreatures" : 3499740130,
+		"hota.neutralcreatures.ancientaltar" : 2118040769,
+		"hota.newgraphics" : 3699688130,
+		"hota.newmaps" : 337512798,
+		"hota.spellresearch" : 935559891,
+		"hota.supplementary" : 3673352624,
+		"hota.terrainoverlays" : 1303789584,
+		"hota.wastelandterrain" : 2819452253,
+		"monolith2way" : 1860538678,
+		"morn's battlefields lite" : 2818127882,
+		"new pavilion" : 4060851154,
+		"new pavilion.dunes-terrain" : 2823741369,
+		"new pavilion.new pavillion" : 3537864132,
+		"new-menu" : 3319357264,
+		"newoldspells+" : 2557068526,
+		"newtown-terrains" : 4003142106,
+		"newtown-terrains.fieldgloryterrain" : 3643472725,
+		"newtown-terrains.icelandterrain" : 2915945424,
+		"newtown-terrains.stardustterrain" : 4287851447,
+		"preserve" : 962551937,
+		"reinforcements" : 3935589300,
+		"tartarus" : 306265924,
+		"tavernvideos" : 1554673767,
+		"tidesofwar" : 3335145830,
+		"vcmi" : 2618694733,
+		"vcmi-extras" : 1755729302,
+		"vcmi-extras.adventuremap" : 882911509,
+		"vcmi-extras.arrowtowericons" : 2371129473,
+		"vcmi-extras.battlefieldactions" : 1084732981,
+		"vcmi-extras.bonusicons" : 241521898,
+		"vcmi-extras.bonusicons.bonus icons" : 1915192878,
+		"vcmi-extras.bonusicons.immunity icons" : 147422406,
+		"vcmi-extras.emoji" : 2028652195,
+		"vcmi-extras.extendedlobby" : 3948009464,
+		"vcmi-extras.quick-exchange" : 3936617568,
+		"vcmi-extras.truetypefonts" : 1327903207
+	}
+}
+[2026-May-23 14:42:12.142887] TRACE global [33440] - loading .\config\gameConfig.json
+[2026-May-23 14:42:12.142887] TRACE global [33440] - loading .\Mods\vcmi-extras\mod.json
+[2026-May-23 14:42:12.142887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\battlefieldActions\mod.json
+[2026-May-23 14:42:12.142887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\arrowTowerIcons\mod.json
+[2026-May-23 14:42:12.142887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\adventureMap\mod.json
+[2026-May-23 14:42:12.142887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\extendedLobby\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\quick-exchange\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\bonusIcons\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\bonusIcons\mods\Immunity Icons\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\bonusIcons\mods\Bonus Icons\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\chroniclesIcon\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\trueTypeFonts\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\adventureMapVertical\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\emoji\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\vcmi\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\tidesOfWar\mod.json
+[2026-May-23 14:42:12.143887] TRACE global [33440] - loading .\Mods\TavernVideos\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\tartarus\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\reinforcements\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\new-menu\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\New Pavilion\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\New Pavilion\Mods\New Pavillion\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\New Pavilion\Mods\dunes-terrain\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\newtown-terrains\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\newtown-terrains\Mods\stardustTerrain\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\newtown-terrains\Mods\icelandTerrain\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\newtown-terrains\Mods\fieldGloryTerrain\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\Morn's Battlefields Lite\mod.json
+[2026-May-23 14:42:12.144887] TRACE global [33440] - loading .\Mods\NewOldSpells+\mod.json
+[2026-May-23 14:42:12.145885] TRACE global [33440] - loading .\Mods\monolith2way\mod.json
+[2026-May-23 14:42:12.145885] TRACE global [33440] - loading .\Mods\hota\mod.json
+[2026-May-23 14:42:12.145885] TRACE global [33440] - loading .\Mods\hota\Mods\wastelandTerrain\mod.json
+[2026-May-23 14:42:12.145885] TRACE global [33440] - loading .\Mods\hota\Mods\terrainOverlays\mod.json
+[2026-May-23 14:42:12.145885] TRACE global [33440] - loading .\Mods\hota\Mods\mapSupport\mod.json
+[2026-May-23 14:42:12.146892] TRACE global [33440] - loading .\Mods\hota\Mods\neutralCreatures\mod.json
+[2026-May-23 14:42:12.146892] TRACE global [33440] - loading .\Mods\hota\Mods\neutralCreatures\Mods\ancientAltar\mod.json
+[2026-May-23 14:42:12.146892] TRACE global [33440] - loading .\Mods\hota\Mods\spellResearch\mod.json
+[2026-May-23 14:42:12.146892] TRACE global [33440] - loading .\Mods\hota\Mods\heroes3DataPatch\mod.json
+[2026-May-23 14:42:12.146892] TRACE global [33440] - loading .\Mods\hota\Mods\highscoreCreatures\mod.json
+[2026-May-23 14:42:12.146892] TRACE global [33440] - loading .\Mods\hota\Mods\heroes\mod.json
+[2026-May-23 14:42:12.146892] TRACE global [33440] - loading .\Mods\hota\Mods\Factory\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\newGraphics\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\campaignHeroesInRMG\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\changedShootingVisuals\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\gameBalance\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\interference\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\artifacts\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\airShip\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\adventureMapButtons\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\cove\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\supplementary\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\highlandsTerrain\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\heroesOrchestraCoveTheme\mod.json
+[2026-May-23 14:42:12.147890] TRACE global [33440] - loading .\Mods\hota\Mods\bulwark\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\hota\Mods\mapDecorations\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\hota\Mods\newMaps\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\hota\Mods\cannon\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\hota\Mods\lessRandomStart\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\hota\Mods\mapObjects\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\Fairy\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\extra creatures specialty\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\ensrick-portraits\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-tow\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-nuetralheroes\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-nuetralheroes\Mods\ensrick-portraits-nuetralheroes-wog\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-nuetralheroes\Mods\ensrick-portraits-nuetralheroes-hota\mod.json
+[2026-May-23 14:42:12.148891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-hota-cove\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-hota-heroes\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-campaign_heroes_enabled\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-hota-interference_heroes\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-base_game\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\Deathvalley\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\Courtyard\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\boost-ai\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\boost-ai\mods\Simple\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\boost-ai\mods\Normal\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\boost-ai\mods\Hard\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\asylum\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\ChineseTrueTypeFonts\mod.json
+[2026-May-23 14:42:12.149890] TRACE global [33440] - loading .\Mods\bastille\mod.json
+[2026-May-23 14:42:12.150893] TRACE global [33440] - loading .\Mods\preserve\mod.json
+[2026-May-23 14:42:12.150893] TRACE global [33440] - loading .\Mods\cathedral\mod.json
+[2026-May-23 14:42:12.150893] TRACE global [33440] - loading .\Mods\combineGrail\mod.json
+[2026-May-23 14:42:12.150893] TRACE global [33440] - loading .\Mods\haven\mod.json
+[2026-May-23 14:42:12.657886] DEBUG global [33440] - Language footprint: 0.160494 0.000000 0.035772 0.005499 0.003835 0.001665 0.007719 0.021443 0.000000 0.000000 0.126539 0.194198 0.200959 0.140666 0.047780 0.053431
+[2026-May-23 14:42:12.657886] DEBUG global [33440] - Comparing to chinese: 0.001997
+[2026-May-23 14:42:12.657886] DEBUG global [33440] - Comparing to english: 1.737032
+[2026-May-23 14:42:12.657886] DEBUG global [33440] - Comparing to french: 1.697632
+[2026-May-23 14:42:12.657886] DEBUG global [33440] - Comparing to german: 1.718732
+[2026-May-23 14:42:12.657886] DEBUG global [33440] - Comparing to polish: 1.642133
+[2026-May-23 14:42:12.657886] DEBUG global [33440] - Comparing to russian: 1.503535
+[2026-May-23 14:42:13.197885] INFO global [33440] - Installing repository: started
+[2026-May-23 14:42:13.207885] TRACE global [33440] - loading C:\Users\benya\OneDrive\??\My Games\vcmi\config\modSettings.json
+[2026-May-23 14:42:13.207885] DEBUG global [33440] - Loading following mod settings: {
+	"activeMods" : null,
+	"activePreset" : "default",
+	"presets" : {
+		"default" : {
+			"mods" : [ "vcmi", "core", "courtyard", "deathvalley", "ensrick-portraits", "haven", "hota", "new pavilion", "newoldspells+", "newtown-terrains", "preserve", "reinforcements", "tidesofwar", "asylum", "bastille", "cathedral", "combinegrail", "fairy", "tartarus", "extra creatures specialty", "vcmi-extras", "chinesetruetypefonts", "monolith2way", "morn's battlefields lite", "new-menu", "tavernvideos" ],
+			"settings" : {
+				"boost-ai" : {
+					"hard" : false,
+					"normal" : false,
+					"simple" : false
+				},
+				"ensrick-portraits" : {
+					"ensrick-portraits-base_game" : true,
+					"ensrick-portraits-campaign_heroes_enabled" : false,
+					"ensrick-portraits-hota-cove" : true,
+					"ensrick-portraits-hota-heroes" : true,
+					"ensrick-portraits-hota-interference_heroes" : true,
+					"ensrick-portraits-nuetralheroes" : false,
+					"ensrick-portraits-nuetralheroes.ensrick-portraits-nuetralheroes-hota" : false,
+					"ensrick-portraits-nuetralheroes.ensrick-portraits-nuetralheroes-wog" : false,
+					"ensrick-portraits-tow" : true
+				},
+				"hota" : {
+					"adventuremapbuttons" : true,
+					"airship" : true,
+					"artifacts" : true,
+					"bulwark" : true,
+					"campaignheroesinrmg" : true,
+					"cannon" : true,
+					"changedshootingvisuals" : true,
+					"cove" : true,
+					"factory" : true,
+					"gamebalance" : true,
+					"heroes" : true,
+					"heroes3datapatch" : true,
+					"heroesorchestracovetheme" : true,
+					"highlandsterrain" : true,
+					"highscorecreatures" : true,
+					"interference" : true,
+					"lessrandomstart" : true,
+					"mapdecorations" : true,
+					"mapobjects" : true,
+					"mapsupport" : true,
+					"neutralcreatures" : true,
+					"neutralcreatures.ancientaltar" : true,
+					"newgraphics" : true,
+					"newmaps" : true,
+					"spellresearch" : true,
+					"supplementary" : true,
+					"terrainoverlays" : true,
+					"wastelandterrain" : true
+				},
+				"new pavilion" : {
+					"dunes-terrain" : true,
+					"new pavillion" : true
+				},
+				"newtown-terrains" : {
+					"fieldgloryterrain" : true,
+					"icelandterrain" : true,
+					"stardustterrain" : true
+				},
+				"vcmi-extras" : {
+					"adventuremap" : true,
+					"adventuremapvertical" : false,
+					"arrowtowericons" : true,
+					"battlefieldactions" : true,
+					"bonusicons" : true,
+					"bonusicons.bonus icons" : true,
+					"bonusicons.immunity icons" : true,
+					"chroniclesicon" : false,
+					"emoji" : true,
+					"extendedlobby" : true,
+					"quick-exchange" : true,
+					"truetypefonts" : true
+				}
+			}
+		}
+	},
+	"validatedMods" : {
+		"asylum" : 163623510,
+		"bastille" : 758397737,
+		"boost-ai" : 1644207397,
+		"boost-ai.hard" : 1233019893,
+		"boost-ai.normal" : 1893616818,
+		"boost-ai.simple" : 1850977353,
+		"cathedral" : 1521442340,
+		"chinesetruetypefonts" : 970043758,
+		"combinegrail" : 4236044294,
+		"core" : 2585841710,
+		"courtyard" : 2151058938,
+		"deathvalley" : 3953815622,
+		"ensrick-portraits" : 624213739,
+		"ensrick-portraits.ensrick-portraits-base_game" : 108947425,
+		"ensrick-portraits.ensrick-portraits-hota-cove" : 4100229827,
+		"ensrick-portraits.ensrick-portraits-hota-heroes" : 1759188080,
+		"ensrick-portraits.ensrick-portraits-hota-interference_heroes" : 90004476,
+		"ensrick-portraits.ensrick-portraits-tow" : 2796575272,
+		"extra creatures specialty" : 180354703,
+		"fairy" : 1758024438,
+		"haven" : 2815774690,
+		"hota" : 2663831410,
+		"hota.adventuremapbuttons" : 1203020560,
+		"hota.airship" : 372634693,
+		"hota.artifacts" : 707222809,
+		"hota.bulwark" : 3569023272,
+		"hota.campaignheroesinrmg" : 4100469140,
+		"hota.cannon" : 1600166070,
+		"hota.changedshootingvisuals" : 1577447123,
+		"hota.cove" : 2760520133,
+		"hota.factory" : 2454332477,
+		"hota.gamebalance" : 185230757,
+		"hota.heroes" : 1015630945,
+		"hota.heroes3datapatch" : 2099899472,
+		"hota.heroesorchestracovetheme" : 96244833,
+		"hota.highlandsterrain" : 122405750,
+		"hota.highscorecreatures" : 1139553445,
+		"hota.interference" : 725400241,
+		"hota.lessrandomstart" : 1283210244,
+		"hota.mapdecorations" : 1168590807,
+		"hota.mapobjects" : 2517219767,
+		"hota.mapsupport" : 1365970960,
+		"hota.neutralcreatures" : 3499740130,
+		"hota.neutralcreatures.ancientaltar" : 2118040769,
+		"hota.newgraphics" : 3699688130,
+		"hota.newmaps" : 337512798,
+		"hota.spellresearch" : 935559891,
+		"hota.supplementary" : 3673352624,
+		"hota.terrainoverlays" : 1303789584,
+		"hota.wastelandterrain" : 2819452253,
+		"monolith2way" : 1860538678,
+		"morn's battlefields lite" : 2818127882,
+		"new pavilion" : 4060851154,
+		"new pavilion.dunes-terrain" : 2823741369,
+		"new pavilion.new pavillion" : 3537864132,
+		"new-menu" : 3319357264,
+		"newoldspells+" : 2557068526,
+		"newtown-terrains" : 4003142106,
+		"newtown-terrains.fieldgloryterrain" : 3643472725,
+		"newtown-terrains.icelandterrain" : 2915945424,
+		"newtown-terrains.stardustterrain" : 4287851447,
+		"preserve" : 962551937,
+		"reinforcements" : 3935589300,
+		"tartarus" : 306265924,
+		"tavernvideos" : 1554673767,
+		"tidesofwar" : 3335145830,
+		"vcmi" : 2618694733,
+		"vcmi-extras" : 1755729302,
+		"vcmi-extras.adventuremap" : 882911509,
+		"vcmi-extras.arrowtowericons" : 2371129473,
+		"vcmi-extras.battlefieldactions" : 1084732981,
+		"vcmi-extras.bonusicons" : 241521898,
+		"vcmi-extras.bonusicons.bonus icons" : 1915192878,
+		"vcmi-extras.bonusicons.immunity icons" : 147422406,
+		"vcmi-extras.emoji" : 2028652195,
+		"vcmi-extras.extendedlobby" : 3948009464,
+		"vcmi-extras.quick-exchange" : 3936617568,
+		"vcmi-extras.truetypefonts" : 1327903207
+	}
+}
+[2026-May-23 14:42:13.207885] TRACE global [33440] - loading .\config\gameConfig.json
+[2026-May-23 14:42:13.208885] TRACE global [33440] - loading .\Mods\vcmi-extras\mod.json
+[2026-May-23 14:42:13.208885] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\battlefieldActions\mod.json
+[2026-May-23 14:42:13.208885] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\arrowTowerIcons\mod.json
+[2026-May-23 14:42:13.208885] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\adventureMap\mod.json
+[2026-May-23 14:42:13.208885] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\extendedLobby\mod.json
+[2026-May-23 14:42:13.208885] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\quick-exchange\mod.json
+[2026-May-23 14:42:13.208885] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\bonusIcons\mod.json
+[2026-May-23 14:42:13.208885] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\bonusIcons\mods\Immunity Icons\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\bonusIcons\mods\Bonus Icons\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\chroniclesIcon\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\trueTypeFonts\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\adventureMapVertical\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\vcmi-extras\Mods\emoji\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\vcmi\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\tidesOfWar\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\TavernVideos\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\tartarus\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\reinforcements\mod.json
+[2026-May-23 14:42:13.209886] TRACE global [33440] - loading .\Mods\new-menu\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\New Pavilion\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\New Pavilion\Mods\New Pavillion\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\New Pavilion\Mods\dunes-terrain\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\newtown-terrains\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\newtown-terrains\Mods\stardustTerrain\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\newtown-terrains\Mods\icelandTerrain\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\newtown-terrains\Mods\fieldGloryTerrain\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\Morn's Battlefields Lite\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\NewOldSpells+\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\monolith2way\mod.json
+[2026-May-23 14:42:13.210885] TRACE global [33440] - loading .\Mods\hota\mod.json
+[2026-May-23 14:42:13.211886] TRACE global [33440] - loading .\Mods\hota\Mods\wastelandTerrain\mod.json
+[2026-May-23 14:42:13.211886] TRACE global [33440] - loading .\Mods\hota\Mods\terrainOverlays\mod.json
+[2026-May-23 14:42:13.211886] TRACE global [33440] - loading .\Mods\hota\Mods\mapSupport\mod.json
+[2026-May-23 14:42:13.212894] TRACE global [33440] - loading .\Mods\hota\Mods\neutralCreatures\mod.json
+[2026-May-23 14:42:13.212894] TRACE global [33440] - loading .\Mods\hota\Mods\neutralCreatures\Mods\ancientAltar\mod.json
+[2026-May-23 14:42:13.212894] TRACE global [33440] - loading .\Mods\hota\Mods\spellResearch\mod.json
+[2026-May-23 14:42:13.212894] TRACE global [33440] - loading .\Mods\hota\Mods\heroes3DataPatch\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\highscoreCreatures\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\heroes\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\Factory\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\newGraphics\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\campaignHeroesInRMG\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\changedShootingVisuals\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\gameBalance\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\interference\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\artifacts\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\airShip\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\adventureMapButtons\mod.json
+[2026-May-23 14:42:13.213891] TRACE global [33440] - loading .\Mods\hota\Mods\cove\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\hota\Mods\supplementary\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\hota\Mods\highlandsTerrain\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\hota\Mods\heroesOrchestraCoveTheme\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\hota\Mods\bulwark\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\hota\Mods\mapDecorations\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\hota\Mods\newMaps\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\hota\Mods\cannon\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\hota\Mods\lessRandomStart\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\hota\Mods\mapObjects\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\Fairy\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\extra creatures specialty\mod.json
+[2026-May-23 14:42:13.214891] TRACE global [33440] - loading .\Mods\ensrick-portraits\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-tow\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-nuetralheroes\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-nuetralheroes\Mods\ensrick-portraits-nuetralheroes-wog\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-nuetralheroes\Mods\ensrick-portraits-nuetralheroes-hota\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-hota-cove\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-hota-heroes\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-campaign_heroes_enabled\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-hota-interference_heroes\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\ensrick-portraits\Mods\ensrick-portraits-base_game\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\Deathvalley\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\Courtyard\mod.json
+[2026-May-23 14:42:13.215891] TRACE global [33440] - loading .\Mods\boost-ai\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\boost-ai\mods\Simple\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\boost-ai\mods\Normal\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\boost-ai\mods\Hard\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\asylum\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\ChineseTrueTypeFonts\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\bastille\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\preserve\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\cathedral\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\combineGrail\mod.json
+[2026-May-23 14:42:13.216891] TRACE global [33440] - loading .\Mods\haven\mod.json
+[2026-May-23 14:42:13.287891] INFO global [33440] - Installing repository: ended
+[2026-May-23 14:42:14.130888] DEBUG global [33440] - Language footprint: 0.160494 0.000000 0.035772 0.005499 0.003835 0.001665 0.007719 0.021443 0.000000 0.000000 0.126539 0.194198 0.200959 0.140666 0.047780 0.053431
+[2026-May-23 14:42:14.131891] DEBUG global [33440] - Comparing to chinese: 0.001997
+[2026-May-23 14:42:14.131891] DEBUG global [33440] - Comparing to english: 1.737032
+[2026-May-23 14:42:14.131891] DEBUG global [33440] - Comparing to french: 1.697632
+[2026-May-23 14:42:14.131891] DEBUG global [33440] - Comparing to german: 1.718732
+[2026-May-23 14:42:14.131891] DEBUG global [33440] - Comparing to polish: 1.642133
+[2026-May-23 14:42:14.131891] DEBUG global [33440] - Comparing to russian: 1.503535
+[2026-May-23 14:42:21.245981] INFO global [33440] - Killing console...
+[2026-May-23 14:42:21.245981] INFO global [33440] - Killing console... done!

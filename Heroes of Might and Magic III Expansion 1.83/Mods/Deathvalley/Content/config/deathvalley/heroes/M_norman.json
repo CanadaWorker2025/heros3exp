@@ -1,0 +1,67 @@
+{
+	"m_dvNorman" :
+	{
+		"class" : "dvNecropriest",
+		"female" : false,
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/norman/Un32Bers.png",
+			"specialtyLarge" : "deathvalley/heroes/norman/Un44Bers.png",
+			"large" : "deathvalley/heroes/norman/NormanL.png",
+			"small" : "deathvalley/heroes/norman/NormanS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "boneHook",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "mums",
+				"max" : 7,
+				"min" : 5
+			}
+		],
+		"spellbook" :
+		["berserk"],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"berserk" : {
+					"type" : "SPELL",
+					"subtype" : "spell.berserk",
+					"val" : 2,
+					"valueType" : "INDEPENDENT_MAX"
+				}			
+			}
+		},
+		
+		"texts" : {
+			"biography" : "诺曼曾经是一位虔诚的牧师，他在反抗亡灵入侵时被邪恶巫师注入了死灵魔法契约，想让他成为仆从。虽然找到机会消灭了巫师，但他却不得不继续保留死灵魔法的契约，来维持自己只剩一半的生命。",
+			"name" : "诺曼",
+			"specialty" : {
+				"description" : "使用丧心病狂魔法时初始为中级火系效果。",
+				"tooltip" : "Spell bonus: Berserk",
+				"name" : "丧心病狂"
+			}
+		}
+	}
+}
+

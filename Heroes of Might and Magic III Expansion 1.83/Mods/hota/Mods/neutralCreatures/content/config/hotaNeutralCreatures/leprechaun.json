@@ -1,0 +1,74 @@
+{
+	"leprechaun":
+	{
+		"advMapAmount" :
+		{
+
+			"max" : 25,
+			"min" : 16
+		},
+			"name" :
+		{
+			"plural" : "红妖精",
+			"singular" : "红妖精"
+		},
+		"faction" : "neutral",
+		"aiValue" : 208,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 100
+		},
+		"damage" :
+		{
+			"max" : 5,
+			"min" : 3
+		},
+		"defense" : 5,
+		"fightValue" : 208,
+		"hasDoubleWeek": true,
+		"graphics" :
+		{
+			"iconSmall" : "hota/creatures/iconsSmall/CPrSm171.bmp",
+			"iconLarge" : "hota/creatures/iconsLarge/TwCrP171.bmp",
+			"map" : "hota/creatures/adventureMap/AVWlepr.def",
+			"mapMask" : [ "VV", "VA"],
+			"animation" : "hota/creatures/battle/CLEPRCHN.def",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"idle" : 10.00,
+				"attack" : 1
+			}
+		},
+		"growth" : 9,
+		"hitPoints" : 15,
+		"level" : 2,
+
+
+		"sound" :
+		{
+			"attack": "hota/creatures/leprechaun/LEPRATTK.wav",
+			"defend": "hota/creatures/leprechaun/LEPRDFND.wav",
+			"killed": "hota/creatures/leprechaun/LEPRKILL.wav",
+			"move": "hota/creatures/leprechaun/LEPRMOVE.wav",
+			"shoot": "hota/creatures/leprechaun/LEPRSHOT.wav",
+			"wince": "hota/creatures/leprechaun/LEPRWNCE.wav"
+		},
+		"speed" : 5,
+		"abilities" :
+		{
+			"spellAfterAttack" :
+			{
+                "type":"SPELL_AFTER_ATTACK",
+                "subtype":"spell.misfortune",
+                "val":100,
+                "addInfo":2,
+				"icon": "hota/creatures/bonus/misfortuneattack.png"
+		    }
+		}
+	}
+}
+
+

@@ -1,0 +1,119 @@
+{
+	"core:pixie" : {
+		"abilities" : {
+			"canFly" : {
+				"icon" : "zvs/Lib1.res/e_fly4"
+			}
+		}
+	},
+	"core:sprite" : {
+		"abilities" : {
+			"canFly" : {
+				"icon" : "zvs/Lib1.res/e_fly4"
+			}
+		}
+	},
+	"core:airElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			}
+		}
+	},
+	"core:stormElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			},
+			"spellcaster":
+			{
+				"icon" : "zvs/Lib1.res/protair2"
+			},
+		}
+	},
+	"core:waterElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			}
+		}
+	},
+	"core:iceElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			},
+			"spellcaster":
+			{
+				"icon" : "zvs/Lib1.res/protwater2"
+			}
+		}
+	},
+	"core:fireElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			}
+		}
+	},
+	"core:energyElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			},
+			"energizes" : {
+				"icon" : "zvs/Lib1.res/e_teleport"
+			},
+			"spellcaster":
+			{
+				"icon" : "zvs/Lib1.res/protfire2"
+			}
+		}
+	},
+	"core:earthElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			}
+		}
+	},
+	"core:magmaElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			},
+			"spellcaster":
+			{
+				"icon" : "zvs/Lib1.res/protearth2"
+			}
+		}
+	},
+	"core:psychicElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			}
+		}
+	},
+	"core:magicElemental" : {
+		"abilities" : {
+			"nonLiving" : {
+				"icon" : "zvs/Lib1.res/NonLivingelemental"
+			}
+		}
+	},
+	"core:firebird" : {
+		"abilities" : {
+			"twoHexAttackBreath" : {
+				"icon" : "zvs/Lib1.res/e_breathfirebird"
+			}
+		}
+	},
+	"core:phoenix" : {
+		"abilities" : {
+			"twoHexAttackBreath" : {
+				"icon" : "zvs/Lib1.res/e_breathphoenix"
+			}
+		}
+	}
+}

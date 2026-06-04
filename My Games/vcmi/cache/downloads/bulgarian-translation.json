@@ -1,0 +1,32 @@
+{
+	"name" : "Bulgarian translation",
+	"description" : "Bulgarian translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.1",
+	"author" : "Живко Ковачев (Topcon)",
+	"contact" : "",
+	"language" : "bulgarian",
+	"modType" : "Translation",
+	"compatibility" :
+	{
+		"min" : "1.7.0"
+	},
+	"changelog" : 
+	{
+		"1.0.1" : [ "Menu screen" ],
+		"1.0.0" : [ "Initial release from https://adventurersbg.info/download.php?view.578" ]
+	},
+	"german" : {
+		"name" : "Bulgarische Übersetzung",
+		"description" : "Bulgarische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"bulgarian" : {
+		"name" : "Превод на български език",
+		"description" : "Български превод на Heroes of Might and Magic III: Complete Edition"	
+	},
+	"translations" : [
+		"config/vcmi-bulgarian/game.json",
+		"config/vcmi-bulgarian/maps.json",
+		"config/vcmi-bulgarian/chronicles.json",
+		"config/vcmi-bulgarian/campaigns.json"
+	]
+}

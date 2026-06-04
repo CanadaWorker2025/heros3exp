@@ -1,0 +1,103 @@
+{
+	"iDun04"://Medusa Sorceress
+	{
+		"name" :
+		{
+			"plural" : "美杜莎女巫",
+			"singular" : "美杜莎女巫"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"faction": "dungeon",
+		"aiValue" : 577,
+		"fightValue" : 424,
+		"doubleWide" : true,
+		"attack" : 11,
+		"defense" : 9,
+		"cost" :
+		{
+			"gold" : 330
+		},
+		"damage" :
+		{
+			"min" : 6,
+			"max" : 9
+		},
+		"speed" : 6,
+		"upgrades": ["medusaQueen"],
+		"graphics" :
+		{
+			"animation" : "creatures/dungeon/battle/iDun04B.def",
+			"map" : "creatures/dungeon/map/iDun04M.def",
+			"iconSmall" : "creatures/dungeon/iconsSmall/iDun04S.bmp",
+			"iconLarge" : "creatures/dungeon/iconsBig/iDun04L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "PMEDUSX.DEF",
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+		},
+		"hitPoints" : 30,
+		"growth" : 4,
+		"shots": 10,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "MEDQATTK.wav",
+			"defend": "MEDQDFND.wav",
+			"killed": "MEDQKILL.wav",
+			"move": "MEDQMOVE.wav",
+			"shoot": "MEDQSHOT.wav",
+			"wince": "MEDQWNCE.wav"
+		},
+		"abilities" :
+		{
+			 "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"castsWeakness" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.weakness",
+				"val" : 20,
+				"addInfo" : [0, 1],
+				"icon": "bonuses/weaknessattack.png"
+			},
+			"castslow" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.slow",
+				"val" : 20,
+				"addInfo" : [0, 1],
+				"icon": "bonuses/slowattack.png"
+			},
+		}
+	}
+}
+
+

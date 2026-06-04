@@ -1,0 +1,60 @@
+{
+  "shadowdancer": {
+    "name": {
+      "plural": "影舞者",
+      "singular": "影舞者"
+    },
+    "advMapAmount": {
+ "max" : 25,
+ "min" : 16
+    },
+    "faction": "asylum",
+    "aiValue": 180,
+    "attack": 6,
+    "cost": {
+      "gold": 140
+    },
+    "damage": {
+ "max" : 3,
+ "min" : 2
+    },
+    "defense": 5,
+    "fightValue": 177,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST2U.def",
+      "map": "asylum/map/creatures/AVWC180.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS180Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL180Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 9,
+    "hitPoints": 16,
+    "level": 2,
+    "sound": {
+      "attack": "asylum/CPU2ATTK.wav",
+      "defend": "asylum/CPU2DFND.wav",
+      "killed": "asylum/CPU2KILL.wav",
+      "move": "asylum/CPU2MOVE.wav",
+      "wince": "asylum/CPU2WNCE.wav"
+    },
+    "speed": 9,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "multiAttack": {
+        "type": "THREE_HEADED_ATTACK"
+         //No back attack skills for shadow dancers
+      }
+    }
+    
+  }	
+	}

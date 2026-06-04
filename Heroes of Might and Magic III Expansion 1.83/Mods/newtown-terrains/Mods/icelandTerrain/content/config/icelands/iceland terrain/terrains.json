@@ -1,0 +1,19 @@
+{
+	"icelands" :
+	{
+		"text":"冰原",
+		"moveCost" : 150,
+		"minimapUnblocked" : [ 124, 241, 248 ],
+		"minimapBlocked"   : [ 151, 220, 222 ],
+		"music" : ["icelands/IceCave Theme"],
+		"tiles" : "icelands/ICECAVETL",
+		"type" : [],
+		"allowedLayers": ["surface", "underground", "unknown"], //default values
+		"shortIdentifier":"ic",
+		"river" : "iceRiver",
+		"rockTerrain":"rock",
+		"horseSound" : "horse03",
+		"horseSoundPenalty" : "horse23",
+		"battleFields" : ["icelands"]
+	}
+}

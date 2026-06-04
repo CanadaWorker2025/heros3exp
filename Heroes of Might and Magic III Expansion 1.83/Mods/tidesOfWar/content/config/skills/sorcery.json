@@ -1,0 +1,24 @@
+{
+  "core:sorcery": {
+    "basic": {
+      "description": "{初级魔力}\n\n初级魔力使魔法的杀伤力提升10%。",
+      "effects": {
+        "main" : { "val" : 10 }
+			}
+    },
+
+    "advanced": {
+      "description": "{中级魔力}\n\n中级魔力使魔法的杀伤力提升20%。",
+      "effects": {
+        "main" : { "val" : 20 }
+			}
+    },
+
+    "expert": {
+      "description": "{高级魔力}\n\n高级魔力使魔法的杀伤力提升30%。",
+      "effects": {
+        "main" : { "val" : 30 }
+			}
+      }
+   }
+}

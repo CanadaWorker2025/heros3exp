@@ -1,0 +1,21 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"mdtZiggurat" : {
+				"name" : "神塔",
+				"creatures" : [[ "mdtCouatl" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new07.def",
+				"sounds": {
+					"ambient": ["dwellings/stronghold/CouaLOOP"]
+				},
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "dwellings/stronghold/mapZiggurat.def",
+						"mask" : [ "VVV", "VAB" ]
+					}
+				}
+			}
+		}
+	}	
+}

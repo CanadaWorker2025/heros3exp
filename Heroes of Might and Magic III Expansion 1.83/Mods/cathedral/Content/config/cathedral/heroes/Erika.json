@@ -1,0 +1,47 @@
+{
+	"erika" :
+	{
+		"class" : "redtemplar",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/erika/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/erika/spec-large.bmp",
+			"large" : "cathedral/heroes/erika/portrait-large.bmp",
+			"small" : "cathedral/heroes/erika/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+		],
+		"texts" :
+		{
+			"name" : "冈萨雷斯",
+			"biography" : "冈萨雷斯的父亲曾经是最英勇善战的骑士，可是他不愿意生活在父亲的光环之下。在父亲死后，他决定离开家乡，以自己的方式生存。但是他也无法舍弃父亲留给他的甲胄。无论如何，他还是希望父亲的英勇能够佑护着他。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高圣武士和黑暗圣武士的攻击力和防御力。",
+				"tooltip" : "特长：圣武士",
+				"name" : "圣武士"
+			}
+		},
+		"specialty" : {
+			"creature" : "cthTemplar"
+		}		
+	}
+}

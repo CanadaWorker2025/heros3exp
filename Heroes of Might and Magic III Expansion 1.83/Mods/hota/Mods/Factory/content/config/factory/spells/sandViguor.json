@@ -1,0 +1,99 @@
+{
+	"sandVigour":
+	{
+		"type": "ability", 
+		"name": "强化沙虫",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 10,
+		
+		"defaultGainChance": 10, 
+		"gainChance":
+		{
+			"rampart": 15,
+			"necropolis": 5
+		},
+ 
+		"flags" : {"positive": true,"nonMagical":true},
+
+		"targetCondition" : {
+			"anyOf" : {
+				"factory:creature.olgoiKhorkhoi":"absolute"
+			}
+		},		
+
+		"graphics":
+		{
+			"iconEffect": "spells/sandEffect.bmp"
+		},
+		"sounds":
+		{
+			"cast":"ENERMOVE" //fear snd
+		},
+		
+		"animation":{
+			"affect":[ {
+				"effectName" : "bloodlust"
+			} ]
+		},
+		
+		"targetType": "CREATURE",
+ 
+		"levels" : {
+			"base":{
+		
+				"range": "0",
+				"power": 10,
+				"cost": 0,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"heal",
+						"healPower":"permanent",
+						"optional":true
+					},
+					"OneAttackSandworm" :
+					{
+					"type": "core:timed",
+					"cumulative": true,
+					"bonus":
+					{
+					"sandWormEffect":
+                    {
+                        "type": "ADDITIONAL_ATTACK",
+						"val": 1,
+						"duration": [
+							"UNTIL_OWN_ATTACK",
+						]
+					}
+				}
+			}
+				},
+				"description": "{强化沙虫}\n\n使单位每次强化获得1次额外攻击。\n",
+			},
+			"none":
+			{
+			},
+			"basic":
+			{
+			},
+			"advanced":
+			{
+			},
+			"expert":
+			{
+			}
+		}
+	}
+ 
+}

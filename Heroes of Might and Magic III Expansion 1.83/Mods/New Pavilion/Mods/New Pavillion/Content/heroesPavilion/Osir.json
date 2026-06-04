@@ -1,0 +1,76 @@
+{
+	"osir" :
+	{
+		"class" : "embalmer",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "奥西尔",
+			"biography" : "奥西尔的家庭财富支持着他的治疗天赋在最尊敬的牧师指导下开花结果。有时候，他认为自己没有实现成为一名强大魔法师的雄心壮志，但他为自己的技艺感到非常自豪，并热切地帮助弱者和病人。",
+			"specialty" :
+			{
+				"description" : "在急救术上每级得到5%的额外奖励。",
+				"tooltip" : "Secondary Skill Bonus: First Aid",
+				"name" : "急救术"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/32FirstA.bmp",
+			"specialtyLarge" : "speciconsPavilion/44FirstA.bmp",
+			"large" : "heroportraitsPavilion/Osir.png",
+			"small" : "heroportraitsPavilion/OsirSmall.png"
+		},
+
+		"spellbook" :
+		[
+			"dispel" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "firstAidTent",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "firstAid"
+			}
+		],
+		
+		"specialty": 
+		{
+			"bonuses" : {
+				"firstAid" : {
+					"subtype" : "core:spell.firstAid",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPECIFIC_SPELL_POWER",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}
+	}
+}

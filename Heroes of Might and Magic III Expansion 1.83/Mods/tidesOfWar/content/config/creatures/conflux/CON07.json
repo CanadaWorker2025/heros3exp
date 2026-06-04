@@ -1,0 +1,93 @@
+{
+	"nwCon07":
+	{
+		"name" :
+		{
+			"plural" : "希摩鸟",
+			"singular" : "希摩鸟"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 4
+		},
+		"faction": "conflux",
+		"doubleWide" : true,
+		"aiValue" : 6721,
+		"fightValue" : 4929,
+		"attack" : 21,
+		"defense" : 19,
+		"cost" :
+		{
+			"gold" : 3000,
+			"mercury": 1
+		},
+		"damage" :
+		{
+			"min" : 35,
+			"max" : 45
+		},
+		"speed" : 20,
+		"upgrades": ["phoenix"],
+		"graphics" :
+		{
+			"animation" : "creatures/conflux/battle/CON07.def",
+			"map" : "creatures/conflux/map/CON07S.def",
+			"iconSmall" : "creatures/conflux/iconsSmall/CON07S.bmp",
+			"iconLarge" : "creatures/conflux/iconsBig/CON07L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 210,
+		"growth" : 1,
+		"horde": 1,
+		"level" : 7,
+		"sound" :
+		{
+			"attack": "PHOEATTK.wav",
+			"defend": "PHOEDFND.wav",
+			"killed": "PHOEKILL.wav",
+			"move": "PHOEMOVE.wav",
+			"wince": "PHOEWNCE.wav"
+		},
+		"abilities":
+		{
+			"canFly" :
+			{
+				"type" : "FLYING"
+			},
+			"fireBreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH",
+				"icon": "bonuses/e_breathsim.png"
+			},
+			"basicSlayer" : { "type" : "KING", "val": 0 },
+			"immuneToFire" :
+			{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+			},
+			"thunderStrength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.con07eff",
+				"val" : 30
+			},
+			"thunderOnAttack" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.con07eff",
+				"val" : 100,
+				"icon": "bonuses/conf07.png",
+				"description" : "{连结打击}\n对每个拥有连结印记的敌人造成30*数量的额外伤害。",
+			}
+		}
+	}
+}
+
+

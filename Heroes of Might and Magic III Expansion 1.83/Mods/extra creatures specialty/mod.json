@@ -1,0 +1,52 @@
+{
+	"name" : "extra creatures specialty",
+	"description" : "Same extra creatures and spells specialty with hota.",
+	"author" : "Ben, bakaczh, Karyoplasma",
+	"version" : "0.01",
+	"contact" : "",
+	"modType" : "Mechanics",
+	"depends":["asylum","bastille","cathedral","Courtyard","Deathvalley","Fairy","haven","hota.cove","hota.Factory","hota.bulwark","New Pavilion.New Pavillion","preserve","tidesOfWar","tartarus","hota.heroes","hota.cannon","reinforcements","ensrick-portraits","combineGrail","NewOldSpells+"],
+	"chinese":
+	{
+		"name": "特长修改（必须先激活）",
+		"description" : "和HotA一样的兵种特长和魔法特长成长，旧版由白云飘飘设计制作，新版由圣龙和Karyoplasma设计制作。整合了wiki内容。",
+		"translations" : [
+			"config/translations/chinese.json"
+		]
+	},
+	"spells":
+	[
+		"config/spells/spellsNew.json",
+	],
+	"creatures":
+	[
+		"config/creatures/creatureAbilities.json"
+	],
+	"heroes" :
+	[
+		"config/heroes/asylum",
+		"config/heroes/bastille",
+		"config/heroes/cathedral",
+		"config/heroes/courtyard",
+		"config/heroes/deathvalley",
+		"config/heroes/fairy",
+		"config/heroes/cove",
+		"config/heroes/factory",
+		"config/heroes/haven",
+		"config/heroes/pavilion",
+		"config/heroes/preserve",
+		"config/heroes/tartarus",
+		"config/heroes/castle",
+		"config/heroes/rampart",
+		"config/heroes/tower",
+		"config/heroes/inferno",
+		"config/heroes/necropolis",
+		"config/heroes/dungeon",
+		"config/heroes/stronghold",
+		"config/heroes/fortress",
+		"config/heroes/conflux",
+		"config/heroes/tidesofwar",
+		"config/heroes/hotaextrehero",
+		"config/heroes/spellhero",
+	]
+}

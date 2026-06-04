@@ -1,0 +1,60 @@
+{
+
+	"preserve:i_anastasia": {
+        "texts": {
+            "specialty": {
+                "name": "德鲁伊",
+                "description": "每6级提高德鲁伊及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"preserve:b_julian": {
+        "texts": {
+            "specialty": {
+                "name": "螳螂",
+                "description": "每5级提高螳螂及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"preserve:h_lorenzo": {
+        "texts": {
+            "specialty": {
+                "name": "蜂草",
+                "description": "每4级提高蜂草及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"preserve:f_ceretus": {
+        "texts": {
+            "specialty": {
+                "name": "老虎",
+                "description": "每3级提高老虎及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"preserve:d_terence": {
+        "texts": {
+            "specialty": {
+                "name": "棕狼",
+                "description": "每2级提高棕狼及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"preserve:a_kulkin": {
+		"specialty": {
+			"creature": "halflings",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "矮妖精",
+                "description": "每1级提高矮妖精及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

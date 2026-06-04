@@ -1,0 +1,37 @@
+{
+	"hota.bulwark:runes" : {
+		"base" : {
+			"effects" : {
+				"runeMagic" : {
+					"subtype" : "spellSchool.runeHighlands",
+					"type" : "MAGIC_SCHOOL_SKILL",
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{初级符文学}\n\n初级符文学允许英雄的单位在战斗中积累最多 3 个符文等级。\n每个符文等级都会提升其生物的属性：\n1: +2 攻击力, 2: +2 防御力, 3: +1 速度\n且可以使英雄的符文法术等级提升至初级。",
+			"effects" : {
+				"runeMagic" : {
+					"val" : 1
+				}
+			}
+		},
+		"advanced" : {
+			"description" : "{中级符文学}\n\n中级符文学允许英雄的单位在战斗中积累最多 6 个符文等级。\n每个符文等级都会提升其生物的属性：\n1: +2 攻击力, 2: +2 防御力, 3: +1 速度\n4: +2 攻击力, 5: +2 防御力, 6: +1 速度\n且可以使英雄的符文法术等级提升至中级。",
+			"effects" : {
+				"runeMagic" : {
+					"val" : 2
+				}
+			}
+		},
+		"expert" : {
+			"description" : "{高级符文学}\n\n高级符文学允许英雄的单位在战斗中积累最多 9 个符文等级。\n每个符文等级都会提升其生物的属性：\n1: +2 攻击力, 2: +2 防御力, 3: +1 速度\n4: +2 攻击力, 5: +2 防御力, 6: +1 速度\n7: +2 攻击力, 8: +2 防御力, 9: +1 速度\n且可以使英雄的符文法术等级提升至高级。",
+			"effects" : {
+				"runeMagic" : {
+					"val" : 3
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"ftStoneAegis":
+	{
+		"name" :
+		{
+			"plural" : "魔盾石",
+			"singular" : "魔盾石"
+		},
+		"faction" : "fairy",
+		"level": 0,
+		"aiValue" : 2500,
+		"special" : true,
+		"attack" : 10,
+             "cost": 
+            {
+              "gold": 2500
+            },
+		
+		"defense" : 10,
+		"fightValue" : 2500,
+		"graphics" :
+		{
+			"animation" : "fairy/battle/creatures/spinner.def",
+			"iconSmall" : "fairy/iconsSmall/creatures/spinner.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.15,
+				"attack" : 1,
+				"idle" : 40
+			}
+		},
+		"doubleWide" : true,
+		"growth" : 0,
+		"hitPoints" : 150,
+		"speed" : 0,
+		"abilities" :
+		{
+			"spellResistAura" :
+			{
+				"type" : "SPELL_RESISTANCE_AURA",
+				"val" : 10
+			},
+		      "noRetaliation" :
+			{
+				"type" : "NO_RETALIATION",
+				 "val" : 0,
+			},
+			"warmachine" :
+			{
+				"type" : "SIEGE_WEAPON"
+			},
+                     "Healer":
+			{
+				"type" : "HEALER"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+			}
+		]
+	}
+}
+

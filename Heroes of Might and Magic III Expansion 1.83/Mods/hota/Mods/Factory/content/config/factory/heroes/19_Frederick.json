@@ -1,0 +1,68 @@
+{
+	"19_Frederick" :
+	{
+    "class": "factoryMClass",
+    "female" : false,
+	"special": true,
+		
+		"texts" :
+		{
+			"name" : "弗雷德里克",
+			"biography" : "弗雷德里克一直过着普通布拉卡达法师和炼金术士的生活，尽管他比他的同伴们更加好奇。这种好奇心让他先尝试机制，然后再进行禁忌的研究。结果，弗雷德里克不得不逃离布拉卡达，现在他正在寻找一个更好的地方来投身于他想要的事情。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "自行机甲",
+				"description" : "达到4级以后提高自行机甲或守卫机甲的攻击力与防御力。"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/19_Frederick/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/19_Frederick/bigS.bmp",
+			"large" : "factory/heroes/19_Frederick/bigP.bmp",
+			"small" : "factory/heroes/19_Frederick/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "automaton",
+				"max" : 5,
+				"min" : 3
+			},
+			{
+				"creature" : "automaton",
+				"max" : 5,
+				"min" : 3
+			},
+			{
+				"creature" : "automaton",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"spellbook" :
+		[
+			"haste"
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "automaton"
+		}	
+	}
+}
+

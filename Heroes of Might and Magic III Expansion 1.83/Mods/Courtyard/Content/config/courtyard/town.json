@@ -1,0 +1,912 @@
+{
+	"courtyard" : {
+		"alignment" : "good",
+		"creatureBackground" : { "120px" : "courtyard/creaturebg120px", "130px" : "courtyard/creaturebg130px" },
+		"name" : "庭院",
+		"description" : "{庭院}\n种族阵营： 正义，守序\n种族地形： 草地\n所在地： 恩塔格瑞大陆-拉尼亚及欧弗北部地区\n庭院是背离布拉卡达的炼金术士组成的同盟，他们分布在靠近欧弗的一些平原上，因为法师们并不是非常看重炼金术，所以他们也决定重建属于炼金术士的同盟。在重建名为拉尼亚的国度之后，他们也开始和邪恶势力交战来维持世界的秩序。",
+		"boat" : "boatCastle",
+		"nativeTerrain" : "grass",
+		"town" : {
+			"buildings" : {
+				"blacksmith" : {
+					"cost" : { "gold" : 1000, "wood" : 5 },
+					"description" : "铁匠铺可向你的军队提供药剂车。",
+					"warMachine" : "potionCartCreature",
+					"name" : "铁匠铺"
+				},
+				"capitol" : {
+					"cost" : { "gold" : 10000 },
+					"description" : "国会每天向你提供4000个金币。",
+					"name" : "国会",
+					"requires" : [ "castle" ],
+					"upgrades" : "cityHall"
+				},
+				"castle" : {
+					"cost" : { "gold" : 5000, "ore" : 10, "wood" : 10 },
+					"description" : "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"name" : "城堡",
+					"upgrades" : "citadel"
+				},
+				"citadel" : {
+					"cost" : { "gold" : 2500, "ore" : 5 },
+					"description" : "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"name" : "大本营",
+					"upgrades" : "fort"
+				},
+				"cityHall" : {
+					"cost" : { "gold" : 5000 },
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"name" : "议会",
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ],
+					"upgrades" : "townHall"
+				},
+				"dwellingLvl1" : {
+					"cost" : { "gold" : 500, "ore" : 10 },
+					"description" : "石雕馆允许你招募石雕傀儡。",
+					"name" : "石雕馆",
+					"requires" : [ "fort" ]
+				},
+				"dwellingLvl2" : {
+					"cost" : { "gold" : 1000, "ore" : 10 },
+					"description" : "炼金塔允许你招募侏儒。",
+					"name" : "炼金塔",
+					"requires" : [ "dwellingLvl1" ]
+				},
+				"dwellingLvl3" : {
+					"cost" : { "gold" : 1250, "wood" : 5, "mercury" : 3 },
+					"description" : "熔矿炉允许你招募火蜥蜴人。",
+					"name" : "熔矿炉",
+					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "mageGuild1" ] ]
+				},
+				"dwellingLvl4" : {
+					"cost" : { "gems" : 4, "gold" : 2000, "wood" : 5, "ore" : 5,  "sulfur" : 2 },
+					"description" :  "兵工厂允许你招募火枪手。",
+					"name" : "兵工厂",
+					"requires" : [ "allOf", [ "dwellingLvl2" ], ["tavern"], [ "blacksmith" ] ]
+				},
+				"dwellingLvl5" : {
+					"cost" : { "gold" : 3000, "wood" : 15 },
+					"description" : "巨鸟之巢允许你招募陆行鸟。",
+					"name" : "巨鸟之巢",
+					"requires" : [ "dwellingLvl3" ]
+				},
+				"dwellingLvl6" : {
+					"cost" : { "sulfur" : 4,"crystal" : 2, "gems" : 2, "gold" : 4500, "ore" : 5, "wood" : 10 },
+					"description" : "蔓藤花园允许你招募曼陀罗。",
+					"name" : "蔓藤花园",
+					"requires" : [ "allOf", [ "dwellingLvl4" ], ["mageGuild1"] ]
+				},
+				"dwellingLvl7" : {
+					"cost" : { "gold" : 7500, "ore" : 10, "sulfur" : 5, "crystal" : 5, },
+					"description" : "恐惧洞窟允许你招募异形龙。",
+					"name" : "恐惧洞窟",
+					"requires" : [ "allOf", [ "dwellingLvl5" ], ["dwellingLvl6"] ]
+				},
+				"dwellingUpLvl1" : {
+					"cost" : { "gold" : 1400 },
+					"description" : "高级石雕馆允许你招募岩雕傀儡。",
+					"name" : "高级石雕馆",
+					"upgrades" : "dwellingLvl1"
+				},
+				"dwellingUpLvl2" : {
+					"cost" : { "gold" : 1000, "mercury" : 2 },
+					"description" : "高级炼金塔允许你招募炼金侏儒。",
+					"name" : "高级炼金塔",
+					"upgrades" : "dwellingLvl2",
+					"requires" : [ "allOf", [ "mageGuild1" ] ]
+				},
+				"dwellingUpLvl3" : {
+					"cost" : { "gold" : 1500, "crystal" : 5, "ore" : 5 },
+					"description" : "高级熔矿炉允许你招募炎蜥蜴人。",
+					"name" : "高级熔矿炉",
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" : {
+					"cost" : { "sulfur" : 5, "gold" : 2000, "ore" : 5 },
+					"description" :"高级兵工厂允许你招募步枪手。",
+					"name" : "高级兵工厂",
+					"requires" : [ "allOf", [ "dwellingUpLvl2" ], ],
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl5" : {
+					"cost" : { "gold" : 2000, "ore" : 10, "gems" : 5 },
+					"description" : "高级巨鸟之巢允许你招募战斗巨鸟。",
+					"name" : "高级巨鸟之巢",
+					"requires" : [ "allOf", [ "blacksmith" ], [ "mageGuild1" ]  , [ "noneOf", [ "dwellingAltUpLvl5" ] ] ],
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingAltUpLvl5" : {
+					"cost" : { "gold" : 2500, "gems" : 1, "crystal" : 1, "sulfur" : 1,  "mercury" : 1 },
+					"description" : "魔鸟之巢允许你招募华丽巨鸟。",
+					"name" : "魔鸟之巢",
+					"id" : 48,
+					"requires" : [ "allOf", [ "dwellingLvl6" ] , [ "noneOf", [ "dwellingUpLvl5" ] ] ],
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" : {
+					"cost" : { "gold" : 3000, "ore" : 10,  "mercury" : 10 },
+					"description" : "高级蔓藤花园允许你招募曼陀罗女王。",
+					"name" : "高级蔓藤花园",
+					"upgrades" : "dwellingLvl6",
+					"requires" : [ "allOf", [ "mageGuild2" ], ["special4"] ],
+				},
+				"dwellingUpLvl7" : {
+					"cost" : { "gems" : 15, "gold" : 20000, "ore" : 5, "sulfur" : 15, "wood" : 5 },
+					"description" : "高级恐惧洞窟允许你招募炸脖龙。",
+					"name" : "高级恐惧洞窟",
+					"requires" : [ "allOf", [ "mageGuild3"], [ "anyOf", [ "dwellingUpLvl5" ], [ "dwellingAltUpLvl5" ] ] ],
+					"upgrades" : "dwellingLvl7"
+				},
+				"fort" : {
+					"cost" : { "gold" : 5000, "ore" : 20, "wood" : 20 },
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"name" : "堡垒"
+				},
+				"grail" : {
+					"description" : "象牙塔使每周的生物产量提高50%，每天为你的王国额外提供5000个金币。并且每天提供10单位的水银。且使所有战争机器的生命值提升200点。",
+					"mode" : "grail",
+					"produce": { "gold" : 5000, "mercury": 10 },
+					"bonuses" : [
+					{
+						"type" : "STACK_HEALTH",
+						"val" : 200,
+						"propagator" : "PLAYER",
+						"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"parameters" : [ "SIEGE_WEAPON" ]
+						}]
+					}],
+					"name" : "象牙塔"
+				},
+				"horde1" : {
+					"cost" : { "gold" : 1000 },
+					"description" : "雕像花园使石雕傀儡和岩雕傀儡的周产量+6。",
+					"name" : "雕像花园",
+					"upgrades" : "dwellingLvl1"
+				},
+				"horde1Upgr" : {
+					"cost" : { "gold" : 1000 },
+					"description" : "雕像花园使石雕傀儡和岩雕傀儡的周产量+6。",
+					"mode" : "auto",
+					"name" : "雕像花园",
+					"requires" : [ "horde1" ],
+					"upgrades" : "dwellingUpLvl1"
+				},
+				"horde2" : {
+					"cost" : { "gold" : 2000, "crystal" : 1, },
+					"description" : "空中花园使曼陀罗的周产量+1。",
+					"name" : "空中花园",
+					"upgrades" : "dwellingUpLvl6",
+					"requires" : [ "special2" ]
+				},
+				"mageGuild1" : {
+					"cost" : { "gold" : 2000, "ore" : 5, "wood" : 5 },
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "1级魔法行会"
+				},
+				"mageGuild2" : {
+					"cost" : {
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000,
+						"mercury" : 4,
+						"ore" : 5,
+						"sulfur" : 4,
+						"wood" : 5
+					},
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "2级魔法行会",
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" : {
+					"cost" : {
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000,
+						"mercury" : 6,
+						"ore" : 5,
+						"sulfur" : 6,
+						"wood" : 5
+					},
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "3级魔法行会",
+					"upgrades" : "mageGuild2"
+				},
+				"mageGuild4" : {
+					"cost" : {
+						"crystal" : 8,
+						"gems" : 8,
+						"gold" : 1000,
+						"mercury" : 8,
+						"ore" : 5,
+						"sulfur" : 8,
+						"wood" : 5
+					},
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "4级魔法行会",
+					"upgrades" : "mageGuild3"
+				},
+				"mageGuild5" : {
+					"cost" : {
+						"crystal" : 10,
+						"gems" : 10,
+						"gold" : 1000,
+						"mercury" : 10,
+						"ore" : 5,
+						"sulfur" : 10,
+						"wood" : 5
+					},
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "5级魔法行会",
+					"upgrades" : "mageGuild4"
+				},				
+				"marketplace" : {
+					"cost" : { "gold" : 500, "wood" : 5 },
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"name" : "市场"
+				},
+				"resourceSilo" : {
+					"cost" : { "gold" : 5000, "ore" : 5 },
+					"description" : "物资仓库每天为你额外提供1硫磺。",
+					"produce": { "sulfur": 1 },
+					"name" : "物资仓库",
+					"requires" : [ "marketplace" ]
+				},
+
+				"special2" : {
+					"cost" : {
+
+						"gold" : 1000
+					},
+					"description" : "魔法泉使驻守或来访的英雄暂时拥有双倍的魔法值。",
+					"name" : "魔法泉",
+					"manualHeroVisit" : true,
+					"configuration" : {
+						"resetParameters" : {
+							"period" : 7,
+							"visitors" : true
+						},
+						"onVisitedMessage": "{魔法泉}\r\n\r\n你的英雄已经激活魔法泉了，请下周再来吧。",
+						"onEmptyMessage": "{魔法泉}\r\n\r\n你的英雄已经激活魔法泉了，请在魔法值用完后再来吧。",
+						"visitMode" : "once",
+						"canRefuse": true,
+						"rewards" : [
+							{
+								"limiter" : {
+									"noneOf" : [ { "manaPercentage" : 200 } ]
+								},
+								"message" : "{魔法泉}\r\n\r\n接近魔法泉时，你的英雄可以暂时拥有双倍的魔法值，你需要激活吗？",
+								"manaPercentage" : 200
+							}
+						]
+					},
+					"requires" : [ "mageGuild1" ]
+				},
+				"special3" : {
+					"cost" : {"gold" : 1500},
+					"description" : "观测塔可扩大城镇周围的可视范围。",
+					"name" : "观测塔",
+					"bonuses": [
+						{ "type": "SIGHT_RADIUS", "val": 15 }, // 5 base + 15 bonus = 20 tiles range
+					],
+					"requires" : [ "allOf", [ "mageGuild1" ], ["citadel"] ]
+				},
+				"special4" : {
+					"name" : "药剂师商店",
+					"requires" : [ "blacksmith" ],
+					"cost" : { "gold" : 2000, "ore" : 5, "wood" : 5 },
+					"description" : "药剂师商店可以允许你购买{不朽药剂}，{寒冷药剂}和{保护药剂}。",
+					"manualHeroVisit" : true,
+					"configuration" :
+					{
+						"rewards" : [
+							{
+								"limiter" : { "resources" : { "gold" : 2000 } },
+								"resources" : { "gold" : -2000 },
+								"artifacts" : [ "ethPotion" ],
+							},
+							{
+								"limiter" : { "resources" : { "gold" : 2000 } },
+								"resources" : { "gold" : -2000 },
+								"artifacts" : [ "immoPotion" ],
+							},
+							{
+								"limiter" : { "resources" : { "gold" : 2000 } },
+								"resources" : { "gold" : -2000 },
+								"artifacts" : [ "invPotion" ],
+							}
+						],
+						"onSelectMessage" : "{药剂师商店}\r\n\r\n你的来访让药剂师们很高兴，他们愿意为你制作药水，但他们每天只能制作一瓶。 你需要花2000金币进行购买吗？",
+						"onVisitedMessage": "{药剂师商店}\r\n\r\n你的来访让药剂师们很高兴，他们愿意为你制作药水，但他们每天只能制作一瓶。 你需要花2000金币进行购买吗？",
+						"onEmptyMessage": "{药剂师商店}\r\n\r\n你的来访让药剂师们很高兴，但他们听说你没有带来足够的钱，就拒绝为你制作药水。",
+						"visitMode" : "once",
+						"resetParameters" : {
+								"period" : 1,
+								"visitors" : true,
+								"rewards" : true
+							},  
+							"canRefuse": true,
+							"selectMode" : "selectPlayer",
+					}	
+				},
+				"tavern" : {
+					"cost" : { "gold" : 500, "wood" : 5 },
+					"description" : "酒馆可提高驻军的士气。",
+					"name" : "酒馆"
+				},
+				"townHall" : {
+					"cost" : { "gold" : 2500 },
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"name" : "内政厅",
+					"requires" : [ "tavern" ],
+					"upgrades" : "villageHall"
+				},
+				"villageHall" : {
+					"description" : "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。",
+					"mode" : "auto",
+					"name" : "议事堂"
+				},
+				"townFountain": {
+					"name" : "喷泉装饰",
+					"description" : "无需介绍的自动景观。",
+					"id" : 28,
+					"requires" : [ "cityHall" ],
+					"mode" : "auto"
+				}
+			},
+			"buildingsIcons" : "courtyard/townhall/townhall.def",
+			"creatures" : [
+				[ "cupid", "graniteCupid" ],
+				[ "homunculus", "gildedHomunculus" ],
+				[ "fireNewt", "salamander" ],				
+				[ "arquebusier", "musketeer" ],
+				[ "dodo", "battleDodo", "greaterDodo" ],
+				[ "mandrake", "regalMandrake" ],
+				[ "jabberwock", "monstrousJabberwock" ]
+			],
+			"defaultTavern" : 5,
+			"guildBackground" : "TPMAGE",
+			"guildSpells" : {
+				"airShield" : 2,
+				"antiMagic" : 10,
+				"berserk" : 5,
+				"bless" : 10,
+				"bloodlust" : 5,
+				"chainLightning" : 10,
+				"clone" : 12,
+				"counterstrike" : 5,
+				"cure" : 15,
+				"disguise" : 5,
+				"dispel" : 10,
+				"disruptingRay" : 10,
+				"earthquake" : 12,
+				"fireShield" : 10,
+				"fireWall" : 8,
+				"fireball" : 11,
+				"forceField" : 8,
+				"forgetfulness" : 3,
+				"fortune" : 2,
+				"frenzy" : 5,
+				"frostRing" : 8,
+				"haste" : 5,
+				"hypnotize" : 4,
+				"iceBolt" : 10,
+				"inferno" : 8,
+				"landMine" : 30,
+				"lightningBolt" : 5,
+				"magicArrow" : 30,
+				"meteorShower" : 10,
+				"mirth" : 10,
+				"misfortune" : 4,
+				"prayer" : 8,
+				"precision" : 10,
+				"protectAir" : 3,
+				"protectEarth" : 6,
+				"protectFire" : 8,
+				"protectWater" : 3,
+				"quicksand" : 7,
+				"removeObstacle" : 8,
+				"resurrection" : 7,
+				"scuttleBoat" : 8,
+				"shield" : 6,
+				"slayer" : 4,
+				"slow" : 5,
+				"sorrow" : 3,
+				"stoneSkin" : 8,
+				"summonBoat" : 10,
+				"teleport" : 10,
+				"townPortal" : 10,
+				"viewAir" : 3,
+				"viewEarth" : 3,
+				"visions" : 2,
+				"waterWalk" : 10,
+				"weakness" : 8,
+				"implosion" : 7,
+				"earthElemental" : 10,
+				"fireElemental" : 5,
+				"waterElemental" : 3,
+				"sacrifice" : 5,
+				"fly" : 2,
+				"dimensionDoor" : 1,
+				"magicMirror" : 4,
+			},
+			"guildWindow" : "courtyard/town/mageguild",
+			"hallBackground" : "TPTHBKDG",//"courtyard/town/buildmenu",								
+			"hallSlots" : [
+				[
+					[ "villageHall", "townHall", "cityHall", "capitol" ],
+					[ "fort", "citadel", "castle" ],
+					[ "tavern" ],
+					[ "blacksmith" ]
+				],
+				[
+					[ "marketplace", "resourceSilo" ],
+					[ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ],
+					[ "special2" ],
+					[ "special3" ]
+				],
+				[ [ "horde1", "horde1Upgr" ], [ "special4" ] ,[ "dwellingAltUpLvl5" ]],
+				[
+					[ "dwellingLvl1", "dwellingUpLvl1" ],
+					[ "dwellingLvl2", "dwellingUpLvl2" ],
+					[ "dwellingLvl3", "dwellingUpLvl3" ],
+					[ "dwellingLvl4", "dwellingUpLvl4" ],
+				],
+				[
+					[ "dwellingLvl5", "dwellingUpLvl5" ], 
+					[ "dwellingLvl6", "dwellingUpLvl6", "horde2" ],
+					[ "dwellingLvl7", "dwellingUpLvl7" ]
+				]
+			],
+			"horde" : [ 0, 5 ],
+			"icons" : {
+				"fort" : {
+					"built" : {
+						"large" : "courtyard/icons/court_fort_built_ico.bmp",
+						"small" : "courtyard/icons/court_fort_built_ico_small.bmp"
+					},
+					"normal" : { "large" : "courtyard/icons/court_fort_ico", "small" : "courtyard/icons/court_fort_ico_small" }
+				},
+				"village" : {
+					"built" : {
+						"large" : "courtyard/icons/court_hall_built_ico",
+						"small" : "courtyard/icons/court_hall_built_ico_small"
+					},
+					"normal" : { "large" : "courtyard/icons/court_hall_ico", "small" : "courtyard/icons/court_hall_ico_small" }
+				}
+			},
+			"mageGuild" : 5,
+			"mapObject" : {
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"capitol" : { "animation" : "courtyard/map/ACrtCap.def" },
+					"castle" : { "animation" : "courtyard/map/ACrtCas.def" },
+					"citadel" : { "animation" : "courtyard/map/ACrtCit.def" },
+					"fort" : { "animation" : "courtyard/map/ACrtFort.def" },
+					"village" : { "animation" : "courtyard/map/ACrtVil.def" }
+				}
+			},
+			
+			
+			"musicTheme" : ["music/factions/courtyard/CourtTown"],
+			"names" : [
+				"西林利亚",//Sylina
+				"温德兰",//Windland
+				"加利亚",//Garia
+				"菲罗斯",//Firios
+				"彩门堡",
+				"石船堡",
+				"碧泉堡",//Spring Falls
+				"哈林",//Hallin
+				"雷亚尔",//Rael
+				"莱德斯顿",//Redstone
+				"赞拉都",//Xanadu
+				"新森林城",
+				"迈伦",
+				"夜星城",//Night Star
+				"科拉郡",//Coralshire
+				"火门城",
+				"阿瓦隆"
+			],
+			"primaryResource" : "sulfur",
+			
+			"moatAbility" : "castleMoat",			
+			"siege" :
+			{
+				"shooter" : "arquebusier",
+				"imagePrefix" : "courtyard/siege/CourtSiege",
+				"towerIconSmall" : "courtyard/icons/towerSmall",
+				"towerIconLarge" : "courtyard/icons/towerLarge",
+				"gate" :
+				{
+					"arch" : { "x" : 460, "y" : 210 },
+					"gate" : { "x" : 415, "y" : 270 }
+				},
+				"moat" :
+				{
+					"bank" : { "x" : 400, "y" : 80 },
+					"moat" : { "x" : 424, "y" : 60 }
+				},
+				"static" :
+				{
+					"background" : { "x" : 615, "y" : 15 },
+					"bottom" : { "x" : 508, "y" : 330 },
+					"top" : { "x" : 513, "y" : 103 }
+				},
+				"towers" :
+				{
+					"bottom" :
+					{
+						"battlement" : { "x" : 589, "y" : 475 },
+						"creature" : { "x" : 372, "y" : 297 },
+						"tower" : { "x" : 589, "y" : 475 }
+					},
+					"keep" :
+					{
+						"battlement" : { "x" : 734, "y" : 180 },
+						"creature" : { "x" : 540, "y" : -29 },
+						"tower" : { "x" : 734, "y" : 180 }
+					},
+					"top" :
+					{
+						"battlement" : { "x" : 555, "y" : 12 },
+						"creature" : { "x" : 338, "y" : -178 },
+						"tower" : { "x" : 555, "y" : 12 }
+					}
+				},
+				"walls" :
+				{
+					"bottom" : { "x" : 542, "y" : 400 },
+					"bottomMid" : { "x" : 486, "y" : 306 },
+					"upper" : { "x" : 546, "y" : 64 },
+					"upperMid" : { "x" : 479, "y" : 160 }
+				}
+			},
+			
+			
+			"structures" : {
+				
+				"townFountain" : {
+					"animation" : "courtyard/buildings/TBCrtHallFountain",
+					"hidden" : true,
+					"x" : 616,
+					"y" : 273,
+					"z" : 0
+				},				
+				"houses" : {
+					"animation" : "courtyard/buildings/TBCrtHous",
+					"x" : 14,
+					"y" : 279,
+					"z" : 6
+				},	
+				"trees" : {
+					"animation" : "courtyard/buildings/TBCrtTree",
+					"x" : 232,
+					"y" : 194,
+					"z" : 1
+				},					
+				"blacksmith" : {
+					"animation" : "courtyard/buildings/TBCrtBlksm",
+					"area" : "courtyard/town/area/TBCrtBlaksm",
+					"border" : "courtyard/town/border/TBCrtBlaksm",
+					"x" : 102,
+					"y" : 103,
+					"z" : 0
+				},
+				"capitol" : {
+					"animation" : "courtyard/buildings/TBCrtHal4",
+					"area" : "courtyard/town/area/TBCrtHal4",
+					"border" : "courtyard/town/border/TBCrtHal4",
+					"x" : 624,
+					"y" : 79,
+					"z" : -1
+				},
+				"castle" : {
+					"animation" : "courtyard/buildings/TBCrtCas3",
+					"area" : "courtyard/town/area/TBCrtCas3",
+					"border" : "courtyard/town/border/TBCrtCas3",
+					"x" : 268,
+					"y" : 5,
+					"z" : -2
+				},
+				"citadel" : {
+					"animation" : "courtyard/buildings/TBCrtCas2",
+					"area" : "courtyard/town/area/TBCrtCas2",
+					"border" : "courtyard/town/border/TBCrtCas2",
+					"x" : 268,
+					"y" : 5,
+					"z" : -2
+				},
+				"cityHall" : {
+					"animation" : "courtyard/buildings/TBCrtHal3",
+					"area" : "courtyard/town/area/TBCrtHal3",
+					"border" : "courtyard/town/border/TBCrtHal3",
+					"x" : 624,
+					"y" : 79,
+					"z" : -1
+				},
+				"dwellingLvl1" : {
+					"animation" : "courtyard/buildings/TBCrtDwUn2",
+					"area" : "courtyard/town/area/TBCrtDwUn21",
+					"border" : "courtyard/town/border/TBCrtDwUn21",
+					"x" : 0,
+					"y" : 179,
+					"z" : 4
+				},
+				"dwellingLvl2" : {
+					"animation" : "courtyard/buildings/TBCrtDwUn5",
+					"area" : "courtyard/town/area/TBCrtDwUn5",
+					"border" : "courtyard/town/border/TBCrtDwUn5",
+					"x" : 12,
+					"y" : 51,
+					"z" : 0					
+				},
+				"dwellingLvl3" : {					
+					"animation" : "courtyard/buildings/TBCrtDwUn1",
+					"area" : "courtyard/town/area/TBCrtDwUn11",
+					"border" : "courtyard/town/border/TBCrtDwUn11",
+					"x" : 485,
+					"y" : 72,
+					"z" : -3
+				},
+				"dwellingLvl4" : {
+					"animation" : "courtyard/buildings/TBCrtDwUn3",
+					"area" : "courtyard/town/area/TBCrtDwUn3",
+					"border" : "courtyard/town/border/TBCrtDwUn3",
+					"x" : 471,
+					"y" : 183,
+					"z" : 2
+				},
+				"dwellingLvl5" : {
+					"animation" : "courtyard/buildings/TBCrtDwUn6",
+					"area" : "courtyard/town/area/TBCrtDwUn6",
+					"border" : "courtyard/town/border/TBCrtDwUn6",
+					"x" : 0,
+					"y" : 212,
+					"z" : 3
+				},
+				"dwellingLvl6" : {
+					"animation" : "courtyard/buildings/TBCrtDwUn4",
+					"area" : "courtyard/town/area/TBCrtDwUn41",
+					"border" : "courtyard/town/border/TBCrtDwUn41",
+					"x" : 193,
+					"y" : 269,
+					"z" : 4					
+				},
+				"dwellingLvl7" : {
+					"animation" : "courtyard/buildings/TBCrtDwUn7",
+					"area" : "courtyard/town/area/TBCrtDwUn7",
+					"border" : "courtyard/town/border/TBCrtDwUn7",
+					"x" : 600,
+					"y" : 17,
+					"z" : -2
+				},
+				"dwellingUpLvl1" : {
+					"animation" : "courtyard/buildings/TBCrtDwUp2",
+					"area" : "courtyard/town/area/TBCrtDwUp21",
+					"border" : "courtyard/town/border/TBCrtDwUp21",
+					"x" : 0,
+					"y" : 179,
+					"z" : 4
+				},
+				"dwellingUpLvl2" : {
+					"animation" : "courtyard/buildings/TBCrtDwUp5",
+					"area" : "courtyard/town/area/TBCrtDwUp5",
+					"border" : "courtyard/town/border/TBCrtDwUp5",
+					"x" : 12,
+					"y" : 51,
+					"z" : 0
+				},
+				"dwellingUpLvl3" : {					
+					"animation" : "courtyard/buildings/TBCrtDwUp1",
+					"area" : "courtyard/town/area/TBCrtDwUp11",
+					"border" : "courtyard/town/border/TBCrtDwUp11",
+					"x" : 485,
+					"y" : 72,
+					"z" : -3
+				},
+				"dwellingUpLvl4" : {
+					"animation" : "courtyard/buildings/TBCrtDwUp3",
+					"area" : "courtyard/town/area/TBCrtDwUp3",
+					"border" : "courtyard/town/border/TBCrtDwUp3",
+					"x" : 471,
+					"y" : 183,
+					"z" : 2
+				},
+				"dwellingUpLvl5" : {
+					"animation" : "courtyard/buildings/TBCrtDwUp6",
+					"area" : "courtyard/town/area/TBCrtDwUp6",
+					"border" : "courtyard/town/border/TBCrtDwUp6",
+					"x" : 0,
+					"y" : 212,
+					"z" :3
+				},
+				"dwellingUpLvl6" : {
+					"animation" : "courtyard/buildings/TBCrtDwUp4",
+					"area" : "courtyard/town/area/TBCrtDwUp41",
+					"border" : "courtyard/town/border/TBCrtDwUp41",
+					"x" : 193,
+					"y" : 269,
+					"z" : 4					
+				},
+				"dwellingUpLvl7" : {
+					"animation" : "courtyard/buildings/TBCrtDwUp7",
+					"area" : "courtyard/town/area/TBCrtDwUp7",
+					"border" : "courtyard/town/border/TBCrtDwUp7",
+					"x" : 600,
+					"y" : 17,
+					"z" : -2
+				},
+				"fort" : {
+					"animation" : "courtyard/buildings/TBCrtCas1",
+					"area" : "courtyard/town/area/TBCrtCas1",
+					"border" : "courtyard/town/border/TBCrtCas1",
+					"x" : 268,
+					"y" : 5,
+					"z" : -2
+				},
+				"grail" : {
+					"animation" : "courtyard/buildings/TBCrtGrail",
+					"area" : "courtyard/town/area/TBCrtGrail",
+					"border" : "courtyard/town/border/TBCrtGrail",
+					"x" : 550,
+					"y" : 0,
+					"z" : -6
+				},
+
+				"horde1" : {
+					"animation" : "courtyard/buildings/TBCrtHrUn2",
+					"area" : "courtyard/town/area/TBCrtHrUn21",
+					"border" : "courtyard/town/border/TBCrtHrUn21",
+					"hidden" : true,
+					"x" : 0,
+					"y" : 179,
+					"z" : 4
+				},
+				"horde1Upgr" : {
+					"animation" : "courtyard/buildings/TBCrtHrUp2",
+					"area" : "courtyard/town/area/TBCrtHrUp21",
+					"border" : "courtyard/town/border/TBCrtHrUp21",
+					"builds" : "horde1",
+					"hidden" : true,
+					"x" : 0,
+					"y" : 179,
+					"z" : 4
+				},
+				"horde2" : {
+					"animation" : "courtyard/buildings/TBCrtDwHr4",
+					"area" : "courtyard/town/area/TBCrtDwH41",
+					"border" : "courtyard/town/border/TBCrtHr61",
+					"hidden" : true,
+					"x" : 193,
+					"y" : 269,
+					"z" : 4
+				},
+				"dwellingAltUpLvl5" : {
+					"animation" : "courtyard/buildings/TBCrtDwUpA6",
+					"area" : "courtyard/town/area/TBCrtDwUpA6",
+					"border" : "courtyard/town/border/TBCrtDwUpA6",
+					"hidden" : true,
+					"x" : 0,
+					"y" : 212,
+					"z" :3
+				},
+				"mageGuild1" : {
+					"animation" : "courtyard/buildings/TBCrtMagGuild1",
+					"area" : "courtyard/town/area/TBCrtMagGuild1",
+					"border" : "courtyard/town/border/TBCrtMagGuild1",
+					"x" : 208,
+					"y" : 28,
+					"z" : -4
+
+				},
+				"mageGuild2" : {
+					"animation" : "courtyard/buildings/TBCrtMagGuild2",
+					"area" : "courtyard/town/area/TBCrtMagGuild2",
+					"border" : "courtyard/town/border/TBCrtMagGuild2",
+					"x" : 208,
+					"y" : 28,
+					"z" : -4
+
+				},
+				"mageGuild3" : {
+					"animation" : "courtyard/buildings/TBCrtMagGuild3",
+					"area" : "courtyard/town/area/TBCrtMagGuild3",
+					"border" : "courtyard/town/border/TBCrtMagGuild3",
+					"x" : 208,
+					"y" : 28,
+					"z" : -4
+				},
+				"mageGuild4" : {
+					"animation" : "courtyard/buildings/TBCrtMagGuild4",
+					"area" : "courtyard/town/area/TBCrtMagGuild4",
+					"border" : "courtyard/town/border/TBCrtMagGuild4",
+					"x" : 208,
+					"y" : 28,
+					"z" : -4
+				},
+				"mageGuild5" : {
+					"animation" : "courtyard/buildings/TBCrtMagGuild5",
+					"area" : "courtyard/town/area/TBCrtMagGuild5",
+					"border" : "courtyard/town/border/TBCrtMagGuild5",
+					"x" : 208,
+					"y" : 28,
+					"z" : -4
+				},
+				"marketplace" : {
+					"animation" : "courtyard/buildings/TBCrtMarkt",
+					"area" : "courtyard/town/area/TBCrtMarkt",
+					"border" : "courtyard/town/border/TBCrtMarkt",
+					"x" : 210,
+					"y" : 202,
+					"z" : 0
+				},
+				"resourceSilo" : {
+					"animation" : "courtyard/buildings/TBCrtSilo",
+					"area" : "courtyard/town/area/TBCrtSilo",
+					"border" : "courtyard/town/border/TBCrtSilo",
+					"x" : 179,
+					"y" : 199,
+					"z" : -1
+				},
+
+
+				"special2" : {
+					"animation" : "courtyard/buildings/TBCrtSpec1",
+					"area" : "courtyard/town/area/TBCrtSpec1",
+					"border" : "courtyard/town/border/TBCrtSpec1",
+					"x" : 283,
+					"y" : 319,
+					"z" : 5
+				},
+				"special3" : {
+					"animation" : "courtyard/buildings/TBCrtSpec2",
+					"area" : "courtyard/town/area/TBCrtSpec2",
+					"border" : "courtyard/town/border/TBCrtSpec2",
+					"x" : 148,
+					"y" : 21,
+					"z" : -1
+				},
+				"special4" : {
+					"animation" : "courtyard/buildings/TBCrtSpec3",
+					"area" : "courtyard/town/area/TBCrtSpec3",
+					"border" : "courtyard/town/border/TBCrtSpec3",
+					"x" : 310,
+					"y" : 211,
+					"z" : 0
+				},
+				"tavern" : {
+					"animation" : "courtyard/buildings/TBCrtTvrn",
+					"area" : "courtyard/town/area/TBCrtTvrn",
+					"border" : "courtyard/town/border/TBCrtTvrn",
+					"x" : 654,
+					"y" : 286,
+					"z" : 2
+				},
+				"townHall" : {
+					"animation" : "courtyard/buildings/TBCrtHal2",
+					"area" : "courtyard/town/area/TBCrtHal2",
+					"border" : "courtyard/town/border/TBCrtHal2",
+					"x" : 624,
+					"y" : 79,
+					"z" : -1
+				},
+				"villageHall" : {
+					"animation" : "courtyard/buildings/TBCrtHal1",
+					"area" : "courtyard/town/area/TBCrtHal1",
+					"border" : "courtyard/town/border/TBCrtHal1",
+					"x" : 624,
+					"y" : 79,
+					"z" : -1
+				}
+			},
+			"tavernVideo" : "tvrncrt.bik",
+			"townBackground" : "courtyard/town/background"
+		}
+	}
+}

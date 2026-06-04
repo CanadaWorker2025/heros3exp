@@ -1,0 +1,126 @@
+{
+  "sorrowphanton": {
+    "name": {
+      "plural": "怨影",
+      "singular": "怨影"
+    },
+    "advMapAmount": {
+ "max" : 16,
+ "min" : 10
+    },
+    "faction": "asylum",
+    "aiValue": 619,
+    "attack": 12,
+    "cost": {
+      "gold": 380
+    },
+    "damage": {
+ "max" : 10,
+ "min" : 6
+    },
+    "defense": 11,
+    "fightValue": 584,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST4U.def",
+      "map": "asylum/map/creatures/AVWC184.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS184Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL184Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.50,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 4,
+    "horde": 2,
+    "hitPoints": 30,
+    "level": 4,
+    "sound": {
+      "attack": "asylum/CPS4ATTK.wav",
+      "defend": "asylum/CPS4DFND.wav",
+      "killed": "asylum/CPS4KILL.wav",
+      "move": "asylum/CPS4MOVE.wav",
+      "wince": "asylum/CPS4WNCE.wav"
+    },
+    "speed": 12,
+    "abilities": {
+      "canFly": {
+        "type": "FLYING",
+		"icon" : "NewOldSpells/e_fly3.png"
+      },
+      "undead": {
+        "type": "UNDEAD"
+      },
+      "caster": {
+        "type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.sorrow",
+				"val" : 100,
+				"addInfo": 1,
+				"icon" : "NewOldSpells/sorrow1.png"
+      }
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : "spell.weakness",
+					"addInfo" : [3, 2]
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]	
+			},
+			{
+				"bonus" :
+				{
+					
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : "spell.misfortune", //misfortune
+					"addInfo" : [3, 2]
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 6, 12, 18, 24, 30, 36, 42, 48, 54, 60 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+  }	
+	}

@@ -1,0 +1,182 @@
+{
+	"name" : "New Monsters Pack",
+	"author" : "Various",
+	"version" : "1.4.9",
+	"contact" : "https://vcmi.eu/",
+	"modType" : "Creatures",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"changelog" : {
+		"1.4.9" : [
+			"Fixes for console warnings (may break saves and maps)."
+		],
+		"1.4.8" : [
+			"Additional icons for creatures abilities by Kurek",
+			"Some fixes in creature abilities"
+		],
+		"1.4.7" : [
+			"Additional icons for creatures abilities by Kurek for Axolotl creatures submod"
+		],
+		"1.4.6" : [
+			"Some unwanted creature ability icons were hidden"
+		],
+		"1.4.5" : [
+			"Fix for dwelling masks (with few exceptions in Extra Creature Pack submod)"
+		],
+		"1.4.4" : [
+			"Fix for Lecturer/Scholar icons"
+		],
+		"1.4.3" : [
+			"New Kurek creatures: Spectral Dragon, Squire, Man at arms, Scholar, Lecturer",
+			"New Kurek Creatures: Custom icons for new creature abilities",
+			"Invisible Man submod: custom creature icons by Kurek"
+		],
+		"1.4.2" : [
+			"Update for vcmi-1.7 format"
+		],
+		"1.4.1" : [
+			"Fixed guards layout in Royal Treasury (Man at Arms in Lord Hawk Creatures Pack)"
+		],
+		"1.4.0" : [
+			"Updated polish translation (Kurek creatures)"
+		],
+		"1.3.9" : [
+			"Minor fix for Lurkers' bank reward chances in Kurek creatures submod"
+		],
+		"1.3.8" : [
+			"New graphics for Wasps buildings in Kurek creatures submod"
+		],
+		"1.3.7" : [
+			"Updated polish translation",
+			"Changed Sphinx name into Royal Sphinx"
+		],
+		"1.3.6" : [
+			"Missing Dungeon content"
+		],
+		"1.3.5" : [
+			"MAY BREAK SAVES: Added neutral creatures, dwellings, bank and spell. Lurkers, Terrible Eyes and Agar's Pets to kurek-creatures submod"
+		],
+		"1.3.4" : [
+			"Updated Czech translation with Wasp addon."
+		],
+		"1.3.3" : [
+			"Fixed some specialty code in tok heroes submod."
+		],
+		"1.3.2" : [
+			"Added Neutral creatures, dwelling, bank, artifacts and spells: Wasps addon."
+		],
+		"1.3.1" : [
+			"Fixed dependiencies in tok extras submod"
+		],
+		"1.3.0" : [
+			"Added Chimera creature into tok submod",
+			"Cleaned some old heroes from tok submod"
+		],
+		"1.2.9" : [
+			"Fix for new dwellings"
+		],
+		"1.2.8" : [
+			"Changed dark-dwarf-at-arms to lord-hawk-creatures-pack",
+			"Added Derodyme, Squire and their dwellings including banks",
+			"Added new spell Stun"
+		],
+		"1.2.7" : [
+			"Fix for Quark Palace"
+		],
+		"1.2.6" : [
+			"Polish translation fixed. Updated polish translation for new content by FallainBlack and Kurek (Kurek creatures pack), fixed wrong description for endurance skill (tok-extras)"
+		],
+		"1.2.5" : [
+			"Kurek creatures pack update"
+		],
+		"1.2.4" : [
+			"Added Ettin creature in Fiorin's tok submod"
+		],
+		"1.2.3" : [
+			"Fixed bugs in Sphinx, Baba-Yaga and Will-o-wisp configs"
+		],
+		"1.2.2" : [
+			"Added stack experience bonus system by LeoAllenHan"
+		],
+		"1.2.1" : [
+			"Updated polish translation"
+		],
+		"1.1.9" : [
+			"Unlocked new content for Pavilion - New creatures, dwellings, heroes and class Pharaon",
+			"Fixed Murky Chasm typo",
+			"Unlocked ToK heroes submods",
+			"Updated Czech translation"
+		],
+		"1.1.8" : [
+			"Fix for Marine Serail bank",
+			"Changed wendigo name",
+			"Loxodon is now double wide creature"
+		],
+		"1.1.7" : [
+			"Fixed problem with broken map generation"
+		],
+		"1.1.5" : [
+			"Vendigo creature unlocked",
+			"Fixed console warnings"
+		],
+		"1.1.4" : [
+			"Mummy updated"
+		],
+		"1.1.3" : [
+			"Partial polish translation by FallainBlack"
+		],
+		"1.1.2" : [
+			"Remove translation files from submods",
+			"Correction of broken axolotl-creatures-pack folder name"
+		],
+		"1.1.1" : [
+			"Fixed existing translations to new mod directories"
+		],
+		"1.1.0" : [
+			"Added axolotl-creatures-pack and ToK submods"
+		],
+		"1.0.1" : [
+			"Czech translation by George King"
+		],
+		"1.0.0" : [
+			"Initial release"
+		]
+	},
+	"czech" : {
+		"name" : "Balíček nových jednotek",
+		"description" : "Balíček minimodů obsahující nové, převážně neutrální jednotky.",
+		"translations" : [
+			"translation/new-monsters-pack/czech.json"
+		]
+	},
+	"russian" : {
+		"name" : "Новый пак монстров",
+		"description" : "Пакет минимодов содержит новых, в основном нейтральных существ. ПОЖАЛУЙСТА, УДАЛИТЕ ДУБЛИРОВАННЫЕ МОДЫ ИЗ ЛАУНЧЕРА, ЧТОБЫ ИЗБЕЖАТЬ ОШИБОК.",
+		"translations" : [
+			"translation/new-monsters-pack/russian.json"
+		]
+	},
+	"chinese" : {
+		"name" : "新生物包",
+		"description" : "这个小模组包含有许多新增的中立生物。请卸载启动器中的重复模组以避免出现BUG。",
+		"translations" : [
+			"translation/new-monsters-pack/chinese.json"
+		]
+	},
+	"german" : {
+		"name" : "New monsters pack",
+		"description" : "Pack of minimods contains new, mostly neutral creatures. PLEASE UNISTALL DUPLICATE MODS FROM LAUNCHER TO AVOID BUGS.",
+		"translations" : [
+			"translation/new-monsters-pack/german.json"
+		]
+	},
+	"polish" : {
+		"name" : "Nowe stworzenia",
+		"description" : "Paczka małych modów dodających nowe stworzenia. NALEŻY ODINSTALOWAĆ ZDUPLIKOWANE MODY BY UNIKNĄĆ BŁEDÓW",
+		"translations" : [
+			"translation/new-monsters-pack/polish.json"
+		]
+	},
+	"description" : "<h1 style='color:#002366; font-size:28px; font-weight:bold;'>New Monsters Pack</h1><p style='font-size:16px; color:#333333; font-style:italic;'> Explore the expanded horizons of the <i>New Monsters Pack</i>, an addition to <i>Heroes of Might and Magic III</i> that enriches gameplay with powerful new creatures, abilities, and heroes. </p><p style='font-size:18px; color:#002366; font-weight:bold;'>An Array of Powerful Units</p><p style='font-size:16px; color:#333333;'> Unleash a lineup of formidable units, including the corrosive <span style='color:#002366; font-weight:bold;'>Acidic Roper</span>, the stealthy <span style='color:#002366; font-weight:bold;'>Dragonfish</span>, and the mighty <span style='color:#002366; font-weight:bold;'>Forest Dragon</span> and <span style='color:#002366; font-weight:bold;'>T-Rex</span>. Each creature brings unique skills and enhances the strategic depth of battles. </p><p style='font-size:18px; color:#002366; font-weight:bold;'>New Heroes and Enhanced Abilities</p><p style='font-size:16px; color:#333333;'> Meet the latest heroes to join the ranks, such as <span style='color:#002366; font-weight:bold;'>Cintia</span>, a master of interference, <span style='color:#002366; font-weight:bold;'>Marlon</span>, who enhances sorcery, and <span style='color:#002366; font-weight:bold;'>Boudicca</span>, known for preventing enemy retreats. These heroes, with their special abilities, provide new strategic options for the battlefield. </p><p style='font-size:18px; color:#002366; font-weight:bold;'>Unique Spells and Skills</p><p style='font-size:16px; color:#333333;'> Harness the powers of spells like <span style='color:#002366; font-weight:bold;'>Magic Carpet</span> for tactical mobility, <span style='color:#002366; font-weight:bold;'>Red Paralysis</span> to immobilize foes, and <span style='color:#002366; font-weight:bold;'>Fame</span>, which boosts creature growth rates. These additions empower players with new ways to dominate the battlefield. </p><p style='color:#333333; font-size:15px;'> Created to expand and deepen the <i>Heroes of Might and Magic III</i> experience, the <i>New Monsters Pack</i> offers rich content for strategists and adventurers alike. Embark on quests with these new units and spells, and conquer the battlefield in style. </p>"
+}

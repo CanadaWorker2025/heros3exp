@@ -1,0 +1,22 @@
+{
+	"abandonedBoat" : {
+		"name": "弃船",
+		"handler": "static",
+		"types" : {
+			"abandonedBoat" : {
+				"templates" : {
+					"crates08" : {
+						"animation" : "hota/crates/crates08",
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "sand" ]
+					},
+					"crates09" : { 
+						"animation" : "hota/crates/crates09",
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "sand" ]
+					}
+				}
+			}
+		}
+	}
+}

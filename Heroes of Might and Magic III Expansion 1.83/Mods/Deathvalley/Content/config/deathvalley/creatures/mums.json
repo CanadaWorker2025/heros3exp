@@ -1,0 +1,118 @@
+{
+	"mums": {
+		"name" : {
+			"plural" : "腐尸怪", //Embalmed
+			"singular" : "腐尸怪"
+		},
+		"faction" : "deathvalley",
+		"level" : 3,
+		"upgrades": ["mums2"],
+		"cost" : {
+			"gold" : 200
+		},
+		"speed" : 5,
+		"hitPoints" : 25,
+		"attack" : 7,
+		"defense" : 7,
+		"damage" : {
+			 "max" : 5,
+			 "min" : 3
+		},
+		"doubleWide" : false,
+		"hasDoubleWeek" : true,
+		"growth" : 7,
+		"aiValue" : 316,
+		"fightValue" : 279,
+		"advMapAmount" : {
+			 "max" : 25,
+			 "min" : 12
+		},
+		"abilities":
+		{
+			"undead" :
+			{
+				"type" : "UNDEAD"
+			}	
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.curse",
+					"addInfo" : [1,0] 
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : "spellSchool.any"
+				},
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		],
+		"graphics" : {
+			"animation" : "deathvalley/battle/creatures/mums2.def",
+			"map" : "deathvalley/map/mums2mini.def",
+			"iconSmall" : "deathvalley/iconsSmall/m145sma.bmp",
+			"iconLarge" : "deathvalley/iconsBig/m145big.bmp",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
+			"timeBetweenFidgets" : 1
+		},
+		"sound" : {
+			"attack": "MUMYATTK.wav",
+			"defend": "MUMYDFND.wav",
+			"killed": "MUMYKILL.wav",
+			"move": "MUMYMOVE.wav",
+			"wince": "MUMYWNCE.wav"
+		}
+	}
+}

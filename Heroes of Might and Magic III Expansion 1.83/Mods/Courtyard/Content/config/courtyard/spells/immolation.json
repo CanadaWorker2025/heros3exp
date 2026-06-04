@@ -1,0 +1,239 @@
+{
+	"immolationCurse":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "献祭",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 3,
+		"power": 10,
+		
+		"defaultGainChance": 5, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName":"courtyard/spells/Immolation/Immolation.def", "verticalPosition":"bottom"}]
+		},
+ 
+		"flags" : { "damage": true, "negative" : true },
+
+ 
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/Immolation/Immolation_book1",
+			"iconEffect": "courtyard/spells/Immolation/Immolation_effect1",
+			"iconScroll": "courtyard/spells/Immolation/Immolation_scroll1",
+			"iconScenarioBonus": "courtyard/spells/Immolation/Immolation_bonus1",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "FIREWALL"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 10,
+				"range": "0",
+				"power": 7,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{献祭}\n\n将选定敌方部队献祭给火精灵，被献祭的部队每回合受到0.5倍数量+20的伤害。",
+				"power": 0.1,
+	 
+				"battleEffects" : {
+					"curse" : {"type":"core:timed", "cumulative": false, "bonus":  {
+					"harm" :
+					{
+						"type" : "ENCHANTED",
+						"subtype" : "spell.immolationDamage",
+						"val" : 0,
+						"duration": "N_TURNS",
+					},
+					"power" :
+					{
+					"type" : "CREATURE_SPELL_POWER",
+					//"subtype" : "spell.immolationDamage",
+					"val" : 5,
+					"duration": "N_TURNS",
+					},
+					}
+					
+					}
+				},
+			},
+			"basic":
+			{
+								"power": 0.2,
+				"description": "{初级献祭}\n\n将选定敌方部队献祭给火精灵，被献祭的部队每回合受到0.7倍数量+25的伤害。",
+				"battleEffects" : {
+					"curse" : {"type":"core:timed", "cumulative": false, "bonus":  {
+					"harm" :
+					{
+						"type" : "ENCHANTED",
+						"subtype" : "spell.immolationDamage",
+						"val" : 1,
+						"duration": "N_TURNS",
+					},
+					"power" :
+					{
+					"type" : "CREATURE_SPELL_POWER",
+					//"subtype" : "spell.immolationDamage",
+					"val" : 7,
+					"duration": "N_TURNS",					
+					},
+					}
+					
+					}
+				},
+				
+			},
+			"advanced":
+			{					"power": 0.25,
+				"description": "{中级献祭}\n\n将选定敌方部队献祭给火精灵，被献祭的部队每回合受到同数量+30的伤害。",
+				"battleEffects" : {
+					"curse" : {"type":"core:timed", "cumulative": false, "bonus":  {
+					"harm" :
+					{
+						"type" : "ENCHANTED",
+						"subtype" : "spell.immolationDamage",
+						"val" : 2,
+						"duration": "N_TURNS",
+					},
+					"power" :
+					{
+					"type" : "CREATURE_SPELL_POWER",
+					//"subtype" : "spell.immolationDamage",
+					"val" : 10,
+					"duration": "N_TURNS",
+					},
+					}
+					
+					}
+				},	
+			},
+			"expert":
+			{					"power": 0.5,
+				"description": "{高级献祭}\n\n将选定敌方部队献祭给火精灵，被献祭的部队每回合受到1.2倍数量+35的伤害。",
+				"battleEffects" : {
+					"curse" : {"type":"core:timed", "cumulative": false, "bonus":  {
+					"harm" :
+					{
+						"type" : "ENCHANTED",
+						"subtype" : "spell.immolationDamage",
+						"val" : 3,
+						"duration": "N_TURNS",
+					},
+					"power" :
+					{
+					"type" : "CREATURE_SPELL_POWER",
+					//"subtype" : "spell.immolationDamage",
+					"val" : 12,
+					"duration": "N_TURNS",
+					},
+					}
+					
+					}
+				},
+			}
+		}
+	},
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+		"immolationDamage" : {
+		"type" : "ability",
+		"targetType" : "CREATURE",
+		"name" : "献祭",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 3,
+		"power" : 10, //this times spell power
+
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+
+		"animation" : {
+			"affect" : [
+				{
+					"defName" : "courtyard/spells/Immolation/Immolation.def",
+					"verticalPosition" : "bottom"
+				}
+			]
+		},
+
+		"flags" : {
+			"damage" : true,
+			"negative" : true,
+			"special" : true
+		},
+
+		"graphics" : {
+			"iconBook" : "courtyard/spells/Immolation/Immolation_book1",
+			"iconEffect" : "courtyard/spells/Immolation/Immolation_effect1",
+			"iconScroll" : "courtyard/spells/Immolation/Immolation_scroll1",
+			"iconScenarioBonus" : "courtyard/spells/Immolation/Immolation_bonus1"
+		},
+
+		"sounds" : {
+			"cast" : "FIREBLST"
+		},
+
+		"levels" : {
+			"base" : {
+				"description" : "IMMOLATION DAMAGE",
+				"cost" : 5,
+				"range" : "0",
+				"power" : 20, //base dmg
+				//				"aiValue": 70,
+				"targetModifier" : {
+					"smart" : true
+				},
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+						//						"val": 1,
+						//						"valueType": 	"INDEPENDENT_MIN"
+					}
+				}
+			},
+			"none" : {},
+			"basic" : {
+				"power" : 25
+			},
+			"advanced" : {
+				"power" : 30
+			},
+			"expert" : {
+				"power" : 35
+			}
+		}
+	}
+}

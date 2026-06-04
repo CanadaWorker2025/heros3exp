@@ -1,0 +1,62 @@
+{
+	"blackBalfour" : {
+		"class" : "navigator",
+		"female": false,
+		"special":true,
+		"images" : {
+			"large" : "hota/cove/heroes/balfour/icons/HPL219.png",
+			"small" : "hota/cove/heroes/balfour/icons/HPS219.png",
+			"specialtyLarge" : "hota/cove/heroes/balfour/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/balfour/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "offence",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"forgetfulness" : {
+					"type" : "SPELL_DURATION",
+					"subtype" : "spell.forgetfulness",
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 8, 2 ]
+					}
+				}
+			}
+		},
+		"spellbook" : [ "forgetfulness" ],
+		"texts": {
+			"name": "巴尔弗",
+			"biography": "布莱克-巴尔弗是恶名昭著的海盗，他生性残忍，但却唯独喜爱宝物，只是对于鉴赏宝物的知识一窍不通。虽然粗俗可恨，但他确实是个强大的海盗头子。",
+			"specialty": {
+				"name" : "失忆大法",
+				"description" : "使用失忆大法魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip": "Spell Bonus: Forgetfulness"
+			}
+		}
+	}
+}

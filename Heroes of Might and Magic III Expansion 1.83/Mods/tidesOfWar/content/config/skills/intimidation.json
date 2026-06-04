@@ -1,0 +1,58 @@
+{
+	"intimidation" : {
+		"name" : "恐吓术",
+//		"defaultGainChance" : 4,
+		"specialty" : [],
+		"gainChance" : {
+			"might" : 6,
+			"magic" : 4 
+		},
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "MORALE",
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"val":-1
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small" : "skills/intimidation/intimidationSmallBasic",
+				"medium" : "skills/intimidation/intimidationMediumBasic",
+				"large" : "skills/intimidation/intimidationLargeBasic",
+				"scenarioBonus" : "skills/intimidation/senarioExtra1.png"
+			},
+			"description" : "{初级恐吓术}\n\n降低敌方1点士气。",
+			"effects" : {
+				"main" : { "val" : -1 }
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small" : "skills/intimidation/intimidationSmallAdvanced",
+				"medium" : "skills/intimidation/intimidationMediumAdvanced",
+				"large" : "skills/intimidation/intimidationLargeAdvanced",
+				"scenarioBonus" : "skills/intimidation/senarioExtra2.png"
+			},
+			"description" : "{中级恐吓术}\n\n降低敌方2点士气。",
+			"effects" : {
+				"main" : { "val" : -2 }
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small" : "skills/intimidation/intimidationSmallExpert",
+				"medium" : "skills/intimidation/intimidationMediumExpert",
+				"large" : "skills/intimidation/intimidationLargeExpert",
+				"scenarioBonus" : "skills/intimidation/senarioExtra3.png"
+			},
+			"description" : "{高级恐吓术}\n\n降低敌方3点士气。",
+			"effects" : {
+				"main" : { "val" : -3 }
+			}
+		}
+	}
+}

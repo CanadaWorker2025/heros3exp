@@ -1,0 +1,236 @@
+{
+"core:sign" : 
+	{
+		"types" : {
+			"object" : {
+				"templates" : {
+					"dunes" : {
+						"animation" : "dunes objectFunc/sign", 
+						"visitableFrom" :  [ "---", "-+-", "+++" ], 
+						"mask" : [ "A"],
+						"allowedTerrains":["dunes"] 							
+					}
+				}
+			}
+		}
+	},
+"core:crypt" : 
+	{
+		"types" : {
+			"crypt" : {
+				"templates" : {
+					"dunes" : {
+						"animation" : "dunes objectFunc/crypt", 
+						"visitableFrom" :  [ "---", "-+-", "+++" ], 
+						"mask" : [ "VVV", "BAB"],
+						"allowedTerrains":["dunes"] 							
+					}
+				}
+			}
+		}
+	},
+	"schoolOfFlight" : {
+		"handler":"configurable",
+		"name" : "航空学院",
+		"types" : {
+			"schoolOfFlight" : {
+				"name": "航空学院",
+				"rmg" : {
+					"value"	: 7000,	//10000 20
+					"rarity" : 80,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["objects/schoolOfFlightVisit"],
+					"ambient": ["objects/schoolOfFlight"]
+				},
+				"canRefuse": true,
+				"onVisitedMessage": "{航空学院}\r\n\r\n通过这些巫师的法术，你的部队已经获得一天的飞行能力，好好享受飞一般的感觉吧。",
+				"onEmptyMessage" : "{航空学院}\r\n\r\n在这座奇怪的建筑里住着几个正在学习飞行能力的巫师。他们问可以在你和你的军队身上练习以获得一些金币吗？你答应了，可是你没有足够的钱。",
+				"visitMode" : "once",
+				"resetParameters" : {
+					"period" : 1,
+					"visitors" : true
+				},
+				"rewards":
+				[
+					{
+						"limiter":
+						{
+							"resources" : {"gold" : 1500}
+						},
+						"message": "{航空学院}\r\n\r\n在这座奇怪的建筑里住着几个正在学习飞行能力的巫师。 他们问可以在你和你的军队身上练习以获得一些金币吗？",			
+							"spellCast" : {
+							"spell" : "fly",
+							"schoolLevel": 3
+						},
+						"resources": {"gold" : -1500},
+					}
+				],
+				"templates" : {
+					"avxtwngt" : { "animation" : "dunes objectFunc/schoolOfFlight", 
+						"mask" : [ "VVVV", "VBBB", "VABB" ], 
+						"allowedTerrains": [
+							"dunes"
+						],
+						"visitableFrom" : [ "---", "-+-", "+++" ]
+					}
+				}
+			}
+		}
+	},
+	"eyeOnTheWorld" : {
+		"handler":"configurable",
+		"name" : "魔法观测台",
+		"types" : {
+			"eyeTower" : {
+				"name": "魔法观测台",
+				"rmg" : {
+					"value"	: 2300,	//10000 20
+					"rarity" : 200,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["objects/eyeTowerVisit"],
+					"ambient": ["objects/eyeTower"]
+				},
+				"rewards" : [
+					{
+						"message" : "{魔法观测台}\r\n\r\n一个奇怪的家伙给了你一瓶药水，据说这样能让你看得更远。不过药效只有3天。",
+						"bonuses" : [ { "type" : "SIGHT_RADIUS",  "val" : 3, "duration" : "N_DAYS", "turns" : 3} ],
+					}
+				],
+				"onVisitedMessage": "{魔法观测台}\r\n\r\n你已经喝下药水，不要在此逗留了。",
+				"visitMode" : "once",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"templates" : {
+					"avxtwngt" : { 
+							"animation" : "dunes objectFunc/towerOfEye",
+							"mask" : [ "VVV","VVV","VVA" ], 
+							"visitableFrom" : [ "---", "+++", "+++" ],
+							"allowedTerrains": [ "dunes" ]
+					}
+				}
+			}
+		}
+	},
+"core:magicWell" : {
+		"types" : {
+			"magicWell" : {			
+				"templates" : {	 			
+					"dunes_well" : { "animation" : "dunes objectFunc/dunes_well",
+						"mask" : [ "VV", "VA" ],
+						"allowedTerrains": [
+							"dunes"
+						],
+						"visitableFrom" : [ "---", "+-+", "+++" ]
+					}
+				}
+			}
+		}
+	},
+	"vase"	: {
+		"name" : "花瓶",
+		"handler": "configurable",
+		"types" : {
+			"vase" : {
+				"name":"花瓶",
+				"rmg" : {
+					"value"		: 800,
+					"rarity"	: 200
+				},
+				"sounds" : {
+					"visit" : ["objects/vaseVisit"],
+					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
+				},
+				"rewards" : [
+					{
+						"message": "{花瓶}\r\n\r\n你从打碎的花瓶中找到一些物资。",
+						"removeObject" : true,
+						"resources" : [
+							{
+								"anyOf" : [ "sulfur", "gems", "crystal" ],
+								"min" : 3,
+								"max" : 6
+							},
+							{
+								"type" : "gold",
+								"amount" : [ 100, 200, 300 ]
+							}
+						]
+					}
+				],
+	
+				"selectMode": "selectRandom",
+				"templates" : {
+					"AVAbrrlw" :
+					{
+						"animation" : "dunes objectFunc/vase",
+						"visitableFrom" : [ "+++", "+++", "+++" ],
+						"mask" : [ "A"],
+						"allowedTerrains": [ "dunes"]
+					}
+				}
+			}
+		}
+	},		
+"core:crater": {
+		"types": {
+			"object": {
+				"templates": {
+
+					"duneCrater01": {
+						"animation": "dunes objects/hole02",
+						"mask": ["BB"],
+						"allowedTerrains": [
+							"dunes"
+						]
+					},
+
+					"duneCrater02": {
+						"animation": "dunes objects/hole01",
+						"mask": ["BBB"],
+						"allowedTerrains": [
+							"dunes"
+						]
+					}
+				}
+			}
+		}
+	},
+"dunesBush" : {
+	"name" : "灌木丛",
+	"handler":"static",
+		"types" : {
+			"object" : {			
+				"templates" : {	
+					"duneBush01": {
+						"animation": "dunes objects/bush01",
+						"mask": ["BB", "BB"],
+						"allowedTerrains": [
+							"dunes"
+						]
+					},
+					"duneBush02": {
+						"animation": "dunes objects/bush02",
+						"mask": ["BB", "BB"],
+						"allowedTerrains": [
+							"dunes"
+						]
+					},
+					"duneBush03": {
+						"animation": "dunes objects/bush03",
+						"mask": ["BB", "BB"],
+						"allowedTerrains": [
+							"dunes"
+						]
+					}
+					
+				}
+			}	
+		}
+	}
+}

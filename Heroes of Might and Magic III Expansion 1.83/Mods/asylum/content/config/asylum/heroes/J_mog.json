@@ -1,0 +1,75 @@
+{
+	"j_mog" :
+	{
+    "class": "mentalist",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "摩格",
+			"biography" : "摩格曾经是一位巫师。但他认为研究人的思想更甚于研究魔法。他认为一般人的心智是最脆弱的，用心灵的力量可以轻易改变。对于精神控制，他花了很多年进行研究。希望有朝一日可以让所有人都屈服在自己的思想之下，那样的世界也许就更单纯，更有存在的意义。",
+			"specialty" :
+			{
+				"description" : "在智力技能上每级得到5%的额外奖励。",
+				"tooltip" : "Secondary skill bonus: Intelligence",
+				"name" : "智力"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/mog/UN32T205.bmp",
+			"specialtyLarge" : "asylum/heroes/mog/UN44T205.bmp",
+			"large" : "asylum/heroes/mog/HPL001MN.bmp",
+			"small" : "asylum/heroes/mog/HPS001MN.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"curse"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		
+"specialty" : {
+			"bonuses" : {
+				"intelligence" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_PER_KNOWLEDGE_PERCENTAGE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,63 @@
+{
+  "mdtThyroc" :
+  {
+    "class" : "beastmaster",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "提洛克",
+      "biography" : "并不是所有人都对塔洛斯克国王之死表示哀悼。提洛克的老战友维斯特亲王上台后，为他在泰塔利亚军队的晋升提供了帮助。",
+      "specialty" :
+      {
+        "description" : "达到7级提升九头怪和终极九头怪的攻击力和防御力。",
+        "tooltip" : "Creature bonus: Hydras",
+        "name" : "九头怪"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/fortress/thyroc_spec-small.png",
+      "specialtyLarge" : "heroes/fortress/thyroc_spec-large.png",
+      "large" : "heroes/fortress/thyroc_portrait-large.png",
+      "small" : "heroes/fortress/thyroc_portrait-small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "gnoll",
+        "max" : 20,
+        "min" : 10
+      },
+      {
+        "creature" : "lizardman",
+        "max" : 7,
+        "min" : 4
+      },
+      {
+        "creature" : "serpentFly",
+        "max" : 4,
+        "min" : 2
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "tactics"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "armorer"
+      }
+    ],
+    
+	"specialty" : {
+		"creature" : "hydra"
+	}
+  }
+}

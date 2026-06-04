@@ -1,0 +1,158 @@
+{
+	"mdtAbyssalTriton":
+	{
+		"name" :
+		{
+			"plural" : "深海卫兵",
+			"singular" : "深海卫兵"
+		},
+		"faction" : "conflux",		
+		"advMapAmount" :
+		{
+			 "min" : 12,
+			 "max" : 20
+		},
+		"level" : 3, 
+		"attack" : 10,
+		"defense" : 7,
+		"damage" :
+		{
+			 "min" : 4,
+			 "max" : 5
+		},
+		"growth" : 6, 
+		"hitPoints" : 25,
+		"speed" : 8, 
+		"fightValue" : 347,
+		"aiValue" : 354,
+		"cost" :
+		{
+			"gold" : 230 
+		},
+		"hasDoubleWeek": true,
+		"doubleWide" : false,
+		"graphics" :
+		{
+			"animation" : "creatures/conflux/battle/abyssalTriton.def",
+			"map" : "creatures/conflux/map/mapAbyssalTriton.def",
+			"iconSmall" : "creatures/conflux/iconssmall/abyssalTritonSmall.png",
+			"iconLarge" : "creatures/conflux/iconsbig/abyssalTritonBig.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.9,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "creatures/conflux/triton/TRITATTACK.wav",
+			"defend": "creatures/conflux/triton/TRITDFND.wav", 
+			"killed": "creatures/conflux/triton/TRITDEAD.wav", 
+			"move": "creatures/conflux/triton/TRITMOVE.wav", 
+			"wince": "creatures/conflux/triton/TRITHIT.wav" 
+        },
+		"abilities" :
+		{
+			"castsBloodlust" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.mdtTrawl",
+				"val" : 2,
+				"icon": "bonuses/conf08.png",
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 3
+			},
+			"immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			}
+//jakies minusy na pustyni
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 2, 2, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.protectFire"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 2, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.bless"
+				},
+				"values" : [ 0, 0, 1, 1, 2, 2, 2, 3, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

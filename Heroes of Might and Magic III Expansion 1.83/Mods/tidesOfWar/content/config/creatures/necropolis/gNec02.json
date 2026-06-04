@@ -1,0 +1,90 @@
+{
+	"gNec02"://ReinZombie
+	{
+		"name" :
+		{
+			"plural" : "邪气尸",
+			"singular" : "邪气尸"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction": "necropolis",
+		"aiValue" : 161,
+		"fightValue" : 128,
+		"attack" : 6,
+		"defense" : 5,
+		"cost" :
+		{
+			"gold" : 125
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 3
+		},
+		"speed" : 5,
+		"upgrades": ["zombieLord"],
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/gNec02B.def",
+			"map" : "creatures/necropolis/map/gNec02M.def",
+			"iconSmall" : "creatures/necropolis/iconsSmall/gNec02S.bmp",
+			"iconLarge" : "creatures/necropolis/iconsBig/gNec02L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 18,
+		"growth" : 8,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "ZOMBATTK.wav",
+			"defend": "ZOMBDFND.wav",
+			"killed": "ZOMBKILL.wav",
+			"move": "ZOMBMOVE.wav",
+			"wince": "ZOMBWNCE.wav"
+		},
+		"abilities":
+		{
+			"undead" : 
+			{ 
+				"type" : "UNDEAD",
+			},
+			"fungus" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.fungus",
+				"val" : 20,
+				"hidden": true
+			},
+			"paraFungus" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.paraFungus",
+				"val" : 20,
+				"description" : "{感染传播}\n攻击后20%几率将敌人感染并在周围传播感染效果",
+				"icon": "bonuses/nec02.png"
+			},			
+			"spellDuration" : 
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 3
+			},
+			"parafungusImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.paraFungus"
+			}
+		}
+	}
+}
+
+

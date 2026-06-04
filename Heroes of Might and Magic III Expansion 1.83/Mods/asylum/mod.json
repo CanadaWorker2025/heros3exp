@@ -1,0 +1,84 @@
+{
+	"name" : "Asylum Town",
+	"description" : "New town made by Turbanellos, The Forgotten Fields. Asylum Town is a new force with mental attack.",
+	
+	"author" : "FF Team, mod : Turbanellos",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "1.12",
+	"modType" : "Town",	
+	
+    "factions" : [ "config/asylum/town" ],
+	"depends" : ["newtown-terrains.stardustterrain"], 
+	
+	"chinese" : {
+		"name" : "梦境（Asylum）",
+		"description" : "EXP中的梦境种族"
+	},
+	
+	"creatures" :
+	[
+		"config/asylum/creatures/darksquire.json",
+		"config/asylum/creatures/darkguard.json",
+		"config/asylum/creatures/winddancer.json",
+		"config/asylum/creatures/shadowdancer.json",
+		"config/asylum/creatures/shadowhunter.json",
+		"config/asylum/creatures/phantomhunter.json",
+		"config/asylum/creatures/sadphanton.json",
+		"config/asylum/creatures/sorrowphanton.json",
+		"config/asylum/creatures/spiritcrus.json",
+		"config/asylum/creatures/soulcrus.json",
+		"config/asylum/creatures/asnightmare.json",
+		"config/asylum/creatures/shadowmare.json",
+		"config/asylum/creatures/plwalker.json",
+		"config/asylum/creatures/voidwalker.json",
+		"config/asylum/creatures/jesterDeliver.json",
+		"config/asylum/creatures/acommander.json"
+	],
+	
+	"heroClasses" :
+	[
+		"config/asylum/classes/pathfinder.json",
+		"config/asylum/classes/mentalist.json"
+	],
+
+	"heroes" :
+	[
+		"config/asylum/heroes/A_alach.json",
+		"config/asylum/heroes/B_pauline.json",
+		"config/asylum/heroes/C_harker.json",
+		"config/asylum/heroes/D_sisElisa.json",
+		"config/asylum/heroes/E_renner.json",
+		"config/asylum/heroes/F_judith.json",
+		"config/asylum/heroes/G_stacia.json",
+		"config/asylum/heroes/H_karth.json",
+		"config/asylum/heroes/I_kaspar.json",
+		"config/asylum/heroes/J_mog.json",
+		"config/asylum/heroes/K_viola.json",
+		"config/asylum/heroes/L_brigid.json",
+		"config/asylum/heroes/M_mona.json",
+		"config/asylum/heroes/N_jezebel.json",
+		"config/asylum/heroes/O_margareta.json",
+		"config/asylum/heroes/P_lynn.json"
+	],
+	 "objects":
+    [
+		"config/asylum/dwellings.json",
+		"config/asylum/boats.json"
+    ],
+	"spells" :
+	[
+		"config/asylum/NewOldSpells/terrorEye.json",
+		"config/asylum/NewOldSpells/birthdayGift.json",
+		"config/asylum/NewOldSpells/summonJester.json",
+		"config/asylum/NewOldSpells/summonApps.json",
+		"config/asylum/NewOldSpells/seduce.json"
+	],
+	"changelog" :
+    {
+        "1.12"	 : [ "Small fixes in my 30th birthday"],
+		"1.10"   : [ "Small fixes" ],
+		"1.02"   : [ "Upgaded graphic", "Hero males and female sprites on the battlefields", "Small fixes" ],
+		"1.01"   : [ "Added new commander", "New puzzle by acidchalk", "Bug fixes" ],
+		"1.00"   : [ "Initial release" ]
+    }
+}

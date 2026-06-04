@@ -1,0 +1,1089 @@
+{
+	"asylum" : {
+		"alignment" : "evil",
+		"creatureBackground" : { "120px" : "asylum/creature-bg-120px.bmp", "130px" : "asylum/creature-bg-130px.bmp" },
+		"name" : "梦境",
+		"description" : "{梦境}\n种族阵营： 邪恶，混乱\n种族地形： 星尘\n所在地： 贾达密大陆-低语森林和沼泽地区\n梦境主要势力在贾达密的一些密林中，大部分的居民都是黑暗精灵。他们中的一部分人具有穿越不同异界的魔法力量，也因此通过遥远的异界枢纽进行传送。他们是极其神秘的种族。",
+		"nativeTerrain" : "stardust",
+		"boat" : "boatAsylum",
+		"preferUndergroundPlacement": true,
+		"puzzleMap" : {
+			"prefix" : "asylum/puzzle-map/ASYPZ",
+			"pieces" :
+			[
+				{ "index" : 48, "x" : 6,  "y" : 7 },
+				{ "index" : 47, "x" : 6,  "y" : 7 },
+				{ "index" : 46, "x" : 6,  "y" : 7 },
+				{ "index" : 45, "x" : 6,  "y" : 7 },
+				{ "index" : 44, "x" : 6,  "y" : 7 },
+				{ "index" : 43, "x" : 6,  "y" : 7 },
+				{ "index" : 42, "x" : 6,  "y" : 7 },
+				{ "index" : 41, "x" : 6,  "y" : 7 },
+				{ "index" : 40, "x" : 6,  "y" : 7 },
+				{ "index" : 39, "x" : 6,  "y" : 7 },
+				{ "index" : 38, "x" : 6,  "y" : 7 },
+				{ "index" : 37, "x" : 6,  "y" : 7 },
+				{ "index" : 36, "x" : 6,  "y" : 7 },
+				{ "index" : 35, "x" : 6,  "y" : 7 },
+				{ "index" : 34, "x" : 6,  "y" : 7 },
+				{ "index" : 33, "x" : 6,  "y" : 7 },
+				{ "index" : 32, "x" : 6,  "y" : 7 },
+				{ "index" : 31, "x" : 6,  "y" : 7 },
+				{ "index" : 30, "x" : 6,  "y" : 7 },
+				{ "index" : 29, "x" : 6,  "y" : 7 },
+				{ "index" : 28, "x" : 6,  "y" : 7 },
+				{ "index" : 27, "x" : 6,  "y" : 7 },
+				{ "index" : 26, "x" : 6,  "y" : 7 },
+				{ "index" : 25, "x" : 6,  "y" : 7 },
+				{ "index" : 24, "x" : 6,  "y" : 7 },
+				{ "index" : 23, "x" : 6,  "y" : 7 },
+				{ "index" : 22, "x" : 6,  "y" : 7 },
+				{ "index" : 21, "x" : 6,  "y" : 7 },
+				{ "index" : 20, "x" : 6,  "y" : 7 },
+				{ "index" : 19, "x" : 6,  "y" : 7 },
+				{ "index" : 18, "x" : 6,  "y" : 7 },
+				{ "index" : 17, "x" : 6,  "y" : 7 },
+				{ "index" : 16, "x" : 6,  "y" : 7 },
+				{ "index" : 15, "x" : 6,  "y" : 7 },
+				{ "index" : 14, "x" : 6,  "y" : 7 },
+				{ "index" : 13, "x" : 6,  "y" : 7 },
+				{ "index" : 12, "x" : 6,  "y" : 7 },
+				{ "index" : 11, "x" : 6,  "y" : 7 },
+				{ "index" : 10, "x" : 6,  "y" : 7 },
+				{ "index" : 9, "x" : 6,  "y" : 7 },
+				{ "index" : 8, "x" : 6,  "y" : 7 },
+				{ "index" : 7, "x" : 6,  "y" : 7 },
+				{ "index" : 6, "x" : 6,  "y" : 7 },
+				{ "index" : 5, "x" : 6,  "y" : 7 },
+				{ "index" : 4, "x" : 6,  "y" : 7 },
+				{ "index" : 3, "x" : 6,  "y" : 7 },
+				{ "index" : 2, "x" : 6,  "y" : 7 },
+				{ "index" : 1, "x" : 6,  "y" : 7 }
+			]
+		},
+		"town" : {
+		    "defaultTavern" : 5,
+			"buildings" : {
+				"mageGuild1" :
+				{
+					
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "1级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 2000
+					}
+				},
+				"mageGuild2" :
+				{
+					
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "2级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 4,
+						"ore" : 5,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "3级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 5,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild2"
+				},
+								"mageGuild4" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "4级魔法行会",
+					"cost" :
+					{
+						"wood": 5,
+                        "mercury": 8,
+                        "ore": 5,
+                        "sulfur": 8,
+                        "crystal": 8,
+                        "gems": 8,
+                        "gold": 1000
+					},
+					"upgrades" : "mageGuild3"
+				},
+				"mageGuild5" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "5级魔法行会",
+					"cost" :
+					{
+						"wood": 5,
+                        "mercury": 10,
+                        "ore": 5,
+                        "sulfur": 10,
+                        "crystal": 10,
+                        "gems": 10,
+                        "gold": 1000
+					},
+					"upgrades" : "mageGuild4"
+				},
+				"tavern" :
+				{
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					}
+				},
+				"shipyard" :
+				{
+					"name" : "船坞",
+					"description" : "船坞允许你购买船只。",
+					"cost" :
+					{
+						"wood" : 20,
+						"gold" : 2000
+					}
+				},
+				"fort" :
+				{
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" :
+					{
+						"wood" : 20,
+						"ore" : 20,
+						"gold" : 5000
+					}
+				},
+				"citadel" :
+				{
+					"name" : "大本营",
+					"description" : "大本营不仅能使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 2500
+					},
+					"upgrades" : "fort"
+				},
+				"castle" :
+				{
+					"name" : "城堡",
+					"description" : "城堡可提供2座箭塔以加强城镇的防御，而且还可使生物的基本生长率加倍。",
+					"cost" :
+					{
+						"wood" : 10,
+						"ore" : 10,
+						"gold" : 5000
+					},
+					"upgrades" : "citadel"
+				},
+				"villageHall" :
+				{
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑并每天向你提供500个金币。",
+					"mode" : "auto"
+				},
+				"townHall" :
+				{
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost" :
+					{
+						"gold" : 2500
+					},
+					"requires" : [ "tavern" ],
+					"upgrades" : "villageHall"
+				},
+				"cityHall" :
+				{
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"cost" :
+					{
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", ["mageGuild1"], ["marketplace"], ["blacksmith"] ],
+					"upgrades" : "townHall"
+				},
+				"capitol" :
+				{
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" :
+					{
+						"gold" : 10000
+					},
+					"requires" : [ "castle" ],
+					"upgrades" : "cityHall"
+				},
+				"marketplace" :
+				{
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					}
+				},
+				"resourceSilo" :
+				{
+					"description" : "物资仓库每天为你额外提供1水晶。",
+					"name" : "物资仓库",
+					"produce": { "crystal": 1 },
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"requires" : [ "marketplace" ]
+				},
+				"blacksmith" :
+				{
+					"description" : "铁匠铺可向你的军队提供补给车。",
+					"name" : "铁匠铺",
+					"warMachine" : "ammoCart",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					}
+				},
+				"horde1" :
+				{
+					"description" : "蘑菇园使黑暗侍从的产量每周增加6个。",
+					"name" : "蘑菇园",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"upgrades" : "dwellingLvl1",
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl1"] ]
+				},
+				"horde1Upgr" :
+				{
+					"description" : "蘑菇园使黑暗守卫的产量每周增加6个。",
+					"name" : "蘑菇园",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"requires" : [ "allOf", ["horde1"], ["dwellingUpLvl1"] ],
+					"upgrades" : "dwellingUpLvl1",
+					"mode" : "auto"
+				},
+				"ship" :
+				{
+					"description" : "船坞允许你购买船只。",
+					"name" : "船坞"
+				},
+				"special1" : 
+				{
+					"description" : "星尘雨可以在攻城战中提升英雄2点力量。",
+					"name" : "星尘雨",
+					"bonuses": [
+						{
+							"type": "PRIMARY_SKILL",
+							"subtype": "primarySkill.spellpower",
+							"val": 2
+						}
+					],
+					"cost" : 
+					{
+						"gold" : 1000
+					}
+				},
+        "special2": {
+          "description": "魔力水晶可以提升英雄魔力技能+10%。",
+          "name": "魔力水晶",
+		  "bonuses": [{ "type": "SPELL_DAMAGE", "val": 10, "valueType": "BASE_NUMBER", "subtype" : "spellSchool.any", "propagator" : "PLAYER" }  ],
+          "cost": {
+            "crystal": 2,
+            "gems": 2,
+			"gold" : 1000
+          }
+        },	
+        "horde2" :
+				{
+					"description" : "怨灵湿地使幽影的产量每周增加2个。",
+					"name" : "怨灵湿地",
+					"cost" : 
+					{
+            "gold": 1000,
+            "sulfur": 2
+					},
+					"upgrades" : "dwellingLvl4",
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl4"] ]
+				},
+				"horde2Upgr" :
+				{
+					"description" : "怨灵湿地使怨影的产量每周增加2个。",
+					"name" : "怨灵湿地",
+					"cost" : 
+					{
+						"gold": 1000,
+						"sulfur": 2
+					},
+					"requires" : [ "allOf", ["horde2"], ["dwellingUpLvl4"] ],
+					"upgrades" : "dwellingUpLvl4",
+					"mode" : "auto"
+				},
+				"grail" :
+				{
+					"description" : "星空幻境使每周的生物产量提高50%，每天为你的王国额外提供5000个金币，提升英雄的魔力技能30%，并且在攻城战中使驻守英雄的力量+10。",
+					"name" : "星空幻境",
+					"mode" : "grail",
+					"produce": { "gold": 5000 },
+					"bonuses": [
+						{ "type": "PRIMARY_SKILL", "subtype": "primarySkill.spellpower", "val": 10 },
+						{ "type": "SPELL_DAMAGE", "val": 30, "valueType": "BASE_NUMBER","subtype" : "spellSchool.any","propagator" : "PLAYER" } 						
+					]
+				},
+				"dwellingLvl1" :
+				{
+					"description" : "秘境之屋允许你招募黑暗侍从。",
+					"name" : "秘境之屋",
+					"cost" : 
+					{
+						"gold" : 500,
+						"ore" : 5
+					},
+					"requires" : [ "fort" ]
+				},
+				"dwellingLvl2" :
+				{
+					"description" : "影舞擂台允许你招募风舞者。",
+					"name" : "影舞擂台",
+					"cost" : 
+					{
+						"gold" : 1000,
+            "ore": 5,
+            "wood": 5
+					},
+					"requires" : [ "dwellingLvl1" ]
+				},
+				"dwellingLvl3" :
+				{
+					"description" : "精神之窗允许你招募暗影猎手。",
+					"name" : "精神之窗",
+					"cost" : 
+					{
+						"gold" : 1500,
+						"wood" : 10
+					},
+					"requires" : [ "dwellingLvl2" ]
+				},
+				"dwellingLvl4" :
+				{
+					"description" : "沼泽地洞允许你招募幽影。",
+					"name" : "沼泽地洞",
+					"cost" : 
+					{
+						"gold" : 2000,
+            "ore": 5,
+            "wood": 5
+					},
+					"requires" : [ "dwellingLvl2" ]
+				},
+				"dwellingLvl5" :
+				{
+					"description" : "灵魂序列允许你招募灵魂剑士。",
+					"name" : "灵魂序列",
+					"cost" : 
+					{
+						"gold" : 3000,
+						"ore" : 15
+					},
+					"requires" : [ "allOf", ["mageGuild1"], ["dwellingLvl3"] ]
+				},
+				"dwellingLvl6" :
+				{
+					"description" : "迷幻森林允许你招募梦魇兽。",
+					"name" : "迷幻森林",
+					"cost" : 
+					{
+						"gold" : 4000,
+						"ore" : 10,
+            "gems": 10
+					},
+					"requires" : [ "dwellingLvl4" ]
+				},
+				"dwellingLvl7" :
+				{
+					"description" : "幻梦空间允许你招募梦旅者。",
+					"name" : "幻梦空间",
+					"cost" : 
+					{
+            "gold": 15000,
+            "wood": 5,
+						"crystal" : 15,
+						"sulfur" : 5
+					},
+					"requires" : [ "dwellingLvl5" ]
+				},
+				"dwellingUpLvl1" :
+				{
+					"description" : "高级秘境之屋允许你招募黑暗守卫。",
+					"name" : "高级秘境之屋",
+					"cost" :
+					{
+						"gold" : 1000
+					},
+					"upgrades" : "dwellingLvl1"
+				},
+				"dwellingUpLvl2" :
+				{
+					"description" : "高级影舞擂台允许你招募影舞者。",
+					"name" : "高级影舞擂台",
+					"cost" : 
+					{
+						"gold" : 1000,
+            "ore": 5,
+            "mercury": 3
+					},
+					"upgrades" : "dwellingLvl2"
+				},
+				"dwellingUpLvl3" :
+				{
+					"description" : "高级精神之窗允许你招募魔影猎手。",
+					"name" : "高级精神之窗",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"wood" : 10
+					},
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" :
+				{
+					"description" : "高级沼泽地洞允许你招募怨影。",
+					"name" : "高级沼泽地洞",
+					"cost" : 
+					{
+						"gold" : 2500,
+            "ore": 5,
+            "crystal": 5
+					},
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl5" :
+				{
+					"description" : "高级灵魂序列允许你招募灵魂剑圣。",
+					"name" : "高级灵魂序列",
+					"cost" : 
+					{
+						"gold" : 2000,
+            "mercury": 10
+					},
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" :
+				{
+                    "description" : "高级迷幻森林允许你招募阴影兽。",
+					"name" : "高级迷幻森林",
+					"cost" : 
+					{
+						"gold" : 4000,
+            "crystal": 10,
+            "gems": 5
+					},
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl7" :
+				{
+					"description" : "高级幻梦空间允许你招募噬魂者。",
+					"name" : "高级幻梦空间",
+					"cost" : 
+					{
+						"gold": 20000,
+            "wood": 5,
+						"ore" : 5,
+						"crystal" : 25
+					},
+					"requires" : [ "mageGuild2" ],
+					"upgrades" : "dwellingLvl7"
+				}				
+			},
+			"buildingsIcons" : "asylum/town-hall.def",
+			"creatures" : [
+				[ "darksquire", "darkguard" ],
+				[ "winddancer", "shadowdancer" ],
+				[ "shadowhunter", "phantomhunter" ],
+				[ "sadphanton", "sorrowphanton" ],
+				[ "spiritcrus", "soulcrus" ],
+				[ "asnightmare", "shadowmare" ],
+				[ "plwalker", "voidwalker" ]
+			],
+			"guildBackground" : "TPMAGE.bmp",
+			"guildSpells" : {
+				"bless"          : 0,
+				"bloodlust"      : 0,
+				"cure"           : 4,
+				"curse"          : 20,
+				"dispel"         : 12,
+				"haste"          : 0,
+				"magicArrow"     : 25,
+				"protectAir"     : 5,
+				"protectFire"    : 3,
+				"shield"         : 0,
+				"slow"           : 20,
+				"stoneSkin"      : 0,
+				"summonBoat"     : 5,
+				"viewAir"        : 3,
+				"viewEarth"      : 3,
+
+				"disguise"       : 0,
+				"disruptingRay"  : 25,
+				"fireWall"       : 0,
+				"fortune"        : 0,
+				"iceBolt"        : 10,
+				"lightningBolt"  : 35,
+				"precision"      : 0,
+				"quicksand"      : 10,
+				"removeObstacle" : 6,
+				"scuttleBoat"    : 4,
+				"visions"        : 0,
+				"weakness"       : 10,
+        "airShield"      : 2,
+				"antiMagic"      : 20,
+				"earthquake"     : 2,
+				"fireball"       : 2,
+				"forceField"     : 4,
+				"forgetfulness"  : 10,
+				"frostRing"      : 10,
+				"hypnotize"      : 30,
+				"landMine"       : 4,
+				"mirth"          : 0,
+				"misfortune"     : 10,
+				"protectEarth"   : 2,
+				"protectWater"   : 2,
+				"teleport"       : 2,
+
+				"berserk"        : 30,
+				"chainLightning" : 10,
+				"clone"          : 0,
+				"counterstrike"  : 0,
+				"fireShield"     : 0,
+				"frenzy"         : 0,
+				"inferno"        : 5,
+				"meteorShower"   : 5,
+				"prayer"         : 0,
+				"resurrection"   : 5,
+				"slayer"         : 5,
+				"sorrow"         : 5,
+				"townPortal"     : 15,
+				"waterWalk"      : 5,
+
+				"airElemental"   : 4,
+				"dimensionDoor"  : 15,
+				"earthElemental" : 10,
+				"fireElemental"  : 10,
+				"fly"            : 15,
+				"implosion"      : 15,
+				"magicMirror"    : 15,
+				"sacrifice"      : 11,
+				"waterElemental" : 5
+			},
+			"guildWindow" : "asylum/town-screen/mage-guild.bmp",
+			"hallBackground" : "TPTHBKDG",
+			"horde" : [ 0, 3 ],
+			"icons" : {
+				"village" : {
+					"normal" : {"small" : "asylum/icons/hall-small.bmp", "large" : "asylum/icons/hall-big.bmp" },
+					"built"  : {"small" : "asylum/icons/hall-builded-small.bmp", "large" : "asylum/icons/hall-builded-big.bmp" }
+				},
+				"fort" : {
+					"normal" : {"small" : "asylum/icons/fort-small.bmp", "large" : "asylum/icons/fort-big.bmp" },
+					"built"  : {"small" : "asylum/icons/fort-builded-small.bmp", "large" : "asylum/icons/fort-builded-big.bmp" }
+				}
+			},
+			"mapObject" : {
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"capitol" : { "animation" : "asylum/map/capitol.def" },
+					"castle" : { "animation" : "asylum/map/castle.def" },
+					"citadel" : { "animation" : "asylum/map/citadel.def" },
+					"fort" : { "animation" : "asylum/map/fort.def" },
+					"village" : { "animation" : "asylum/map/village.def" }
+				}
+			},
+			"mageGuild" : 5,
+			
+			"musicTheme" : ["music/factions/AsylumTown"],
+			"names" : [
+				"恩加丁",
+				"古斯戴尔",
+				"格拉瓦",
+				"巴斯本",
+				"派得斯顿",
+				"哈斯塔拉",
+				"威格斯崖",
+				"心泉",
+				"梦境之林",
+				"莱特湾",
+				"加布列尔",
+				"梦境汇流",
+				"卡巴瑞塔",
+				"帕特内",
+				"加里伍德",
+				"吉尔迈恩",
+				"海伦斯堡"
+			],
+			"primaryResource" : "crystal",
+			"siege" : {
+				"shooter" : "shadowhunter",
+				"towerIconSmall" : "asylum/icons/towerSmall",
+				"towerIconLarge" : "asylum/icons/towerLarge",
+				"imagePrefix" : "asylum/siege/SGPS",
+				"gate" :
+				{
+					"arch" : { "x" : 486, "y" : 232 },
+					"gate" : { "x" : 408, "y" : 254 }
+				},
+				"moat" :
+				{
+					"bank" : { "x" : 407, "y" : 80 },
+					"moat" : { "x" : 407, "y" : 80 }
+				},
+				"static" :
+				{
+					"background" : { "x" : 600, "y" : 50 },
+					"bottom" : { "x" : 509, "y" : 346 },
+					"top" : { "x" : 490, "y" : 97 }
+				},
+				"towers" :
+				{
+					"bottom" :
+					{
+						"battlement" : { "x" : 608, "y" : 505 },
+						"creature" : { "x" : 382, "y" : 308 },
+						"tower" : { "x" : 608, "y" : 505 }
+					},
+					"keep" :
+					{
+						"battlement" : { "x" : 736, "y" : 159 },
+						"creature" : { "x" : 529, "y" : -18 },
+						"tower" : { "x" : 736, "y" : 159 }
+					},
+					"top" :
+					{
+						"battlement" : { "x" : 576, "y" : 28 },
+						"creature" : { "x" : 341, "y" : -182 },
+						"tower" : { "x" : 576, "y" : 28 }
+					}
+				},
+				"walls" :
+				{
+					"bottom" : { "x" : 509, "y" : 346 },
+					"bottomMid" : { "x" : 468, "y" : 299 },
+					"upper" : { "x" : 521, "y" : 41 },
+					"upperMid" : { "x" : 471, "y" : 147 }
+				}
+			},
+			"structures" : {
+				"mageGuild1" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSmage",
+					"area" : "asylum/town-screen/buildings-area/TZPSmage",
+					"border" : "asylum/town-screen/buildings-border/TOPSmage",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},
+				"mageGuild2" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSmag2",
+					"area" : "asylum/town-screen/buildings-area/TZPSmag2",
+					"border" : "asylum/town-screen/buildings-border/TOPSmag2",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},
+				"mageGuild3" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSmag3",
+					"area" : "asylum/town-screen/buildings-area/TZPSmag3",
+					"border" : "asylum/town-screen/buildings-border/TOPSmag3",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},
+				"mageGuild4" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSmag4",
+					"area" : "asylum/town-screen/buildings-area/TZPSmag4",
+					"border" : "asylum/town-screen/buildings-border/TOPSmag4",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},
+				"mageGuild5" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSmag5",
+					"area" : "asylum/town-screen/buildings-area/TZPSmag5",
+					"border" : "asylum/town-screen/buildings-border/TOPSmag5",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},	
+				"tavern" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSTVRN",
+					"area" : "asylum/town-screen/buildings-area/TZPSTVRN",
+					"border" : "asylum/town-screen/buildings-border/TOPSTVRN",
+					"x" : 0,
+					"y" : 0
+				},
+				"shipyard" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSdock",
+					"area" : "asylum/town-screen/buildings-area/TZPSdock",
+					"border" : "asylum/town-screen/buildings-border/TOPSdock",
+					"x" : 0,
+					"y" : 0,
+					"z" : 3
+				},
+				"fort" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSCSTL",
+					"area" : "asylum/town-screen/buildings-area/TZPSCSTL",
+					"border" : "asylum/town-screen/buildings-border/TOPSCSTL",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},
+				"citadel" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSCAS2",
+					"area" : "asylum/town-screen/buildings-area/TZPSCAS2",
+					"border" : "asylum/town-screen/buildings-border/TOPSCAS2",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},
+				"castle" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSCAS3",
+					"area" : "asylum/town-screen/buildings-area/TZPSCAS3",
+					"border" : "asylum/town-screen/buildings-border/TOPSCAS3",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},
+				"villageHall" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPShall",
+					"area" : "asylum/town-screen/buildings-area/TZPShall",
+					"border" : "asylum/town-screen/buildings-border/TOPShall",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 1
+				},
+				"townHall" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPShal2",
+					"area" : "asylum/town-screen/buildings-area/TZPShal2",
+					"border" : "asylum/town-screen/buildings-border/TOPShal2",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 1
+				},
+				"cityHall" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPShal3",
+					"area" : "asylum/town-screen/buildings-area/TZPShal3",
+					"border" : "asylum/town-screen/buildings-border/TOPShal3",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 1
+				},
+				"capitol" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPShal4",
+					"area" : "asylum/town-screen/buildings-area/TZPShal4",
+					"border" : "asylum/town-screen/buildings-border/TOPShal4",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 1
+				},
+				"marketplace" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSmark",
+					"area" : "asylum/town-screen/buildings-area/TZPSmark",
+					"border" : "asylum/town-screen/buildings-border/TOPSmark",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 1
+				},
+				"resourceSilo" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSsilo",
+					"area" : "asylum/town-screen/buildings-area/TZPSsilo",
+					"border" : "asylum/town-screen/buildings-border/TOPSsilo",
+					"x" : 0,
+					"y" : 0
+				},
+				"blacksmith" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSBLAK",
+					"area" : "asylum/town-screen/buildings-area/TZPSBLAK",
+					"border" : "asylum/town-screen/buildings-border/TOPSBLAK",
+					"x" : 0,
+					"y" : 0
+				},
+				"horde1" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSHRD1",
+					"area" : "asylum/town-screen/buildings-area/TZPSHRD1",
+					"border" : "asylum/town-screen/buildings-border/TOPSHRD1",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2,
+					"hidden" : true
+				},
+				"horde1Upgr" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSHRD2",
+					"area" : "asylum/town-screen/buildings-area/TZPSHRD2",
+					"border" : "asylum/town-screen/buildings-border/TOPSHRD2",
+					"x" : 0,
+					"y" : 0,
+					"z" : 5,
+					"hidden" : true
+				},
+				"ship" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSship",
+					"area" : "asylum/town-screen/buildings-area/TZPSship",
+					"border" : "asylum/town-screen/buildings-border/TOPSship",
+					"x" : 0,
+					"y" : 0,
+					"z" : 4
+				},
+				"special1" : 
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSSPEC",
+					"area" : "asylum/town-screen/buildings-area/TZPSSPEC",
+					"border" : "asylum/town-screen/buildings-border/TOPSSPEC",
+					"x" : 172,
+					"y" : 0,
+					"z" : 4
+				},
+        "special2": {
+          "animation": "asylum/town-screen/buildings/TBPSSpe2",
+          "area": "asylum/town-screen/buildings-area/TZPSSpe2",
+          "border": "asylum/town-screen/buildings-border/TOPSSpe2",
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        	"horde2" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSHRD3",
+					"area" : "asylum/town-screen/buildings-area/TZPSHRD3",
+					"border" : "asylum/town-screen/buildings-border/TOPSHRD3",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2,
+					"hidden" : true
+				},
+				"horde2Upgr" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSHRD4",
+					"area" : "asylum/town-screen/buildings-area/TZPSHRD4",
+					"border" : "asylum/town-screen/buildings-border/TOPSHRD4",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2,
+					"hidden" : true
+				},			
+				"grail" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSHoly",
+					"area" : "asylum/town-screen/buildings-area/TZPSHoly",
+					"border" : "asylum/town-screen/buildings-border/TOPSHoly",
+					"x" : 0,
+					"y" : 0,
+					"z" : 6
+				},
+				"dwellingLvl1" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSdw_0",
+					"area" : "asylum/town-screen/buildings-area/TZPSdw_0",
+					"border" : "asylum/town-screen/buildings-border/TOPSdw_0",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingLvl2" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSdw_1",
+					"area" : "asylum/town-screen/buildings-area/TZPSdw_1",
+					"border" : "asylum/town-screen/buildings-border/TOPSdw_1",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 3
+				},
+				"dwellingLvl3" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSdw_2",
+					"area" : "asylum/town-screen/buildings-area/TZPSdw_2",
+					"border" : "asylum/town-screen/buildings-border/TOPSdw_2",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 5
+				},
+				"dwellingLvl4" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSdw_3",
+					"area" : "asylum/town-screen/buildings-area/TZPSdw_3",
+					"border" : "asylum/town-screen/buildings-border/TOPSdw_3",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingLvl5" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSdw_4",
+					"area" : "asylum/town-screen/buildings-area/TZPSdw_4",
+					"border" : "asylum/town-screen/buildings-border/TOPSdw_4",
+					"x" : 0,
+					"y" : 0,
+					"z" : 3
+				},
+				"dwellingLvl6" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSdw_5",
+					"area" : "asylum/town-screen/buildings-area/TZPSdw_5",
+					"border" : "asylum/town-screen/buildings-border/TOPSdw_5",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 6
+				},
+				"dwellingLvl7" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSdw_6",
+					"area" : "asylum/town-screen/buildings-area/TZPSdw_6",
+					"border" : "asylum/town-screen/buildings-border/TOPSdw_6",
+					"x" : 0,
+					"y" : 0,
+					"z" : 3
+				},
+				"dwellingUpLvl1" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSup_0",
+					"area" : "asylum/town-screen/buildings-area/TZPSup_0",
+					"border" : "asylum/town-screen/buildings-border/TOPSup_0",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingUpLvl2" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSup_1",
+					"area" : "asylum/town-screen/buildings-area/TZPSup_1",
+					"border" : "asylum/town-screen/buildings-border/TOPSup_1",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 3
+				},
+				"dwellingUpLvl3" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSup_2",
+					"area" : "asylum/town-screen/buildings-area/TZPSup_2",
+					"border" : "asylum/town-screen/buildings-border/TOPSup_2",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 5
+				},
+				"dwellingUpLvl4" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSup_3",
+					"area" : "asylum/town-screen/buildings-area/TZPSup_3",
+					"border" : "asylum/town-screen/buildings-border/TOPSup_3",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingUpLvl5" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSup_4",
+					"area" : "asylum/town-screen/buildings-area/TZPSup_4",
+					"border" : "asylum/town-screen/buildings-border/TOPSup_4",
+					"x" : 0,
+					"y" : 0,
+					"z" : 4
+				},
+				"dwellingUpLvl6" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSup_5",
+					"area" : "asylum/town-screen/buildings-area/TZPSup_5",
+					"border" : "asylum/town-screen/buildings-border/TOPSup_5",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 6
+				},
+				"dwellingUpLvl7" :
+				{
+					"animation" : "asylum/town-screen/buildings/TBPSup_6",
+					"area" : "asylum/town-screen/buildings-area/TZPSup_6",
+					"border" : "asylum/town-screen/buildings-border/TOPSup_6",
+					"x" : 0,
+					"y" : 0,
+					"z" : 3
+				},
+			},
+		"tavernVideo" : "asylumTvrn.BIK",
+		"townBackground" : "asylum/town-screen/background.bmp",
+		"moatAbility" : "castleMoat",
+		"hallSlots" : [
+				[
+					[ "villageHall", "townHall", "cityHall", "capitol" ],
+					[ "fort", "citadel", "castle" ],
+					[ "tavern" ],
+					[ "blacksmith" ]
+				],
+				[
+					[ "marketplace", "resourceSilo" ],
+          [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ],
+          [ "special1" ],
+					[ "shipyard" ]
+				],
+				[
+          [ "special2" ],
+            [ "horde2", "horde2Upgr" ],
+			    	[ "horde1", "horde1Upgr" ]
+				],
+				[
+					[ "dwellingLvl1", "dwellingUpLvl1" ],
+					[ "dwellingLvl2", "dwellingUpLvl2" ],
+					[ "dwellingLvl3", "dwellingUpLvl3" ],
+					[ "dwellingLvl4", "dwellingUpLvl4" ]
+				],
+				[
+					[ "dwellingLvl5", "dwellingUpLvl5" ],
+					[ "dwellingLvl6", "dwellingUpLvl6" ],
+					[ "dwellingLvl7", "dwellingUpLvl7" ]
+				]
+			]
+		}
+	}
+}

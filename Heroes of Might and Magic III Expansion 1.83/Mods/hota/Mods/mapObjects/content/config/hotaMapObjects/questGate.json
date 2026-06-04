@@ -1,0 +1,26 @@
+{
+	"core:questGuard" : {
+		"handler":"questGuard",
+		"name" : "任务大门",
+		"types" : {
+			"questGate" : {
+				"templates" : {
+					"avxqgt" : { "animation" : "hota/questGate/avxqgt", 
+						"mask" : [ "VVVV", "VBAB" ], 
+						"visitableFrom" : [ "+++", "-+-", "+++" ]
+					},
+					"avxqgtv" : { "animation" : "hota/questGate/avxqgtv",
+						"mask" : [ "VV", "VB", "VA", "VB" ], 
+						"visitableFrom" : [ "---", "+++", "---" ]
+					},
+					"avxwgtqu" : {
+						"animation" : "hota/questGuard/avxwgtqu",
+						"mask" : [ "VVVV","VBAB" ],
+						"visitableFrom" : [ "+++", "-+-", "+++" ],
+						"allowedTerrains": [ "water" ]
+					}
+				}
+			}
+		}
+	}		
+}

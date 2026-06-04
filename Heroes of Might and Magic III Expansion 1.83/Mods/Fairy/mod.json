@@ -1,0 +1,88 @@
+{
+	"name" : "Fairy town",
+	"description" : "New town made by New fairy Team, updated by Turbanellos in 2022.",
+	
+	"author" : "Ben Yan, New fairy Team, mod : Kuririn, zeryss, Draeganfire, avatar",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "1.5",
+	"modType" : "Town",	
+	"depends" : ["hota.highlandsterrain"], 
+	
+    "factions" : [ "config/fairy/town" ],
+	"chinese" : {
+		"name" : "花仙堡（Fairyland）",
+		"description" : "EXP中的花仙堡种族"
+	},
+	
+	"creatures" :
+	[
+		"config/fairy/creatures/fairy1.json",
+		"config/fairy/creatures/fairy2.json",
+		"config/fairy/creatures/fench1.json",
+		"config/fairy/creatures/fench2.json",
+        "config/fairy/creatures/fnoble1.json",
+		"config/fairy/creatures/fnoble2.json",
+        "config/fairy/creatures/wisp1.json",
+		"config/fairy/creatures/wisp2.json",
+		"config/fairy/creatures/hatchling1.json",
+		"config/fairy/creatures/hatchling2.json",
+		"config/fairy/creatures/fwyvern1.json",
+		"config/fairy/creatures/fwyvern2.json",
+		"config/fairy/creatures/fdrag1.json",
+		"config/fairy/creatures/fdrag2.json",	
+		"config/fairy/creatures/fcommander.json"
+	
+	],
+	
+	"heroClasses" :
+	[
+		"config/fairy/classes/diviner.json",
+		"config/fairy/classes/keeper.json"
+	],
+
+	"heroes" :
+	[
+		"config/fairy/heroes/ft1_kylina.json",
+		"config/fairy/heroes/ft2_meri.json",
+		"config/fairy/heroes/ft3_mia.json",
+		"config/fairy/heroes/ft4_ola.json",
+		"config/fairy/heroes/ft5_sheli.json",
+		"config/fairy/heroes/ft6_siniri.json",
+		"config/fairy/heroes/ft7_sinara.json",
+		"config/fairy/heroes/ft8_uliri.json",
+		"config/fairy/heroes/ft9_zerela.json",
+		"config/fairy/heroes/ft10_abrisa.json",
+		"config/fairy/heroes/ft11_zeria.json",
+		"config/fairy/heroes/ft12_seliva.json",
+		"config/fairy/heroes/ft13_sarisa.json",
+		"config/fairy/heroes/ft14_aarela.json",
+		"config/fairy/heroes/ft15_elrisa.json",
+		"config/fairy/heroes/ft16_arina.json",
+		"config/fairy/heroes/ft17_losina.json",
+		"config/fairy/heroes/specialHeroes.json"
+	],
+	"spells":
+	[
+		"config/fairy/spells/fairyspell1.json",
+		"config/fairy/spells/fairyspell2.json",
+		"config/fairy/spells/fairyspell3.json",
+		"config/fairy/spells/fairyspell4.json",
+		"config/fairy/spells/shotspell1.json"
+	],
+	"artifacts":
+	[
+		"config/fairy/artifacts/tarotCards.json"
+	],
+    "objects" :
+    [  
+    "config/fairy/dwellings.json",
+	"config/fairy/banks/fairyFlower.json",
+	"config/fairy/banks/FairiesCrystal.json",
+	"config/fairy/banks/evilTreeofKnowledge.json",
+	"config/fairy/banks/fairywaterfalls.json",
+	"config/fairy/boats.json",
+	"config/fairy/banks/fairyDecorations.json",
+	"config/fairy/banks/divinationHut.json",
+	"config/fairy/banks/FairiesBank.json" 
+    ]
+}

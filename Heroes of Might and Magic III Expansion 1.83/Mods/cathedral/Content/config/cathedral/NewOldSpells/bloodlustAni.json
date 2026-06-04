@@ -1,0 +1,9 @@
+{
+	"core:prayer" : {
+		
+		"level": 4,
+		"counters" : {
+			"spell.confessionSong":true
+		},
+		}
+}

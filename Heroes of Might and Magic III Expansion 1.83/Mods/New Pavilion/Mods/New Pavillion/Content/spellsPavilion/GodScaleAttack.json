@@ -1,0 +1,118 @@
+{
+	"godScaleAttack" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "神之制衡",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 1,
+		"defaultGainChance": 0, 		
+		"gainChance":
+		{
+			
+		},
+		"counters" : {
+			"spell.godScaleDefence": true
+		},
+		"graphics":
+		{
+			"iconImmune":"spellsPavilion/placeholder.bmp",
+			"iconScenarioBonus": "spellsPavilion/placeholderBonus.bmp",
+			"iconEffect": "spellsPavilion/ScalesAttackEffect.bmp",
+			"iconBook": "spellsPavilion/placeholder.bmp",
+			"iconScroll": "spellsPavilion/placeholderScroll.bmp"
+ 
+		},		
+		"animation":
+		{
+			"affect":[{"defName":"spellsPavilion/balanceEffect02", "verticalPosition":"bottom"},]
+		},
+		"sounds": {
+			"cast": "FRENZY"
+		},
+		
+		"levels" : 
+		{
+			
+			"base":{
+				"description": "{神之制衡}\r\n\r\n将目标生物的攻击力降为0，但提升50%的防御。",
+				"cost": 0,
+				"power": 1,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"scaledAttack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 0,
+						"valueType" : "INDEPENDENT_MIN",
+						"duration" : "N_TURNS"
+					},
+					"defenceBoost" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 50,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
+					}
+					}
+					},
+					
+			"none":{
+				"description": "{神之制衡}\r\n\r\n将目标生物的攻击力降为0，但提升50%的防御力。",
+				"cost": 0,
+				"power": 1,
+				"effects" : {
+					"scaledAttack" : {
+
+					}
+				}
+			},
+			"basic":{
+				"description": "{神之制衡}\r\n\r\n将目标生物的攻击力降为0，但提升50%的防御力。",
+				"cost": 0,
+				"power": 1,
+				"effects" : {
+					"scaledAttack" : {
+
+					}
+				}
+			},
+			"advanced":{
+				"description": "{神之制衡}\r\n\r\n将目标生物的攻击力降为0，但提升50%的防御力。",
+				"cost": 0,
+				"power": 1,
+				"effects" : {
+					"scaledAttack" : {
+
+					}
+				}
+			},
+			"expert":{
+				"description": "{神之制衡}\r\n\r\n将目标生物的攻击力降为0，但提升50%的防御力。",
+				"cost": 0,
+				"power": 1,
+				"effects" : {
+					"scaledAttack" : {
+					
+					}
+				}
+			}
+		},
+		"absoluteLimit" : {
+
+		},
+		"absoluteImmunity" : {
+
+		},
+		"immunity" : {
+
+		},
+		"flags" : {
+			"negative": true,
+			"nonMagical":true
+		}
+	}
+}

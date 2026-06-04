@@ -1,0 +1,106 @@
+{
+	"ffseraph" :
+	{
+		"name" :
+		{
+			"plural" : "炽天使",
+			"singular" : "炽天使"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction" : "castle",
+		"doubleWide" : true,
+		"level" : 7,
+		"attack" : 30,
+		"defense" : 25,
+		"damage" :
+		{
+			 "min" : 45,
+			 "max" : 65
+		},
+		"growth" : 1,
+		"hitPoints" : 250,
+		"speed" : 19,
+		"fightValue" : 6031,
+		"aiValue" : 8774,
+		"upgrades": ["archangel"],
+		"cost" :
+		{
+			"gold" : 5000,
+                        "gems" : 3
+		},
+		"graphics" :
+		{
+			"animation" : "creatures/castle/battle/C197.def",
+			"map" : "creatures/castle/map/AVWC197.def",
+			"iconSmall" : "creatures/castle/iconsSmall/CPrS197C.bmp",
+			"iconLarge" : "creatures/castle/iconsBig/CPRL197C.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"attack" : 1.00,
+				"idle" : 10.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "AAGLATTK.wav",
+			"defend": "AAGLDFND.wav",
+			"killed": "AAGLKILL.wav",
+			"move": "AAGLMOVE.wav",
+			"wince": "AAGLWNCE.wav"
+		},
+		"abilities":
+		{
+			"FLYING_ARMY": {
+        "type": "FLYING"
+      },
+			"basicSlayer" : { "type" : "KING", "val": 2 },
+			"bloodlusts" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.prayer",
+				"val" : 3,
+				"icon": "bonuses/prayer3.png",
+			},
+			"hateDevils" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.devil",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateArchDevils" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.archDevil",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateBarlogs" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.ifDark07",
+				"val" : 50,
+				"description" : "{光明使徒}\n对恶魔，大恶魔，黑恶魔造成额外50%伤害",
+				"icon" : "spells/extraEffect/hate1.png"
+			},
+			"raisesMorale" : {
+				"type" : "MORALE",
+				"val" : 1,
+				"propagator" : "ARMY",
+				"description" : "{增加友军士气}\n炽天使可以增加1点友军士气",
+				"icon": "bonuses/e_morale.png",
+				"stacking" : "Angels"
+			},
+			"FIRSTSTRIKE" :
+			{
+				"type" : "FIRST_STRIKE"
+			}			
+		}
+	}
+}

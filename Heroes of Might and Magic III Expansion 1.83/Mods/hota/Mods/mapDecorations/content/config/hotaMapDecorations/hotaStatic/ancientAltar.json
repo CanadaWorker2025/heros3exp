@@ -1,0 +1,19 @@
+{
+	"ancientAltar" : {
+		"handler":"generic",
+		"name" : "大章鱼",
+		"types" : {
+			"ancientAltar" : {
+				"sounds": {
+					"ambient": ["hota/HORNALTR"]
+				},
+				"templates" : {
+					"avchrnal" : { 
+						"animation" : "hota/campaignObject/avchrnal", 
+						"mask" : [ "VVVVV", "VVVVV", "VVBBV", "VVVBV" ]
+					}
+				}
+			}
+		}
+	}		
+}

@@ -1,0 +1,60 @@
+{
+	"14zilare" : {
+		"class" : "navigator",
+		"images" : {
+			"large" : "hota/cove/heroes/zilare/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/zilare/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/zilare/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/zilare/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "resistance",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"forgetfulness" : {
+					"type" : "SPELL_DURATION",
+					"subtype" : "spell.forgetfulness",
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"parameters" : [ 8, 2 ]
+					}
+				}
+			}
+		},
+		"spellbook" : [ "forgetfulness" ],
+		"texts" : {
+			"biography" : "齐拉曾经是埃拉西亚某处的图书管理员，他把自己的一切时间都投入学习之中，但不幸的是他根本无法把所有的知识储存在脑海中，甚至有时一天中掌握的知识还不如忘掉的多。一次他因为偷窃珍贵图书而逃逸，那段时间他沦落为海盗船上的厨师，但是后来他还是成为了著名的魔法师。人们都说这个曾经的图书管理员能够掌握控制对手的记忆的方法完全来自于他坚持不懈的学习。",
+			"name" : "齐拉",
+			"specialty" : {
+				"tooltip" : "Spell Bonus: Forgetfulness",
+				"name" : "失忆大法",
+				"description" : "使用失忆大法魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。"
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+{
+	"nwCon06":
+	{
+		"name" :
+		{
+			"plural" : "以太元素",
+			"singular" : "以太元素"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction": "conflux",
+		"aiValue" : 2011,
+		"fightValue" : 1724,
+		"attack" : 16,
+		"defense" : 14,
+		"cost" :
+		{
+			"gold" : 1200
+		},
+		"damage" :
+		{
+			"min" : 15,
+			"max" : 25
+		},
+		"speed" : 9,
+		"upgrades": ["magicElemental"],
+		"graphics" :
+		{
+			"animation" : "creatures/conflux/battle/CON06.def",
+			"map" : "creatures/conflux/map/CON06S.def",
+			"iconSmall" : "creatures/conflux/iconsSmall/CON06S.bmp",
+			"iconLarge" : "creatures/conflux/iconsBig/CON06L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 80,
+		"growth" : 2,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "MGELATTK.wav",
+			"defend": "MGELDFND.wav",
+			"killed": "MGELKILL.wav",
+			"move": "MGELMOVE.wav",
+			"wince": "MGELWNCE.wav"
+		},
+		"abilities":
+		{
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING",
+				"icon": "bonuses/NonLivingelemental.png",
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"magicImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 3
+			},
+			"noRetaliate" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"attackAll" :
+			{
+				"type" : "ATTACKS_ALL_ADJACENT"
+			},
+			"linkMagic" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.con06eff",
+				"val" : 100,
+				"icon": "bonuses/conf06.png",
+				"description" : "{以太连结}\n对直接攻击后未完全消灭的敌人及其周围施放印记",
+			}
+			
+		}
+	}
+}
+
+

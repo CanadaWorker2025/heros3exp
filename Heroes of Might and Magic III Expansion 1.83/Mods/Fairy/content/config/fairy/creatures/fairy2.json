@@ -1,0 +1,147 @@
+{
+	"ftFairy2":
+	{
+		"name" :
+		{
+			"plural" : "花仙",
+			"singular" : "花仙"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction" : "fairy",
+		"aiValue" : 100,
+		"attack" : 3,
+		"cost" :
+		{
+			"gold" : 40
+		},
+		"damage" :
+		{
+			"max" : 3,
+			"min" : 1
+		},
+		"defense" : 2,
+		"fightValue" : 100,
+		"graphics" :
+		{
+			"animation" : "fairy/battle/creatures/CFar02.def",
+			"map" : "fairy/map/creatures/mapfairy2.def",
+			"iconSmall" : "fairy/iconsSmall/creatures/fay02.bmp",
+			"iconLarge" : "fairy/iconsBig/creatures/fairy02.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"growth" : 20,
+		"hitPoints" : 4,
+		"horde" : 8,
+        "level" : 1,
+		"sound" :
+		{
+			"attack": "PIXIATTK.wav",
+			"defend": "PIXIDFND.wav",
+			"killed": "PIXIKILL.wav",
+			"move": "PIXIMOVE.wav",
+			"wince": "PIXIWNCE.wav"
+        },
+		"speed" : 9,
+		"abilities" :
+		{
+		"spellAfterAttack" :
+			{
+                "type":"SPELL_AFTER_ATTACK",
+                "subtype":"spell.slow",
+				"addInfo":2,
+                "val":20,
+				"icon" : "fairy/icons/bonuses/slowattack"
+		    },
+			"flowerRingAttack" :
+			{
+                "type":"SPELL_AFTER_ATTACK",
+                "subtype":"spell.blossomEff",
+                "val":25,
+				"icon" : "fairy/icons/bonuses/blossom"
+		    },
+			"canFly" :  
+			{ 
+				"type" : "FLYING",
+				"icon" : "fairy/icons/bonuses/e_fly4"
+			}
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth", //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.skeleton"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.skeletonWarrior"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]				
+	}
+}

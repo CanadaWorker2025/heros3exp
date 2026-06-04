@@ -1,0 +1,63 @@
+{
+	"b_julian" :
+	{
+    "class": "guardian",//Solendore
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "索伦多尔",
+			"biography" : "索伦多尔曾经是贾达密渡鸦海岸的精灵盗贼，为了生计他曾经加入过那边的海盗团。在海盗团被伯顿当地反抗力量击溃之后，索伦多尔也背叛了海盗们，偷窃船只来到恩塔格瑞，最终在哈蒙代尔一带定居。曾经驯服过暴风鸟的他很快就驯服了森林里的巨大螳螂。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高螳螂或黄金螳螂的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "螳螂"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/julian/UN32hipp.bmp",
+			"specialtyLarge" : "preserve/heroes/julian/UN44hipp.bmp",
+			"large" : "preserve/heroes/julian/HPL001GN.bmp",
+			"small" : "preserve/heroes/julian/HPS001GN.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "hippogryph",
+				"max" : 1,
+				"min" : 1
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+				"specialty" : {
+			"creature" : "hippogryph"
+		}
+	}
+}
+

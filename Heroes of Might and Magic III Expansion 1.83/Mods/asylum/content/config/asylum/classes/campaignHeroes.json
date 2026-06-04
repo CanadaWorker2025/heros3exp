@@ -1,0 +1,54 @@
+{
+// "special" heroes for new towns
+	"core:gelu":
+	{
+		"specialty" : {
+			"base" : {
+				"type" : "SPECIAL_UPGRADE",
+				"addInfo" : "creature.sharpshooter"
+			},
+			"bonuses" : {
+				"shadowhunter2sharpshooter" : { "subtype" : "creature.shadowhunter" },
+				"phantomhunter2sharpshooter" : { "subtype" : "creature.phantomhunter" },
+			}
+		},
+	},
+	"core:ivor":
+	{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"parameters" : [ "shadowhunter", true ],
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+				]
+			},
+			"bonuses" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1
+				}
+			}
+		},
+	},
+	"core:charna":
+	{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"parameters" : [ "sadphanton", true ],
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+				]
+			},
+			"bonuses" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1
+				}
+			}
+		},
+	}
+}

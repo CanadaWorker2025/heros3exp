@@ -1,0 +1,196 @@
+{
+	"core:rampart" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"dwellingLvl7":   { "requires" : [ "allOf", ["fort"], ["mageGuild2"], ["dwellingLvl3"], ["dwellingLvl5" ] ]},
+				"dwellingUpLvl7": { "upgrades" : "dwellingLvl7", "requires" : [ "mageGuild3" ]  }
+			}
+		}
+	},
+	"core:tower" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"dwellingLvl5":   { "requires" : [ "allOf", ["fort"], ["dwellingLvl1"], ["dwellingLvl2"], ["dwellingLvl3" ] ], "cost" : { "gold": 2500 }},
+				"dwellingLvl6":   { "requires" : [ "dwellingLvl5" ] },
+				"dwellingUpLvl5": { "upgrades" : "dwellingLvl5", "requires" : [ "mageGuild1" ]  },
+				"dwellingLvl3": 
+				{
+					"cost" : 
+					{ 
+						"gold":	1500 
+					},
+				},
+				"dwellingUpLvl3": 
+				{
+					"cost" : 
+					{		 
+						"gold":	1500 
+					}
+				},
+				"dwellingLvl4": 
+				{
+					"cost" : 
+					{ 
+						"gold":	2000 
+					}
+				},
+				"dwellingUpLvl7": 
+				{ 
+					"cost" : 
+					{ 
+						"gold":	20000 
+					}
+				}
+			}
+		}
+	},
+	"core:inferno" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"special2": 
+				{ 
+					"cost" :
+					{
+						"sulfur" : 4
+					}
+				},
+				"dwellingUpLvl2": 
+				{ 
+					"cost" :
+					{
+						"mercury" : 4
+					}
+				},	
+				"dwellingUpLvl3": 
+				{ 
+					"cost" :
+					{
+						"sulfur": 4
+					}
+				},	
+				"dwellingUpLvl5": 
+				{ 
+					"requires" : [ "mageGuild1" ]
+				}
+			}
+		}
+	},
+	"core:dungeon" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+			"dwellingLvl7":   { "requires" : [ "allOf", ["fort"], ["mageGuild2"], ["dwellingLvl3"], ["dwellingLvl4" ] ]},
+			"dwellingUpLvl7": { "upgrades" : "dwellingLvl7", "requires" : [ "mageGuild3" ]  },
+			"special2":       {
+					"requires" : [ "mageGuild1" ],
+					"manualHeroVisit" : true,
+					"configuration" : {
+						"resetParameters" : {
+							"period" : 7,
+							"visitors" : true
+						},
+						"visitMode" : "once",
+						"canRefuse": true,
+						"rewards" : [
+							{
+								"limiter" : {
+									"noneOf" : [ { "manaPercentage" : 200 } ]
+								},
+								"message" : "{魔力漩涡}\r\n\r\n接近魔力漩涡时，你的英雄可以暂时拥有双倍的魔法值，你需要激活吗？",
+								"manaPercentage" : 200
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"core:necropolis" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"special2":       
+				{ 
+					"description" : "招魂塔可以给与英雄的招魂术或死灵术5%的奖励。",
+					"requires" : [ "mageGuild1" ],
+					"bonuses": [ { "type": "UNDEAD_RAISE_PERCENTAGE", "val": 5, "propagator": "PLAYER" } ] 
+				},
+				"dwellingLvl5": 
+				{ 
+					"cost" :
+					{
+						"sulfur": 4,
+						"ore" : 5
+					}
+				},
+			
+				"dwellingUpLvl3": 
+				{ 
+					"cost" :
+					{
+						"mercury" : 4
+					}
+				},	
+
+				"dwellingUpLvl5": 
+				{ 
+					"cost" :
+					{
+						"sulfur": 4
+					}
+				}
+			}
+		}
+	},
+	"core:stronghold" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"dwellingLvl6": { "cost": { "crystal": null } },
+				"dwellingUpLvl6": { "cost": { "crystal": 10 } }
+			}
+		}
+	},
+	"core:conflux" :
+	{	
+		"town" :
+		{
+			"structures" :
+			{
+				
+			"dwellingLvl7":   { "animation" : "TBELDW_6.def", "x" : 43,  "y" : 16,  "z" : 0, "campaignBonus" : "BoEdn_6.pcx", "border" : "TOELDW_6.bmp", "area" : "TZELDW_6.bmp" },	
+			"dwellingUpLvl7": { "animation" : "TBELUP_6.def", "x" : 43,  "y" : 0,   "z" : 0, "campaignBonus" : "BoEup_6.pcx", "border" : "TOELUP_6.bmp", "area" : "TZELUP_6.bmp" }
+			},
+			"buildings" :
+			{	
+				"dwellingUpLvl1": 
+				{ 
+					"requires" : [ "allOf", [ "mageGuild1" ], ["horde1"] ]
+				},
+				"dwellingLvl7": 
+				{ 
+					"cost" : 
+					{ 
+						"gold":	15000,
+						"mercury" : 20
+					}
+				}
+			}
+		}
+	}
+}

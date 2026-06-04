@@ -1,0 +1,74 @@
+{
+	"17_Victoria" :
+	{
+    "class": "factoryMClass",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "维多利亚",
+			"biography" : "维多利亚对于起死回生的高等魔法非常痴迷，但谁能够用于试验它？她开始关注于“不小心”踩到地雷的战士们，用他们进行自己的实验。在遇见弗洛里伯特后，这位发明家发现了她的工程知识的另一个用途，为伤残战士设计机械肢体。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "埋设地雷",
+				"description" : "使用埋设地雷魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/17_Victoria/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/17_Victoria/bigS.bmp",
+			"large" : "factory/heroes/17_Victoria/bigP.bmp",
+			"small" : "factory/heroes/17_Victoria/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"spellbook" :
+		[
+			"landMine"
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"landMine" : {
+					"subtype" : "spell.landMine",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}	
+	}
+}
+

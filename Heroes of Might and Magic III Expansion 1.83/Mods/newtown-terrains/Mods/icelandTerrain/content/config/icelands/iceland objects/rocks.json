@@ -1,0 +1,124 @@
+{
+	"core:rock": {
+
+		"types": {
+			"icelandsRocksHills01": {
+				"name": "岩石",
+				"templates": {
+					"ICEROCK09": {
+						"animation": "ice rocks/FSND0001",
+						"mask": ["VV","BB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},					
+					"ICEROCK10": {
+						"animation": "ice rocks/FSND0002",
+						"mask": ["VV","VB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},						
+					"ICEROCK11": {
+						"animation": "ice rocks/FSND0003",
+						"mask": ["VV","BB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},						
+					"ICEROCK12": {
+						"animation": "ice rocks/FSND0004",
+						"mask": ["VV","BB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},
+					"ICEROCK13": {
+						"animation": "ice rocks/FSND0005",
+						"mask": ["VV","VB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},					
+					"ICEROCK14": {
+						"animation": "ice rocks/FSND0006",
+						"mask": [ "VV","BB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},						
+					"ICEROCK15": {
+						"animation": "ice rocks/FSND0007",
+						"mask": ["VV","BB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},						
+					"ICEROCK16": {
+						"animation": "ice rocks/FSND0008",
+						"mask": ["VV","BB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},
+					"ICEROCK17": {
+						"animation": "ice rocks/FSND0009",
+						"mask": ["VV","VB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},
+					"ICEROCK18": {
+						"animation": "ice rocks/iceRock01",
+						"mask": ["VB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},					
+					"ICEROCK19": {
+						"animation": "ice rocks/iceRock02",
+						"mask": ["VBB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},						
+					"ICEROCK20": {
+						"animation": "ice rocks/iceRock03",
+						"mask": ["VBB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},						
+					"ICEROCK21": {
+						"animation": "ice rocks/iceRock04",
+						"mask": ["VVV","VBB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},
+					"ICEROCK22": {
+						"animation": "ice rocks/iceRock05",
+						"mask": ["VVVV","VBBB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},					
+					"ICEROCK23": {
+						"animation": "ice rocks/iceRock06",
+						"mask": [ "VV","VB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					},						
+					"ICEROCK24": {
+						"animation": "ice rocks/iceRock07",
+						"mask": ["VVVV","VVVV","VBVB"],
+						"allowedTerrains": [
+							"icelands"
+						]
+					}
+				}
+			}
+		}
+	}
+}

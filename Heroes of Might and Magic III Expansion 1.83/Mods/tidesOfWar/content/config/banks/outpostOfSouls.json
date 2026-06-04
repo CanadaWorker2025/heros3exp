@@ -1,0 +1,113 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"mdtOutpostOfSouls" : 
+			{
+				"name" : "灵魂前哨",
+				"aiValue" : 6000,
+				"templates" : {
+					"base" : { 
+					"animation" : "banks/outpostOfSouls", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VVVV", "VVBV", "VBAB"],
+					"allowedTerrains": [ "rough", "dirt", "swamp" ] 
+					}
+				},
+				"sounds": {
+					"ambient": ["dwellings/banks/DEMILICHLOOP"]
+				},
+				"rmg" : {
+					"value"		: 6000,
+					"rarity"	: 20,
+					"mapLimit" : 1
+				},
+				"onGuardedMessage" : "{灵魂前哨}\r\n\r\n你听说这里能够连通死后的世界，但没有什么证据表明这是真的。你要进去探查一下吗？",
+				"onVisited" : [
+					{
+						"message" : "{灵魂前哨}\r\n\r\n进入这里之后你什么也没有发现，这使你部队的士气大大低落。", // Such a despicable act reduces your army's morale.
+						"bonuses" : [ { "type" : "MORALE", "val" : -1, "duration" : "ONE_BATTLE" } ]
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "你并没有找到什么死后世界的传送门，但你发现了初级魂器和2 半巫妖。",
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 10, "type" : "powerLich" },
+							{ "amount": 10, "type" : "powerLich" },
+							{ "amount": 10, "type" : "powerLich", "upgradeChance": 50 },
+							{ "amount": 10, "type" : "powerLich", "upgradeChance": 50 },
+							{ "amount": 10, "type" : "powerLich" },
+							{ "amount": 10, "type" : "powerLich" },
+							{ "amount": 10, "type" : "powerLich" }
+						],
+							"creatures" : 
+							[
+								{ "amount": 2, "type": "mdtDemilich" }
+							],
+							"artifacts": [ "mdtMinorPhylactery" ]
+					},
+					{
+						"message" : "你并没有找到什么死后世界的传送门，但你发现了中级魂器和4 半巫妖。",
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 12, "type" : "powerLich" },
+							{ "amount": 12, "type" : "powerLich" },
+							{ "amount": 12, "type" : "powerLich","upgradeChance": 50},
+							{ "amount": 12, "type" : "powerLich","upgradeChance": 50},
+							{ "amount": 12, "type" : "powerLich" },
+							{ "amount": 12, "type" : "powerLich" },
+							{ "amount": 12, "type" : "powerLich" }
+						],
+							"creatures" : 
+							[
+								{ "amount": 4, "type": "mdtDemilich" }
+							],
+							"artifacts": [ "mdtMajorPhylactery" ]
+					},
+					{
+						"message" : "你并没有找到什么死后世界的传送门，但你发现了高级魂器和6 半巫妖。",
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 14, "type" : "powerLich" },
+							{ "amount": 14, "type" : "powerLich" },
+							{ "amount": 14, "type" : "powerLich","upgradeChance": 50 },
+							{ "amount": 14, "type" : "powerLich","upgradeChance": 50 },
+							{ "amount": 14, "type" : "powerLich","upgradeChance": 50 },
+							{ "amount": 14, "type" : "powerLich" },
+							{ "amount": 14, "type" : "powerLich" }
+						],
+							"creatures" : 
+							[
+								{ "amount": 6, "type": "mdtDemilich" }
+							],
+							"artifacts": [ "mdtSupremePhylactery" ]
+					},
+					{
+						"message" : "你并没有找到什么死后世界的传送门，但你发现了超级魂器和8 半巫妖。",
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 18, "type" : "powerLich" },
+							{ "amount": 18, "type" : "powerLich" },
+							{ "amount": 18, "type" : "powerLich","upgradeChance": 50 },
+							{ "amount": 18, "type" : "powerLich","upgradeChance": 50 },
+							{ "amount": 18, "type" : "powerLich","upgradeChance": 50 },
+							{ "amount": 18, "type" : "powerLich" },
+							{ "amount": 18, "type" : "powerLich" }
+						],
+							"creatures" : 
+							[
+								{ "amount": 8, "type": "mdtDemilich" }
+							],
+							"artifacts": [ "mdtRelicPhylactery" ]
+					}
+				]
+			}
+		}
+	}
+}

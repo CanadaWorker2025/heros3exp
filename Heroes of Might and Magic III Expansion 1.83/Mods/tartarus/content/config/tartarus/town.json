@@ -1,0 +1,1088 @@
+{
+	"tartarus" : {
+		"alignment" : "evil",
+		"creatureBackground" : { "120px" : "tartarus/creature-bg-120px.bmp", "130px" : "tartarus/creature-bg-130px.bmp" },
+		"name" : "冰狱",
+		"description" : "{冰狱}\n种族阵营： 邪恶，中立\n种族地形： 冰原\n所在地： 克里根星球-弗里根地区\n冰地狱是对克里根母星球中两极地区的称呼，这些曾经生活在两极地区的恶魔们也曾被地狱势力打压，但在地狱势力前往欧弗之后，他们又很快成为了克里根星球的实际控制者。也是趁着地狱势力被打败的时机，他们从克里根来到了恩塔格瑞。",
+		"nativeTerrain" : "icelands",
+		"preferUndergroundPlacement": true,
+		"boat" : "boatNecropolis",
+		"puzzleMap" : {
+			"prefix" : "tartarus/puzzle-map/PUZ",
+			"pieces" :
+			[
+				{ "index" : 48, "x" : 6,  "y" : 7 },
+{ "index" : 47, "x" : 6,  "y" : 7 },
+{ "index" : 46, "x" : 6,  "y" : 7 },
+{ "index" : 45, "x" : 6,  "y" : 7 },
+{ "index" : 44, "x" : 6,  "y" : 7 },
+{ "index" : 43, "x" : 6,  "y" : 7 },
+{ "index" : 42, "x" : 6,  "y" : 7 },
+{ "index" : 41, "x" : 6,  "y" : 7 },
+{ "index" : 40, "x" : 6,  "y" : 7 },
+{ "index" : 39, "x" : 6,  "y" : 7 },
+{ "index" : 38, "x" : 6,  "y" : 7 },
+{ "index" : 37, "x" : 6,  "y" : 7 },
+{ "index" : 36, "x" : 6,  "y" : 7 },
+{ "index" : 35, "x" : 6,  "y" : 7 },
+{ "index" : 34, "x" : 6,  "y" : 7 },
+{ "index" : 33, "x" : 6,  "y" : 7 },
+{ "index" : 32, "x" : 6,  "y" : 7 },
+{ "index" : 31, "x" : 6,  "y" : 7 },
+{ "index" : 30, "x" : 6,  "y" : 7 },
+{ "index" : 29, "x" : 6,  "y" : 7 },
+{ "index" : 28, "x" : 6,  "y" : 7 },
+{ "index" : 27, "x" : 6,  "y" : 7 },
+{ "index" : 26, "x" : 6,  "y" : 7 },
+{ "index" : 25, "x" : 6,  "y" : 7 },
+{ "index" : 24, "x" : 6,  "y" : 7 },
+{ "index" : 23, "x" : 6,  "y" : 7 },
+{ "index" : 22, "x" : 6,  "y" : 7 },
+{ "index" : 21, "x" : 6,  "y" : 7 },
+{ "index" : 20, "x" : 6,  "y" : 7 },
+{ "index" : 19, "x" : 6,  "y" : 7 },
+{ "index" : 18, "x" : 6,  "y" : 7 },
+{ "index" : 17, "x" : 6,  "y" : 7 },
+{ "index" : 16, "x" : 6,  "y" : 7 },
+{ "index" : 15, "x" : 6,  "y" : 7 },
+{ "index" : 14, "x" : 6,  "y" : 7 },
+{ "index" : 13, "x" : 6,  "y" : 7 },
+{ "index" : 12, "x" : 6,  "y" : 7 },
+{ "index" : 11, "x" : 6,  "y" : 7 },
+{ "index" : 10, "x" : 6,  "y" : 7 },
+{ "index" : 9, "x" : 6,  "y" : 7 },
+{ "index" : 8, "x" : 6,  "y" : 7 },
+{ "index" : 7, "x" : 6,  "y" : 7 },
+{ "index" : 6, "x" : 6,  "y" : 7 },
+{ "index" : 5, "x" : 6,  "y" : 7 },
+{ "index" : 4, "x" : 6,  "y" : 7 },
+{ "index" : 3, "x" : 6,  "y" : 7 },
+{ "index" : 2, "x" : 6,  "y" : 7 },
+{ "index" : 1, "x" : 6,  "y" : 7 }
+			]
+		},
+		"town" : {
+		    "defaultTavern" : 5,
+			"buildings" : {
+				"mageGuild1" :
+				{
+					
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "1级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 2000
+					}
+				},
+				"mageGuild2" :
+				{
+					
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "2级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 4,
+						"ore" : 5,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "3级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 5,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild2"
+				},
+				"mageGuild4" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "4级魔法行会",
+					"cost" :
+					{
+						"wood": 5,
+                        "mercury": 8,
+                        "ore": 5,
+                        "sulfur": 8,
+                        "crystal": 8,
+                        "gems": 8,
+                        "gold": 1000
+					},
+					"upgrades" : "mageGuild3"
+				},
+				"mageGuild5" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "5级魔法行会",
+					"cost" :
+					{
+						"wood": 5,
+                        "mercury": 10,
+                        "ore": 5,
+                        "sulfur": 10,
+                        "crystal": 10,
+                        "gems": 10,
+                        "gold": 1000
+					},
+					"upgrades" : "mageGuild4"
+				},
+				"tavern" :
+				{
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					}
+				},
+				"shipyard" :
+				{
+					"name" : "船坞",
+					"description" : "船坞允许你购买船只。",
+					"cost" :
+					{
+						"wood" : 20,
+						"gold" : 2000
+					}
+				},
+				"fort" :
+				{
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" :
+					{
+						"wood" : 20,
+						"ore" : 20,
+						"gold" : 5000
+					}
+				},
+				"citadel" :
+				{
+					"name" : "大本营",
+					"description" : "大本营不仅能使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 2500
+					},
+					"upgrades" : "fort"
+				},
+				"castle" :
+				{
+					"name" : "城堡",
+					"description" : "城堡可提供2座箭塔以加强城镇的防御，而且还可使生物的基本生长率加倍。",
+					"cost" :
+					{
+						"wood" : 10,
+						"ore" : 10,
+						"gold" : 5000
+					},
+					"upgrades" : "citadel"
+				},
+				"villageHall" :
+				{
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑并每天向你提供500个金币。",
+					"mode" : "auto"
+				},
+				"townHall" :
+				{
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost" :
+					{
+						"gold" : 2500
+					},
+					"requires" : [ "tavern" ],
+					"upgrades" : "villageHall"
+				},
+				"cityHall" :
+				{
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"cost" :
+					{
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", ["mageGuild1"], ["marketplace"], ["blacksmith"] ],
+					"upgrades" : "townHall"
+				},
+				"capitol" :
+				{
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" :
+					{
+						"gold" : 10000
+					},
+					"requires" : [ "castle" ],
+					"upgrades" : "cityHall"
+				},
+				"marketplace" :
+				{
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					}
+				},
+				"resourceSilo" :
+				{
+					"description" : "物资仓库每天为你额外提供1水晶。",
+					"name" : "物资仓库",
+					"produce": { "crystal": 1 },
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"requires" : [ "marketplace" ]
+				},
+				"blacksmith" :
+				{
+					"description" : "铁匠铺可向你的军队提供补给车。",
+					"name" : "铁匠铺",
+					"warMachine" : "ammoCart",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					}
+				},
+				"horde1" :
+				{
+					"description" : "锅炉房可以使恶灵仆从的产量每周增加6个。",
+					"name" : "锅炉房", //Cauldron
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"upgrades" : "dwellingLvl1",
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl1"] ]
+				},
+				"horde1Upgr" :
+				{
+					"description" : "锅炉房可以使冰封恶灵的产量每周增加6个。",
+					"name" : "锅炉房",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"requires" : [ "allOf", ["horde1"], ["dwellingUpLvl1"] ],
+					"upgrades" : "dwellingUpLvl1",
+					"mode" : "auto"
+				},
+				"ship" :
+				{
+					"description" : "船坞允许你购买船只。",
+					"name" : "船坞"
+				},
+				"special1" : 
+				{
+					"description" : "女妖之骨可以使来访的英雄攻击力+1。",
+					"name" : "女妖之骨", //Skulls of Fury
+					"configuration" : {
+						"visitMode" : "hero",
+						"rewards" : [
+							{
+								"message" : "恶魔们声称女妖的骸骨具有魔力，在接近女妖的埋骨地后，你感受到自身力量获得了提升，这使你的攻击力+1。",
+								"primary" : { "attack" : 1 }
+							}
+						]
+					},
+					"cost" : 
+					{
+					"crystal": 2,
+					"gems": 2,
+					"gold" : 1000
+					}
+				},
+			"special2": {
+			"description": "传送阵可以让英雄在冰地狱城之间互相传送。",
+			"name": "传送阵", //Teleport Zone
+			"type": "castleGate",
+					"cost" : 
+					{
+						"crystal": 5,
+						"gold": 8000
+					}
+        },	
+        "horde2" :
+				{
+					"description" : "能量螺旋使女妖的产量每周增加3个。",
+					"name" : "能量螺旋", //Energy Spire
+					"cost" : 
+					{
+						"gold": 1000
+					},
+					"upgrades" : "dwellingLvl3",
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl3"] ]
+				},
+				"horde2Upgr" :
+				{
+					"description" : "能量螺旋使冥河女妖的产量每周增加3个。",
+					"name" : "能量螺旋",
+					"cost" : 
+					{
+						"gold": 1000
+					},
+					"requires" : [ "allOf", ["horde2"], ["dwellingUpLvl3"] ],
+					"upgrades" : "dwellingUpLvl3",
+					"mode" : "auto"
+				},
+				"grail" :
+				{
+					"description" : "寒冰之王使每周的生物产量提高50%，每天为你的王国额外提供5000个金币，提升所有生物的速度1，并且在攻城战中使驻守英雄的攻击力+10。",
+					"name" : "寒冰之王", //Frozen King
+					"produce": { "gold": 5000},
+					"mode" : "grail",
+					"bonuses": [
+						{ "type": "PRIMARY_SKILL", "subtype": "primarySkill.attack", "val": 10 },
+						{ "type": "STACKS_SPEED", "val": 1, "propagator": "PLAYER" } 						
+					]
+				},
+				"dwellingLvl1" :
+				{
+					"description" : "冰窖允许你招募恶灵仆从。",
+					"name" : "冰窖", //Ice Cache
+					"cost" : 
+					{
+						"gold" : 500,
+						"ore" : 5
+					},
+					"requires" : [ "fort" ]
+				},
+				"dwellingLvl2" :
+				{
+					"description" : "冰封之塔允许你招募冰傀儡。",
+					"name" : "冰封之塔", //Frozen Tower
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore": 5
+					},
+					"requires" : [ "dwellingLvl1" ]
+				},
+				"dwellingLvl3" :
+				{
+					"description" : "女妖阁楼允许你招募女妖。",
+					"name" : "女妖阁楼", //Cliff of Fury
+					"cost" : 
+					{
+						"gold" : 1500,
+						"ore" : 5,
+						"wood": 5
+					},
+					"requires" : [ "dwellingLvl1" ]
+				},
+				"dwellingLvl4" :
+				{
+					"description" : "寒冰地穴允许你招募寒冰守卫。",
+					"name" : "寒冰地穴", //Ice Hole
+					"cost" : 
+					{
+						"gold" : 2000,
+						"ore": 10
+					},
+					"requires" : [ "dwellingLvl3" ]
+				},
+				"dwellingLvl5" :
+				{
+					"description" : "水晶蛛网允许你招募魔蛛。",
+					"name" : "水晶蛛网", //Crystal Cobweb
+					"cost" : 
+					{
+						"gold" : 3000,
+						"ore" : 10,
+						"crystal": 5,
+						"gems": 5,
+					},
+					"requires" : [ "allOf", ["mageGuild1"], ["dwellingLvl3"]]
+				},
+				"dwellingLvl6" :
+				{
+					"description" : "冰封神殿允许你招募冰恶魔。",
+					"name" : "冰封神殿", //Arctic Altar
+					"cost" : 
+					{
+						"gold" : 4000,
+						"ore" : 10,
+						"gems": 10
+					},
+					"requires" : [ "dwellingLvl4" ]
+				},
+				"dwellingLvl7" :
+				{
+					"description" : "极寒魔域允许你招募寒冰男爵。",
+					"name" : "极寒魔域", //Cold Hall
+					"cost" : 
+					{
+						"gold": 15000,
+						"wood": 10,
+						"crystal" : 15,
+						"ore" : 10
+					},
+					"requires" : [ "allOf", ["mageGuild1"], ["dwellingLvl6"]]
+				},
+				"dwellingUpLvl1" :
+				{
+					"description" : "高级冰窖允许你招募冰封恶灵。",
+					"name" : "高级冰窖",
+					"cost" :
+					{
+						"gold" : 1000
+					},
+					"upgrades" : "dwellingLvl1"
+				},
+				"dwellingUpLvl2" :
+				{
+					"description" : "高级冰封之塔允许你招募霜傀儡。",
+					"name" : "高级冰封之塔",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore": 5,
+						"mercury": 3
+					},
+					"upgrades" : "dwellingLvl2"
+				},
+				"dwellingUpLvl3" :
+				{
+					"description" : "高级女妖阁楼允许你招募冥河女妖。",
+					"name" : "高级女妖阁楼",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"gems" : 3,
+						"sulfur": 3
+					},
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" :
+				{
+					"description" : "高级寒冰地穴允许你招募寒冰恐惧者。",
+					"name" : "高级寒冰地穴",
+					"cost" : 
+					{
+						"gold" : 2500,
+						"ore": 5,
+						"crystal": 5
+					},
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl5" :
+				{
+					"description" : "高级水晶蛛网允许你招募水晶魔蛛。",
+					"name" : "高级水晶蛛网",
+					"cost" : 
+					{
+						"gold" : 3000,
+						"crystal": 5
+					},
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" :
+				{
+                    "description" : "高级冰封神殿允许你招募极冰恶魔。",
+					"name" : "高级冰封神殿",
+					"cost" : 
+					{
+						"gold" : 4000,
+						"gems": 5,
+						"mercury":10,
+						"ore": 5
+					},
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl7" :
+				{
+					"description" : "高级极寒魔域允许你招募寒冰魔王。",
+					"name" : "高级极寒魔域",
+					"cost" : 
+					{
+						"gold": 18000,
+						"wood": 5,
+						"ore" : 5,
+						"crystal" : 20
+					},
+					"requires" : [ "mageGuild2" ],
+					"upgrades" : "dwellingLvl7"
+				}				
+			},
+			"buildingsIcons" : "tartarus/town-hall.def",
+			"creatures" : [
+				[ "tartarc1", "tartarc2" ],//Ice Spawn, Quasit
+				[ "tartarc3", "tartarc4" ],//Ice Golem, Frost Sculpture
+				[ "tartarc5", "tartarc6" ],//Fury, Stygian Fury
+				[ "tartarc7", "tartarc8" ],//Frost Guard, Frost Terror
+				[ "tartarc9", "tartarc10" ],//Arachnid, Crystal Arachnid
+				[ "tartarca", "tartarcab" ],//Gelugon, Supreme Gelugon
+				[ "tartarcc", "tartarcd" ]//Baron, Beelzebub
+			],
+			"guildBackground" : "TPMAGE.bmp",
+			"guildSpells" : {
+				"bless"          : 0,
+				"bloodlust"      : 10,
+				"cure"           : 4,
+				"curse"          : 10,
+				"dispel"         : 4,
+				"haste"          : 8,
+				"magicArrow"     : 25,
+				"protectAir"     : 5,
+				"protectFire"    : 3,
+				"shield"         : 0,
+				"slow"           : 20,
+				"stoneSkin"      : 0,
+				"summonBoat"     : 5,
+				"viewAir"        : 3,
+				"viewEarth"      : 3,
+
+				"disguise"       : 0,
+				"disruptingRay"  : 10,
+				"fireWall"       : 0,
+				"fortune"        : 0,
+				"iceBolt"        : 20,
+				"lightningBolt"  : 30,
+				"precision"      : 10,
+				"quicksand"      : 10,
+				"removeObstacle" : 6,
+				"scuttleBoat"    : 4,
+				"visions"        : 0,
+				"weakness"       : 10,
+        "airShield"      : 2,
+				"antiMagic"      : 10,
+				"earthquake"     : 2,
+				"fireball"       : 0,
+				"forceField"     : 4,
+				"forgetfulness"  : 10,
+				"frostRing"      : 20,
+				"hypnotize"      : 10,
+				"landMine"       : 4,
+				"mirth"          : 2,
+				"misfortune"     : 10,
+				"protectEarth"   : 4,
+				"protectWater"   : 20,
+				"teleport"       : 2,
+
+				"berserk"        : 10,
+				"chainLightning" : 20,
+				"clone"          : 5,
+				"counterstrike"  : 10,
+				"fireShield"     : 0,
+				"frenzy"         : 0,
+				"inferno"        : 0,
+				"meteorShower"   : 5,
+				"prayer"         : 0,
+				"resurrection"   : 5,
+				"slayer"         : 5,
+				"sorrow"         : 5,
+				"townPortal"     : 15,
+				"waterWalk"      : 5,
+
+				"airElemental"   : 4,
+				"dimensionDoor"  : 15,
+				"earthElemental" : 10,
+				"fireElemental"  : 0,
+				"fly"            : 15,
+				"implosion"      : 15,
+				"magicMirror"    : 15,
+				"sacrifice"      : 11,
+				"waterElemental" : 15
+			},
+			"guildWindow" : "tartarus/town-screen/mage-guild.bmp",
+			"hallBackground" : "TPTHBKDG",
+			"horde" : [ 0, 2 ],
+			"icons" : {
+				"village" : {
+					"normal" : {"small" : "tartarus/icons/hall-small.bmp", "large" : "tartarus/icons/hall-big.bmp" },
+					"built"  : {"small" : "tartarus/icons/hall-builded-small.bmp", "large" : "tartarus/icons/hall-builded-big.bmp" }
+				},
+				"fort" : {
+					"normal" : {"small" : "tartarus/icons/fort-small.bmp", "large" : "tartarus/icons/fort-big.bmp" },
+					"built"  : {"small" : "tartarus/icons/fort-builded-small.bmp", "large" : "tartarus/icons/fort-builded-big.bmp" }
+				}
+			},
+			"mapObject" : {
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"capitol" : { "animation" : "tartarus/map/town/capitol.def" },
+					"castle" : { "animation" : "tartarus/map/town/castle.def" },
+					"citadel" : { "animation" : "tartarus/map/town/citadel.def" },
+					"fort" : { "animation" : "tartarus/map/town/fort.def" },
+					"village" : { "animation" : "tartarus/map/town/village.def" }
+				}
+			},
+			"mageGuild" : 5,
+			
+			"musicTheme" : ["music/factions/tartarusTown"],
+			"names" : [
+				"寒风堡", //Coldwind
+				"弗里斯戴尔",//Frostdale
+				"水晶之境",//Crystalfield
+				"布里姆斯本",//Brimsburn
+				"冬之顶",//Winterspire
+				"赫利莫斯",//Harrimoth
+				"冰崖",//Chillcliff
+				"冻结泉",//Chillsprings
+				"弗里吉特",//Frigid
+				"卡亚湾",//Cryocreek
+				"西纽伦",//West Newland
+				"辛布鲁克",//Hsinbrook
+				"帕鲁玛",//Paluma
+				"弗林德戴尔",//Flinderdale
+				"冥河堡",//Stygian
+				"冥界堡"//Stygius
+			],
+			"primaryResource" : "crystal",
+			"siege" : {
+				"shooter" : "tartarc6",
+				"imagePrefix" : "tartarus/siege/SGIN",
+				"towerIconSmall" : "tartarus/icons/towerSmall",
+				"towerIconLarge" : "tartarus/icons/towerLarge",
+				"gate" :
+				{
+					"arch" : { "x" : 477, "y" : 221 },
+					"gate" : { "x" : 408, "y" : 254 }
+				},
+				"moat" :
+				{
+					"bank" : { "x" : 403, "y" : 68 },
+					"moat" : { "x" : 403, "y" : 68 }
+				},
+				"static" :
+				{
+					"background" : { "x" : 606, "y" : 52 },
+					"bottom" : { "x" : 522, "y" : 376 },
+					"top" : { "x" : 502, "y" : 92 }
+				},
+				"towers" :
+				{
+					"bottom" :
+					{
+						"battlement" : { "x" : 595, "y" : 514 },
+						"creature" : { "x" : 369, "y" : 298 },
+						"tower" : { "x" : 595, "y" : 514 }
+					},
+					"keep" :
+					{
+						"battlement" : { "x" : 730, "y" : 179 },
+						"creature" : { "x" : 511, "y" : -37 },
+						"tower" : { "x" : 730, "y" : 179 }
+					},
+					"top" :
+					{
+						"battlement" : { "x" : 569, "y" : 27 },
+						"creature" : { "x" : 341, "y" : -187 },
+						"tower" : { "x" : 569, "y" : 27 }
+					}
+				},
+				"walls" :
+				{
+					"bottom" : { "x" : 561, "y" : 451 },
+					"bottomMid" : { "x" : 485, "y" : 316 },
+					"upper" : { "x" : 532, "y" : 71 },
+					"upperMid" : { "x" : 480, "y" : 151 }
+				}
+			},
+			"structures" : {
+				"animationRain" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAEXT6",
+					"x" : 0,
+					"y" : 0,
+					"z" : 0
+				},
+				"mageGuild1" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAmage",
+					"area" : "tartarus/town-screen/buildings-area/TZTAmage",
+					"border" : "tartarus/town-screen/buildings-border/TOTAmage",
+					"x" : 0,
+					"y" : 0,
+					"z" : 0
+				},
+				"mageGuild2" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAmag2",
+					"area" : "tartarus/town-screen/buildings-area/TZTAmag2",
+					"border" : "tartarus/town-screen/buildings-border/TOTAmag2",
+					"x" : 0,
+					"y" : 0,
+					"z" : 0
+				},
+				"mageGuild3" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAmag3",
+					"area" : "tartarus/town-screen/buildings-area/TZTAmag3",
+					"border" : "tartarus/town-screen/buildings-border/TOTAmag3",
+					"x" : 0,
+					"y" : 0,
+					"z" : 0
+				},
+				"mageGuild4" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAmag4",
+					"area" : "tartarus/town-screen/buildings-area/TZTAmag4",
+					"border" : "tartarus/town-screen/buildings-border/TOTAmag4",
+					"x" : 0,
+					"y" : 0,
+					"z" : 0
+				},
+				"mageGuild5" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAmag5",
+					"area" : "tartarus/town-screen/buildings-area/TZTAmag5",
+					"border" : "tartarus/town-screen/buildings-border/TOTAmag5",
+					"x" : 0,
+					"y" : 0,
+					"z" : 0
+				},	
+				"tavern" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTATVRN",
+					"area" : "tartarus/town-screen/buildings-area/TZTATVRN",
+					"border" : "tartarus/town-screen/buildings-border/TOTATVRN",
+					"x" : 0,
+					"y" : 0
+				},
+				"shipyard" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAdock",
+					"area" : "tartarus/town-screen/buildings-area/TZTAdock",
+					"border" : "tartarus/town-screen/buildings-border/TOTAdock",
+					"x" : 0,
+					"y" : 0,
+					"z" : 3
+				},
+				"fort" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTACSTL",
+					"area" : "tartarus/town-screen/buildings-area/TZTACSTL",
+					"border" : "tartarus/town-screen/buildings-border/TOTACSTL",
+					"x" : 0,
+					"y" : 0
+				},
+				"citadel" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTACAS2",
+					"area" : "tartarus/town-screen/buildings-area/TZTACAS2",
+					"border" : "tartarus/town-screen/buildings-border/TOTACAS2",
+					"x" : 0,
+					"y" : 0
+				},
+				"castle" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTACAS3",
+					"area" : "tartarus/town-screen/buildings-area/TZTACAS3",
+					"border" : "tartarus/town-screen/buildings-border/TOTACAS3",
+					"x" : 0,
+					"y" : 0
+				},
+				"villageHall" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAhall",
+					"area" : "tartarus/town-screen/buildings-area/TZTAhall",
+					"border" : "tartarus/town-screen/buildings-border/TOTAhall",
+					"x" : 0,
+					"y" : 0
+				},
+				"townHall" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAhal2",
+					"area" : "tartarus/town-screen/buildings-area/TZTAhal2",
+					"border" : "tartarus/town-screen/buildings-border/TOTAhal2",
+					"x" : 0,
+					"y" : 0
+				},
+				"cityHall" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAhal3",
+					"area" : "tartarus/town-screen/buildings-area/TZTAhal3",
+					"border" : "tartarus/town-screen/buildings-border/TOTAhal3",
+					"x" : 0,
+					"y" : 0
+				},
+				"capitol" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAhal4",
+					"area" : "tartarus/town-screen/buildings-area/TZTAhal4",
+					"border" : "tartarus/town-screen/buildings-border/TOTAhal4",
+					"x" : 0,
+					"y" : 0
+				},
+				"marketplace" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAmark",
+					"area" : "tartarus/town-screen/buildings-area/TZTAmark",
+					"border" : "tartarus/town-screen/buildings-border/TOTAmark",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},
+				"resourceSilo" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAsilo",
+					"area" : "tartarus/town-screen/buildings-area/TZTAsilo",
+					"border" : "tartarus/town-screen/buildings-border/TOTAsilo",
+					"x" : 0,
+					"y" : 0,
+					"z" : 3
+				},
+				"blacksmith" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTABLAK",
+					"area" : "tartarus/town-screen/buildings-area/TZTABLAK",
+					"border" : "tartarus/town-screen/buildings-border/TOTABLAK",
+					"x" : 0,
+					"y" : 0
+				},
+				"horde1" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAHRD1",
+					"area" : "tartarus/town-screen/buildings-area/TZTAHRD1",
+					"border" : "tartarus/town-screen/buildings-border/TOTAHRD1",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2,
+					"hidden" : true
+				},
+				"horde1Upgr" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAHRD2",
+					"area" : "tartarus/town-screen/buildings-area/TZTAHRD2",
+					"border" : "tartarus/town-screen/buildings-border/TOTAHRD2",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2,
+					"hidden" : true
+				},
+				"ship" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAdock",
+					"area" : "tartarus/town-screen/buildings-area/TZTAdock",
+					"border" : "tartarus/town-screen/buildings-border/TOTAdock",
+					"x" : 0,
+					"y" : 0,
+					"z" : 4
+				},
+				"special1" : 
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTASPEC",
+					"area" : "tartarus/town-screen/buildings-area/TZTASPEC",
+					"border" : "tartarus/town-screen/buildings-border/TOTASPEC",
+					"x" : 0,
+					"y" : 0,
+					"z" : 1
+				},
+        "special2": {
+          "animation": "tartarus/town-screen/buildings/TBTASpe2",
+          "area": "tartarus/town-screen/buildings-area/TZTASpe2",
+          "border": "tartarus/town-screen/buildings-border/TOTASpe2",
+          "x": 0,
+          "y": 0,
+          "z": 4
+        },
+        	"horde2" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAHRD3",
+					"area" : "tartarus/town-screen/buildings-area/TZTAHRD3",
+					"border" : "tartarus/town-screen/buildings-border/TOTAHRD3",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2,
+					"hidden" : true
+				},
+				"horde2Upgr" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAHRD4",
+					"area" : "tartarus/town-screen/buildings-area/TZTAHRD4",
+					"border" : "tartarus/town-screen/buildings-border/TOTAHRD4",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2,
+					"hidden" : true
+				},			
+				"grail" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAHoly",
+					"area" : "tartarus/town-screen/buildings-area/TZTAHoly",
+					"border" : "tartarus/town-screen/buildings-border/TOTAHoly",
+					"x" : 0,
+					"y" : 0,
+					"z" : 2
+				},
+				"dwellingLvl1" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAdw_0",
+					"area" : "tartarus/town-screen/buildings-area/TZTAdw_0",
+					"border" : "tartarus/town-screen/buildings-border/TOTAdw_0",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingLvl2" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAdw_1",
+					"area" : "tartarus/town-screen/buildings-area/TZTAdw_1",
+					"border" : "tartarus/town-screen/buildings-border/TOTAdw_1",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingLvl3" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAdw_2",
+					"area" : "tartarus/town-screen/buildings-area/TZTAdw_2",
+					"border" : "tartarus/town-screen/buildings-border/TOTAdw_2",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingLvl4" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAdw_3",
+					"area" : "tartarus/town-screen/buildings-area/TZTAdw_3",
+					"border" : "tartarus/town-screen/buildings-border/TOTAdw_3",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingLvl5" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAdw_4",
+					"area" : "tartarus/town-screen/buildings-area/TZTAdw_4",
+					"border" : "tartarus/town-screen/buildings-border/TOTAdw_4",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingLvl6" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAdw_5",
+					"area" : "tartarus/town-screen/buildings-area/TZTAdw_5",
+					"border" : "tartarus/town-screen/buildings-border/TOTAdw_5",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 2
+				},
+				"dwellingLvl7" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAdw_6",
+					"area" : "tartarus/town-screen/buildings-area/TZTAdw_6",
+					"border" : "tartarus/town-screen/buildings-border/TOTAdw_6",
+					"x" : 0,
+					"y" : 0,
+					"z" : 4
+				},
+				"dwellingUpLvl1" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAup_0",
+					"area" : "tartarus/town-screen/buildings-area/TZTAup_0",
+					"border" : "tartarus/town-screen/buildings-border/TOTAup_0",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingUpLvl2" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAup_1",
+					"area" : "tartarus/town-screen/buildings-area/TZTAup_1",
+					"border" : "tartarus/town-screen/buildings-border/TOTAup_1",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingUpLvl3" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAup_2",
+					"area" : "tartarus/town-screen/buildings-area/TZTAup_2",
+					"border" : "tartarus/town-screen/buildings-border/TOTAup_2",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingUpLvl4" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAup_3",
+					"area" : "tartarus/town-screen/buildings-area/TZTAup_3",
+					"border" : "tartarus/town-screen/buildings-border/TOTAup_3",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingUpLvl5" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAup_4",
+					"area" : "tartarus/town-screen/buildings-area/TZTAup_4",
+					"border" : "tartarus/town-screen/buildings-border/TOTAup_4",
+					"x" : 0,
+					"y" : 0
+				},
+				"dwellingUpLvl6" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAup_5",
+					"area" : "tartarus/town-screen/buildings-area/TZTAup_5",
+					"border" : "tartarus/town-screen/buildings-border/TOTAup_5",
+					"x" : 0,
+					"y" : 0,
+					"z"	: 2
+				},
+				"dwellingUpLvl7" :
+				{
+					"animation" : "tartarus/town-screen/buildings/TBTAup_6",
+					"area" : "tartarus/town-screen/buildings-area/TZTAup_6",
+					"border" : "tartarus/town-screen/buildings-border/TOTAup_6",
+					"x" : 0,
+					"y" : 0,
+					"z" : 4
+				}
+			},
+		"tavernVideo" : "tarTav.BIK",
+		"townBackground" : "tartarus/town-screen/background.bmp",
+		"moatAbility" : "castleMoat",
+		"hallSlots" : [
+				[
+					[ "villageHall", "townHall", "cityHall", "capitol" ],
+					[ "fort", "citadel", "castle" ],
+					[ "tavern" ],
+					[ "blacksmith" ]
+				],
+				[
+					[ "marketplace", "resourceSilo" ],
+          [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ],
+          [ "special1" ],
+					[ "shipyard" ]
+				],
+				[
+          [ "special2" ],
+            [ "horde2", "horde2Upgr" ],
+			    	[ "horde1", "horde1Upgr" ]
+				],
+				[
+					[ "dwellingLvl1", "dwellingUpLvl1" ],
+					[ "dwellingLvl2", "dwellingUpLvl2" ],
+					[ "dwellingLvl3", "dwellingUpLvl3" ],
+					[ "dwellingLvl4", "dwellingUpLvl4" ]
+				],
+				[
+					[ "dwellingLvl5", "dwellingUpLvl5" ],
+					[ "dwellingLvl6", "dwellingUpLvl6" ],
+					[ "dwellingLvl7", "dwellingUpLvl7" ]
+				]
+			]
+		}
+	}
+}

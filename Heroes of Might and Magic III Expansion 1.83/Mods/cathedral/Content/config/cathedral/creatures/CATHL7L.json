@@ -1,0 +1,123 @@
+{
+	"cthPunisher":
+	{
+		"name" :
+		{
+			"plural" : "暗天使",
+			"singular" : "暗天使"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 4
+		},
+		"faction" : "cathedral",
+		"upgrades": ["cthChasteners"],
+		"level" : 7,
+		"attack" : 20,
+		"defense" : 15,
+		"damage" :
+		{
+			 "min" : 35,
+			 "max" : 55
+		},
+		"growth" : 1,
+		"hitPoints" : 150,
+		"speed" : 14,
+		"fightValue" : 3764,
+		"aiValue" : 3987,
+		"cost" :
+		{
+			"gold" : 2800,
+			"sulfur" : 1
+		},
+		"graphics" :
+		{
+			"animation" : "cathedral/creatures/battle/CATHL7L.def",
+			"map" : "cathedral/creatures/map/AVWCATH13.def",
+			"iconSmall" : "cathedral/creatures/iconsSmall/CRCT013S.bmp",
+			"iconLarge" : "cathedral/creatures/iconsBig/CRCT013.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"abilities" :
+		{
+
+		   "FLYING_ARMY": {
+			"type": "FLYING",
+			"subtype" : "movementTeleporting"
+			},
+			"hateAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.angel",
+				"val" : 50,
+				"description" : "{堕落天使}\n对{天使}和{大天使}伤害+50%",
+				"icon" : "catheSpells/fallen.png"
+			},
+			"hateArchAngels" : 
+			{
+				"hidden":true,
+				"type" : "HATE",
+				"subtype" : "creature.archangel",
+				"val" : 50
+			},
+			"advanceSlayer" : { "type" : "KING", "val": 2 }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			}
+		],
+		"sound" :
+		{
+			"attack": "PLIZATTK.wav",
+			"defend": "AAGLDFND.wav",
+			"killed": "NOSFEXT1.wav",
+			"move": "AAGLMOVE.wav",
+			"wince": "NOSFEXT2.wav",
+			"startMoving": "cathedral/CCT7EXT1.wav",
+			"endMoving": "cathedral/CCT7EXT2.wav"
+		}
+	}
+}
+
+
+

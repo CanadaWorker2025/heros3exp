@@ -1,0 +1,84 @@
+{
+	"interference" : {
+		"name" : "干扰术",
+		"gainChance" : {
+			"might" : 5,
+			"magic" : 0
+		},
+		"specialty" : [
+			"main"
+		],
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "spellpower",
+					"valueType" : "PERCENT_TO_ALL",
+					"propagator" : "BATTLE_WIDE"
+				},
+				"cancelSelfDebuff" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "spellpower",
+					"valueType" : "PERCENT_TO_ALL",
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"noneOf",
+						"OPPOSITE_SIDE"
+					]
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{初级干扰术}\n\n掌握初级干扰术可以在战斗中降低敌方英雄10%的力量。",
+			"effects" : {
+				"main" : {
+					"val" : -10
+				},
+				"cancelSelfDebuff" : {
+					"val" : 10
+				}
+			},
+			"images" : {
+				"small" : "hota/skills/interference/icons/small/basic",
+				"medium" : "hota/skills/interference/icons/medium/basic",
+				"large" : "hota/skills/interference/icons/large/basic",
+				"scenarioBonus" : "hota/skills/interference/icons/large/bonus1"
+			}
+		},
+		"advanced" : {
+			"description" : "{中级干扰术}\n\n掌握中级干扰术可以在战斗中降低敌方英雄20%的力量。",
+			"effects" : {
+				"main" : {
+					"val" : -20
+				},
+				"cancelSelfDebuff" : {
+					"val" : 20
+				}
+			},
+			"images" : {
+				"small" : "hota/skills/interference/icons/small/advanced",
+				"medium" : "hota/skills/interference/icons/medium/advanced",
+				"large" : "hota/skills/interference/icons/large/advanced",
+				"scenarioBonus" : "hota/skills/interference/icons/large/bonus2"
+			}
+		},
+		"expert" : {
+			"description" : "{高级干扰术}\n\n掌握高级干扰术可以在战斗中降低敌方英雄30%的力量。",
+			"effects" : {
+				"main" : {
+					"val" : -30
+				},
+				"cancelSelfDebuff" : {
+					"val" : 30
+				}
+			},
+			"images" : {
+				"small" : "hota/skills/interference/icons/small/expert",
+				"medium" : "hota/skills/interference/icons/medium/expert",
+				"large" : "hota/skills/interference/icons/large/expert",
+				"scenarioBonus" : "hota/skills/interference/icons/large/bonus3"
+			}
+		}
+	}
+}

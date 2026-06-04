@@ -1,0 +1,72 @@
+{
+	"tarhero06" :
+	{
+    "class": "taHeroA",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "塔萨布",
+			"biography" : "勇敢的北方战士塔萨布曾经派他的部队攻击弗里根城堡。但终究不敌的他被恶魔所俘虏。随后，恶魔们对这个可怜的俘虏灌输着他们的思想。此后塔萨布侍奉着这群恶魔，并且为他们而战斗。",
+			"specialty" :
+			{
+				"description" : "在后勤学上每级增加5%的奖励。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "后勤学"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero06/skill6.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero06/skills6.bmp",
+			"large" : "tartarus/heroes/tarhero06/tarH6.bmp",
+			"small" : "tartarus/heroes/tarhero06/tarH6S.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "demonicBlood"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	
+	}
+}
+

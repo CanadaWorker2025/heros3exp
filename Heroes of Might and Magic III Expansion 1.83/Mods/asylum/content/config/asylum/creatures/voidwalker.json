@@ -1,0 +1,101 @@
+{
+  "voidwalker": {
+    "name": {
+      "plural": "噬魂者",
+      "singular": "噬魂者"
+    },
+    "advMapAmount": {
+ "max" : 8,
+ "min" : 3
+    },
+    "faction": "asylum",
+    "aiValue": 6835,
+    "attack": 24,
+    "cost": {
+      "gold": 4500,
+      "crystal": 3
+    },
+    "damage": {
+ "max" : 50,
+ "min" : 35
+    },
+    "defense": 25,
+    "fightValue": 5505,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST7U.def",
+      "map": "asylum/map/creatures/AVWC190.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS190Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL190Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide": true,
+    "growth": 1,
+    "hitPoints": 180,
+    "level": 7,
+    "sound": {
+      "attack": "asylum/CPU7ATTK.wav",
+      "defend": "asylum/CPU7DFND.wav",
+      "killed": "asylum/CPU7KILL.wav",
+      "move": "asylum/CPU7MOVE.wav",
+      "wince": "asylum/CPU7WNCE.wav",
+      "startMoving": "asylum/CPU7EXT1.wav",
+      "endMoving": "asylum/CPU7EXT2.wav"
+    },
+    "speed": 16,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind": {
+        "type": "MIND_IMMUNITY"
+      },
+	  "expertSlayer" : { "type" : "KING", "val": 3 },
+      "FLYING_ARMY": {
+        "type": "FLYING",
+        // type loaded from crtraits
+         "subtype" : "movementTeleporting"
+      },
+      "blockRetaliation": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "drainsLife": {
+        "type": "LIFE_DRAIN",
+        "val": 50
+      }
+    },
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			}
+		]
+  }	
+	}

@@ -1,0 +1,149 @@
+{
+	"treant":
+	{
+		"name" :
+		{
+			"plural" : "森林龙",
+			"singular" : "森林龙"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 4
+		},
+		"faction" : "preserve",
+		"aiValue" : 3809,
+		"attack" : 19,
+		"cost" :
+		{
+      "gold": 2400,
+      "gems": 1
+		},
+		"damage" :
+		{
+			 "max" : 40,
+			 "min" : 30
+		},
+		"defense" : 19,
+		"fightValue" : 3034,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C7Trea.def",
+      "map": "preserve/map/creatures/AVWC175.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS175P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL175P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.5,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide" : true,
+		"growth" : 1,
+		"hitPoints" : 180,
+    "level": 7,
+    "upgrades":
+		[
+			"ancienttreant"
+		],
+		"sound" :
+		{
+			"attack": "FAERATTK.wav",
+			"defend": "FAERDFND.wav",
+			"killed": "FAERKILL.wav",
+			"move": "FAERMOVE.wav",
+			"shoot": "FAERSHOT.wav",
+			"wince": "FAERWNCE.wav"
+		},
+		"speed" : 10,
+    "abilities":
+      {
+		"basicSlayer" : { "type" : "KING", "val": 1 },
+			"canFly" : 
+			{
+				"type" : "FLYING",
+				"icon" : "preserve/icons/bonuses/e_fly4.png"
+			},
+		"dragon" : 
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"spellImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 2
+			},
+		"fireBreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH",
+				"icon" : "preserve/icons/bonuses/dragon2.png"
+			}
+	    },	
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" : 
+				{ 
+					"type" : "HP_REGENERATION" 
+				},
+				"values" : [ 5,10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+
+			},
+			{
+				"bonus" :
+				{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+				},
+				"values" : [ false, false, false, false, false, false, false, false, false, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

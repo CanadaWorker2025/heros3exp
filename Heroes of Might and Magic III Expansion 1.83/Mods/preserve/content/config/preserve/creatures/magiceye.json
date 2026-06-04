@@ -1,0 +1,108 @@
+{
+	"magiceye":
+	{
+		"name" :
+		{
+			"plural" : "老虎",
+			"singular" : "老虎"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "preserve",
+		"aiValue" : 347,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 200
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 4
+		},
+		"defense" : 8,
+		"doubleWide": true,
+		"fightValue" : 305,
+		"graphics" :
+		{
+			"animation" : "preserve/battle/creatures/C3Meye.def",
+			"map" : "preserve/map/creatures/AVWC167.def",
+			"iconSmall" : "preserve/iconsSmall/creatures/CPrS167P.bmp",
+			"iconLarge" : "preserve/iconsBig/creatures/CPrL167P.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10
+			},
+	       },
+		"growth" : 7,
+		"hitPoints" : 20,
+		"level" : 3,
+		"upgrades":
+		[
+			"misfortuneeye"
+		],
+		"sound" :
+		{
+			"attack": "preserve/S167ATTK.wav",
+			"defend" : "preserve/S167DFND.wav",
+			"killed" : "preserve/S167KILL.wav",
+			"move" : "preserve/S165MOVE.wav",
+			"wince" : "preserve/S167WNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "RETURN_AFTER_STRIKE"
+				},
+				"values" : [ false, false, false, true, true, true, true, true, true, true ]
+			}
+		]
+	}
+}

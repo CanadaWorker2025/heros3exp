@@ -1,0 +1,161 @@
+{
+	"blessingSeal" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "命运诅咒",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 1,
+		"defaultGainChance": 0, 		
+		"gainChance":
+		{
+			
+		},
+		"graphics":
+		{
+			"iconEffect": "spellsPavilion/BlessingSealEffect.bmp"
+		},		
+		"animation":
+		{
+			"affect":[{"defName":"C02SPE0", "verticalPosition":"bottom"}, "C02SPE0"]
+		},
+		"sounds": {
+			"cast": "BACKLASH"
+		},
+		
+		"levels" : 
+		{
+			
+			"base":
+			{
+				"description": "{命运诅咒}\r\n\r\n使目标无法对部分增益魔法受身。",
+				"cost": 0,
+				"power": 1,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"effects" : {
+							"hasteSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "haste",					
+								"duration" : "N_TURNS"
+							},
+							"fortuneSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "fortune",					
+								"duration" : "N_TURNS"
+							},
+							"precisionSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "precision",						
+								"duration" : "N_TURNS"
+							},
+							"airShieldSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "airShield",					
+								"duration" : "N_TURNS"
+							},
+							"protectAirSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "protectAir",						
+								"duration" : "N_TURNS"
+							},
+							"counterstrikeSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "counterstrike",						
+								"duration" : "N_TURNS"
+							},
+							"magicMirrorSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "magicMirror",						
+								"duration" : "N_TURNS"
+							},
+							"bloodlustSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "bloodlust",						
+								"duration" : "N_TURNS"
+							},
+							"protectFireSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "protectFire",						
+								"duration" : "N_TURNS"
+							},
+							"fireShieldSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "fireShield",						
+								"duration" : "N_TURNS"
+							},
+							"frenzySeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "frenzy",						
+								"duration" : "N_TURNS"
+							},
+							"slayerSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "slayer",						
+								"duration" : "N_TURNS"
+							},
+							"shieldSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "shield",						
+								"duration" : "N_TURNS"
+							},
+							"stoneSkinSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "stoneSkin",						
+								"duration" : "N_TURNS"
+							},
+							"protectEarthSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "protectEarth",						
+								"duration" : "N_TURNS"
+							},
+							"antiMagicSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "antiMagic",						
+								"duration" : "N_TURNS"
+							},
+							"resurrectionSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "resurrection",						
+								"duration" : "N_TURNS"
+							},
+							"blessSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "bless",						
+								"duration" : "N_TURNS"
+							},
+							"cureSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "cure",						
+								"duration" : "N_TURNS"
+							},
+							"protectWaterSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "protectWater",						
+								"duration" : "N_TURNS"
+							},
+							"mirthSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "mirth",						
+								"duration" : "N_TURNS"
+							},
+							"prayerSeal" : {
+								"type" : "SPELL_IMMUNITY",
+								"subtype" : "prayer",						
+								"duration" : "N_TURNS"
+							}
+						}
+			},		
+			"none" : {},
+			"basic" : {},
+			"advanced" : {},
+			"expert" : {}
+					
+		},	
+		"flags" : {
+			"negative": true
+		}
+	}
+}

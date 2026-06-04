@@ -1,0 +1,62 @@
+{
+	"kamilaSpecial" :
+	{
+		"class" : "druid",
+		"female" : true,
+		"special": true,
+		"images" :
+		{
+			"large" : "hota/rampart/heroes/kamila/icons/portraitLarge.png",
+			"small" : "hota/rampart/heroes/kamila/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/rampart/heroes/kamila/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/rampart/heroes/kamila/icons/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "centaur",
+				"min" : 12,
+				"max" : 24
+			},
+			{
+				"creature" : "dwarf",
+				"min" : 3,
+				"max" : 5
+			},
+			{
+				"creature" : "woodElf",
+				"min" : 2,
+				"max" : 4
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "learning",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"learning" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"val" : 100,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		},
+		"spellbook" : [ "slow" ],
+		"texts" : {
+			"biography" : "卡米拉是哈蒙代尔附近居住的一名德鲁伊，她拥有很多森林里的知识，也让周围的人钦佩，只是不知道她现在究竟是在研究什么东西。",
+			"name" : "卡米拉",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Learning",
+				"name" : "学习能力",
+				"description" : "在学习能力上每级得到5%的奖励。"
+			}
+		}
+	}
+}

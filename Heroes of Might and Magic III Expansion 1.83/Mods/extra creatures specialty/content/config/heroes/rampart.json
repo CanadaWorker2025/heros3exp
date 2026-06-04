@@ -1,0 +1,42 @@
+{
+	"core:ufretin":{
+        "texts": {
+            "specialty": {
+                "name": "矮人",
+                "description": "每2级提高矮人及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:ivor":{
+        "texts": {
+            "specialty": {
+                "name": "木精灵",
+                "description": "每3级提高木精灵及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:aeris":{
+        "texts": {
+            "specialty": {
+                "name": "飞马",
+                "description": "每4级提高飞马及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:ryland":{
+        "texts": {
+            "specialty": {
+                "name": "枯木卫士",
+                "description": "每5级提高枯木卫士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:clancy":{
+        "texts": {
+            "specialty": {
+                "name": "独角兽",
+                "description": "每6级提高独角兽及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

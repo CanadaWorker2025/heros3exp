@@ -1,0 +1,30 @@
+{
+	"pendantOfReflection" : {
+		"type" : [ "HERO" ],
+		"slot" : "NECK",
+		"class" : "RELIC",
+		"value" : 12000,
+		"bonuses" : {
+			"magicResistance" : {
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 20,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"components" : [
+			"garnitureOfInterference",
+			"surcoatOfCounterpoise",
+			"bootsOfPolarity"
+		],
+		"graphics" : {
+			"image" : "hota/artifactsIcons/pendantOfReflection",
+			"map" : "hota/artifactsMap/pendantOfReflection",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/pendantOfReflection"
+		},
+		"text" : {
+			"description" : "{抗魔坠饰}\r\n\r\n佩戴抗魔坠饰，可以提升部队的抗魔几率+20%。",
+			"event" : "士兵们经过你时谈论着一个奇迹，你好奇地跟着他们，看到了一幅奇怪的景象，一个流浪汉坐在火焰陷阱上，没有受到任何伤害，你开出价钱以交换这个秘密，但是他大笑着消失在空气中，一个奇异的坠饰丢在了陷阱中间。",
+			"name" : "抗魔坠饰"
+		}
+	}
+}

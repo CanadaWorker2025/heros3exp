@@ -1,0 +1,56 @@
+{
+	"noli" :
+	{
+		"class" : "redtemplar",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/noli/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/noli/spec-large.bmp",
+			"large" : "cathedral/heroes/noli/portrait-large.bmp",
+			"small" : "cathedral/heroes/noli/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+		],
+		"texts" :
+		{
+			"name" : "那萨尼尔",
+			"biography" : "那萨尼尔由于过度傲慢，被凯瑟琳王后贬去镇守边境。他一直为此愤愤不平。在与亡灵的战斗失败之后，他加入了幸存者组建的教会。当然，他永远不会改变他的性格，即使是落难的时候。",
+			"specialty" :
+			{
+				"description" : "在防御术上每级获得5%的奖励。",
+				"tooltip" : "特长：防御术",
+				"name" : "防御术"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

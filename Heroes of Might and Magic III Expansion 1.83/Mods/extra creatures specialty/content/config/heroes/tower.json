@@ -1,0 +1,63 @@
+{
+	"core:piquedram":{
+        "texts": {
+            "specialty": {
+                "name": "石像鬼",
+                "description": "每2级提高石像鬼及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:josephine":{
+        "texts": {
+            "specialty": {
+                "name": "石人",
+                "description": "每3级提高石人及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:theodorus":{
+        "texts": {
+            "specialty": {
+                "name": "法师",
+                "description": "每4级提高法师及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:iona":{
+        "texts": {
+            "specialty": {
+                "name": "神怪",
+                "description": "每5级提高神怪及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:thane":{
+        "texts": {
+            "specialty": {
+                "name": "神怪",
+                "description": "每5级提高神怪及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:fafner":{
+        "texts": {
+            "specialty": {
+                "name": "蛇女",
+                "description": "每6级提高蛇女及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:torosar":{
+		"specialty": {
+			"creature": "ballista",
+			"creatureLevel" : 5,
+			"stepSize" : 30
+		},
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+            }
+        }
+	}
+}

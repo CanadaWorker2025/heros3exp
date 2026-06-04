@@ -1,0 +1,17 @@
+{
+	"core:broghild" :
+	{
+	"specialty" :{	"bonuses" : {
+		"hpRegeneration": {
+				"type" : "HP_REGENERATION",
+				"val" : 35,
+				"limiters":
+				[{
+                "type": "CREATURE_TYPE_LIMITER",
+                "creature" : "wyvernMonarch",
+				"includeUpgrades" : true
+              }]
+			}}
+		}
+	}
+}	

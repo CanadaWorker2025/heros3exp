@@ -1,0 +1,101 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"ftFairiesBank" : 
+			{
+				"name" : "花仙宝屋",
+				"aiValue" : 1000,
+				"templates" : {
+					"base" : { "animation" : "fairy/map/banks/Fairies Bank.def", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VVV", "VVV", "VVA" ]
+					}
+				},
+				"rmg" : {
+					"value"		: 2000,
+					"rarity"	: 100
+				},
+				"onGuardedMessage" : "{花仙宝屋}\r\n\r\n花仙们喜欢在花园里嬉戏，你听附近的人说这些花仙收集了不少宝石和水晶，你想要夺取她们的物资吗？",
+				"onVisitedMessage" : "{花仙宝屋}\r\n\r\n你听说这里是花仙们的花园，但进入之后，你发现无人打理的花园已经长满了杂草。不知道谁把花仙们赶走了。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "你把美丽的花园翻了个底朝天，在一片花丛下找到了她们藏着的宝石和水晶，还有一些物资。",
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards" : [
+							{ "amount": 20, "type" : "ftFairy1" },
+							{ "amount": 20, "type" : "ftFairy1" },
+							{ "amount": 20, "type" : "ftFairy1", "upgradeChance": 50 },
+							{ "amount": 20, "type" : "ftFairy1" },
+							{ "amount": 20, "type" : "ftFairy1" }
+						],
+						"resources": 
+							{
+							
+								"crystal" : 2,
+								"gems" : 2,
+								"gold" : 1000
+							}
+					},
+					{
+						"message" : "你把美丽的花园翻了个底朝天，在一片花丛下找到了她们藏着的宝石和水晶，还有一些物资。",
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards" : [
+							{ "amount": 30, "type" : "ftFairy1" },
+							{ "amount": 30, "type" : "ftFairy1" },
+							{ "amount": 30, "type" : "ftFairy1", "upgradeChance": 50 },
+							{ "amount": 30, "type" : "ftFairy1" },
+							{ "amount": 30, "type" : "ftFairy1" }
+						],
+						"resources" :
+						{
+							
+								"crystal" : 3,
+								"gems" : 3,
+								"gold" : 1000
+							}
+					},
+					{
+						"message" : "你把美丽的花园翻了个底朝天，在一片花丛下找到了她们藏着的宝石和水晶，还有一些物资。",
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards" : [
+							{ "amount": 40, "type" : "ftFairy1" },
+							{ "amount": 40, "type" : "ftFairy1" },
+							{ "amount": 40, "type" : "ftFairy1", "upgradeChance": 50 },
+							{ "amount": 40, "type" : "ftFairy1" },
+							{ "amount": 40, "type" : "ftFairy1" }
+						],
+						"resources" :
+						{
+								"crystal" : 5,
+								"gems" : 5,
+								"gold" : 1000
+						}
+					},
+					{
+						"message" : "你把美丽的花园翻了个底朝天，在一片花丛下找到了她们藏着的宝石和水晶，还有一些物资。",
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards" : [
+							{ "amount": 60, "type" : "ftFairy1" },
+							{ "amount": 60, "type" : "ftFairy1" },
+							{ "amount": 60, "type" : "ftFairy1", "upgradeChance": 50 },
+							{ "amount": 60, "type" : "ftFairy1" },
+							{ "amount": 60, "type" : "ftFairy1" }
+						],
+						"resources" :
+						{
+							
+								"crystal" : 6,
+								"gems" : 6,
+								"gold" : 2000
+							}
+					}
+				]
+			}
+		}
+	}
+}

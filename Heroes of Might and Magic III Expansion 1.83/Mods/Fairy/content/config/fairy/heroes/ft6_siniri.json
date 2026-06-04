@@ -1,0 +1,63 @@
+{
+	"ftF_Siniri" :
+	{
+		"class" : "hunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "辛妮莉",
+			"biography" : "辛妮莉在花仙王国声名显赫。她指挥着威名远播的妖精皇家卫队。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高妖精贵族或妖精女王的攻击力与防御力。。",
+				"tooltip" : "{Royal Gold Fairys}\r\n\r\nCan upgrade Royal Fairies to Royal Gold Fairys",
+				"name" : "妖精贵族"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/sithyrr/un32ball.png",
+			"specialtyLarge" : "fairy/heroes/sithyrr/un44ball.png",
+			"large" : "fairy/heroes/sithyrr/hpl290.png",
+			"small" : "fairy/heroes/sithyrr/hps290.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty": //special upgrade
+			{
+				"creature" : "ftWyvern1",
+			} 
+	}
+}

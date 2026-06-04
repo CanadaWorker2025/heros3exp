@@ -1,0 +1,237 @@
+{
+	"hota.bulwark:bulwark" : {
+		"town" : {
+			"hallBackground" : "bastille/town-screen/TPTHBWFG.png",
+			"buildingsIcons": "bastille/townhallBulwark.json",
+			"hallSlots" : [
+				[ [ "villageHall", "townHall", "cityHall", "capitol"],["fort","citadel","castle"],["tavern"],["blacksmith"] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1","mageGuild2","mageGuild3","mageGuild4" ],[ "special4" ],[ "shipyard" ] ],
+				[ [ "special1" ],[ "special2","special3" ],[ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl6B", "dwellingUpLvl6B" ], [ "dwellingLvl7", "dwellingUpLvl7" ] ]
+			],
+			"creatures" : [
+				[ "bulwarkKobold","bulwarkKoboldForeman"],
+				[ "bulwarkMountainRam", "bulwarkArgali" ],
+				[ "bulwarkSnowElf", "bulwarkSteelElf" ],
+				[ "bulwarkYeti", "bulwarkYetiRunemaster"],
+				[ "bulwarkShaman", "bulwarkGreatShaman" ],
+				[ "bulwarkMammoth","bulwarkWarMammoth", "bulwarkEXT1", "bulwarkEXT2" ],
+				[ "bulwarkJotunn", "bulwarkJotunnWarlord" ]
+			],
+			"buildings" :
+			{
+				"special2" : {
+					"name" : "符文祭坛",
+					"description" : "符文祭坛允许本地英雄学习基础符文辅助技能。",
+					"cost" : {
+						"gold" : 1000,
+						"ore" : 5,
+						"crystal" : 2,
+						"gems" : 2
+					},
+					"manualHeroVisit" : true,
+					"configuration" : {
+						"visitMode" : "limiter",
+						"visitLimiter" : {
+							"secondary" : {
+								"runes" : 1
+							}
+						},
+						"onVisitedMessage" : "你的英雄可以学习符文技能。",
+						"selectMode" : "selectFirst",
+						"canRefuse" : true,
+						"rewards" : [
+							{
+								"limiter" : {
+									"anyOf" : [
+										{
+											"heroClasses" : [
+												"elder",
+												"chieftain",
+												"bpyromancer",
+												"bwarlord"
+											],
+											"canLearnSkills" : true
+										},
+										{
+											"secondary" : {
+												"scholar" : 1
+											},
+											"canLearnSkills" : true
+										}
+									]
+								},
+								"message" : "你需要学习符文技能吗？",
+								"secondary" : [
+									{
+										"type" : "runes",
+										"amount" : 1
+									}
+								]
+							}
+						],
+						"onEmpty" : [
+							{
+								"limiter" : {
+									"anyOf" : [
+										{
+											"heroClasses" : [
+												"elder",
+												"chieftain"
+											]
+										},
+										{
+											"secondary" : {
+												"scholar" : 1
+											}
+										}
+									]
+								},
+								"message" : "你的英雄试图掌握符文的知识，却徒劳无功。他已经掌握了许多技能，却无法学习任何新东西。"
+							},
+							{
+								"message" : "你的英雄试图掌握符文的知识，却发现自己根本无法解读它们。看来这门技艺只有当地人和了解{学术}技能的人才能掌握。"
+							}
+						]
+					}
+				},
+				"special4": {
+					"description": "符文石商店可以出售8种符文石，每天只能购买一次。",
+					"name": "符文石商店",
+					"manualHeroVisit" : true,
+					"configuration" :
+					{
+						"rewards" : [
+							{
+								"limiter" : { "resources" : { "wood" : 3 } },
+								"resources" : { "wood" : -3 },
+								"artifacts" : [ "runeArtifact01" ],
+							},
+							{
+								"limiter" : { "resources" : { "wood" : 3 } },
+								"resources" : { "wood" : -3 },
+								"artifacts" : [ "runeArtifact02" ],
+							},
+							{
+								"limiter" : { "resources" : { "wood" : 3 } },
+								"resources" : { "wood" : -3 },
+								"artifacts" : [ "runeArtifact03" ],
+							},
+							{
+								"limiter" : { "resources" : { "wood" : 3, "ore": 3 } },
+								"resources" : { "wood" : -3, "ore": -3 },
+								"artifacts" : [ "runeArtifact04" ],
+							},
+							{
+								"limiter" : { "resources" : { "wood" : 3, "ore": 3 } },
+								"resources" : { "wood" : -3, "ore": -3 },
+								"artifacts" : [ "runeArtifact05" ],
+							},
+							{
+								"limiter" : { "resources" : { "wood" : 3, "ore": 3 } },
+								"resources" : { "wood" : -3, "ore": -3 },
+								"artifacts" : [ "runeArtifact06" ],
+							},
+							{
+								"limiter" : { "resources" : { "crystal" : 3, "gems": 3 } },
+								"resources" : { "crystal" : -3, "gems": -3 },
+								"artifacts" : [ "runeArtifact07" ],
+							},
+							{
+								"limiter" : { "resources" : { "crystal" : 3, "gems": 3 } },
+								"resources" : { "crystal" : -3, "gems": -3 },
+								"artifacts" : [ "runeArtifact08" ],
+							}
+						],
+						"onSelectMessage" : "{符文石商店}\r\n\r\n{初级符文石}： 售价为 3 木材\n{中级符文石}： 售价为 3 木材， 3 矿石\n{高级符文石}： 售价为 3 水晶， 3 宝石\n一天只能制作一个，需要购买吗？",
+						"onVisitedMessage": "{符文石商店}\r\n\r\n{初级符文石}： 售价为 3 木材\n{中级符文石}： 售价为 3 木材， 3 矿石\n{高级符文石}： 售价为 3 水晶， 3 宝石\n一天只能制作一个，需要购买吗？",
+						"onEmptyMessage": "{符文石商店}\r\n\r\n你的来访让符文师很高兴，但他们听说你没有带来足够的资源，就拒绝为你制作符文石。",
+						"visitMode" : "once",
+						"resetParameters" : {
+								"period" : 1,
+								"visitors" : true,
+								"rewards" : true
+							},  
+							"canRefuse": true,
+							"selectMode" : "selectPlayer",
+					},
+					"cost": {
+						"crystal": 5,
+						"gold": 1000
+						},
+					"requires": [
+						"allOf",
+							[ "special2" ],
+							[ "mageGuild1" ]
+						]
+					},
+					"horde1" : { "requires" : [ "allOf", [ "dwellingLvl6" ], [ "noneOf", [ "dwellingLvl6B" ] ] ] },
+					"dwellingLvl6":   { "requires" : [ "allOf", [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl6B" ] ] ] },
+					"dwellingLvl6B" :
+					{
+						"name" : "雪域书院",
+						"description" : "雪域书院允许你招募雪女巫。",
+						"cost" : 
+						{
+							"gold" : 4000,
+							"crystal" : 5,
+							"gems": 5
+						},
+						"id" : 49, 
+						"requires" : [ "allOf", [ "dwellingLvl5" ], [ "noneOf", [ "dwellingLvl6" ] ] ]
+					},
+					"dwellingUpLvl6B" :
+					{
+						"name" : "高级雪域书院",
+						"description" : "高级雪域书院允许你招募冰女巫。\n且可以使雪女巫和冰女巫的产量+1。",
+						"bonuses": [
+							{ 
+								"type" : "CREATURE_GROWTH",
+								"subtype" : "creatureLevel6",
+								"val" : 1,
+								"description" : "@vcmi.bonusSource.other",
+								"propagator": "TOWN"
+							} 
+						],
+						"cost" : 
+						{
+							"gold" : 4000,
+							"crystal" : 5,
+							"gems": 5
+						},
+						"id" : 56, 
+						"upgrades" : "dwellingLvl6B"
+					}
+			},
+			"structures" :
+			{
+				"special4": {
+					"animation": "bastille/town-screen/buildings/TBBuSpc4",
+					"area": "bastille/town-screen/buildings-area/TZBuSpc4",
+					"border": "bastille/town-screen/buildings-border/TOBuSpc4",
+					"x": 0,
+					"y": 0,
+					"z": -3
+				},
+				"dwellingLvl6B": {
+					"animation": "bastille/town-screen/buildings/TBBuDW62",
+					"area": "bastille/town-screen/buildings-area/TZBuDW62",
+					"border": "bastille/town-screen/buildings-border/TOBuDW62",
+					"x": 0,
+					"y": 0,
+					"z": 5
+				},
+				"dwellingUpLvl6B": {
+					"animation": "bastille/town-screen/buildings/TBBuUP62",
+					"area": "bastille/town-screen/buildings-area/TZBuUP62",
+					"border": "bastille/town-screen/buildings-border/TOBuUP62",
+					"x": 0,
+					"y": 0,
+					"z": 6
+				},
+			}
+
+		}
+	}
+}

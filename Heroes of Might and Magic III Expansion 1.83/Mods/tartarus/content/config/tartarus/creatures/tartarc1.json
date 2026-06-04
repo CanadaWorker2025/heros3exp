@@ -1,0 +1,122 @@
+{
+  "tartarc1": {
+    "name": {
+      "plural": "恶灵仆从",//Ice Spawn
+      "singular": "恶灵仆从"
+    },
+    "advMapAmount": {
+ "max" : 50,
+ "min" : 20
+    },
+    "faction": "tartarus",
+    "aiValue": 93,
+    "attack": 4,
+    "cost": {
+      "gold": 50
+    },
+    "damage": {
+ "max" : 2,
+ "min" : 1
+    },
+    "defense": 2,
+    "fightValue": 101,
+    "graphics": {
+      "animation": "tartarus/battle/creatures/Tar1.def",
+      "map": "tartarus/map/creatures/AVWTAR01.def",
+      "iconSmall": "tartarus/iconsSmall/creatures/Tar1iconS.bmp",
+      "iconLarge": "tartarus/iconsBig/creatures/T1icon.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 16,
+    "hitPoints": 3,
+    "horde": 6,
+    "level": 1,
+    "upgrades":
+		[
+			"tartarc2"
+		],
+    "sound": {
+      "attack": "IMPPATTK.wav",
+		"defend": "IMPPDFND.wav",
+		"killed": "IMPPKILL.wav",
+		"move": "IMPPMOVE.wav",
+		"wince": "IMPPWNCE.wav"
+    },
+    "speed": 5,
+    "abilities": {
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.gremlin"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.fortune"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 3, 3, 3 ]
+			},
+			{	
+				"bonus" :
+				{
+					"type" : "FLYING"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			}
+		]
+  }	
+	}

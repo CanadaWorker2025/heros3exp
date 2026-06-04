@@ -1,0 +1,31 @@
+{
+	"charmOfEclipse" : {
+		"type" : ["HERO"],
+		"slot" : "MISC",
+		"class" : "MINOR",
+		"value" : 5000,
+		"bonuses" : {
+			"skill" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "spellpower",
+				"valueType" : "PERCENT_TO_ALL",
+				"val" : -10,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/charmOfEclipse",
+			"map" : "hota/artifactsMap/charmOfEclipse",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/charmOfEclipse"
+		},
+		"text" : {
+			"description" : "{日暮护符}\r\n\r\n降低敌人10%的力量。",
+			"event" : "你在一个小贩那里买了些折价处理的东西，在摆弄其中一个奇怪的小饰品时，你发现，尽管它是由金属制成的，但它不能反射阳光，却能反射魔法能量。",
+			"name" : "日暮护符"
+		}
+	}
+}

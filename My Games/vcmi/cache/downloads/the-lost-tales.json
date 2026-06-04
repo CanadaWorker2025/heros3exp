@@ -1,0 +1,157 @@
+{
+	"name" : "The Lost Tales",
+	"author" : "Toriko94, Yogdush, Misiokles",
+	"contact" : "",
+	"description" : "This mod add the possibility of changing your upgrade into a new one when you want for free in the appropriate town faction or Hill Fort. Inferno, Stronghold and Fortress are the only factions with second upgrade possible for some specific creatures( not everyone). It was for making these Faction a little more competitive. Its not an obligation , just an option ... I dont change any stats of the Base game for keeping a maximum the same feeling as the original experience but with add on. the only exceptions are for the some neutrals who are affiled as some factions . Example : boar is Stronghold and have the same price as Wolf Raider for making the alternative completely free. The mod is completely compatible with TOW and HOTA ( mostly recomanded for having the better experience). TOW creatures were balanced for making them a little more competitive. There are new neutrals, new Heroes, new models for some creature, new portrait HD and some new ones created for the mod? HOTA and TOW.",
+	"version" : "1.0.4",
+	"modType" : "Expansion",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"changelog" : {
+		"1.0.4" : [
+			"Squire and man at arms are added , with Castle faction. Alternative for Juggernaut and Crimson Couatl. Added Nobility secondary skill from ACM of ERA."
+		],
+		"1.0.3" : [
+			"Many bugs corriged. Added new heroes for cove , bulwark, factory, Reworked some TLT heroes, Reworked Stats and abilities of TLT creatures (WIP). "
+		],
+		"1.0.2" : [
+			"Alternative creature for Tower lvl2. Many bugs corriged. Added new heroes , Reworked some TLT heroes (Bofmog instead Crate), Reworked Stats and abilities of TLT creatures (WIP). "
+		],
+		"1.0.1" : [
+			"Added new heroes , Reworked some TLT heroes, Reworked Stats and abilities of TLT creatures (WIP)."
+		],
+		"1.0.0" : [
+			"Initial release"
+		]
+	},
+	"conflicts" : [
+		"third-upgrades",
+		"wake-of-gods",
+		"tears-of-ashan",
+		"new-monsters-pack.lord-hawk-creatures-pack"
+	],
+	"softDepends" : [
+		"hota.heroes3DataPatch",
+		"hota.newGraphics",
+		"hota.gameBalance"
+	],
+	"heroes" : [
+		"config/heroes/castle/slash",
+		"config/heroes/castle/nicolaj",
+		"config/heroes/castle/addran",
+		"config/heroes/castle/laine",
+		"config/heroes/castle/marcius",
+		"config/heroes/castle/sirKentaine",
+		"config/heroes/castle/nanette",
+		"config/heroes/rampart/silf",
+		"config/heroes/rampart/tharj",
+		"config/heroes/tower/sarakin",
+		"config/heroes/tower/jubal",
+		"config/heroes/tower/sharah",
+		"config/heroes/tower/marlous",
+		"config/heroes/inferno/bruhl",
+		"config/heroes/inferno/gelila",
+		"config/heroes/necropolis/wyrm",
+		"config/heroes/necropolis/balder",
+		"config/heroes/necropolis/maroth",
+		"config/heroes/dungeon/melina",
+		"config/heroes/dungeon/gundross",
+		"config/heroes/stronghold/tyro",
+		"config/heroes/stronghold/jojosh",
+		"config/heroes/stronghold/dogwoggle",
+		"config/heroes/stronghold/bofmog",
+		"config/heroes/fortress/ha'ora",
+		"config/heroes/fortress/yrami",
+		"config/heroes/fortress/nacron",
+		"config/heroes/conflux/falagar",
+		"config/heroes/conflux/bizz",
+		"config/heroes/conflux/lazar",
+		"config/heroes/conflux/farnivon",
+		"config/heroes/heroes-modification"
+	],
+	"creatures" : [
+		"config/creatures/castle/Castle Modification",
+		"config/creatures/castle/Castle_Alt1",
+		"config/creatures/castle/Castle_Alt2",
+		"config/creatures/castle/Castle_Alt4",
+		"config/creatures/castle/Castle_Alt5",
+		"config/creatures/castle/squire",
+		"config/creatures/castle/manAtArms",
+
+		"config/creatures/rampart/Rampart Modification",
+		"config/creatures/rampart/Rampart_Alt1",
+		"config/creatures/rampart/Rampart_Alt2",
+		"config/creatures/rampart/Rampart_Alt3",
+		"config/creatures/rampart/Rampart_Alt6",
+		"config/creatures/rampart/Rampart_Alt7",
+
+		"config/creatures/tower/tower Modification",
+		"config/creatures/tower/tower_Alt2",
+		"config/creatures/tower/tower_Alt4",
+		"config/creatures/tower/tower_Alt6",
+
+		"config/creatures/inferno/Inferno Modification",
+		"config/creatures/inferno/Inferno_Upg2",
+		"config/creatures/inferno/Inferno_Alt3",
+		"config/creatures/inferno/Inferno_Alt7",
+
+		"config/creatures/necropolis/necropolis_modification",
+		"config/creatures/necropolis/necropolis_Alt1",
+		"config/creatures/necropolis/necropolis_Alt3",
+		"config/creatures/necropolis/necropolis_Alt5",
+		"config/creatures/necropolis/necropolis_Alt6",
+		"config/creatures/necropolis/necropolis_Alt7",
+
+		"config/creatures/dungeon/dungeon Modification",
+		"config/creatures/dungeon/dungeon_Alt1",
+		"config/creatures/dungeon/dungeon_Alt3",
+
+		"config/creatures/stronghold/Stronghold Modification",
+		"config/creatures/stronghold/Stronghold_Alt2",
+		"config/creatures/stronghold/Stronghold_Alt3",
+		"config/creatures/stronghold/Stronghold_Upg6",
+
+		"config/creatures/fortress/Fortress Modification",
+		"config/creatures/fortress/Fortress_Alt1",
+		"config/creatures/fortress/Fortress_Alt2",
+		"config/creatures/fortress/Fortress_Upg3",
+		"config/creatures/fortress/Fortress_Alt5",
+		"config/creatures/fortress/Fortress_Alt7",
+		"config/creatures/fortress/Lizardman _rename",
+
+		"config/creatures/conflux/Conflux Modification",
+		"config/creatures/conflux/Conflux_Alt2",
+		"config/creatures/conflux/Conflux_Alt3",
+		"config/creatures/conflux/Conflux_Alt4",
+		"config/creatures/conflux/Conflux_Alt5",
+		"config/creatures/conflux/Conflux_Alt6",
+
+		"config/creatures/neutral/nightmare",
+		"config/creatures/neutral/greatEnchanter",
+		"config/creatures/neutral/karkadann",
+		"config/creatures/neutral/dwarfGuard",
+		"config/creatures/neutral/bloodDragon",
+		"config/creatures/neutral/neutral_modification"
+	],
+	"objects" : [
+		"config/dwellings/neutral/dwellings"
+	],
+	"factions" : [
+		"config/town-screen/castle/castleUpgrades",
+		"config/town-screen/rampart/rampartUpgrades",
+		"config/town-screen/tower/towerUpgrades",
+		"config/town-screen/inferno/infernoUpgrades",
+		"config/town-screen/necropolis/necropolisUpgrades",
+		"config/town-screen/dungeon/dungeonUpgrades",
+		"config/town-screen/stronghold/strongholdUpgrades",
+		"config/town-screen/fortress/fortressUpgrades",
+		"config/town-screen/conflux/confluxUpgrades"
+	],
+	"spells" : [
+		"config/spells/stunAbility"
+	],
+	"skills" : [
+		"config/skills/nobility"
+	]
+}

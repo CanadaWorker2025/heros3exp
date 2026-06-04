@@ -1,0 +1,185 @@
+{
+	"havC08":
+	{
+		"name" :
+		{
+			"plural" : "人鱼巫女",
+			"singular" : "人鱼巫女"
+		},
+		"faction" : "haven",		
+		"advMapAmount" :
+		{
+			 "min" : 10,
+			 "max" : 16
+		},
+		"level" : 4,
+		"attack" : 9,
+		"defense" : 12,
+		"damage" :
+		{
+			 "min" : 7,
+			 "max" : 9
+		},
+		"growth" : 4,
+		"horde" : 2,
+		"hitPoints" : 30,
+		"speed" : 6,
+		"fightValue" : 477,
+		"aiValue" : 486,
+		"cost" :
+		{
+			"gold" : 370
+		},
+		"doubleWide" : true,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav08.def",
+			"map" : "haven/map/AVWHAV08.def",
+			"iconSmall" : "haven/iconsSmall/port8S.bmp",
+			"iconLarge" : "haven/iconsBig/port8.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.9,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack" : "haven/CHV4ATTK.wav",
+			"defend" : "haven/CHV4DFND.wav",
+			"killed" : "haven/CHV4KILL.wav",
+			"move": "haven/CHV4MOVE.wav",
+			"wince" : "haven/CHV4WNCE.wav"
+        },
+		"abilities" :
+		{
+			"selfLuck" :
+			{
+				"type" : "LUCK",
+				"val" : 1,
+				"valueType" : "INDEPENDENT_MAX",
+				"description" : "该生物永远保持+1幸运",
+				"icon" : "haven/icons/bonuses/positiveluck.png"
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 6
+			}, 	
+			"castsFortune" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fortune",
+				"val" : 2,
+				"icon" : "haven/icons/bonuses/fortune2.png"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 200
+			}, 	
+			"hypnotize" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.mermaidSeduce",
+				"val" : 20,
+				"addInfo" : 0,
+				"icon" : "haven/icons/bonuses/seduce.png"
+			},
+			"whirlpoolProtection" : 
+			{ 
+				"type" : "WHIRLPOOL_PROTECTION", 
+				"propagator" : "HERO",
+				"description" : "{免疫漩涡}\n使英雄航海时不受漩涡影响",
+				"icon" : "haven/icons/bonuses/e_whirl.png"
+			},
+			"attackInWater" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"defenceInWater"  : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"speedInWater" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			}
+		]
+	}
+}

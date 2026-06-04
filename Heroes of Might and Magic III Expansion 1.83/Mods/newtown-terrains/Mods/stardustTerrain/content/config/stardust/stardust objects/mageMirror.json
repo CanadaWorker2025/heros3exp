@@ -1,0 +1,47 @@
+{
+	"starMirror" :{	
+		"name": "魔镜",
+		"handler": "configurable",
+		"types" : {
+			"starMirror" : 
+			{
+				"name": "魔镜",
+				"rmg" : {
+					"value"		: 5000,
+					"rarity"	: 200,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["GAZEBO"],
+					"removal" : [ "PICKUP01", "PICKUP02" ]
+				},
+				"rewards" :
+				[
+					{
+						"limiter": //condition to get reward
+						{
+							"heroLevel" : 5,
+						},
+						"resources": {"gold" : 3000, "gems": 6},
+						"spells" : [ { "level" : 2 } ],
+						"message":"{魔镜}\r\n\r\n魔镜似乎厌倦了谁才是最漂亮女人的问题，看到你并不是为此而来，于是问你想要问些什么。你询问今天是否会有好运，它笑着说：“好运就在我的身下，这地下有一些财宝。”", 
+						"removeObject": true
+					}
+				],
+				"onSelectMessage" : "{魔镜}\r\n\r\n魔镜似乎厌倦了谁才是最漂亮女人的问题，看到你并不是为此而来，于是问你想要问些什么。你询问今天是否会有好运，它笑着说：“好运就在我的身下，这地下有一些财宝。”",
+				"onEmptyMessage": "{魔镜}\r\n\r\n这就是一面普通的镜子，但或许你的见解还不足以让你和它交流。（等级达到5级以上）",
+				"visitMode" : "unlimited",
+				"templates" : 
+				{
+					"avtglam" : 
+					{
+						"animation" : "star misc/starMir", 
+						"visitableFrom" : [ "+++", "+++", "+++" ],
+						"mask" : ["VV","VA"],
+						"allowedTerrains": [ "stardust" ] //hota jebus cross conditions
+					}					
+				}
+			}
+		}	
+	}
+}

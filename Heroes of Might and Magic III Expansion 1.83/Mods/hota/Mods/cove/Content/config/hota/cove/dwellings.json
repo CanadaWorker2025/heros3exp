@@ -1,0 +1,143 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"waterfall" : {
+				"name" : "瀑布",
+				"creatures" : [[ "nymph" ]],
+				"sounds": {
+					"ambient": ["hota/cove/dwellings/LOOPWTFL.wav"]
+				},
+				"kingdomOverviewImage" : "hota/cove/mapObjects/dwellings/flagport/flagCove1.def",
+				"templates" : {
+					"default" : {
+						"animation" : "hota/cove/mapObjects/dwellings/waterfall",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"shack" : {
+				"name" : "水手茅舍",
+				"creatures" : [[ "crewmate" ]],
+				"sounds": {
+					"ambient": ["hota/cove/dwellings/LOOPMATR.wav"]
+				},
+				"kingdomOverviewImage" : "hota/cove/mapObjects/dwellings/flagport/flagCove2.def",
+				"templates" : {
+					"default" : {
+						"animation" : "hota/cove/mapObjects/dwellings/shack",
+						"mask" : [ "VVV", "VBV", "VAB" ]
+					}
+				}
+			},
+			"frigate" : {
+				"name" : "战船",
+				"creatures" : [[ "pirate" ]],
+				"sounds": {
+					"ambient": ["hota/cove/dwellings/LOOPFRIG.wav"]
+				},
+				"kingdomOverviewImage" : "hota/cove/mapObjects/dwellings/flagport/flagCove3.def",
+				"templates" : {
+					"default" : {	
+						"animation" : "hota/cove/mapObjects/dwellings/frigate",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}
+			},
+			"nest" : {
+				"name" : "栖巢",
+				"creatures" : [[ "stormbird" ]],
+				"sounds": {
+					"ambient": ["LOOPBIRD.wav"]
+				},
+				"kingdomOverviewImage" : "hota/cove/mapObjects/dwellings/flagport/flagCove4.def",
+				"templates" : {
+					"default" : {
+						"animation" : "hota/cove/mapObjects/dwellings/nest",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}
+			},
+			"towerOfTheSeas" : {
+				"name" : "海洋之塔",
+				"creatures" : [[ "seaWitch" ]],
+				"sounds": {
+					"ambient": ["hota/cove/dwellings/LOOPSORC.wav"]
+				},
+				"kingdomOverviewImage" : "hota/cove/mapObjects/dwellings/flagport/flagCove5.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "hota/cove/mapObjects/dwellings/tower",
+						"mask" : [ "VV", "VV", "VVVV", "VVV", "BA" ]
+					}
+				}
+			},
+			"nixFort" : {
+				"name" : "鱼人要塞",
+				"creatures" : [[ "nix" ]],
+				"sounds": {
+					"ambient": ["hota/cove/dwellings/LOOPNIXF.wav"]
+				},
+				"kingdomOverviewImage" : "hota/cove/mapObjects/dwellings/flagport/flagCove6.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "hota/cove/mapObjects/dwellings/FORTNIXR",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"whirpool" : {
+				"name" : "大漩涡",
+				"creatures" : [[ "seaserpent" ]],
+				"guards" : true,
+				"sounds": {
+					"ambient": ["hota/cove/dwellings/LOOPHASP.wav"]
+				},
+				"kingdomOverviewImage" : "hota/cove/mapObjects/dwellings/flagport/flagCove7.def",
+				"templates" : {
+					"default" : {
+						"animation" : "hota/cove/mapObjects/dwellings/whirpool",
+						"mask" : [ "VVVV", "VVVV", "VVVV", "VVAB" ]
+					}
+				}
+			}
+		}
+	},
+	"core:creatureGeneratorSpecial" : {
+		"types" : {
+			"nixFortLarge" : {
+				"name" : "鱼人要塞",
+				"creatures" : [[ "nix" ]],
+				"guards" : true,
+				"bannedForRandomDwelling" : true,
+				"sounds": {
+					"ambient": ["hota/cove/dwellings/LOOPNIXF.wav"]
+				},
+				"kingdomOverviewImage" : "hota/cove/mapObjects/dwellings/flagport/flagCove6-2.def",
+				"templates" : {
+					"default" : {
+						"animation" : "hota/cove/mapObjects/dwellings/FORTNIX",
+						"mask" : [ "VVVV", "VVVV", "VBAB" ]
+					}
+				}
+			},
+			"whirpoolLarge" : {
+				"name" : "大漩涡",
+				"creatures" : [[ "seaserpent" ]],
+				"guards" : true,
+				"bannedForRandomDwelling" : true,
+				"sounds": {
+					"ambient": ["hota/cove/dwellings/LOOPHASP.wav"]
+				},
+				"kingdomOverviewImage" : "hota/cove/mapObjects/dwellings/flagport/flagCove7-2.def",
+				"templates" : {
+					"default" : {
+						"animation" : "hota/cove/mapObjects/dwellings/whirpoolLarge.DEF",
+						"mask" : [ "VVVV", "VVVV", "VBBB", "VBAB" ]
+					}
+				}
+			}
+		}
+	}
+}

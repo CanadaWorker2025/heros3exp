@@ -1,0 +1,37 @@
+{
+	"staffOfSand":
+	{
+		"type": ["HERO"],
+		"slot" : "RIGHT_HAND",
+		"class": "MAJOR",
+		"value": 8000,	
+		"text":
+		{
+			"name": "黄沙之杖",
+			"description": "{黄沙之杖}\r\n\r\n这件右手武器可以使你的力量+4，并且能每天恢复2点魔法值。",
+			"event": "你发现一个不自然的沙丘，并决定调查它。之后很长一段时间你要清理盔甲中的沙子，但藏在沙丘里的黄沙之杖是你的了。"
+		},
+		"graphics":
+		{
+			"image": "artifactsPavilion/staffOfSand.png",
+			"scenarioBonus": "artifactsPavilion/bonus5.png",
+			"map": "artifactsPavilion/staffOfSandmap.def"
+		},
+		"bonuses":
+		{
+			"spellpower":
+			{
+				"type": "PRIMARY_SKILL",
+				"subtype": "primarySkill.spellpower",
+				"val": 4,
+				"valueType" : "BASE_NUMBER"
+			},
+			"regeneration":
+			{
+				"type": "MANA_REGENERATION",
+				"val": 2,
+				"valueType" : "BASE_NUMBER"
+			}
+		}
+	}
+}

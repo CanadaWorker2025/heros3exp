@@ -1,0 +1,57 @@
+{
+	"boyd" : {
+		"class" : "deathknight",
+		"female" : false,
+		"special" : true,
+		"images" : {
+			"large" : "hota/necropolis/heroes/boyd/icons/hero3.png",
+			"small" : "hota/necropolis/heroes/boyd/icons/hero3S.png",
+			"specialtyLarge" : "hota/necropolis/heroes/boyd/icons/skill3.bmp",
+			"specialtySmall" : "hota/necropolis/heroes/boyd/icons/skill3S.bmp"
+		},
+		"army" : [
+			{
+				"creature" : "skeleton",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "skeleton",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "skeleton",
+				"min" : 20,
+				"max" : 30
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "necromancy",
+				"level" : "basic"
+			},
+			{
+				"skill" : "armorer",
+				"level" : "basic"
+			}
+		],
+		"specialty": {
+			"creature": "skeleton",
+			"stepSize" : 10
+		},
+		"spellbook" : [
+			"shield"
+		],
+		"texts" : {
+			"name" : "博伊德",
+			"biography" : "所有恐怖故事里都有一个被绞死、刺杀甚至被斩首的骑士，在夜晚骑着马，打算对杀死自己的凶手报仇。亡灵法师可能会说这是无稽之谈，复活的死人不可能有记忆或者意志。可能是这样吧，但是博伊德不仅要与背叛他的叛徒算账，还要跟那些不让他安息的人清算。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "骷髅兵",
+				"description" : "每1级提高骷髅兵及其升级形态10%的攻击力和防御力。速度+1。"
+			}
+		}
+	}
+}

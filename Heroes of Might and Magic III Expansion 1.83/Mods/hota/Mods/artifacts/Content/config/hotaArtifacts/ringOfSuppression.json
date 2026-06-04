@@ -1,0 +1,27 @@
+{
+	"ringOfSuppression" : {
+		"type" : [ "HERO" ],
+		"slot" : "RING",
+		"class" : "TREASURE",
+		"value" : 4000,
+		"bonuses" : {
+			"morale" : {
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : ["OPPOSITE_SIDE"]
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/ringOfSuppression",
+			"map" : "hota/artifactsMap/ringOfSuppression",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/ringOfSuppression"
+		},
+		"text" : {
+			"description" : "{压制之戒}\r\n\r\n降低敌人1点士气。",
+			"event" : "你下令用煎蛋作为早餐，厨师设法为你找到蛋的同时给你一个在鸟巢中找到的一枚戒指。",
+			"name" : "压制之戒"
+		}
+	}
+}

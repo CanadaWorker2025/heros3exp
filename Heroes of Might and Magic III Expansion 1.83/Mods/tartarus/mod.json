@@ -1,0 +1,99 @@
+{
+	"name" : "Tartarus Town",
+	"description" : "New town made by Turbanellos(Ben YAN), Tartarus is a new town for ice demons.",
+	
+	"author" : "FF Team, mod : Turbanellos",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "1.00",
+	"modType" : "Town",	
+	"depends" : ["tidesofwar","newtown-terrains.icelandterrain","New Pavilion.New Pavillion"], 
+	"chinese" : {
+		"name" : "冰狱（Tartarus）",
+		"description" : "EXP中的冰狱种族"
+	},
+    "factions" : [ "config/tartarus/town" ],
+	
+	"creatures" :
+	[
+		"config/tartarus/creatures/tartarc1.json",
+		"config/tartarus/creatures/tartarc2.json",
+		"config/tartarus/creatures/tartarc3.json",
+		"config/tartarus/creatures/tartarc4.json",
+		"config/tartarus/creatures/tartarc5.json",
+		"config/tartarus/creatures/tartarc6.json",
+		"config/tartarus/creatures/tartarc7.json",
+		"config/tartarus/creatures/tartarc8.json",
+		"config/tartarus/creatures/tartarc9.json",
+		"config/tartarus/creatures/tartarc10.json",
+		"config/tartarus/creatures/tartarca.json",
+		"config/tartarus/creatures/tartarcb.json",
+		"config/tartarus/creatures/tartarcc.json",
+		"config/tartarus/creatures/tartarcd.json",
+		"config/tartarus/creatures/tartarcbe.json",
+		"config/tartarus/creatures/tarSpirit.json",
+		"config/tartarus/creatures/tcommander.json"
+	],
+	
+	"heroClasses" :
+	[
+		"config/tartarus/classes/taheroA.json",
+		"config/tartarus/classes/taheroM.json",
+		"config/tartarus/classes/InfernoExtra.json"
+	],
+
+	"heroes" :
+	[
+		"config/tartarus/heroes/tarhero01.json",
+		"config/tartarus/heroes/tarhero02.json",
+		"config/tartarus/heroes/tarhero03.json",
+		"config/tartarus/heroes/tarhero04.json",
+		"config/tartarus/heroes/tarhero05.json",
+		"config/tartarus/heroes/tarhero06.json",
+		"config/tartarus/heroes/tarhero07.json",
+		"config/tartarus/heroes/tarhero08.json",
+		"config/tartarus/heroes/tarhero09.json",
+		"config/tartarus/heroes/tarhero10.json",
+		"config/tartarus/heroes/tarhero11.json",
+		"config/tartarus/heroes/tarhero12.json",
+		"config/tartarus/heroes/tarhero13.json",
+		"config/tartarus/heroes/tarhero14.json",
+		"config/tartarus/heroes/tarhero15.json",
+		"config/tartarus/heroes/tarhero16.json",
+		"config/tartarus/classes/campaignHeroes.json"
+	],
+	 "objects":
+    [
+		"config/tartarus/dwellings.json",
+		"config/tartarus/banks/furyBank.json",
+		"config/tartarus/banks/IceBank.json"
+    ],
+	"spells" :
+	[
+		"config/tartarus/NewOldSpells/tarability1.json",
+		"config/tartarus/NewOldSpells/tarability2.json",
+		"config/tartarus/NewOldSpells/tarability3.json",
+		"config/tartarus/NewOldSpells/tarability4.json",
+		"config/tartarus/NewOldSpells/tarability5.json",
+		"config/tartarus/NewOldSpells/tarability6.json",
+		"config/tartarus/NewOldSpells/tarability7.json",
+		"config/tartarus/NewOldSpells/tarability8.json",
+		"config/tartarus/NewOldSpells/tarability9.json",
+		"config/tartarus/NewOldSpells/tarSpAbility.json",
+		"config/tartarus/NewOldSpells/tartspell1.json",
+		"config/tartarus/NewOldSpells/tartspell2.json",
+		"config/tartarus/NewOldSpells/tartspell3.json",
+		"config/tartarus/NewOldSpells/tartspell4.json",
+		"config/tartarus/NewOldSpells/tartskill1.json",
+		"config/tartarus/NewOldSpells/tartskill2.json",
+		"config/tartarus/NewOldSpells/tartskill3.json",
+		"config/tartarus/NewOldSpells/tartskill4.json"
+	],
+	"skills" : [
+		"config/tartarus/skills/demonicBlood/demonicBlood.json"
+	],
+	
+	"changelog" :
+    {
+		"1.00"   : [ "Initial release" ]
+    }
+}

@@ -1,0 +1,90 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"redTower" : 
+			{
+				"name" : "红塔",
+				"aiValue" : 6000,
+				"templates" :
+				{
+					"base" :
+					{
+						"animation" : "hota/banks/avredtwr.def",
+						"visitableFrom" : [ "---", "+++", "+++" ], 
+						"mask" : [ "VVVVV", "VVVVV", "VVVVV", "VVBVV", "VVAVV"],
+						"allowedTerrains":["grass", "swamp", "subterra", "rough", "dirt", "sand", "lava", "snow"] 						
+					}
+				},
+				"sounds": {
+					"ambient": ["hota/REDTWRLO.wav"],
+					"visit": ["hota/REDTWRVS.wav"]
+				},
+				"rmg" : {
+					"value"		: 4000,
+					"rarity"	: 20,
+					"zoneLimit" : 1
+				},
+				"onGuardedMessage" : "{红塔}\r\n\r\n美丽的火鸟被火元素们囚禁了起来，你似乎听到她的呼救声。要进入红塔赶走这些火元素吗？",
+				"onVisitedMessage" : "{红塔}\r\n\r\n美丽的火鸟似乎曾经被火元素们囚禁在塔里，但看守一时不注意，让这些大鸟挣脱锁链后飞走了。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 7, "type" : "fireElemental" },
+							{ "amount": 7, "type" : "fireElemental" },
+							{ "amount": 7, "type" : "fireElemental", "upgradeChance": 50 },
+							{ "amount": 7, "type" : "fireElemental" },
+							{ "amount": 7, "type" : "fireElemental" }
+						],
+						
+							"creatures": [ { "amount": 1, "type": "firebird" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 14, "type" : "fireElemental" },
+							{ "amount": 14, "type" : "fireElemental" },
+							{ "amount": 14, "type" : "fireElemental", "upgradeChance": 50 },
+							{ "amount": 14, "type" : "fireElemental" },
+							{ "amount": 14, "type" : "fireElemental" }
+						],
+						
+							"creatures": [ { "amount": 2, "type": "firebird" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 21, "type" : "fireElemental" },
+							{ "amount": 21, "type" : "fireElemental" },
+							{ "amount": 21, "type" : "fireElemental", "upgradeChance": 50 },
+							{ "amount": 21, "type" : "fireElemental" },
+							{ "amount": 21, "type" : "fireElemental" }
+						],
+						
+							"creatures": [ { "amount": 3, "type": "firebird" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 28, "type" : "fireElemental" },
+							{ "amount": 28, "type" : "fireElemental" },
+							{ "amount": 28, "type" : "fireElemental", "upgradeChance": 50 },
+							{ "amount": 28, "type" : "fireElemental" },
+							{ "amount": 28, "type" : "fireElemental" }
+						],
+							"creatures": [ { "amount": 4, "type": "firebird" } ]
+					}
+				]
+			}
+		}
+	}
+}

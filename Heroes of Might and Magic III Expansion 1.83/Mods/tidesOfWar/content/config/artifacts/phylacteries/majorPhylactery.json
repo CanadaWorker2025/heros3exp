@@ -1,0 +1,30 @@
+{
+	"mdtMajorPhylactery":
+	{
+		"type": ["HERO"],
+		"slot":	"MISC",
+		"class" : "SPECIAL",
+		"value": 6000,	
+		"text":
+		{
+			"name": "中级魂器",
+			"description": "{中级魂器}\r\n\r\n可以召唤半巫妖参战。",
+			"event": "你遇到了一个死灵法师，他非要缠着你问一些谜语。尽管你反复解释没有时间陪他瞎聊，但他喋喋不休不让你走，你一怒之下杀了他。当他的尸骨倒在地上时，你发现他的斗篷下有一件魂器。"
+		},
+		"graphics":
+		{
+			"image": "artifacts/iconsSmall/majorPhylactery",
+			"scenarioBonus" : "artifacts/iconsBig/majorPh",
+			"map": "artifacts/map/majorPh"
+		},
+		"bonuses":
+		{
+			"summon":
+			{
+				"type": "OPENING_BATTLE_SPELL",
+				"subtype" : "spell.mdtSummonDemilich2"
+//				"val": 3
+			}
+		}
+	}
+}

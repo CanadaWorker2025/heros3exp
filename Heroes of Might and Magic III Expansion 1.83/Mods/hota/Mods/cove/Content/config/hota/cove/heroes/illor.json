@@ -1,0 +1,50 @@
+{
+	"03illor" : {
+		"class" : "captain",
+		"images" : {
+			"large" : "hota/cove/heroes/illor/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/illor/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/illor/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/illor/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "stormbird",
+				"min": 3,
+				"max": 5
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "armorer",
+				"level": "basic"
+			},
+			{
+				"skill": "tactics",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"creature" : "hota.cove:stormbird"
+		},
+		"texts" : {
+			"biography" : "当亲戚们无法忍受他的骄傲自大的时候，伊洛离开了埃里，这个年轻人不想去听从任何人的说教，也不会渴望什么事情都能够很完美，他把自己的一切都放在了鸟类研究上。在漫长的旅途中，他曾和海盗们一起生活，但是却得不到团结和互相尊重。于是他离开了海盗并且落足在一个小岛上，这这里他找到了从未发现过的巨大鸟类巢穴，伊洛开始在小岛上驻足，并训练大鸟们听从自己的命令，从那时起，他重新开始做海盗，并且成就了一个梦幻般的传奇故事。",
+			"name" : "伊洛",
+			"specialty" : {
+				"tooltip" : "Creature Bonus: Stormbirds",
+				"name" : "暴风鸟",
+				"description" : "达到4级以后提高暴风鸟和暴风雕的攻击力与防御力。"
+			}
+		}
+	}
+}

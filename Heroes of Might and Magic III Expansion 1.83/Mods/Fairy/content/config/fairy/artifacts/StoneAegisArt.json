@@ -1,0 +1,23 @@
+{
+	"stoneAegis":
+        {
+	"type" : ["HERO"],
+	"warMachine":"ftStoneAegis",
+        "class": "SPECIAL",
+        "value": 1500,
+        "slot":"MACH3",
+        "text":
+		{
+			"name": "魔盾石",
+			"description": "{魔盾石}\r\n\r\n每一轮战斗过后，都可以用魔盾石医治你的部队。",
+			"event": "你真幸运，居然发现了魔盾石。"
+		},
+		"graphics":
+		{
+			"image": "fairy/iconsSmall/creatures/artifacts/spinner.bmp",
+			"map"  :   "fairy/map/artifacts/avcnbksm.def"
+		}
+	}
+}
+
+

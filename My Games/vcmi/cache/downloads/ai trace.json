@@ -1,0 +1,8 @@
+{
+	"name" : "Adventure AI trace",
+	"description" : "Configures console log for extensive adventure AI debug info",
+	"version" : "1.0",
+	"author" : "Warmonger",
+	"contact" : "http://forum.vcmi.eu/viewtopic.php?t=776",
+	"modType" : "Test"
+}

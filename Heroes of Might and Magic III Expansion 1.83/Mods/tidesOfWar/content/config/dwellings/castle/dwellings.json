@@ -1,0 +1,21 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"mdtCathedral" : {
+				"name" : "大教堂",
+				"creatures" : [[ "mdtTemplar" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new01.def",
+				"guards" : true,
+				"sounds": {
+					"ambient": ["dwellings/castle/TEMPLARLOOP"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "dwellings/castle/mapCathedral.def",
+						"mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

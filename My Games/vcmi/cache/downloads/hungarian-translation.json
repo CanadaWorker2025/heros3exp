@@ -1,0 +1,33 @@
+{	
+	"name" : "Hungarian translation",
+	"description" : "Hungarian translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.2",
+	"author" : "",
+	"contact" : "https://github.com/vcmi-mods/hungarian-translation",
+	"modType" : "Translation",
+	"language" : "hungarian",
+	"compatibility" :
+	{
+		"min" : "1.3.0"
+	},
+	"changelog" : 
+	{ 
+		"1.0.2" : [ "Correct string for Speed" ],
+		"1.0.1" : [ "png images" ],
+		"1.0.0" : [ "Initial release based on https://magyaritasok.hu/download/193/heroes-of-might-and-magic-3-shadow-of-death and https://magyaritasok.hu/download/929/heroes-of-might-and-magic-3-the-restoration-of-erathia-szinkron" ]
+	},
+	"german" : {
+		"name" : "Ungarische Übersetzung",
+		"description" : "Ungarische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"hungarian" : {
+		"name" : "Magyar fordítás",
+		"description" : "A Heroes of Might and Magic III: Complete Edition magyar fordítása"	
+	},
+	"translations" : [
+		"config/vcmi-hungarian/game.json",
+		"config/vcmi-hungarian/maps.json",
+		"config/vcmi-hungarian/chronicles.json",
+		"config/vcmi-hungarian/campaigns.json"
+	]
+}

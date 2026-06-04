@@ -1,0 +1,57 @@
+{
+	"05leena" : {
+		"class" : "captain",
+		"female" : true,
+		"images" : {
+			"large" : "hota/cove/heroes/leena/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/leena/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/leena/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/leena/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "estates",
+				"level": "basic"
+			},
+			{
+				"skill": "pathfinding",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.gold",
+					"val" : 350
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "莉娜是埃拉西亚沿海城市一个贵族家庭的女儿，童年的她就有着反抗的心理，所以当她的父亲决定让她出嫁的时候她偷用家里的大帆船逃走了。在逃难的生涯中，她遇到了和她有共同语言的瑞格纳海盗并加入了他们。这位年轻的女海盗不仅在勇于作战，而且还利用她复杂的关系网为海盗团队进行着走私贸易。",
+			"name" : "莉娜",
+			"specialty" : {
+				"tooltip" : "+350 Gold each day",
+				"name" : "+350个金币",
+				"description" : "为王国每天额外提供350个金币。"
+			}
+		}
+	}
+}

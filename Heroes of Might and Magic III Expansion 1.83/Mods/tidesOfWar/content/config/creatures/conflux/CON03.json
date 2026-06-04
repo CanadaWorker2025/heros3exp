@@ -1,0 +1,162 @@
+{
+	"nwCon03":
+	{
+		"name" :
+		{
+			"plural" : "海元素",
+			"singular" : "海元素"
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 12
+		},
+		"faction": "conflux",
+		"doubleWide" : true,
+		"aiValue" : 381,
+		"fightValue" : 316,
+		"attack" : 9,
+		"defense" : 9,
+		"cost" :
+		{
+			"gold" : 375
+		},
+		"damage" :
+		{
+			"min" : 3,
+			"max" : 7
+		},
+		"speed" : 6,
+		"upgrades": ["iceElemental"],
+		"graphics" :
+		{
+			"animation" : "creatures/conflux/battle/CON03.def",
+			"map" : "creatures/conflux/map/CON03S.def",
+			"iconSmall" : "creatures/conflux/iconsSmall/CON03S.bmp",
+			"iconLarge" : "creatures/conflux/iconsBig/CON03L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 30,
+		"growth" : 6,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "ICELATTK.wav",
+			"defend": "ICELDFND.wav",
+			"killed": "WELMKILL.wav",
+			"move": "WELMMOVE.wav",
+			"shoot": "ICELSHOT.wav",
+			"wince": "ICELWNCE.wav"
+		},
+		"abilities":
+		{
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING",
+				"icon": "bonuses/NonLivingelemental.png",
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"spellPower" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.con03eff",
+				"val" : 5
+			},
+			"spellPoints" : 
+			{
+				"type" : "CASTS",
+				"val" : 5
+			},
+			"spellcaster":
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.con03eff",
+				"val" : 2,
+				"icon": "bonuses/conf03.png"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"fireballVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireball",
+				"val" : 100,
+				"hidden": true
+			},
+			"infernoVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.inferno",
+				"val" : 100,
+				"hidden": true
+			},
+			"fireballMDTVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.mdtFireballWand",
+				"val" : 100,
+				"hidden": true
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"hidden": true
+			},
+			"fireShieldVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 100,
+				"hidden": true
+			},
+			"fireWallVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireWallTrigger",
+				"val" : 100,
+				"description" : "{火系弱点}\n受火盾，火墙，火球，末日，地狱火伤害加倍",
+				"icon" : "spells/extraEffect/fireweak.png"
+			},
+			"immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"oppositeFire" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.fireElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeEnergy" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.energyElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeElectrical" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon04",
+				"val" : 100,
+				"description" : "{元素对立}\n对火元素，烈火元素，电子元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hateenergy.png"
+			}
+		}
+	}
+}
+
+

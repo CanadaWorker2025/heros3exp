@@ -1,0 +1,38 @@
+{
+	"mdtShieldOfTheAncients":
+	{
+		"type": ["HERO"],
+		"slot":	"LEFT_HAND",
+		"class" : "SPECIAL",
+		"value": 30000,	
+		"text":
+		{
+			"name": "古代盾牌",
+			"description": "{古代盾牌}\r\n\r\n持有古代盾牌使英雄力量+12，且开场即自动施展力量光环。",
+			"event": "对于一个经验丰富的冒险家来说，一个废弃的堡垒似乎没什么可看的。尽管如此，你还是进入了那里，仿佛是某种神秘的力量将你带进了地下室。你忽略了躺在每一个角落的金银财宝，而是朝着漂浮在地面上的金色盾牌缓慢走去。"
+		},
+		"graphics":
+		{
+			"image": "artifacts/iconsSmall/sota",
+			"scenarioBonus" : "artifacts/iconsBig/sota",
+			"map": "artifacts/map/sotamap"
+		},
+		"bonuses":
+		{
+			"spellpower":
+			{
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 12,
+				"valueType" : "BASE_NUMBER"
+			},
+			"auraPower":
+			{
+				"subtype" : "spell.mdtAuraOfPower",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 50,
+				"valueType" : "BASE_NUMBER"
+			}	
+		}
+	}
+}

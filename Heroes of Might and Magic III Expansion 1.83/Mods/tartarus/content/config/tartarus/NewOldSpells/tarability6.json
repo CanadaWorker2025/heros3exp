@@ -1,0 +1,104 @@
+{
+	"tarability6":
+	{
+		"type": "ability", 
+		"name": "痛苦体验",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":[ {
+				"effectName" : "bloodlust"
+			} ]
+		},
+ 
+		"flags" : {
+			"indifferent": true,
+			"nonMagical": true
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/USELESS1.bmp",
+			"iconScroll": "NewOldSpells/USELESS2.bmp",
+			"iconScenarioBonus": "NewOldSpells/USELESS3.bmp",
+			"iconEffect": "NewOldSpells/painTaste.png"
+		},
+
+		"sounds": {
+			"cast": "BLOODLUS"
+		},
+		"targetType" : "CREATURE",
+		"targetCondition" : {
+			"anyOf" : {
+				"tartarus:creature.tartarca":"absolute",
+				"tartarus:creature.tartarcab":"absolute"
+				}
+		},
+ 
+		"levels" : {
+			"base":{
+		
+				"range": "0",
+				"power": 10,
+				"cost": 0,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"battleEffects":{
+
+					"painAttack" :
+					{
+						"type": "core:timed",
+						"cumulative": true,
+						"bonus":
+						{
+						"boost":
+							{
+								"type": "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageBoth",
+								"val" : 15, 
+								"valueType": "PERCENT_TO_ALL",
+								"duration" : [
+										"UNTIL_OWN_ATTACK",
+										"N_TURNS"
+											],
+								"turns": 2
+							}
+						}
+					}
+				},
+				"description": "{痛苦体验}\r\n\r\n被攻击后会积攒痛苦，提升下一次的伤害15%，再下回合主动进行攻击后失效。若不主动攻击，则2回合后失效。"
+			},
+			"none":
+			{
+			},
+			"basic":
+			{
+			},
+			"advanced":
+			{
+			},
+			"expert":
+			{
+			}
+		}
+	}
+ 
+}

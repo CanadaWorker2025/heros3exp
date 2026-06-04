@@ -1,0 +1,67 @@
+{
+	"g_aaron" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "阿伦",
+			"biography" : "阿伦声称自己是一位哲学家。但是人们都认为那仅仅是声称而已。因为他从来都和哲学思维无法联系。但是他却认为只有自己才能称得上真正的智者。为此，他总是决定要创造一些著作，但几年过去了，却一本书也没有写出来。",
+			"specialty" :
+			{
+				"description" : "在学习能力上每级得到5%的额外奖励。",
+				"tooltip" : "Skill bonus: Learning",
+				"name" : "学习能力"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "bastille/heroes/aaron/skill32-7.bmp",
+			"specialtyLarge" : "bastille/heroes/aaron/skill7.bmp",
+			"large" : "bastille/heroes/aaron/HPL006DW.bmp",
+			"small" : "bastille/heroes/aaron/HPS006DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "learning"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"learning" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,63 @@
+{
+	"f_gestalt" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "盖斯塔",
+			"biography" : "人们都觉得盖斯塔是为战斗而生的疯子。据说他曾经效命于尼贡的地下部队。虽说作为矮人并没有太受重视，但盖斯塔凭借自己的实力让巫师们不得不对他刮目相看。他没有所谓的正义观，只有战斗能让他感受到快乐。所以他并不在乎雇主是谁。",
+			"specialty" :
+			{
+				"description" : "达到3级以后提高狂暴者或狂战士的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Brutes",
+				"name" : "狂暴者"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "bastille/heroes/gestalt/skill32-6.bmp",
+			"specialtyLarge" : "bastille/heroes/gestalt/skill6.bmp",
+			"large" : "bastille/heroes/gestalt/HPL005DW.bmp",
+			"small" : "bastille/heroes/gestalt/HPS005DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "bbrute"
+		}
+	}
+}
+

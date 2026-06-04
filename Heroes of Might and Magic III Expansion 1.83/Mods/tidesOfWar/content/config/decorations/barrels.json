@@ -1,0 +1,44 @@
+{
+"mdtBarrels" : {
+	"name" : "桶",
+	"handler":"static",
+		"types" : {
+				"fALD0001" : {			
+					"templates" : {				
+						"FALD0001" : { "animation" : "decorations/fALD0001", "mask" : [ "VB" ] }
+					}
+				},
+				"fALD0004" : {			
+					"templates" : {					
+						"FALD0004" : { "animation" : "decorations/fALD0004", "mask" : [ "VB" ] }
+					}
+				},
+				"fALD0006" : {			
+					"templates" : {	
+						"FALD0006" : { "animation" : "decorations/fALD0006", "mask" : [ "VB" ] }
+					}
+				},
+				"fALD00014" : {			
+					"templates" : {	
+						"FALD0014" : { "animation" : "decorations/fALD0014", "mask" : [ "VB" ] }
+					}
+				},
+				"fALD0016" : {			
+					"templates" : {	
+						"FALD0016" : { "animation" : "decorations/fALD0016", "mask" : [ "VV","VB" ] }
+					}
+				},
+				"fALD0017" : {			
+					"templates" : {	
+						"FALD0017" : { "animation" : "decorations/fALD0017", "mask" : [ "VV","VB" ] }		
+					}
+				}
+			}
+	}
+}
+	
+	
+	
+
+
+	

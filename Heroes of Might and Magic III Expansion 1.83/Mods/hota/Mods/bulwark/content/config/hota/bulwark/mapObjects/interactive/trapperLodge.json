@@ -1,0 +1,96 @@
+{
+	"trapperLodge" : {
+		"handler" : "configurable",
+		"name" : "猎人小屋",
+		"types" : {
+			"trapperLodge" : {
+				"name" : "猎人小屋",
+				"description" : "50%获得300-500黄金\n25%获得2-5个小妖精\n25%获得3-5个狗头人",
+				"visitMode" : "once",
+				"onVisitedMessage" : "{猎人小屋}\n\n有人已经来过了，这里什么都没有。",
+				"canRefuse" : true,
+				"showScoutedPreview" : true,
+				"sounds" : {
+					"visit" : [
+						"STORE"
+					]
+				},
+				"rmg" : {
+					"value" : 500,
+					"rarity" : 50
+				},
+				"variables" : {
+					"resource" : {
+						"gainedResource" : "gold"
+					},
+					"creature" : {
+						"gainedCreature" : {
+							"anyOf" : [
+								"bulwarkKobold",
+								"gremlin"
+							]
+						}
+					},
+					"number" : {
+						"gainedGoldAmount" : {
+							"amount" : [
+								300,
+								400,
+								500
+							]
+						},
+						"gainedCreatureAmount" : {
+							"min" : 3,
+							"max" : 5
+						}
+					}
+				},
+				"rewards" : [
+					{
+						"message" : "{猎人小屋}\n\n你从废弃的猎人小屋里找到了一袋金币。要取走它吗？",
+						"appearChance" : {
+							"max" : 50
+						},
+						"mapDice" : 0,
+						"resources" : [
+							{
+								"type" : "@gainedResource",
+								"amount" : "@gainedGoldAmount"
+							}
+						]
+					},
+					{
+						"message" : "{猎人小屋}\n\n你从废弃的猎人小屋中找到几个想要躲避暴风雪的小家伙，要带走它们吗？",
+						"mapDice" : 1,
+						"appearChance" : {
+							"min" : 50
+						},
+						"creatures" : [
+							{
+								"type" : "@gainedCreature",
+								"amount" : "@gainedCreatureAmount"
+							}
+						]
+					}
+				],
+				"templates" : {
+					"AVMtrap0A" : {
+						"animation" : "hota/bulwark/mapObjects/interactive/AVMtrap0A",
+						"mask" : [
+							"VV",
+							"AB"
+						],
+						"visitableFrom" : [
+							"---",
+							"++-",
+							"+++"
+						],
+						"allowedTerrains" : [
+							"snow"
+						]
+					}
+				}
+			}
+		}
+	}
+}

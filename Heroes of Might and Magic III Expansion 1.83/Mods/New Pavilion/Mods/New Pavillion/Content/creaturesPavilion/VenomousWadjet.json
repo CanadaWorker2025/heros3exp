@@ -1,0 +1,82 @@
+{
+    
+    	"venomousWadjet":
+	{
+		"name" :
+		{
+			"plural" : "剧毒沙蛇",
+			"singular" : "剧毒沙蛇"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction" : "pavilion",
+		"aiValue" : 200,
+
+		"attack" : 7,
+		"cost" :
+		{
+			"gold" : 180
+		},
+		"damage" :
+		{
+			"max" : 3,
+			"min" : 2
+		},
+		"defense" : 5,
+		"fightValue" : 190,
+		"hasDoubleWeek": true,
+		"graphics" :
+		{
+			"animation" : "creaturedefsPavilion/venomousWadjet.def",
+			"map" : "creaturedefsPavilion/venomousWadjetMap.def",
+			"iconSmall" : "creatureiconsPavilion/venomousWadjetSmall.bmp",
+			"iconLarge" : "creatureiconsPavilion/venomousWadjet.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+
+		},
+		"doubleWide" : true,
+		"growth" : 9,
+		"hitPoints" : 20,
+		"level" : 2,
+		"horde" : 4,
+		"sound" :
+		{
+			"attack":  "Pavilion/wadjAtt.wav",
+			"defend":  "Pavilion/wadjDef.wav",
+			"killed":  "Pavilion/wadjDie.wav",
+			"move":  "Pavilion/wadjWalk.wav",
+			"wince":  "Pavilion/wadjHit.wav"
+ 		},
+		"speed" : 8,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING",
+				"icon" : "bonusIcons/e_fly2.png"
+			},
+			"poisonous" : {
+				"subtype" : "spell.poison",
+				"type" : "SPELL_AFTER_ATTACK",
+				"val" : 20,
+				"addInfo" : 0,
+				"icon" : "bonusIcons/poison.png"
+			}
+
+		},
+		"stackExperience" :
+		[
+
+		]	
+	}
+    
+}

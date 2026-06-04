@@ -1,0 +1,61 @@
+{
+	"azarias" :
+	{
+		"class" : "vizier",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "亚撒利雅",
+			"biography" : "亚撒利雅致力于研究世界各地的野生动物。当变得痴迷于此时，他把大部分时间花在荒野探险上，结果是，他对许多野兽长处和弱点的洞察力变得无可比拟。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高沙蛇或剧毒沙蛇的攻击力与防御力。",
+				"tooltip" : "Creature Bonus: Wadjets",
+				"name" : "沙蛇"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/UN32Wadj.bmp",
+			"specialtyLarge" : "speciconsPavilion/UN44Wadj.bmp",
+			"large" : "heroportraitsPavilion/Azarias.png",
+			"small" : "heroportraitsPavilion/AzariasSmall.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+            {
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			}
+		],
+		"specialty" : {
+			"creature" : "wadjet"
+		}
+	}
+}

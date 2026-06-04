@@ -1,0 +1,27 @@
+{
+	"capeOfSilence" : {
+		"type" : [ "HERO" ],
+		"slot" : "SHOULDERS",
+		"class" : "MAJOR",
+		"value" : 7500,
+		"bonuses" : {
+			"spell":
+			{
+				"type" : "BLOCK_MAGIC_BELOW", 
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MIN",
+				"propagator" : "BATTLE_WIDE"
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/capeOfSilence",
+			"map" : "hota/artifactsMap/capeOfSilence",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/capeOfSilence"
+		},
+		"text" : {
+			"description" : "{沉默斗篷}\r\n\r\n当穿着这个斗篷时，你和你的对手都不能在战斗中施放1-2级魔法。",
+			"event" : "当你穿过墓地时，你注意到一个老人正在哀悼他的妻子，你接近他时，这个老人倒下死去了，埋葬他以后，你决定带走他的斗篷。",
+			"name" : "沉默斗篷"
+		}
+	}
+}

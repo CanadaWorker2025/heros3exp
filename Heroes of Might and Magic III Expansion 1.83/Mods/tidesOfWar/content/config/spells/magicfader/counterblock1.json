@@ -1,0 +1,66 @@
+{
+	"counterblock1":
+	{
+		"type": "ability",
+		"name": "破除抑制",
+		"school":
+			{
+				"air": false, //true
+				"earth": false,
+				"fire": false,
+				"water": false
+			},
+	"animation":{	
+	},
+	"sounds": {
+	},		
+	"level": 1,
+	"power": 1,
+	"defaultGainChance": 0, 
+	"gainChance":
+	{
+	},
+	"flags" : {
+		"positive": true,
+		"special": true
+	},
+	"graphics":
+	{
+		"iconBook": "spells/extraEffect/null",
+		"iconScroll": "spells/extraEffect/null",
+		"iconScenarioBonus": "spells/extraEffect/null",
+		"iconEffect": "spells/extraEffect/null"
+	},
+	"targetType" : "NO_TARGET",
+
+	"levels":
+	{
+		"base":
+		{
+			"description": "{初级法术抑制}\n\n使敌方英雄无法施展5级魔法。",
+			"power": 1,
+			"range": "0",
+			"cost": 0,
+			"targetModifier":{"smart":true},
+			"effects" : {
+				"magicBlock" : {				
+					"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+					"val" :  0
+				}
+			}
+		},
+		"none":
+		{ 			
+		},
+		"basic":
+		{
+		},
+		"advanced":
+		{	
+		},
+		"expert":
+		{	
+		}
+	}
+  }
+}

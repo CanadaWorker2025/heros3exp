@@ -1,0 +1,35 @@
+{
+// "special" heroes for new towns
+	"core:dracon":
+	{
+		"specialty" : {
+			"base" : {
+				"type" : "SPECIAL_UPGRADE",
+				"addInfo" : "creature.enchanter"
+			},
+			"bonuses" : {
+				"cthSexton2enchanter" : { "subtype" : "creature.cthSexton" },
+				"cthCantor2enchanter" : { "subtype" : "creature.cthCantor" },
+			}
+		},
+	},
+	"core:ingham":
+	{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"parameters" : [ "cthSexton", true ],
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+				]
+			},
+			"bonuses" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1
+				}
+			}
+		},
+	}
+}

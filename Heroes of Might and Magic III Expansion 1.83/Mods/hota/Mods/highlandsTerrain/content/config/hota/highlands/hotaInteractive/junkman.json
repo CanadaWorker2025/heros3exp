@@ -1,0 +1,31 @@
+{
+	"junkman" : {
+		"name" : "旧货收购站",
+		"handler" : "market",
+		"types" : {
+			"junkman" : {
+				"name": "旧货收购站 (按照7座市场的价格卖出宝物)",
+				//"title" : "Junkman",
+				"speech" : "",
+				"modes" : ["artifact-resource"],
+				"efficiency" : 7,
+				"rmg" : {
+					"value"	: 200,
+					"rarity" : 40,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["hota/highlands/JUNKVIST"]
+				},
+				"templates" : {
+					"AVXjnkmn" : {
+						"animation" : "hota/highlands/hotaInteractive/junkman/AVXjnkmn",
+						"mask" : [ "VVV", "VBA" ],
+						"visitableFrom" : [ "---", "++-", "+++" ],
+						"allowedTerrains" : [ "highlands"]
+					}
+				}
+			}
+		}
+	}
+}

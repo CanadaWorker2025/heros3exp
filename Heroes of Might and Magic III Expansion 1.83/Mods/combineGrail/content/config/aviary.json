@@ -1,0 +1,24 @@
+{
+	"cgEtherElementalsAviary" : {
+		"bonuses" : { 
+			"speedReduce":
+			{ 
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [ "OPPOSITE_SIDE" ],
+				"type" : "STACKS_SPEED", 
+				"val" : -1 
+			} 			
+		},
+		"class" : "MAJOR",
+		"graphics" : { "image" : "aviary/aviary", "scenarioBonus" : "aviary/aviaryL", "map" : "aviary/egg" },
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{以太囚笼}\r\n\r\n在战场上使敌人速度-1。",
+			"event" : "这个地方让你想起关于古代的传说——一座满是各种奇怪物品的破庙。你发现其中的一个物品闪闪发亮，与众不同。于是很快把它捡起来，然后离开寺庙，希望没有人会试图从你那里偷走它。 ",
+			"name" : "以太囚笼"
+		},
+		"type" : [ "HERO" ],
+		"value" : 6500
+	}
+}

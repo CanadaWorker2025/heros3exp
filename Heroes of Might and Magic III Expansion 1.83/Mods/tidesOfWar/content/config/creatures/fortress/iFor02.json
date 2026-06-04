@@ -1,0 +1,74 @@
+{
+    "iFor02"://lizardStalker
+    {
+    "name": {
+      "plural": "蜥蜴潜伏者",
+      "singular": "蜥蜴潜伏者"
+    },
+    "advMapAmount": {
+ "max" : 25,
+ "min" : 16
+    },
+    "faction": "fortress",
+    "aiValue": 157,
+    "attack": 7,
+    "cost": {
+      "gold": 140
+    },
+    "damage": {
+ "max" : 5,
+ "min" : 2
+    },
+    "defense": 7,
+    "fightValue": 131,
+    "graphics": {
+			"animation" : "creatures/fortress/battle/iFor02B.def",
+			"map" : "creatures/fortress/map/iFor02M.def",
+			"iconSmall" : "creatures/fortress/iconsSmall/iFor02S.bmp",
+			"iconLarge" : "creatures/fortress/iconsBig/iFor02L.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.20,
+        "attack": 1,
+        "idle": 10
+      },
+			"missile" :
+			{
+				"projectile": "PPLIZAX.DEF",
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+    },
+    "growth": 9,
+    "hitPoints": 14,
+	"upgrades": ["lizardWarrior"],
+    "shots" : 24,
+		"level": 2,
+		"sound" :
+		{
+			"attack": "ALIZATTK.wav",
+			"defend": "ALIZDFND.wav",
+			"killed": "ALIZKILL.wav",
+			"move": "ALIZMOVE.wav",
+			"shoot": "ALIZSHOT.wav",
+			"wince": "ALIZWNCE.wav"
+		},
+    "speed": 6,
+		"abilities" :
+		{	
+                    "canShoot" :
+			{
+				"type" : "SHOOTER"
+			}
+		}
+	}
+}

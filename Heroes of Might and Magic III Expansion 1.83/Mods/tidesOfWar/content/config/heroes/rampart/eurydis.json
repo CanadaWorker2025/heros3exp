@@ -1,0 +1,63 @@
+{
+  "mdtEurydis" :
+  {
+    "class" : "ranger",
+    "female" : true,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "欧瑞迪丝",
+      "biography" : "由于乱砍滥伐斯坦德维克北部的树木，德迦的怪物唤醒了森林的灵魂。欧瑞迪丝奇迹般地避免了死亡，并与其他树妖一起逃到了阿维利。她在这里聚集了一支军队为被谋杀的姐妹们报仇。",
+      "specialty" :
+      {
+        "description" : "达到4级以后提高林妖或橡木林妖的攻击力与防御力。",
+        "tooltip" : "{Dryads and Oak Dryads}\r\n\r\nIncreases the Attack and Defense skills of any Dryads and Oak Dryads for each level attained after 4th level. Additionally, Dryads and Oak Dryads get a permanent +1 Speed bonus",
+        "name" : "林妖"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/rampart/eurydis_spec-small.png",
+      "specialtyLarge" : "heroes/rampart/eurydis_spec-large.png",
+      "large" : "heroes/rampart/eurydis_portrait-large.png",
+      "small" : "heroes/rampart/eurydis_portrait-small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "centaur",
+        "max" : 24,
+        "min" : 12
+      },
+      {
+        "creature" : "woodElf",
+        "max" : 4,
+        "min" : 1
+      },
+      {
+        "creature" : "mdtDryad",
+        "max" : 5,
+        "min" : 3
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "scouting"
+      },
+      {
+        "level" : "basic",
+        "skill" : "pathfinding"
+      }
+    ],
+    
+	"specialty" : {
+		"creature" : "mdtDryad"
+	}
+  }
+}

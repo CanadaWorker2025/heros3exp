@@ -1,0 +1,62 @@
+{
+	"f_ceretus" :
+	{
+		"class" : "guardian",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "塞奥利托斯",
+			"biography" : "塞奥利托斯离开埃里的原因是他重要的独角兽伙伴被征入了军队之中。他恨那些蛮不讲理的精灵们，但是无计可施。当他寻找到森林深处的智慧族群白虎之后，塞奥利托斯发现他能够和白虎进行通感。他相信终有一天能回到曾经的家乡和他的朋友团聚。",
+			"specialty" :
+			{
+				"description" : "达到3级以后提高老虎和白虎的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "老虎"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/ceretus/Un32Bear.bmp",
+			"specialtyLarge" : "preserve/heroes/ceretus/Un44Bear.bmp",
+			"large" : "preserve/heroes/ceretus/HPL005GN.bmp",
+			"small" : "preserve/heroes/ceretus/HPS005GN.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+			{
+				"level" : "basic",
+				"skill" : "diplomacy"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "magiceye"
+		}
+	}
+}

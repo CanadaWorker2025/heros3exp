@@ -1,0 +1,138 @@
+{
+	"confusion":
+	{
+		"type": "combat", 
+		"name": "迷惑心智",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 3,
+		"power": 10,
+		"defaultGainChance": 4, 
+		"gainChance":
+		{
+			"castle": 8,
+			"rampart": 8,
+			"conflux" : 8
+		},
+ 
+		"animation":
+		{
+			"affect":["NewOldSpells/confusionSpell.def"]
+		},
+ 
+		"flags" : {"negative": true},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {
+				"core:bonus.MIND_IMMUNITY": "normal",
+				"core:bonus.NON_LIVING": "normal",
+				"bonus.MECHANICAL" : "normal",
+				"core:bonus.UNDEAD": "normal"
+			}
+	}, 
+	
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/confusionBook.bmp",
+			"iconScroll": "NewOldSpells/confusionScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/confusionScenario.bmp",
+			"iconEffect": "NewOldSpells/confusionEffect.bmp",
+			"iconImmune": "NewOldSpells/confusionImmune.bmp"
+		},
+
+		"sounds":
+		{
+			"cast":"NewOldSpells/sound.spell.disintegrate.wav"
+		},
+		"targetType" : "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{迷惑心智}\n\n使对手无法对任何攻击做出反击。受攻击后失效。\n",
+	 
+				"cost": 13,
+	 
+				"effects":
+				{
+					"confusion":
+					{
+						"type": "NO_RETALIATION",
+						"duration": [
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级迷惑心智}\n\n使对手无法对任何攻击做出反击。受攻击后失效。\n",
+	 
+				"cost": 10,
+	 
+				"effects":
+				{
+					"confusion":
+					{
+						"type": "NO_RETALIATION",
+						"duration": [
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级迷惑心智}\n\n使对手无法对任何攻击做出反击。\n",
+	 
+				"cost": 10,
+//				"range": "1",
+	 
+				"effects":
+				{
+					"confusion":
+					{
+						"type": "NO_RETALIATION",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级迷惑心智}\n\n使对手所有部队无法对任何攻击做出反击。\n",
+	 
+				"cost": 10,
+				"range": "X",
+	 
+				"effects":
+				{
+					"confusion":
+					{
+						"type": "NO_RETALIATION",
+						"duration": "N_TURNS"
+					}
+				}
+			}
+		}
+	}
+ 
+}

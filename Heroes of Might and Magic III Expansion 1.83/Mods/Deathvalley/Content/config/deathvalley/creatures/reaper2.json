@@ -1,0 +1,104 @@
+{
+	"reaper2": {
+		"name" : {
+			"plural" : "冷酷收割者",
+			"singular" : "冷酷收割者"
+		},
+		"faction" : "deathvalley",
+		"level" : 6,
+		"cost" : {
+			"gold" : 1300
+		},
+		"speed" : 9,
+		"hitPoints" : 110,
+		"attack" : 18,
+		"defense" : 18,
+		"damage" : {
+			 "max" : 20,
+			 "min" : 15
+		},
+		"doubleWide" : false,
+		"hasDoubleWeek" : false,
+		"growth" : 2,
+		"aiValue" : 2760,
+		"fightValue" : 2455,
+		"advMapAmount" : {
+			 "max" : 10,
+			 "min" : 5
+		},
+		"abilities" : {
+			"IS_UNDEAD" : {
+				"type" : "UNDEAD"
+			},
+			"castDisease" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.reaperAb1",//plagueAb1
+				"val" : 100,
+				"description" : "{冰冷之触}\n攻击后可以直接杀死1个生物，对无生命无效",
+				"icon": "deathvalley/spells/reaper.png"
+			},
+			"flies" :
+			{
+				"type" : "FLYING",
+				"icon" : "deathvalley/spells/e_fly3.png"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			}
+		],
+		"graphics" : {
+			"animation" : "deathvalley/battle/creatures/reaper2.def",
+			"map" : "deathvalley/map/reaper2mini.def",
+			"iconSmall" : "deathvalley/iconsSmall/reapers.bmp",
+			"iconLarge" : "deathvalley/iconsBig/reaperl.bmp",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
+			"timeBetweenFidgets" : 1
+		},
+		"sound" : {
+			"attack" : "deathvalley/reaperatk.wav",
+			"defend" : "deathvalley/reaperdfnd.wav",
+			"killed" : "deathvalley/greaperdie.wav",
+			"move" : "deathvalley/reapermove.wav",
+			"wince" : "deathvalley/greaperhurt.wav"
+		}
+	}
+}

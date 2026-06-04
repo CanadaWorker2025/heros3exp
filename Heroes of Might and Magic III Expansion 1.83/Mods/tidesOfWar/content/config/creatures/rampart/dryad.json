@@ -1,0 +1,132 @@
+{
+	"mdtDryad" : {
+		"abilities" : {
+		
+			"canFly" : 
+			{ 
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly3.png"
+			},
+			"blockAttack" :
+			{
+				"type" : "GENERAL_ATTACK_REDUCTION",
+				"val" : 20
+			},
+			"helpEnt2" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.symbiosis",
+				"val" : 3,
+				"icon": "bonuses/sim01.png"
+			},
+			"spellPower" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.symbiosis",
+				"val" : 100
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values" : [ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40 ]			
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "spellSchool.any",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+				},
+				"values" : [ false, false, false, false, false, false, false, false, false, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE",				
+				},
+				"values" : [ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		],	
+		"advMapAmount" : {"max" : 20, "min" : 10},
+		"aiValue" : 648,
+		"attack" : 8,
+		"cost" : { "gold" : 300 },
+		"damage" : {"max" : 9, "min" : 7},
+		"defense" : 12,
+		"faction" : "rampart",
+		"fightValue" : 615,
+		"graphics" : {
+			"animation" : "creatures/rampart/battle/dryad.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 2.2 },
+			"iconLarge" : "creatures/rampart/iconsBig/dryadBig.png",
+			"iconSmall" : "creatures/rampart/iconsSmall/dryadSmall.png",
+			"map" : "creatures/rampart/map/mapDryad.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 4,
+		"hitPoints" : 35,
+        "doubleWide" : false,
+		"level" : 4,
+		"name" : { "plural" : "林妖", "singular" : "林妖" },
+		"upgrades": ["mdtOakDryad"],
+		"sound" : {
+			"attack" : "creatures/rampart/dryad/DRYDATTK.wav",
+			"defend" : "creatures/rampart/dryad/DRYDDFND.wav",
+			"killed" : "creatures/rampart/dryad/DRYDKILL.wav",
+			"move" : "creatures/rampart/dryad/DRYDMOVE.wav",
+			"wince" : "creatures/rampart/dryad/DRYDWNCE.wav"
+		},
+		"speed" : 6
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"ffpraetorian":
+	{
+		"name" :
+		{
+			"plural" : "禁卫军",
+			"singular" : "禁卫军"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction": "castle",
+		"aiValue" : 116,
+		"fightValue" : 116,
+		"attack" : 7,
+		"defense" : 4,
+		"cost" :
+		{
+			"gold" : 75
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 3
+		},
+		"speed" : 5,
+		"upgrades": ["halberdier"],
+		"graphics" :
+		{
+			"animation" : "creatures/castle/battle/C191.def",
+			"map" : "creatures/castle/map/AVWC191.def",
+			"iconSmall" : "creatures/castle/iconsSmall/CPrS191C.png",
+			"iconLarge" : "creatures/castle/iconsBig/CPRL191C.png",
+			"timeBetweenFidgets" : 3,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 10,
+		"growth" : 14,
+		"level" : 1,
+		"sound" :
+		{
+			"attack": "PIKEATTK.wav",
+			"defend": "PIKEDFND.wav",
+			"killed": "PIKEKILL.wav",
+			"move": "PIKEMOVE.wav",
+			"wince": "PIKEWNCE.wav"
+		},
+		"abilities" :
+		{
+			"hatecavaliers" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.cavalier",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateffpaladin" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.ffpaladin",
+				"val" : 50,
+				"hidden": true
+			},
+			"haterStrn02" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.rStrn02",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateDarkChampion" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.gNec06",
+				"val" : 50,
+				"hidden": true
+			},
+			"hatechampions" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.champion",
+				"val" : 50,
+				"description" : "{克制冲锋}\n对可以冲锋的单位造成额外50%伤害",
+				"icon" : "spells/extraEffect/antiKnight.png"
+			}			
+		}
+	}
+}
+
+

@@ -1,0 +1,29 @@
+{
+	"hota.highlandsterrain:hermitsShack" : {
+		"types" : {
+			"hermitsShack" : {
+				"rewards" : {
+					"append" : 	{
+						"limiter" : {
+							"noneOf" : [
+								{
+									"secondary" :
+										{
+											"runes" : 3
+										}
+								}
+							],
+							"secondary" : {
+								"runes" : 1
+							}
+						},
+						"secondary" : {
+							"runes" : 1
+						},
+						"message" : "{隐士小屋}\r\n\r\n进入小屋，发现屋内空无一人，但墙上似乎贴满了学术书籍的书页。你从壁炉附近的一张纸上抄录了一些有用的信息。"
+					}
+				}
+			}
+		}
+	}
+}

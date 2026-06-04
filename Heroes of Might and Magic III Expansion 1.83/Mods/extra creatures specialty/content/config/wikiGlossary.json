@@ -1,0 +1,35 @@
+{
+	// Wiki Glossary – moddable list of concept/lore entries shown in the Glossary
+	// category of the in-game Wiki window.
+	//
+	// Each entry is a JSON object keyed by a unique identifier (used for wiki links).
+	// Because "entries" is a struct, entries from different mods are merged correctly
+	// by assembleFromFiles.
+	//
+	//   "name"        – translation key (or literal string if no key exists)
+	//   "description" – translation key (or literal description text)
+	
+	"entries" : {
+		"vcmi.wiki.glossary.exp" : {
+			"name"        : "vcmi.wiki.glossary.exp.name",
+			"description" : "vcmi.wiki.glossary.exp.description"
+		},
+		"vcmi.wiki.glossary.maximizedMovement" : {
+			"name"        : "vcmi.wiki.glossary.maximizedMovement.name",
+			"description" : "vcmi.wiki.glossary.maximizedMovement.description"
+		},
+		"vcmi.wiki.glossary.proverb" : {
+			"name"        : "vcmi.wiki.glossary.proverb.name",
+			"description" : "vcmi.wiki.glossary.proverb.description"
+		},
+		"vcmi.wiki.glossary.tarot" : {
+			"name"        : "vcmi.wiki.glossary.tarot.name",
+			"description" : "vcmi.wiki.glossary.tarot.description"
+		},
+		"vcmi.wiki.glossary.campaignNext" : {
+			"name"        : "vcmi.wiki.glossary.campaignNext.name",
+			"description" : "vcmi.wiki.glossary.campaignNext.description"
+		}
+		
+	}
+}

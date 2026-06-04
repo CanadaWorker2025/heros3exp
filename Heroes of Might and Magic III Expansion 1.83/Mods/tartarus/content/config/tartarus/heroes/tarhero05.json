@@ -1,0 +1,69 @@
+{
+	"tarhero05" :
+	{
+    "class": "taHeroA",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "阿拉尔",
+			"biography" : "阿拉尔是一个非常狡猾和贪婪的魔法师，但因为他的狂妄自大，竟妄图和马格努斯平起平坐，使他被赶出了布拉卡达。但阿拉尔并不困惑，他认为弗里根人将能够成为实现他权力和财富的优秀盟友。",
+			"specialty" :
+			{
+				"description" : "使王国每天增加1水银的收入。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "+1 水银"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero05/skill5.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero05/skills5.bmp",
+			"large" : "tartarus/heroes/tarhero05/tarH5.bmp",
+			"small" : "tartarus/heroes/tarhero05/tarH5S.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "demonicBlood"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+		"bonuses" : {
+			"gold" : {
+					"subtype" : "resource.mercury",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+		}
+	}
+	}
+}
+

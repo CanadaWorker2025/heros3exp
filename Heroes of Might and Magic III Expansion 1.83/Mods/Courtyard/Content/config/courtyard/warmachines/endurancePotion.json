@@ -1,0 +1,42 @@
+{
+	"endurancePotion":
+	{
+		"type": ["HERO"],
+		"class": "SPECIAL",
+		"slot":	"MISC",
+		"value": 500,	
+		"text":
+		{
+			"name": "耐力药剂",
+			"description": "{耐力药剂}\r\n\r\n在地图上可以使用耐力，拥有3次使用次数。\r\n魔力值耗尽后，药剂将会消失。",
+			"event": "你在旅行中发现了一个药水瓶，里面装着药水，你将它捡起来放进行囊。"
+		},
+		"graphics":
+		{
+			"image": "courtyard/icons/artifacts/speedPotion",
+			"scenarioBonus": "courtyard/icons/artifacts/speedPotionBonus.png",
+			"map"  : "courtyard/map/artPoEt.def",
+		},
+		"bonuses":
+		{
+			"spellGain":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.endurancePotion",
+				"limiters" : [
+				{
+					"type" : "HAS_CHARGES_LIMITER",
+					"parameters" : [1]
+				}
+				],
+				"hidden" : true
+			}
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 3
+		}
+	}
+}

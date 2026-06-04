@@ -1,0 +1,164 @@
+{
+	"core:stronghold" :
+	{
+		"description" : "{据点}\n种族阵营： 中立，混乱\n种族地形： 戈壁\n所在地： 恩塔格瑞大陆-克鲁罗德王国\n据点由野蛮人统领，他们的势力在克鲁罗德，同时和塔塔利亚有着领土纠纷，野蛮人生性残暴，由于戈壁气候恶劣干燥，他们经常谋划攻击塔塔利亚和埃拉西亚边境，并掠夺那里的资源。",
+		"town" :
+		{
+			"structures" :
+			{
+				"dwellingUpEx1": { "animation" : "TBSTHRD2.def", "x" : 373, "y" : 220, "border" : "TOSGOB2H.bmp", "area" : "TZSGOB2H.bmp", },
+				"dwellingUpEx2": { "animation" : "TBSTUP_1.def", "x" : 266, "y" : 225, "z" : 1,  "border" : "TOSWOL2.bmp",  "area" : "TZSWOL2.bmp" },
+				"dwellingUpEx3": { "animation" : "TBSTUP_2.def", "x" : 566, "y" : 158, "z" : 2,  "border" : "TOSORC2.bmp",  "area" : "TZSORC2.bmp" },
+				"dwellingUpEx4": { "animation" : "TBSTUP_3.def", "x" : 197, "y" : 137, "border" : "TOSOGR2.bmp",  "area" : "TZSOGR2.bmp" },
+				"dwellingUpEx5": { "animation" : "TBSTUP_4.def", "x" : 129, "y" : 15,  "z" : -1, "border" : "TOSROC2.bmp",  "area" : "TZSROC2.bmp" },
+				"dwellingUpEx6": { "animation" : "TBSTUP_5.def", "x" : 616, "y" : 93,  "z" : -2, "border" : "TOSCYC2A.bmp", "area" : "TZSCYC2A.bmp" },
+				"dwellingUpEx7": { "animation" : "TBSTUP_6.def", "x" : 604, "y" : 0,   "border" : "TOSBEH2A.bmp", "area" : "TZSBEH2A.bmp" },
+				"dwellingLvl6B":   { "animation" : "town-screen/stronghold/TbStDA_5", "x" : 585, "y" : 176, "z" : -1,  "border" : "town-screen/stronghold/buildings-border/TOSSnk1.BMP", "area" : "town-screen/stronghold/buildings-area/TZSSNK1.BMP" },
+				"dwellingUpLvl6B": { "animation" : "town-screen/stronghold/TbStUA_5", "x" : 585, "y" : 143, "z" : -1,  "border" : "town-screen/stronghold/buildings-border/TOSSnk2.BMP", "area" : "town-screen/stronghold/buildings-area/TZSSNK2.BMP" }
+			},
+			"buildingsIcons": "town-screen/stronghold/HALLSTRNALT.DEF",
+			"hallBackground": "town-screen/stronghold/strongholdHallBg.png",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3" ], [ "special4" ], [ "special1" ] ],
+				[ [ "special2" ], [ "special3" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1","dwellingUpEx1" ], [ "dwellingLvl2", "dwellingUpLvl2","dwellingUpEx2" ], [ "dwellingLvl3", "dwellingUpLvl3","dwellingUpEx3" ], [ "dwellingLvl4", "dwellingUpLvl4","dwellingUpEx4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5","dwellingUpEx5" ], [ "dwellingLvl6", "dwellingUpLvl6","dwellingUpEx6" ], [ "dwellingLvl6B", "dwellingUpLvl6B" ] ,[ "dwellingLvl7", "dwellingUpLvl7","dwellingUpEx7" ] ]
+			],
+			"creatures" :
+			[
+				["goblin", "hobgoblin","rStrn01"],
+				["goblinWolfRider", "hobgoblinWolfRider","rStrn02"],
+				["orc", "orcChieftain","rStrn03"],
+				["ogre", "ogreMage","rStrn04"],
+				["roc", "thunderbird","rStrn05"],
+				["cyclop", "cyclopKing","rStrn06", "mdtCouatl", "mdtQuetzalcouatl"],
+				["behemoth", "ancientBehemoth","rStrn07"]
+			],
+			"buildings" :
+			{
+
+				"dwellingUpEx1": 
+				{ 
+				"name" : "高级大耳怪营",
+					"description" : "高级大耳怪营穴允许你招募大耳怪王和大耳怪守卫，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"wood": 5,
+						"gold" : 1000
+					},
+				"id" : 44, 
+				"upgrades" : "dwellingUpLvl1",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx2": 
+				{ 
+				"name" : "高级狼舍",
+					"description" : "高级狼舍允许你招募恶狼斗士和恶狼战士，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"wood": 5,
+						"gold" : 1000
+					},
+				"id" : 45, 
+				"upgrades" : "dwellingUpLvl2",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx3": 
+				{ 
+				"name" : "高级兽人塔",
+					"description" : "高级兽人塔允许你招募半兽人首领和半兽人队长，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 2,
+						"wood": 2,
+						"gold" : 1000
+					},
+				"id" : 46, 
+				"upgrades" : "dwellingUpLvl3",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx4": 
+				{ 
+				"name" : "高级食人魔堡垒",
+					"description" : "高级食人魔堡垒允许你招募食人魔王和食人魔长老，并且可以在城中进行转换。",
+					"cost" : {
+						"gems": 5,
+						"ore" : 5,
+						"wood": 5,
+						"gold" : 2000
+					},
+				"id" : 47, 
+				"upgrades" : "dwellingUpLvl4",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx5": 
+				{ 
+				"name" : "高级壁巢",
+					"description" : "高级壁巢允许你招募雷鸟和云鸟，并且可以在城中进行转换。",
+					"cost" : {
+						"wood": 5,
+						"ore" : 5,
+						"gold" : 2000
+					},
+				"id" : 48, 
+				"upgrades" : "dwellingUpLvl5",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx6": 
+				{ 
+				"name" : "高级独眼洞穴",
+					"description" : "高级独眼洞穴允许你招募独眼王和血瞳独眼，并且可以在城中进行转换。",
+					"cost" : {
+						"crystal": 10,
+						"ore" : 5,
+						"wood": 5,
+						"gold" : 3000
+					},
+				"id" : 49, 
+				"upgrades" : "dwellingUpLvl6",
+				"mode" : "auto"
+				},
+				"dwellingUpEx7": 
+				{ 
+				"name" : "高级比蒙巢穴",
+					"description" : "高级比蒙巢穴允许你招募比蒙巨兽和凶残巨兽，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 10,
+						"ore" : 10,
+						"crystal": 20,
+						"gold" : 15000
+					},
+				"id" : 50, 
+				"upgrades" : "dwellingUpLvl7",
+				"mode" : "auto" 
+				},
+				"dwellingLvl6":   { "requires" : [ "allOf", [ "dwellingLvl4" ], [ "noneOf", [ "dwellingLvl6B" ] ] ] },
+				"dwellingLvl6B" :
+				{
+					"name" : "神塔",
+					"description" : "神塔允许你招募风蛇。",
+					"cost" : 
+					{
+						"gold" : 5000,
+						"ore" : 5
+					},
+					"id" : 56, 
+					"requires" : [ "allOf", [ "dwellingUpLvl4" ], [ "noneOf", [ "dwellingLvl6" ] ] ]
+				},
+				"dwellingUpLvl6B" :
+				{
+					"name" : "高级神塔",
+					"description" : "高级神塔允许你招募风蛇王。",
+					"cost" : 
+					{
+						"gold" : 5000,
+						"ore" : 5
+					},
+					"id" : 63, 
+					"upgrades" : "dwellingLvl6B"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"jaffa" :
+	{
+		"class" : "embalmer",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "雅法",
+			"biography" : "雅法是一个残酷领主的仆人，不得不在主人的命令下折磨无辜者。当发动政变的机会到来时，他首先加入反叛军，并发誓只有在他将一把匕首插入暴君胸膛的时刻才能使用他的力量。",
+			"specialty" :
+			{
+				"description" : "使用流星火雨魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Spell Bonus: Meteor Shower",
+				"name" : "流星火雨"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/32Meteor.bmp",
+			"specialtyLarge" : "speciconsPavilion/44Meteor.bmp",
+			"large" : "heroportraitsPavilion/Jaffa.png",
+			"small" : "heroportraitsPavilion/JaffaSmall.png"
+		},
+              "spellbook" :
+		[
+			"meteorShower" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		
+		"specialty":
+		{
+			"bonuses" : {
+				"meteorShower" : {
+					"subtype" : "spell.meteorShower",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}
+

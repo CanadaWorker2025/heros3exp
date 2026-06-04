@@ -1,0 +1,161 @@
+{
+  "tartarc7": {
+    "name": {
+      "plural": "寒冰守卫",
+      "singular": "寒冰守卫"
+    },
+    "advMapAmount": {
+ "max" : 20,
+ "min" : 10
+    },
+    "faction": "tartarus",
+    "aiValue": 543,
+    "attack": 10,
+    "cost": {
+      "gold": 280
+    },
+    "damage": {
+ "max" : 9,
+ "min" : 7
+    },
+    "defense": 10,
+    "fightValue": 522,
+    "graphics": {
+      "animation": "tartarus/battle/creatures/Tar4.def",
+      "map": "tartarus/map/creatures/AVWTAR04.def",
+      "iconSmall": "tartarus/iconsSmall/creatures/Tar4iconS.bmp",
+      "iconLarge": "tartarus/iconsBig/creatures/T4icon.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.50,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 4,
+    "hitPoints": 35,
+    "level": 4,
+    "upgrades": [
+      "tartarc8"
+    ],
+    "sound": {
+      "attack": "tartarus/TAR4ATTK.wav",
+      "defend": "tartarus/TAR4DFND.wav",
+      "killed": "tartarus/TAR4KILL.wav",
+      "move": "tartarus/TAR4MOVE.wav",
+      "wince": "tartarus/TAR4WNCE.wav"
+    },
+    "speed": 6,
+    "abilities": {
+       "immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"fireShieldVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 100,
+				"description" : "{火系弱点}\n受火盾，火墙，火球，末日，地狱火伤害加倍",
+				"icon" : "NewOldSpells/fireWeak.png",
+			},
+			"infernoVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.inferno",
+				"val" : 100,
+				"hidden":true
+			},
+			"fireballVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireball",
+				"val" : 100,
+				"hidden":true
+			},
+			"fireWallVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireWallTrigger",
+				"val" : 100,
+				"hidden":true
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"hidden":true
+			},
+      "caster": {
+        "type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.tarability5",
+				"val" : 20,
+				"icon" : "NewOldSpells/lv4.png"
+      }
+
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.protectWater"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 ]
+			}
+		]
+}	
+}

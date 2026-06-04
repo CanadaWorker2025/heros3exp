@@ -1,0 +1,65 @@
+{
+	"dv_necromancy" : {
+		"name" : "死灵术",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"specialty" : [
+			"main"
+		],
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "UNDEAD_RAISE_PERCENTAGE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"power" : {
+					"type" : "IMPROVED_NECROMANCY",
+					"subtype" : "creature.skelh",
+					"addInfo" : 0
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small" : "deathvalley/skills/smallBasic",
+				"medium" : "deathvalley/skills/mediumBasic",
+				"large" : "deathvalley/skills/largeBasic",
+				"scenarioBonus" : "deathvalley/scenarioBonuses/senarioExtra1.png"
+			},
+			"description" : "{初级死灵术}\n\n初级死灵术可以将阵亡生物的10%转换为骷髅犬。",
+			"effects" : {
+				"main" : { "val" : 10 },
+				"power" : { "val" : 1 }
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small" : "deathvalley/skills/smallAdvanced",
+				"medium" : "deathvalley/skills/mediumAdvanced",
+				"large" : "deathvalley/skills/largeAdvanced",
+				"scenarioBonus" : "deathvalley/scenarioBonuses/senarioExtra2.png"
+			},
+			"description" : "{中级死灵术}\n\n中级死灵术可以将阵亡生物的15%转换为骷髅犬。",
+			"effects" : {
+				"main" : { "val" : 15 },
+				"power" : { "val" : 2 }
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small" : "deathvalley/skills/smallExpert",
+				"medium" : "deathvalley/skills/mediumExpert",
+				"large" : "deathvalley/skills/largeExpert",
+				"scenarioBonus" : "deathvalley/scenarioBonuses/senarioExtra3.png"
+			},
+			"description" : "{高级死灵术}\n\n高级死灵术可以将阵亡生物的25%转换为骷髅犬。",
+			"effects" : {
+				"main" : { "val" : 25 },
+				"power" : { "val" : 3 }
+			}
+		},
+		"special": true
+	}
+}

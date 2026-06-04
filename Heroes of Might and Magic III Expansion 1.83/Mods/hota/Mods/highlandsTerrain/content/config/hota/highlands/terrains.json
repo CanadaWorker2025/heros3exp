@@ -1,0 +1,20 @@
+{
+	"highlands" :
+	{
+		"text" : "高地",
+		"moveCost" : 100,
+		"minimapUnblocked" : [  84, 121, 26 ],
+		"minimapBlocked"   : [ 41, 106, 20 ],
+		"music" : ["hota/HIGHLANDS.mp3"],
+		"tiles" : "hota/highlands/tiles",
+		"type" : [],
+		"allowedLayers": ["surface", "unknown"],
+		"horseSound" : "hota/highlands/horse30",
+		"horseSoundPenalty" : "horse20",
+		"river" : "highRiver",
+		"rockTerrain":"rock",
+		"shortIdentifier" : "hl",
+		"terrainViewPatterns" : "hota",
+		"battleFields" : ["highlands_flowers"]
+	}
+}

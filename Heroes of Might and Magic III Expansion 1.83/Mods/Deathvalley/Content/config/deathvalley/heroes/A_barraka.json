@@ -1,0 +1,59 @@
+{
+	"a_dvBarraka" :
+	{
+		"class" : "dvDeathlord",
+		"female" : true,
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/barraka/Un32Ghost.png",
+			"specialtyLarge" : "deathvalley/heroes/barraka/Un44Ghost.png",
+			"large" : "deathvalley/heroes/barraka/BarrakaL.png",
+			"small" : "deathvalley/heroes/barraka/BarrakaS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "gghost",
+				"max" : 5,
+				"min" : 3
+			},
+			{
+				"creature" : "gghost",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+		],
+		"specialty" : {
+			"creature" : "gghost"
+		},
+			
+		"texts" : {
+			"biography" : "巴拉卡被称为“王国缠身者”，因为她经常在土地上潜行，有时她会偷偷潜行到敌人身边，出其不意地发动攻势。这也是敌人畏惧她的原因。",
+			"name" : "巴拉卡",
+			"specialty" : {
+				"description" : "达到4级以后提高死灵女妖或阴影女妖的攻击力与防御力。",
+				"tooltip" : "Increases the Attack and Defence of any Ghosts and Spectres for each level attained after 4th level.",
+				"name" : "死灵女妖"
+			}
+		}
+	}
+}
+

@@ -1,0 +1,137 @@
+{
+	"ftNoble1":
+	{
+		"name" :
+		{
+			"plural" : "月光鹿",
+			"singular" : "月光鹿"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 12
+		},
+		"faction" : "fairy",
+		"doubleWide" : true,
+		"aiValue" : 268,
+		"attack" : 7,
+		"cost" :
+		{
+			"gold" : 160
+		},
+		"damage" :
+		{
+			"max" : 5,
+			"min" : 3
+		},
+		"defense" : 5,
+		"fightValue" : 215,
+		"graphics" :
+		{
+			"animation" : "fairy/battle/creatures/CFar05.def",
+			"map" : "fairy/map/creatures/mapfnoble1.def",
+			"iconSmall" : "fairy/iconsSmall/creatures/fay05.bmp",
+			"iconLarge" : "fairy/iconsBig/creatures/fairy05.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10
+			},
+	       },
+		"growth" : 7,
+		"hitPoints" : 18,
+		"horde": 3,
+		"level" : 3,
+		"upgrades":
+		[
+			"ftNoble2"
+		],
+		"sound" :
+		{
+			"attack": "UNICATTK.wav",
+			"defend" : "UNICDFND.wav",
+			"killed" : "CGORKILL.wav",
+			"move" : "UNICMOVE.wav",
+			"wince" : "CGORWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"slowImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.slow"
+			}
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.skeleton"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.skeletonWarrior"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"e_renner" :
+	{
+    "class": "pathfinder",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "伦纳",
+			"biography" : "伦纳并没有将自己变成巫妖的兴趣，但是修习魔法的能量反噬还是让他成为了巫妖。他并不喜欢自己的新身体，所以也不愿意留在迪雅的亡灵巫师那里。他曾经求助于很多强大的术士，希望能够恢复以前的样子。但是经历数次失败之后，他居然开始欣赏自己——作为一个巫妖的样子。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高幽影和怨影的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Apparitions",
+				"name" : "幽影"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/renner/UN32T200.bmp",
+			"specialtyLarge" : "asylum/heroes/renner/UN44T200.bmp",
+			"large" : "asylum/heroes/renner/HPL004PF.bmp",
+			"small" : "asylum/heroes/renner/HPS004PF.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 6,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+			{
+				"level" : "basic",
+				"skill" : "necromancy"
+			}
+		],
+		
+			"specialty" : {
+			"creature" : "sadphanton"
+		}
+	}
+}
+

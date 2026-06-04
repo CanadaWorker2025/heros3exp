@@ -1,0 +1,326 @@
+{
+	"core:pasis" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:thunar" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:ignissa" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:lacus" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:monere" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:erdamon" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:fiur" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:kalt" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:luna" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:brissa" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:ciele" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:labetha" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:inteus" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:aenain" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:gelare" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"core:grindan" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+	},
+	"mdtHokori" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+		},
+	"mdtIrrigus" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon01","addInfo":	"creature.sprite"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.sprite","addInfo":	"creature.nwCon01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nwCon02","addInfo":	"creature.stormElemental"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.stormElemental","addInfo":	"creature.nwCon02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iceElemental","addInfo" : "creature.nwCon03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon03","addInfo" : "creature.iceElemental"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon04","addInfo" : "creature.energyElemental"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.energyElemental","addInfo" : "creature.nwCon04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magmaElemental","addInfo" : "creature.nwCon05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon05","addInfo" : "creature.magmaElemental"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon06","addInfo" : "creature.magicElemental"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.magicElemental","addInfo" : "creature.nwCon06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nwCon07","addInfo" : "creature.phoenix"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.phoenix","addInfo" : "creature.nwCon07"}}}
+		}
+}

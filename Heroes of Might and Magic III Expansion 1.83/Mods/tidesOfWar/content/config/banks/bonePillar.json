@@ -1,0 +1,209 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"mdtBonePillar" : 
+			{
+				"name" : "骸骨立柱",
+				"aiValue" : 3000,
+				"templates" : {
+					"base" : { 
+					"animation" : "banks/bonePillar", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VVV", "VVV", "VBA" ],
+					"allowedTerrains": [ "sand", "subterra", "rough", "lava" ] 
+					}
+				},
+				"sounds": {
+					"ambient": ["dwellings/banks/BONEPILLARLOOP"]
+				},
+				"rmg" : {
+					"value"		: 5000,
+					"rarity"	: 60,
+					"mapLimit" : 1
+				},
+				"onGuardedMessage" : "{骸骨立柱}\r\n\r\n你看见了这一尊由各种鬼魂组合而成的巨大的骨头，你想前往消除这些鬼魂吗？",
+				"onVisited" : [
+					{
+						"message" : "{骸骨立柱}\r\n\r\n这里曾经是大量鬼魂的居所，但是现在已经只剩小部分鬼魂在游荡。而你听到它们的尖叫，却无法看到这些鬼魂，这也让你的士气低落。", // Such a despicable act reduces your army's morale.
+						"bonuses" : [ { "type" : "MORALE", "val" : -1, "duration" : "ONE_BATTLE" } ]
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "虽然你消除了大部分的鬼魂，但还是残存下来了小部分的鬼魂，并且其中的部分鬼魂无形地跟在了你的军队里。",
+						"appearChance" : { "min" : 0, "max" : 20 },
+						"guards": [
+							{ "amount": 2, "type" : "mdtGhost" },
+							{ "amount": 2, "type" : "mdtGhost" },
+							{ "amount": 2, "type" : "mdtGhost" },
+							{ "amount": 2, "type" : "mdtGhost" },
+							{ "amount": 2, "type" : "mdtGhost" },
+							{ "amount": 2, "type" : "mdtGhost" },
+							{ "amount": 2, "type" : "mdtGhost" }
+						], 
+							"resources": 
+							{
+								"gold" : 2500
+							},
+							"creatures" : 
+							[
+								{ "amount": 4, "type": "mdtGhost" }
+							]
+					},
+					{
+						"message" : "虽然你消除了大部分的鬼魂，但还是残存下来了小部分的鬼魂，并且其中的部分鬼魂无形地跟在了你的军队里。",
+						"appearChance" : { "min" : 20, "max" : 40 },
+						"guards": [
+							{ "amount": 4, "type" : "mdtGhost" },
+							{ "amount": 4, "type" : "mdtGhost" },
+							{ "amount": 4, "type" : "mdtGhost" },
+							{ "amount": 4, "type" : "mdtGhost" },
+							{ "amount": 4, "type" : "mdtGhost" },
+							{ "amount": 4, "type" : "mdtGhost" },
+							{ "amount": 4, "type" : "mdtGhost" }
+						], 
+							"resources": 
+							{
+								"gold" : 3500
+							},
+							"creatures" : 
+							[
+								{ "amount": 6, "type": "mdtGhost" }
+							]
+					},
+					{
+						"message" : "虽然你消除了大部分的鬼魂，但还是残存下来了小部分的鬼魂，并且其中的部分鬼魂无形地跟在了你的军队里。",
+						"appearChance" : { "min" : 40, "max" : 60 },
+						"guards": [
+							{ "amount": 6, "type" : "mdtGhost" },
+							{ "amount": 6, "type" : "mdtGhost" },
+							{ "amount": 6, "type" : "mdtGhost" },
+							{ "amount": 6, "type" : "mdtGhost" },
+							{ "amount": 6, "type" : "mdtGhost" },
+							{ "amount": 6, "type" : "mdtGhost" },
+							{ "amount": 6, "type" : "mdtGhost" }
+						], 
+							"resources": 
+							{
+								"gold" : 4500
+							},
+							"creatures" : 
+							[
+								{ "amount": 8, "type": "mdtGhost" }
+							]
+					},
+					{
+						"message" : "虽然你消除了大部分的鬼魂，但还是残存下来了小部分的鬼魂，并且其中的部分鬼魂无形地跟在了你的军队里。",
+						"appearChance" : { "min" : 60, "max" : 75 },
+						"guards": [
+							{ "amount": 8, "type" : "mdtGhost" },
+							{ "amount": 8, "type" : "mdtGhost" },
+							{ "amount": 8, "type" : "mdtGhost" },
+							{ "amount": 8, "type" : "mdtGhost" },
+							{ "amount": 8, "type" : "mdtGhost" },
+							{ "amount": 8, "type" : "mdtGhost" },
+							{ "amount": 8, "type" : "mdtGhost" }
+						], 
+							"resources": 
+							{
+								"gold" : 5500
+							},
+							"creatures" : 
+							[
+								{ "amount": 10, "type": "mdtGhost" }
+							]
+					},
+					{
+						"message" : "虽然你消除了大部分的鬼魂，但还是残存下来了小部分的鬼魂，并且其中的部分鬼魂无形地跟在了你的军队里。",
+						"appearChance" : { "min" : 75, "max" : 85 },
+						"guards": [
+							{ "amount": 10, "type" : "mdtGhost" },
+							{ "amount": 10, "type" : "mdtGhost" },
+							{ "amount": 10, "type" : "mdtGhost" },
+							{ "amount": 10, "type" : "mdtGhost" },
+							{ "amount": 10, "type" : "mdtGhost" },
+							{ "amount": 10, "type" : "mdtGhost" },
+							{ "amount": 10, "type" : "mdtGhost" }
+						], 
+							"resources": 
+							{
+								"gold" : 6500
+							},
+							"creatures" : 
+							[
+								{ "amount": 12, "type": "mdtGhost" }
+							]
+					},
+					{
+						"message" : "虽然你消除了大部分的鬼魂，但还是残存下来了小部分的鬼魂，并且其中的部分鬼魂无形地跟在了你的军队里。",
+						"appearChance" : { "min" : 85, "max" : 90 },
+						"guards": [
+							{ "amount": 12, "type" : "mdtGhost" },
+							{ "amount": 12, "type" : "mdtGhost" },
+							{ "amount": 12, "type" : "mdtGhost" },
+							{ "amount": 12, "type" : "mdtGhost" },
+							{ "amount": 12, "type" : "mdtGhost" },
+							{ "amount": 12, "type" : "mdtGhost" },
+							{ "amount": 12, "type" : "mdtGhost" }
+						], 
+							"resources": 
+							{
+								"gold" : 7500
+							},
+							"creatures" : 
+							[
+								{ "amount": 14, "type": "mdtGhost" }
+							]
+					},
+					{
+						"message" : "虽然你消除了大部分的鬼魂，但还是残存下来了小部分的鬼魂，并且其中的部分鬼魂无形地跟在了你的军队里。",
+						"appearChance" : { "min" : 90, "max" : 95 },
+						"guards": [
+							{ "amount": 14, "type" : "mdtGhost" },
+							{ "amount": 14, "type" : "mdtGhost" },
+							{ "amount": 14, "type" : "mdtGhost" },
+							{ "amount": 14, "type" : "mdtGhost" },
+							{ "amount": 14, "type" : "mdtGhost" },
+							{ "amount": 14, "type" : "mdtGhost" },
+							{ "amount": 14, "type" : "mdtGhost" }
+						], 
+							"resources": 
+							{
+								"gold" : 8500
+							},
+							"creatures" : 
+							[
+								{ "amount": 16, "type": "mdtGhost" }
+							]
+					},
+					{
+						"message" : "虽然你消除了大部分的鬼魂，但还是残存下来了小部分的鬼魂，并且其中的部分鬼魂无形地跟在了你的军队里。",
+						"appearChance" : { "min" : 95, "max" : 100 },
+						"guards": [
+							{ "amount": 18, "type" : "mdtGhost" },
+							{ "amount": 18, "type" : "mdtGhost" },
+							{ "amount": 18, "type" : "mdtGhost" },
+							{ "amount": 18, "type" : "mdtGhost" },
+							{ "amount": 18, "type" : "mdtGhost" },
+							{ "amount": 18, "type" : "mdtGhost" },
+							{ "amount": 18, "type" : "mdtGhost" }
+						], 
+							"resources": 
+							{
+								"gold" : 9500
+							},
+							"creatures" : 
+							[
+								{ "amount": 20, "type": "mdtGhost" }
+							]
+					}
+				]
+			}
+		}
+	}
+}

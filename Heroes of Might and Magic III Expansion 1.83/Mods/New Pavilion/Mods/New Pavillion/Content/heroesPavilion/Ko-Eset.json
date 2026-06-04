@@ -1,0 +1,69 @@
+{
+	"ko-Eset" :
+	{
+		"class" : "vizier",
+		"female" : true,
+		
+		"texts" :
+		{
+			"name" : "科-伊塞特",
+			"biography" : "神秘的猎鹰族人科-伊塞特从不回避利润丰厚的机会和风险不菲的投资。嫉妒者经常指责她滥用魔法，但勤劳的精神和过人的远见是她获得财富的唯一原因。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供350个金币。",
+				"tooltip" : "+350 Gold each day",
+				"name" : "+350个金币"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/un32Gold.bmp",
+			"specialtyLarge" : "speciconsPavilion/un44Gold.bmp",
+			"large" : "heroportraitsPavilion/KoEset.png",
+			"small" : "heroportraitsPavilion/KoEsetSmall.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 20,
+				"min" : 12
+			},
+            {
+				"creature" : "wadjet",
+				"max" : 12,
+				"min" : 7
+			},
+			{
+			"creature" : "whipper",
+				"max" : 20,
+				"min" : 12
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty":
+		{
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}
+	}
+}
+

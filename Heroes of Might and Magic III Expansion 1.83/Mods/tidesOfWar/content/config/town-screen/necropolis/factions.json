@@ -1,0 +1,184 @@
+{
+	"core:necropolis" :
+	{
+		"description" : "{墓园}\n种族阵营： 邪恶，守序\n种族地形： 泥地\n所在地： 恩塔格瑞大陆-迪雅王国\n墓园阵营的主要势力在迪雅，亡灵巫师控制着这片死寂的土地，并且也决定向埃拉西亚扩张。在和埃拉西亚的势力作战失败之后，两国也进入了修整期，但偶尔他们还是会去边境猎杀一些村民用于召唤大量的骷髅。",
+		"town" :
+		{
+			"structures" :
+			{
+			"dwellingUpEx1": { "animation" : "TBNCHRD2.def", "x" : 64,  "y" : 222, "z" : 4, "border" : "TONSKE2H.bmp", "area" : "TZNSKE2H.bmp" },
+			"dwellingUpEx2": { "animation" : "TBNCUP_1.def", "x" : 498, "y" : 224, "z" : 1,"border" : "TONZOMB2.bmp", "area" : "TZNZOMB2.bmp" },
+			"dwellingUpEx3": { "animation" : "TBNCUP_2.def", "x" : 0,   "y" : 179, "z" : 10, "border" : "TONWIGH2.bmp", "area" : "TZNWIGH2.bmp" },
+			"dwellingUpEx4": { "animation" : "TBNCUP_3.def", "x" : 615, "y" : 193, "z" : 2, "border" : "TONVAM2.bmp",  "area" : "TZNVAM2.bmp" },
+			"dwellingUpEx5": { "animation" : "TBNCUP_4.def", "x" : 222, "y" : 171, "z" : 3, "border" : "TONLICH2.bmp", "area" : "TZNLICH2.bmp" },
+			"dwellingUpEx6": { "animation" : "TBNCUP_5.def", "x" : 0,   "y" : 30,  "border" : "TONBKN2.bmp",  "area" : "TZNBKN2.bmp" },
+			"dwellingUpEx7": { "animation" : "TBNCUP_6.def", "x" : 662, "y" : 23,  "border" : "TONBON2.bmp",  "area" : "TZNBON2.bmp" },
+			"dwellingLvl4B": { "animation" : "town-screen/necropolis/wolfcave.def", "x" : 652, "y" : 206, "z" : 1, "border" : "town-screen/necropolis/buildings-border/TONalt1.bmp", "area" : "town-screen/necropolis/buildings-area/TZNalt1.bmp" }, 
+			"dwellingUpLvl4B": { "animation" : "town-screen/necropolis/wolfcavup", "x" : 652, "y" : 195, "z" : 1, "border" : "town-screen/necropolis/buildings-border/TONaup1.bmp", "area" : "town-screen/necropolis/buildings-area/TZNaup1.bmp" } 
+			},
+			"buildingsIcons": "town-screen/necropolis/ALTHALLNECR.DEF",
+			"hallBackground": "town-screen/necropolis/necropolisHallBg.BMP",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special2" ], [ "shipyard" ] ],
+				[ [ "special1" ], [ "special3" ], [ "horde1", "horde1Upgr" ], [ "dwellingLvl4B", "dwellingUpLvl4B" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1","dwellingUpEx1" ], [ "dwellingLvl2", "dwellingUpLvl2","dwellingUpEx2" ], [ "dwellingLvl3", "dwellingUpLvl3","dwellingUpEx3" ], [ "dwellingLvl4", "dwellingUpLvl4","dwellingUpEx4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5","dwellingUpEx5" ], [ "dwellingLvl6", "dwellingUpLvl6","dwellingUpEx6" ], [ "dwellingLvl7", "dwellingUpLvl7","dwellingUpEx7" ] ]
+			],
+			"creatures" :
+			[
+				["skeleton", "skeletonWarrior", "gNec01"],
+				["walkingDead", "zombieLord", "gNec02"],
+				["wight", "wraith", "gNec03"],
+				["vampire", "vampireLord", "gNec04", "mdtWerewolf", "mdtDireWerewolf"],
+				["lich", "powerLich", "gNec05"],
+				["blackKnight", "dreadKnight", "gNec06"],
+				["boneDragon", "ghostDragon", "gNec07"]
+			],
+			
+			"buildings" :
+			{
+			"dwellingUpEx1": 
+				{ 
+				"name" : "高级邪庙",
+					"description" : "高级邪庙允许你招募骷髅勇士和骷髅法师，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"wood": 5,
+						"gold" : 1000
+					},
+				"id" : 44, 
+				"upgrades" : "dwellingUpLvl1",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx2": 
+				{ 
+				"name" : "高级坟地",
+					"description" : "高级坟地允许你招募僵尸和邪气尸，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"wood": 5,
+						"gold" : 1000
+					},
+				"id" : 45, 
+				"upgrades" : "dwellingUpLvl2",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx3": 
+				{ 
+				"name" : "高级灵墓",
+					"description" : "高级灵墓允许你招募阴魂和游魂，并且可以在城中进行转换。",
+					"cost" : {
+						"mercury": 4,
+						"gold" : 1500
+					},
+				"id" : 46, 
+				"upgrades" : "dwellingUpLvl3",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx4": 
+				{ 
+				"name" : "高级幽宅",
+					"description" : "高级幽宅允许你招募吸血鬼王和吸血亲王，并且可以在城中进行转换。",
+					"cost" : {
+						"gems": 10,
+						"crystal": 10,
+						"wood" : 5,
+						"gold" : 2000
+					},
+				"id" : 47, 
+				"upgrades" : "dwellingUpLvl4",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx5": 
+				{ 
+				"name" : "高级陵墓",
+					"description" : "高级陵墓允许你招募尸巫王和妖巫王，并且可以在城中进行转换。",
+					"cost" : {
+						"sulfur": 4,
+						"ore" : 5,
+						"gold" : 2000
+					},
+				"id" : 48, 
+				"upgrades" : "dwellingUpLvl5",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx6": 
+				{ 
+				"name" : "高级暗黑殿",
+					"description" : "高级暗黑殿允许你招募恐怖骑士和冠军黑骑士，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"wood": 5,
+						"sulfur": 2,
+						"gems": 2,
+						"crystal": 2,
+						"mercury": 2,
+						"gold" : 3000
+					},
+				"id" : 49, 
+				"upgrades" : "dwellingUpLvl6",
+				"mode" : "auto"
+				},
+				"dwellingUpEx7": 
+				{ 
+				"name" : "高级龙之顶",
+					"description" : "高级龙之顶允许你招募鬼龙和幽龙，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 5,
+						"ore" : 5,
+						"mercury": 20,
+						"gold" : 15000
+					},
+				"id" : 50, 
+				"upgrades" : "dwellingUpLvl7",
+				"mode" : "auto" 
+				},
+			"dwellingLvl4":   
+				{ 
+				"requires" : [ "allOf", [ "dwellingLvl2" ], [ "noneOf", [ "dwellingLvl4B" ] ] ]
+				},
+			
+			"dwellingLvl4B" :
+				{
+					"description" : "狼穴允许你招募狼人。",
+					"name" : "狼穴",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"mercury" : 5
+					},
+					"requires" : [ "allOf", [ "dwellingUpLvl2" ], [ "noneOf", [ "dwellingLvl4" ] ] ],
+					"id" : 54
+				},
+			"dwellingUpLvl4B" :
+				{
+					"description" : "高级狼穴允许你招募狂狼人。",
+					"name" : "高级狼穴",
+					"id" : 61,
+					"cost" : 
+					{
+						"mercury" : 10,
+						"gold" : 2000
+					},
+					"requires" : [ "special2" ],
+					"upgrades" : "dwellingLvl4B"
+				},
+			"dwellingLvl6":   
+				{ 
+					"requires" : 
+					[ 
+						"allOf", 
+						[ "dwellingLvl5" ],
+						[
+							"anyOf", 
+								[ "dwellingLvl4" ],
+								[ "dwellingLvl4B" ] 
+						]
+					]
+				}		
+			}
+		}
+	}	
+}

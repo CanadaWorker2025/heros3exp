@@ -1,0 +1,95 @@
+{
+	"ancientLamp" :{	
+		"name": "古灯",
+		"handler": "configurable",
+		"types" : {
+			"ancientLamp" : 
+			{
+				"name": "古灯 (允许你招募4-7个神怪主)",
+				"rmg" : {
+					"value"		: 5000,
+					"rarity"	: 200,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["hota/LAMPVIST"]
+				},
+				"blockedVisitable" : true,
+				"rewards" :
+				[
+					{
+						"appearChance": 
+						{
+							"max" : 30
+						},
+						"limiter": //condition to get reward
+						{
+							"resources" : {"gold" : 2400}
+						},
+						"message" : "{古灯}\r\n\r\n擦拭古灯你发现了一些灯神。你想要获得这些灯神的帮助吗？只需要付一点钱作为酬劳，他们会帮你忙的。",
+						"creatures": [ {"type": "masterGenie", "amount": 4} ],
+						"resources": {"gold" : -2400},
+						"removeObject": true
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 30,
+							"max" : 60
+						},
+						"limiter": //condition to get reward
+						{
+							"resources" : {"gold" : 3000}
+						},
+						"message" : "{古灯}\r\n\r\n擦拭古灯你发现了一些灯神。你想要获得这些灯神的帮助吗？只需要付一点钱作为酬劳，他们会帮你忙的。",
+						"creatures": [ {"type": "masterGenie", "amount": 5} ],
+						"resources": {"gold" : -3000},
+						"removeObject": true
+					},
+					{
+						"appearChance": 
+						{
+							"min":  60,
+							"max" : 90
+						},
+						"limiter": //condition to get reward
+						{
+							"resources" : {"gold" : 3600}
+						},
+						"message" : "{古灯}\r\n\r\n擦拭古灯你发现了一些灯神。你想要获得这些灯神的帮助吗？只需要付一点钱作为酬劳，他们会帮你忙的。",
+						"creatures": [ {"type": "masterGenie", "amount": 6} ],
+						"resources": {"gold" : -3600},
+						"removeObject": true
+					},
+					{
+						"appearChance": 
+						{
+							"min": 90
+						},
+						"limiter": //condition to get reward
+						{
+							"resources" : {"gold" : 4200}
+						},
+						"message" : "{古灯}\r\n\r\n擦拭古灯你发现了一些灯神。你想要获得这些灯神的帮助吗？只需要付一点钱作为酬劳，他们会帮你忙的。",
+						"creatures": [ {"type": "masterGenie", "amount": 7} ],
+						"resources": {"gold" : -4200},
+						"removeObject": true
+					}
+				],
+				"onEmptyMessage" : "{古灯}\r\n\r\n擦拭古灯你发现了一些灯神。你想要获得这些灯神的帮助吗？只需要付一点钱作为酬劳，他们会帮你忙的。",
+				"canRefuse": true,
+				"visitMode" : "unlimited",
+				"templates" : 
+				{
+					"avtglam" : 
+					{
+						"animation" : "hota/ancientLamp/avtglam", 
+						"visitableFrom" : [ "+++", "+++", "+++" ],
+						"mask" : ["VAV"],
+						"allowedTerrains": [ "snow", "sand" ] //hota jebus cross conditions
+					}
+				}
+			}
+		}	
+	}
+}

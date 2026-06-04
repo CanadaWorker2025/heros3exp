@@ -1,0 +1,15 @@
+{
+    "basepath" : "town-screen/inferno/frames/",
+	"images" :
+	[
+		{ "frame" : 44, "file" : "TPIEx1.bmp"},
+		{ "frame" : 45, "file" : "TPIEx2.bmp"},
+		{ "frame" : 46, "file" : "TPIEx3.bmp"},
+		{ "frame" : 47, "file" : "TPIEx4.bmp"},
+		{ "frame" : 48, "file" : "TPIEx5.bmp"},
+		{ "frame" : 49, "file" : "TPIEx6.bmp"},
+		{ "frame" : 50, "file" : "TPIEx7.bmp"},
+		{ "frame" : 54, "file" : "TINF4.png"},
+		{ "frame" : 61, "file" : "TINF4UP.png"}
+	]
+}

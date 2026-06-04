@@ -1,0 +1,68 @@
+{
+	"ftP_Arina" :
+	{
+		"class" : "warden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "埃莉娜",
+			"biography" : "据说埃莉娜是如此善良和友善，这片土地上这个时代的每一个将军都受过她的恩惠。因此在交战时许多人会比给其他人更容易给予她安全逃生的通道。",
+			"specialty" :
+			{
+				"description" : "在外交术技能上每级减少5%的投降费用。",
+				"tooltip" : "{Loyalty}\r\n\r\nCost of Surrender -40%",
+				"name" : "外交术"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/tuidhana/Un32Fmag.png",
+			"specialtyLarge" : "fairy/heroes/tuidhana/Un44Fmag.png",
+			"large" : "fairy/heroes/tuidhana/hpl300.png",
+			"small" : "fairy/heroes/tuidhana/hps300.png",
+		},
+
+		"spellbook" :
+		[
+			"counterstrike"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "diplomacy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		"specialty" : {
+			"secondary" : "diplomacy"
+		}
+	}
+}
+
+

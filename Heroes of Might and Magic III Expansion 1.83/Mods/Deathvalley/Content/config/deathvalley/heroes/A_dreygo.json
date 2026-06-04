@@ -1,0 +1,57 @@
+{
+	"a_dvDreygo" :
+	{
+		"class" : "dvDeathlord",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/dreygo/Un32Mummy.png",
+			"specialtyLarge" : "deathvalley/heroes/dreygo/Un44Mummy.png",
+			"large" : "deathvalley/heroes/dreygo/dreygoL.png",
+			"small" : "deathvalley/heroes/dreygo/dreygoS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "mums",
+				"max" : 7,
+				"min" : 2
+			},
+			{
+				"creature" : "mums",
+				"max" : 7,
+				"min" : 2
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"creature" : "mums"
+		},			
+		"texts" : {
+			"biography" : "德雷戈曾经是山谷的统治者。他因叛国阴谋被推翻。他的王室，侍卫和所有忠实的支持者遭到屠杀，埋进金字塔里。但是，他的怨气是如此之深，以至于他站了起来，恢复自己臣民的生气，并杀死了背叛他的不忠者。从那时起，他一直领导着忠实的亡灵部队。",
+			"name" : "德雷戈",
+			"specialty" : {
+				"description" : "达到3级以后提高腐尸怪或瘟疫腐尸的攻击力与防御力。",
+				"tooltip" : "Increases the Attack and Defence of any Mummies and Crypt Guards for each level attained after 5th level.",
+				"name" : "腐尸怪"
+			}
+		}
+	}
+}
+

@@ -1,0 +1,47 @@
+{
+	"gloryCinnabar"	: {
+		"name" : "朱砂石",
+		"handler": "configurable",
+		"types" : {
+			"starFlake" : {
+				"name":"朱砂石",
+				"rmg" : {
+					"value"		: 1000,
+					"rarity"	: 400
+				},
+				"sounds" : {
+					"visit" : ["EXPERNCE"],
+					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
+				},
+				"rewards" : [
+					{
+						"message": "{朱砂石}\r\n\r\n你在泛红的土地上找到了朱砂石，你知道这些红色的石头可以提炼出一些有用的资源。",
+						"removeObject" : true,
+						"resources" : [
+							{
+								"anyOf" : [ "ore", "mercury","sulfur" ],
+								"min" : 3,
+								"max" : 5
+							},
+							{
+								"type" : "gold",
+								"amount" : [ 300, 400, 500 ]
+							}
+						]
+					}
+				],
+				"visitMode" : "once",
+				"selectMode": "selectRandom",
+				"templates" : {
+					"AVAbrrlw" :
+					{
+						"animation" : "GloryObject/glorycinnabar",
+						"visitableFrom" : [ "+++", "+++", "+++" ],
+						"mask" : [ "VA"],
+						"allowedTerrains": [ "fieldGlory" ]
+					}
+				}
+			}
+		}
+	}
+}

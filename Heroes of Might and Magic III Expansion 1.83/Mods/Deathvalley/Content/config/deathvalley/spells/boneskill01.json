@@ -1,0 +1,91 @@
+{
+	"boneSkill01":
+	{
+		"type": "ability", 
+		"name": "驱役骷髅",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 1,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":["C05SPF0"]
+		},
+ 
+		"flags" : {
+			"indifferent": true
+		},
+ 
+		"graphics":
+		{
+			"iconEffect": "deathvalley/spells/skill 4-2.bmp"
+		},
+
+		"sounds": {
+			"cast": "VAMPEXT1"
+		},
+		"targetType" : "NO_TARGET",
+ 
+		"levels":
+		{
+			"base":{
+				"range" : "X",
+				"battleEffects":{
+					"summon":{
+						"exclusive":false,
+						"id":"skeleton",
+						"permanent":false,
+						"type":"core:summon"
+					}
+				}
+			},
+			"none":
+			{
+				"description": "{幻化成形}\r\n\r\n召唤一队冰魔.",
+	 
+				"cost": 0,
+				"power": 1
+	 
+			},
+			"basic":
+			{
+				"description": "{恐惧之眼}\r\n\r\n剥夺敌人下回合的反击能力。",
+	 
+				"cost": 0,
+				"power": 1
+	 
+			},
+			"advanced":
+			{
+				"description": "{恐惧之眼}\r\n\r\n剥夺敌人下回合的反击能力。",
+	 
+				"cost": 0,
+				"power": 1
+	 
+			},
+			"expert":
+			{
+				"description": "{恐惧之眼}\r\n\r\n剥夺敌人下回合的反击能力。",
+	 
+				"cost": 0,
+				"power": 1,
+				"range": "X"
+	 
+			}
+		}
+	}
+ 
+}

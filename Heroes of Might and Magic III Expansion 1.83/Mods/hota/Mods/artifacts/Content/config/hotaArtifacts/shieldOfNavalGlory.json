@@ -1,0 +1,26 @@
+{
+	"shieldOfNavalGlory" : {
+		"type" : [ "HERO" ],
+		"slot" : "LEFT_HAND",
+		"class" : "MAJOR",
+		"value" : 7000,
+		"bonuses" : {
+			"skill" : {
+				"subtype" : "defence",
+				"type" : "PRIMARY_SKILL",
+				"valueType" : "BASE_NUMBER",
+				"val" : 7
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/shieldOfNavalGlory",
+			"map" : "hota/artifactsMap/shieldOfNavalGlory",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/shieldOfNavalGlory"
+		},
+		"text" : {
+			"description" : "{海军荣耀之盾}\r\n\r\n拿在左手，海军荣耀之盾可以使你的防御力+7。",
+			"event" : "你在酒馆里遇见一名老海军上将，在听一天数个小时关于光荣战斗的故事之后，他送给你他的闪耀盾牌。",
+			"name" : "海军荣耀之盾"
+		}
+	}
+}

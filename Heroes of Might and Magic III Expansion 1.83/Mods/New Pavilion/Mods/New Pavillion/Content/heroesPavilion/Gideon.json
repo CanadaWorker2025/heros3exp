@@ -1,0 +1,73 @@
+{
+	"gideon" :
+	{
+		"class" : "vizier",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "基甸",
+			"biography" : "基甸从出生时就受到众神的青睐，有人说这就是为什么他长大后变得如此鲁莽。他自认为敌人的刀锋和箭矢对他的防御毫无威胁，因此他很受盟友的欢迎。",
+			"specialty" :
+			{
+				"description" : "在防御术上每级得到5%的额外奖励。",
+				"tooltip" : "Secondary Skill Bonus: Armorer",
+				"name" : "防御术"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/Un32Defe.bmp",
+			"specialtyLarge" : "speciconsPavilion/Un44Defe.bmp",
+			"large" : "heroportraitsPavilion/Gideon.png",
+			"small" : "heroportraitsPavilion/GideonSmall.png"
+		},
+
+		"army" :
+		[
+	{
+		"creature" : "whipper",
+		"max" : 25,
+		"min" : 18
+	},
+	{
+		"creature" : "wadjet",
+		"max" : 9,
+		"min" : 7
+	},
+	{
+		"creature" : "camelRider",
+		"max" : 7,
+		"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "ballistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		], 		
+        "specialty" : 
+		{
+			"bonuses" : {
+				"armorer" : {
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}			
+			}
+		}
+	}
+}
+
+

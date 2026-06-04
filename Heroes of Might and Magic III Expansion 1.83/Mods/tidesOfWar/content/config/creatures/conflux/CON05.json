@@ -1,0 +1,138 @@
+{
+	"nwCon05":
+	{
+		"name" :
+		{
+			"plural" : "熔岩元素",
+			"singular" : "熔岩元素"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction": "conflux",
+		"aiValue" : 491,
+		"fightValue" : 490,
+		"attack" : 11,
+		"defense" : 11,
+		"cost" :
+		{
+			"gold" : 500
+		},
+		"damage" :
+		{
+			"min" : 6,
+			"max" : 9
+		},
+		"speed" : 5,
+		"upgrades": ["magmaElemental"],
+		"graphics" :
+		{
+			"animation" : "creatures/conflux/battle/CON05.def",
+			"map" : "creatures/conflux/map/CON05S.def",
+			"iconSmall" : "creatures/conflux/iconsSmall/CON05S.bmp",
+			"iconLarge" : "creatures/conflux/iconsBig/CON05L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 45,
+		"growth" : 4,
+		"level" : 5,
+		"sound" :
+		{
+			"attack": "MAGMATTK.wav",
+			"defend": "MAGMDFND.wav",
+			"killed": "MAGMKILL.wav",
+			"move": "MAGMMOVE.wav",
+			"wince": "MAGMWNCE.wav"
+		},
+		"abilities":
+		{
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING",
+				"icon": "bonuses/NonLivingelemental.png",
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"fireShield" :
+			{
+				"type" : "FIRE_SHIELD",
+				"val" : 20
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"lightingImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.lightningBolt",
+				"hidden": true
+			},
+			"chainLightingImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.chainLightning",
+				"hidden": true
+			},
+			"lightningMdtChainImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.mdtLightningboltWand",
+				"hidden" : true
+			},
+			"armageddonImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.armageddon",
+				"description" : "{魔法抗性}\n免疫霹雳闪电，连锁闪电和末日审判",
+				"icon" : "spells/extraEffect/ground.png"
+			},
+			"meteorShowerVulnerability" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.meteorShower",
+				"val" : 100,
+				"description" : "{害怕流星火雨}\n受流星火雨伤害加倍",
+				"icon" : "spells/extraEffect/earthWeak.png"
+			},
+			"meteorMDTVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.mdtMeteorWand",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeAir" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.airElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeStorm" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.stormElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeLightning" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon02",
+				"val" : 100,
+				"description" : "{元素对立}\n对气元素，雷元素，闪电元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hatestorm.png"
+			}
+		}
+	}
+}
+
+

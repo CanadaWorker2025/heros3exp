@@ -1,0 +1,22 @@
+{
+	"fakeHorn" : {
+		"class" : "RELIC",
+		"components" : [ "crownOfTheFiveSeas", "royalArmorOfNix", "tridentOfDominion", "shieldOfNavalGlory" ],
+		"graphics" : { "image" : "hota/artifactsIcons/hornOfTheAbyss", "map" : "hota/artifactsMap/hornOfTheAbyss","scenarioBonus" : "hota/artifactsCampaignBonuses/hornOfTheAbyss" },
+		"slot" : "RIGHT_HAND",
+		"text" : {
+			"description" : "{深渊号角}\r\n\r\n使英雄可以将阵亡生物转换为夺心魔。",
+			"event" : "你发现了深渊号角，这件宝物有着你无法想象的力量。",
+			"name" : "深渊号角"
+		},
+		"bonuses" : {
+			"spell" : {
+				"type" : "SPELL",
+				"subtype" : "spell.fakeHornSpell"
+			}
+		},
+
+		"type" : [ "HERO" ],
+		"value" : 10000
+	}
+}

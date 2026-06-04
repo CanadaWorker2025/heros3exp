@@ -1,0 +1,26 @@
+{
+	"cgMagnusCoffer" : {
+		"bonuses" : {
+			"stackHealth" :{ 
+				"type" : "STACK_HEALTH",
+				"val" : 50,
+				"valueType" : "PERCENT_TO_BASE",
+				"limiters": [ {
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"parameters" : [ "SIEGE_WEAPON" ]
+					} 
+				]				
+			}
+		},
+		"class" : "MAJOR",
+		"graphics" : { "image" : "coffer/coffer", "scenarioBonus" : "coffer/cofferL", "map" : "coffer/box" },
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{魔力之盒}\r\n\r\n使所有的战争机器的生命值提升50%。",
+			"event" : "走在路上，你被一个闪亮的盒子所吸引，你尝试打开它，可却没有成功。这个奇怪的盒子到底装着什么秘密？你不得所知，只好带在身边，希望日后能获得贤者的帮助，打开这个奇怪的盒子并取出其藏有的宝物。",
+			"name" : "魔力之盒"
+		},
+		"type" : [ "HERO" ],
+		"value" : 6000
+	}
+}

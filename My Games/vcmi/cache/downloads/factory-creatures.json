@@ -1,0 +1,129 @@
+{
+	"author" : "Olegmods.INC, other authors are credited in the Factory submod.",
+	"contact" : "https://vk.com/olegkomarant",
+    	"description": "<h1 style='color:#002366; font-size:28px; font-weight:bold;'>Factory HotA Creatures</h1><p style='font-size:16px; color:#333333; font-style:italic;'> Meet some new creatures from a popular mod for <i>Heroes of Might and Magic III</i>, <i>Horn of the Abyss</i> (HotA). </p><p style='font-size:18px; color:#002366; font-weight:bold;'>Adding new content</p><p style='font-size:16px; color:#333333;'> Factory HotA Creatures introduces some new content, including creatures from Factory with stats they had before release, a new Unofficial Factory town with some things that differ from HotA one. The <span style='color:#002366; font-weight:bold;'>Factory HotA Creatures</span> for VCMI allows players to use creatures without the town itself in 1.5.7 and adds an option to play the new town, Unofficial Factory, that uses a lot of content made by modding community. </p><p style='font-size:18px; color:#990000; font-weight:bold;'>Disclaimer</p><p style='color:#333333; font-size:15px;'> While the mod add Factory town and its creatures, it's different from the official HotA one and Ben Yan's port. If you want to play original Factory town, I suggest you to use Ben Yan's port. Mod differs from the official Factory by a lot. Most stats are made from the wiki info before the release, there are two third upgrade creatures and an alternative creature. Also you can build a second tier 2 dwelling to hire Rogues, who share their growth with growth of Mechanics. </p>",
+	"licenseName" : "Creative Commons Attribution-NonCommercial-ShareAlike",
+	"licenseURL" : "https://creativecommons.org/licenses/by-nc-sa/4.0/deed",
+	"modType" : "Town",
+	"name" : "Factory HotA Creatures",
+	"version" : "2.3.6",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},	
+	"changelog" : 
+	{
+		"2.3.6":  [ "Minor conflict added" ],
+		"2.3.5":  [ "Factory compatibilitity fixes" ],
+		"2.3.4":  [ "Update to vcmi-1.7 format" ],
+		"2.3.3":  [ "Factory Patch T1 dwelling fix" ],
+		"2.3.2":  [ "Bank fix" ],
+		"2.3.1":  [ "Translation fix." ],
+		"2.3.0":  [ "Changed visuals of Rogue Cavern. Added almost full Russian translation." ],
+		"2.2.1":  [ "HotA-related bug fix" ],
+		"2.2.0":  [ "Submod system fixes, added alternate music submod by avatar and AI Udio" ],
+		"2.1.9":  [ "Wiki submod added" ],
+		"2.1.8":  [ "Refuge compatibility fixed" ],
+		"2.1.7":  [ "Commander map def update by Toriko" ],
+		"2.1.6":  [ "Tarnum patch fixes" ],
+		"2.1.5":  [ "Polish translation by FallainBlack" ],
+		"2.1.4":  [ "HotA related fixes" ],
+		"2.1.3":  [ "Minor fix" ],
+		"2.1.2":  [ "Update Format for the new factory naming and file structure." ],
+		"2.1.1":  [ "Fix Grail not to produce gold." ],
+		"2.1.0":  [ "AB Bad Ending compatibility." ],
+		"2.0.19": [ "Refuge Tarnum fixes." ],
+		"2.0.18": [ "Minor fixes." ],
+		"2.0.17": [ "Tarnum is Back compatibility." ],
+		"2.0.16": [ "Wynona fix." ],
+		"2.0.15": [ "Minor update." ],
+		"2.0.14": [ "Factory patch fixes again." ],
+		"2.0.13": [ "Repair fixes again." ],
+		"2.0.12": [ "Halfling fixes." ],
+		"2.0.11": [ "Repair fixes." ],
+		"2.0.10": [ "Various fixes by GeorgeKing." ],
+		"2.0.9": [ "HotA Factory compatibility fixes again." ],
+		"2.0.8": [ "HotA Factory compatibility fixes, added compatibility with Tarnum from Factory." ],
+		"2.0.7": [ "HotA Factory compatibility." ],
+		"2.0.6": [ "VCMI 1.6 update." ],
+		"2.0.5": [ "Refuge compatibility." ],
+		"2.0.4": [ "Submod fix. Commander new portrait." ],
+		"2.0.3": [ "Updated description." ],
+		"2.0.2": [ "Commander fix" ],
+		"2.0.1": [ "Submod fix." ],
+		"2.0.0": [ "Third upgrade Armadillo added. Added unique commander." ],
+		"1.4.11": [ "New Tarnum portrait." ],
+		"1.4.10": [ "Minor fixes." ],
+		"1.4.9" : [ "Courtyard compatibility fixed." ],
+		"1.4.8" : [ "Minor update." ],
+		"1.4.7"   : [ "Boyd fixed." ],
+		"1.4.6"   : [ "HotA map support added." ],
+		"1.4.5"   : [ "Fixed issues with Commander and stack experience system." ],
+		"1.4.4"   : [ "Commander and stack experience added." ],
+		"1.4.3"   : [ "New icons by Aphra." ],
+		"1.4.2"   : [ "Bug fixes." ],
+		"1.4.1"   : [ "Minor graphic fixes." ],
+		"1.4.0"   : [ "Adventure map updates." ],
+		"1.3.6"   : [ "Halfling and Halfling Grenadier portraits update." ],
+		"1.3.5"   : [ "Added water Derrick from DoR." ],
+		"1.3.4"   : [ "Couatls now become Bone Dragons in Skeleton Transformer. Automatons map sprites fixed." ],
+		"1.3.3"   : [ "Small icons updated using data from FizMig." ],
+		"1.3.2"   : [ "Small icons updated" ],
+		"1.3.1"   : [ "Stats updated" ],
+		"1.3.0"   : [ "Sheriff added" ],
+		"1.2.0"   : [ "Aerostat with dock added" ],
+		"1.1.0"   : [ "Repair added from Ben Yan's Factory prototype" ],
+		"1.0.0"   : [ "Release version. Models updated. Automatons changed to Termotrons. HotA Automatons added. Mechanics and engineers added" ],
+		"0.1.0"   : [ "Factory beta" ],
+		"0.0.4"   : [ "Armadillos, Couatls and Sandworms with their upgrades added. Prototype Halflings (with upgrade) and Gunslingers added. Also Bounty Hunters and  Juggernauts added. All as neutrals" ],
+		"0.0.3"   : [ "Dreadnought (neutral) added as a final version" ],
+		"0.0.1"   : [ "Dreadnought neutral prototype added" ]
+	},
+	"polish" : {
+		"name" : "Nieoficjalna Fabryka",
+		"description" : "<h1 style='color:#002366; font-size:28px; font-weight:bold;'>Nieoficjalna Fabryka</h1><p style='font-size:16px; color:#333333; font-style:italic;'> Poznaj nowe stworzenia z popularnego moda do <i>Heroes of Might and Magic III</i>, <i>Horn of the Abyss</i> (HotA). </p><p style='font-size:18px; color:#002366; font-weight:bold;'>Dodano nową zawartośc</p><p style='font-size:16px; color:#333333;'> Nieoficjalna Fabryka wprowadza nową zawartość, w tym stworzenia z Factory ze statystykami, które miały przed wydaniem, nowe nieoficjalne miasto Faktoria z pewnymi rzeczami różniącymi się od miasta HotA. <span style='color:#002366; font-weight:bold;'>Nieoficjalna Fabryka</span> dla VCMI pozwala graczom używać stworzeń bez samego miasta i dodaje opcję gry w nowym mieście, Unofficial Factory, które wykorzystuje wiele treści stworzonych przez społeczność modderów. </p><p style='font-size:18px; color:#990000; font-weight:bold;'>Zastrzeżenie</p><p style='color:#333333; font-size:15px;'> Chociaż mod dodaje miasto Factory i jego stworzenia, różni się on od oficjalnego miasta HotA i portu Bena Yana. Jeśli chcesz grać w oryginalnym mieście Factory, sugeruję użycie portu Bena Yana. Mod różni się od oficjalnego miasta Factory w dużym stopniu. Większość statystyk pochodzi z informacji wiki sprzed wydania, są dwa stworzenia trzeciego ulepszenia i alternatywne stworzenie. Możesz także zbudować drugie mieszkanie drugiego poziomu, aby zatrudnić Łotrów, którzy dzielą swój wzrost wraz ze wzrostem Mechaników. </p>",
+		"translations" : [
+			"translation/unofficialfactory/polish.json"
+		]
+	},
+	"russian" : {
+		"name" : "Неофициальная Фабрика",
+		"description": "<h1 style='color:#002366; font-size:28px; font-weight:bold;'>Factory HotA Creatures</h1><p style='font-size:16px; color:#333333; font-style:italic;'> Встречайте новых существ из популярного мода для <i>Героев Меча и Магии III</i>, <i>Horn of the Abyss</i> (HotA). </p><p style='font-size:18px; color:#002366; font-weight:bold;'>Добавление нового контента</p><p style='font-size:16px; color:#333333;'> Factory HotA Creatures представляет новый контент, включая существ из Фабрики с характеристиками, которые у них были до релиза, новый неофициальный город Фабрика с некоторыми вещами, которые отличаются от HotA. <span style='color:#002366; font-weight:bold;'>Factory HotA Creatures</span> для VCMI позволяет игрокам использовать существ без самого города в версии 1.5.7 и добавляет возможность играть в новый город, Unofficial Factory, который использует много контента, созданного сообществом моддеров. </p><p style='font-size:18px; color:#990000; font-weight:bold;'>Дисклеймер</p><p style='color:#333333; font-size:15px;'> Хотя мод добавляет Factory town и его существ, он отличается от официального HotA и порта Ben Yan. Если вы хотите играть в оригинальный Factory town, я предлагаю вам использовать порт Ben Yan. Мод сильно отличается от официального Factory. Большинство характеристик взяты из информации вики до релиза, есть два существа третьего улучшения и альтернативное существо. Также вы можете построить второй уровень 2 дом, чтобы нанимать Разбойников, которые делят свой рост с ростом Механиков. </p>",
+		"translations" : [
+			"translation/unofficialfactory/russian.json"
+		]
+	},		
+	"creatures" :
+	[
+		"config/bandit.json",
+		"config/Dreadnought.json",
+		"config/Juggernaut.json",
+		"config/Automaton.json",
+		"config/Automaton B.json",
+		"config/commander.json",
+		"config/halful.json",
+		"config/Cou.json",
+		"config/RedCou.json",
+		"config/Wurm.json",
+		"config/Ogloi.json",
+		"config/Bron.json",
+		"config/Bronup.json",
+		"config/Bronupup.json",
+		"config/Mechanic.json",
+		"config/Engineer.json",
+		"config/Autonew.json",
+		"config/Sautonew.json",
+		"config/lvl5unit.json"
+	],
+	"spells" :
+	[
+		"config/hotaRepair.json"
+	],
+	"softDepends" :
+	[
+		"ab-bad-ending-assets"
+	],
+	"conflicts" :
+	[
+		"neutral rats demo"
+	]
+}

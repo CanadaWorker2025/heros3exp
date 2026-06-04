@@ -1,0 +1,63 @@
+{
+	"photonLight" : 
+	{
+		"type": "ability",
+		"name": "光子发射",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},	
+		"targetType": "LOCATION",
+		"level": 1,
+		"power": 1,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+		"animation":
+		{
+			"hit":["spellsPavilion/cannonShot"]
+		},
+		"flags" : {
+			"offensive": true
+		},
+		"targetCondition" : {
+		},
+		"sounds": {
+			"cast": "LIGHTBLT"
+		},
+		"graphics":
+		{
+		},
+		"levels" : {
+			"base":{
+				"range": "0-1",
+				"power": 10,
+				"cost" : 0,
+				"targetModifier":
+				{
+					"smart": false
+				},
+				"battleEffects" : 
+				{
+				},
+				"description": ""
+			},
+			"none":
+			{	 
+			},
+			"basic":
+			{	 
+			},
+			"advanced":
+			{	 
+			},
+			"expert":
+			{
+			}
+		}
+	}
+}

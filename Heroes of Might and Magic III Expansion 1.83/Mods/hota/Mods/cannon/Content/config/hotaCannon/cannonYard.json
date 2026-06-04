@@ -1,0 +1,22 @@
+{
+ "core:warMachineFactory" : {
+        "types" : {
+            "cannonYard" : {
+                "name" : "铸炮厂",
+                "creatures" : [[ "cannon" ]],
+                "templates" : {
+                    "base" : {
+                        "animation" : "hota/map/avcnbksm",
+                        "visitableFrom" : [ "+++", "+-+", "+++" ], 
+                        "mask" : [ "VVVV", "VVVV", "VVBV", "VVBA"]
+                    }
+                },
+                "rmg" : {
+                    "zoneLimit"    : 1,
+                    "value"        : 3000,
+                    "rarity"    : 20
+                }
+            }
+        }
+    }
+}	

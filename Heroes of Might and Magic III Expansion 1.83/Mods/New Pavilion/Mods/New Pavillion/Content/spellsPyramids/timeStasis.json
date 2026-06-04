@@ -1,0 +1,215 @@
+{
+	"timeStasis":
+	{
+		"type": "combat", 
+		"name": "时间停滞",
+		"school":
+		{
+			"pavillionPrime": true
+		},
+		"level": 2,
+		"power": 1,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+ 
+		//implosion animation?
+		"animation":{
+			"affect":["spellsPyramids/02TimeStasis/timeStasisAni.def" ] //fear animation
+		},
+ 
+		"flags" : {"positive": true,  "special" : true },
+ 
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/02TimeStasis/timeStasisBook.bmp",
+			"iconScroll": "spellsPyramids/02TimeStasis/timeStasisScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/02TimeStasis/timeStasisBonus.bmp",
+			"iconEffect": "spellsPyramids/02TimeStasis/timeStasisEffect.bmp"
+		},
+		"sounds":
+		{
+			"cast":"ENERMOVE" //fear snd
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{时间停滞}\n\n使己方生物1回合无法行动，且受到所有伤害减少100%。\n",
+	 
+				"cost": 6,
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					},
+					"damageReduction" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeMelee",
+						"val" : 100,
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					},
+					"damageReductionShots" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeRanged",
+						"val" : 100,
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					},
+					"magicDamageReduction" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"val" : 100,
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					},
+					"noRetaliation" : {
+					"type" : "NO_RETALIATION",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{时间停滞}\n\n使己方生物1回合无法行动，且受到所有伤害减少100%。\n",
+	 
+				"cost": 6,
+	 
+			},
+			"advanced":
+			{
+				"description": "{时间停滞}\n\n使己方生物1回合无法行动，且受到所有伤害减少100%。\n",
+	 
+				"cost": 6,
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					},
+					"damageReduction" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeMelee",
+						"val" : 100,
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					},
+					"damageReductionShots" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeRanged",
+						"val" : 100,
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					},
+					"magicDamageReduction" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"val" : 100,
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					},
+					"noRetaliation" : {
+					"type" : "NO_RETALIATION",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 1
+					}
+				}
+	 
+			},
+			"expert":
+			{
+				"description": "{高级时间停滞}\n\n使己方生物2回合无法行动，且受到所有伤害减少100%。\n",
+	 
+				"cost": 5,
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 2
+					},
+					"damageReduction" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeMelee",
+						"val" : 100,
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 2
+					},
+					"damageReductionShots" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeRanged",
+						"val" : 100,
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 2
+					},
+					"magicDamageReduction" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"val" : 100,
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 2
+					},
+					"noRetaliation" : {
+					"type" : "NO_RETALIATION",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns" : 2
+					}
+				}
+	 
+			}
+		}
+	}
+}

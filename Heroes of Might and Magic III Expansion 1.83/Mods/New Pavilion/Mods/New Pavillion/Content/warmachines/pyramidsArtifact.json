@@ -1,0 +1,44 @@
+{
+	"pyramid01Creature":
+        {
+	"type" : ["HERO"],
+	"warMachine":"pyramid01Creature",
+        "class": "SPECIAL",
+        "value": 2500,
+        "slot":"MACH2",
+        "text":
+		{
+			"name": "灵能金字塔",
+			"description": "{灵能金字塔}\r\n\r\n掌握学习能力的英雄可以洞悉灵能金字塔其中的秘密。",
+			"event": "你发现了一个奇怪的小金字塔，这或许就是传说中的灵能金字塔。"
+		},
+		"graphics":
+		{
+			"image": "artifactsPavilion/pyraIconS.bmp",
+			"scenarioBonus": "artifactsPavilion/pyraIconB.bmp",
+			"map": "artifactsPavilion/pyraArtimap.def"
+		}
+	},
+	"pyramid02Creature":
+        {
+	"type" : ["HERO"],
+	"warMachine":"pyramid02Creature",
+        "class": "SPECIAL",
+        "value": 2500,
+        "slot":"MACH2",
+        "text":
+		{
+			"name": "灵能金字塔",
+			"description": "{灵能金字塔}\r\n\r\n掌握学习能力的英雄可以洞悉灵能金字塔其中的秘密。",
+			"event": "你发现了一个奇怪的小金字塔，这或许就是传说中的灵能金字塔。"
+		},
+		"graphics":
+		{
+			"image": "artifactsPavilion/pyraIconS.bmp",
+			"scenarioBonus": "artifactsPavilion/pyraIconB.bmp",
+			"map": "artifactsPavilion/pyraArtimap.def"
+		}
+	}
+}
+
+

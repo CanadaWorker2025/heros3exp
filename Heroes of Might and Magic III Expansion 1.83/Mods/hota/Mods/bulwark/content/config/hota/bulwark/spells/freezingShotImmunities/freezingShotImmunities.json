@@ -1,0 +1,46 @@
+{
+	"core:waterElemental" : {
+		"abilities" : {
+			"immuneToFreezingShot" : {
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.freezingShot",
+				"icon" : "hota/bulwark/bonuses/freezingShotImmunity",
+				"description" : "Immune to Freezing Shot.",
+				"hidden" : true
+			}
+		}
+	},
+	"core:iceElemental" : {
+		"abilities" : {
+			"immuneToFreezingShot" : {
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.freezingShot",
+				"icon" : "hota/bulwark/bonuses/freezingShotImmunity",
+				"description" : "Immune to Freezing Shot.",
+				"hidden" : true
+			}
+		}
+	},
+	"hota.cove:nymph" : {
+		"abilities" : {
+			"immuneToFreezingShot" : {
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.freezingShot",
+				"icon" : "hota/bulwark/bonuses/freezingShotImmunity",
+				"description" : "Immune to Freezing Shot.",
+				"hidden" : true
+			}
+		}
+	},
+	"hota.cove:oceanid" : {
+		"abilities" : {
+			"immuneToFreezingShot" : {
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.freezingShot",
+				"icon" : "hota/bulwark/bonuses/freezingShotImmunity",
+				"description" : "Immune to Freezing Shot.",
+				"hidden" : true
+			}
+		}
+	}
+}

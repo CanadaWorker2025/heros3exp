@@ -1,0 +1,59 @@
+{
+
+	"deathvalley:m_SdvdarkNova": {
+        "texts": {
+            "specialty": {
+                "name": "收割者",
+                "description": "每6级提高收割者及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"deathvalley:a_dvCrightoth": {
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车20%的攻击力和防御力。"
+            }
+        }
+	},
+
+	"deathvalley:a_dvSylvanus": {
+        "texts": {
+            "specialty": {
+                "name": "暗女巫",
+                "description": "每5级提高暗女巫及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"deathvalley:a_dvBarraka": {
+        "texts": {
+            "specialty": {
+                "name": "死灵女妖",
+                "description": "每4级提高死灵女妖及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"deathvalley:a_dvDreygo": {
+        "texts": {
+            "specialty": {
+                "name": "腐尸怪",
+                "description": "每3级提高腐尸怪及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"deathvalley:a_dvDraigoth": {
+		"specialty": {
+			"creature": "skelh",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "骷髅犬",
+                "description": "将骷髅兵或骷髅勇士转化为死灵犬。每1级提高骷髅犬及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

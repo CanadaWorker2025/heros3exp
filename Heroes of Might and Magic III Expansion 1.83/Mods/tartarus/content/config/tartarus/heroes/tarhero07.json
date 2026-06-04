@@ -1,0 +1,63 @@
+{
+	"tarhero07" :
+	{
+    "class": "taHeroA",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "科德伦",
+			"biography" : "科德伦曾经是个精灵盗贼，但他被一场魔法实验变成了独一无二的冰傀儡。现在科德伦仍然能够说话和做出决定，但他对自己过去的生活一无所知，因此非常专注于素食主义。",
+			"specialty" :
+			{
+				"description" : "达到2级后提升冰傀儡和霜傀儡的攻击力和防御力。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "冰傀儡"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero07/skill7.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero07/skills7.bmp",
+			"large" : "tartarus/heroes/tarhero07/tarH7.bmp",
+			"small" : "tartarus/heroes/tarhero07/tarH7S.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc3",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "demonicBlood"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "tartarc3"
+		}
+	}
+}
+

@@ -1,0 +1,69 @@
+{
+	"havAhero01" :
+	{
+		"class" : "havAhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "伊桑",
+			"biography" : "伊桑被称作最强的箭术大师。他或许痛恨曾经的瑞格纳海盗身份，但现在为了完成自己的事业，他也不惜继续为海盗作战。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "箭术",
+				"description" : "在箭术上每级获得5%的提升。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero1/skill1S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero1/skill1.bmp",
+			"large" : "haven/heroes/havHero1/hero1.bmp",
+			"small" : "haven/heroes/havHero1/hero1S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"archery" : {
+					"subtype" : "damageTypeRanged",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,59 @@
+{
+  "machamSp" :
+  {
+    "class" : "knight",
+    "female" : false,
+    "special" : true,
+
+    "texts" :
+    {
+      "name" : "马克汉姆",
+      "biography" : "光复战役后，马克汉姆爵士深知埃拉西亚与埃里两国必将再度为争夺哈蒙代尔而兵戎相见，虽然许多枪兵侍卫愿意拥护马克汉姆，但左右为难的他时常希望有新的勇士来接替他的领主之位 。",
+      "specialty" :
+      {
+        "description" : "每1级提高枪兵及其升级形态20%的攻击力和防御力。速度+1。",
+        "tooltip" : "Creature bonus: Templars",
+        "name" : "枪兵"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/castle/macham_spec-small.bmp",
+      "specialtyLarge" : "heroes/castle/macham_spec-big.bmp",
+      "large" : "heroes/castle/macham_portrait-big.bmp",
+      "small" : "heroes/castle/macham_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "pikeman",
+        "max" : 20,
+        "min" : 10
+      },
+      {
+        "creature" : "pikeman",
+        "max" : 20,
+        "min" : 10
+      },
+      {
+        "creature" : "pikeman",
+        "max" : 20,
+        "min" : 10
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "advanced",
+        "skill" : "leadership"
+      },
+    ],
+    
+    "specialty" : {
+			"creature" : "pikeman"
+		}
+  }	
+}

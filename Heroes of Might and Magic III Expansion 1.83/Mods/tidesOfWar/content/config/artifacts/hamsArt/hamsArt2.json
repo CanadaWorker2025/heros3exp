@@ -1,0 +1,34 @@
+{
+	"hamsArt2" : {
+		"class" : "MINOR",
+		"graphics" : { 
+			"image": "artifacts/iconsSmall/arti2S",
+			"scenarioBonus": "artifacts/iconsBig/arti2",
+			"map": "artifacts/map/arti2map"
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{神秘松果}\r\n\r\n使部队运气+1，开始战斗始会自动召唤一队松鼠协助。",
+			"event" : "松鼠指引你到它的洞穴中，你发现它们储存了足够多的松果，为了换取你的保护，它们决定以一个神秘的松果作为交换。",
+			"name" : "神秘松果"
+		},
+		"bonuses" : {
+			"luck":
+			{
+				"type" : "LUCK",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+			},
+			"summonSqu":
+			{
+				"subtype" : "spell.hamsSpell2",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+
+		"type" : [ "HERO" ],
+		"value" : 3000
+	}
+}

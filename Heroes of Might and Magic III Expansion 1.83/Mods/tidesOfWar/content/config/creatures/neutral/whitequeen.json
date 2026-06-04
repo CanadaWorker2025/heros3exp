@@ -1,0 +1,93 @@
+{
+    "ffWhiteQueen":
+    {
+    "name": {
+      "plural": "白皇后",
+      "singular": "白皇后"
+    },
+    "advMapAmount": {
+ "max" : 10,
+ "min" : 4
+    },
+    "faction" : "neutral",
+	"aiValue" : 13211,
+    "attack": 19,
+    "cost": {
+      "gold": 4000,
+	  "gems": 2
+    },
+    "damage": {
+ "max" : 40,
+ "min" : 30
+    },
+    "defense": 20,
+    "fightValue": 15113,
+    "graphics": {
+      "animation" : "creatures/neutral/battle/whitequeenB.def",
+      "map" :       "creatures/neutral/map/whitequeenM.def",
+	"iconSmall" : "creatures/neutral/iconsSmall/queS.bmp",
+	"iconLarge" : "creatures/neutral/iconsBig/queL.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.20,
+        "attack": 1,
+        "idle": 10
+      },
+			"missile" :
+			{
+				"projectile": "CPRZEAX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+    },
+    "growth": 1,
+    "hitPoints": 160,
+    "shots" : 24,
+		"level": 7,
+		"sound" :
+		{
+			"attack": "ZELTATTK.wav",
+			"defend": "ZELTDFND.wav",
+			"killed": "ENCHKILL.wav",
+			"move": "creatures/neutral/hamster/wqunMOVE.wav",
+			"shoot": "ENCHSHOT.wav",
+			"wince": "creatures/inferno/sukkub/SUCCHIT.wav"
+		},
+    "speed": 11,
+		"abilities" :
+		{	
+            "basicSlayer" : { "type" : "KING", "val": 2 },
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noDistancePenalty" :
+			{
+				"type" : "NO_DISTANCE_PENALTY"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"attackAll" :
+			{
+				"type" : "ATTACKS_ALL_ADJACENT"
+			},
+			"summonGuardians" :
+			{
+				"type" : "SUMMON_GUARDIANS",
+				"subtype" : "creature.nwCon01",
+				"val" : 1200,
+			}
+		}
+	}
+}

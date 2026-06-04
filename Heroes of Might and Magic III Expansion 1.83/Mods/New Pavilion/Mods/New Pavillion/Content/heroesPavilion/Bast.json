@@ -1,0 +1,76 @@
+{
+	"bast" :
+	{
+		"class" : "embalmer",
+		"female" : true,
+		"special" : true,
+
+		"texts" :
+		{
+			"name" : "巴斯特",
+			"biography" : "众所周知，女祭司不喜欢匆忙，他们小心翼翼地做着一切事情。但巴斯特是不同的。在马背上，她可以超越最快的骑手。",
+			"specialty" :
+			{
+				"description" : "在后勤学上每级得到5%的额外奖励。",
+				"tooltip" : "Secondary Skill Bonus: Logistics",
+				"name" : "后勤学"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/un32logi.bmp",
+			"specialtyLarge" : "speciconsPavilion/un44logi.bmp",
+			"large" : "heroportraitsPavilion/Bast.png",
+			"small" : "heroportraitsPavilion/BastSmall.png"
+		},
+        	"spellbook" :
+		[
+			"haste"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty": 
+{
+			"bonuses" : {
+				"logistics" : {
+					"subtype" : "heroMovementLand",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MOVEMENT",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"taHeroM" : {
+		"affinity" : "magic",
+		"animation" : { "battle" : { "female" : "tartarus/battle/heroes/hero02", "male" : "tartarus/battle/heroes/hero03" } },
+    "defaultTavern": 5,
+    "commander": "tcommander",//no commander here
+		"faction" : "tartarus",
+		"highLevelChance" : { "attack" : 20, "defence" : 15, "knowledge" : 35, "spellpower" : 30 },
+		"lowLevelChance" : { "attack" : 20, "defence" : 20, "knowledge" : 30, "spellpower" : 30 },
+		"mapObject" : { "templates" : { "default" : { "animation" : "tartarus/map/heroes/AHTa02_" } } },
+		"name" : "冰术士",
+		"primarySkills" : { "attack" : 0, "defence" : 1, "knowledge" : 2, "spellpower" : 2 },
+		"secondarySkills" : {
+			"pathfinding"  : 2,
+			"archery"      : 3,
+			"logistics"    : 4,
+			"scouting"     : 3,
+			"diplomacy"    : 7,
+			"navigation"   : 3,
+			"leadership"   : 2,
+			"wisdom"       : 7,
+			"mysticism"    : 2,
+			"luck"         : 5,
+			"ballistics"   : 4,
+			"eagleEye"     : 2,
+			"necromancy"   : 0,
+			"estates"      : 3,
+			"fireMagic"    : 2,
+			"airMagic"     : 4,
+			"waterMagic"   : 6,
+			"earthMagic"   : 3,
+			"scholar"      : 6,
+			"tactics"      : 2,
+			"artillery"    : 2,
+			"learning"     : 4,
+			"offence"      : 4,
+			"armorer"      : 3,
+			"intelligence" : 6,
+			"sorcery"      : 5,
+			"resistance"   : 2,
+			"demonicBlood" : 10,
+			"firstAid"     : 6
+		},
+		"tavern" : {
+			"castle" : 2,
+			"conflux" : 5,
+			"tartarus" : 6,
+			"dungeon" : 5,
+			"fortress" : 6,
+			"inferno" : 8,
+			"necropolis" : 5,
+			"rampart" : 4,
+			"stronghold" : 6,
+			"tower" : 6
+		}
+	}
+}

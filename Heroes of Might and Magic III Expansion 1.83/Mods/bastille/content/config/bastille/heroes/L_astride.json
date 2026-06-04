@@ -1,0 +1,73 @@
+{
+	"l_astride" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "阿特丽德",
+			"biography" : "阿特丽德不是矮人，而是旅居到弗里的女巫。她来到弗里的原因是矮人和女巫族曾经定下的神秘魔法契约。虽然这个契约早已失效，但是她还是很喜欢在矮人的社会中生活。她也总会想起在恩洛斯时的快乐时光。",
+			"specialty" :
+			{
+				"description" : "使用连珠火球魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Spell bonus: Fire Ball",
+				"name" : "连珠火球"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "bastille/heroes/astride/skill32-12.bmp",
+			"specialtyLarge" : "bastille/heroes/astride/skill12.bmp",
+			"large" : "bastille/heroes/astride/HPL003PY.bmp",
+			"small" : "bastille/heroes/astride/HPS003PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"fireball" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"fireball" : {
+					"subtype" : "spell.fireball",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

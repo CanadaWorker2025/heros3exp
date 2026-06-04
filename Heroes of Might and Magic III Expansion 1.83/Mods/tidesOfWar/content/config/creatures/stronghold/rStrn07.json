@@ -1,0 +1,76 @@
+{
+	"rStrn07"://bloody behemoth
+	{
+		"name" :
+		{
+			"plural" : "凶残巨兽",
+			"singular" : "凶残巨兽"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction": "stronghold",
+		"aiValue" : 6169,
+		"fightValue" : 5399,
+		"doubleWide" : true,
+		"attack" : 20,
+		"defense" : 18,
+		"cost" :
+		{
+			"gold" : 3000,
+			"crystal" : 1
+		},
+		"damage" :
+		{
+			"min" : 30,
+			"max" : 50
+		},
+		"speed" : 10,
+		"upgrades": ["ancientBehemoth"],
+		"graphics" :
+		{
+			"animation" : "creatures/stronghold/battle/rStrn07B.def",
+			"map" : "creatures/stronghold/map/rStrn07M.def",
+			"iconSmall" : "creatures/stronghold/iconsSmall/rStrn07S.bmp",
+			"iconLarge" : "creatures/stronghold/iconsBig/rStrn07L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 300,
+		"growth" : 1,
+		"level" : 7,
+		"sound" :
+		{
+			"attack": "BMTHATTK.wav",
+			"defend": "BMTHDFND.wav",
+			"killed": "BMTHKILL.wav",
+			"move": "BMTHMOVE.wav",
+			"wince": "BMTHWNCE.wav"
+		},
+		"abilities":
+		{
+			"basicSlayer" : { "type" : "KING", "val": 0 },
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 60
+			},
+			"enchanted" : 	
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.bloodlust",
+				"val" : 2,
+				"icon": "bonuses/bloodlust2.png"
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,61 @@
+{
+	"havMhero14" :
+	{
+		"class" : "havMhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "麦拉姆",
+			"biography" : "麦拉姆在瑞格纳海盗中学到了很多在克里根从未见识过的知识。克里根人并不擅长航行，但麦拉姆却尝试进行跨海域的远航。她的船上总是会出现一些鱼头人身的小怪物，据说这些小怪物在帮助她完成航行。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "潜游者",
+				"description" : "达到2级以后提升潜游者和深潜者的攻击力和防御力。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero14/skill14S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero14/skill14.bmp",
+			"large" : "haven/heroes/havHero14/hero14.bmp",
+			"small" : "haven/heroes/havHero14/hero14S.bmp"
+		},
+		"spellbook": [ "dispel" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC03",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "havC03",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scholar"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "havC03"
+		}	
+	}
+}

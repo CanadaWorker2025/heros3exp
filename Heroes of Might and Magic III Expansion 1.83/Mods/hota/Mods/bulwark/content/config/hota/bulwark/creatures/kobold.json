@@ -1,0 +1,72 @@
+{
+	"bulwarkKobold" : {
+		"name" : {
+			"singular" : "狗头人",
+			"plural" : "狗头人"
+		},
+		"faction" : "bulwark",
+		"level" : 1,
+		"upgrades" : [
+			"bulwarkKoboldForeman"
+		],
+		"cost" : {
+			"gold" : 40
+		},
+		"speed" : 3,
+		"hitPoints" : 8,
+		"attack" : 3,
+		"defense" : 4,
+		"damage" : {
+			"min" : 1,
+			"max" : 2
+		},
+		"fightValue" : 74,
+		"aiValue" : 54,
+		"growth" : 15,
+		"advMapAmount" : {
+			"min" : 20,
+			"max" : 50
+		},
+		"abilities" : {
+			"generatesGold" : {
+				"type" : "GENERATE_RESOURCE",
+				"subtype" : "resource.gold",
+				"propagator" : "PLAYER",
+				"valueType" : "BASE_NUMBER",
+				"updater" : {
+					"type" : "TIMES_ARMY_SIZE",
+					"filteredCreature" : "bulwarkKobold"
+				},
+				"stacking" : "Kobolds",
+				"val" : 1,
+				"icon" : "hota/bulwark/bonuses/goldMining",
+				"description" : "{采集}\n每天提供1单位的金币"
+			}
+		},
+		"graphics" : {
+			"iconLarge" : "hota/bulwark/creatures/iconsLarge/kobold.png",
+			"iconSmall" : "hota/bulwark/creatures/iconsSmall/kobold.png",
+			"map" : "hota/bulwark/creatures/adventureMap/AVWKOBOL.def",
+			"mapMask" : [
+				"VVV",
+				"VAV"
+			],
+			"animation" : "hota/bulwark/creatures/battle/CKOBOLD.def",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1.15
+			},
+			"timeBetweenFidgets" : 1,
+			"mapAttackFromRight" : "hota/bulwark/creatures/AVWattack/koboldRight.png",
+			"mapAttackFromLeft" : "hota/bulwark/creatures/AVWattack/koboldLeft.png"
+		},
+		"sound" : {
+			"attack" : "hota/bulwark/creatures/kobold/KOBLATTK.wav",
+			"defend" : "hota/bulwark/creatures/kobold/KOBLDFND.wav",
+			"killed" : "hota/bulwark/creatures/kobold/KOBLKILL.wav",
+			"move" : "hota/bulwark/creatures/kobold/KOBLMOVE.wav",
+			"wince" : "hota/bulwark/creatures/kobold/KOBLWNCE.wav"
+		}
+	}
+}

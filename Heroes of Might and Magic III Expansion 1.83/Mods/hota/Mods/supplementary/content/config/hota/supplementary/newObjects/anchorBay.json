@@ -1,0 +1,92 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"anchorBay" : 
+			{
+				"name" : "海盗前哨站",
+				"aiValue": 10000,
+				"templates" :
+				{
+					"normal" :
+					{
+						"animation" : "hota/supplementary/others/Avgcent0",
+						"visitableFrom" : [ "---", "+++", "+++" ], 
+						"mask" : [ "VVVVV", "VVVVV","VBBBB", "VBBAB","VVVVV"],
+						"allowedTerrains":["water"] 
+					}
+				},
+				"sounds": {
+					"ambient": ["LOOPAREN"]
+				},
+				"rmg" : {
+					"value"		: 7000,
+					"rarity"	: 10
+				},
+				"onGuardedMessage" : "{海盗前哨站}\r\n\r\n你将船航行到这座小岛上，从这里你可以看到大量海盗在此聚集。你知道这是附近海盗的大本营，往来的商船肯定会遭遇劫掠，如果你消灭海盗，不仅会使这片海域获得安宁，还会得到大量财宝。你是否决定进攻这里？",
+				"onVisited" : [
+					{
+						"message" : "{海盗前哨站}\r\n\r\n你将船航行到这座小岛上，虽然这里看起来像海盗的大本营，但却连一个海盗都没有。你将船停下，登上高台参观，看着周围的风景，这真是美极了。", // Such a despicable act reduces your army's morale.
+						"revealTiles" : {
+							"radius" : 20,
+							"surface" : 1,
+							"subterra" : 1,
+							"water" : 1,
+							"rock" : 1
+						}
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "当最后一个海盗被消灭后，你登上塔楼，从他们的仓库里找到很多财宝。",
+						"appearChance" : { "min" : 0, "max" : 50 },
+						"guards": [
+							{ "amount": 50, "type" : "pirate" },
+							{ "amount": 50, "type" : "corsair" },
+							{ "amount": 50, "type" : "seadog"},
+							{ "amount": 20, "type" : "seaWitch" },
+							{ "amount": 20, "type" : "sorceress" }
+						],
+						"resources":
+							{
+								"gold" : 10000,
+								"gems": 10,
+								"sulfur": 10
+							},
+							"artifacts": 
+							[ 
+								{ "class" : "MINOR" },
+								{ "class" : "MAJOR" } 
+							]
+					},
+					{
+						"message" : "当最后一个海盗被消灭后，你登上塔楼，从他们的仓库里找到很多财宝。",
+						"appearChance" : { "min" : 50, "max" : 100 },
+						"guards": [
+							{ "amount": 70, "type" : "pirate" },
+							{ "amount": 70, "type" : "corsair" },
+							{ "amount": 70, "type" : "seadog"},
+							{ "amount": 35, "type" : "seaWitch" },
+							{ "amount": 30, "type" : "sorceress" }
+						],
+						"resources":
+							{
+								"gold" : 15000,
+								"gems": 15,
+								"sulfur": 15
+							},
+							"artifacts": 
+							[ 
+								{ "class" : "MAJOR" },
+								{ "class" : "RELIC" } 
+							]
+					}
+				]
+			}
+		}
+	}
+}

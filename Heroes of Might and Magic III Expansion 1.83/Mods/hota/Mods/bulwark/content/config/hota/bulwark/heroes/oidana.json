@@ -1,0 +1,51 @@
+{
+	"02bulwarkOidana" : {
+		"class" : "chieftain",
+		"female" : true,
+		"images" : {
+			"large" : "hota/bulwark/heroes/oidana/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/oidana/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/oidana/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/oidana/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "archery",
+				"level" : "basic"
+			},
+			{
+				"skill" : "diplomacy",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"secondary" : "diplomacy"
+		},
+		"texts" : {
+			"name" : "奥伊达娜",
+			"biography" : "在每个沃里部落，都有人追溯自己的血统至奥伊达娜，她被尊称为酋长之母——只是她自己早已厌倦了那些桀骜不驯的后代们之间无休止的争吵。在世间生活了太久，她早已没有了偏爱，对所有体内流淌着古老沃里血脉的人都怀有同样的爱意。",
+			"specialty" : {
+				"name" : "外交术",
+				"description" : "在外交术技能上每级减少5%的投降费用。",
+				"tooltip" : "Skill Bonus: Diplomacy"
+			}
+		}
+	}
+}

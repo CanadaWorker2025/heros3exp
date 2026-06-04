@@ -1,0 +1,139 @@
+{
+  "hobbit": {
+    "name": {
+      "plural": "棕妖精",
+      "singular": "棕妖精"
+    },
+    "advMapAmount": {
+ "max" : 30,
+ "min" : 20
+    },
+    "faction": "preserve",
+    "aiValue": 86,
+    "attack": 5,
+    "cost": {
+      "gold": 55
+    },
+    "damage": {
+ "max" : 3,
+ "min" : 1
+    },
+    "defense": 2,
+    "fightValue": 97,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C1Hobb.def",
+      "map": "preserve/map/creatures/AVWC164.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS164P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL164P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1,
+        "attack": 1,
+        "idle": 10
+      },
+      "missile" :
+			{
+				"projectile" : "PICEE.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+    },
+    "growth": 14,
+    "hitPoints": 5,
+    "horde": 6,
+    "level": 1,
+    "shots" : 8,
+    "sound": {
+      "attack": "preserve/VINEATTK.wav",
+			"defend": "HALFDFND.wav",
+			"killed": "preserve/VINEDEAD.wav",
+			"move": "HALFMOVE.wav",
+			"shoot": "preserve/S164SHOT.wav",
+			"wince": "HALFWNCE.wav"
+    },
+    "speed": 5,
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      }
+    },
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth", //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.slayer"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 2, 2, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.goblin"
+				},
+				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.hobgoblin"
+				},
+				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
+			}
+		]
+  }
+}

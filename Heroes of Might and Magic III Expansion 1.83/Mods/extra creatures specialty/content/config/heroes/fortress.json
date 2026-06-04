@@ -1,0 +1,67 @@
+{
+	"core:drakon":{
+		"specialty": {
+			"creature": "gnoll",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "豺狼人",
+                "description": "每1级提高豺狼人及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:wystan":{
+        "texts": {
+            "specialty": {
+                "name": "蜥蜴人",
+                "description": "每2级提高蜥蜴人及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:korbac":{
+        "texts": {
+            "specialty": {
+                "name": "毒蝇",
+                "description": "每3级提高毒蝇及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:bron":{
+        "texts": {
+            "specialty": {
+                "name": "蜥蜴",
+                "description": "每4级提高蜥蜴及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:alkin":{
+        "texts": {
+            "specialty": {
+                "name": "野牛",
+                "description": "每5级提高野牛及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:broghild":{
+        "texts": {
+            "specialty": {
+                "name": "飞龙",
+                "description": "每6级提高飞龙及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:gerwulf":{
+		"specialty": {
+			"creature": "ballista",
+			"creatureLevel" : 5,
+			"stepSize" : 30
+		},
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+            }
+        }
+	}
+}

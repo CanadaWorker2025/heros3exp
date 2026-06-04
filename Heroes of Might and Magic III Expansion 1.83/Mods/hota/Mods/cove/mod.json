@@ -1,0 +1,80 @@
+{
+	"name" : "Cove town",
+	"description" : "New town made by HotA Crew as part of Horn of the Abyss addon",
+	"modType" : "Town",
+	"author" : "Hota Crew, ported by VCMI Team",
+	"contact" : "http://forum.vcmi.eu/viewtopic.php?t=748",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"version" : "1.3.61",
+	"depends" : [ "hota.cannon" ],
+	"factions" :
+	[
+		"config/hota/cove/faction",
+		"config/hota/cove/town/town",
+		"config/hota/cove/town/buildings",
+		"config/hota/cove/town/structures",
+		"config/hota/cove/town/siege",
+		"config/hota/cove/puzzleMap"
+	],
+	"creatures" :
+	[
+		"config/hota/cove/creatures/ayssid",
+		"config/hota/cove/creatures/corsair",
+		"config/hota/cove/creatures/crewmate",
+		"config/hota/cove/creatures/haspid",
+		"config/hota/cove/creatures/nix",
+		"config/hota/cove/creatures/nixWarrior",
+		"config/hota/cove/creatures/nymph",
+		"config/hota/cove/creatures/oceanid",
+		"config/hota/cove/creatures/pirate",
+		"config/hota/cove/creatures/seaWitch",
+		"config/hota/cove/creatures/seadog",
+		"config/hota/cove/creatures/seaman",
+		"config/hota/cove/creatures/seaserpent",
+		"config/hota/cove/creatures/sorceress",
+		"config/hota/cove/creatures/stormbird",
+		"config/hota/cove/creatures/stackExperience",
+		"config/hota/cove/commander/blackbeard"
+	],
+	"heroClasses" :
+	[
+		"config/hota/cove/heroClasses/captain",
+		"config/hota/cove/heroClasses/navigator"
+	],
+	"heroes" :
+	[
+		"config/hota/cove/heroes/anabel",
+		"config/hota/cove/heroes/andal",
+		"config/hota/cove/heroes/astra",
+		"config/hota/cove/heroes/blackBalfour",
+		"config/hota/cove/heroes/bidley",
+		"config/hota/cove/heroes/casmetra",
+		"config/hota/cove/heroes/cassiopeia",
+		"config/hota/cove/heroes/corkes",
+		"config/hota/cove/heroes/dargem",
+		"config/hota/cove/heroes/derek",
+		"config/hota/cove/heroes/elmore",
+		"config/hota/cove/heroes/eovacius",
+		"config/hota/cove/heroes/illor",
+		"config/hota/cove/heroes/jeremy",
+		"config/hota/cove/heroes/leena",
+		"config/hota/cove/heroes/manfred",
+		"config/hota/cove/heroes/miriam",
+		"config/hota/cove/heroes/spint",
+		"config/hota/cove/heroes/tark",
+		"config/hota/cove/heroes/zilare"
+	],
+	"spells" :
+	[
+		"config/hota/cove/spells/accurateShot",
+		"config/hota/cove/spells/specialClone",
+		"config/hota/cove/spells/revhota",
+		"config/hota/cove/spells/moat"
+	],
+	"objects" : 
+	[ 
+		"config/hota/cove/dwellings",
+		"config/hota/cove/boats"
+	]
+}

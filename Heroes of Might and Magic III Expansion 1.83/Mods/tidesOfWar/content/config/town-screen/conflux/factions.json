@@ -1,0 +1,211 @@
+{
+	"core:conflux" :
+	{
+		"description" : "{元素城}\n种族阵营： 中立，守序\n种族地形： 高地\n所在地： 元素异界\n元素是完全的异界种族，主要分布在四大元素异界。因为一些平衡的破坏才导致他们重新出现在埃拉西亚领地。他们在恩塔格瑞大陆并没有严格意义的领地，但是可以通过异界传送门到达大陆的任何地区。每当异界之门打开，元素们就会来到恩塔格瑞大陆。",
+		"town" :
+		{
+			"horde" : [ 0, 6 ],
+			"structures" :
+			{
+			"dwellingUpEx1": { "animation" : "TBELHRD2.def", "x" : 689, "y" : 250, "border" : "TOELHRD2.bmp", "area" : "TZELHRD2.bmp" },
+			"dwellingUpEx2": { "animation" : "TBELUP_1.def", "x" : 630, "y" : 50,  "border" : "TOELUP_1.bmp", "area" : "TZELUP_1.bmp" },
+			"dwellingUpEx3": { "animation" : "TBELUP_2.def", "x" : 709, "y" : 210, "z" : 6, "border" : "TOELUP_2.bmp", "area" : "TZELUP_2.bmp" },
+			"dwellingUpEx4": { "animation" : "TBELUP_3.def", "x" : 108, "y" : 131, "z" : 1, "border" : "TOELUP_3.bmp", "area" : "TZELUP_3.bmp" },
+			"dwellingUpEx5": { "animation" : "TBELUP_4.def", "x" : 264, "y" : 168, "z" : 0, "border" : "TOELUP_4.bmp", "area" : "TZELUP_4.bmp" },
+			"dwellingUpEx6": { "animation" : "TBELUP_5.def", "x" : 394, "y" : 283, "z" : 10,  "border" : "TOELUP_5.bmp", "area" : "TZELUP_5.bmp" },
+			"dwellingUpEx7": { "animation" : "TBELUP_6.def", "x" : 43,  "y" : 0,   "z" : 2, "border" : "TOELUP_6.bmp", "area" : "TZELUP_6.bmp" },
+			"dwellingLvl3B": { "animation" : "town-screen/conflux/TBzTrtn.def", "x" : 700, "y" : 161, "z" : -1, "border" : "town-screen/conflux/buildings-border/ToBzT1.bmp", "area" : "town-screen/conflux/buildings-area/TBzT1.bmp" }, 
+			"dwellingUpLvl3B": { "animation" : "town-screen/conflux/TBzTrtUp.def", "x" : 700, "y" : 161, "z" : -1, "border" : "town-screen/conflux/buildings-border/ToBzT1Up.bmp", "area" : "town-screen/conflux/buildings-area/TBzT1Up.bmp" },
+			"hordePhoenix":    {  "animation" : "town-screen/conflux/TBELHrd3.def", "x" : 684, "y" : 105, "z" : 1, "border" : "town-screen/conflux/buildings-border/TOELHrd3.bmp", "area" : "town-screen/conflux/buildings-area/TZELHrd3.bmp" },				
+			"hordePhoenixUpgr":    {  "animation" : "town-screen/conflux/TBELHrd4.def", "x" : 684, "y" : 105, "z" : 1, "border" : "town-screen/conflux/buildings-border/TOELHrd4.bmp", "area" : "town-screen/conflux/buildings-area/TZELHrd4.bmp" },
+			},
+			"buildingsIcons": "town-screen/conflux/ALTHALLELEM.DEF",
+			"hallBackground": "town-screen/conflux/ConfluxHallBg.BMP",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special2" ], [ "shipyard" ] ],
+				[ [ "special1" ], [ "hordePhoenix", "hordePhoenixUpgr" ],[ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1","dwellingUpEx1" ], [ "dwellingLvl2", "dwellingUpLvl2","dwellingUpEx2" ], [ "dwellingLvl3", "dwellingUpLvl3","dwellingUpEx3" ],[ "dwellingLvl3B", "dwellingUpLvl3B" ] ],
+				[ [ "dwellingLvl4", "dwellingUpLvl4","dwellingUpEx4" ] ,[ "dwellingLvl5", "dwellingUpLvl5","dwellingUpEx5" ], [ "dwellingLvl6", "dwellingUpLvl6","dwellingUpEx6" ], [ "dwellingLvl7", "dwellingUpLvl7","dwellingUpEx7" ] ]
+			],
+			"creatures" :
+			[
+				["pixie", "sprite", "nwCon01"],
+				["airElemental", "stormElemental", "nwCon02"],
+				["waterElemental", "iceElemental", "nwCon03", "mdtTriton", "mdtAbyssalTriton"],
+				["fireElemental", "energyElemental", "nwCon04"],
+				["earthElemental", "magmaElemental", "nwCon05"],
+				["psychicElemental", "magicElemental", "nwCon06"],
+				["firebird", "phoenix", "nwCon07"]
+			],
+			
+			"buildings" :
+			{	
+				"dwellingUpEx1": 
+				{ 
+				"name" : "高级精灵花园",
+					"description" : "高级精灵花园允许你招募精灵和妖精，并且可以在城中进行转换。",
+					"cost" : {
+						"gold" : 1000
+					},
+				"id" : 44, 
+				"upgrades" : "dwellingUpLvl1",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx2": 
+				{ 
+				"name" : "高级空气神坛",
+					"description" : "高级空气神坛允许你招募雷元素和闪电元素，并且可以在城中进行转换。",
+					"cost" : {
+						"mercury" : 2,
+						"wood": 2,
+						"gems": 2,
+						"gold" : 1000
+					},
+				"id" : 45, 
+				"upgrades" : "dwellingUpLvl2",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx3": 
+				{ 
+				"name" : "高级流水神坛",
+					"description" : "高级流水神坛允许你招募冰元素和海元素，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"mercury" : 5,
+						"gold" : 2000
+					},
+				"id" : 46, 
+				"upgrades" : "dwellingUpLvl3",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx4": 
+				{ 
+				"name" : "高级烈火神坛",
+					"description" : "高级烈火神坛允许你招募烈火元素和电子元素，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"mercury" : 5,
+						"gold" : 2000
+					},
+				"id" : 47, 
+				"upgrades" : "dwellingUpLvl4",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx5": 
+				{ 
+				"name" : "高级大地神坛",
+					"description" : "高级大地神坛允许你招募石元素和熔岩元素，并且可以在城中进行转换。",
+					"cost" : {
+						"sulfur": 5,
+						"gold" : 1000
+					},
+				"id" : 48, 
+				"upgrades" : "dwellingUpLvl5",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx6": 
+				{ 
+				"name" : "高级精神神坛",
+					"description" : "高级精神神坛允许你招募魔法元素和以太元素，并且可以在城中进行转换。",
+					"cost" : {
+						"crystal" : 3,
+						"sulfur": 3,
+						"gems": 3,
+						"mercury": 3,
+						"gold" : 3000
+					},
+				"id" : 49, 
+				"upgrades" : "dwellingUpLvl6",
+				"mode" : "auto"
+				},
+				"dwellingUpEx7": 
+				{ 
+				"name" : "高级凤凰巢",
+					"description" : "高级凤凰巢允许你招募凤凰和希摩鸟，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 10,
+						"wood": 10,
+						"mercury": 20,
+						"gold" : 15000
+					},
+				"id" : 50, 
+				"upgrades" : "dwellingUpLvl7",
+				"mode" : "auto" 
+				},
+				"dwellingUpLvl1": 
+				{ 
+					"requires" : [ "allOf", [ "mageGuild1" ], ["horde1"] ]		
+				},
+				"hordePhoenix": 
+				{ 
+					"description" : "灰烬穹顶使火鸟和凤凰的周产量+1。",
+					"name" : "灰烬穹顶",
+				
+					"cost" :
+					{
+						"mercury" : 5,
+						"gold":	5000
+					},
+					"requires" : [ "dwellingLvl7" ],
+					"id" : 24		
+				},
+				"hordePhoenixUpgr": 
+				{ 
+					"description" : "灰烬穹顶使火鸟和凤凰的周产量+1。",
+					"name" : "灰烬穹顶",
+				
+					"cost" :
+					{
+						"mercury" : 5,
+						"gold":	5000
+					},
+					"upgrades" : "hordePhoenix",
+					"requires" : [ "dwellingUpLvl7" ],
+					"mode" : "auto",
+					"id" : 25
+				},
+			"dwellingLvl3":   
+				{ 
+				"requires" : [ "allOf", [ "dwellingLvl1" ], [ "mageGuild1" ], [ "noneOf", [ "dwellingLvl3B" ] ] ]
+				},
+			
+			"dwellingLvl3B" :
+				{
+					"description" : "沉没神殿允许你招募海卫兵。",
+					"name" : "沉没神殿",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "horde1" ], [ "noneOf", [ "dwellingLvl3" ] ] ],
+					"id" : 53
+				},
+			"dwellingUpLvl3B" :
+				{
+					"description" : "高级沉没神殿允许你招募深海卫兵。",
+					"name" : "高级沉没神殿",
+					"id" : 60,
+					"cost" : 
+					{
+						"gems" : 3,
+						"gold" : 2000
+					},
+					"upgrades" : "dwellingLvl3B"
+				},
+			"dwellingLvl5":   
+				{ 
+					"requires" : 
+					[ 
+						"anyOf", 
+							[ "dwellingLvl3" ], 
+							[ "dwellingLvl3B" ]	
+					]	
+				}
+			}	
+		}
+	}	
+}

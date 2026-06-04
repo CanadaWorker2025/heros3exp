@@ -1,0 +1,17 @@
+{
+	"limestonePuddles" : {
+		"handler" : "static",
+		"name" : "石灰石水坑",
+		"types" : {
+			"limestonePuddles" : {
+				"templates" : {
+					"AVLwml00" : {
+						"animation" : "hota/wasteland/hotaStatic/puddles/AVLwml00",
+						"mask" : [ "V" ],
+						"allowedTerrains": [ "wasteland" ]
+					}
+				}
+			}
+		}
+	}
+}

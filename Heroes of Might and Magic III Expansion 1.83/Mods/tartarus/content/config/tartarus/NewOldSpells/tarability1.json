@@ -1,0 +1,153 @@
+{
+	"tarAbility1":
+	{
+		"type": "ability", 
+		"name": "削弱诅咒",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":[{"defName":"NewOldSpells/C2subWeak.def"}]
+		},
+ 
+		"flags" : {"negative": true},
+ 
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/Useless1.bmp",
+			"iconScroll": "NewOldSpells/Useless2.bmp",
+			"iconScenarioBonus": "NewOldSpells/Useless3.bmp",
+			"iconEffect": "NewOldSpells/SucubusCurse.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "WEAKNESS"
+		},
+		"targetType" : "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{削弱诅咒}\r\n\r\n使敌人攻防-3。",
+	 
+				"cost": 0,
+	 
+				"effects" : 
+				{
+					"attack" : {
+						"val" : -3,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"val" : -3,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{削弱诅咒}\r\n\r\n使敌人攻防-3。",
+	 
+				"cost": 0,
+	 
+				"effects" : 
+				{
+					"attack" : {
+						"val" : -3,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"val" : -3,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{削弱诅咒}\r\n\r\n使敌人攻防-3。",
+	 
+				"cost": 0,
+	 
+				"effects" : 
+				{
+					"attack" : {
+						"val" : -3,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"val" : -3,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{削弱诅咒}\r\n\r\n使敌人攻防-3。",
+	 
+				"cost": 0,
+	 
+				"effects" : 
+				{
+					"attack" : {
+						"val" : -3,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"val" : -3,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "N_TURNS"
+					}
+				}
+			}
+		}
+	}
+ 
+}

@@ -1,0 +1,29 @@
+{
+	"hideousMask" : {
+        "type" : [ "HERO" ],
+        "slot" : "MISC",
+        "class" : "MINOR",
+        "value" : 4000,
+        "bonuses" : {
+			"morale" : {
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
+			}
+		},
+        "graphics" : {
+            "image" : "hota/artifactsIcons/hideousMask",
+            "map" : "hota/artifactsMap/hideousMask",
+            "scenarioBonus" : "hota/artifactsCampaignBonuses/hideousMask"
+        },
+        "text" : {
+            "description" : "{魔鬼面具}\r\n\r\n降低敌人1点士气。",
+			"event" : "你在路上遇见了一个旅行马戏团。他们中的一个表演地如此巧妙以至于你拔出一把剑准备自卫，从面具后出现的是一位漂亮的女演员。大笑声中，她送这个面具作为礼物给你。",
+			"name" : "魔鬼面具"
+        }
+    }
+}

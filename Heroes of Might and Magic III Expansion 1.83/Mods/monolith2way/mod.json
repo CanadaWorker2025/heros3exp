@@ -1,0 +1,19 @@
+{
+	"name" : "Monoliths 2-Way Objects Extend",
+	"description" : "Extend monoliths 2-Way Objects to 100.",
+	"version":"0.2.0",
+	"author":"kdmcser, Macron1, Archer30 and planetavril1",
+	"contact":"https://forum.vcmi.eu/u/kdmcser",
+	"modType":"Objects",
+	"depends" : [],
+	"objects":
+	[
+		"config/monolithTwoWay/monolithTwoWay.json"
+	],
+	"changelog" :
+    {
+	    "0.2.0"   : [ "Extend unique def material to 41. Replace all water monoliths." ],
+        "0.1.0"   : [ "Reorder material, keep same material has same index with Mod WOG, HOTA, extend unique def material to 30." ],
+		"0.0.1"   : [ "Simplely extend monoliths to 100, 8 ~ 21 use unique def material from WOG, HOTA" ]
+    }
+}

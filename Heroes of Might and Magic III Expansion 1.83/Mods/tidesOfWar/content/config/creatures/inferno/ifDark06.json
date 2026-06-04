@@ -1,0 +1,106 @@
+{
+	"ifDark06":
+	{
+		"name" :
+		{
+			"plural" : "暗炎精灵",
+			"singular" : "暗炎精灵"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 5
+		},
+		"faction": "inferno",
+		"aiValue" : 1846,
+		"fightValue" : 1583,
+		"attack" : 16,
+		"defense" : 16,
+		"cost" :
+		{
+			"gold" : 1100
+		},
+		"damage" :
+		{
+			"min" : 17,
+			"max" : 24
+		},
+		"speed" : 12,
+		"upgrades": ["efreetSultan"],
+		"graphics" :
+		{
+			"animation" : "creatures/inferno/battle/CINF26.def",
+			"map" : "creatures/inferno/map/AVWinf06.def",
+			"iconSmall" : "creatures/inferno/iconsSmall/CINF26S.bmp",
+			"iconLarge" : "creatures/inferno/iconsBig/CINF26B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 100,
+		"growth" : 2,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "ESULATTK.wav",
+			"defend": "ESULDFND.wav",
+			"killed": "ESULKILL.wav",
+			"move": "ESULMOVE.wav",
+			"wince": "ESULWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" :
+			{
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly3.png"
+			},
+			"hateGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.genie",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateMasterGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.masterGenie",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateGenieViziers" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.twArcane05",
+				"val" : 50,
+				"description" : "{生灵对立}\n对神怪，神怪主，神怪长造成额外50%伤害",
+				"icon" : "spells/extraEffect/hateS.png"	
+			},
+			"immuneToFire" :
+			{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+			},
+			"thunderStrength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.fireball",
+				"val" : 15
+			},
+			"petrification" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.fireball",
+				"val" : 30,
+				"icon": "bonuses/fireballattack.png"
+			}
+		}
+	}
+}
+
+

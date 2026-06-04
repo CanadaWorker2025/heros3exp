@@ -1,0 +1,147 @@
+{
+	"hotaCouatl":
+	{
+		"name" :
+		{
+			"plural" : "羽蛇",
+			"singular" : "羽蛇"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 4
+		},
+		"faction" : "factory",
+		"aiValue" : 3809,
+		"attack" : 17,
+		"cost" :
+		{
+      "gold": 2000
+		},
+		"damage" :
+		{
+			 "max" : 45,
+			 "min" : 25
+		},
+		"defense" : 17,
+		"fightValue" : 3034,
+    "graphics": {
+      "animation": "factory/battle/creatures/RCouatl.def",
+      "map": "factory/map/creatures/AVWccoat.def",
+	  "mapMask" : [ "VVV", "VAV"],
+      "iconSmall": "factory/iconsSmall/creatures/CPrS013F.bmp",
+      "iconLarge": "factory/iconsBig/creatures/CPrL013F.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.5,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide" : true,
+		"growth" : 1,
+		"hitPoints" : 160,
+    "level": 7,
+    "upgrades":
+		[
+			"hotaCoutalUp"
+		],
+		"sound" :
+		{
+			"attack" : "factory/COTLATTK.wav",
+			"defend" : "factory/COTLDFND.wav",
+			"killed" : "factory/COTLKILL.wav",
+			"move" : "factory/COTLMOVE.wav",
+			"shoot": "factory/COTLSHOT.wav",
+			"wince" : "factory/COTLWNCE.wav"
+ 		},
+		"speed" : 11,
+    "abilities":
+      {
+		"basicSlayer" : { "type" : "KING", "val": 0 },
+		"castsymMeditation" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.meditation01",
+				"val" : 1,
+				"icon" : "factory/icons/bonuses/meditation.png",
+				"description" : "{冥想}\n获得增益后，当前回合无法行动但不受任何伤害"
+			},
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+		"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+		"canFly" : 
+			{
+				"type" : "FLYING"
+			}
+	    },	
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" : 
+				{ 
+					"type" : "HP_REGENERATION" 
+				},
+				"values" : [ 5,10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+
+			},
+			{
+				"bonus" :
+				{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+				},
+				"values" : [ false, false, false, false, false, false, false, false, false, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

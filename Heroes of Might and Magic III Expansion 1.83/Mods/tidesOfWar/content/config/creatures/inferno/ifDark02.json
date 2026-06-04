@@ -1,0 +1,90 @@
+{
+	"ifDark02":
+	{
+		"name" :
+		{
+			"plural" : "索多玛特",
+			"singular" : "索多玛特"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction": "inferno",
+		"aiValue" : 238,
+		"fightValue" : 208,
+		"attack" : 7,
+		"defense" : 5,
+		"cost" :
+		{
+			"gold" : 175
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 4
+		},
+		"speed" : 6,
+		"upgrades": ["magog"],
+		"graphics" :
+		{
+			"animation" : "creatures/inferno/battle/CINF22.def",
+			"map" : "creatures/inferno/map/AVWinf02.def",
+			"iconSmall" : "creatures/inferno/iconsSmall/CINF22S.bmp",
+			"iconLarge" : "creatures/inferno/iconsBig/CINF22B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "creatures/inferno/battle/projectile/if_shot.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+		},
+		"hitPoints" : 13,
+		"growth" : 8,
+		"shots": 24,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "MGOGATTK.wav",
+			"defend": "MGOGDFND.wav",
+			"killed": "MGOGKILL.wav",
+			"move": "MGOGMOVE.wav",
+			"shoot": "GOGGSHOT.wav",
+			"wince": "MGOGWNCE.wav"
+		},
+		"abilities" :
+		{
+			 "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"castDisease" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.inf01",
+				"addInfo" : [0,1],
+				"val" : 40,
+				"icon": "bonuses/inf02.png"
+			}
+		}
+	}
+}
+
+

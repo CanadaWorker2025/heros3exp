@@ -1,0 +1,31 @@
+{
+	"core:riverDelta": {
+		"types": {
+			"object": {
+				"templates": {
+					
+					"highdelt1": {
+						"animation": "hota/highlands/hotaStatic/river/hlrdelt1",
+						"mask": ["VVV","VVV","VVV"],
+						"zIndex": 100
+					},
+					"highdelt2": {
+						"animation": "hota/highlands/hotaStatic/river/hlrdelt2",
+						"mask": ["VVV","VVV","VVV"],
+						"zIndex": 100
+					},
+					"highdelt3": {
+						"animation": "hota/highlands/hotaStatic/river/hlrdelt3",
+						"mask": ["VVV","VVV","VVV"],
+						"zIndex": 100
+					},
+					"highdelt4": {
+						"animation": "hota/highlands/hotaStatic/river/hlrdelt4",
+						"mask": ["VVV","VVV","VVV"],
+						"zIndex": 100
+					}
+				}
+			}
+		}
+	}
+}

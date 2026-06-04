@@ -1,0 +1,59 @@
+{
+	"d_austin" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "奥斯汀",
+			"biography" : "奥斯汀对于弩炮的研究远远超越其他人。他自幼便喜欢研究机械原理，并且将自己领悟的知识作用于实践。虽然周围的人似乎都对他的研究不感兴趣，但他依然会坚持自己的研究。他也相信自己的才能应该在战场上得以发挥。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高弩车的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Ballista",
+				"name" : "弩车"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "bastille/heroes/austin/skill32-4.bmp",
+			"specialtyLarge" : "bastille/heroes/austin/skill4.bmp",
+			"large" : "bastille/heroes/austin/HPL003DW.bmp",
+			"small" : "bastille/heroes/austin/HPS003DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ballista",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 6,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "ballista"
+		}
+	}
+}
+

@@ -1,0 +1,89 @@
+{
+	"tangleVine" : {
+		"abilities" : {
+			"flying" : {"type" : "FLYING", "subtype" : "movementTeleporting"},
+			"binds" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.bind",
+				"val" : 100,
+				"icon" : "courtyard/icons/bonuses/sticky.png"
+			}
+			
+		},
+		"advMapAmount" : { "max" : 50, "min" : 20 },
+		"aiValue" : 22,
+		"attack" : 2,
+		"cost" : { "gold" : 20 },
+		"damage" : { "max" : 2, "min" : 1 },
+		"defense" : 1,
+		"faction" : "courtyard",
+		"fightValue" : 30,
+		"graphics" : {
+			"animation" : "courtyard/battle/CVine.def",
+			"animationTime" : { "attack" : 1, "idle" : 8, "walk" : 1 },
+			"iconLarge" : "courtyard/icons/units/IcVine101",
+			"iconSmall" : "courtyard/icons/units/IsVine101",
+			"map" : "courtyard/map/Cvine1.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 25,
+		"hitPoints" : 2,
+		"level" : 1,
+		"name" : { "plural" : "缠身藤", "singular" : "缠身藤" },
+		"sound" : {
+			"attack" : "courtyard/specialVines/VINEATTK.wav",
+			"defend" : "courtyard/specialVines/VINEDFND.wav",
+			"killed" : "courtyard/specialVines/VINEDEAD.wav",
+			"startMoving" : "courtyard/specialVines/VINEMSTR.wav",
+			"endMoving" : "courtyard/specialVines/VINEMEND.wav",
+			"wince" : "courtyard/specialVines/VINEWNCE.wav"
+		},
+		"speed" : 6,
+		"upgrades" : [ "strangleVine" ]
+	},
+	"strangleVine" : {
+		"abilities" : {
+			"flying" : {"type" : "FLYING", "subtype" : "movementTeleporting"},
+			"binds" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.bind",
+				"val" : 100,
+				"icon" : "courtyard/icons/bonuses/sticky.png"
+			}
+			
+		},
+		"advMapAmount" : { "max" : 50, "min" : 20 },
+		"aiValue" : 26,
+		"attack" : 4,
+		"cost" : { "gold" : 25 },
+		"damage" : { "max" : 3, "min" : 2 },
+		"defense" : 1,
+		"faction" : "courtyard",
+		"fightValue" : 40,
+		"graphics" : {
+			"animation" : "courtyard/battle/CSVin.def",
+			"animationTime" : { "attack" : 1, "idle" : 8, "walk" : 1 },
+			"iconLarge" : "courtyard/icons/units/IcVine101",
+			"iconSmall" : "courtyard/icons/units/IsVine101",
+			"map" : "courtyard/map/Cvine2.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 25,
+		"hitPoints" : 2,
+		"level" : 1,
+		"name" : { "plural" : "绞杀藤", "singular" : "绞杀藤" },
+		"sound" : {
+			"attack" : "courtyard/specialVines/VINEATTK.wav",
+			"defend" : "courtyard/specialVines/VINEDFND.wav",
+			"killed" : "courtyard/specialVines/VINEDEAD.wav",
+			"startMoving" : "courtyard/specialVines/VINEMSTR.wav",
+			"endMoving" : "courtyard/specialVines/VINEMEND.wav",
+			"wince" : "courtyard/specialVines/VINEWNCE.wav"
+		},
+		"speed" : 6,
+	}
+
+	
+}

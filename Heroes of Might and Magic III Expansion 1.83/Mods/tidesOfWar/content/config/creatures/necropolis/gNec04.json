@@ -1,0 +1,82 @@
+{
+	"gNec04"://vampirePrince
+	{
+		"name" :
+		{
+			"plural" : "吸血亲王",
+			"singular" : "吸血亲王"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"faction": "necropolis",
+		"aiValue" : 781,
+		"fightValue" : 651,
+		"attack" : 11,
+		"defense" : 11,
+		"cost" :
+		{
+			"gold" : 500
+		},
+		"damage" :
+		{
+			"min" : 6,
+			"max" : 9
+		},
+		"speed" : 10,
+		"upgrades": ["vampireLord"],
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/gNec04B.def",
+			"map" : "creatures/necropolis/map/gNec04M.def",
+			"iconSmall" : "creatures/necropolis/iconsSmall/gNec04S.bmp",
+			"iconLarge" : "creatures/necropolis/iconsBig/gNec04L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 40,
+		"growth" : 4,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "NOSFATTK.wav",
+			"defend": "NOSFDFND.wav",
+			"killed": "NOSFKILL.wav",
+			"move": "NOSFMOVE.wav",
+			"wince": "NOSFWNCE.wav",
+		},
+		"abilities":
+		{
+			"undead" : 
+			{ 
+				"type" : "UNDEAD",
+			},
+			"canFly" :
+			{
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly2.png"
+			},
+			"drainsLife" :
+			{
+				"type" : "LIFE_DRAIN",
+				"val" : 100
+			},
+			"paralize" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.paralyze",
+				"val" : 30,
+				"icon": "bonuses/paralysisattack.png"
+			}
+		}
+	}
+}
+
+

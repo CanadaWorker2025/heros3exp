@@ -1,0 +1,167 @@
+{
+	"ftDrag2":
+	{
+		"name" :
+		{
+			"plural" : "极光女神",
+			"singular" : "极光女神"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction" : "fairy",
+		"aiValue" : 6731,
+		"attack" : 24,
+		"cost" :
+		{
+			"gold" : 4000,
+			"gems" : 2
+		},
+		"damage" :
+		{
+			"max" : 50,
+			"min" : 40
+		},
+		"defense" : 24,
+		"fightValue" : 5872,
+		"graphics" :
+		{
+			"animation" : "fairy/battle/creatures/CFar14.def",
+			"map" : "fairy/map/creatures/mapfdrag2.def",
+			"iconSmall" : "fairy/iconsSmall/creatures/fay14.bmp",
+			"iconLarge" : "fairy/iconsBig/creatures/fairy14.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"growth" : 1,
+		"hitPoints" : 250,
+		"level" : 7,
+		"sound" :
+		{
+			"attack" : "FAERSHOT.wav",
+			"defend" : "ENCHDFND.wav",
+			"killed" : "ENCHKILL.wav",
+			"move"   : "SWRDMOVE.wav",
+			"wince"  : "fairy/IRISWNCE.wav",
+			"startMoving": "ENCHSHOT.wav",
+			"endMoving": "ENCHSHOT.wav"
+ 		},
+		"speed" : 16,
+		"abilities" :
+		{
+			"basicSlayer" : { "type" : "KING", "val": 2 },
+			"canFly" : 
+			{
+				"type" : "FLYING",
+				"subtype": "movementTeleporting"
+			},
+			"resurrection40hp" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.irisRevive",
+				"val" : 60
+			},
+			"resurrects" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.irisRevive",
+				"val" : 3,
+				"icon" : "fairy/icons/bonuses/cure"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"selfLuck" :
+			{
+				"type" : "LUCK",
+				"val" : 1,
+				"valueType" : "INDEPENDENT_MAX",
+				"description" : "该生物永远保持+1幸运"
+			},
+			"selfmorale" :
+			{
+				"type" : "MORALE",
+				"val" : 1,
+				"valueType" : "INDEPENDENT_MAX",
+				"description" : "该生物永远保持+1士气"
+			}
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.boneDragon"
+				},
+				"values" : [ 70, 90, 110, 130, 150, 170, 190, 210, 230, 250 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.ghostDragon"
+				},
+				"values" : [ 70, 90, 110, 130, 150, 170, 190, 210, 230, 250 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "RECEPTIVE"
+				},
+				"values" : [ false, false, false, false, false, false, false, true, true, true ]
+			}
+		]
+	}
+}

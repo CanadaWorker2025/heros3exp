@@ -1,0 +1,132 @@
+{
+	
+	
+	"endurancePotion":
+	{
+		"type": "adventure", 
+		"targetType": "NO_TARGET", 
+		"name": "耐力药水",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 3,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+		},
+ 
+		"flags" : { "positive": true, "special" : true },
+		"targetCondition" : {
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/Potions/icePotion/enhP_Book1.png",
+			"iconEffect": "courtyard/spells/Potions/icePotion/enhP_effect1",
+			"iconScroll": "courtyard/spells/Potions/icePotion/enhP_Scroll1.png",
+			"iconScenarioBonus": "courtyard/spells/Potions/icePotion/enhP_bonus1",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "courtyard/spells/TOUGHNESSPOT.wav"
+		},
+ 
+		"levels" : {
+			"none" : {
+				"description" : "{耐力药水}\r\n\r\n英雄获得300点行动力。",
+				"cost" : 0,
+				"power" : 10,
+				//				"aiValue" : 5,
+				"range" : "X",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"effects" : {
+					"attacks" : {
+						"type" : "MOVEMENT",
+						"subtype" : "heroMovementLand",
+						"val" : 300,
+						"valueType" : "ADDITIVE_VALUE",
+						"duration" : "ONE_DAY",
+						"stacking" : "耐力药水"
+					}
+				}
+			},
+			"basic" : {
+				"description" : "{耐力药水}\r\n\r\n英雄获得300点行动力。",
+				"cost" : 0,
+				"power" : 10,
+				//				"aiValue" : 5,
+				"range" : "X",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"effects" : {
+					"attacks" : {
+						"type" : "MOVEMENT",
+						"subtype" : "heroMovementLand",
+						"val" : 300,
+						"valueType" : "ADDITIVE_VALUE",
+						"duration" : "ONE_DAY",
+						"stacking" : "耐力药水"
+					}
+				}
+			},
+			"advanced" : {
+				"description" : "{耐力药水}\r\n\r\n英雄获得300点行动力。",
+				"cost" : 0,
+				"power" : 10,
+				//				"aiValue" : 5,
+				"range" : "X",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"effects" : {
+					"attacks" : {
+						"type" : "MOVEMENT",
+						"subtype" : "heroMovementLand",
+						"val" : 300,
+						"valueType" : "ADDITIVE_VALUE",
+						"duration" : "ONE_DAY",
+						"stacking" : "耐力药水"
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{耐力药水}\r\n\r\n英雄获得300点行动力。",
+				"cost" : 0,
+				"power" : 10,
+				//				"aiValue" : 5,
+				"range" : "X",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"effects" : {
+					"attacks" : {
+						"type" : "MOVEMENT",
+						"subtype" : "heroMovementLand",
+						"val" : 300,
+						"valueType" : "ADDITIVE_VALUE",
+						"duration" : "ONE_DAY",
+						"stacking" : "耐力药水"
+					}
+				}
+			}
+		}
+	}
+ 
+}

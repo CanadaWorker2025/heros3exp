@@ -1,0 +1,89 @@
+{
+	"overseer":
+	{
+		"name" :
+		{
+			"plural" : "监工",
+			"singular" : "监工"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction" : "pavilion",
+		"aiValue" : 90,
+		"hasDoubleWeek": true,
+		"attack" : 5,
+		"cost" :
+		{
+			"gold" : 60
+		},
+		"damage" :
+		{
+			"max" : 3,
+			"min" : 1
+		},
+		"defense" : 5,
+		"fightValue" : 80,
+		"graphics" :
+		{
+			"animation" : "creaturedefsPavilion/Overseer.def",
+			"map" : "creaturedefsPavilion/OverseerMap.def",
+			"iconSmall" : "creatureiconsPavilion/OverseerSmall.bmp",
+			"iconLarge" : "creatureiconsPavilion/Overseer.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.10,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+
+		},
+		"growth" : 15,
+		"hitPoints" : 7,
+		"level" : 1,
+		"horde" : 4,
+		"sound" :
+		{
+			"attack": "PFOEATTK.wav",
+			"defend": "Pavilion/wippDef.wav",
+			"killed": "Pavilion/wippDie.wav",
+			"move": "Pavilion/wippWalk.wav",
+			"wince": "Pavilion/wippHit.wav"
+ 		},
+		"speed" : 5,
+		"abilities" :
+		{
+			"tribute" :
+			{
+				"type" : "GENERATE_RESOURCE",
+				"subtype" : "resource.gold",
+				"propagator" : "PLAYER",
+				"valueType" : "BASE_NUMBER",
+				"updater" : {
+					"type" : "TIMES_ARMY_SIZE",
+					"filteredCreature" : "overseer"
+				},
+				"stacking" : "Overseers",
+				"val" : 1,
+				"description" : "{纳税}\n每天提供1单位的金币",
+				"icon" : "bonusIcons/gold.png"
+			},
+
+			"tribute2" :
+			{
+				"hidden":true,
+				"type" : "GENERATE_RESOURCE",
+				"subtype" : "resource.gold",
+				"val" : 25,
+				"propagator" : "HERO"
+			}
+		},
+		"stackExperience" :
+		[
+		
+		]	
+	}
+}

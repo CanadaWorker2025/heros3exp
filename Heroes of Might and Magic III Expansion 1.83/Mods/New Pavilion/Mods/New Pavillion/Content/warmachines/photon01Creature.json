@@ -1,0 +1,117 @@
+{
+	"photonCannon1":
+	{
+		"name" : { "plural" : "光子炮", "singular" : "光子炮" },
+		"faction" : "neutral",
+		"level": 6,
+		"aiValue" : 8000,
+		"special" : true,
+		"attack" : 15,
+		"damage" : {
+			 "max" : 9,
+			 "min" : 6
+		},
+                "cost" :
+		{
+			"gold" : 4000
+		},
+		"defense" : 15,
+		"fightValue" : 2500,
+		"graphics" :
+		{
+			"animation": "creaturedefsPavilion/pCannon.def",
+			"iconLarge" : "creatureiconsPavilion/photCreaB",
+			"iconSmall" : "creatureiconsPavilion/photCreaS",
+			"map" : "artifactsPavilion/pyraArtimap.def",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"ray" :
+				[
+					{ "start" : [ 160, 160, 160, 255 ], "end" : [ 160, 160, 160,  64 ] },
+					{ "start" : [ 192, 192, 192, 255 ], "end" : [ 192, 192, 192, 128 ] },
+					{ "start" : [ 224, 224, 224, 255 ], "end" : [ 224, 224, 224, 255 ] },
+					{ "start" : [ 192, 192, 192, 255 ], "end" : [ 192, 192, 192, 128 ] },
+					{ "start" : [ 160, 160, 160, 255 ], "end" : [ 160, 160, 160,  64 ] }
+				],
+				"attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"lowerX" : 46,
+					"lowerY" : -84,
+					"middleX" : 46,
+					"middleY" : -84,
+					"upperX" : 46,
+					"upperY" : -84
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"shoot": "ENERATTK.wav",
+			"killed": "MAGMKILL.wav",
+			"wince": "CARTWNCE.wav"
+		},
+		"doubleWide" : true,
+		"growth" : 0,
+		"shots": 24,
+		"hitPoints" : 300,
+		"speed" : 0,
+		"abilities" :
+		{
+							
+		    "noRetaliation" :
+			{
+				"type" : "NO_RETALIATION",
+				 "val" : 0
+			},
+			"warmachine" :
+			{
+				"type" : "SIEGE_WEAPON"
+			},
+			"blockRetalitation" : 
+			{
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"noPenalty" : 
+			{
+				"type" : "NO_WALL_PENALTY"
+			},
+			"supply" :
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.pyramid01Supply",
+				"val" : 0,
+				"limiters": [ {
+					"type":"CREATURE_TYPE_LIMITER",
+					"creature": "photonCannon1"
+				} ]
+			},
+			"shooter" :
+			{
+				"type" : "SHOOTER"
+			},
+			"photonShot" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.photonLight"
+			}
+			
+//			"automatic" : {
+//				"subtype" : "creature.plagueTentCreature",
+//				"type" : "MANUAL_CONTROL",
+//				"val" : 0,
+//				"valueType" : "BASE_NUMBER",				
+//				"propagator" : "HERO"
+//			}
+
+		}
+	}
+}

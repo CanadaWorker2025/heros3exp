@@ -1,0 +1,43 @@
+{
+	"dunesBigMines" : 
+	{
+		"name" : "巨大水晶矿",
+		"handler": "configurable",
+		"types" : 
+		{
+			"dunesBigGoldMine" : 
+			{
+				"name" : "巨大水晶矿",
+				"templates" : {
+					"crystal" : { 
+					"animation": "dunes objectFunc/BigMine",
+					"mask" : [ "VBBBV", "VBBBB", "VVBAV" ],
+					"visitableFrom" : [ "---", "---", "-+-" ], 
+					"allowedTerrains": [ "dunes" ]
+					}
+				},
+				"sounds": {
+					"ambient": ["objects/bigMineAmbient"]
+				},
+				"onVisitedMessage": "{巨大水晶矿}\r\n\r\nDig dig dig.",				
+				"rewards":
+				[
+					{
+						"message" : "{巨大水晶矿}\r\n\r\nSo this mine suposed to work similar to abandon mine but with mighty desert Dwarfs and producing 2 crystals per day, but for now VCMI don't allow for such thing so it's gives 2 crystal per visit per day.",						
+						"resources": {"crystal" : 2},
+					}
+				],
+				"visitMode" : "once",
+				"resetParameters" : {
+					"period" : 1,
+					"visitors" : true
+				},
+				"rmg" : {
+					"value"		: 4000,
+					"rarity"	: 400,
+					"zoneLimit" : 1
+				}
+			}
+		}
+	}
+}

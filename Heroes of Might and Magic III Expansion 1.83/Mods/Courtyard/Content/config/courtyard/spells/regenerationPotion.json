@@ -1,0 +1,132 @@
+{
+	
+	
+	"regenerationPotion":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "再生药水",
+		"school":
+		{
+			"courtPotion": true
+		},
+		"level": 1,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":["courtyard/spells/Potions/Regeneration/regenPotion.def"]
+		},
+ 
+		"flags" : { "positive": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "normal",
+				"bonus.GARGOYLE" : "normal",
+				"bonus.MECHANICAL" : "normal",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "normal"
+			}
+		},
+		
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/Potions/Regeneration/regenP_book1",
+			"iconEffect": "courtyard/spells/Potions/Regeneration/regenP_effect1",
+			"iconScroll": "courtyard/spells/Potions/Regeneration/regenP_scroll1",
+			"iconScenarioBonus": "courtyard/spells/Potions/Regeneration/regenP_bonus1",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "courtyard/spells/REGENPOT.wav"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{再生药水}\n\n使单位获得每回合恢复5点生命值的能力。\n\n需要： 药剂车",
+	 
+	 
+				"effects":
+				{
+					"regeneration" : {
+						"val" : 5,
+						"type" : "HP_REGENERATION",
+						"duration": "N_TURNS",
+					},
+					"potionMarkerEffect" :
+					{"type" : "SPECIFIC_SPELL_DAMAGE","subtype" : "spell.potionSupply",
+						"val" : 0, "duration" : "N_TURNS",
+					}
+					
+				}
+			},
+			"basic":
+			{
+				"description": "{浓缩再生药水}\n\n使单位获得每回合恢复15点生命值的能力。\n\n需要： 药剂车，初级急救术",
+				"effects":
+				{
+					"regeneration" : { "type" : "HP_REGENERATION", "val" : 15, "duration" : "N_TURNS", },
+					"potionMarkerEffect" :
+					{"type" : "SPECIFIC_SPELL_DAMAGE","subtype" : "spell.potionSupply",
+						"val" : 0, "duration" : "N_TURNS",
+					},
+					
+				},
+				
+			},
+			"advanced":
+			{
+				"description": "{蒸馏再生药水}\n\n使单位获得每回合恢复30点生命值的能力。\n\n需要： 药剂车，中级急救术",
+				"effects":
+				{
+					"regeneration" : { "type" : "HP_REGENERATION", "val" : 30, "duration" : "N_TURNS",},
+					"potionMarkerEffect" :
+					{"type" : "SPECIFIC_SPELL_DAMAGE","subtype" : "spell.potionSupply",
+						"val" : 0, "duration" : "N_TURNS",
+					}
+					
+				},
+
+			},
+			"expert":
+			{
+				"description": "{纯化再生药水}\n\n使单位获得每回合恢复全部生命值的能力。\n\n需要： 药剂车，高级急救术",
+				"effects":
+				{
+					"regeneration" : {
+						"val" : 2000,
+						"type" : "HP_REGENERATION",
+						"duration" : "N_TURNS",
+					},
+					"potionMarkerEffect" :
+					{"type" : "SPECIFIC_SPELL_DAMAGE","subtype" : "spell.potionSupply",
+						"val" : 0, "duration" : "N_TURNS",
+					}
+					
+				}	
+			}
+		}
+	}
+ 
+}

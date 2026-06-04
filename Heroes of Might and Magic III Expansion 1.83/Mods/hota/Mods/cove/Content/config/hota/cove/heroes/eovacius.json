@@ -1,0 +1,56 @@
+{
+	"10eovacius" : {
+		"class" : "navigator",
+		"images" : {
+			"large" : "hota/cove/heroes/eovacius/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/eovacius/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/eovacius/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/eovacius/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "intelligence",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"clone" : {
+					"type" : "SPELL",
+					"subtype" : "spell.specialClone"
+				}
+			}
+		},
+		"spellbook" : [ "clone" ],
+		"texts": {
+			"biography" : "埃瓦希斯的魔法才能不是来自学习，而是来自天赋。他少年时期就用自己独特的替身法术在闹市中做小偷。他不断地变得富有和强势，直到被当地统治者所厌恶。自此这位天赋极强的法师离开了他的家乡并且选择成为海盗。",
+			"name" : "埃瓦希斯",
+			"specialty" : {
+				"tooltip" : "Spell Bonus: Clone",
+				"name" : "镜像大法",
+				"description" : "使用镜像大法魔法时效果大增，战斗中首次施放镜像可以召唤2个镜像。"
+			}
+		}
+	}
+}

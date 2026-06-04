@@ -1,0 +1,64 @@
+{
+	"name" : "New Skills Pack",
+	"description" : "Adds 5 new secondary skills:<br>•&nbsp;<b>Anatomy</b> – chance to deal double damage<br>•&nbsp;<b>Fury</b> – increases number of enemies slain<br>•&nbsp;<b>Impact</b> – reduces enemy defense<br>•&nbsp;<b>Magic Fader</b> – blocks high-level spellcasting<br>•&nbsp;<b>Nimbleness</b> – lowers enemy attack through dodging<br><br>Each skill features unique animations, effects, and specialized heroes.",
+	"author" : "FallainBlack (Fury, Anatomy, Impact, Nimbleness), avatar (Magic fader)",
+	"version" : "1.0.7",
+	"modType" : "Skills",
+	"contact" : "https://discord.gg/PDXDf8P8",
+	"changelog" : {
+		"1.0.7" : [
+			"Added Czech translation by George King",
+			"Improved all descriptions"
+		],
+		"1.0.6" : [
+			"Added russian translation"
+		],
+		"1.0.5" : [
+			"Fixed console warnings"
+		],
+		"1.0.4" : [
+			"magic fader update"
+		],
+		"1.0.3" : [
+			"magic fader fix"
+		],
+		"1.0.2" : [
+			"bug fix, new content, translation fix"
+		],
+		"1.0.1" : [
+			"Change of file structure, minor fix, Polish translation added"
+		],
+		"1.0.0" : [
+			"Initial release"
+		]
+	},
+	"chinese" : {
+		"name" : "新技能包",
+		"description" : "添加5个新辅助技能：<br>•&nbsp;<b>解剖学</b> – 有一定几率造成双倍伤害<br>•&nbsp;<b>狂暴术</b> – 增加击杀的敌人数量<br>•&nbsp;<b>冲击术</b> – 减少敌方防御<br>•&nbsp;<b>法术抑制</b> – 阻止高阶法术施放<br>•&nbsp;<b>敏捷术</b> – 通过闪避来降低敌人攻击l<br><br>每一个技能都有独立的动画，效果和特长英雄。",
+		"translations" : [
+			"translation/chinese.json"
+		]
+	},
+	"czech" : {
+		"name" : "Balíček nových schopností",
+		"description" : "Přidává 5 nových vedlejších dovedností:<br>•&nbsp;<b>Anatomie</b> – šance na dvojnásobné poškození<br>•&nbsp;<b>Zuřivost</b> – vyšší počet zabitých nepřátel<br>•&nbsp;<b>Údernost</b> – snižuje obranu nepřátel<br>•&nbsp;<b>Antimagie</b> – blokuje sesílání vyšších kouzel<br>•&nbsp;<b>Obratnost</b> – snižuje útok nepřátel díky vyhýbání se<br><br>Každá dovednost má vlastní animaci, efekty a specializované hrdiny.",
+		"translations" : [
+			"translation/czech.json"
+		]
+	},
+
+	"polish" : {
+		"name" : "Paczka nowych umiejętności",
+		"description" : "Dodaje 5 nowych umiejętności dodatkowych:<br>•&nbsp;<b>Anatomia</b> – szansa na podwojone obrażenia<br>•&nbsp;<b>Furia</b> – więcej zabitych wrogów<br>•&nbsp;<b>Uderzenie</b> – obniża obronę przeciwnika<br>•&nbsp;<b>Tłumienie magii</b> – blokuje rzucanie potężnych zaklęć<br>•&nbsp;<b>Zwinność</b> – zmniejsza atak wroga dzięki unikom<br><br>Każda umiejętność ma własną animację, efekty i dedykowanych bohaterów.",
+		"translations" : [
+			"translation/polish.json"
+		]
+	},
+	"russian" : {
+		"name" : "Набор новых Навыков",
+		"description" : "Добавляет 5 новых вторичных умений:<br>•&nbsp;<b>Анатомия</b> – шанс нанести двойной урон<br>•&nbsp;<b>Ярость</b> – больше убитых врагов<br>•&nbsp;<b>Натиск</b> – снижает защиту противников<br>•&nbsp;<b>Магическая завеса</b> – блокирует сильные заклинания<br>•&nbsp;<b>Проворство</b> – снижает атаку врагов за счёт уклонений<br><br>Каждое умение сопровождается анимацией, эффектами и уникальными героями.",
+		"translations" : [
+			"translation/russian.json"
+		]
+	}
+}

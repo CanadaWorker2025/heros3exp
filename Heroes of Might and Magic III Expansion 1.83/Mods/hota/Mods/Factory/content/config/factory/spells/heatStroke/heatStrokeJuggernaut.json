@@ -1,0 +1,94 @@
+{
+	"heatStrokeJuggernaut" : {
+		"type" : "ability",
+		"name" : "热射线",
+		"school" : {},
+		"level" : 0,
+		"power" : 0,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"targetType" : "CREATURE",
+		"targetCondition" : {},
+		"animation" : {
+			"affect" : [
+				{
+					"effectName" : "bloodlust"
+				}
+			]
+		},
+		"sounds" : {},
+		"flags" : {
+			"indifferent" : true,
+			"special" : true
+		},
+		"canCastOnlyOnSelf" : true,
+		"canCastWithoutSkip" : true,
+		"graphics" : {
+			"iconImmune" : "spells/heatstrokeDreadnought.png",
+			"iconEffect" : "spells/heatstrokeDreadnought.png",
+			"iconBook" : "spells/heatstrokeDreadnought.png",
+			"iconScroll" : "spells/heatstrokeDreadnought.png",
+			"iconScenarioBonus" : "spells/heatstrokeDreadnought.png"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"battleEffects" : {
+					"heatStroke" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"noRetaliation" : {
+								"type" : "BLOCKS_RETALIATION",
+								"duration" : [
+									"N_TURNS"
+								],
+								"turns" : 1
+							},
+							"cannotMove" : {
+								"type" : "STACKS_SPEED",
+								"duration" : [
+									"N_TURNS",
+									"UNTIL_OWN_ATTACK"
+								],
+								"turns" : 1,
+								"val" : 0,
+								"valueType" : "INDEPENDENT_MIN"
+							},
+							"enableMultihexAttack" : {
+								"type" : "USED_HEATSTROKE_ABILITY",
+								"duration" : [
+									"N_TURNS",
+									"UNTIL_OWN_ATTACK"
+								],
+								"turns" : 1
+							}
+						}
+					}
+				},
+				"targetModifier" : {
+					"smart" : false
+				}
+			},
+			"none" : {
+				"description" : "{热射线}\n拥有范围攻击能力。\n",
+				"cost" : 0,
+				"power" : 0
+			},
+			"basic" : {
+				"description" : "not shown",
+				"cost" : 0,
+				"power" : 0
+			},
+			"advanced" : {
+				"description" : "not shown",
+				"cost" : 0,
+				"power" : 0
+			},
+			"expert" : {
+				"description" : "not shown",
+				"cost" : 0,
+				"power" : 0
+			}
+		}
+	}
+}

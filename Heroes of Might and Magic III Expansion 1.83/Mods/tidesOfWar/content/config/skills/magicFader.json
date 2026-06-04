@@ -1,0 +1,62 @@
+{
+	"magicFader" : {
+		"name" : "法术抑制",
+//		"defaultGainChance" : 4,
+		"specialty" : [],
+		"gainChance" : {
+			"might" : 4,
+			"magic" : 0
+		},
+		"base" : {
+			"effects" : {
+				"blockCast" : {
+					"type" : "OPENING_BATTLE_SPELL",
+					"valueType" : "BASE_NUMBER",
+					"val" : 255
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small" : "skills/magicfader/magicFaderSmallBasic",
+				"medium" : "skills/magicfader/magicFaderMediumBasic",
+				"large" : "skills/magicfader/magicFaderLargeBasic",
+				"scenarioBonus" : "skills/magicfader/senarioExtra1.png"
+			},
+			"description" : "{初级法术抑制}\n\n掌握初级法术抑制的英雄在战斗中可以使敌方英雄无法施展5级魔法。\n抑制效果在第二回合生效。",
+			"effects" : {
+				"blockCast" : {
+					"subtype" : "spell.blockBas"
+				}
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small" : "skills/magicfader/magicFaderSmallAdvanced",
+				"medium" : "skills/magicfader/magicFaderMediumAdvanced",
+				"large" : "skills/magicfader/magicFaderLargeAdvanced",
+				"scenarioBonus" : "skills/magicfader/senarioExtra2.png"
+			},
+			"description" : "{中级法术抑制}\n\n掌握中级法术抑制的英雄在战斗中可以使敌方英雄无法施展4-5级魔法。\n抑制效果在第二回合生效。",
+			"effects" : {
+				"blockCast" : {
+					"subtype" : "spell.blockAdv"
+				}
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small" : "skills/magicfader/magicFaderSmallExpert",
+				"medium" : "skills/magicfader/magicFaderMediumExpert",
+				"large" : "skills/magicfader/magicFaderLargeExpert",
+				"scenarioBonus" : "skills/magicfader/senarioExtra3.png"
+			},
+			"description" : "{高级法术抑制}\n\n掌握高级法术抑制的英雄在战斗中可以使敌方英雄无法施展3-5级魔法。\n抑制效果在第二回合生效。",
+			"effects" : {
+				"blockCast" : {
+					"subtype" : "spell.blockExp"
+				}
+			}
+		}
+	}
+}

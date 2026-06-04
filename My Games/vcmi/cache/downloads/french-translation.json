@@ -1,0 +1,34 @@
+{	
+	"name" : "French translation",
+	"description" : "French translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.4",
+	"author" : "Fabrice TIERCELIN and others",
+	"contact" : "https://github.com/Fabrice-TIERCELIN",
+	"modType" : "Translation",
+	"language" : "french",
+	"compatibility" :
+	{
+		"min" : "1.2.0"
+	},
+	"changelog" : 
+	{ 
+		"1.0.4" : [ "Fix for Warlock and Overlord class names" ],
+		"1.0.3" : [ "added chronicles" ],
+		"1.0.2" : [ "fixed palette in png images" ],
+		"1.0.1" : [ "png images" ],
+		"1.0.0" : [ "Initial release with resources from official french GOG version" ]
+	},
+	"french" : {
+		"name" : "Traduction en français",
+		"description" : "Traduction française de Heroes of Might and Magic III: Complete Edition"	
+	},
+	"german" : {
+		"name" : "Französische Übersetzung",
+		"description" : "Französische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"translations" : [
+		"config/vcmi-french/game.json",
+		"config/vcmi-french/maps.json",
+		"config/vcmi-french/campaigns.json"
+	]
+}

@@ -1,0 +1,46 @@
+{
+	"gazebo" :{	
+		"name": "凉亭",
+		"handler": "configurable",
+		"types" : {
+			"gazebo" :
+			{
+				"name": "凉亭(花费1000金币获得2000经验值)",
+				"rmg" : {
+					"value" : 1500,
+					"rarity" : 50,
+					"mapLimit" : 32
+				},
+				"sounds" : {
+					"visit" : ["GAZEBO"] //TODO: missing sound!
+				},
+				"rewards" :
+				[
+					{
+						"limiter":
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message" : "{凉亭}\r\n\r\n你遇到一位花仙族的智者，她对你的谈吐非常有好感，并且提出如果付给她1000金币，她就将一些有用的知识传授给你。你答应吗？",
+						"heroExperience" : 2000,
+						"resources": {"gold" : -1000},
+					}
+				],
+				"onVisitedMessage": "{凉亭}\r\n\r\n凉亭中的花仙再次见到了你。她热情地请你去她们的花园参观，而你谢绝了她的好意。",
+				"onEmptyMessage" : "{凉亭}\r\n\r\n你遇到一位花仙族的智者，她对你的谈吐非常有好感，并且提出如果付给她1000金币，她就将一些有用的知识传授给你。可是你没有足够的钱。",
+				"canRefuse": true,
+				"visitMode" : "hero",
+				"templates" :
+				{
+					"avxgazeb" :
+					{
+						"animation" : "hota/highlands/hotaInteractive/gazebo/avxgazeb",
+						"visitableFrom" : [ "---", "+++", "+++" ],
+						"mask" : ["VVV", "VAV"], 
+						"allowedTerrains": ["highlands"]
+					}
+				}
+			}
+		}	
+	}
+}

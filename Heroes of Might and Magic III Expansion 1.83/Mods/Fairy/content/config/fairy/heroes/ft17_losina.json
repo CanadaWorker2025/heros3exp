@@ -1,0 +1,76 @@
+{
+	"ftQ_Losina" :
+	{
+		"class" : "warden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "罗辛娜",
+			"biography" : "罗辛娜是花仙王国最优秀的野战医生之一，她最擅长照顾伤员，保持部下的生命和健康。据说她建立了全国最好的急救系统。",
+			"specialty" :
+			{
+				"description" : "在急救术上每级得到5%的额外奖励。",
+				"tooltip" : "{First Aid}\r\n\r\nReceives a 5% per level bonus to First Aid skill.",
+				"name" : "急救术"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/vlos/un32firs.png",
+			"specialtyLarge" : "fairy/heroes/vlos/un44firs.png",
+			"large" : "fairy/heroes/vlos/hpl295.png",
+			"small" : "fairy/heroes/vlos/hps295.png",
+		},
+
+		"spellbook" :
+		[
+			"cure"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "firstAidTent",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 7,
+				"min" : 5
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "firstAid"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"firstAid" : {
+					"subtype" : "spell.firstAid",
+					"type" : "SPECIFIC_SPELL_POWER",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}
+	}
+}

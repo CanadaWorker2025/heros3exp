@@ -1,0 +1,49 @@
+{
+  "core:luck": {
+    "base" : {
+			"effects" : {
+				"main" : {
+					"type" : "LUCK",
+					"valueType" : "BASE_NUMBER"
+				},
+				"fourthEffect" :
+				{ 
+							"type" : "STACK_HEALTH",
+							"valueType" : "PERCENT_TO_BASE",
+							"limiters": [ {"type": "CREATURE_FACTION_LIMITER","parameters" : ["preserve"]} ]
+				},
+				"fifthEffect" :
+				{ 
+							"type" : "CREATURE_DAMAGE",
+							"subtype" : "creatureDamageBoth",
+							"valueType" : "PERCENT_TO_BASE",
+							"limiters": [ {"type": "CREATURE_FACTION_LIMITER","parameters" : ["preserve"]} ]
+				}
+			}
+		},
+		"basic" : {
+			"description": "{初级幸运术}\n\n初级幸运术可以使英雄的幸运值+1。\n\n同时赋予禁林生物额外的生命值10%。",
+			"effects" : {
+				"main" : { "val" : 1 },
+				"fourthEffect" : { "val" : 10 },
+				"fifthEffect" : { "val" : 0 },
+			}
+		},
+		"advanced" : {
+			"description": "{中级幸运术}\n\n中级幸运术可以使英雄的幸运值+2。\n\n同时赋予禁林生物额外的生命值20%。",
+			"effects" : {
+				"main" : { "val" : 2 },
+				"fourthEffect" : { "val" : 20 },
+				"fifthEffect" : { "val" : 0 },
+			}
+		},
+		"expert" : {
+			"description": "{高级幸运术}\n\n高级幸运术可以使英雄的幸运值+3。\n\n同时赋予禁林生物额外的生命值20%，伤害10%。",
+			"effects" : {
+				"main" : { "val" : 3 },
+				"fourthEffect" : { "val" : 20 },
+				"fifthEffect" : { "val" : 10 },
+			}
+		}
+  }
+}

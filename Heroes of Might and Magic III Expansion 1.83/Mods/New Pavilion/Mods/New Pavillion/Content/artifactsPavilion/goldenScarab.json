@@ -1,0 +1,37 @@
+{
+	"goldenScarab":
+	{
+		"type": ["HERO"],
+		"slot" : "NECK",
+		"class" : "MINOR",
+		"value": 4000,	
+		"text":
+		{
+			"name": "黄金圣甲虫",
+			"description": "{黄金圣甲虫}\r\n\r\n戴上这只圣甲虫能使你的部队士气+2，并且能每天增加350金币的收入。",
+			"event": "在营地里漫步时，你发现一块石头上趴着一只金色的圣甲虫，你伸手去捉它，但它变成了一尊雕像。你不假思索地把它藏进了口袋里。"
+		},
+		"graphics":
+		{
+			"image": "artifactsPavilion/goldenScarab.png",
+			"scenarioBonus": "artifactsPavilion/bonus2.png",
+			"map": "artifactsPavilion/goldenScarabmap.def"
+		},
+		"bonuses":
+		{
+			"morale":
+			{
+				"type": "MORALE",
+				"val": 2,
+				"valueType" : "BASE_NUMBER"
+			},
+			"gold":
+			{
+				"type": "GENERATE_RESOURCE",
+				"subtype": "resource.gold",
+				"val": 350,
+				"valueType" : "BASE_NUMBER"
+			}
+		}
+	}
+}

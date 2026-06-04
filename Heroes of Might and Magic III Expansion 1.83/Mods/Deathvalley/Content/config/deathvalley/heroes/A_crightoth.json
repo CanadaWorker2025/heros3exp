@@ -1,0 +1,58 @@
+{
+	"a_dvCrightoth" :
+	{
+		"class" : "dvDeathlord",
+		"female" : false,
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/crightoth/Un32Ball.bmp",
+			"specialtyLarge" : "deathvalley/heroes/crightoth/Un44Ball.bmp",
+			"large" : "deathvalley/heroes/crightoth/crightothL.png",
+			"small" : "deathvalley/heroes/crightoth/crightothS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "ballista",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "boneHook",
+				"max" : 7,
+				"min" : 5
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"creature" : "ballista"
+		},		
+		"texts" : {
+			"biography" : "克雷托斯是王国最狡猾的将军。他是战争学院的主要讲师，当他上战场时，他经常教育他的敌人为什么他们不应该干扰他的王国。",
+			"name" : "克雷托斯",
+			"specialty" : {
+				"description" : "达到4级以后提高弩车的攻击力与防御力。",
+				"tooltip" : "Ballista bonus",
+				"name" : "弩车"
+			}
+		}
+	}
+}
+

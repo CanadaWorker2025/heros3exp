@@ -1,0 +1,52 @@
+{
+  "core:leadership" : {
+		"base" : {
+			"effects" : {
+				"relevant01" : 
+					{
+						"propagator" : "HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.mdtShieldWand",
+						"val" : 0,
+						"limiters": [ { "type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.mdtShieldWand" ] }	]
+					}
+			}
+		},
+		"basic" : {
+			"effects" : {
+				"relevant01" : 
+					{
+						"val" : 1
+					}
+			},
+		},
+		"advanced" : {
+			"effects" : {
+				"relevant01" : 
+					{
+						"val" : 2
+					}
+			}
+		},
+		"expert" : {
+			"effects" : {
+				"relevant01" : 
+					{
+						"val" : 3
+					}
+			}
+		}
+	},
+	"core:archery" : {
+		"base" : {
+			"effects" : {
+				"activeLeadship" : 
+					{
+						"propagator" : 	"HERO","type" : "MORE_DAMAGE_FROM_SPELL","subtype" : "spell.mdtShieldWand",
+						"val" : 0
+					},
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"skeletonTransformer" : {
+		"handler":"market",
+		"name" : "骷髅转换场",
+		"types" : {
+			"skeletonTransformer" : {
+				"rmg" : {
+					"value"	: 500,
+					"rarity" : 15,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["MYSTERY"]
+				},
+				"modes" : ["creature-undead"],
+				//"title" : "Skeleton Transformer",
+				"efficiency" : 5,
+				"templates" : {
+					"AVXsktrs" : { "animation" : "hota/skeletonTransformer/AVXsktrs", 
+						"mask" : [ "VVV", "VVV", "VBA" ], 
+						"visitableFrom" : [ "---", "--+", "+++" ],
+						"allowedTerrains": [ "subterra"]
+					}
+				}
+			}
+		}
+	}		
+}

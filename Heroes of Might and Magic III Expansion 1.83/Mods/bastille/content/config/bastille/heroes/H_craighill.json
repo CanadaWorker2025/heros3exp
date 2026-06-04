@@ -1,0 +1,63 @@
+{
+	"h_craighill" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "克莱格希尔",
+			"biography" : "克莱格希尔曾经旅居克鲁罗德，和野蛮人生活在一起。经过长时间的异地生活，他觉得自己越来越像野蛮人。虽然他最后回到了家乡，但是他心中的战斗欲望却一直除之不去。为此，他还是决定再次离开，作为战士继续之前的生活。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高角斗士或烈焰角斗士的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Gladiators",
+				"name" : "角斗士"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "bastille/heroes/craighill/skill32-8.bmp",
+			"specialtyLarge" : "bastille/heroes/craighill/skill8.bmp",
+			"large" : "bastille/heroes/craighill/HPL007DW.bmp",
+			"small" : "bastille/heroes/craighill/HPS007DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+				"specialty" : {
+			"creature" : "bgladiator"
+		}
+	}
+}
+

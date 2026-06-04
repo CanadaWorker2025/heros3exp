@@ -1,0 +1,75 @@
+{
+	"tarhero15" :
+	{
+    "class": "taHeroM",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "伊欧娜",
+			"biography" : "许多女性主要关心的是如何保持美丽。年轻的女术士伊欧娜也曾经纠结过这个问题。这个女孩找到了借助寒冷魔法来保持身体年轻的方法，但有些咒语被弄混淆了，现在她没有低温就活不下去了。在冰洞里孤独地度过了几十年以后，伊欧娜的思绪完全被阴云笼罩，她决定加入她的“兄弟”弗里根人，向全人类复仇。",
+			"specialty" :
+			{
+				"description" : "在抵抗力上每级得到5%的额外奖励。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "抵抗力"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero15/skill15.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero15/skills15.bmp",
+			"large" : "tartarus/heroes/tarhero15/tarH15.bmp",
+			"small" : "tartarus/heroes/tarhero15/tarH15S.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"removeObstacle"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"resistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}
+

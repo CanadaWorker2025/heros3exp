@@ -1,0 +1,158 @@
+e-mail: baratorch@yandex.ru
+
+[HOMM3 HD CRASH LOG]
+
+Log
+{
+(null)
+}
+
+HOMM3 HD version: 5.2 RC28
+Time {   08/19/2024	17:37:22 }
+
+GUN:  [9899_9999_9999_9999_1XV6_1V95_9959_YU5U.PYT59AMH743T MENV PRLCRZ 743TY]
+
+Exception
+{
+   Module: 	_hd3_.dll
+   Adress:      [ _hd3_.dll+0xBB0A ]
+   Code:        EXCEPTION_BREAKPOINT
+   Flags:       0x00000000
+   Information: 0x00000000 
+}
+
+Context { EAX: 0x00000000, ECX: 0x00960000, EDX: 0x00960000, EBX: 0x003D3000, ESP: 0x0019F8DC, EBP: 0x0019FA90, ESI: 0x6CDC2B40, EDI: 0x0061A884 }
+
+Call stack
+{
+   						? called from before	[ 0x00001000 ]
+   						? called from before	[ 0x32393135 ]
+}
+
+Call stack V2
+{
+   1000BB0A (_hd3_: 10000000): (?): HdCommon_Set
+}
+
+Modules
+{
+   0x00400000: Heroes3 HD.exe	 (size: 0x002CD000, entry point: 0x0061A884) - D:\h3VCMI\h3 rc??\Heroes3 HD.exe
+   0x10000000: _hd3_.dll	 (size: 0x00047000, entry point: 0x10018BCC) - D:\h3VCMI\h3 rc??\_hd3_.dll
+   0x6CE00000: patcher_x86.dll	 (size: 0x00079000, entry point: 0x6CE103D3) - D:\h3VCMI\h3 rc??\patcher_x86.dll
+   0x00DB0000: smackw32.dll	 (size: 0x0001B000, entry point: 0x00DBC0B0) - D:\h3VCMI\h3 rc??\smackw32.dll
+   0x00DD0000: binkw32.dll	 (size: 0x0002B000, entry point: 0x00DE1705) - D:\h3VCMI\h3 rc??\binkw32.dll
+   0x00E20000: IFC20.dll	 (size: 0x00023000, entry point: 0x00E2F04E) - D:\h3VCMI\h3 rc??\IFC20.dll
+   0x6CDC0000: HD_UPD.dll	 (size: 0x0003C000, entry point: 0x6CDC5405) - D:\h3VCMI\h3 rc??\HD_UPD.dll
+
+
+   0x76FD0000: ntdll.dll	 (size: 0x001B2000, entry point: 0x00000000) - C:\WINDOWS\SYSTEM32\ntdll.dll
+   0x766E0000: KERNEL32.DLL	 (size: 0x000F0000, entry point: 0x766F77C0) - C:\WINDOWS\System32\KERNEL32.DLL
+   0x760D0000: KERNELBASE.dll	 (size: 0x00279000, entry point: 0x762105E0) - C:\WINDOWS\System32\KERNELBASE.dll
+   0x75120000: USER32.dll	 (size: 0x001AA000, entry point: 0x7514B7B0) - C:\WINDOWS\System32\USER32.dll
+   0x76CD0000: win32u.dll	 (size: 0x0001A000, entry point: 0x00000000) - C:\WINDOWS\System32\win32u.dll
+   0x76630000: GDI32.dll	 (size: 0x00023000, entry point: 0x76634810) - C:\WINDOWS\System32\GDI32.dll
+   0x74AC0000: VERSION.dll	 (size: 0x00008000, entry point: 0x74AC18E0) - C:\WINDOWS\SYSTEM32\VERSION.dll
+   0x72050000: WINMM.dll	 (size: 0x00031000, entry point: 0x72059680) - C:\WINDOWS\SYSTEM32\WINMM.dll
+   0x76540000: gdi32full.dll	 (size: 0x000E2000, entry point: 0x765818C0) - C:\WINDOWS\System32\gdi32full.dll
+   0x76910000: ucrtbase.dll	 (size: 0x00112000, entry point: 0x76938260) - C:\WINDOWS\System32\ucrtbase.dll
+   0x74F50000: msvcrt.dll	 (size: 0x000C4000, entry point: 0x74F85C30) - C:\WINDOWS\System32\msvcrt.dll
+   0x76660000: msvcp_win.dll	 (size: 0x00079000, entry point: 0x766791B0) - C:\WINDOWS\System32\msvcp_win.dll
+   0x76050000: ADVAPI32.dll	 (size: 0x0007F000, entry point: 0x76063410) - C:\WINDOWS\System32\ADVAPI32.dll
+   0x76AE0000: sechost.dll	 (size: 0x00086000, entry point: 0x76B05380) - C:\WINDOWS\System32\sechost.dll
+   0x6CE90000: DDRAW.dll	 (size: 0x000EB000, entry point: 0x6CEA4180) - C:\WINDOWS\SYSTEM32\DDRAW.dll
+   0x74EC0000: bcrypt.dll	 (size: 0x0001A000, entry point: 0x74EC9D30) - C:\WINDOWS\System32\bcrypt.dll
+   0x6C9F0000: WSOCK32.dll	 (size: 0x00008000, entry point: 0x6C9F1850) - C:\WINDOWS\SYSTEM32\WSOCK32.dll
+   0x76350000: RPCRT4.dll	 (size: 0x000BA000, entry point: 0x76390290) - C:\WINDOWS\System32\RPCRT4.dll
+   0x759A0000: SHELL32.dll	 (size: 0x006A3000, entry point: 0x75B300C0) - C:\WINDOWS\System32\SHELL32.dll
+   0x74EE0000: WS2_32.dll	 (size: 0x0005F000, entry point: 0x74EF80C0) - C:\WINDOWS\System32\WS2_32.dll
+   0x76B70000: ole32.dll	 (size: 0x00155000, entry point: 0x76B9EAD0) - C:\WINDOWS\System32\ole32.dll
+   0x74F40000: PSAPI.DLL	 (size: 0x00006000, entry point: 0x74F41550) - C:\WINDOWS\System32\PSAPI.DLL
+   0x76D40000: combase.dll	 (size: 0x0027F000, entry point: 0x76E7A6C0) - C:\WINDOWS\System32\combase.dll
+   0x6C620000: dxgi.dll	 (size: 0x000CA000, entry point: 0x6C666070) - C:\WINDOWS\SYSTEM32\dxgi.dll
+   0x6CE80000: DCIMAN32.dll	 (size: 0x00007000, entry point: 0x6CE820F0) - C:\WINDOWS\SYSTEM32\DCIMAN32.dll
+   0x746C0000: IPHLPAPI.DLL	 (size: 0x00024000, entry point: 0x746C8D40) - C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+   0x68FE0000: dxcore.dll	 (size: 0x0002D000, entry point: 0x68FFAEE0) - C:\WINDOWS\SYSTEM32\dxcore.dll
+   0x752D0000: IMM32.DLL	 (size: 0x00025000, entry point: 0x752D2B30) - C:\WINDOWS\System32\IMM32.DLL
+   0x730F0000: kernel.appcore.dll	 (size: 0x00013000, entry point: 0x730F4770) - C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+   0x74C10000: bcryptPrimitives.dll	 (size: 0x00063000, entry point: 0x74C48550) - C:\WINDOWS\System32\bcryptPrimitives.dll
+   0x71450000: uxtheme.dll	 (size: 0x00082000, entry point: 0x71482B80) - C:\WINDOWS\system32\uxtheme.dll
+   0x76AD0000: NSI.dll	 (size: 0x00007000, entry point: 0x76AD2000) - C:\WINDOWS\System32\NSI.dll
+   0x72E50000: dhcpcsvc.DLL	 (size: 0x00017000, entry point: 0x72E54400) - C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
+   0x73F00000: WININET.dll	 (size: 0x0048E000, entry point: 0x7424AD60) - C:\WINDOWS\SYSTEM32\WININET.dll
+   0x73A20000: iertutil.dll	 (size: 0x0023A000, entry point: 0x73BEAE00) - C:\WINDOWS\SYSTEM32\iertutil.dll
+   0x74600000: SspiCli.dll	 (size: 0x00026000, entry point: 0x74610F60) - C:\WINDOWS\SYSTEM32\SspiCli.dll
+   0x57DE0000: dbghelp.dll	 (size: 0x001D6000, entry point: 0x57E21440) - C:\WINDOWS\SYSTEM32\dbghelp.dll
+   0x76A30000: OLEAUT32.dll	 (size: 0x0009C000, entry point: 0x76A6ADF0) - C:\WINDOWS\System32\OLEAUT32.dll
+   0x731E0000: windows.storage.dll	 (size: 0x006F3000, entry point: 0x733DF850) - C:\WINDOWS\SYSTEM32\windows.storage.dll
+   0x73110000: wintypes.dll	 (size: 0x000C7000, entry point: 0x731792C0) - C:\WINDOWS\SYSTEM32\wintypes.dll
+   0x76840000: SHCORE.dll	 (size: 0x000C6000, entry point: 0x76896C40) - C:\WINDOWS\System32\SHCORE.dll
+   0x76CF0000: shlwapi.dll	 (size: 0x0004B000, entry point: 0x76D08DF0) - C:\WINDOWS\System32\shlwapi.dll
+   0x730D0000: profapi.dll	 (size: 0x00019000, entry point: 0x730DA370) - C:\WINDOWS\SYSTEM32\profapi.dll
+   0x730B0000: ondemandconnroutehelper.dll	 (size: 0x00014000, entry point: 0x730B4280) - C:\WINDOWS\SYSTEM32\ondemandconnroutehelper.dll
+   0x72F70000: mswsock.dll	 (size: 0x00051000, entry point: 0x72F7AFD0) - C:\WINDOWS\system32\mswsock.dll
+   0x72EA0000: WINNSI.DLL	 (size: 0x0000A000, entry point: 0x72EA23D0) - C:\WINDOWS\SYSTEM32\WINNSI.DLL
+   0x72FD0000: WINHTTP.dll	 (size: 0x000DC000, entry point: 0x730274E0) - C:\WINDOWS\SYSTEM32\WINHTTP.dll
+   0x70BF0000: urlmon.dll	 (size: 0x001A2000, entry point: 0x70C73E60) - C:\WINDOWS\SYSTEM32\urlmon.dll
+   0x71BE0000: srvcli.dll	 (size: 0x0001D000, entry point: 0x71BE51B0) - C:\WINDOWS\SYSTEM32\srvcli.dll
+   0x71BD0000: netutils.dll	 (size: 0x0000B000, entry point: 0x71BD31F0) - C:\WINDOWS\SYSTEM32\netutils.dll
+   0x72EB0000: DNSAPI.dll	 (size: 0x000BC000, entry point: 0x72EDCA20) - C:\WINDOWS\SYSTEM32\DNSAPI.dll
+   0x72E90000: rasadhlp.dll	 (size: 0x00008000, entry point: 0x72E91A40) - C:\Windows\System32\rasadhlp.dll
+   0x6D150000: fwpuclnt.dll	 (size: 0x0005D000, entry point: 0x6D16AE70) - C:\WINDOWS\System32\fwpuclnt.dll
+}
+
+Command Line
+{
+   "D:\h3VCMI\h3 rc??\Heroes3 HD.exe" 
+}
+
+\Data files:
+{
+   \avcodec-59.dll
+   \avformat-59.dll
+   \avutil-57.dll
+   \BINKW32.DLL
+   \boost_chrono-vc143-mt-x64-1_81.dll
+   \boost_filesystem-vc143-mt-x64-1_81.dll
+   \boost_iostreams-vc143-mt-x64-1_81.dll
+   \boost_locale-vc143-mt-x64-1_81.dll
+   \boost_program_options-vc143-mt-x64-1_81.dll
+   \boost_thread-vc143-mt-x64-1_81.dll
+   \brotlicommon.dll
+   \brotlidec.dll
+   \bz2.dll
+   \concrt140.dll
+   \double-conversion.dll
+   \DPWSOCKX.DLL
+   \freetype.dll
+   \fuzzylite.dll
+   \h3ccmped.exe
+   \h3maped.exe
+   \harfbuzz.dll
+   \HD_CRASH_LOG.TXT
+   \HD_ES.dll
+   \HD_HOTA.dll
+   \HD_Launcher.exe
+   \HD_LAUNCHER_CRASH_LOG.TXT
+   \HD_MCR.dll
+   \HD_SCX2.dll
+   \HD_SOD.dll
+   \HD_TC2.dll
+   \HD_UPD.dll
+   \HD_VGL.dll
+   \HD_WOG.dll
+   \Heroes3 HD.exe
+   \Heroes3 HD.lnk
+   \HoMM3 HD????.doc
+   \HotA_settings.ini
+   \HW_HOTA.dll
+   \HW_SOD.dll
+   \icudt72.dll
+   \icuin72.dll
+   \icuio72.dll
+   \icutu72.dll
+   \icuuc72.dll
+   \IFC20.dll
+   \libcrypto-3-x64.dll
+   \liblzma.dll
+   \libpng16.dll
+   \libssl-3-x64.

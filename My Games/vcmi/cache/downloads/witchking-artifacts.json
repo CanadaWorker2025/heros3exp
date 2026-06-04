@@ -1,0 +1,67 @@
+{
+	"name" : "Witchking artifacts",
+	"description" : "Collection of 13 new artifacts proposed by Witchking",
+	"version" : "1.0.8",
+	"author" : "Witchking, Warmonger",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"modType" : "Artifacts",
+	"compatibility" :
+	{
+		"min" : "1.7.0"
+	},	
+	"changelog" :
+	{
+		"1.0.8"   : [ "Yet another update for vcmi-1.7 format" ],
+		"1.0.7"   : [ "Update for vcmi-1.7 format" ],
+		"1.0.6"   : [ "Minor fixes" ],
+		"1.0.5"   : [ "Added russian translation by Keloraen", "Added polish translation by FallainBlack" ],
+		"1.0.4"   : [ "Fixed paths to translation files" ],
+		"1.0.3"   : [ "Added chinese translation by LeoAllenHan" ],
+		"1.0.2"   : [ "Czech translation by George King" ],
+		"1.0.1"   : [ "Update to vcmi-1.5 format" ],
+		"1.0.0"   : [ "Initial release" ]
+	},
+	"czech" : {
+		"name" : "Artefakty Krále čarodějů",
+		"description" : "První balíček nových artefaktů navržený Králem čarodějů",
+		"translations" : [
+			"translation/witchking-artifacts/czech.json"
+		]
+	},
+	"chinese" : {
+		"name" : "巫妖王宝物",
+		"description" : "Withcking制作的首个新宝物模组",
+		"translations" : [
+			"translation/witchking-artifacts/chinese.json"
+		]
+	},
+	"russian" : {
+		"name" : "Артефакты Witchking'а",
+		"description" : "Коллекция из 13 новых артефактов, предложенная Witchking",
+		"translations" : [
+			"translation/witchking-artifacts/russian.json"
+		]
+	},
+	"polish" : {
+		"name" : "Artefakty Witchkingа",
+		"description" : "Kolekcja 13 nowych artefaktów autorstwa Witchkinga",
+		"translations" : [
+			"translation/witchking-artifacts/polish.json"
+		]
+	},
+	"artifacts" :
+	[
+		"config/witchking/wizardswand.json",
+		"config/witchking/philosophersstone.json",
+		"config/witchking/bookofdead.json",
+		"config/witchking/crownofskies.json",
+		"config/witchking/dwarvenmine.json",
+		"config/witchking/healersring.json",
+		"config/witchking/amuletofdragoneye.json",
+		"config/witchking/stormstone.json",
+		"config/witchking/sacredwarhammer.json",
+		"config/witchking/ritualdagger.json",
+		"config/witchking/shieldofarrowturning.json",
+		"config/witchking/dwarvenhelmet.json"
+	]
+}

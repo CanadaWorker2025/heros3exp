@@ -1,0 +1,43 @@
+{
+	"name" : "More Secondary Skills",
+	"description" : "This mod allows heroes to learn more than 8 secondary skills.",
+	"version" : "1.1",
+	"author" : "",
+	"contact" : "",
+	"modType" : "Mechanics",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"changelog" : {
+		"1.1" : [
+			"Bigger Skill Pool submod added"
+		],
+		"1.0" : [
+			"Initial version"
+		]
+	},
+	"chinese" : {
+		"name" : "更多辅助技能",
+		"description" : "这个模组允许英雄学习超过8个辅助技能。"
+	},
+	"czech" : {
+		"name" : "Více druhotných dovedností",
+		"description" : "Tato modifikace umožňuje hrdinům naučit se více než 8 druhotných dovedností."
+	},
+	"polish" : {
+		"name" : "Więcej umiejętności pobocznych",
+		"description" : "Ten mod pozwala bohaterom nauczyć się więcej niż 8 umiejętności pobocznych."
+	},
+	"german" : {
+		"name" : "Mehr Sekundär-Fertigkeiten",
+		"description" : "Diese Mod erlaubt Helden, mehr als 8 Sekundär-Fertigkeiten zu erlernen."
+	},
+	"ukrainian" : {
+		"name" : "Більше другорядних навичок",
+		"description" : "Цей мод дозволяє героям вивчати більше ніж 8 другорядних навичок."
+	},
+	"russian" : {
+		"name" : "Больше вторичных навыков",
+		"description" : "Этот мод позволяет героям изучать более 8 вторичных навыков."
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"core:boat" : {
+		"types" : {
+			"airshipFactory" : {
+				"removable": true,
+				"rmg" : {
+				},
+				"layer" : "air",
+				// If set to true, it is possible to attack wandering monsters from boat
+				"onboardAssaultAllowed" : false,
+				// If set to true, it is possible to visit object (e.g. pick up resources) from boat
+				"onboardVisitAllowed" : false,
+				"actualAnimation" : "factory/map/objects/AAir00.def",
+				"overlayAnimation" : "ABM03_.def",
+				"flagAnimations" : [
+				"factory/map/objects/AAirF00L.def",
+				"factory/map/objects/AAirF00G.def",
+				"factory/map/objects/AAirF00R.def",
+				"factory/map/objects/AAirF00D.def",
+				"factory/map/objects/AAirF00B.def",
+				"factory/map/objects/AAirF00P.def", 
+				"factory/map/objects/AAirF00W.def",
+				"factory/map/objects/AAirF00K.def"],
+				"templates" : {
+					"default" : {
+						"animation" : "factory/map/objects/AAir00_E.def",
+						"visitableFrom" : [ "+++", "+-+", "+++" ],
+						"mask" : [ "VVV","VVV","VVV", "VAV" ]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "basepath" : "town-screen/necropolis/frames/",
+	"images" :
+	[
+		{ "frame" : 44, "file" : "TPNEx1.bmp"},
+		{ "frame" : 45, "file" : "TPNEx2.bmp"},
+		{ "frame" : 46, "file" : "TPNEx3.bmp"},
+		{ "frame" : 47, "file" : "TPNEx4.bmp"},
+		{ "frame" : 48, "file" : "TPNEx5.bmp"},
+		{ "frame" : 49, "file" : "TPNEx6.bmp"},
+		{ "frame" : 50, "file" : "TPNEx7.bmp"},	
+		{ "frame" : 54, "file" : "TPNvamp3.bmp"},
+		{ "frame" : 61, "file" : "TPNvamp4.bmp"}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"cameraObscuraArtifact":
+        {
+	"type" : ["HERO"],
+	"warMachine":"cameraObscuraCreature",
+        "class": "SPECIAL",
+        "value": 3000,
+        "slot":"MACH1",
+        "text":
+		{
+			"name": "魔相机",
+			"description": "{魔相机}\r\n\r\n魔相机可以使敌方部队{老化}。",
+			"event": "你偶然发现了一个奇特却令人生厌的场景：几具干枯的尸体穿着时髦的衣服，摆成像全家福一样的姿势。摄影师不知所踪，代替帆布的是一个小木箱，三脚架上还固定着相机和镜头。你拿起设备后迅速离开，隐约感觉死者在盯着你。"
+		},
+		"graphics":
+		{
+			"image": "courtyard/icons/artifacts/Camera_art1",
+			"scenarioBonus": "courtyard/icons/artifacts/Camera_artBonus01",
+			"map"  : "courtyard/map/artCamera.def",
+		}
+	}
+}
+
+

@@ -1,0 +1,116 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"ancientAltar" : {
+				"name" : "古代祭坛",
+				"templates" : {
+					"base" : {
+						"animation" : "hota/banks/avchrnal.def",
+						"visitableFrom" : [
+							"---",
+							"-++",
+							"+++"
+						],
+						"mask" : [
+							"VVVVV",
+							"VVBBV",
+							"VBBBB",
+							"VVBAV"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"MYSTERY.wav"
+					],
+					"ambient" : [
+						"hota/HORNALTR"
+					]
+				},
+				"compatibilityIdentifiers" : [
+					"object"
+				],
+				//				"rmg" : {
+				//					"value" :  20000,
+				//					"rarity" : 20
+				//				},
+				"blockedVisitable" : true,
+				"onGuardedMessage" : "{古代祭坛}\r\n\r\n在地底深处，你会发现一座古老的庙宇，那里有深渊海蛇守护着一件拥有强大力量的神器。\r\n你想和它们战斗吗？",
+				"onVisitedMessage" : "{古代祭坛}\r\n\r\n在地底深处，你会发现一座古老的庙宇。这里曾经存放着一件拥有强大力量的神器，但现在庙宇空无一人。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "default",
+				"rewards" : [
+					{
+						"message" : "{古代祭坛}\r\n\r\n在打败了深渊海蛇后，你发现了深渊号角。",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 32,
+								"type" : "haspid"
+							}
+						],
+						"artifacts" : [
+							"hornOfTheAbyss"
+						]
+					}
+				]
+			},
+			// Required for map support for some older custom maps
+			"ancientAltarOld" : {
+				"name" : "古代祭坛（旧版）",
+				"templates" : {
+					"base" : {
+						"animation" : "hota/banks/avchrnal.def",
+						"visitableFrom" : [
+							"---",
+							"-++",
+							"+++"
+						],
+						"mask" : [
+							"VVVVV",
+							"VVBBV",
+							"VBBBB",
+							"VVBAV"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"MYSTERY.wav"
+					],
+					"ambient" : [
+						"hota/HORNALTR"
+					]
+				},
+				"blockedVisitable" : true,
+				"onGuardedMessage" : "{古代祭坛}\r\n\r\n在地底深处，你会发现一座古老的庙宇，那里有深渊海蛇守护着一件拥有强大力量的神器。\r\n你想和它们战斗吗？",
+				"onVisitedMessage" : "{古代祭坛}\r\n\r\n在地底深处，你会发现一座古老的庙宇。这里曾经存放着一件拥有强大力量的神器，但现在庙宇空无一人。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "default",
+				"rewards" : [
+					{
+						"message" : "{古代祭坛}\r\n\r\n在打败了深渊海蛇后，你发现了深渊号角。",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 32,
+								"type" : "haspid"
+							}
+						],
+						"artifacts" : [
+							"hornOfTheAbyss"
+						]
+					}
+				]
+			}
+		}
+	}
+}

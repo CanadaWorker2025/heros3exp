@@ -1,0 +1,51 @@
+{
+	"06anabel" : {
+		"class" : "captain",
+		"female" : true,
+		"images" : {
+			"large" : "hota/cove/heroes/anabel/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/anabel/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/anabel/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/anabel/icons/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "nymph",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "pirate",
+				"min" : 4,
+				"max" : 7
+			},
+			{
+				"creature" : "pirate",
+				"min" : 4,
+				"max" : 7
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "offence",
+				"level" : "basic"
+			},
+			{
+				"skill" : "archery",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"creature" : "hota.cove:pirate"	
+		},
+		"texts" : {
+			"biography" : "每一个海盗都知道没有一个女人比安娜贝尔更为阴险，如果谁触怒了她等待那人的就是死刑。她的父亲“无耳的尼尔斯（聋子尼尔斯）”曾经是最残忍的海盗，安娜贝尔很好地继承了父亲的一切，她不仅厉害，而且还会给属下以恩惠来激励他们奋勇作战。",
+			"name" : "安娜贝尔",
+			"specialty" : {
+				"tooltip" : "Creature Bonus: Pirates",
+				"name" : "海贼",
+				"description" : "达到3级以后提高海贼、海盗和皇家海盗的攻击力与防御力。"
+			}
+		}
+	}
+}

@@ -1,0 +1,236 @@
+{
+	"hamsArt3" : {
+		"class" : "MAJOR",
+		"graphics" : { 
+			"image": "artifacts/iconsSmall/arti3S",
+			"scenarioBonus": "artifacts/iconsBig/arti3",
+			"map": "artifacts/map/arti3map"
+		},
+		"slot" : "FEET",
+		"text" : {
+			"description" : "{  水晶鞋  }\r\n\r\n穿着水晶鞋，可以使你的运气+2，并且每天多获得2个水晶。",
+			"event" : "你走进一间小磨坊，里面的少女和你诉说了水晶鞋的来历，据说这来自于一位仙女的馈赠，只是可惜它不怎么合脚，也就不能去参加王子的舞会了。你答应帮她见到王子，于是她将这双鞋赠送给了你。",
+			"name" : "水晶鞋"
+		},
+		"bonuses" : {
+			"luck":
+			{
+				"type" : "LUCK",
+				"val" : 2,
+				"valueType" : "BASE_NUMBER"
+			},
+			"crystal":
+			{
+				"subtype" : "resource.crystal",
+				"type" : "GENERATE_RESOURCE",
+				"val" : 2,
+				"valueType" : "BASE_NUMBER",
+				"stacking" : "ALWAYS"
+			}
+		},
+
+		"type" : [ "HERO" ],
+		"value" : 6000
+	},
+	"hamsArt4" : {
+		"class" : "RELIC",
+		"graphics" : { 
+			"image": "artifacts/iconsSmall/nFCA01",
+			"scenarioBonus": "artifacts/iconsBig/nFCA01L",
+			"map": "artifacts/map/nFCC01"
+		},
+		"slot" : "HEAD",
+		"text" : {
+			"description" : "{皇权之冠}\r\n\r\n戴上皇权之冠可以使你的知识+7。",
+			"event" : "国王知道你劳苦功高，于是赏赐你一顶皇冠。你知道这顶皇冠能带来极大的好处。而且他很可能以后将传位于你。",
+			"name" : "皇权之冠"
+		},
+		"bonuses" : {
+			"knowledge":
+			{
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+
+		"type" : [ "HERO" ],
+		"value" : 10000
+	},
+	"hamsArt5" : {
+		"class" : "RELIC",
+		"graphics" : { 
+			"image": "artifacts/iconsSmall/nFCA03",
+			"scenarioBonus": "artifacts/iconsBig/nFCA03L",
+			"map": "artifacts/map/nFCC03"
+		},
+		"slot" : "TORSO",
+		"text" : {
+			"description" : "{皇权战甲}\r\n\r\n穿上皇权战甲可以使你的力量+7。",
+			"event" : "国王知道你劳苦功高，于是赏赐你一件铠甲。你知道这件铠甲能带来极大的好处。而且他很可能以后将传位于你。",
+			"name" : "皇权战甲"
+		},
+		"bonuses" : {
+			"spellpower":
+			{
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+
+		"type" : [ "HERO" ],
+		"value" : 10000
+	},
+	"hamsArt6" : {
+		"class" : "RELIC",
+		"graphics" : { 
+			"image": "artifacts/iconsSmall/nFCA02",
+			"scenarioBonus": "artifacts/iconsBig/nFCA02L",
+			"map": "artifacts/map/nFCC02"
+		},
+		"slot" : "RIGHT_HAND",
+		"text" : {
+			"description" : "{皇权之杖}\r\n\r\n拿在右手，皇权之杖可以使你的攻击力+8。",
+			"event" : "你这天回到城堡时，国王带着他的护卫亲自迎接你，并且带来了爵位授予的证明，皇权之杖。你接下权杖，想着怎样号令对王国不从的诸侯们。",
+			"name" : "皇权之杖"
+		},
+		"bonuses" : {
+			"attack":
+			{
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 8,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+
+		"type" : [ "HERO" ],
+		"value" : 10000
+	},
+	"hamsArt7" : {
+		"class" : "RELIC",
+		"graphics" : { 
+			"image": "artifacts/iconsSmall/nFCA04",
+			"scenarioBonus": "artifacts/iconsBig/nFCA04L",
+			"map": "artifacts/map/nFCC04"
+		},
+		"slot" : "LEFT_HAND",
+		"text" : {
+			"description" : "{皇权之心}\r\n\r\n拿在左手，皇权之心可以使你的防御力+8。",
+			"event" : "最近诸侯们对国王已经不再愿意效忠，你知道这是因为王国已经衰落。一天你的侍从带来了国王的赏赐，希望你能够帮助对付那些不从的诸侯，你虽然没有把握，但也恭敬不如从命。",
+			"name" : "皇权之心"
+		},
+		"bonuses" : {
+			"defence":
+			{
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 8,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+
+		"type" : [ "HERO" ],
+		"value" : 10000
+	},
+	"hamsArt8" : {
+		"class" : "MAJOR",
+		"graphics" : { 
+			"image": "artifacts/iconsSmall/arti8S",
+			"scenarioBonus": "artifacts/iconsBig/arti8",
+			"map": "artifacts/map/arti8map"
+		},
+		"slot" : "TORSO",
+		"text" : {
+			"description" : "{蓝色晚礼服}\r\n\r\n穿着这件魔法制成的礼服可以使英雄力量+3，知识+3。",
+			"event" : "磨坊中的一个女孩和你诉说了她的经历，一位仙女帮助她用魔法注入到布衣上，造就了这件礼服，可惜的是她穿上后并不自在，所以她希望你能好好保管这件美丽的衣服。",
+			"name" : "蓝色晚礼服"
+		},
+		"bonuses" : {
+			"spellpower":
+			{
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"knowledge":
+			{
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [ "HERO" ],
+		"value" : 7000
+	},
+	"hamsArt9" : {
+		"class" : "RELIC",
+		"graphics" : { 
+			"image": "artifacts/iconsSmall/arti9S",
+			"scenarioBonus": "artifacts/iconsBig/arti9",
+			"map": "artifacts/map/arti9map"
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{南瓜马车}\r\n\r\n持有南瓜马车可以提升移动力1000点，并且每天额外恢复50点魔法值。",
+			"event" : "南瓜马车是魔力制造的神秘宝物，你得到它会给你带来有很大的好处。",
+			"name" : "南瓜马车"
+		},
+		"components":
+		[
+			"hamsArt1",
+			"hamsArt2",
+			"hamsArt3",
+			"hamsArt8"
+		],
+		"bonuses" : {
+			"movement":
+			{
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementLand",
+				"val" : 1000,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"manaGain":
+			{
+				"type" : "MANA_REGENERATION",
+				"val" : 50,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [ "HERO" ],
+		"value" : 12000
+	},
+	"core:spiritOfOppression":
+	{
+		"bonuses" : {
+			"morale":
+			{
+				"type" : "MORALE",
+				"val" : 0,
+				"valueType" : "INDEPENDENT_MIN",
+				"propagator": "BATTLE_WIDE"
+			},
+			"minotaurBonus":
+			{
+				"limiters": [ 
+				{
+				"type":"CREATURE_TYPE_LIMITER",
+				"creature" : "minotaur",
+				"includeUpgrades" : true
+					} 
+				],
+				"type" : "NO_MORALE",
+				"val" : 0,
+				"valueType" : "INDEPENDENT_MIN",
+				"propagator": "BATTLE_WIDE"
+			}
+		},
+		"type" : ["HERO"]
+	}
+}

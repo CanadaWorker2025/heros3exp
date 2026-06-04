@@ -1,0 +1,117 @@
+{
+	"iDun07":
+	{
+		"name" :
+		{
+			"plural" : "阴影龙", //Emerald Dragon
+			"singular" : "阴影龙"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction": "dungeon",
+		"description" : "{技能说明}： \n{免疫火系魔法}： 免疫所有火系魔法。\n{酸液}： 降低对方防御力3点，可以叠加。",
+		"doubleWide" : true,
+		"aiValue" : 8719,
+		"fightValue" : 6781,
+		"attack" : 26,
+		"defense" : 26,
+		"cost" :
+		{
+			"gold" : 4000,
+			"sulfur":2
+		},
+		"damage" :
+		{
+			"min" : 35,
+			"max" : 55
+		},
+		"speed" : 16,
+		"upgrades": ["blackDragon"],
+		"graphics" :
+		{
+			"animation" : "creatures/dungeon/battle/iDun07B.def",
+			"map" : "creatures/dungeon/map/iDun07M.def",
+			"iconSmall" : "creatures/dungeon/iconsSmall/iDun07S.bmp",
+			"iconLarge" : "creatures/dungeon/iconsBig/iDun07L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 285,
+		"growth" : 1,
+		"level" : 7,
+		"sound" :
+		{
+			"attack": "BKDRATTK.wav",
+			"defend": "BKDRDFND.wav",
+			"killed": "BKDRKILL.wav",
+			"move": "BKDRMOVE.wav",
+			"wince": "BKDRWNCE.wav"
+		},
+		"abilities" :
+		{
+			"basicSlayer" : { "type" : "KING", "val": 0 },
+			"FLYING_ARMY": 
+			{
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly2.png"
+			},
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"fireBreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH",
+				"icon": "bonuses/e_breathshadow.png"
+			},
+			"hateTitans" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.titan",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateStormTitans" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.twArcane07",
+				"val" : 50,
+				"description" : "{黑暗化身}\n对泰坦，风暴泰坦造成额外50%伤害",
+				"icon" : "spells/extraEffect/hatetitan1.png"
+			},
+			"immuneToFire" :
+			{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+			},
+			"spellImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 3
+			},
+			"reduceDefence" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.acidBreath",
+				"val" : 25,
+				"icon": "bonuses/acidattack.png"
+			}
+		}
+	}
+}
+
+

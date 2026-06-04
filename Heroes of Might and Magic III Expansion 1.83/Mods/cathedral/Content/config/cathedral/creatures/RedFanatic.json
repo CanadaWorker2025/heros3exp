@@ -1,0 +1,112 @@
+{
+	"saRedFanatic":
+	{
+		"name" :
+		{
+			"plural" : "战争狂热者",
+			"singular" : "战争狂热者"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"faction" : "neutral",
+                "doubleWide" : false,
+		"level" : 0,
+		"special": true,
+		"attack" : 5,
+		"defense" : 5,
+		"damage" :
+		{
+			 "min" : 10,
+			 "max" : 10
+		},
+		"growth" : 9,
+		"hasDoubleWeek": false,
+		"hitPoints" : 50,
+		"speed" : 5,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"aiValue" : 1000,
+		"fightValue" : 1000,
+		"graphics" :
+		{
+			"animation" : "cathedral/creatures/battle/zealot.def",
+//			"map" : "cathedral/creatures/map/zealot.def",
+			"iconSmall" : "cathedral/creatures/iconsSmall/zealot.bmp",
+			"iconLarge" : "cathedral/creatures/iconsBig/zealot.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "CPRZEAX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},	
+		"sound" :
+		{
+			"attack": "ZELTATTK.wav",
+			"defend": "ZELTDFND.wav",
+			"killed": "ZELTKILL.wav",
+			"move": "ZELTMOVE.wav",
+			"shoot": "ZELTSHOT.wav",
+			"wince": "ZELTWNCE.wav"
+               },
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.prayer",
+				"val" : 3
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+		}
+	}
+}

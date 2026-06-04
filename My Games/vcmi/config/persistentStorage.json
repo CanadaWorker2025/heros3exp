@@ -1,0 +1,173 @@
+{
+	"battleModeSettings" : {
+		 // game
+		"selectedTown" : "fairy:fairy",
+		"slots" : [
+			{
+				"primSkillLevel" : [
+					2,
+					2,
+					1,
+					1
+				],
+				"secSkillLevel" : [
+					{
+						"masteryLevel" : "basic",
+						 // game
+						"skill" : "core:leadership"
+					},
+					{
+						"masteryLevel" : "basic",
+						 // game
+						"skill" : "core:artillery"
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					}
+				],
+				"selectedArmy" : [
+					{
+						"amount" : 100,
+						 // game
+						"type" : "core:archer"
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					}
+				],
+				 // game
+				"selectedHero" : "core:christian"
+			},
+			{
+				"primSkillLevel" : [
+					2,
+					2,
+					1,
+					1
+				],
+				"secSkillLevel" : [
+					{
+						"masteryLevel" : "basic",
+						 // game
+						"skill" : "core:leadership"
+					},
+					{
+						"masteryLevel" : "basic",
+						 // game
+						"skill" : "core:tactics"
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					}
+				],
+				"selectedArmy" : [
+					{
+						"amount" : 100,
+						 // game
+						"type" : "core:pikeman"
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					}
+				],
+				 // game
+				"selectedHero" : "tidesofwar:mdtCharles"
+			}
+		]
+	},
+	"completedCampaigns" : {
+		"DATA/GOOD1":true,
+		"DATA/EVIL1":true,
+		"DATA/GOOD2":true,
+		"DATA/NEUTRAL1":true,
+		"DATA/EVIL2":true,
+		"DATA/GOOD3":true,
+		"DATA/SECRET1":true,
+		"DATA/AB":true,
+		"DATA/BLOOD":true,
+		"DATA/SLAYER":true,
+		"DATA/FESTIVAL":true,
+		"DATA/FIRE":true,
+		"DATA/FOOL":true,
+		"DATA/GEM" : true,
+		"DATA/GELU" : true,
+		"DATA/CRAG" : true,
+		"DATA/YOG" : true,
+		"DATA/SANDRO" : true,
+		"DATA/FINAL" : true,
+		"DATA/SECRET" : true
+	},
+	"rmg" : {
+		"rmg" : {
+			"lastSettings" : {
+				"compOnlyPlayerCount" : -1,
+				"compOnlyTeamCount" : -1,
+				"height" : 144,
+				"humanOrCpuPlayerCount" : 5,
+				"levels" : 2,
+				"monsterStrength" : -2,
+				"roads" : [
+					"core:dirtRoad",
+					"core:gravelRoad",
+					"core:cobblestoneRoad"
+				],
+				"teamCount" : -1,
+				"waterContent" : 0,
+				"width" : 144
+			}
+		}
+	},
+	"startExtraOptions" : {
+		"singlePlayer" : {
+			"unlimitedReplay" : true
+		}
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"specialMiseria" :
+	{
+		"class" : "heretic",
+		"female" : true,
+		"special": true,
+		"images" :
+		{
+			"large" : "hota/inferno/heroes/special/icons/MportraitLarge.png",
+			"small" : "hota/inferno/heroes/special/icons/MportraitSmall.png",
+			"specialtyLarge" : "hota/inferno/heroes/special/icons/Un44Resu",
+			"specialtySmall" : "hota/inferno/heroes/special/icons/Un32Resu"
+		},
+		"spellbook": [ "resurrection" ],
+		"army" : [
+			{
+				"creature" : "imp",
+				"min" : 15,
+				"max" : 25
+			},
+			{
+				"creature" : "gog",
+				"min" : 5,
+				"max" : 8
+			},
+			{
+				"creature" : "hellHound",
+				"min" : 3,
+				"max" : 4
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "earthMagic",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"resurrection" : {
+					"subtype" : "spell.resurrection",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "米赛丽娅是克里根是一个年轻的恶魔，狂野而不负责任。她很少想到行动的后果。或者她并不在乎？她根据感觉行事，这是她所关心的一切。",
+			"name" : "米赛丽娅",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Learning",
+				"name" : "转世重生",
+				"description" : "使用转世重生魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。"
+			}
+		}
+	}
+}

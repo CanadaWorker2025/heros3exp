@@ -1,0 +1,63 @@
+{
+	"rStrn01"://Goblin Guard
+	{
+		"name" :
+		{
+			"plural" : "大耳怪守卫",
+			"singular" : "大耳怪守卫"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction": "stronghold",
+		"aiValue" : 79,
+		"fightValue" : 66,
+		"attack" : 4,
+		"defense" : 4,
+		"cost" :
+		{
+			"gold" : 50
+		},
+		"damage" :
+		{
+			"min" : 1,
+			"max" : 2
+		},
+		"speed" : 6,
+		"upgrades": ["hobgoblin"],
+		"graphics" :
+		{
+			"animation" : "creatures/stronghold/battle/rStrn01B.def",
+			"map" : "creatures/stronghold/map/rStrn01M.def",
+			"iconSmall" : "creatures/stronghold/iconsSmall/rStrn01S.bmp",
+			"iconLarge" : "creatures/stronghold/iconsBig/rStrn01L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 6,
+		"growth" : 15,
+		"horde" : 8,
+		"level" : 1,
+		"sound" :
+		{
+			"attack": "HGOBATTK.wav",
+			"defend": "HGOBDFND.wav",
+			"killed": "HGOBKILL.wav",
+			"move": "HGOBMOVE.wav",
+			"wince": "HGOBWNCE.wav"
+		},
+		"abilities":
+		{
+			
+		}
+	}
+}
+
+

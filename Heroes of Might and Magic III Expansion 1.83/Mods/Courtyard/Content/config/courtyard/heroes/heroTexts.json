@@ -1,0 +1,219 @@
+{
+	
+	"01caballe" : {
+		"texts" : {
+			"biography" : "在每一场美丽的幻梦中，年轻的卡巴耶女士都在享受梦幻般的甘醇。尽管她从来没有真正品尝过任何一种，但她醒来之后总是记得制作梦境中饮品的确切配方。",
+			"name" : "卡巴耶",
+			"specialty" : {
+				"description" : "所带领的正义阵营生物使用药水时士气额外+1；所带领的中立阵营生物使用药水时幸运额外+1。",
+				"name" : "药剂师",
+				"tooltip" : "Special Bonus: Potion Benefits"
+			}
+		}
+	},	
+	"04dizheel" : {
+		"texts" : {
+			"biography" : "名叫哲尔的贵族是一位有着超凡魅力的领袖。无论她出现在哪里，普通民众，雇佣军甚至是下等领主都纷纷加入她的事业。",
+			"name" : "哲尔",
+			"specialty" : {
+				"description" : "每升一级可以使投降费用减少5%，且降低野外中立生物的敌意值1点。",
+				"name" : "外交术",
+				"tooltip" : "降低野外中立生物的敌意值1点。"
+			}
+		}
+	},
+	
+	"15zazzerpan" : {	
+		"texts" : {
+			"biography" : "比扎泽潘的魔法技能更具传奇色彩的是他的自满。当他在魔法对决中败给了一个学生后，他注销了自己的所有学历，并羞愧地逃离了布拉卡达。在拉尼亚，他仍然坚持不要魔导师的头衔，因为他的内心还没有从失败中恢复过来。",
+			"name" : "扎泽潘",
+			"specialty" : {
+				"description" : "消除战场上所有生物天生的魔法抗性。",
+				"name" : "穿透魔抗",
+				"tooltip" : "Magic Bonus: Negate Immunities"
+			}
+		}
+	},
+	"08audred" : {	
+		"texts" : {
+			"biography" : "这位天才的炼金术士还很年轻，甚至还没有上过魔法大学，但他已经投身于在布拉卡达被禁止的人工创造生命的研究。在一次可怕的事故之后，他懊悔于自己没有保住秘密，于是立即逃往拉尼亚，很快成为探索炼金矮人种族的首席研究员。",
+			"name" : "奥迪",
+			"specialty" : {
+				"description" : "达到2级以后提高炼金侏儒或侏儒炼金士的攻击力与防御力。",
+				"name" : "侏儒",
+				"tooltip" : "Creature Bonus: Homunculi"
+			}
+		}
+	},
+	"00auk" : {	
+		"texts" : {
+			"biography" : "奥克总是吹嘘自己来自荒诞的世界，他说曾经见过早已灭绝的渡渡鸟。起初人们不相信他的话，直到亲眼见到这些灭绝怪物出现的时候。",
+			"name" : "奥克",
+			"specialty" : {
+			"description" : "所带领的所有陆行鸟类速度+1，战斗巨鸟的抗魔光环范围加倍且获得33%的抗魔几率，华丽巨鸟的士气+2。",
+				"name" : "陆行鸟",
+				"tooltip" : "Creature Bonus: Dodos"
+			}
+		}
+	},	
+	"13dictamnus" : {	
+		"texts" : {
+			"biography" : "当被问及为什么植物族民会操控变幻的火焰时，迪克塔努斯总是反问火对人类的伤害是否更低，以及人类是否禁止过火的使用。他发誓要与任何威胁拉尼亚的入侵物种（特别是花卉物种）斗争到底。因此，火焰特别有用。",
+			"name" : "迪克塔努斯",
+			"specialty" : {
+				"description" : "施放火系攻击魔法造成的伤害每级提高5%。",
+				"name" : "强效火系魔法",
+				"tooltip" : "Spell Damage Bonus: Fire Magic"
+			}
+		}
+	},	
+	"02kanim" : {	
+		"texts" : {
+			"biography" : "坎宁曾经是一名劫掠者，在充满争议的哈蒙代尔一带武装抢劫路过的精灵，并以令人厌恶的人本主义思想为自己辩解。当他被克里根恶魔伏击时，情况发生了变化，他被自己鄙夷的精灵所救，这一事件彻底改变了他。如今，许多来自贾达密、改头换面的流亡者加入了他的雇佣军公司。",
+			"name" : "坎宁",
+			"specialty" : {
+				"description" : "达到4级以后提高火枪手或步枪手的攻击力与防御力，并增加5发弹药。",
+				"name" : "火枪手",
+				"tooltip" : "Creature Bonus: Arquebusiers"
+			}
+		}
+	},	
+	"11nefefareen" : {	
+		"texts" : {
+			"biography" : "虽然年事已高，传奇的尼法法恩竟然成功穿越了火元素位面，而且她对恶魔战争不感兴趣，这着实令人惊讶。世人尚不知她来到拉尼亚的目的是什么，但她已经成功地将火精怪驯化为宠物和仆人。",
+			"name" : "尼法法恩",
+			"specialty" : {
+				"description" : "所带领的火蜥蜴人和炎蜥蜴人受到火系魔法的加成。它们被施加烈火神盾后伤害和速度+2，拥有正士气，攻击后有33%的几率施放献祭。",
+				"name" : "火蜥蜴人",
+				"tooltip" : "Special Bonus: Salamander Synergy"
+
+			}
+		}
+	},	
+	"06ophrys" : {	
+		"texts" : {
+			"biography" : "其他曼德拉草认为奥弗里斯的声音安静而微弱，对其评价不高。但是，这使她的声音可以被人类所接受，让她成为沟通人类和反复无常的曼德拉草一族之间的桥梁。",
+			"name" : "奥弗里斯",
+			"specialty" : {
+			"description" : "所带领的曼陀罗和曼陀罗女王生命值+5，召唤的藤护卫速度+1并获得先手反击技能。",
+				"name" : "曼陀罗",
+				"tooltip" : "Creature Bonus: Mandrakes"
+
+			}
+		}
+	},
+	"05raphus" : {	
+		"texts" : {
+			"biography" : "拉斐斯在布拉卡达的法师学院肄业后，放弃了正规教育。然而，过人的魔像制作技能和出众的创造力使他成为拉尼亚著名的法师艺术家，他因雕刻的活雕像富有表现力而广受欢迎。",
+			"name" : "拉斐斯",
+			"specialty" : {
+				"description" : "达到1级以后提高石像傀儡或岩像傀儡的攻击力与防御力，并使它们的{修复}技能达到高级。",
+				"name" : "石像傀儡",
+				"tooltip" : "Creature Bonus: Marble Cupids"
+
+			}
+		}
+	},
+	
+	"10vogundessi" : {	
+		"texts" : {
+			"biography" : "当炼金术士未能从沃甘德西身上撬出炼金术的秘密时，他们宣布他犯有欺诈之罪以破坏他的声誉，并将他判处可耻的绞刑。据说他通过与魔鬼达成协议来逃脱了这种肮脏的命运，但在拉尼亚几乎没有人相信对他的这些指控。",
+			"name" : "沃甘德西",
+			"specialty" : {
+				"description" : "为王国每天额外提供[50×等级]个金币。",
+				"name" : "理财术",
+				"tooltip" : "Resource Bonus: Gold"
+			}
+		}
+	},
+		
+	"14zana" : {	
+		"texts" : {
+			"biography" : "在人们所谓理智的头脑中，很少相信扎娜旅行到沃里或炽热星球等地方的不切实际的故事，然而事实正是她习惯于异想天开地偷偷去往最出人意料的地方，对许多秘密地区都有广泛的了解。这使她获得了拉尼亚皇家制图师的职位。",
+			"name" : "扎娜",
+			"specialty" : {
+				"description" :"开局拥有异次元之门魔法。",
+				"name" : "异次元之门",
+				"tooltip" : "Spell Bonus: Dimension Door"
+			}
+		}
+	},
+	"14Ekaterina" : {	
+		"texts" : {
+			"biography" : "作为一个铁匠的女儿，叶卡捷琳娜自小就对炼金术感兴趣。为了追寻神奇的力量，她离开了父母和年幼的妹妹，来到布拉卡达学习炼金术。但当她认为布拉卡达人并不看重炼金术的成果的时候，她离开了。最终她来到了拉尼亚追寻自己的梦想。",
+			"name" : "叶卡捷琳娜",
+			"specialty" : {
+				"description" :"可以施放最高等级的和平之歌魔法。",
+				"name" : "和平之歌",
+				"tooltip" : "Spell Bonus: Pacifism"
+			}
+		}
+	},
+	"03lumiere" : {	
+		"texts" : {
+			"biography" : "为了逃避战争，卢米埃尔不得不放弃精灵贵族的奢侈生活，藏身于图拉利昂森林的猎人中谋生。她很快学会了大量的游击战技巧，她精心制作的陷阱甚至给经验丰富的森林游侠都留下了深刻的印象。尽管卢米埃尔在拉尼亚又重回上流社会，但她在战场上仍不忌讳使用一些肮脏的手段。",
+			"name" : "卢米埃尔",
+			"specialty" : {
+				"description" : "所带领的火枪手或步枪手可以在战斗中随机施放{埋设地雷}和{流沙陷阱}。",
+				"name" : "战场障碍",
+				"tooltip" : "Special Bonus: Battlefield Impediments"
+
+			}
+		}
+	},	
+	"09migdigravia" : {	
+		"texts" : {
+			"biography" : "尽管性格温柔热情，但米迪戈拉维亚曾经设计过恐怖的诅咒武器。她在尼贡被拒绝授予术士称号，她不再认同那里的文化而离开。在拉尼亚，她因无忧无虑的人生态度而备受钦佩，同时人们又对她的可怕武器有所忌惮。",
+			"name" : "米迪戈拉维亚",
+			"specialty" : {
+			"description" : "魔相机的施法次数+3。",
+				"name" : "魔相机",
+				"tooltip" : "Special Bonus: Camera Obscura"
+			}
+		}
+	},
+	"12hanester" : {	
+		"texts" : {
+			"biography" : "哈内斯特最初对和平研究贤者之石并不感兴趣，直到她意识到它可以轻易地激发出人们最邪恶的内心。这位聪明的科学家看到人们追求这种稀有物质的贪婪与疯狂，决定投身其中。",
+			"name" : "哈内斯特",
+			"specialty" : {
+				"description" : "使敌方英雄的力量减少15%，每升2级再减1%。",
+				"name" : "干扰术",
+				"tooltip" : "Special Bonus: Interference"
+			}
+		}
+	},
+	"16aliceCourt" : {	
+		"texts" : {
+			"biography" : "爱丽丝在奇幻的世界中已经旅行了很久，虽然只是偶然间进入奇幻的世界，但她现在已经迷恋这里了。她的奇幻旅程也让无数人为之赞叹和羡慕。",
+			"name" : "爱丽丝",
+			"specialty" : {
+				"description" : "提高魔镜反射的概率。",
+				"name" : "魔法神镜",
+				"tooltip" : "Special Bonus: Interference"
+			}
+		}
+	},
+	"07teophrast" : {	
+		"texts" : {
+			"biography" : "与大多数贾达密的黑暗精灵不同，迪奥弗斯特不是作为难民或流亡者来到拉尼亚的。这个勤奋的人看到了拉尼亚的本质需求，需要建造和扩张的定居点越来越多，他一手建立的贸易网络使廉价的建材供应充足。",
+			"name" : "迪奥弗斯特",
+			"specialty" : {
+				"tooltip" : "Resource Bonus: Wood and Ore",
+				"name" : "木材和矿石",
+				"description" : "为王国每天额外提供[等级/7]木材和矿石。"
+			}
+		}
+	},
+	"18AtheCourt" : {	
+		"texts" : {
+			"biography" : "在阿斯看来火怪和灯神并没有区别，她研究了很久但没有任何收获，在克里根恶魔战败之后，阿斯很快就离开了那里，她去寻找旧友尼法法恩并且开始研究一些新的东西。",
+			"name" : "阿斯",
+			"specialty" : {
+				"description" : "施放火系攻击魔法造成的伤害每级提高5%。",
+				"name" : "强效火系魔法",
+				"tooltip" : "Spell Damage Bonus: Fire Magic"
+			}
+		}
+	}
+}

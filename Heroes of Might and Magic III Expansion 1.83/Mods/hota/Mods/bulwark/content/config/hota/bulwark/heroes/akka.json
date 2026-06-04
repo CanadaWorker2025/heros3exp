@@ -1,0 +1,141 @@
+{
+	"15bulwarkAkka" : {
+		"class" : "elder",
+		"female" : true,
+		"images" : {
+			"large" : "hota/bulwark/heroes/akka/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/akka/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/akka/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/akka/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "mysticism",
+				"level" : "basic"
+			}
+		],
+		"spellbook" : [
+			"bloodlust"
+		],
+		"specialty" : {
+			"base" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"valueType" : "ADDITIVE_VALUE",
+				"effectRange" : "ONLY_MELEE_FIGHT",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER"
+			},
+			"bonuses" : {
+				"bonusAttack12" : {
+					"limiters" : [
+						"allOf",
+						[
+							"noneOf",
+							"OPPOSITE_SIDE"
+						],
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"maxlevel" : 3
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.bloodlust"
+						}
+					],
+					"val" : 10
+				},
+				"bonusAttack34" : {
+					"limiters" : [
+						"allOf",
+						[
+							"noneOf",
+							"OPPOSITE_SIDE"
+						],
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 3,
+							"maxlevel" : 5
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.bloodlust"
+						}
+					],
+					"val" : 8
+				},
+				"bonusAttack56" : {
+					"limiters" : [
+						"allOf",
+						[
+							"noneOf",
+							"OPPOSITE_SIDE"
+						],
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 5,
+							"maxlevel" : 7
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.bloodlust"
+						}
+					],
+					"val" : 6
+				},
+				"bonusAttack" : {
+					"limiters" : [
+						"allOf",
+						[
+							"noneOf",
+							"OPPOSITE_SIDE"
+						],
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 7
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.bloodlust"
+						}
+					],
+					"val" : 4
+				}
+			}
+		},
+		"texts" : {
+			"name" : "阿卡",
+			"biography" : "雪怪能在严寒中生存，人们通常认为是因为它们厚实的皮毛和浓密的毛发。然而，它们真正的韧性源于一种与生俱来的魔法力量，这种力量能让它们全身散发温暖。只有极少数雪人能够有意识地驾驭这种力量，而阿卡就是其中最精通者之一。她的专长在于她对族人容易陷入的嗜战狂怒有着深刻的理解。",
+			"specialty" : {
+				"name" : "嗜血奇术",
+				"description" : "施放嗜血奇术时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。",
+				"tooltip" : "Spell Bonus: Bloodlust"
+			}
+		}
+	}
+}

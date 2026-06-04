@@ -1,0 +1,73 @@
+{
+	"10_Murdoch" :
+	{
+    "class": "factoryAClass",
+    "female" : false,
+	"special":false,
+		
+		"texts" :
+		{
+			"name" : "默多克",
+			"biography" : "默多克是一个堪称职业财富战士的人。除了金钱和名誉之外，他几乎不喜欢任何东西。这就是为什么默多克召集了一群勇敢的同类，前往贾达密的风景中寻求冒险。谁知道他的命运下次会带他去哪里？",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "箭术",
+				"description" : "在箭术上每级获得5%的提升。"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/10_Murdoch/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/10_Murdoch/bigS.bmp",
+			"large" : "factory/heroes/10_Murdoch/bigP.bmp",
+			"small" : "factory/heroes/10_Murdoch/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"archery" : {
+					"subtype" : "damageTypeRanged",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}
+	}
+}
+

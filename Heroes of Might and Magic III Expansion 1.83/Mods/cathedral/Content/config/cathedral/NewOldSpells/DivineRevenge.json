@@ -1,0 +1,161 @@
+{
+	"divineRevenge":
+	{
+		"type": "combat", 
+		"name": "圣光裁决",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 5,
+		"power": 70,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"cathedral": 60,
+			"tower": 0,
+			"necropolis": 0,
+			"conflux" : 0,
+		},
+ 
+		"flags" :
+		{
+			"offensive": true,
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "catheSpells/dFreezeBook.bmp",
+			"iconScroll": "catheSpells/dFreezeScroll.bmp",
+			"iconScenarioBonus": "catheSpells/dFreezeScenario.bmp",
+			"iconEffect": "catheSpells/dFreezeEffect.bmp",
+			"iconImmune": "catheSpells/dFreezeImmune.bmp"
+		},
+		
+		"animation":
+		{
+			"affect":[{"defName":"catheSpells/punish.def"}]
+		},
+
+		"sounds":
+		{
+			"cast":"PRAYER"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{圣光裁决}\n\n使对手受到大量伤害，并降低该回合的攻击力和防御力。\n",
+	 
+				"cost": 30,
+				"power": 50,
+	 
+				"effects":
+				{
+					"defence" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "STACK_GETS_TURN"
+					},
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -2,
+						"duration" : "STACK_GETS_TURN"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级圣光裁决}\n\n使对手受到大量伤害，并降低该回合的攻击力和防御力。\n",
+	 
+				"cost": 30,
+				"power": 50,
+	 
+				"effects":
+				{
+					"defence" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "STACK_GETS_TURN"
+					},
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -2,
+						"duration" : "STACK_GETS_TURN"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级圣光裁决}\n\n使对手受到大量伤害，并降低该回合的攻击力和防御力。\n\n效果是初级的1.5倍。\n",
+	 
+				"cost": 25,
+				"power": 200,
+	 
+				"effects":
+				{
+					"defence" : {
+						"val" : -3,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "STACK_GETS_TURN"
+					},
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -3,
+						"duration" : "STACK_GETS_TURN"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级圣光裁决}\n\n使对手受到大量伤害，并降低该回合的攻击力和防御力。\n\n效果是初级的2倍。\n",
+	 
+				"cost": 25,
+				"power": 400,
+	 
+				"effects":
+				{
+					"defence" : {
+						"val" : -5,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "STACK_GETS_TURN"
+					},
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -5,
+						"duration" : "STACK_GETS_TURN"
+					}
+				}
+			}
+		}
+	}
+ 
+}

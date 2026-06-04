@@ -1,0 +1,78 @@
+{
+	"ftM_Sarisa" :
+	{
+		"class" : "warden",
+		"female" : true,
+	
+		"texts" :
+		{
+			"name" : "赛瑞莎",
+			"biography" : "相传赛瑞莎出生在历史上最为严重的暴风雪期间。据说在那场风暴中，诸神为她祝福，使她能够像风暴遮蔽一切一样覆灭敌人。",
+			"specialty" :
+			{
+				"description" : "初始即可使用高级火系魔法的双目失明。",
+				"tooltip" : "{Blind}\r\n\r\nCasts Blind with increased effect.",
+				"name" : "双目失明"
+			}
+		},
+	
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/sargh/Un32Warl.png",
+			"specialtyLarge" : "fairy/heroes/sargh/Un44Warl.png",
+			"large" : "fairy/heroes/sargh/hpl291.png",
+			"small" : "fairy/heroes/sargh/hps291.png"
+		},
+		
+		"spellbook" :
+		[
+			"blind" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 7,
+				"min" : 2
+			},
+			{
+				"creature" : "ftHatchling1",
+				"max" : 1,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty": //weakness
+			{
+				"bonuses":
+				{
+				"reconstruction":{
+				"type" : "SPELL",
+				"subtype" : "spell.blind",
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX"
+					}
+				}
+			}
+	}
+}
+
+

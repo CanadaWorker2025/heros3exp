@@ -1,0 +1,1374 @@
+{
+	"core:monolithTwoWay": {
+		"types" : {
+			"monolith25": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith25": {
+						"animation": "monolithTwoWay/monolith25",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith26": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith26": {
+						"animation": "monolithTwoWay/monolith26",
+						"visitableFrom": [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask": [
+							"VVVV",
+							"VVVV",
+							"VVVV",
+							"VBAB"
+						]
+					}
+				}
+			},
+			"monolith27": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith27": {
+						"animation": "monolithTwoWay/monolith27",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			},
+			"monolith28": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith28": {
+						"animation": "monolithTwoWay/monolith28",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			},
+			"monolith29": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith29": {
+						"animation": "monolithTwoWay/monolith29",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			},
+			"monolith30": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith30": {
+						"animation": "monolithTwoWay/monolith30",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			},
+			"monolith31": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith31": {
+						"animation": "monolithTwoWay/monolith31",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			},
+			"monolith32": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith32": {
+						"animation": "monolithTwoWay/monolith32",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			},
+			"monolith33": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith33": {
+						"animation": "monolithTwoWay/monolith33",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			},
+			"monolith34": {
+				"name": "Two-Way Portal",
+				"templates": {
+					"monolith34": {
+						"animation": "monolithTwoWay/monolith34",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			},
+			"monolith35": {
+				"name": "Two-Way Portal",
+				//"index": 34,
+				"templates": {
+					"monolith35": {
+						"animation": "monolithTwoWay/monolith35",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			},
+			"monolith36": {
+				"name": "Two-Way Portal",
+				//"index": 35,
+				"templates": {
+					"monolith36": {
+						"animation": "monolithTwoWay/monolith36",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith37": {
+				"name": "Two-Way Portal",
+				//"index": 36,
+				"templates": {
+					"monolith37": {
+						"animation": "monolithTwoWay/monolith37",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith38": {
+				"name": "Two-Way Portal",
+				//"index": 37,
+				"templates": {
+					"monolith38": {
+						"animation": "monolithTwoWay/monolith38",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith39": {
+				"name": "Two-Way Portal",
+				//"index": 38,
+				"templates": {
+					"monolith39": {
+						"animation": "monolithTwoWay/monolith39",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith40": {
+				"name": "Two-Way Portal",
+				//"index": 39,
+				"templates": {
+					"monolith40": {
+						"animation": "monolithTwoWay/monolith40",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith41": {
+				"name": "Two-Way Portal",
+				//"index": 40,
+				"templates": {
+					"monolith41": {
+						"animation": "monolithTwoWay/monolith41",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith42": {
+				"name": "Two-Way Portal",
+				//"index": 41,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith42",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith43": {
+				"name": "Two-Way Portal(43)",
+				//"index": 42,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith44": {
+				"name": "Two-Way Portal(44)",
+				//"index": 43,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith45": {
+				"name": "Two-Way Portal(45)",
+				//"index": 44,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith46": {
+				"name": "Two-Way Portal(46)",
+				//"index": 45,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith47": {
+				"name": "Two-Way Portal(47)",
+				//"index": 46,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith48": {
+				"name": "Two-Way Portal(48)",
+				//"index": 47,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith49": {
+				"name": "Two-Way Portal(49)",
+				//"index": 48,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith50": {
+				"name": "Two-Way Portal(50)",
+				//"index": 49,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith51": {
+				"name": "Two-Way Portal(51)",
+				//"index": 50,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith52": {
+				"name": "Two-Way Portal(52)",
+				//"index": 51,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith53": {
+				"name": "Two-Way Portal(53)",
+				//"index": 52,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith54": {
+				"name": "Two-Way Portal(54)",
+				//"index": 53,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith55": {
+				"name": "Two-Way Portal(55)",
+				//"index": 54,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith56": {
+				"name": "Two-Way Portal(56)",
+				//"index": 55,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith57": {
+				"name": "Two-Way Portal(57)",
+				//"index": 56,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith58": {
+				"name": "Two-Way Portal(58)",
+				//"index": 57,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith59": {
+				"name": "Two-Way Portal(59)",
+				//"index": 58,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith60": {
+				"name": "Two-Way Portal(60)",
+				//"index": 59,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith61": {
+				"name": "Two-Way Portal(61)",
+				//"index": 60,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith62": {
+				"name": "Two-Way Portal(62)",
+				//"index": 61,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith63": {
+				"name": "Two-Way Portal(63)",
+				//"index": 62,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith64": {
+				"name": "Two-Way Portal(64)",
+				//"index": 63,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith65": {
+				"name": "Two-Way Portal(65)",
+				//"index": 64,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith66": {
+				"name": "Two-Way Portal(66)",
+				//"index": 65,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith67": {
+				"name": "Two-Way Portal(67)",
+				//"index": 66,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith68": {
+				"name": "Two-Way Portal(68)",
+				//"index": 67,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith69": {
+				"name": "Two-Way Portal(69)",
+				//"index": 68,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith70": {
+				"name": "Two-Way Portal(70)",
+				//"index": 69,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith71": {
+				"name": "Two-Way Portal(71)",
+				//"index": 70,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith72": {
+				"name": "Two-Way Portal(72)",
+				//"index": 71,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith73": {
+				"name": "Two-Way Portal(73)",
+				//"index": 72,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith74": {
+				"name": "Two-Way Portal(74)",
+				//"index": 73,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith75": {
+				"name": "Two-Way Portal(75)",
+				//"index": 74,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith76": {
+				"name": "Two-Way Portal(76)",
+				//"index": 75,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith77": {
+				"name": "Two-Way Portal(77)",
+				//"index": 76,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith78": {
+				"name": "Two-Way Portal(78)",
+				//"index": 77,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith79": {
+				"name": "Two-Way Portal(79)",
+				//"index": 78,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith80": {
+				"name": "Two-Way Portal(80)",
+				//"index": 79,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith81": {
+				"name": "Two-Way Portal(81)",
+				//"index": 80,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith82": {
+				"name": "Two-Way Portal(82)",
+				//"index": 81,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith83": {
+				"name": "Two-Way Portal(83)",
+				//"index": 82,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith84": {
+				"name": "Two-Way Portal(84)",
+				//"index": 83,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith85": {
+				"name": "Two-Way Portal(85)",
+				//"index": 84,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith86": {
+				"name": "Two-Way Portal(86)",
+				//"index": 85,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith87": {
+				"name": "Two-Way Portal(87)",
+				//"index": 86,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith88": {
+				"name": "Two-Way Portal(88)",
+				//"index": 87,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith89": {
+				"name": "Two-Way Portal(89)",
+				//"index": 88,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith90": {
+				"name": "Two-Way Portal(90)",
+				//"index": 89,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith91": {
+				"name": "Two-Way Portal(91)",
+				//"index": 90,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith92": {
+				"name": "Two-Way Portal(92)",
+				//"index": 91,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith93": {
+				"name": "Two-Way Portal(93)",
+				//"index": 92,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith94": {
+				"name": "Two-Way Portal(94)",
+				//"index": 93,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith95": {
+				"name": "Two-Way Portal(95)",
+				//"index": 94,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith96": {
+				"name": "Two-Way Portal(96)",
+				//"index": 95,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith97": {
+				"name": "Two-Way Portal(97)",
+				//"index": 96,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith98": {
+				"name": "Two-Way Portal(98)",
+				//"index": 97,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith99": {
+				"name": "Two-Way Portal(99)",
+				//"index": 98,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			},
+			"monolith100": {
+				"name": "Two-Way Portal(100)",
+				//"index": 99,
+				"templates": {
+					"monolith_other": {
+						"animation": "monolithTwoWay/monolith_other",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"VAV"
+						]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"bidley" : {
+		"class" : "captain",
+		"special" : true,
+		"army": [
+			{
+				"creature": "seadog",
+				"min": 1,
+				"max": 3
+			},
+			{
+				"creature": "corsair",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "seadog",
+				"min": 1,
+				"max": 3
+			}
+		],
+		"images" : {
+			"large" : "hota/cove/heroes/bidley/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/bidley/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/bidley/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/bidley/icons/specialtySmall.png"
+		},
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "advanced"
+			}
+		],
+		"specialty": {
+			"base": {
+				"type": "SPECIAL_UPGRADE",
+				"addInfo": "creature.seadog"
+			},
+			"bonuses": {
+				"pirate2seadog": {
+					"subtype": "creature.pirate"
+				},
+				"corsair2seadog": {
+					"subtype": "creature.corsair"
+				}
+			}
+		},
+		"texts": {
+			"biography" : "彼得利是活跃在埃拉西亚沿岸的海盗中最出色的一个，他随时都在尝试各种冒险和挑战任何难题，很多人对他恨之入骨，然而盼着他死掉的人希望都落空了。彼得利不仅自己掌握了高超的剑术和枪法，而且还培养了一支强大的警备部队。",
+			"name" : "彼得利",
+			"specialty" : {
+				"tooltip" : "Creature Bonus: Sea Dogs",
+				"name" : "皇家海盗",
+				"description" : "将海贼和海盗升级为皇家海盗。"
+			}
+		}
+	}
+}

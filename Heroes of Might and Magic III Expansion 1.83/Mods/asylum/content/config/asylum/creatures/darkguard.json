@@ -1,0 +1,58 @@
+{
+  "darkguard": {
+    "name": {
+      "plural": "黑暗守卫",
+      "singular": "黑暗守卫"
+    },
+    "advMapAmount": {
+ "max" : 30,
+ "min" : 20
+    },
+    "faction": "asylum",
+    "aiValue": 107,
+    "attack": 4,
+    "cost": {
+      "gold": 60
+    },
+    "damage": {
+ "max" : 2,
+ "min" : 2
+    },
+    "defense": 3,
+    "fightValue": 117,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST1U.def",
+      "map": "asylum/map/creatures/AVWC178.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS178Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL178Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 14,
+    "hitPoints": 8,
+    "horde": 6,
+    "level": 1,
+    "sound": {
+      "attack": "asylum/CPU1ATTK.wav",
+      "defend": "asylum/CPU1DFND.wav",
+      "killed": "asylum/CPU1KILL.wav",
+      "move": "asylum/CPU1MOVE.wav",
+      "wince": "asylum/CPU1WNCE.wav"
+    },
+    "speed": 6,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind" :
+			{
+				"type" : "MIND_IMMUNITY"
+			}
+    }
+		
+  }	
+	}

@@ -1,0 +1,38 @@
+{
+  "core:navigation": {
+    "basic": {
+      "effects" : {
+			"waterWalk" : {
+				"type" : "WATER_WALKING",
+				"val" : 100,
+				"valueType" : "INDEPENDENT_MIN"
+			}
+	  }
+    },
+
+    "advanced": {
+      "effects" : {
+			"waterWalk" : {
+				"type" : "WATER_WALKING",
+				"val" : 80,
+				"valueType" : "INDEPENDENT_MIN"
+			}
+	  }
+    },
+
+    "expert": {
+      "effects" : {
+			"waterWalk" : {
+				"type" : "WATER_WALKING",
+				"val" : 80,
+				"valueType" : "INDEPENDENT_MIN"
+			},
+			"freeShip" : {
+				"type" : "FREE_SHIP_BOARDING",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+	  }
+    }
+  }
+}

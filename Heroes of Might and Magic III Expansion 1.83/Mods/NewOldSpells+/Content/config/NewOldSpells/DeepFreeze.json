@@ -1,0 +1,168 @@
+{
+	"deepFreeze":
+	{
+		"type": "combat", 
+		"name": "极度深寒",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 30,
+		"defaultGainChance": 10, 
+		"gainChance":
+		{
+			"rampart": 5,
+			"tower": 15,
+			"necropolis": 15,
+			"inferno" : 0,
+			"conflux" : 15
+		},
+ 
+		"flags" :
+		{
+			"offensive": true,
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {}
+	}, 
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/dFreezeBook.bmp",
+			"iconScroll": "NewOldSpells/dFreezeScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/dFreezeScenario.bmp",
+			"iconEffect": "NewOldSpells/dFreezeEffect.bmp",
+			"iconImmune": "NewOldSpells/dFreezeImmune.bmp"
+		},
+		
+		"animation":
+		{
+			"affect":[{"defName":"NewOldSpells/dFreezeSpell","verticalPosition":"bottom"}]
+		},
+		"sounds":
+		{
+			"cast":"NewOldSpells/sound.spell.freeze.wav"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{极度深寒}\n\n使对手受到冻结伤害，并且该回合受到的物理伤害增加33%。\n",
+	 
+				"cost": 25,
+				"power": 90,
+	 
+				"effects":
+				{
+					"melee" :
+					{
+						"subtype" : "damageTypeMelee",
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -33,
+						"duration" : "STACK_GETS_TURN"
+					},
+					"ranged" :
+					{
+						"subtype" : "damageTypeRanged",
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -33,
+						"duration" : "STACK_GETS_TURN"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级极度深寒}\n\n使对手受到冻结伤害，并且该回合受到的物理伤害增加33%。\n",
+	 
+				"cost": 20,
+				"power": 90,
+	 
+				"effects":
+				{
+					"melee" :
+					{
+						"subtype" : "damageTypeMelee",
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -33,
+						"duration" : "STACK_GETS_TURN"
+					},
+					"ranged" :
+					{
+						"subtype" : "damageTypeRanged",
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -33,
+						"duration" : "STACK_GETS_TURN"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级极度深寒}\n\n使对手受到冻结伤害，并且该回合受到的物理伤害增加67%。\n",
+	 
+				"cost": 20,
+				"power": 150,
+	 
+				"effects":
+				{
+					"melee" :
+					{
+						"subtype" : "damageTypeMelee",
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -67,
+						"duration" : "STACK_GETS_TURN"
+					},
+					"ranged" :
+					{
+						"subtype" : "damageTypeRanged",
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -67,
+						"duration" : "STACK_GETS_TURN"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级极度深寒}\n\n使对手受到冻结伤害，并且该回合受到的物理伤害增加100%。\n",
+	 
+				"cost": 20,
+				"power": 300,
+	 
+				"effects":
+				{
+					"melee" :
+					{
+						"subtype" : "damageTypeMelee",
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -100,
+						"duration" : "STACK_GETS_TURN"
+					},
+					"ranged" :
+					{
+						"subtype" : "damageTypeRanged",
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -100,
+						"duration" : "STACK_GETS_TURN"
+					}
+				}
+			}
+		}
+	}
+ 
+}

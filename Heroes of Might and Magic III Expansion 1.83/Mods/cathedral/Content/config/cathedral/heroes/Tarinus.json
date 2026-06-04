@@ -1,0 +1,51 @@
+{
+	"tarinus" :
+	{
+		"class" : "cthbishop",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/tarinus/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/tarinus/spec-large.bmp",
+			"large" : "cathedral/heroes/tarinus/portrait-large.bmp",
+			"small" : "cathedral/heroes/tarinus/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "firstAid"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		"texts" :
+		{
+			"name" : "派伦西亚",
+			"biography" : "派伦西亚出生在一个高贵的骑士家庭，并且从小就立志做一名牧师。她随时都在等待神的指示，尽管很多情况下的祈祷都是徒劳无功的。为了获得神的力量，她变得越来越狂热。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高执事和领唱者的攻击力和防御力。",
+				"tooltip" : "特长：执事",
+				"name" : "执事"
+			}
+		},
+		"spellbook" :
+		[
+			"bless"
+		],
+		"specialty" : {
+			"creature" : "cthSexton"
+		}		
+	}
+}

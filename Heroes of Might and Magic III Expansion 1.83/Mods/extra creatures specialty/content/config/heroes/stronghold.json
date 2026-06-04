@@ -1,0 +1,119 @@
+{
+	"core:gretchin":{
+		"specialty": {
+			"creature": "goblin",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "大耳怪",
+                "description": "每1级提高大耳怪及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:tyraxor":{
+        "texts": {
+            "specialty": {
+                "name": "恶狼骑士",
+                "description": "每2级提高恶狼骑士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:jabarkas":{
+        "texts": {
+            "specialty": {
+                "name": "半兽人",
+                "description": "每3级提高半兽人及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:boragus":{
+        "texts": {
+            "specialty": {
+                "name": "食人魔",
+                "description": "每4级提高食人魔及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:krellion":{
+        "texts": {
+            "specialty": {
+                "name": "食人魔",
+                "description": "每4级提高食人魔及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:vey":{
+        "texts": {
+            "specialty": {
+                "name": "食人魔",
+                "description": "每4级提高食人魔及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:shiva":{
+        "texts": {
+            "specialty": {
+                "name": "大雕",
+                "description": "每5级提高大雕及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:yog":{
+        "texts": {
+            "specialty": {
+                "name": "独眼巨人",
+                "description": "每6级提高独眼巨人及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:kilgor":{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"type" : "CREATURE_TYPE_LIMITER",
+						"creature" : "behemoth",
+						"includeUpgrades" : true
+					}
+				]
+			},
+			"bonuses" : {
+				"damage" : {
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE",
+					"val" : 10
+				},
+				"attack" : {
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				},
+				"defence" : {
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				}
+			}
+		},
+        "texts": {
+            "specialty": {
+                "name": "比蒙",
+                "description": "使比蒙及其升级形态攻击力+10，防御力+10，杀伤+10。"
+            }
+        }
+	},
+	"core:gurnisson": {
+		"specialty": {
+			"creature": "ballista",
+			"creatureLevel" : 5,
+			"stepSize" : 30
+		},
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+            }
+        }
+	}
+}

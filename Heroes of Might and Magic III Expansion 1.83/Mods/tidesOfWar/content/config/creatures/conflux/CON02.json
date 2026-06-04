@@ -1,0 +1,152 @@
+{
+	"nwCon02":
+	{
+		"name" :
+		{
+			"plural" : "闪电元素",
+			"singular" : "闪电元素"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 6
+		},
+		"faction": "conflux",
+		"aiValue" : 487,
+		"fightValue" : 325,
+		"attack" : 10,
+		"defense" : 8,
+		"cost" :
+		{
+			"gold" : 275
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 8
+		},
+		"speed" : 8,
+		"upgrades": ["stormElemental"],
+		"graphics" :
+		{
+			"animation" : "creatures/conflux/battle/CON02.def",
+			"map" : "creatures/conflux/map/CON02S.def",
+			"iconSmall" : "creatures/conflux/iconsSmall/CON02S.bmp",
+			"iconLarge" : "creatures/conflux/iconsBig/CON02L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 25,
+		"growth" : 6,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "STORATTK.wav",
+			"defend": "STORDFND.wav",
+			"killed": "STORKILL.wav",
+			"move": "STORMOVE.wav",
+			"shoot": "STORSHOT.wav",
+			"wince": "STORWNCE.wav"
+		},
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING",
+				"icon": "bonuses/NonLivingelemental.png",
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"spellPower" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.lightningBolt",
+				"val" : 6
+			},
+			"spellPoints" : 
+			{
+				"type" : "CASTS",
+				"val" : 5
+			},
+			"spellcaster":
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.lightningBolt",
+				"val" : 2,
+				"icon": "bonuses/lightningbolt2.png"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"meteorShowerImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.meteorShower"
+			},
+			"meteorMDTImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.mdtMeteorWand",
+				"hidden": true
+			},
+			"lightingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.lightningBolt",
+				"val" : 100,
+				"hidden": true
+			},
+			"lightingMDTVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.mdtLightningboltWand",
+				"val" : 100,
+				"hidden": true
+			},
+			"chainLightingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.chainLightning",
+				"val" : 100,
+				"description" : "{闪电弱点}\n受霹雳闪电，连锁闪电，末日审判伤害加倍",
+				"icon" : "spells/extraEffect/elecWeak.png"
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeEarth" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.earthElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeMagma" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.magmaElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeLava" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon05",
+				"val" : 100,
+				"description" : "{元素对立}\n对土元素，石元素，熔岩元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hateearth.png"
+			}
+		}
+	}
+}
+
+

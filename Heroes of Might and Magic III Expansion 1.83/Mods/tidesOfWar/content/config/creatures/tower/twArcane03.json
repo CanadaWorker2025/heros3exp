@@ -1,0 +1,77 @@
+{
+	"twArcane03":
+	{
+		"name" :
+		{
+			"plural" : "合金铁人",
+			"singular" : "合金铁人"
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 12
+		},
+		"faction": "tower",
+		"aiValue" : 411,
+		"fightValue" : 411,
+		"attack" : 8,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 200
+		},
+		"damage" :
+		{
+			"min" : 4,
+			"max" : 5
+		},
+		"speed" : 6,
+		"upgrades": ["stoneGolem"],
+		"graphics" :
+		{
+			"animation" : "creatures/tower/battle/CTW3-2.def",
+			"map" : "creatures/tower/map/AVWtw3.def",
+			"iconSmall" : "creatures/tower/iconsSmall/CPrSTW023.bmp",
+			"iconLarge" : "creatures/tower/iconsBig/CPrLTW023.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+		},
+		"hitPoints" : 34,
+		"growth" : 6,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "IGLMATTK.wav",
+			"defend": "IGLMDFND.wav",
+			"killed": "IGLMKILL.wav",
+			"move": "IGLMMOVE.wav",
+			"wince": "IGLMWNCE.wav"
+		},
+		"abilities" :
+		{
+			"magicResistance" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" :"spellSchool.any",
+				"val" : 50,
+				"icon": "bonuses/e_golem_stone.png"
+			},
+			"mirror" :
+			{
+				"type" : "MAGIC_MIRROR",
+				"val" : 10
+			},
+			"nonliving" :
+			{
+				"type" : "MECHANICAL"
+			}		
+		}
+	}
+}
+
+

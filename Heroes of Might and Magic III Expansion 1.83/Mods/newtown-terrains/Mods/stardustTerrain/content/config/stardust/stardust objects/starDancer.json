@@ -1,0 +1,41 @@
+{
+	"starDancer" :{	
+		"name": "星光舞者",
+		"handler": "configurable",
+		"types" : {
+			"starDancer" : 
+			{
+				"name": "星光舞者",
+				"rmg" : {
+					"zoneLimit"	: 3,
+					"value"		: 100,
+					"rarity"	: 200
+				},
+				"sounds": {
+					"ambient": ["LOOPFAER"],
+					"visit" : ["LUCK"]
+				},
+				"rewards" : [
+					{
+						"message" : "{星光舞者}\r\n\r\n你看见一位美丽的舞者在星光下展示着动人的舞姿，她看到你的到来非常高兴，你决定和她一起度过这个美丽的夜晚。",
+						"bonuses" : [ { "type" : "MORALE", "val" : 2, "duration" : "ONE_BATTLE", "description" : 95 } ]
+					}
+				],
+				"onEmptyMessage"  : "{星光舞者}\r\n\r\n在星空下欣赏舞者的舞姿是一件美好的事情，但你此时好像并没有兴趣欣赏。",
+				"onVisitedMessage": "{星光舞者}\r\n\r\n在星空下欣赏舞者的舞姿是一件美好的事情，但你必须记住不能贪图享受而忘记自己应该做的事情。",
+				"visitMode" : "bonus",
+				"selectMode" : "selectFirst",
+				"templates" : 
+				{
+					"avwrhscr" : 
+					{
+						"animation" : "star misc/starDancer", 
+						"visitableFrom" : [ "---", "-++", "+++" ], 
+						"mask" : ["VVV","VBV","BBA"],
+						"allowedTerrains": [ "stardust" ] 
+					}
+				}
+			}
+		}
+	}
+}

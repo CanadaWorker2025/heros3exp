@@ -1,0 +1,504 @@
+{
+	"pavilion" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				
+				
+				"mageGuild1" :
+				{
+					
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "1级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 2000
+					}
+				},
+				"mageGuild2" :
+				{
+					
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "2级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 4,
+						"ore" : 5,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "3级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 5,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild2"
+				},
+                "mageGuild4" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "4级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 8,
+						"ore" : 5,
+						"sulfur" : 8,
+						"crystal" : 8,
+						"gems" : 8,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild3"
+				},
+				"tavern" :
+				{
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					}
+				},
+
+				"fort" :
+				{
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" :
+					{
+						"wood" : 20,
+						"ore" : 20,
+						"gold" : 5000
+					}
+				},
+				"citadel" :
+				{
+					"name" : "大本营",
+					"description" : "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 2500
+					},
+					"upgrades" : "fort"
+				},
+				"castle" :
+				{
+					"name" : "城堡",
+					"description" : "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"cost" :
+					{
+						"wood" : 10,
+						"ore" : 10,
+						"gold" : 5000
+					},
+					"upgrades" : "citadel"
+				},
+				"villageHall" :
+				{
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。",
+					"mode" : "auto"
+				},
+				"townHall" :
+				{
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost" :
+					{
+						"gold" : 2500
+					},
+					"requires" : [ "allOf",["tavern"] ],
+					"upgrades" : "villageHall"
+				},
+				"cityHall" :
+				{
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"cost" :
+					{
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", ["mageGuild1"], ["marketplace"], ["blacksmith"] ],
+					"upgrades" : "townHall"
+				},
+				"capitol" :
+				{
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" :
+					{
+						"gold" : 10000
+					},
+					"requires" : ["castle"] ,
+					"upgrades" : "cityHall"
+				},
+				
+				"homes" :
+				{
+					
+					"description" : "无需介绍",
+					"name" : "家园",
+					"requires" : ["anyOf", [ "cityHall" ], [ "capitol" ]],
+					"mode" : "auto",
+					"id" : 21
+					
+				},
+				"marketplace" :
+				{
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					}
+				},
+				"resourceSilo" :
+				{
+					"name" : "物资仓库",
+					"description" : "物资仓库每天为你额外提供1水银。",
+					"produce": { "mercury": 1 },
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"requires" : ["marketplace"]
+				},
+				"blacksmith" :
+				{
+					"description" : "铁匠铺可向你的军队提供急救帐篷。",
+					"name" : "铁匠铺",
+					"warMachine" : "firstAidTent",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					}
+				},
+				"special4" : 
+				{
+					"description" : "灵能师公会可以生产光子炮。并且可以使己方所有的急救帐篷可以复活生物。",
+					"name" : "灵能师公会",
+					"warMachine" : "photonCannon1",
+					"cost" : 
+					{
+						"mercury" : 2,
+						"sulfur" : 2,
+						"crystal" : 2,
+						"gems" : 2,
+						"gold" : 1500
+					},
+					"requires" : [ "allOf", ["blacksmith"], ["mageGuild1"] ],
+					"bonuses": [ 
+						{ 
+						"type": "ENCHANTED", 
+						"valueType" : "BASE_NUMBER",
+						"subtype" : "spell.tentBoost",
+						"propagator": "PLAYER" 
+						},
+						{
+						"type" : "OPENING_BATTLE_SPELL",
+						"subtype" : "spell.tentBoostRefill",
+						"propagator": "PLAYER"}
+						
+						]
+				},
+				"horde1" :
+				{
+					"description" : "蛇窝使沙蛇和剧毒沙蛇的周产量+4。",
+					"name" : "蛇窝",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl2"] ],
+					"upgrades" : "dwellingLvl2"										
+				},
+				"horde1Upgr" :
+				{
+					"description" : "蛇窝使沙蛇和剧毒沙蛇的周产量+4。",
+					"name" : "蛇窝",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"requires" : ["allOf", ["horde1"], ["dwellingUpLvl2"] ],
+					"upgrades" : "dwellingUpLvl2",
+					"mode" : "auto"
+				},
+				"special1" : 
+				{
+					"description" : "图腾偶像使来访英雄力量+1。",
+					"name" : "图腾偶像",
+					"cost" : 
+					{
+						"sulfur" : 2,
+						"gold" : 1000
+					},
+					"configuration" : {
+						"visitMode" : "hero",
+						"rewards" : [
+							{
+								"message" : "在沙漠中钻研上古图腾让你觉得非常有趣，神秘的谜影女祭司指点了你关于提升魔法力量的方法，这使你的力量+1。",
+								"primary" : { "spellpower" : 1 }
+							}
+						]
+					},
+					"requires" : [ "allOf", ["fort"], ["cityHall"], ["mageGuild1"]]
+				},
+				"horde2" : 
+				{
+					"description" : "水磨坊使骆驼骑兵和大漠骑兵的周产量+3。",
+					"name" : "水磨坊", 
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+
+					"requires" :["allOf", ["dwellingLvl3"], ["marketplace"]]
+				},	
+				"horde2Upgr" : 
+				{
+					"description" : "水磨坊使骆驼骑兵和大漠骑兵的周产量+3。",
+					"name" : "水磨坊", 
+					"cost" : 
+					{},
+					"requires" :["allOf", ["townHall"], ["horde2"]],
+					"upgrades" : "horde2",
+					"mode" : "auto"
+				},
+
+				"special3" : 
+				{
+					"description" : "银行允许你获得2500黄金的贷款，但剩下5天会扣除每天500金币的城镇收入。",
+					"name" : "银行",
+					"type" : "bank",
+					"cost" : 
+					{
+						"ore" : 5,
+						"gold" : 500
+					},
+                    "requires" : [ "marketplace" ]
+				},	
+
+				"grail" :
+				{
+					"description" : "风神庙使每周的生物产量提高50%，每天为你的王国额外提供5000个金币，使掌握{高级学习能力}的英雄直接学会{灵魂烈焰}和{死亡时计}。且攻城战中使守城部队速度增加40%。",
+					"name" : "风神庙",
+					"produce": { "gold": 5000 },
+					"bonuses" : [ 
+					{ "type" : "STACKS_SPEED", "val": 40, "valueType" : "PERCENT_TO_ALL", "propagator" : "TOWN_AND_VISITOR" },
+					{
+						"propagator" : "PLAYER",
+						"duration" : "PERMANENT",
+						"type" : "SPELL",
+						"subtype" : "spell.hourglassOfDeath",
+						"val" : 3,
+						"limiters": [ { "type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.hourglassOfDeath" ] }	]
+					},
+					{
+						"propagator" : "PLAYER",
+						"duration" : "PERMANENT",
+						"type" : "SPELL",
+						"subtype" : "spell.soulConflagration",
+						"val" : 3,
+						"limiters": [ { "type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.soulConflagration" ] }	]
+					}
+					]
+				},
+				"dwellingLvl1" :
+				{
+					"description" : "村庄允许你招募督工。",
+					"name" : "村庄",
+					"cost" : 
+					{
+						"gold" : 400,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"requires" : [ "fort" ]
+				},
+				"dwellingLvl2" :
+				{
+					"description" : "蛇洞允许你招募沙蛇。",
+					"name" : "蛇洞",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"requires" :["allOf", ["dwellingLvl1"], ["fort"] ]
+				},
+				"dwellingLvl3" :
+				{
+					"description" : "沙漠营帐允许你招募骆驼骑兵。",
+					"name" : "沙漠营帐",
+					"cost" : 
+					{
+						"gold" : 1500,
+						"wood" : 5
+					},
+					"requires" :["allOf", ["dwellingLvl1"], ["fort"] ]
+				},
+				"dwellingLvl4" :
+				{
+					"description" : "谜影祭坛允许你招募谜影侍女。",
+					"name" : "谜影祭坛",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"crystal" : 5
+					},
+					"requires" : [ "allOf", ["dwellingLvl1"], ["fort"] ]
+				},
+				"dwellingLvl5" :
+				{
+					"description" : "恐惧之穴允许你招募恐鳄。",
+					"name" : "恐惧之穴",
+					
+					"cost" : 
+					{
+						"gold" : 3000,
+						"ore" : 10,
+						"mercury" : 5
+					},
+					"requires" : [ "allOf", ["dwellingLvl3"], ["fort"] ]
+				},
+				"dwellingLvl6" :
+				{
+					"description" : "人面狮围栏允许你招募人面狮。",
+					"name" : "人面狮围栏",
+					"cost" : 
+					{
+						"gold" : 4000,
+						"ore" : 10,
+						"sulfur" : 4
+					},
+					"requires" : [ "allOf", ["mageGuild1"], ["dwellingLvl4"] ]
+				},
+				"dwellingLvl7" :
+				{
+					"description" : "帝王陵墓允许你招募冥神使。",
+					"name" : "帝王陵墓",
+					"cost" : 
+					{
+						"gold" : 10000,
+						"ore"  : 10,
+						"mercury" : 15
+					},
+					"requires" : [ "allOf", ["dwellingLvl6"] ]
+				},
+
+				"dwellingUpLvl1" :
+				{
+					"description" : "高级村庄允许你招募监工。",
+					"name" : "高级村庄",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"requires" :   [ "allOf", ["fort"] ],
+					"upgrades" : "dwellingLvl1"
+				},
+				"dwellingUpLvl2" :
+				{
+					"description" : "高级蛇洞允许你招募剧毒沙蛇。",
+					"name" : "高级蛇洞",
+					"cost" :
+					{
+						"gold" : 1500,
+						"ore" : 5
+					},
+					"requires" :   [ "allOf", ["fort"]],
+					"upgrades" : "dwellingLvl2"
+				},
+				"dwellingUpLvl3" :
+				{
+					"description" : "高级沙漠营帐允许你招募大漠骑兵。",
+					"name" : "高级沙漠营帐",
+					"cost" : 
+					{
+						"gold" : 1500,
+						"wood" : 5,
+						"gems" : 2
+					},
+					"requires" :   [ "allOf", ["fort"] ],		
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" :
+				{
+					"description" : "高级谜影祭坛允许你招募谜影圣女。",
+					"name" : "高级谜影祭坛",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"crystal" : 5
+					},
+					"requires" :  [ "allOf", ["blacksmith"], ["fort"] ],
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl5" :
+				{
+					
+					"description" : "高级恐惧之穴允许你招募太阳鳄。",
+					"name" : "高级恐惧之穴",
+					"cost" : 
+					{
+
+						"gold" : 3000,
+						"ore" : 5,
+						"mercury" : 10
+					},
+					"requires" : [ "allOf", ["fort"]],
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" :
+				{
+					"description" : "高级人面狮围栏允许你招募人面狮圣者。",
+					"name" : "高级人面狮围栏",
+					"cost" : 
+					{	
+						"gold" : 3000,
+						"ore" : 15
+					},
+                    "requires" :  [ "allOf", ["mageGuild2"], ["fort"] ],
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl7" :
+				{
+					"description" : "高级帝王陵墓允许你招募冥神圣使。",
+					"name" : "高级帝王陵墓",
+					"cost" : 
+					{
+						"ore" : 10,
+						"gold" : 10000,
+						"mercury" : 20
+					},
+					"requires" :  [ "allOf", ["fort"] ],
+					"upgrades" : "dwellingLvl7"
+				}
+			}
+		}
+	}
+}

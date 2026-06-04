@@ -1,0 +1,48 @@
+{
+	"derrick" :{
+		"name": "矿井挖掘机",
+		"handler": "configurable",
+		"types" : {
+			"derrick" :
+			{
+				"name": "矿井挖掘机",
+				"rmg" : {
+					"value" : 750,
+					"rarity" : 30
+				},
+				"sounds" : {
+					"visit" : ["GENIE"],
+					"ambient" : ["hota/wasteland/LOOPDRRK"]
+				},
+				"rewards" : [
+					{
+						"limiter" : { "daysPassed" : 8 },
+						"message" : "{矿井挖掘机}\r\n\r\n矿工在辛勤劳作着，看起来这块地方有不少金子，你走近后，他送给你一袋金子以换取你的保护。",
+						"resources" : { "gold" : 1000 }
+					},
+					{
+						"message" : "{矿井挖掘机}\r\n\r\n矿工在辛勤劳作着，看起来这块地方有不少金子，你走近后，他送给你一袋金子以换取你的保护。",
+						"resources" : { "gold" : 500 }
+					}
+				],
+				"onVisitedMessage": "{矿井挖掘机}\r\n\r\n矿工目前非常忙，你走近时他喃喃自语，和你诉说着每天的辛劳，可是你无法从他那里拿走任何东西。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"templates" :
+				{
+					"avmoilpm" :
+					{
+						"animation" : "hota/wasteland/hotaInteractive/derrick/avmoilpm",
+						"visitableFrom" : [ "---", "-++", "+++" ],
+						"mask" : ["VVV", "VVV", "VBA"],
+						"allowedTerrains": ["wasteland"]
+					}
+				}
+			}
+		}
+	}
+}

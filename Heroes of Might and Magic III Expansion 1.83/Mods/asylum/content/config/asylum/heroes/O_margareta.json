@@ -1,0 +1,74 @@
+{
+	"o_margareta" :
+	{
+    "class": "mentalist",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "玛格丽塔",
+			"biography" : "玛格丽塔的红色头发是火焰女巫的印记。而她并不喜欢火焰魔法，也许研究如何抹去记忆是更好的兴趣。虽然她已经可以让别人立刻失去记忆，但是她很清楚，自己悲伤的过去是无论如何都无法去除的。",
+			"specialty" :
+			{
+				"description" : "施放失忆大法时，当提升和目标生物等级相同个英雄等级时，可以多影响5%血量的单位。",
+				"tooltip" : "Spell bonus: Forgetfulness",
+				"name" : "失忆大法"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/margareta/UN32T210.bmp",
+			"specialtyLarge" : "asylum/heroes/margareta/UN44T210.bmp",
+			"large" : "asylum/heroes/margareta/HPL006MN.bmp",
+			"small" : "asylum/heroes/margareta/HPS006MN.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"forgetfulness"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "fireMagic"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"forgetfulness" : {
+					"subtype" : "spell.forgetfulness",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		}
+	}
+}
+

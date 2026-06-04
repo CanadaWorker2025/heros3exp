@@ -1,0 +1,43 @@
+{
+	"core:badgeOfCourage":
+	{
+		"bonuses" : {
+			"morale" : {
+				"type" : "MORALE",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+			},
+			"mindImmunity" : {
+				"type" : "MORALE",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"text" : {
+			"description" : "{勇气勋章}\r\n\r\n勇气勋章使英雄的士气+1。"
+		}
+	},
+	"sleepkeeper" : {
+		"type" : [ "HERO" ],
+		"slot" : "MISC",
+		"class" : "MAJOR",
+		"value" : 7500,
+		"bonuses" : {
+			"immunity" : {
+				"type" : "MIND_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/sleepkeeper",
+			"map" : "hota/artifactsMap/AVA0165",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/sleepkeeper"
+		},
+		"text" : {
+			"description" : "{沉眠护符}\r\n\r\n沉眠护符可以让你免疫所有的心智魔法。",
+			"event" : "你已经连续第三个晚上做着同一个梦。一个陌生人恳求你买一把魔法扫帚。你每次都拒绝，但这个梦却每晚重复。你向遇到的医生寻求帮助，但他没有给你药水，而是给你一个普通的小雕像，保证它能解决你的问题。买下小雕像后，你突然意识到医生与你梦中的陌生人非常相似。",
+			"name" : "沉眠护符"
+		}
+	}
+}

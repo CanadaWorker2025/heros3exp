@@ -1,0 +1,206 @@
+{
+	"curseOfPharaoh" : {
+		"type": "combat",
+		"targetType" : "CREATURE", 
+		"name": "法老诅咒",
+		"school":
+		{
+			"pavillionPrime": true
+		},
+		"level": 3,
+		"power": 10,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		
+		},
+		
+		"animation":{
+			"affect":["spellsPyramids/03CurseOfPharaoh/curseAni.def" ]
+		},
+ 
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		}, 
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/03CurseOfPharaoh/cursesBook.bmp",
+			"iconScroll": "spellsPyramids/03CurseOfPharaoh/cursesScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/03CurseOfPharaoh/cursesBonus.bmp",
+			"iconEffect": "spellsPyramids/03CurseOfPharaoh/cursesEffect.bmp"
+		},
+		
+		"sounds": {
+			"cast": "WATRWALK"
+		},
+		"levels" : {
+			"base":
+			{
+				"range": "X",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"cost": 10,
+				"power": 20,
+			    "description": "{法老诅咒}\n\n降低敌对生物的攻击力和防御力15%，并且减少速度20%。持续3回合。",
+				
+				"range" : "X",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : -20,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					}
+				}
+			},
+			"basic":
+			{
+				"cost": 10,
+				"power": 20,
+			    "description": "{法老诅咒}\n\n降低敌对生物的攻击力和防御力15%，并且减少速度20%。持续3回合。",
+				
+				"range" : "X",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : -20,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					}
+				}
+			},
+			"advanced":
+			{
+			    "cost": 10,
+				"power": 20,
+			    "description": "{法老诅咒}\n\n降低敌对生物的攻击力和防御力15%，并且减少速度30%。持续3回合。",
+				
+				"range" : "X",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -15,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : -30,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					}
+				}
+			},
+			"expert":
+			{
+			    "cost": 10,
+				"power": 20,
+			    "description": "{高级法老诅咒}\n\n降低敌对生物的攻击力和防御力20%，并且减少速度40%。持续3回合。",
+				
+				"range" : "X",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -20,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -20,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : -40,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns" : 3
+					}
+				}
+			}
+		},
+		"counters": { "spell.prayer": true, "spell.slow": true, "spell.specialSlowPav": true},
+		"flags" : {"negative": true, "special" : true}
+		},
+	"core:slow" : {
+		
+		"counters" : {
+			"spell.curseOfPharaoh":true
+		}
+	},
+	"core:prayer" : {
+		
+		"counters" : {
+			"spell.curseOfPharaoh":true
+		}
+	},
+	"core:haste" : {
+		
+		"counters" : {
+			"spell.curseOfPharaoh":true
+		}
+	}
+}

@@ -1,0 +1,118 @@
+{
+	"caveleaper":
+	{
+		"name" :
+		{
+			"plural" : "灰狼",
+			"singular" : "灰狼"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 16
+		},
+		"faction" : "preserve",
+		"aiValue" : 204,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 150
+		},
+		"damage" :
+		{
+			 "max" : 4,
+			 "min" : 3
+		},
+		"defense" : 5,
+		"fightValue" : 183,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C2Jump.def",
+      "map": "preserve/map/creatures/AVWC166.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS166P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL166P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide" : true,
+		"growth" : 8,
+		"hitPoints" : 15,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "preserve/S165ATTK.wav",
+			"defend": "preserve/S165DFND.wav",
+			"killed": "preserve/S165KILL.wav",
+			"move": "preserve/S165MOVE.wav",
+			"wince": "preserve/S165WNCE.wav"
+		},
+		"speed" : 8,
+    "abilities":
+		{
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.protectAir"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : "spellSchool.any"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
+			}
+		]
+		}	
+	}

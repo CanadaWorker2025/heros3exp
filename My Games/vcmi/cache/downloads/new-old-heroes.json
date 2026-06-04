@@ -1,0 +1,108 @@
+{
+	"name" : "New Old Heroes",
+	"description" : "New heroes based on old 3DO artwork and other game appearances. Requires Horn of the Abyss.",
+	"modType" : "Heroes",
+	"version" : "1.6.5",
+	"author" : "Aphra",
+	"contact" : "",
+	"depends" : [
+		"hota.cove",
+		"hota.neutralCreatures",
+		"hota.interference"
+	],
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"keepDisabled" : true,
+	"heroes" : [
+		"config/gwenneth.json",
+		"config/balindar.json",
+		"config/archibald.json",
+		"config/nicolas.json",
+		"config/soth.json",
+		"config/lysander.json",
+		"config/gauldoth.json",
+		"config/waerjak.json",
+		"config/kastore.json",
+		"config/ravenwood.json",
+		"config/golwyn.json",
+		"config/mirael.json"
+	],
+
+	"changelog" : {
+		"1.0.0" : [
+			"Initial release"
+		],
+		"1.1.0" : [
+			"Added Nicolas Gryphonheart and Kastore"
+		],
+		"1.1.1" : [
+			"Bug fixes"
+		],
+		"1.2.0" : [
+			"Added some HOTA portrait-only campaign heroes"
+		],
+		"1.2.1" : [
+			"Athe now has a Spell Book & starts with Fireball"
+		],
+		"1.3.0" : [
+			"Added Lord Soth from WoG (totally not originally from Dragonlance/Ravenloft)"
+		],
+		"1.4.0" : [
+			"Moved certain heroes to submods; added Escaton from M&M 8 to EITHER Forge OR Forge2k"
+		],
+		"1.4.1" : [
+			"Changed Escaton's specialty image to Armageddon; Added Forge and Forge2k conflict warnings"
+		],
+		"1.4.2" : [
+			"Changed Escaton (Forge) to have upgraded level 6 units (same as Forge2k)"
+		],
+		"1.4.3" : [
+			"Czech translation by George King"
+		],
+		"1.5.0" : [
+			"Added Lysander, Gauldoth, and Waerjak from H4, and Archibald from H2"
+		],
+		"1.6.0" : [
+			"Added Taryn Ravenwood, Golywn, and Mirael from Adam McCarthy's concept art; minor Gauldoth fixes"
+		],
+		"1.6.1" : [
+			"Updated Czech translation"
+		],
+		"1.6.2" : [
+			"Updated Polish translation by FallainBlack"
+		],
+		"1.6.3" : [
+			"Updated Czech translation",
+			"Removed not needed conflicts"
+		],
+		"1.6.4" : [
+			"Update Format for the new factory naming and file structure."
+		],
+		"1.6.5" : [
+			"Small updates to vcmi-1.7 format."
+		]
+	},
+
+	"czech" : {
+		"name" : "Staronoví hrdinové",
+		"description" : "Noví hrdinové založení na staré grafice od 3DO a jiných herních vzhledů. Vyžaduje Horn of the Abyss.",
+		"translations" : [
+			"translation/new-old-heroes/czech.json"
+		]
+	},
+	"polish" : {
+		"name" : "Nowi Starzy Bohaterowie",
+		"description" : "Nowi bohaterowie bazujący na starych grafikach 3DO i innych wersjach gry. Wymaga Horn of the Abyss.",
+		"translations" : [
+			"translation/new-old-heroes/polish.json"
+		]
+	},
+	"russian" : {
+		"name" : "Новые старые герои",
+		"description" : "Новые герои, основанные на старых иллюстрациях 3DO и других играх серии. Требуется Horn of the Abyss.",
+		"translations" : [
+			"translation/new-old-heroes/russian.json"
+		]
+	}
+}

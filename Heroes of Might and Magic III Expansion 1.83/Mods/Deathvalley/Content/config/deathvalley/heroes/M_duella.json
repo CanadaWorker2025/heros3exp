@@ -1,0 +1,67 @@
+{
+	"m_dvDuella" :
+	{
+		"class" : "dvNecropriest",
+		"female" : true,
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/duella/Un32Clone.png",
+			"specialtyLarge" : "deathvalley/heroes/duella/Un44Clone.png",
+			"large" : "deathvalley/heroes/duella/DuellaL.png",
+			"small" : "deathvalley/heroes/duella/DuellaS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "boneHook",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "mums",
+				"max" : 7,
+				"min" : 5
+			}
+		],
+		"spellbook" :
+		["clone"],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"clone" : {
+					"subtype" : "spell.clone",
+					"type" : "SPELL",
+					"val" : 3,
+					"valueType" : "INDEPENDENT_MAX"
+				}				
+			}
+		},
+			
+		"texts" : {
+			"biography" : "杜埃拉是一个疯狂而强大的女祭司，她喜欢用魔法复制自己的部队，指挥军队不断残酷无情的屠杀敌人。",
+			"name" : "杜埃拉",
+			"specialty" : {
+				"description" : "使用镜像大法魔法时永远为专家级效果。",
+				"tooltip" : "Spell bonus: Clone",
+				"name" : "镜像大法"
+			}
+		}
+	}
+}
+

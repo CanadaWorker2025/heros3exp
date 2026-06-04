@@ -1,0 +1,51 @@
+{
+	"01bulwarkDhuin" : {
+		"class" : "chieftain",
+		"female" : false,
+		"images" : {
+			"large" : "hota/bulwark/heroes/dhuin/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/dhuin/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/dhuin/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/dhuin/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "archery",
+				"level" : "basic"
+			},
+			{
+				"skill" : "pathfinding",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"creature" : "bulwarkSnowElf"
+		},
+		"texts" : {
+			"name" : "杜因",
+			"biography" : "每年春天，来自沃里各地的精灵都会聚集在这片场地，比试武艺。多年来，一块刻着“铁手杜因”名字的纪念碑一直屹立于此：至今无人能将飞镖投掷得比他更远。杜因如同他那著名的长矛一般，正直而坚定。这也让众多人对他无比敬重，将自己的孩子托付给他训练。",
+			"specialty" : {
+				"name" : "雪精灵",
+				"description" : "每3级提高雪精灵及其升级形态20%的攻击力和防御力。速度+1。",
+				"tooltip" : "Creature Bonus: Snow Elves"
+			}
+		}
+	}
+}

@@ -1,0 +1,173 @@
+{
+	"confessionSong" : {
+		"type": "combat",
+		"targetType" : "CREATURE", 
+		"name": "忏魂曲",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 4,
+		"power": 20,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+
+		"cathedral" : 40,
+		},
+		
+		"animation":{
+			"affect":[{ "defName":"catheSpells/Csong.def","transparency" : 0.5}]
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "catheSpells/csongBook.bmp",
+			"iconScroll": "catheSpells/csongScroll.bmp",
+			"iconScenarioBonus": "catheSpells/csongScenario.bmp",
+			"iconEffect": "catheSpells/csongEffect.bmp"
+		},
+		
+		"sounds": {
+			"cast": "DRGNSLAY"
+		},
+		"levels" : {
+			"base":
+			{
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"cost": 16,
+				"power": 20,
+			    "description": "{忏魂曲}\n\n降低对手的速度，攻击力和防御力。",
+				
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -2,
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -2,
+						"duration" : "N_TURNS"
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : -2,
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"basic":
+			{
+				"cost": 16,
+				"power": 20,
+			    "description": "{初级忏魂曲}\n\n降低对手的速度，攻击力和防御力。",
+				
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -2,
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -2,
+						"duration" : "N_TURNS"
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : -2,
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"advanced":
+			{
+			    "cost": 16,
+				"power": 20,
+				"description": "{中级忏魂曲}\n\n降低对手的速度，攻击力和防御力，效果是初级的2倍。",
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -4,
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -4,
+						"duration" : "N_TURNS"
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : -4,
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"expert":
+			{
+			    "cost": 14,
+				"power": 20,
+				"description": "{高级忏魂曲}\n\n能降低全体对手的速度，攻击力和防御力。",
+				
+				"range" : "X",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : -4,
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -4,
+						"duration" : "N_TURNS"
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : -4,
+						"duration" : "N_TURNS"
+					}
+				}
+			}
+		},
+		"counters" : {
+			"spell.prayer":true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "normal",
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+		"flags" : {
+			"negative": true
+			}
+		}
+
+}

@@ -1,0 +1,67 @@
+{
+	"chestHaven02"	: {
+		"name" : "海盗旗",
+		"handler": "configurable",
+		"types" : {
+			"seaBarrel" : {
+				"name":"海盗旗",
+				"rmg" : {
+					"value"		: 500,
+					"rarity"	: 50
+				},
+				"sounds" : {
+					"visit" : ["GENIE"],
+					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
+				},
+				"blockedVisitable" : true,
+				"rewards" :
+				[
+					{
+						"appearChance": 
+						{
+							"max" : 20
+						},
+						"message": "{海盗旗}\r\n\r\n你找到一面海盗旗，觉得周围可能会有海盗的财宝，结果一无所获。",
+						"removeObject": true
+					},
+					{
+						"appearChance" : { "min" : 20, "max" : 60 },
+						"message" : "{海盗旗}\r\n\r\n你找到一面海盗旗，觉得周围可能会有海盗的财宝，仔细搜索，找到了一些物资。",
+						"removeObject" : true,
+						"resources" : {
+							"wood" : 6,
+							"gold" : 600
+						}
+					},
+					{
+						"appearChance" : { "min" : 60, "max" : 100 },
+						"message" : "{海盗旗}\r\n\r\n你找到一面海盗旗，觉得周围可能会有海盗的财宝，仔细搜索，找到了一些物资。",
+						"removeObject" : true,
+						"resources" : [
+							{
+								"anyOf" : [ "ore", "mercury", "gems", "sulfur", "crystal" ],
+								"min" : 4,
+								"max" : 6
+							},
+							{
+								"type" : "gold",
+								"amount" : [ 400, 500, 600 ]
+							}
+						]
+					}
+				],
+				"visitMode" : "once",
+				"selectMode": "selectRandom",
+				"templates" : {
+					"AVAbrrlw" :
+					{
+						"animation" : "haven/adventure-map/pirateFlag.def",
+						"visitableFrom" : [ "+++", "+++", "+++" ],
+						"mask" : [ "A"],
+						"allowedTerrains":["sand","swamp"] 
+					}
+				}
+			}
+		}
+	}
+}

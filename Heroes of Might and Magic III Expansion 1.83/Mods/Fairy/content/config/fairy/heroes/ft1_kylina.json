@@ -1,0 +1,63 @@
+{
+	"ftA_Kylina" :
+	{
+		"class" : "hunter",
+		"female" : true,
+		
+		"texts" :
+		{
+			"name" : "凯琳娜",
+			"biography" : "凯琳娜是唯一懂得风精灵的人，人们以为风精灵只是一些元素生物，而凯琳娜和风精灵交谈后发现她们也是拥有人类认知的精灵。至此，她沉迷于研究这些奇特的生物。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高风精灵或风女王的攻击力与防御力。",
+				"tooltip" : "{Forest Dragons}\r\n\r\nIncreases the Attack and Defense skills of Forest Dragons or Swamp Dragons or each level attained after 4th level.",
+				"name" : "风精灵"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/kyorlin/un32drud.png",
+			"specialtyLarge" : "fairy/heroes/kyorlin/un44drud.png",
+			"large" : "fairy/heroes/kyorlin/hpl284.png",
+			"small" : "fairy/heroes/kyorlin/hps284.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftWisp1",
+				"max" : 5,
+				"min" : 2
+			}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+		],
+		
+		"specialty": //special upgrade
+			{
+				"creature" : "ftWisp1",
+			} 
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"hornOfTheAbyss" : {
+		"class" : "SPECIAL",
+		"graphics" : {
+			"image" : "artifactsIcons/hornOfTheAbyss",
+			"map" : "hota/artifactsMap/AVA0161",
+			"scenarioBonus" : "artifactsCampaignBonuses/hornOfTheAbyss"
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{深渊号角}\r\n\r\n使英雄可以将阵亡生物转换为夺心魔。\r\n（任务道具，非普通地图可以获得，目前效果和普通合成深渊号角一致）",
+			"event" : "这瀑布的景象和声音都与人们想象中的瀑布别无二致。然而，仔细观察后，你会惊奇地发现水流竟然是向上涌动的。你不禁好奇，如此壮观的景象究竟是如何形成的？难道背后一定隐藏着某种强大的神器？果不其然，很快，你便发现一个精美的号角悬浮在瀑布顶端。",
+			"name" : "深渊号角"
+		},
+		"bonuses" : {
+			"spell" : {
+				"type" : "SPELL",
+				"subtype" : "hornSpell"
+			}
+		},
+
+		"type" : [
+			"HERO"
+		],
+		"value" : 50000
+	}
+}

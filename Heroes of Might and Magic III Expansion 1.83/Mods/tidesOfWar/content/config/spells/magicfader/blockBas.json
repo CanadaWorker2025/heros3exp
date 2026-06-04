@@ -1,0 +1,72 @@
+{
+	"blockBas":
+	{
+		"type": "ability",
+		"name": "初级法术抑制",
+		"school":
+			{
+				"air": false, //true
+				"earth": false,
+				"fire": false,
+				"water": false
+			},
+	"animation":{
+		},
+	"sounds": {
+	},		
+	"level": 0,
+	"power": 1,
+	"defaultGainChance": 0, 
+	"gainChance":
+	{
+	},
+	"flags" : {
+		"positive": false,
+		"negative": true,
+		"nonMagical": true,
+		"persistent" : true
+	},
+	"graphics":
+	{
+		"iconImmune":"spells/extraEffect/b1Immune",
+		"iconBook": "spells/extraEffect/null",
+		"iconScroll": "spells/extraEffect/null",
+		"iconScenarioBonus": "spells/extraEffect/null",
+		"iconEffect": "spells/extraEffect/null"
+	},
+	"targetType": "NO_TARGET",
+	
+	"levels":
+	{
+		"base":
+		{
+			"description": "{初级法术抑制}\n\n使对方英雄无法施展5级魔法。",
+			"power": 1,
+			"range": "X",
+			"cost": 0,
+			"targetModifier":{"smart":true},
+			"effects" : {
+				"magicBlock" : {				
+					"type" : "BLOCK_MAGIC_ABOVE",
+					"val" : 4,
+					"valueType" : "INDEPENDENT_MIN",
+					"propagator": "HERO",
+					"duration" : "PERMANENT"
+				}
+			}
+		},
+		"none":
+		{ 			
+		},
+		"basic":
+		{
+		},
+		"advanced":
+		{	
+		},
+		"expert":
+		{	
+		}
+	}
+  }
+}

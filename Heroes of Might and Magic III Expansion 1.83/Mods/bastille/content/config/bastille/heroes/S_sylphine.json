@@ -1,0 +1,66 @@
+{
+	"11bulwarkSylphine" : {
+		"class" : "elder",
+		"female" : true,
+		"images" : {
+			"large" : "bastille/heroes/sylphine/portrait-large.png",
+			"small" : "bastille/heroes/sylphine/portrait-small.png",
+			"specialtyLarge" : "bastille/heroes/sylphine/specialtyLarge.png",
+			"specialtySmall" : "bastille/heroes/sylphine/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "scholar",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"creature" : "bulwarkEXT1",
+			"bonuses" : {
+				"gcrsylph2CASTS":{
+					"type" : "CASTS",
+					"val" : 1,
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters": [ {
+					"type":"CREATURE_TYPE_LIMITER",
+					"creature" : "bulwarkEXT1",
+					"includeUpgrades" : true
+					} ]
+				}
+			}
+		},
+		"spellbook" : [
+			"iceBolt"
+		],
+		"texts" : {
+			"name" : "西尔芬",
+			"biography" : "西尔芬是传奇雪精灵女巫的首领，同时也是一位非常博学的大法师。在和冰恶魔的战争期间，她带领自己的学徒给沃里精灵带来了很多帮助。她们坚定地守护着家乡的每寸土地。",
+			"specialty" : {
+				"name" : "雪女巫",
+				"description" : "每升6级，提升雪女巫和冰女巫20%攻击和防御，并使雪女巫和冰女巫初始携带法术次数+1，速度+1。",
+				"tooltip" : "Spell Bonus: Ice Bolt"
+			}
+		}
+	}
+}

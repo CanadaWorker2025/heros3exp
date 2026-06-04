@@ -1,0 +1,153 @@
+{
+	"redeem":
+	{
+		"type": "ability", 
+		"name": "救赎",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":[{"defName":"catheSpells/redeem.def", "verticalPosition":"bottom"}]
+		},
+ 
+		"flags" : {"positive": true},
+ 
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "normal",
+				"bonus.REBIRTH" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "normal"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "catheSpells/Scratch0.bmp",
+			"iconScroll": "catheSpells/Scratch1.bmp",
+			"iconScenarioBonus": "catheSpells/Scratch2.bmp",
+			"iconEffect": "catheSpells/redeem.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "PRAYER"
+		},
+		"targetType" : "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{救赎}\r\n\r\n使单位生命值提升25%,并获得自我复原的能力。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"redeem" : {
+						"type" : "STACK_HEALTH",
+						"val" : 25,
+						"valueType" : "PERCENT_TO_BASE",
+						"duration": "N_TURNS"
+						},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 100,
+						"valueType" : "BASE_NUMBER",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{救赎}\r\n\r\n使单位生命值提升25%,并获得自我复原的能力。",
+	 
+				"cost": 0,
+	 
+				"effects":
+				{
+					"redeem" : {
+						"type" : "STACK_HEALTH",
+						"val" : 25,
+						"valueType" : "PERCENT_TO_BASE",
+						"duration": "N_TURNS"
+						},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 100,
+						"valueType" : "BASE_NUMBER",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{救赎}\r\n\r\n使单位生命值提升25%,并获得自我复原的能力。",
+	 
+				"cost": 0,
+	 
+				"effects":
+				{
+					"redeem" : {
+						"type" : "STACK_HEALTH",
+						"val" : 25,
+						"valueType" : "PERCENT_TO_BASE",
+						"duration": "N_TURNS"
+						},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 100,
+						"valueType" : "BASE_NUMBER",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{救赎}\r\n\r\n使单位生命值提升25%,并获得自我复原的能力。",
+	 
+				"cost": 0,
+	 
+				"effects":
+				{
+					"redeem" : {
+						"type" : "STACK_HEALTH",
+						"val" : 25,
+						"valueType" : "PERCENT_TO_BASE",
+						"duration": "N_TURNS"
+						},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 100,
+						"valueType" : "BASE_NUMBER",
+						"duration": "N_TURNS"
+					}
+				}
+			}
+		}
+		}
+	}

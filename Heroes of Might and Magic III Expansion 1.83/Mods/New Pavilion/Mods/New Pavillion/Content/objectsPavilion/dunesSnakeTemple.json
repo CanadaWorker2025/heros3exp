@@ -1,0 +1,106 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"dunesSnakeTemple" : 
+			{
+				"name" : "蛇庙",
+				"aiValue" : 3500,
+				"templates" : {
+					"base" : { 
+					"animation" : "mapdefsPavilion/snakeTemple", 
+					"visitableFrom" : [ "---", "-++", "+++" ], 
+					"mask" : [ "VVV", "VBB", "VBA" ],
+					"allowedTerrains": [ "sand", "subterra", "rough", "dunes" ] 
+					}
+				},
+				"sounds": {
+					"ambient": ["objectsPavilion/snakeTemple"]
+				},
+				"rmg" : {
+					"value"		: 3000,
+					"rarity"	: 30,
+					"zoneLimit" : 1,
+					"mapLimit" : 20
+				},
+				"onGuardedMessage" : "{蛇庙}\r\n\r\n远古的瓦吉特蛇神庙看起来很是神秘，你知道这些居民们崇拜蛇神，并会每年奉上贡品，你要进入神庙吗？",
+				"onVisitedMessage" : "{蛇庙}\r\n\r\n远古的瓦吉特蛇神庙看起来很是神秘。但进入这里后你发现什么也没有，没有贡品，没有声响。当然，也没有危险。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 50 },
+						"guards" : [
+							{ "amount": 8, "type" : "wadjet"},
+							{ "amount": 8, "type" : "wadjet"},
+							{ "amount": 8, "type" : "wadjet"},
+							{ "amount": 8, "type" : "wadjet"},
+							{ "amount": 8, "type" : "wadjet"},
+							{ "amount": 8, "type" : "wadjet"},
+							{ "amount": 8, "type" : "wadjet"}
+						],
+							"resources": 
+							{
+								"gold" : 2500,
+								"crystal" : 4
+							},							
+							"spells" : [ 
+								{ 
+									"level" : 1 
+								} 
+							]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 50, "max" : 80 },
+						"guards": [
+							{ "amount": 12, "type" : "wadjet"},
+							{ "amount": 12, "type" : "wadjet"},
+							{ "amount": 12, "type" : "wadjet"},
+							{ "amount": 12, "type" : "wadjet", "upgradeChance": 50 },
+							{ "amount": 12, "type" : "wadjet"},
+							{ "amount": 12, "type" : "wadjet"},
+							{ "amount": 12, "type" : "wadjet"}
+						],
+							"resources": 
+							{
+								"gold" : 3500,
+								"crystal" : 6
+							},
+							"spells" : [ 
+								{ 
+									"level" : 2 
+								} 
+							]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 80, "max" : 100 },
+						"guards": [
+							{ "amount": 20, "type" : "wadjet"},
+							{ "amount": 20, "type" : "wadjet"},
+							{ "amount": 20, "type" : "wadjet", "upgradeChance": 50 },
+							{ "amount": 20, "type" : "wadjet", "upgradeChance": 50 },
+							{ "amount": 20, "type" : "wadjet", "upgradeChance": 50 },
+							{ "amount": 20, "type" : "wadjet"},
+							{ "amount": 20, "type" : "wadjet"}
+						],
+							"resources": 
+							{
+								"gold" : 5500,
+								"crystal" : 10
+							},
+							"spells" : [ 
+								{ 
+									"level" : 2
+								} 
+							]
+					}
+				]
+			}
+		}
+	}
+}

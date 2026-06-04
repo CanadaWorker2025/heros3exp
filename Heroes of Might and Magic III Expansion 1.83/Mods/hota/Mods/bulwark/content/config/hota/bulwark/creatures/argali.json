@@ -1,0 +1,80 @@
+{
+	"bulwarkArgali" : {
+		"name" : {
+			"singular" : "雪羚",
+			"plural" : "雪羚"
+		},
+		"faction" : "bulwark",
+		"level" : 2,
+		"cost" : {
+			"gold" : 170
+		},
+		"speed" : 8,
+		"hitPoints" : 18,
+		"attack" : 8,
+		"defense" : 6,
+		"damage" : {
+			"min" : 3,
+			"max" : 4
+		},
+		"fightValue" : 208,
+		"aiValue" : 250,
+		"growth" : 9,
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 25
+		},
+		"doubleWide" : true,
+		"abilities" : {
+			"immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"spellDamageIncreaseAura" : {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"val" : -20,
+				"limiters" : [
+					"allOf",
+					"OPPOSITE_SIDE",
+					{
+						"type" : "UNIT_ADJACENT",
+						"creature" : "bulwarkArgali"
+					}
+				],
+				"icon" : "hota/bulwark/bonuses/spellDamageAura",
+				"description" : "{魔法破坏光环}\n使周围敌人受到的魔法伤害增加20%"
+			}
+		},
+		"graphics" : {
+			"iconLarge" : "hota/bulwark/creatures/iconsLarge/argali.png",
+			"iconSmall" : "hota/bulwark/creatures/iconsSmall/argali.png",
+			"map" : "hota/bulwark/creatures/adventureMap/AVWARGAL.def",
+			"mapMask" : [
+				"VVV",
+				"VAV"
+			],
+			"animation" : "hota/bulwark/creatures/battle/CARHAR.def",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1.1
+			},
+			"timeBetweenFidgets" : 1,
+			"mapAttackFromRight" : "hota/bulwark/creatures/AVWattack/argaliRight.png",
+			"mapAttackFromLeft" : "hota/bulwark/creatures/AVWattack/argaliLeft.png"
+		},
+		"sound" : {
+			// TODO: GAP? - using mountain ram sounds for now
+			"attack" : "hota/bulwark/creatures/argali/MRAMATTK.wav",
+			"defend" : "hota/bulwark/creatures/argali/MRAMDFND.wav",
+			"killed" : "hota/bulwark/creatures/argali/MRAMKILL.wav",
+			"move" : "hota/bulwark/creatures/argali/MRAMMOVE.wav",
+			"wince" : "hota/bulwark/creatures/argali/MRAMWNCE.wav"
+		}
+	}
+}

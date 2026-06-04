@@ -1,0 +1,88 @@
+{
+	"vinesRevive" : {
+		"type": "ability",
+		"name": "再生",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"targetType": "CREATURE",
+		"level": 5,
+		"power": 1, //duration spellpower=turns
+		"defaultGainChance": 0, 
+		"gainChance": {},
+		"animation":{
+			"affect":[{ "defName" : "courtyard/spells/vinesRevive/SP_SYMBIOSIS.def", "transparency" : 0.5}]
+		},
+		"flags" : 
+		{
+			"positive": true, 
+			"rising" : true
+		},
+		"targetCondition" : {
+			"anyOf" : {
+				"courtyard:creature.tangleVine" : "absolute",
+				"core:creature.dendroidGuard" : "absolute",
+				"core:creature.dendroidSoldier" : "absolute",
+				"courtyard:creature.strangleVine" : "absolute"
+			}
+		},
+		"sounds": {
+			"cast": "RESURECT"
+		},
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/Pacifism/Pacifism_book1",
+			"iconEffect": "courtyard/spells/vinesRevive/iconEffect",
+			"iconScroll": "courtyard/spells/Pacifism/Pacifism_scroll1",
+			"iconScenarioBonus": "courtyard/spells/Pacifism/Pacifism_bonus1",
+		},
+		"levels" : {
+			"base":{
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"cost": 0, 
+				"description": "{再生}\r\n\r\n复活曼陀罗周围的没有完全被消灭的藤蔓，战后不会保留。",
+				"power": 8,
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"resurrect",
+						"healPower":"oneBattle",
+						"minFullUnits" : 1
+					},
+					"cure":{
+						"type":"core:dispel",
+						"indirect": true,
+						"optional":true,
+						"dispelNegative":true,
+						"dispelNeutral":false,
+						"dispelPositive":false
+					}
+				}
+			},
+			"none":
+			{
+				"cost" : 0
+			},
+			"basic":
+			{	 
+				"description": "{再生}\r\n\r\n复活曼陀罗周围的没有完全被消灭的藤蔓，战后不会保留。",
+				"power": 10
+			},
+			"advanced":
+			{	 
+				"description": "{再生}\r\n\r\n复活曼陀罗周围的没有完全被消灭的藤蔓，战后不会保留。",
+				"power": 12
+			},
+			"expert":
+			{	 
+				"description": "{再生}\r\n\r\n复活曼陀罗周围的没有完全被消灭的藤蔓，战后不会保留。",
+				"power": 14
+			}
+		}
+	}
+}

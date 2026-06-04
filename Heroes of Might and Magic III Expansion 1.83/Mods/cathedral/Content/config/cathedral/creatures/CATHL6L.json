@@ -1,0 +1,121 @@
+{
+	"cthTemplar":
+	{
+		"name" :
+		{
+			"plural" : "圣武士",
+			"singular" : "圣武士"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 10
+		},
+		"faction" : "cathedral",
+		"upgrades": ["cthPaladin"],
+		"level" : 6,
+		"attack" : 16,	
+		"defense" : 18,
+		"damage" :
+		{
+			 "min" : 15,
+			 "max" : 25
+		},
+		"growth" : 2,
+		"hitPoints" : 70,
+		"speed" : 6,
+		"fightValue" : 1833,
+		"aiValue" : 1960,
+		"cost" :
+		{
+			"gold" : 900
+		},
+		"graphics" :
+		{
+			"animation" : "cathedral/creatures/battle/CATHL6L.def",
+			"map" : "cathedral/creatures/map/AVWCATH11.def",
+			"iconSmall" : "cathedral/creatures/iconsSmall/CRCT011S.bmp",
+			"iconLarge" : "cathedral/creatures/iconsBig/CRCT011.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "CRUSATTK.wav",
+			"defend": "CRUSDFND.wav",
+			"killed": "CRUSKILL.wav",
+			"move": "cathedral/CCT6MOVE.wav",
+			"wince": "CRUSWNCE.wav"
+		},
+		"abilities" :
+		{
+			
+             "enchanted" : 
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.bless",
+				"val" : 2,
+				"icon" : "catheSpells/bless2.png"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.prayer"
+				},
+				"values" : [ 2, 2, 2, 2, 2, 2, 2, 3, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}
+
+

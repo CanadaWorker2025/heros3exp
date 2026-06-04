@@ -1,0 +1,58 @@
+{
+	"scrollOfWisdom":
+	{
+		"type": ["HERO"],
+		"slot" : "MISC",
+		"class" : "MINOR",
+		"value": 4000,	
+		"text":
+		{
+			"name": "智慧青蛙",
+			"description": "{智慧青蛙}\r\n\r\n智慧青蛙可以使你的法术效果提高，但会使你的知识技能降低2。",
+			"event": "走过一个转角，你发现了一个垂死的游牧民，你用自己的水囊救活了他，他送给你一个奇怪的布包。你接过布包发现里面有一尊青蛙的雕像，但那个陌生人已经消失了。"
+		},
+		"graphics":
+		{
+			"image": "artifactsPavilion/scrollOfWisdom.png",
+			"scenarioBonus": "artifactsPavilion/bonus4.png",
+			"map": "artifactsPavilion/scrollOfWisdommap.def"
+		},
+		"bonuses" : {
+			"boost1":
+			{
+				"subtype" : "spellSchool.air",
+				"type" : "MAGIC_SCHOOL_SKILL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"				
+			},
+			"boost2":
+			{
+				"subtype" : "spellSchool.earth",
+				"type" : "MAGIC_SCHOOL_SKILL",
+				"val" : 1,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"boost3":
+			{
+				"subtype" : "spellSchool.fire",
+				"type" : "MAGIC_SCHOOL_SKILL",
+				"val" : 1,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"boost4":
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "MAGIC_SCHOOL_SKILL",
+				"val" : 1,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"knowledge":
+			{
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : -2,
+				"valueType" : "BASE_NUMBER"
+			}									
+		}
+	}
+}

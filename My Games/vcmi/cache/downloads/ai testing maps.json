@@ -1,0 +1,20 @@
+{
+	"name" : "VCMI maps for AI testing",
+	"description" : "Following maps can be used for automatic testing of VCAI or any other adventure AI implementation in VCMI. Check README.md file for detailed documentation. For more info see https://github.com/vcmi-mods/ai-testing-maps/blob/master/README.md and https://docs.google.com/document/d/1Dro_0GncWYp2KZCPQiEDiapOHViJobyYB3hkpF5CeKE/edit?tab=t.0",
+	"author" : "SXX",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "https://creativecommons.org/licenses/by-sa/4.0/",
+	"contact" : "https://forum.vcmi.eu/t/map-pack-for-automated-ai-testing/4566",
+	"version" : "1.0.1",
+	"modType" : "Test",
+	"changelog" :
+	{
+		"1.0.1" : [ "Czech translation by George King"],
+		"1.0.0" : [ "Initial public release"]
+	},
+	"czech" : {
+		"name": "VCMI mapy pro testování AI",
+		"description": "Následující mapy mohou být použity pro automatické testování VCAI nebo jakékoli jiné implementace AI ve VCMI. Podrobnosti naleznete v souboru README.md."
+	}
+
+}

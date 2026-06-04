@@ -1,0 +1,90 @@
+{
+	"core:shrineOfMagicLevel1" : { 
+		"name" : "魔法圣殿",
+		"handler" : "configurable",
+		"base" : {
+			"sounds" : {
+				"ambient" : ["LOOPSHRIN"],
+				"visit" : ["TEMPLE"]
+			}
+		},
+		"types" : {
+			"shrineOfMagicMystery" : {
+				"name" : "魔法圣殿",
+				// "aiValue" : 500,
+				"rmg" : {
+					"value"		: 7000,
+					"rarity"	: 100,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"ambient" : ["LOOPSHRIN"],
+					"visit" : ["TEMPLE"]
+				},
+				"compatibilityIdentifiers" : [ "object" ],
+				"visitMode" : "limiter",
+				"visitedTooltip" : 354,
+				"description" : "(学习4级魔法)",
+				"showScoutedPreview" : true,
+				"variables" : {
+					"spell" : {
+						"gainedSpell" : { // Note: this variable name is used by engine for H3M loading
+							"level": 4
+						}
+					}
+				},
+				"visitLimiter" : {
+					"spells" : [
+						"@gainedSpell"
+					]
+				},
+				"rewards" : [
+					{
+						"limiter" : {
+							"canLearnSpells" : [
+								"@gainedSpell"
+							]
+						},
+						"spells" : [
+							"@gainedSpell"
+						],
+						"description" : "@core.genrltxt.355",
+						"message" : [ "{神秘魔法圣殿}\r\n\r\n你发现一座神秘魔法圣殿，为了得到你的保护，那里的牧师答应教你一种高级魔法: - ", "%s." ] // You learn new spell
+					}
+				],
+				"onVisitedMessage" : [ "{神秘魔法圣殿}\r\n\r\n你发现一座神秘魔法圣殿，为了得到你的保护，那里的牧师答应教你一种高级魔法: - ", "%s.", 174 ], // You already known this spell
+				"onEmpty" : [
+					{
+						"limiter" : {
+							"artifacts" : [
+								{
+									"type" : "spellBook"
+								}
+							]
+						},
+						"message" : [ "{神秘魔法圣殿}\r\n\r\n你发现一座神秘魔法圣殿，为了得到你的保护，那里的牧师答应教你一种高级魔法: - ", "%s.", 130 ] // No Wisdom
+					},
+					{
+						"message" : [ "{神秘魔法圣殿}\r\n\r\n你发现一座神秘魔法圣殿，为了得到你的保护，那里的牧师答应教你一种高级魔法: - ", "%s.", 131 ] // No spellbook
+					}
+				],
+				"templates" :
+				{
+					"water" :
+					{
+						"animation" : "hota/shrines/AVXl4sh0",
+						"mask" : [ "VV", "VA" ], 
+						"visitableFrom" : [ "---", "+++", "+++" ],
+						"allowedTerrains": [ "water"]
+					},
+					"land" :
+					{
+						"animation" : "hota/shrines/4lvlxshrn",
+						"mask" : [ "VV","VA" ], 
+						"visitableFrom" : [ "---", "+++", "+++" ]
+					}
+				}
+			}
+		}
+	}
+}

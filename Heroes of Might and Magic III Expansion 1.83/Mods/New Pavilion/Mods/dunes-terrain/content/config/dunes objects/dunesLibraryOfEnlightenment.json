@@ -1,0 +1,31 @@
+{
+	"core:libraryOfEnlightenment" : {
+		"types" : {
+			"libraryOfEnlightenment" : {
+				"templates" : {
+					"dunesLibrary" : {
+						"animation" : "dunes objectFunc/library",
+						"mask" : [ "VVVVV", "VBBBB", "VBBAB" ],
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains": [ "dunes" ]
+					}
+				}
+			}
+		}
+	},
+	"core:university" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"dunesUniversity" : {
+						"animation" : "dunes objectFunc/dunesuniv2",
+						"mask" : [ "VVVVV", "VBBBV", "VBBBB", "VBBAB" ],
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains": [ "dunes","sand" ]
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,134 @@
+{
+	"cthExecutioner":
+	{
+		"name" :
+		{
+			"plural" : "刽子手",
+			"singular" : "刽子手"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 16
+		},
+		"faction" : "cathedral",
+		"level" : 2,
+		"attack" : 6,
+		"defense" : 6,
+		"horde": 6,
+		"damage" :
+		{
+			 "min" : 3,
+			 "max" : 4
+		},
+		"growth" : 8,
+		"hitPoints" : 20,
+		"speed" : 5,
+		"fightValue" : 233,
+		"aiValue" : 260,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{
+			"animation" : "cathedral/creatures/battle/CATHL2U.def",
+			"map" : "cathedral/creatures/map/AVWCATH04.def",
+			"iconSmall" : "cathedral/creatures/iconsSmall/CRCT004S.bmp",
+			"iconLarge" : "cathedral/creatures/iconsBig/CRCT004.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+				}
+			},
+		"sound" :
+		{
+			"attack": "MINKDFND.wav",
+			"defend": "LCRSDFND.wav",
+			"killed": "ROGUKILL.wav",
+			"move": "ROGUMOVE.wav",
+			"wince": "ROGUWNCE.wav"
+         },
+		"abilities" :
+		{
+			
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 10
+			},
+		"castDisease" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.scratch",
+				"val" : 20,
+				"icon" : "catheSpells/cut.png"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" : { "type" : "DOUBLE_DAMAGE_CHANCE" },
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}			
+		]	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+{
+	"02_Sam" :
+	{
+    "class": "factoryAClass",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "萨姆",
+			"biography" : "萨姆发现石油破坏了贾达密的土地，并且形成喷泉，毁坏了大片良田和牧场。作为铁匠的女儿，她终于驯服了这种黑色的野兽，并将其利用成为能源。她也成为了第一个使用石油作为燃料的人。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高机械师或工程师的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "机械师"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/02_Sam/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/02_Sam/bigS.bmp",
+			"large" : "factory/heroes/02_Sam/bigP.bmp",
+			"small" : "factory/heroes/02_Sam/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "hotaMechanic",
+				"max" : 6,
+				"min" : 4
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 6,
+				"min" : 4
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "hotaMechanic"
+		}
+	}
+}
+

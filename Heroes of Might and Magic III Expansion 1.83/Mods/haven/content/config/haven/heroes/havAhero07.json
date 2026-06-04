@@ -1,0 +1,60 @@
+{
+	"havAhero07" :
+	{
+		"class" : "havAhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "吉玛",
+			"biography" : "吉玛曾是彼得利器重的部下，她天生好战，带领海盗们攻占了很多地区。然而在战斗中造成的减员也不得不让她考虑训练女性成为海盗战力。在枪支不断减少的同时，她也学会了用十字弩作为武器。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "赏金猎人",
+				"description" : "达到3级以后提升赏金猎人和宝藏猎人的攻击力和防御力。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero7/skill7S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero7/skill7.bmp",
+			"large" : "haven/heroes/havHero7/hero7.bmp",
+			"small" : "haven/heroes/havHero7/hero7S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC05",
+				"max" : 7,
+				"min" : 5
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "havC05"
+		}	
+	}
+}

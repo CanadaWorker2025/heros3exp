@@ -1,0 +1,214 @@
+{
+	"name" : "Death Valley",
+	"description" : "Necro town",
+	"author" : "VCMI ROFL and Turbanellos(Ben Yan), Andruids",
+	"contact" : "forum.vcmi.eu",
+	"version" : "1.60",
+	"modType" : "Town",
+	"compatibility" : {
+		"min" : "1.7.1"
+	},
+	"changelog" : {
+		"1.00" : [
+			"Initial release"
+		],
+		"1.10" : [
+			"Changes for town screen, map objects, siege screen, creatures"
+		],
+		"1.20" : [
+			"Update to vcmi-1.2"
+		],
+		"1.30" : [
+			"Fixed froblem with improved necromancy"
+		],
+		"1.31" : [
+			"Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"
+		],
+		"1.32" : [
+			"Update to vcmi-1.3"
+		],
+		"1.33" : [
+			"New Hexerei skill icons"
+		],
+		"1.34" : [
+			"New artifacts"
+		],
+		"1.35" : [
+			"New portraits and changed name of Embalmed"
+		],
+		"1.36" : [
+			"Polish translation by Dru"
+		],
+		"1.37" : [
+			"Update to vcmi-1.4 format"
+		],
+		"1.38" : [
+			"Updated chinese translation by Rindlit"
+		],
+		"1.39" : [
+			"Added sounds to the golem and ghost dwelling buildings on the adventure map and fixes the animations of the golems by Fabrice-TIERCELIN"
+		],
+		"1.40" : [
+			"Fixed the translations, the creatures' stackExp and the commander"
+		],
+		"1.41" : [
+			"New town theme by Fabrice-TIERCELIN and AI Udio"
+		],
+		"1.42" : [
+			"Fixed Takesha specialty"
+		],
+		"1.43" : [
+			"Russian translation by Anton Sergeew"
+		],
+		"1.44" : [
+			"Updated russian translation"
+		],
+		"1.45" : [
+			"Death Knight Statuary fix and Dark Witch ability fix (by Dark Imagine)"
+		],
+		"1.46" : [
+			"Czech translation by George King"
+		],
+		"1.47" : [
+			"Update to vcmi-1.6 format"
+		],
+		"1.48" : [
+			"Czech translation for map - The Fall of the Old Order"
+		],
+		"1.49" : [
+			"Fix Grail not to produce gold"
+		],
+		"1.50" : [
+			"Added french translation by Fabrice-TIERCELIN"
+		],
+		"1.51" : [
+			"Update to vcmi-1.7 format"
+		],
+		"1.52" : [
+			"Another update to vcmi-1.7 format"
+		],
+		"1.53" : [
+			"Added flagport frames (Kingdom Overwiev window)"
+		],
+		"1.54" : [
+			"Converted BMPs to PNGs",
+			"Updated Czech translation"
+		],
+		"1.55" : [
+			"Fixed configs after BMPs to PNGs conversion"
+		],
+		"1.60" : [
+			"New townscreen and puzzle maps"
+		]
+	},
+	"chinese" : {
+		"name" : "死亡谷",
+		"description" : "死亡谷是一个新的亡灵种族，和教廷一样有着独特的宗教性艺术感。听闻教廷幸存者传播教义后，一些亡灵巫师开始追随死亡中的新生。于是他们离开迪雅，和这些幸存者一起建立了新的国度。虽然和墓园同为不死阵营，但他们不喜欢巫妖和吸血鬼。",
+		"translations" : [
+			"translation/deathvalley/chinese.json"
+		]
+	},
+	"french" : {
+		"name" : "Vallée de la Mort",
+		"description" : "Ville de la Vallée de la Mort",
+		"translations" : [
+			"translation/deathvalley/french.json"
+		]
+	},
+	"german" : {
+		"name" : "Tal des Todes",
+		"description" : "Tal des Todes Stadt",
+		"translations" : [
+			"translation/deathvalley/german.json"
+		]
+	},
+	"polish" : {
+		"name" : "Dolina Śmierci",
+		"description" : "Dodaje alternatywne miasto nieumarłych Dolina Śmierci",
+		"translations" : [
+			"translation/deathvalley/polish.json"
+		]
+	},
+	"russian" : {
+		"name" : "Долина Смерти",
+		"description" : "Новый город Долина Смерти, более зловещий некрополь, заселенный жуткой нежитью.",
+		"translations" : [
+			"translation/deathvalley/russian.json"
+		]
+	},
+	"czech" : {
+		"name" : "Údolí Smrti",
+		"description" : "Údolí smrti je město vybudované na troskách dávných pohřebišť, kde vládne temná magie a moc nekromancie. Vládci tohoto města povolávají padlé zpět do služby a jejich armády nikdy skutečně nepřestanou růst.<br/><br/>Jeho armádu tvoří <b>kostění psi</b>, <b>kostění lučištníci</b>, <b>vyhnanci</b>, <b>stíny</b>, <b>temné čarodějnice</b> a strašliví <b>smrťáci</b>, posílení <b>kostěnými golemy</b> a mocnými pány smrti.<br/><br/>Údolí smrti se specializuje na <b>nekromancii</b> a <b>oživení</b>, temné rituály a nekonečný proud nemrtvých, který drtí nepřátele svou neúnavností. Hrdinové této frakce dokáží z každého bojiště učinit místo, kde smrt není koncem, ale začátkem.<br/><br/>Je to frakce pro hráče, kteří touží po ovládnutí sil temnoty, oživování padlých a po armádě, která nikdy nezahyne.",
+		"translations" : [
+			"translation/deathvalley/czech.json"
+		]
+	},
+	"factions" : [
+		"config/deathvalley/town.json"
+	],
+
+	"creatures" : [
+		"config/deathvalley/creatures/skel1.json",
+		"config/deathvalley/creatures/skel2.json",
+		"config/deathvalley/creatures/Bone Hook.json",
+		"config/deathvalley/creatures/Flayer.json",
+		"config/deathvalley/creatures/banshee.json",
+		"config/deathvalley/creatures/ebanshee.json",
+		"config/deathvalley/creatures/gghost.json",
+		"config/deathvalley/creatures/cghost.json",
+		"config/deathvalley/creatures/leaper.json",
+		"config/deathvalley/creatures/skelh.json",
+		"config/deathvalley/creatures/reaper1.json",
+		"config/deathvalley/creatures/reaper2.json",
+		"config/deathvalley/creatures/mums.json",
+		"config/deathvalley/creatures/mums2.json",
+		"config/deathvalley/creatures/bonegolem.json",
+		"config/deathvalley/creatures/ghostgolem.json",
+		"config/deathvalley/creatures/commander.json",
+		"config/deathvalley/creatures/commander2.json"
+	],
+
+	"heroClasses" : [
+		"config/deathvalley/classes/deathlord.json",
+		"config/deathvalley/classes/necropriest.json"
+	],
+
+	"heroes" : [
+		"config/deathvalley/heroes/A_barraka.json",
+		"config/deathvalley/heroes/A_crightoth.json",
+		"config/deathvalley/heroes/A_draigoth.json",
+		"config/deathvalley/heroes/A_dreygo.json",
+		"config/deathvalley/heroes/A_mortadela.json",
+		"config/deathvalley/heroes/A_roakshar.json",
+		"config/deathvalley/heroes/A_sylvanus.json",
+		"config/deathvalley/heroes/A_valleante.json",
+		"config/deathvalley/heroes/M_agorratha.json",
+		"config/deathvalley/heroes/M_duella.json",
+		"config/deathvalley/heroes/M_jacen.json",
+		"config/deathvalley/heroes/M_minerva.json",
+		"config/deathvalley/heroes/M_norman.json",
+		"config/deathvalley/heroes/M_rezzileante.json",
+		"config/deathvalley/heroes/M_sorcha.json",
+		"config/deathvalley/heroes/M_takesha.json",
+		"config/deathvalley/heroes/M_darkNova.json"
+	],
+	"spells" : [
+		"config/deathvalley/spells/plagueAb1.json",
+		"config/deathvalley/spells/bansheeAb1.json",
+		"config/deathvalley/spells/boneskill01.json",
+		"config/deathvalley/spells/boneskill02.json",
+		"config/deathvalley/spells/reaperAb1.json",
+		"config/deathvalley/spells/moat.json"
+	],
+	"artifacts" : [
+		"config/deathvalley/artifacts/neroRing.json",
+		"config/deathvalley/artifacts/neroAmulet.json"
+	],
+	"objects" : [
+		"config/deathvalley/dwellings"
+	],
+
+	"skills" : [
+		"config/deathvalley/skills/dv_necromancy"
+	]
+}

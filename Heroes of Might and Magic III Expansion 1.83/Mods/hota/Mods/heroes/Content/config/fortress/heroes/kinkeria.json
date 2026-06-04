@@ -1,0 +1,62 @@
+{
+	"kinkeria" :
+	{
+		"class" : "witch",
+		"female" : true,
+		"onlyOnMapWithoutWater" : true,
+		"images" :
+		{
+			"large" : "hota/fortress/heroes/kinkeria/icons/portraitLarge.png",
+			"small" : "hota/fortress/heroes/kinkeria/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/fortress/heroes/kinkeria/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/fortress/heroes/kinkeria/icons/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "gnoll",
+				"min" : 15,
+				"max" : 25
+			},
+			{
+				"creature" : "lizardman",
+				"min" : 4,
+				"max" : 7
+			},
+			{
+				"creature" : "serpentFly",
+				"min" : 3,
+				"max" : 4
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "learning",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"learning" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"val" : 100,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		},
+		"spellbook" : [ "slow" ],
+		"texts" : {
+			"biography" : "金凯丽亚是部落里最受人尊敬的女巫。她一直在寻求知识，是为了理解宇宙万物的本质。她很快就取得了不俗的成就，令许多智者困惑多年。有人说，这毫不奇怪，因为给她提供研究条件的正是泰塔利亚国王本人。",
+			"name" : "金凯丽亚",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Learning",
+				"name" : "学习能力",
+				"description" : "英雄学习能力获得经验的百分比加倍。"
+			}
+		}
+	}
+}

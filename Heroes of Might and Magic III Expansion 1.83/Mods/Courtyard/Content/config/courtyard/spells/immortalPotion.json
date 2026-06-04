@@ -1,0 +1,120 @@
+{
+	
+	
+	"immortalPotion":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "不朽药水",
+		"school":
+		{
+			"courtPotion": true
+		},
+		"level": 4,
+		"power": 45,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName" : "courtyard/spells/Potions/Immortal/ImmortalPotion.def", "transparency" : 0.5}]
+		},
+ 
+		"flags" : { "positive": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.UNDEAD" : "absolute",
+				"bonus.GARGOYLE" : "absolute"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/Potions/Immortal/immorP_book1",
+			"iconEffect": "courtyard/spells/Potions/Immortal/immorP_effect1",
+			"iconScroll": "courtyard/spells/Potions/Immortal/immorlP_scroll1",
+			"iconScenarioBonus": "courtyard/spells/Potions/Immortal/immorlP_bonus1",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "RESURECT"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{不朽药水}\n\n补充阵亡部队的生命力。",
+	 
+	 
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"resurrect",
+						"healPower":"permanent",
+						"minFullUnits" : 1
+					},
+					"cure":{
+						"type":"core:dispel",
+						"indirect": true,
+						"optional":true,
+						"dispelNegative":false,
+						"dispelNeutral":false,
+						"dispelPositive":false
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{不朽药水}\n\n补充阵亡部队的生命力。",
+				},
+			"advanced":
+			{
+				"description": "{纯化不朽药水}\n\n补充阵亡部队的生命力。",
+				},
+			"expert":
+			{
+				"description": "{纯化不朽药水}\n\n补充阵亡部队的生命力，并驱除负面状态。",
+	 
+	 
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"resurrect",
+						"healPower":"permanent",
+						"minFullUnits" : 1
+					},
+					"cure":{
+						"type":"core:dispel",
+						"indirect": true,
+						"optional":true,
+						"dispelNegative":true,
+						"dispelNeutral":false,
+						"dispelPositive":false
+					}
+				}
+			}
+		}
+	}
+ 
+}

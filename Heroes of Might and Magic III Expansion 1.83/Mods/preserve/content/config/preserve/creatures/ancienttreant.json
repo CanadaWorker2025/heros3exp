@@ -1,0 +1,172 @@
+{
+  "ancienttreant": {
+    "name": {
+      "plural": "精灵龙",
+      "singular": "精灵龙"
+    },
+    "advMapAmount": {
+ "max" : 8,
+ "min" : 3
+    },
+    "faction": "preserve",
+    "aiValue": 6758,
+    "attack": 24,
+    "cost": {
+      "gold": 4000,
+      "gems": 2
+    },
+    "damage": {
+ "max" : 50,
+ "min" : 35
+    },
+    "defense": 24,
+    "fightValue": 6412,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C7UTre.def",
+      "map": "preserve/map/creatures/AVWC176.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS176P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL176P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.5,
+        "attack": 1,
+        "idle": 10
+      },
+      "missile": {
+        "projectile": "PCYCLBX.DEF",
+        "attackClimaxFrame": 7,
+        "offset": {
+          "upperX": 38,
+          "upperY": -65,
+          "middleX": 36,
+          "middleY": -59,
+          "lowerX": 21,
+          "lowerY": -50
+        },
+        "frameAngles": [ 90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0 ]
+      }
+    },
+    "doubleWide": true,
+    "growth": 1,
+    "hitPoints": 240,
+    "level": 7,
+	"sound" :
+    {
+			"attack": "FAERATTK.wav",
+			"defend": "FAERDFND.wav",
+			"killed": "FAERKILL.wav",
+			"move": "FAERMOVE.wav",
+			"shoot": "FAERSHOT.wav",
+			"wince": "FAERWNCE.wav"
+		},
+    "speed": 15,
+    "abilities":
+      {
+		"basicSlayer" : { "type" : "KING", "val": 1 },
+			"canFly" : 
+			{
+				"type" : "FLYING",
+				"icon" : "preserve/icons/bonuses/e_fly4.png"
+			},
+		"dragon" : 
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"spellImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 3
+			},
+			"prismBreath" :
+			{
+				"type" : "MULTIHEX_UNIT_ATTACK",
+				"addInfo": [ "FL", "FF", "FR" ],
+				"description" : "{棱光吐息}\n攻击目标后向后扩散三格",
+				"icon" : "NewOldSpells/prismBreath.png",
+			},
+			"spellDamageIncreaseAura" : {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"val" : -25,
+				"limiters" : [
+					"allOf",
+					"OPPOSITE_SIDE",
+					{
+						"type" : "UNIT_ADJACENT",
+						"creature" : "ancienttreant"
+					}
+				],
+				"icon" : "preserve/icons/bonuses/spellDamageAura",
+				"description" : "{魔法破坏光环}\n使周围敌人受到的魔法伤害增加25%"
+			}
+	    },	
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" : 
+				{ 
+					"type" : "HP_REGENERATION" 
+				},
+				"values" : [ 5,10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+
+			},
+			{
+				"bonus" :
+				{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+				},
+				"values" : [ false, false, false, false, false, false, false, false, false, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+  }
+}

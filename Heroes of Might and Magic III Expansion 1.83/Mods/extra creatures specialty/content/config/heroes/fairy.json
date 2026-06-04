@@ -1,0 +1,60 @@
+{
+
+	"fairy:ftF_Siniri": {
+        "texts": {
+            "specialty": {
+                "name": "妖精贵族",
+                "description": "每6级提高妖精贵族及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"fairy:ftG_Sinara": {
+        "texts": {
+            "specialty": {
+                "name": "女祭司",
+                "description": "每5级提高女祭司及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"fairy:ftA_Kylina": {
+        "texts": {
+            "specialty": {
+                "name": "风精灵",
+                "description": "每4级提高风精灵及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"fairy:special01Fairy": {
+        "texts": {
+            "specialty": {
+                "name": "风精灵",
+                "description": "每4级提高风精灵及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"fairy:ftE_Sheli": {
+        "texts": {
+            "specialty": {
+                "name": "绿妖精",
+                "description": "每2级提高绿妖精及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"fairy:ftI_Zerela": {
+		"specialty": {
+			"creature": "ftFairy1",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "花精",
+                "description": "每1级提高花精及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

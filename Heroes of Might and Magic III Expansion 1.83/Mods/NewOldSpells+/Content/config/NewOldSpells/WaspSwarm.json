@@ -1,0 +1,148 @@
+{
+	"waspSwarm":
+	{
+		"type": "combat", 
+		"name": "蜂群滋扰",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 10,
+		"defaultGainChance": 10, 
+		"gainChance":
+		{
+			"rampart": 20,
+			"necropolis": 15,
+			"inferno" : 0,
+			"stronghold" : 15,
+			"fortress" : 20,
+			"conflux" : 0
+		},
+ 
+		"flags" :
+		{
+			"offensive": true,
+			"damage": true,
+			"negative": true
+		},
+ 
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {
+				"core:bonus.NON_LIVING": "normal",
+				"bonus.MECHANICAL" : "normal",
+				"core:bonus.UNDEAD": "normal"
+			}
+	},  
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/waspBook.bmp",
+			"iconScroll": "NewOldSpells/waspScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/waspScenario.bmp",
+			"iconEffect": "NewOldSpells/waspEffect.bmp",
+			"iconImmune": "NewOldSpells/waspImmune.bmp"
+		},
+		
+		"animation":
+		{
+			"hit":["NewOldSpells/waspSpell.def"]
+		},
+
+		"sounds":
+		{
+			"cast":"NewOldSpells/sound.spell.wasp.wav"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{蜂群滋扰}\n\n使敌人受到少量伤害并且该回合速度减少25%。\n",
+	 
+				"cost": 8,
+				"power": 10,
+	 
+				"effects":
+				{
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "STACK_GETS_TURN",
+						"val": -25
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级蜂群滋扰}\n\n使敌人受到少量伤害并且该回合速度减少25%。\n",
+	 
+				"cost": 6,
+				"power": 15,
+	 
+				"effects":
+				{
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "STACK_GETS_TURN",
+						"val": -25
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级蜂群滋扰}\n\n使敌人受到少量伤害并且该回合速度减少50%。\n",
+	 
+				"cost": 6,
+				"power": 15,
+	 
+				"effects":
+				{
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "STACK_GETS_TURN",
+						"val": -50
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级蜂群滋扰}\n\n使敌人受到少量伤害并且该回合速度减少75%。\n",
+	 
+				"cost": 6,
+				"power": 15,
+	 
+				"effects":
+				{
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "STACK_GETS_TURN",
+						"val": -75
+					}
+				}
+			}
+		}
+	}
+ 
+}

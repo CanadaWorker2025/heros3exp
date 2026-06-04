@@ -1,0 +1,65 @@
+{
+	"lifeEater3" : {
+		"type": "ability",
+		"name": "血之怒",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"targetType": "CREATURE",
+		"level": 1,
+		"power": 1,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+		"animation":{
+			"affect":["C12SPF0"]
+		},
+		"flags" : {
+			"nonMagical": true,
+			"damage": true,
+			"negative": true
+					},
+		"sounds": {
+			"cast": "SACRIF1"
+		},
+		"graphics":
+		{
+			"iconImmune":"spellsPavilion/placeholder.bmp",
+			"iconEffect": "spellsPavilion/wound.png"
+		},
+		"levels" : 
+		{
+			
+			"base":{
+				"description": "{血怒}\r\n\r\n对创伤生物持续杀伤。",
+				"cost": 0,
+				"power": 1,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"battleEffects":{
+					"damage":{
+						"type":"core:damage",
+						"ignoreImmunity" : true
+					}
+				}
+			},
+			"none":	{},	"basic":{},	"advanced":	{}, "expert":{}	
+		},		
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "absolute",
+				"bonus.GARGOYLE" : "absolute"
+			}
+		}
+	}	
+}
+
+

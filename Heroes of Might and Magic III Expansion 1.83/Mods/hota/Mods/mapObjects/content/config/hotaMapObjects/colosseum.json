@@ -1,0 +1,43 @@
+{
+	"colosseumOfTheMagi" :{	
+		"name": "魔法竞技场",
+		"handler": "configurable",
+		"types" : {
+			"colosseumOfTheMagi" : 
+			{
+				"name": "魔法竞技场 (+2 力量或知识给访问的英雄)",
+				"rmg" : {
+					"value"		: 3000,
+					"rarity"	: 50,
+					"mapLimit" : 32
+				},
+				"sounds" : {
+					"visit" : ["GAZEBO"],
+					"ambient" : ["hota/IVORTWLO"]
+				},
+				"rewards" :
+				[
+					{
+						"primary": {"spellpower" : 2}
+					},
+					{
+						"primary": {"knowledge" : 2}
+					}
+				],
+				"onSelectMessage" : "{魔法竞技场}\r\n\r\n魔法竞技场今天正在上演一场大型的演出活动。你进入竞技场，用你的魔法实力让观众惊叹不已。这里的负责人也对你大为赞赏。他们会教你一些知识并对你有所帮助。",
+				"onVisitedMessage": "{魔法竞技场}\r\n\r\n负责人再次认出了你并希望你成为才艺展示比赛的评委。你认为这些演出者都是平平无奇，也不愿意将时间浪费在无聊的评判之上。",
+				"visitMode" : "hero",
+				"selectMode" : "selectPlayer",
+				"templates" : 
+				{
+					"avsmgarn" : 
+					{
+						"animation" : "hota/colosseumOftheMagi/avsmgarn", 
+						"visitableFrom" : [ "---", "---", "-+-" ], 
+						"mask" : ["VVVV", "VBBB", "VBAB"]
+					}					
+				}
+			}
+		}	
+	}
+}

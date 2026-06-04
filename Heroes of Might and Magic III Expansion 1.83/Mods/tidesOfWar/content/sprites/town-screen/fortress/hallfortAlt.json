@@ -1,0 +1,15 @@
+{
+    "basepath" : "town-screen/fortress/frames/",
+	"images" :
+	[
+		{ "frame" : 44, "file" : "TPFEx1.bmp"},
+		{ "frame" : 45, "file" : "TPFEx2.bmp"},
+		{ "frame" : 46, "file" : "TPFEx3.bmp"},
+		{ "frame" : 47, "file" : "TPFEx4.bmp"},
+		{ "frame" : 48, "file" : "TPFEx5.bmp"},
+		{ "frame" : 49, "file" : "TPFEx6.bmp"},
+		{ "frame" : 50, "file" : "TPFEx7.bmp"},
+		{ "frame" : 55, "file" : "TPFGorg3.png"},
+		{ "frame" : 62, "file" : "TPFGorg4.png"}
+	]
+}

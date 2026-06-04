@@ -1,0 +1,131 @@
+{
+	"tidesofwar:mdtCharles":{
+		"specialty": {
+			"creature": "mdtTemplar",
+			"bonuses": {
+               "selfMorale" : {
+					"type" : "MORALE",
+					"val" : 1,
+					"valueType" : "INDEPENDENT_MAX",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "mdtTemplar",
+							"includeUpgrades" : true
+						}
+					]
+				}
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "圣堂武士",
+                "description": "每7级提高圣堂武士及其升级形态20%的攻击力和防御力并拥有正士气。速度+1。"
+            }
+        }
+	},
+	"tidesofwar:mdtEurydis": {
+        "texts": {
+            "specialty": {
+                "name": "林妖",
+                "description": "每4级提高林妖及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"tidesofwar:mdtVerstan": {
+		"specialty": {
+			"creature": "mdtDrakeGolem",
+			"bonuses": {
+			"resistance": {
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 10,
+				"valueType" : "ADDITIVE_VALUE",
+				"limiters": [
+				{
+					"type": "CREATURE_TYPE_LIMITER",
+					"creature" : "mdtDrakeGolem",
+					"includeUpgrades" : true
+				}]
+			}
+        }
+		},
+        "texts": {
+            "specialty": {
+                "name": "傀儡龙",
+                "description": "每7级提高傀儡龙及其升级形态20%的攻击力和防御力。速度+1。魔法抵抗力+10%。"
+            }
+        }
+	},
+	"tidesofwar:eyzeaDemoniac": {
+        "texts": {
+            "specialty": {
+                "name": "魅魔",
+                "description": "每4级提高魅魔及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"tidesofwar:yaverrDeathknight": {
+        "texts": {
+            "specialty": {
+                "name": "狼人",
+                "description": "每4级提高狼人及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"tidesofwar:mdtCollivea": {
+        "texts": {
+            "specialty": {
+                "name": "美杜莎",
+                "description": "每4级提高美杜莎及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"tidesofwar:mdtGaluum": {
+        "texts": {
+            "specialty": {
+                "name": "摄魂怪",
+                "description": "每5级提高摄魂怪及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"tidesofwar:mdtErgon": {
+        "texts": {
+            "specialty": {
+                "name": "风蛇",
+                "description": "每6级提高风蛇及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"tidesofwar:mdtThyroc": {
+		"texts": {
+            "specialty": {
+                "name": "九头怪",
+                "description": "每7级提高九头怪及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"tidesofwar:mdtShroo": {
+        "texts": {
+            "specialty": {
+                "name": "洞穴巫女",
+                "description": "每5级提高洞穴巫女及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"tidesofwar:mdtIrrigus": {
+        "texts": {
+            "specialty": {
+                "name": "海卫兵",
+                "description": "每3级提高海卫兵及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.heroes:specialKydoimos": {
+        "texts": {
+            "specialty": {
+                "name": "火精灵",
+                "description": "每6级提高火精灵及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

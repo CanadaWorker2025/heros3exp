@@ -1,0 +1,63 @@
+{
+	"d_terence" :
+	{
+    "class": "guardian",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "泰伦斯",
+			"biography" : "泰伦斯原来和精灵们一起巡逻，他们遭到了森林中狼群的攻击。同伴们都丧生了，然而他却奇迹般地生还，并发现他竟然能够驯服狼群作为自己的手下。现在，他驯服了狼群用于作战，并且成为了反对格鲁的精灵议会中的一名重要议员。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高棕狼和灰狼的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "棕狼"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/terence/Un32Leap.bmp",
+			"specialtyLarge" : "preserve/heroes/terence/Un44Leap.bmp",
+			"large" : "preserve/heroes/terence/HPL003GN.bmp",
+			"small" : "preserve/heroes/terence/HPS003GN.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "treelurker",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "treelurker"
+		}
+	}
+}
+

@@ -1,0 +1,91 @@
+{
+	"s_Taugarn" :
+	{
+		"class" : "deathknight",
+		"female" : true,
+		"special": true,
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/taugarn/Un32BDrag.bmp",
+			"specialtyLarge" : "deathvalley/heroes/taugarn/Un44BDrag.bmp",
+			"large" : "deathvalley/heroes/taugarn/taugarnLarge.png",
+			"small" : "deathvalley/heroes/taugarn/taugarnSmall.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skeleton",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "walkingDead",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "wight",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "necromancy"
+			}
+		],
+		"spellbook" :
+		["curse"],
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"creature" : "boneDragon",
+						"includeUpgrades" : true,
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+				]
+			},
+			"bonuses" : {
+				"health" : {
+					"type" : "STACK_HEALTH",
+					"val" : 50,
+					"valueType" : "ADDITIVE_VALUE"
+				},
+				"attack" : {
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				},
+				"defence" : {
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				},
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1
+				}
+			}
+		},
+			
+		"texts" : {
+			"biography" : "陶甘是龙之心的拥有者，也是摩莉尔的左爪。但在和精灵的战争中，她被射中翅膀逃到山谷中，被早就想取代她地位的黑龙达萨洛斯杀死，且肉体被焚毁殆尽。她的灵魂久久不能安息，被亡灵巫术复活的她也一定要亲眼看到仇人达萨洛斯的毁灭。",
+			"name" : "陶甘",
+			"specialty" : {
+				"description" : "英雄率领的骨龙和鬼龙攻击力和防御力+10，生命值+50，速度+1。",
+				"tooltip" : "Receives a 5% per level bonus to Offence skill.",
+				"name" : "骨龙"
+			}
+		}
+	}
+}
+

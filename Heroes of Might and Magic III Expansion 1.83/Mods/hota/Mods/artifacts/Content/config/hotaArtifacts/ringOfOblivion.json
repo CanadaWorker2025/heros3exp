@@ -1,0 +1,70 @@
+{
+	"ringOfOblivion" : {
+		"type" : [ "HERO" ],
+		"slot" : "RING",
+		"class" : "MAJOR",
+		"value" : 7500,
+		"bonuses" : {
+			"bonus1" :{
+				"type" : "GARGOYLE",
+				"propagator": "BATTLE_WIDE"
+			},
+			"bonus2" :{
+				"type": "DISINTEGRATE",
+				"propagator": "BATTLE_WIDE"
+			},
+			"bonus3" :{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.sacrifice",
+				"valueType" : "BASE_NUMBER",
+				"val" : 0,
+				"propagator": "BATTLE_WIDE"
+			},
+			"bonus4" :{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.animateDead",
+				"valueType" : "BASE_NUMBER",
+				"val" : 0,
+				"propagator": "BATTLE_WIDE"
+			},
+			"bonus5" :{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.resurrection",
+				"valueType" : "BASE_NUMBER",
+				"val" : 0,
+				"propagator": "BATTLE_WIDE"
+			},
+			"bonus6" :{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.reconstruction",
+				"valueType" : "BASE_NUMBER",
+				"val" : 0,
+				"propagator": "BATTLE_WIDE"
+			},
+			"bonus7" :{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.reflowElemental",
+				"valueType" : "BASE_NUMBER",
+				"val" : 0,
+				"propagator": "BATTLE_WIDE"
+			},
+			"bonus8" :{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.hotaRepair",
+				"valueType" : "BASE_NUMBER",
+				"val" : 0,
+				"propagator": "BATTLE_WIDE"
+			},
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/ringOfOblivion",
+			"map" : "hota/artifactsMap/ringOfOblivion",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/ringOfOblivion"
+		},
+		"text" : {
+			"description" : "{湮灭之戒}\r\n\r\n当佩戴时，在战斗中的所有损失都无法挽回。",
+			"event" : "你站在一片不久之前发生过大战的土地上，对完全没有尸体感到不安，在破损的剑与盔甲之中你找到了一枚戒指。",
+			"name" : "湮灭之戒"
+		}
+	}
+}

@@ -1,0 +1,69 @@
+{
+
+	"new pavilion.new pavillion:varn": {
+        "texts": {
+            "specialty": {
+                "name": "冥神使",
+                "description": "每7级提高冥神使及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"new pavilion.new pavillion:amesh": {
+        "texts": {
+            "specialty": {
+                "name": "人面狮",
+                "description": "每6级提高人面狮及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"new pavilion.new pavillion:cassandra": {
+        "texts": {
+            "specialty": {
+                "name": "恐鳄",
+                "description": "每5级提高恐鳄及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"new pavilion.new pavillion:menet": {
+        "texts": {
+            "specialty": {
+                "name": "谜影侍女",
+                "description": "每4级提高谜影侍女及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"new pavilion.new pavillion:ibrahim": {
+        "texts": {
+            "specialty": {
+                "name": "骆驼骑兵",
+                "description": "每3级提高骆驼骑兵及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"new pavilion.new pavillion:azarias": {
+        "texts": {
+            "specialty": {
+                "name": "沙蛇",
+                "description": "每2级提高沙蛇及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"new pavilion.new pavillion:marzum": {
+		"specialty": {
+			"creature": "whipper",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "督工",
+                "description": "每1级提高督工及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

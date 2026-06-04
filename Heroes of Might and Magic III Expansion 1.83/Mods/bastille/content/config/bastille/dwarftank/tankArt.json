@@ -1,0 +1,22 @@
+{
+	"dwarftank":
+	{
+		"type" : ["HERO"],
+		"warMachine" : "dwarftank",
+		"class" : "SPECIAL",
+		"slot" : "MACH1",
+		"value": 4000,		
+		"text":
+		{
+			"name": "铁甲战车",
+			"description": "{铁甲战车}\r\n\r\n铁甲战车可以用火炮攻击敌方部队。",
+			"event": "你真幸运，居然发现了完好无损的铁甲战车。"
+		},
+		"graphics":
+		{
+			"scenarioBonus" : "bastille/iconsSmall/creatures/tankicon2.png",
+			"image": "bastille/iconsSmall/creatures/tankicon.bmp",
+			"map": "bastille/map/creatures/AVWTANK.def"
+		}
+	}
+}

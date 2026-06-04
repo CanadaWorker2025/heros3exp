@@ -1,0 +1,162 @@
+{
+	// 219
+	"zportraitIssac" : {
+		"class" : "cthbishop",
+		"special" : true,
+		"images" : {
+			"large" : "cathedral/heroes/special/H1B",
+			"small" : "cathedral/heroes/special/H1S",
+			"specialtySmall" : "default",
+			"specialtyLarge" : "default"
+		},
+		"texts" : {
+			"name" : "",
+			"biography" : "",
+			"specialty" : {
+				"description" : "",
+				"tooltip" : "",
+				"name" : ""
+			}
+		},
+		"army" : [
+			{
+				"creature" : "goblin",
+				"min" : 1,
+				"max" : 1
+			}
+		],
+		"skills" : [],
+		"specialty" : {}
+	},
+	// 220
+	"zportraitVero" : {
+		"class" : "cthbishop",
+		"special" : true,
+		"images" : {
+			"large" : "cathedral/heroes/special/H2B",
+			"small" : "cathedral/heroes/special/H2S",
+			"specialtySmall" : "default",
+			"specialtyLarge" : "default"
+		},
+		"texts" : {
+			"name" : "",
+			"biography" : "",
+			"specialty" : {
+				"description" : "",
+				"tooltip" : "",
+				"name" : ""
+			}
+		},
+		"army" : [
+			{
+				"creature" : "goblin",
+				"min" : 1,
+				"max" : 1
+			}
+		],
+		"skills" : [],
+		"specialty" : {}
+	},
+	"zportraitVera" : {
+		"class" : "cthbishop",
+		"special" : true,
+		"images" : {
+			"large" : "cathedral/heroes/special/H3B",
+			"small" : "cathedral/heroes/special/H3S",
+			"specialtySmall" : "default",
+			"specialtyLarge" : "default"
+		},
+		"texts" : {
+			"name" : "",
+			"biography" : "",
+			"specialty" : {
+				"description" : "",
+				"tooltip" : "",
+				"name" : ""
+			}
+		},
+		"army" : [
+			{
+				"creature" : "goblin",
+				"min" : 1,
+				"max" : 1
+			}
+		],
+		"skills" : [],
+		"specialty" : {}
+	},
+	"zportraitDemonKing" : {
+		"class" : "cthbishop",
+		"special" : true,
+		"images" : {
+			"large" : "cathedral/heroes/special/H4B",
+			"small" : "cathedral/heroes/special/H4S",
+			"specialtySmall" : "default",
+			"specialtyLarge" : "default"
+		},
+		"texts" : {
+			"name" : "",
+			"biography" : "",
+			"specialty" : {
+				"description" : "",
+				"tooltip" : "",
+				"name" : ""
+			}
+		},
+		"army" : [
+			{
+				"creature" : "goblin",
+				"min" : 1,
+				"max" : 1
+			}
+		],
+		"skills" : [],
+		"specialty" : {}
+	},
+	"zEsseni" :
+	{
+		"class" : "redtemplar",
+		"special" : true,
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/nariko/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/nariko/spec-large.bmp",
+			"large" : "cathedral/heroes/special/H5B",
+			"small" : "cathedral/heroes/special/H5S"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+		
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			},
+		],
+		"texts" :
+		{
+			"name" : "艾西尼",
+			"biography" : "艾西尼年幼的时候体弱多病，但她依然完成了很多别人无法完成的训练。也正如此，她被救世军的首领看中，批准她成为一名将领。",
+			"specialty" :
+			{
+				"tooltip" : "特长：飞蛇",
+				"description" : "每4级提高飞蛇及其升级形态20%的攻击力和防御力。速度+1。",
+				"name" : "飞蛇"
+			}
+		},
+		"specialty" : {
+			"creature" : "cthCouatl"
+		}
+	}
+}

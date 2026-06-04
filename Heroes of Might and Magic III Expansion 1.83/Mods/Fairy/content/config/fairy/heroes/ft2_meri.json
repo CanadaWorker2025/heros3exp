@@ -1,0 +1,71 @@
+{
+	"ftB_ftMeri" :
+	{
+		"class" : "hunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "美瑞",
+			"biography" : "美瑞是有史以来最优秀的探险家之一，每次都能够轻松找到最快的路线。在冒险中，她有时会驻足凝视花草或树木，有人说是自然的力量在帮助她更好地找寻道路。",
+			"specialty" :
+			{
+				"description" : "在后勤学上每级得到5%的额外奖励。",
+				"tooltip" : "{Logistics}\r\n\r\nReceives a 5% per level bonus too Logistics skill percentage.",
+				"name" : "后勤学"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/mrimm/un32logi.png",
+			"specialtyLarge" : "fairy/heroes/mrimm/un44logi.png",
+			"large" : "fairy/heroes/mrimm/hpl285.png",
+			"small" : "fairy/heroes/mrimm/hps285.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"name" : "Belarusian translation",
+	"description" : "Belarusian translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.1",
+	"author" : "łokar",
+	"contact" : "",
+	"language" : "belarusian",
+	"modType" : "Translation",
+	"compatibility" :
+	{
+		"min" : "1.7.0"
+	},
+	"changelog" : 
+	{ 
+		"1.0.1" : [ "Remove custom fonts" ],
+		"1.0.0" : [ "Initial release from https://heroes.by-reservation.com/spampavac/" ]
+	},
+	"german" : {
+		"name" : "Belarussische Übersetzung",
+		"description" : "Belarussische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"belarusian" : {
+		"name" : "Беларускі пераклад",
+		"description" : "Беларускі пераклад Heroes of Might and Magic III: Complete Edition"	
+	},
+	"translations" : [
+		"config/vcmi-belarusian/game.json",
+		"config/vcmi-belarusian/maps.json",
+		"config/vcmi-belarusian/chronicles.json",
+		"config/vcmi-belarusian/campaigns.json"
+	]
+}

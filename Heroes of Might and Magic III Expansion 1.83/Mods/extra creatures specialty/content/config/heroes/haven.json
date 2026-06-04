@@ -1,0 +1,82 @@
+{
+
+	"haven:havAheroS02": {
+        "texts": {
+            "specialty": {
+                "name": "海魔法师",
+                "description": "每6级提高海魔法师及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"haven:havAhero03": {
+        "texts": {
+            "specialty": {
+                "name": "巨龟",
+                "description": "每6级提高巨龟及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"haven:havAhero06": {
+        "texts": {
+            "specialty": {
+                "name": "水灵",
+                "description": "每5级提高水灵及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"haven:havMhero09": {
+        "texts": {
+            "specialty": {
+                "name": "美人鱼",
+                "description": "每4级提高美人鱼及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"haven:havAhero07": {
+        "texts": {
+            "specialty": {
+                "name": "赏金猎人",
+                "description": "每3级提高赏金猎人及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"haven:havMhero14": {
+        "texts": {
+            "specialty": {
+                "name": "潜游者",
+                "description": "每2级提高潜游者及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"haven:havAhero08": {
+		"specialty": {
+			"creature": "havC01",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "鼠人",
+                "description": "每1级提高鼠人及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"haven:havAheroS01": {
+		"specialty": {
+			"creature": "skeleton",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "骷髅兵",
+                "description": "每1级提高骷髅兵及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

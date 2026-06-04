@@ -1,0 +1,69 @@
+{
+	"ifDark03":
+	{
+		"name" :
+		{
+			"plural" : "炎息猎犬",
+			"singular" : "炎息猎犬"
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 12
+		},
+		"faction": "inferno",
+		"aiValue" : 390,
+		"fightValue" : 307,
+		"doubleWide" : true,
+		"attack" : 11,
+		"defense" : 9,
+		"cost" :
+		{
+			"gold" : 250
+		},
+		"damage" :
+		{
+			"min" : 4,
+			"max" : 7
+		},
+		"speed" : 8,
+		"upgrades": ["cerberus"],
+		"graphics" :
+		{
+			"animation" : "creatures/inferno/battle/CINF23.def",
+			"map" : "creatures/inferno/map/AVWinf03.def",
+			"iconSmall" : "creatures/inferno/iconsSmall/CINF23S.bmp",
+			"iconLarge" : "creatures/inferno/iconsBig/CINF23B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 25,
+		"growth" : 5,
+		"horde": 3,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "CERBATTK.wav",
+			"defend": "CERBDFND.wav",
+			"killed": "CERBKILL.wav",
+			"move": "CERBMOVE.wav",
+			"wince": "CERBWNCE.wav"
+		},
+		"abilities" :
+		{
+			"fireBreath" :
+			{
+				"type" : "WIDE_BREATH",
+				"description" : "{炎息}\n造成大范围的吐息(最多6格)",
+				"icon": "bonuses/inf03.png"
+			}			
+		}
+	}
+}
+
+

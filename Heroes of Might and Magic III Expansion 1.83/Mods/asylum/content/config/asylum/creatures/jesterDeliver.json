@@ -1,0 +1,85 @@
+{
+	"jesterDeliver":
+	{
+		"name" :
+		{
+			"plural" : "小丑信使",
+			"singular" : "小丑信使"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 20,
+			 "max" : 50
+		},
+		"faction" : "neutral",
+		"level" : 1,
+		"attack" : 2,
+		"defense" : 1,
+		"damage" :
+		{
+			 "min" : 1,
+			 "max" : 1
+		},
+		"growth" : 16,
+		"hitPoints" : 2,
+		"speed" : 6,
+		"doubleWide" : false,
+		"fightValue" : 118,
+		"aiValue" : 116,
+		"cost" :
+		{
+			"gold" : 70
+		},
+		"graphics" :
+		{
+			"animation" : "asylum/battle/creatures/jesterBattle.def",
+			"map" : "asylum/map/creatures/jesterMap.def",
+			"iconSmall" : "asylum/iconsSmall/creatures/jesterIconS.bmp",
+			"iconLarge" : "asylum/iconsBig/creatures/jesterIcon.bmp",
+            "timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "ZELTDFND.wav",
+			"defend": "LCRSDFND.wav",
+			"killed": "ROGUKILL.wav",
+			"move": "ROGUMOVE.wav",
+			"wince": "ROGUWNCE.wav"
+               },
+		"abilities":
+		{
+	
+		      "immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"nonLiving" : 
+			{ "type" : "GARGOYLE" },
+			"giftStrength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.birthdayGift",
+				"val" : 10
+			},
+		"castGiftDelievry" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.birthdayGift",
+				"val" : 100,
+				"icon" : "NewOldSpells/jesterBonus.png"
+			}
+		}
+	}
+}
+
+
+
+
+
+

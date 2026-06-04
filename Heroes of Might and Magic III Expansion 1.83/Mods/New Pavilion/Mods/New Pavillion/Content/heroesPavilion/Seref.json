@@ -1,0 +1,73 @@
+{
+	"seref" :
+	{
+		"class" : "embalmer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "谢里芙",
+			"biography" : "自从她成为一名创始人以来，谢里芙激烈而又具有保护欲的性格开始广为人知。令人惊讶的是没有人注意到她之所以被选为女神的另一个品质 - 竭力保护她忠实的追随者们。",
+			"specialty" :
+			{
+				"description" : "作战开场即自动施放烈火神盾魔法。",
+				"tooltip" : "Spell Bonus: Fire Shield",
+				"name" : "烈火神盾"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/32Shield.bmp",
+			"specialtyLarge" : "speciconsPavilion/44Shield.bmp",
+			"large" : "heroportraitsPavilion/Seref.png",
+			"small" : "heroportraitsPavilion/SerefSmall.png"
+		},
+        "spellbook" :
+		[
+			"fireShield"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic" ,
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "fireMagic"
+			}
+		],
+        "specialty": 
+		{
+			"bonuses": {
+				"fireShield": {
+					"type": "OPENING_BATTLE_SPELL",
+					"subtype": "spell.fireShield",
+					"val" : 2
+			    }
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,29 @@
+{
+	"shamansPuppet" : {
+		"type" : [ "HERO" ],
+		"slot" : "MISC",
+		"class" : "MINOR",
+		"value" : 4000,
+		"bonuses" : {
+			"luck" : {
+				"type" : "LUCK",
+				"val" : -2,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/shamansPuppet",
+			"map" : "hota/artifactsMap/shamansPuppet",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/shamansPuppet"
+		},
+		"text" : {
+			"description" : "{萨满傀儡}\r\n\r\n降低敌人2点幸运。",
+			"event" : "今天从一开始就不是非常好。你从梯子下走过路，遇见一个倒脏水的女人并且踩到一只黑猫。显然地，这不是你的运气。不过地毯上的某个家伙一直跟着你。你决定抓住这个倒霉鬼，但是他逃走了。当他消失时，你注意到他落下的一个奇异的木偶。",
+			"name" : "萨满傀儡"
+		}
+	}
+}

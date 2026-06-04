@@ -1,0 +1,95 @@
+{
+	"reinforcements" : {
+		"type" : "adventure",
+		"name" : "召唤支援",
+		"school" : {
+			"fire" : true
+		},
+		"level" : 5,
+		"power" : 0,
+		"defaultGainChance" : 10,
+		"gainChance" : 
+		{
+			"inferno"	:25,
+			"tower": 15,
+			"conflux": 12
+		},
+		"flags" : {
+			"indifferent" : true,
+			"positive" : true
+		},
+		"graphics" : {
+			"iconBook" : "spellBook",
+			"iconScroll" : "spellScroll",
+			"iconScenarioBonus" : "spellBonus",
+			"iconEffect" : "spellEffect"
+		},
+		"targetType" : "NO_TARGET",
+		"levels" : {
+			"base" : {
+				"adventureEffect" : {
+					"casterInTown" : "当英雄驻留在城镇中时，无法施放“召唤支援”。",
+					"selectTownTitle" : "召唤支援",
+					"selectTownDescription" : "选择城镇进行交换",
+					"garrisonTitle" : "召唤支援"
+				}
+			},
+			"none" : {
+				"description" : "{召唤支援}\r\n\r\n从最近的友方城镇驻军中召唤部队。相当于对城镇的驻军进行远程交换。\r\n\r\n每天可施放一次。\r\n",
+				"cost" : 24,
+				"power" : 0,
+				"range" : "X",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"adventureEffect" : {
+					"type" : "reinforcements",
+					"allowTownSelection" : false,
+					"castsPerDay" : 1
+				}
+			},
+			"basic" : {
+				"description" : "{初级召唤支援}\r\n\r\n从最近的友方城镇驻军中召唤部队。相当于对城镇的驻军进行远程交换。\r\n\r\n每天可施放两次。\r\n",
+				"cost" : 24,
+				"power" : 0,
+				"range" : "X",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"adventureEffect" : {
+					"type" : "reinforcements",
+					"allowTownSelection" : false,
+					"castsPerDay" : 2
+				}
+			},
+			"advanced" : {
+				"description" : "{中级召唤支援}\r\n\r\n从任意友方城镇驻军中召唤部队。相当于对城镇的驻军进行远程交换。\r\n\r\n每天可施放三次。\r\n",
+				"cost" : 24,
+				"power" : 0,
+				"range" : "X",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"adventureEffect" : {
+					"type" : "reinforcements",
+					"allowTownSelection" : true,
+					"castsPerDay" : 3
+				}
+			},
+			"expert" : {
+				"description" : "{高级召唤支援}\r\n\r\n从任意友方城镇驻军中召唤部队。相当于对城镇的驻军进行远程交换。\r\n\r\n每天可施放四次。\r\n",
+				"cost" : 24,
+				"power" : 0,
+				"range" : "X",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"adventureEffect" : {
+					"type" : "reinforcements",
+					"allowTownSelection" : true,
+					"castsPerDay" : 4
+				}
+			}
+		}
+	}
+}

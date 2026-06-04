@@ -1,0 +1,96 @@
+{
+	"freezingShot" : {
+		"name" : "冰冻射击",
+		"type" : "ability",
+		"targetType" : "NO_TARGET",
+		"level" : 3,
+		"power" : 0,
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"flags" : {
+			"negative" : true,
+			"special" : true
+		},
+		"gainChance" : {},
+		"defaultGainChance" : 0,
+		"sounds" : {
+			"cast" : "hota/bulwark/spells/FREEZE"
+		},
+		"animation" : {
+			"affect" : [
+				{
+					"effectName" : "freezingShot",
+					"transparency" : 0.5
+				}
+			]
+		},
+		"graphics" : {
+			"iconEffect" : "hota/bulwark/spells/freezingShot.png"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 0,
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "spell.freezingShot",
+						"duration" : [
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						],
+						"turns" : 3
+					},
+					"noRetaliation" : {
+						"val" : 0,
+						"type" : "NO_RETALIATION",
+						"duration" : [
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						],
+						"turns" : 3
+					},
+					"generalDamageReduction" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -25,
+						"duration" : [
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						],
+						"turns" : 3
+					}
+				}
+			},
+			"basic" : {
+				"cost" : 0,
+				"description" : "{冰封}\r\n\r\n使敌人3个回合无法行动，在冻结期间，受到的伤害增加25%。"
+			},
+			"advanced" : {
+				"cost" : 0,
+				"description" : "{冰封}\r\n\r\n使敌人3个回合无法行动，在冻结期间，受到的伤害增加25%。"
+			},
+			"expert" : {
+				"cost" : 0,
+				"description" : "{冰封}\r\n\r\n使敌人3个回合无法行动，在冻结期间，受到的伤害增加25%。"
+			},
+			"none" : {
+				"cost" : 0,
+				"description" : "{冰封}\r\n\r\n使敌人3个回合无法行动，在冻结期间，受到的伤害增加25%。"
+			}
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		}
+	}
+}

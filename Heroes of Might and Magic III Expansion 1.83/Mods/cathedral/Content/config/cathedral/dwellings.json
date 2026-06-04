@@ -1,0 +1,93 @@
+
+{
+    "core:creatureGeneratorCommon" : {
+        "types" : {
+            "cathedralLevel1" : {
+                "name" : "废弃小屋",
+                "creatures" : [[ "cthAttackDog" ]],
+				"kingdomOverviewImage" : "cathedral/creatures/dwellings/flagport/ca1.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "cathedral/creatures/dwellings/AVWCATH01",
+                        "mask" : ["VVV","VVV","VBA" ]
+                    }
+                }
+            },
+            "cathedralLevel2" : {
+                "name" : "刑场",
+                "creatures" : [[ "cthSlayer" ]],
+				"kingdomOverviewImage" : "cathedral/creatures/dwellings/flagport/ca2.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "cathedral/creatures/dwellings/AVWCATH02",
+                        "mask" : [ "VVVV", "VVAB" ]
+                    }
+                }
+            },
+            "cathedralLevel3" : {
+                "name" : "猎人公会",
+                "creatures" : [[ "cthWitchHunter" ]],
+				"kingdomOverviewImage" : "cathedral/creatures/dwellings/flagport/ca3.def",
+                "templates" : {
+                    "default" : {   
+                        "animation" : "cathedral/creatures/dwellings/AVWCATH03",
+                        "mask" : ["VVV","VVB","VAB" ]
+                    }
+                }
+            },
+            "cathedralLevel4" : {
+                "name" : "陵园",
+                "creatures" : [[ "cthCouatl" ]],
+				"kingdomOverviewImage" : "cathedral/creatures/dwellings/flagport/ca4.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "cathedral/creatures/dwellings/AVWCATH04",
+                        "mask" : ["VVV","VVV","VAB" ]
+                    }
+                }
+            },
+            "cathedralLevel5" : {
+                "name" : "礼拜堂",
+                "creatures" : [[ "cthSexton" ]],
+                "guards" : [
+                    { "amount" : 9, "type" : "cthSexton" }
+                ],
+				"kingdomOverviewImage" : "cathedral/creatures/dwellings/flagport/ca5.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "cathedral/creatures/dwellings/AVWCATH05",
+                        "mask" : [ "VVV","VVV","VBA"   ]
+                    }
+                }
+            },
+            "cathedralLevel6" : {
+                "name" : "圣武士序列",
+                "creatures" : [[ "cthTemplar" ]],
+                "guards" : [
+                    { "amount" : 6, "type" : "cthTemplar" }
+                ],
+				"kingdomOverviewImage" : "cathedral/creatures/dwellings/flagport/ca6.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "cathedral/creatures/dwellings/AVWCATH06",
+                        "mask" : ["VVV","VBB","VBA" ]
+                    }
+                }
+            },
+            "cathedralLevel7" : {
+                "name" : "审判祭坛",
+                "creatures" : [[ "cthPunisher" ]],
+                "guards" : [
+                    { "amount" : 3, "type" : "cthPunisher" }
+                ],
+				"kingdomOverviewImage" : "cathedral/creatures/dwellings/flagport/ca7.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "cathedral/creatures/dwellings/AVWCATH07",
+                        "mask" : ["VVV","VVV","VVV","VBA" ]
+                    }
+                }
+            }
+        }       
+    }
+}

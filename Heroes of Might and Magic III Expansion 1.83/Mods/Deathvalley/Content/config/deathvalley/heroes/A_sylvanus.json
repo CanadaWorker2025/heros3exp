@@ -1,0 +1,52 @@
+{
+	"a_dvSylvanus" :
+	{
+		"class" : "dvDeathlord",
+		"female" : true,
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/sylvanus/Un32Bansh.png",
+			"specialtyLarge" : "deathvalley/heroes/sylvanus/Un44Bansh.png",
+			"large" : "deathvalley/heroes/sylvanus/SylvanusL.png",
+			"small" : "deathvalley/heroes/sylvanus/SylvanusS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "banshee",
+				"max" : 3,
+				"min" : 2
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"creature" : "banshee"
+		},		
+		"texts" : {
+			"biography" : "拉曼蒂娅天生就有死灵巫术的天赋，不过她从没有把自己变成巫妖的兴趣。在她看来，拥有巫术天赋那不过是一个悲惨命运的玩笑。虽然生在死灵的国度，但她也曾经向往正常人类的生活，或许生命比死亡对她更有吸引力。",
+			"name" : "拉曼蒂娅",
+			"specialty" : {
+				"description" : "达到5级以后提高暗女巫或夜女巫的攻击力与防御力。",
+				"tooltip" : "Increases the Attack and Defence of any Banshees and Ethereal Banshees for each level attained after 3rd level.",
+				"name" : "暗女巫"
+			}
+		}
+	}
+}
+

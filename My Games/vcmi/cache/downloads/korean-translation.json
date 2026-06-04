@@ -1,0 +1,32 @@
+{	
+	"name" : "Korean translation",
+	"description" : "Korean translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.2",
+	"author" : "",
+	"contact" : "https://github.com/vcmi-mods/korean-translation",
+	"modType" : "Translation",
+	"language" : "korean",
+	"compatibility" :
+	{
+		"min" : "1.2.0"
+	},
+	"changelog" : 
+	{ 
+		"1.0.2" : [ "Korean Chronicles from: http://www.heroes2.com/admdown/4981" ],
+		"1.0.1" : [ "Images from LOTS: https://blog.naver.com/gigi905/222957293798" ],
+		"1.0.0" : [ "Initial release based on: http://www.heroes2.com/admdown/201012 (only texts)" ]
+	},
+	"german" : {
+		"name" : "Koreanische Übersetzung",
+		"description" : "Koreanische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"korean" : {
+		"name" : "한국어 번역",
+		"description" : "의 한국어 번역 Heroes of Might and Magic III: Complete Edition"	
+	},
+	"translations" : [
+		"config/vcmi-korean/game.json",
+		"config/vcmi-korean/maps.json",
+		"config/vcmi-korean/campaigns.json"
+	]
+}

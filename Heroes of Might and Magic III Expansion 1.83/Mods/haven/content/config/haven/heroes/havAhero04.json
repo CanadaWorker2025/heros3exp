@@ -1,0 +1,65 @@
+{
+	"havAhero04" :
+	{
+		"class" : "havAhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "斯威夫特",
+			"biography" : "斯威夫特船长曾是德高望重的海军上将。他之前率领埃拉西亚的海军与海盗作战许久。没有人知道他为什么背叛了埃拉西亚王室。目前他有着自己的船只和一大批只听从自己命令的亲卫队。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "+1 速度",
+				"description" : "英雄率领的所有生物速度+1。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero4/skill4S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero4/skill4.bmp",
+			"large" : "haven/heroes/havHero4/hero4.bmp",
+			"small" : "haven/heroes/havHero4/hero4S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1
+				}
+			}
+		}	
+	}
+}

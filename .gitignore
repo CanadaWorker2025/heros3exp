@@ -1,0 +1,9 @@
+# Ignore specific game resource files
+#Heroes of Might and Magic III Expansion 1.83/Data/H3bitmap.lod
+#Heroes of Might and Magic III Expansion 1.83/Data/Heroes3.vid
+#Heroes of Might and Magic III Expansion 1.83/Mods/new-menu/Content/video/preserveEnd.bik
+
+H3bitmap.lod
+Heroes3.vid
+preserveEnd.bik
+

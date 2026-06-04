@@ -1,0 +1,67 @@
+{
+	"tarhero10" :
+	{
+    "class": "taHeroM",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "拉达夏",
+			"biography" : "拉达夏是最早发现并驯服冰魔的弗里根人之一。只有她知道恶魔在哪里发现了这样的生物。 拉达夏对这些生物进行了很好的研究，并且能够比其他弗里根人更好地激励它们。她还撰写了大量关于冰魔的习性以及它们与其他物种关系的著作，她为此感到非常自豪。",
+			"specialty" :
+			{
+				"description" : "达到4级后提升寒冰守卫和寒冰恐惧者的攻击力和防御力。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "寒冰守卫"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero10/skill10.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero10/skills10.bmp",
+			"large" : "tartarus/heroes/tarhero10/tarH10.bmp",
+			"small" : "tartarus/heroes/tarhero10/tarH10S.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"cure"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc7",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "tartarc7"
+		}
+	}
+}
+

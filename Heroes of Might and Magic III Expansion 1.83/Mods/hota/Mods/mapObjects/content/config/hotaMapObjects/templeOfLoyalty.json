@@ -1,0 +1,38 @@
+{
+	"templeOfLoyalty" : {
+		"handler":"configurable",
+		"name" : "忠诚神庙",		
+		"types" : {
+			"templeOfLoyalty" : {
+				"aiValue" : 1000,
+				"rmg" : {
+					"value"		: 100,
+					"rarity"	: 20,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["TEMPLE"]
+				},
+				"compatibilityIdentifiers" : [ "object" ],
+				"rewards" : [
+					{
+						"message" : "{忠诚神庙}\r\n\r\n在瞻仰英雄的塑像后，你的部队被他的忠诚所感染，在下一场战斗中，他们将彼此抛弃前嫌。但是对于邪恶的阵营，祈祷也是没有效果的。", 
+						"bonuses" : [ { "type" : "NONEVIL_ALIGNMENT_MIX", "duration" : "ONE_BATTLE" },
+										{ "type" : "MORALE", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 }	]
+					}
+				],
+				"onSelectMessage" : "{忠诚神庙}\r\n\r\n在瞻仰英雄的塑像后，你的部队被他的忠诚所感染，在下一场战斗中，他们将彼此抛弃前嫌。但是对于邪恶的阵营，祈祷也是没有效果的。",
+				"onVisitedMessage": "{忠诚神庙}\r\n\r\n你不喜欢总是在这里停留，你的部队已经受到了鼓舞，他们急需一场证明自己的战斗。",
+//				"canRefuse": true,
+				"visitMode" : "bonus",
+				"selectMode" : "selectFirst",
+				"templates" : {
+					"AVStmplt" : { "animation" : "hota/templeOfLoyalty/AVStmplt", 
+						"mask" : [ "VVV","VVV", "VBA" ], 
+						"visitableFrom" : [ "---", "--+", "+++" ]
+					}
+				}
+			}
+		}
+	}		
+}

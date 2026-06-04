@@ -1,0 +1,147 @@
+//Named Wolverine Heart in old version. It was a skill for increasing life points before.
+{
+	"choir":
+	{
+		"type": "combat", 
+		"name": "吟唱",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":["NewOldSpells/choir.def"]
+		},
+ 
+		"flags" : {
+		"special": true,
+		"positive": true
+		},
+ 
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/choir1.bmp",
+			"iconScroll": "NewOldSpells/choir2.bmp",
+			"iconScenarioBonus": "NewOldSpells/choir4.bmp",
+			"iconEffect": "NewOldSpells/IN5.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "BLESS"
+		},
+		"targetType" : "CREATURE",
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.MIND_IMMUNITY" : "normal",
+				"bonus.NON_LIVING" : "normal",
+				"bonus.MECHANICAL" : "normal",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "absolute"
+			}
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "X",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{吟唱}\r\n\r\n提升全员1点士气和运气。",
+	 
+				"cost": 0,
+	 
+				"effects":{
+					"morale" : {
+						"type" : "MORALE",
+						"val" : 1,
+						"duration" : "PERMANENT"
+					},
+					"luck" : {
+						"type" : "LUCK",
+						"val" : 1,
+						"duration" : "PERMANENT"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级吟唱}\r\n\r\n提升全员1点士气和运气。",
+	 
+				"cost": 0,
+	 
+				"effects":{
+					"morale" : {
+						"type" : "MORALE",
+						"val" : 1,
+						"duration" : "PERMANENT"
+					},
+					"luck" : {
+						"type" : "LUCK",
+						"val" : 1,
+						"duration" : "PERMANENT"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级吟唱}\r\n\r\n提升全员2点士气和运气。",
+	 
+				"cost": 0,
+	 
+				"effects":{
+					"morale" : {
+						"type" : "MORALE",
+						"val" : 1,
+						"duration" : "PERMANENT"
+					},
+					"luck" : {
+						"type" : "LUCK",
+						"val" : 1,
+						"duration" : "PERMANENT"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级吟唱}\r\n\r\n提升全员3点士气和运气。",
+	 
+				"cost": 0,
+	 
+				"effects":{
+					"morale" : {
+						"type" : "MORALE",
+						"val" : 1,
+						"duration" : "PERMANENT"
+					},
+					"luck" : {
+						"type" : "LUCK",
+						"val" : 1,
+						"duration" : "PERMANENT"
+					}
+				}
+			}
+		}
+		}
+	}

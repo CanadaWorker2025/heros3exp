@@ -1,0 +1,63 @@
+{
+	"tarhero08" :
+	{
+    "class": "taHeroA",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "沙格萨",
+			"biography" : "沙格萨为她的发明感到自豪，就是在弩炮的弹药上附着可以爆炸的寒冰。弗里根人普遍低估她的武器，但沙格萨为战争中在埃拉西亚士兵身上的测试结果感到非常满意。",
+			"specialty" :
+			{
+				"description" : "达到4级后提升弩车的攻击力和防御力。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "弩车"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero14/skill14.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero14/skills14.bmp",
+			"large" : "tartarus/heroes/tarhero14/tarH14.bmp",
+			"small" : "tartarus/heroes/tarhero14/tarH14S.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ballista",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "demonicBlood"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "ballista"
+		}
+	}
+}
+

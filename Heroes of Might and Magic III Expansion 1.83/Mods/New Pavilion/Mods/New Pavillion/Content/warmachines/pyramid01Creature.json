@@ -1,0 +1,77 @@
+{
+	"pyramid01Creature":
+	{
+		"name" : { "plural" : "灵能金字塔", "singular" : "灵能金字塔" },
+		"faction" : "neutral",
+		"level": 0,
+		"aiValue" : 2500,
+		"special" : true,
+		"attack" : 0,
+                "cost" :
+		{
+			"gold" : 2500
+		},
+		"defense" : 0,
+		"damage" : {
+			"max" : 0,
+			"min" : 0
+		},
+		"fightValue" : 2500,
+		"graphics" :
+		{
+			"animation": "creaturedefsPavilion/pscPyramid.def",
+			"iconLarge" : "creatureiconsPavilion/pyraCreaB",
+			"iconSmall" : "creatureiconsPavilion/pyraCreaS",
+			"map" : "artifactsPavilion/pyraArtimap.def",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"killed": "CARTKILL.wav",
+			"wince": "CARTWNCE.wav"
+		},
+		"doubleWide" : false,
+		"growth" : 0,
+		"hitPoints" : 150,
+		"speed" : 0,
+		"abilities" :
+		{
+			
+			"inactive" :
+				{ "type" : "NOT_ACTIVE" },				
+		    "noRetaliation" :
+			{
+				"type" : "NO_RETALIATION",
+				 "val" : 0
+			},
+			"warmachine" :
+			{
+				"type" : "SIEGE_WEAPON"
+			},
+			"supply" :
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.pyramid01Supply",
+				"val" : 0,
+				"limiters": [ {
+					"type":"CREATURE_TYPE_LIMITER",
+					"creature": "pyramid01Creature"
+} ],
+			},
+//			"automatic" : {
+//				"subtype" : "creature.plagueTentCreature",
+//				"type" : "MANUAL_CONTROL",
+//				"val" : 0,
+//				"valueType" : "BASE_NUMBER",				
+//				"propagator" : "HERO"
+//			}
+
+		}
+	}
+}

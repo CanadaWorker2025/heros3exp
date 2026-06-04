@@ -1,0 +1,597 @@
+{
+	"haven" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"mageGuild1" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "1级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 2000
+					}
+				},
+				"mageGuild2" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "2级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 4,
+						"ore" : 5,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "3级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 5,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild2"
+				},
+				"mageGuild4" : 
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "4级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 8,
+						"ore" : 5,
+						"sulfur" : 8,
+						"crystal" : 8,
+						"gems" : 8,
+						"gold" : 1000
+					},
+					"upgrades" : "mageGuild3"
+				},
+						
+				"tavern" :
+				{
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					}
+				},
+				"fort" :
+				{
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" :
+					{
+						"wood" : 20,
+						"ore" : 20,
+						"gold" : 5000
+					}
+				},
+				"citadel" :
+				{
+					"name" : "大本营",
+					"description" : "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 2500
+					},
+					"upgrades" : "fort"
+				},
+				"castle" :
+				{
+					"name" : "城堡",
+					"description" : "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"cost" :
+					{
+						"wood" : 10,
+						"ore" : 10,
+						"gold" : 5000
+					},
+					"upgrades" : "citadel"
+				},
+				"villageHall" :
+				{
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。",
+					"mode" : "auto"
+				},
+				"townHall" :
+				{
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost" :
+					{
+						"gold" : 2500
+					},
+					"requires" : [ "tavern" ],
+					"upgrades" : "villageHall"
+				},
+				"cityHall" :
+				{
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"cost" :
+					{
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ],
+					"upgrades" : "townHall"
+				},
+				"capitol" :
+				{
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" :
+					{
+						"gold" : 10000
+					},
+					"requires" : [ "castle" ],
+					"upgrades" : "cityHall"
+				},
+				"marketplace" :
+				{
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+				},
+				"ship" :
+				{
+					"name" : "船只",
+					"description" : "船员们正在等待起航。",
+				},
+				"shipyard" :
+				{
+					"name" : "船坞",
+					"description" : "船坞允许你购买船只。",
+					"cost" :
+					{
+						"wood" : 20,
+						"gold" : 2000
+					}
+				},				
+				"resourceSilo" :
+				{
+					"description" : "物资仓库每天为你额外提供1硫磺。",
+					"name" : "物资仓库",
+					"produce": { "sulfur": 1 },
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"requires" : [ "marketplace" ]
+				},
+				"blacksmith" :
+				{
+					"description" : "铁匠铺可向你的军队提供弩车。",
+					"name" : "铁匠铺",
+					"warMachine" : "ballista",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					}
+				},
+				"special1" :
+				{
+					"description" : "航海图书馆可以提升所有英雄航海术50%（若无航海术则自动学会初级航海术）。",
+					"name" : "航海图书馆",
+					"cost" : {
+						"gold" : 1000,
+						"ore" : 5,
+						"wood" : 5
+					},
+					"requires" : [ "mageGuild1" ],
+					"bonuses": [ { "subtype" : "heroMovementSea", "type" : "MOVEMENT", "val" : 50, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER"} ]
+				},
+				"special2" :
+				{
+					"description" : "灯塔可以使英雄视野半径+1，并且获得额外的海上移动点数。",
+					"name" : "灯塔",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 10
+					},
+					"requires" : [ "special1" ],
+					"bonuses": [
+						{
+							"propagator": "PLAYER",
+							"type": "MOVEMENT",
+							"subtype": "heroMovementSea",
+							"val": 500
+						}
+					]
+				},
+				"special3" :
+				{
+					"description" : "赌徒窝点可以允许英雄每周花费1000金币抽取一次奖励，包括随机资源，宝物或无奖励情况。",
+					"name" : "赌徒窝点",
+					"cost" : {
+						"gold" : 1000,
+						"ore" : 5,
+						"gems": 2
+					},
+					"requires" : [ "allOf", ["fort"], ["marketplace"] ],
+					"manualHeroVisit" : true,
+					"configuration" : {
+					"rewards" :
+					[
+					{
+						"appearChance": 
+						{
+							"max" : 25
+						},
+						"resources" : {
+							"gold" : -1000
+						},
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{赌徒窝点}\r\n\r\n在花费1000黄金参与之后，赌场工作人员打开了盒子，结果你没有赢得任何奖励，请下次再来吧。"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 25,
+							"max" : 50
+						},
+						"resources" : [
+							{
+								"anyOf" : [ "ore", "mercury", "gems", "sulfur", "crystal" ],
+								"min" : 1,
+								"max" : 6
+							},
+							{
+								"type" : "gold",
+								"amount" : -1000
+							}
+						],
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{赌徒窝点}\r\n\r\n在花费1000黄金参与之后，赌场工作人员打开了盒子，你赢得了一些资源，恭喜你！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 50,
+							"max" : 75
+						},
+						"artifacts" : [
+							{ "class" : "TREASURE" }
+						],
+						"resources" : {
+							"gold" : -1000
+						},
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{赌徒窝点}\r\n\r\n在花费1000黄金参与之后，赌场工作人员打开了盒子，你赢得了一个宝物，恭喜你！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 75,
+							"max" : 95
+						},
+						"artifacts" : [
+							{ "class" : "MINOR" }
+						],
+						"resources" : {
+							"gold" : 2000
+						},
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{赌徒窝点}\r\n\r\n在花费1000黄金参与之后，赌场工作人员打开了盒子，你赢得了一个宝物，并且你的黄金也赢回来了，恭喜你！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 95,
+							"max" : 100
+						},
+						"artifacts" : [
+							{ "class" : "MAJOR" }
+						],
+						"resources" : {
+							"gold" : 5000
+						},
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{赌徒窝点}\r\n\r\n在花费1000黄金参与之后，赌场工作人员打开了盒子，整个赌场的目光聚焦在你身上，你中了大奖，恭喜你！希望你好运常伴。"
+					}
+				],
+				"onSelectMessage" : "{赌徒窝点}\r\n\r\n你听到赌场中传出海盗们的吆喝声，他们邀请你前来试试手气。你要花费1000黄金试试运气吗？祝你好运！",
+                "onVisitedMessage": "{赌徒窝点}\r\n\r\n你听到赌场中传出海盗们的吆喝声，他们邀请你前来试试手气，但你还是觉得不要把时间浪费在无聊的赌博中。",
+				"onEmptyMessage": "{赌徒窝点}\r\n\r\n你听到赌场中传出海盗们的吆喝声，他们邀请你前来试试手气，可是你似乎手头有点紧。",
+                "visitMode" : "once",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true,
+					"rewards" : true
+				},     
+				"selectMode" : "selectPlayer",
+					}
+				},
+				"horde1" :
+				{
+					"description" : "魔法海螺使美人鱼的周产量+2。",
+					"name" : "魔法海螺",
+					"upgrades" : "dwellingLvl4",
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl4"] ],
+					"cost" :
+					{
+						"gold" : 1000
+					}			
+				},
+				"horde1Upgr" :
+				{
+					"description" : "魔法海螺使美人鱼和人鱼巫女的周产量+2。",
+					"name" : "魔法海螺",
+					"requires" : [ "horde1" ],
+					"upgrades" : "dwellingUpLvl4",
+					"mode" : "auto",
+					"cost" :
+					{
+						"gold" : 1000
+					}			
+				},
+				"horde2" :
+				{
+					"description" : "黑帆船使赏金猎人的周产量+3。",
+					"name" : "黑帆船",
+					"upgrades" : "dwellingLvl3",
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl3"] ],
+					"cost" :
+					{
+						"gold" : 1000
+					}			
+				},
+				"horde2Upgr" :
+				{
+					"description" : "黑帆船使赏金猎人和宝藏猎人的周产量+3。",
+					"name" : "黑帆船",
+					"requires" : [ "horde2" ],
+					"upgrades" : "dwellingUpLvl3",
+					"mode" : "auto",
+					"cost" :
+					{
+						"gold" : 1000
+					}			
+				},
+				"grail" :
+				{
+					"description" : "深蓝风暴使每周的生物产量提高50%，每天为你的王国额外提供5000个金币。使英雄在海上的行动力提升3倍。并且使所有英雄的攻击力和防御力在战斗中提升10%。",
+					"name" : "深蓝风暴",
+					"produce": { "gold": 5000 },
+					"bonuses": [
+					{ "subtype" : "heroMovementSea", "type" : "MOVEMENT", "val" : 300, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER"},
+					{ "subtype" : "damageTypeAll", "type" : "GENERAL_DAMAGE_REDUCTION", "val" : 10, "valueType" : "ADDITIVE_VALUE","propagator": "PLAYER"},
+					{ "subtype" : "damageTypeMelee", "type" : "PERCENTAGE_DAMAGE_BOOST", "val" : 10, "valueType" : "ADDITIVE_VALUE","propagator": "PLAYER"}
+					],
+					"mode" : "grail"
+				},
+				"dwellingLvl1" :
+				{
+					"description" : "地穴允许你招募鼠人。",
+					"name" : "地穴",
+					"cost" : {
+						"gold" : 1000,
+						"ore" : 5,
+						"wood" : 5
+					},
+					"requires" : [ "fort" ]
+				},
+				"dwellingLvl2" :
+				{
+					"description" : "岩礁通道允许你招募潜游者。",
+					"name" : "岩礁通道",
+					"cost" : {
+						"gold" : 1500,
+						"ore" : 10
+					},
+					"requires" : [ "dwellingLvl1" ]
+				},
+				"dwellingLvl3" :
+				{
+					"description" : "海港公会允许你招募赏金猎人。",
+					"name" : "海港公会",
+					"cost" : {
+						"gold" : 2000,
+						"ore" : 5,
+						"wood" : 5,
+					},
+					"requires" : [ "dwellingLvl1" ]
+				},
+				"dwellingLvl4" :
+				{
+					"description" : "珊瑚礁允许你招募美人鱼。",
+					"name" : "珊瑚礁",
+					"cost" : {
+						"gold" : 2000,
+						"mercury" : 3,
+						"crystal" : 3,
+						"gems" : 3,
+						"sulfur" : 3
+						},
+					"requires" : [ "dwellingLvl2" ]
+				},
+				"dwellingLvl5" :
+				{
+					"description" : "灵之泉允许你招募水灵。",
+					"name" : "灵之泉",
+					"cost" : {
+						"gold" : 3000,
+						"ore" : 5,
+						"mercury" : 5
+					},
+					"requires" : [ "dwellingLvl4" ]
+				},
+				"dwellingLvl6" :
+				{
+					"description" : "潮汐神殿允许你招募海魔法师。",
+					"name" : "潮汐神殿",
+					"cost" : {
+						"gold" : 4000,
+						"mercury" : 3,
+						"crystal" : 3,
+						"gems" : 3,
+						"sulfur" : 3
+					},
+					"requires" : [ "allOf", [ "dwellingLvl4" ], [ "mageGuild1" ],[ "noneOf", [ "dwellingLvl6B" ] ] ]
+				},
+				"dwellingLvl6B" :
+				{
+					"description" : "巨龟洞穴允许你招募巨龟。",
+					"name" : "巨龟洞穴",
+					"cost" : {
+						"gold" : 5000,
+						"ore" : 20
+					},
+					"id" : 49,
+					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "mageGuild1" ],[ "noneOf", [ "dwellingLvl6" ] ] ]
+				},
+				"dwellingLvl7" :
+				{
+					"description" : "深渊之门允许你招募利维坦。",
+					"name" : "深渊之门",
+					"cost" : {
+						"gold" : 10000,
+						"wood" : 10,
+						"ore" : 10,
+						"sulfur" : 15
+					},
+					"requires" : [ "allOf", [ "dwellingLvl5" ] ]
+				},
+				"dwellingUpLvl1" :
+				{
+					"description" : "高级地穴允许你招募鼠人战狂。",
+					"name" : "高级地穴",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"upgrades" : "dwellingLvl1"
+				},
+				"dwellingUpLvl2" :
+				{
+					"description" : "高级岩礁通道允许你招募深潜者。",
+					"name" : "高级岩礁通道",
+					"cost" : {
+						"gold" : 1500,
+						"ore" : 5
+					},
+					"upgrades" : "dwellingLvl2"
+				},
+				"dwellingUpLvl3" :
+				{
+					"description" : "高级海港公会允许你招募宝藏猎人。",
+					"name" : "高级海港公会",
+					"cost" : {
+						"gold" : 1500,
+						"gems" : 5,
+						"wood" : 10
+					},
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" :
+				{
+					"description" : "高级珊瑚礁允许你招募人鱼巫女。",
+					"name" : "高级珊瑚礁",
+					"cost" : {
+						"mercury" : 3,
+						"sulfur" : 3,
+						"gems" : 3,
+						"gold" : 1500,
+						"crystal" : 3
+					},
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl5" :
+				{
+					"description" : "高级灵之泉允许你招募海灵。",
+					"name" : "高级灵之泉",
+					"cost" : {
+						"ore" : 5,
+						"wood" : 5,
+						"gold" : 2000,
+						"crystal" : 10
+					},
+					//"requires" : [ "mageGuild1" ],
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" :
+				{
+					"description" : "高级潮汐神殿允许你招募海魔导师。",
+					"name" : "高级潮汐神殿",
+					"cost" : {
+						"gold" : 3000,
+						"mercury" : 3,
+						"crystal" : 3,
+						"gems" : 3,
+						"sulfur" : 3
+					},
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl6B" :
+				{
+					"description" : "高级巨龟洞穴允许你招募龙龟。",
+					"name" : "高级巨龟洞穴",
+					"cost" : {
+						"gold" : 3000,
+						"ore" : 5,
+						"sulfur" : 10
+					},
+					"id" : 56,
+					"upgrades" : "dwellingLvl6B"
+				},
+				"dwellingUpLvl7" :
+				{
+					"description" : "高级深渊之门允许你招募帝王利维坦。",
+					"name" : "高级深渊之门",
+					"cost" : {
+						"ore" : 10,
+						"gold" : 20000,
+						"wood" : 10,
+						"sulfur" : 20
+					},
+					"upgrades" : "dwellingLvl7",
+					//"requires" : [ "mageGuild2" ],
+				}
+			}
+		}
+	}
+}
+

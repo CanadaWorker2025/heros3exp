@@ -1,0 +1,51 @@
+{
+	"07cassiopeia" : {
+		"class" : "captain",
+		"female" : true,
+		"images" : {
+			"large" : "hota/cove/heroes/cassiopeia/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/cassiopeia/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/cassiopeia/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/cassiopeia/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			}
+		],
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "basic"
+			},
+			{
+				"skill": "tactics",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"creature" : "hota.cove:nymph"
+		},
+		"texts" : {
+			"biography" : "据说卡茜欧佩雅曾经是瑞格纳法师的情人，但是很快她就变成了一个失败实验的牺牲品。没有人知道这个女孩是如何变成海洋精灵的，更没有人知道她的真实故事。但是卡茜欧琵雅会平等对待每一个海洋精灵的事广为人知。在她的领导之下，精灵们会更加愿意去战斗。",
+			"name" : "卡茜欧佩雅",
+			"specialty" : {
+				"tooltip" : "Creature Bonus: Nymphs",
+				"name" : "泉水精灵",
+				"description" : "达到1级以后提高泉水精灵和海洋精灵的攻击力与防御力。"
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+{
+	"giselle" :
+	{
+		"class" : "ranger",
+		"female" : true,
+		"images" :
+		{
+			"large" : "hota/rampart/heroes/giselle/icons/portraitLarge.png",
+			"small" : "hota/rampart/heroes/giselle/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/rampart/heroes/giselle/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/rampart/heroes/giselle/icons/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "centaur",
+				"min" : 12,
+				"max" : 24
+			},
+			{
+				"creature" : "dwarf",
+				"min" : 3,
+				"max" : 5
+			},
+			{
+				"creature" : "woodElf",
+				"min" : 2,
+				"max" : 4
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "interference",
+				"level" : "advanced"
+			}
+		],
+		"specialty" : {
+			"secondary" : "interference",
+			"bonuses" : {
+				"selfCounter" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "spellpower",
+					"val" : -5,
+					"targetSourceType" : "SECONDARY_SKILL",
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "在吉赛尔居住的村庄集市上，一个来自附近树林的老德鲁伊同意向村民展示一些简单的魔法。他的每一次尝试似乎都没有见效，但是这位老人准确地指出前排这个咧着嘴笑的女孩是造成他困境的原因。",
+			"name" : "吉赛尔",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Interference",
+				"name" : "干扰术",
+				"description" : "在干扰术上每级得到5%的额外奖励。"
+			}
+		}
+	}
+}
+

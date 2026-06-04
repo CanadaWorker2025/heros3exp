@@ -1,0 +1,17 @@
+{
+	"abandonedChurch" :{
+		"handler" : "generic",
+		"name" : "毁坏的大教堂",//Burnt Structure
+		"types" : {
+			"abandoneChurch" : {
+				"templates" : {
+					"ruinedChurch" : { "animation" : "cathedral/adventure-map/decoration/ruinedChurch",
+						"mask" : ["VVVVV","VVVVV","VVBBV","VBBBB","VBBBB"],
+						"allowedTerrains": [ "dirt", "lava", "rough" ]
+					}
+				}
+			}
+		}
+	}
+	
+}

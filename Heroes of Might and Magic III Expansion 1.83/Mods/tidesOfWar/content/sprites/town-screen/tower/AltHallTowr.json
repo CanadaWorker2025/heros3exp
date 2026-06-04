@@ -1,0 +1,15 @@
+{
+    "basepath" : "town-screen/tower/frames/",
+	"images" :
+	[
+		{ "frame" : 44, "file" : "TPTEx1.bmp"},
+		{ "frame" : 45, "file" : "TPTEx2.bmp"},
+		{ "frame" : 46, "file" : "TPTEx3.bmp"},
+		{ "frame" : 47, "file" : "TPTEx4.bmp"},
+		{ "frame" : 48, "file" : "TPTEx5.bmp"},
+		{ "frame" : 49, "file" : "TPTEx6.bmp"},
+		{ "frame" : 50, "file" : "TPTEx7.bmp"},	
+		{ "frame" : 57, "file" : "TPTTit2alt.png"},
+		{ "frame" : 64, "file" : "TPTTit2upAlt.png"}
+	]
+}

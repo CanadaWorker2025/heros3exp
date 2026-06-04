@@ -1,0 +1,99 @@
+{
+    "ffMegaDragon":
+    {
+    "name": {
+      "plural": "百万神龙",
+      "singular": "百万神龙"
+    },
+    "advMapAmount": {
+ "max" : 3,
+ "min" : 1
+    },
+    "faction" : "neutral",
+	"doubleWide" : true,
+	"excludeFromRandomization" : true,
+	"aiValue" : 88221,
+    "attack": 60,
+    "cost": {
+      "gold": 50000,
+	  "sulfur": 50
+    },
+    "damage": {
+ "max" : 100,
+ "min" : 85
+    },
+    "defense": 60,
+    "fightValue": 61234,
+    "graphics": {
+      "animation" : "creatures/neutral/battle/ne02B.def",
+      "map" :       "creatures/neutral/map/ne02M.def",
+	"iconSmall" : "creatures/neutral/iconsSmall/ne02S.bmp",
+	"iconLarge" : "creatures/neutral/iconsBig/ne02L.bmp",
+      "timeBetweenFidgets": 1,
+			"animationTime" :
+			{
+				"walk" : 0.9,
+				"attack" : 1,
+				"idle" : 10
+			}
+    },
+    "growth": 1,
+    "hitPoints": 1500,
+		"level": 10,
+		"sound" :
+		{
+			"attack": "AZURATTK.wav",
+			"defend": "AZURDFND.wav",
+			"killed": "AZURKILL.wav",
+			"move": "CRYSMOVE.wav",
+			"wince": "RUSTWNCE.wav"
+		},
+    "speed": 12,
+		"abilities" :
+		{	
+            "basicSlayer" : { "type" : "KING", "val": 0 },
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"fearful" :
+			{
+				"type" : "FEARFUL",
+				"val" : 10,
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"description" : "PLACEHOLDER",
+				"limiters" : [ 
+					"OPPOSITE_SIDE", 
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "LIVING"
+					}
+				]
+			},
+			"fearless" :
+			{
+				"type" : "FEARFUL",
+				"valueType" : "INDEPENDENT_MIN",
+				"description" : "PLACEHOLDER",
+				"val" : 0
+				
+			},
+			"spellImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 3
+			},
+			"fireBreath" :
+			{
+				"type" : "WIDE_BREATH"
+			}
+		}
+	}
+}

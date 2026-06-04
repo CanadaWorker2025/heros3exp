@@ -1,0 +1,37 @@
+{
+	"core:outcropping" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"AVLHiTr0" : {
+						"animation" : "hota/highlands/vanillaStatic/outcropping/AVLHiTr0",
+						"mask" : [
+							"BB"
+						],
+						"allowedTerrains" : [
+							"highlands"
+						]
+					},
+					"AVLHiTr1" : {
+						"animation" : "hota/highlands/vanillaStatic/outcropping/AVLHiTr1",
+						"mask" : [
+							"BB"
+						],
+						"allowedTerrains" : [
+							"highlands"
+						]
+					},
+					"AVLHiTr2" : {
+						"animation" : "hota/highlands/vanillaStatic/outcropping/AVLHiTr2",
+						"mask" : [
+							"BB"
+						],
+						"allowedTerrains" : [
+							"highlands"
+						]
+					}
+				}
+			}
+		}
+	}
+}

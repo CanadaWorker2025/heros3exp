@@ -1,0 +1,63 @@
+{
+	"04_Melchior" :
+	{
+    "class": "factoryAClass",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "梅尔基奥",
+			"biography" : "梅尔基奥可以看到别人心灵最深处正在发生的一切。在评估敌人的实力和意图并说服他同意他的观点时，这种秘密天赋提供了至关重要的优势。他的存在会让那些战争狂热者们感到羞耻。",
+			"specialty" :
+			{
+				"description" : "每升一级可以使投降费用降低5%。",
+				"tooltip" : "Bonus: creature",
+				"name" : "外交术"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/04_Melchior/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/04_Melchior/bigS.bmp",
+			"large" : "factory/heroes/04_Melchior/bigP.bmp",
+			"small" : "factory/heroes/04_Melchior/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "diplomacy"
+			}
+		],
+		
+		"specialty" : {
+			"secondary" : "diplomacy"
+			}
+	}
+}
+

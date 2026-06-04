@@ -1,0 +1,74 @@
+{
+	"j_pamela" :
+	{
+		"class" : "bard",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "帕梅拉",
+			"biography" : "帕梅拉原来和德鲁伊艾拉戈学习魔法，并且掌握了强大的冰箭。可是她不喜欢战斗，当入侵者来的时候，她别无选择地成为了一名战士。当她在战斗中和同伴们失散，这个年轻的女德鲁伊无法再回到埃里。无奈之下，她走向了另一条路。",
+			"specialty" :
+			{
+				"description" : "使用霹雳寒冰魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Bonus: spell",
+				"name" : "霹雳寒冰"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/pamela/UN32T189.bmp",
+			"specialtyLarge" : "preserve/heroes/pamela/UN44T189.bmp",
+			"large" : "preserve/heroes/pamela/HPL001BR.bmp",
+			"small" : "preserve/heroes/pamela/HPS001BR.bmp"
+		},
+
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+	"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"subtype" : "spell.iceBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

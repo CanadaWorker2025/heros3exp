@@ -1,0 +1,59 @@
+{
+	"mdtBinoculars" : {
+		"bonuses" : 
+		{
+			"vision1":
+			{
+				"type" : "VISIONS",
+				"subtype" : "visionsMonsters",
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX",
+				"propagator" : "HERO"
+			},
+			"vision2":
+			{
+				"type" : "VISIONS",
+				"subtype" : "visionsHeroes",
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX",
+				"propagator" : "HERO"				
+			},
+			"vision3":
+			{
+				"type" : "VISIONS",
+				"subtype" : "visionsTowns",
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX",
+				"propagator" : "HERO"				
+			},
+			"sight":
+			{
+				"type" : "SIGHT_RADIUS",
+				"val" : 4,
+				"valueType" : "ADDITIVE_VALUE"
+//				"propagator" : "HERO"				
+			}			
+		},
+		"class" : "MAJOR",
+		"graphics" : 
+		{ 
+			"image" : "artifacts/iconsSmall/binocularsS", 
+			"scenarioBonus" : "artifacts/iconsBig/binocularsL", 
+			"map" : "artifacts/map/binoculars" 
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{双筒望远镜}\r\n\r\n佩戴双筒望远镜可以使英雄视野增加4格。",
+			"event" : "一位老科学家在临终前，将他的最新发明送给了你，它能使非常遥远的物体看起来更近了。尽管科学家没有机会向你全面展示它，并且你的军队中大多数人都对这个玩意儿感到害怕，但你还是把它命名为……双筒望远镜。",
+			"name" : "双筒望远镜"
+		},
+		"components":
+		[
+			"spyglass",
+			"speculum",
+			"pendantOfSecondSight"
+		],
+		"type" : [ "HERO" ],
+		"value" : 6500
+	}
+}

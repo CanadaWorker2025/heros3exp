@@ -1,0 +1,15 @@
+{
+    "basepath" : "town-screen/stronghold/frames/",
+	"images" :
+	[
+		{ "frame" : 44, "file" : "TPSEx1.bmp"},
+		{ "frame" : 45, "file" : "TPSEx2.bmp"},
+		{ "frame" : 46, "file" : "TPSEx3.bmp"},
+		{ "frame" : 47, "file" : "TPSEx4.bmp"},
+		{ "frame" : 48, "file" : "TPSEx5.bmp"},
+		{ "frame" : 49, "file" : "TPSEx6.bmp"},
+		{ "frame" : 50, "file" : "TPSEx7.bmp"},	
+		{ "frame" : 56, "file" : "TbStDA_5.png"},
+		{ "frame" : 63, "file" : "TbStUA_5.png"}
+	]
+}

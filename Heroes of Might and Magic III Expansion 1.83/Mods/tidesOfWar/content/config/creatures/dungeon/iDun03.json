@@ -1,0 +1,101 @@
+{
+	"iDun03"://Shadow Eyes
+	{
+		"name" :
+		{
+			"plural" : "魔眼",
+			"singular" : "魔眼"
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 12
+		},
+		"faction": "dungeon",
+		"aiValue" : 367,
+		"fightValue" : 246,
+		"attack" : 11,
+		"defense" : 7,
+		"cost" :
+		{
+			"gold" : 280
+		},
+		"damage" :
+		{
+			"min" : 3,
+			"max" : 5
+		},
+		"speed" : 6,
+		"upgrades": ["evilEye"],
+		"graphics" :
+		{
+			"animation" : "creatures/dungeon/battle/iDun03B.def",
+			"map" : "creatures/dungeon/map/iDun03M.def",
+			"iconSmall" : "creatures/dungeon/iconsSmall/iDun03S.bmp",
+			"iconLarge" : "creatures/dungeon/iconsBig/iDun03L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"ray" :
+				[
+					{ "start" : [ 160, 160, 160, 255 ], "end" : [ 160, 160, 160,  64 ] },
+					{ "start" : [ 192, 192, 192, 255 ], "end" : [ 192, 192, 192, 128 ] },
+					{ "start" : [ 224, 224, 224, 255 ], "end" : [ 224, 224, 224, 255 ] },
+					{ "start" : [ 192, 192, 192, 255 ], "end" : [ 192, 192, 192, 128 ] },
+					{ "start" : [ 160, 160, 160, 255 ], "end" : [ 160, 160, 160,  64 ] }
+				],
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [0]
+			}
+		},
+		"hitPoints" : 23,
+		"growth" : 7,
+		"shots": 24,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "EVLIATTK.wav",
+			"defend": "EVLIDFND.wav",
+			"killed": "EVLIKILL.wav",
+			"move": "EVLIMOVE.wav",
+			"shoot": "EVLISHOT.wav",
+			"wince": "EVLIWNCE.wav"
+		},
+		"abilities" :
+		{
+			 "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"castDisease" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.misfortune",
+				"addInfo" : [0, 1],
+				"val" : 30,
+				"icon": "bonuses/misfortuneattack.png"
+			}
+		}
+	}
+}
+
+

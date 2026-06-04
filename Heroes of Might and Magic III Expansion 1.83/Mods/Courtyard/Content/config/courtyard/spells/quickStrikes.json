@@ -1,0 +1,143 @@
+{
+	
+	
+	"quickStrikes":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "无双乱舞",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 3,
+		"power": 45,
+		
+		"defaultGainChance": 5, 
+		"gainChance":
+		{
+
+		"courtyard" : 15,
+		"inferno" : 10,
+		"tower" : 18,
+		"conflux" : 15,
+		"dungeon" : 20,
+		},
+
+ 
+		"animation":{
+			"affect":["courtyard/spells/RapidStrikes/RapidStrikes.def"]
+		},
+ 
+		"flags" : { "positive": true },
+
+ 
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/RapidStrikes/quickStrikes_book1",
+			"iconEffect": "courtyard/spells/RapidStrikes/quickStrikes_effect1",
+			"iconScroll": "courtyard/spells/RapidStrikes/quickStrikes_scroll1",
+			"iconScenarioBonus": "courtyard/spells/RapidStrikes/quickStrikes_bonus1",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "courtyard/spells/SPELLFLURRY.wav"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 11,
+				"range": "0",
+				"power": 10,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"effects":
+				{
+					"decreaseeDamage" : {
+						"val" : -30,
+						"type" : "CREATURE_DAMAGE",
+						"subtype" : "creatureDamageBoth",
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+
+					},
+					"additionalAttack" : {
+						"type" : "ADDITIONAL_ATTACK",
+						"val" : 1,
+						"valueType": "ADDITIVE_VALUE",
+						"duration" : ["N_TURNS"]
+					},
+					"firstStrike" :
+					{
+						"type" : "FIRST_STRIKE", "duration": "N_TURNS",
+					},
+				}
+			},
+			"none":
+			{
+				"description": "{无双乱舞}\n\n使选定部队可以攻击两次和先手反击，但伤害减少30%。",
+	 
+			},
+			"basic":
+			{
+				"cost": 10,
+				"description": "{初级无双乱舞}\n\n使选定部队可以攻击两次和先手反击，但伤害减少20%。",
+				"effects":
+				{
+					"decreaseeDamage" : {
+						"val" : -20,
+						"type" : "CREATURE_DAMAGE",
+						"subtype" : "creatureDamageBoth",
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+
+						},
+					},
+			},
+			"advanced":
+			{
+				"description": "{中级无双乱舞}\n\n使选定部队可以攻击两次和先手反击，但伤害减少15%。",
+				"cost": 10,
+				"effects":
+				{
+					"decreaseeDamage" : {
+						"val" : -15,
+						"type" : "CREATURE_DAMAGE",
+						"subtype" : "creatureDamageBoth",
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+
+					},
+				}
+			},
+			"expert":
+			{
+				"description": "{高级无双乱舞}\n\n使选定部队可以攻击两次和先手反击，但伤害减少10%。",
+				"cost": 10,
+				"effects":
+				{
+					"decreaseeDamage" : {
+						"val" : -10,
+						"type" : "CREATURE_DAMAGE",
+						"subtype" : "creatureDamageBoth",
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+
+					},
+				}
+			}
+		}
+	}
+ 
+}

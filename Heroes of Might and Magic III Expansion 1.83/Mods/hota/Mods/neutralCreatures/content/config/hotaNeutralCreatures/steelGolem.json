@@ -1,0 +1,70 @@
+{
+	"steelGolem":
+	{
+		"name" :
+		{
+			"singular" : "钢人",
+			"plural" : "钢人"
+		},
+		"faction" : "neutral",
+		"level" : 4,
+		"cost" : { "gold" : 400 },
+		"speed" : 6,
+		"hitPoints" : 45,
+		"attack" : 10,
+		"defense" : 11,
+		"damage" :
+		{
+			"min" : 6,
+			"max" : 8
+		},
+		"fightValue" : 597,
+		"aiValue" : 597,
+		"advMapAmount" :
+		{
+			"min" : 10,
+			"max" : 16
+		},
+		"growth" : 4,
+		"hasDoubleWeek": false,
+		"abilities" :
+		{
+			"magicResistance" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any",
+				"val" : 80,
+				"icon": "hota/creatures/bonus/e_golem.png"
+			},
+			"nonliving" :
+			{
+				"type" : "MECHANICAL"
+			}
+		},
+		"graphics" :
+		{
+			"iconSmall" : "hota/creatures/iconsSmall/CPrSm172.bmp",
+			"iconLarge" : "hota/creatures/iconsLarge/TwCrP172.png",
+			"map" : "hota/creatures/adventureMap/avwslgl0.def",
+			"mapMask" : [ "VVV", "VAV"],
+			"animation" : "hota/creatures/battle/cstlgole.def",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"idle" : 10.00,
+				"attack" : 1
+			}
+		},
+		"sound" :
+		{
+			"attack": "hota/creatures/steelGolem/SLGLATTK.wav",
+			"defend": "hota/creatures/steelGolem/SLGLDFND.wav",
+			"killed": "hota/creatures/steelGolem/SLGLKILL.wav",
+			"move": "hota/creatures/steelGolem/SLGLMOVE.wav",
+			"wince": "hota/creatures/steelGolem/SLGLWNCE.wav"
+		}
+	}
+}
+
+

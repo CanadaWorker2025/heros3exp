@@ -1,0 +1,137 @@
+{
+	"iDun05"://Minotaur Guard
+	{
+		"name" :
+		{
+			"plural" : "牛头守卫",
+			"singular" : "牛头守卫"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction": "dungeon",
+		"aiValue" : 1068,
+		"fightValue" : 891,
+		"attack" : 15,
+		"defense" : 16,
+		"cost" :
+		{
+			"gold" : 575
+		},
+		"damage" :
+		{
+			"min" : 12,
+			"max" : 20
+		},
+		"speed" : 7,
+		"upgrades": ["minotaurKing"],
+		"graphics" :
+		{
+			"animation" : "creatures/dungeon/battle/iDun05B.def",
+			"map" : "creatures/dungeon/map/iDun05M.def",
+			"iconSmall" : "creatures/dungeon/iconsSmall/iDun05S.bmp",
+			"iconLarge" : "creatures/dungeon/iconsBig/iDun05L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 55,
+		"growth" : 3,
+		"level" : 5,
+		"sound" :
+		{
+			"attack": "MINKATTK.wav",
+			"defend": "MINKDFND.wav",
+			"killed": "MINKKILL.wav",
+			"move": "MINKMOVE.wav",
+			"shoot": "MINKSHOT.wav",
+			"wince": "MINKWNCE.wav"
+		},
+		"abilities" :
+		{
+			"fearless" :
+			{
+				"type" : "MORALE",
+				"val" : 1,
+				"valueType" : "INDEPENDENT_MAX"
+			},	
+			"dummyMoraleIcon" : {
+				"type" : "NONE",
+				"icon" : "bonuses/angel.png",
+				"description" : "{士气}\n该单位永远保持+1士气"
+			},
+			"rageSpeed" :
+			{
+				"type": "STACKS_SPEED",
+				"val" : 1,				
+				"limiters": [ 
+					["anyOf",
+					{
+					"type" : "HAS_ANOTHER_BONUS_LIMITER",
+					"bonusType" : "MORALE",
+					"bonusMinValue" : 0,
+					"bonusMaxValue" : 0
+					}],
+				
+				[
+					"noneOf",
+					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage"]}
+				]
+					 ]
+				 },		
+			"enraged" :
+			{
+				"type": "ENCHANTER",
+				"subtype": "spell.minosRage",
+				"val" : 2,
+				"addInfo" : 0,				
+				"limiters": [
+				[ 
+					"anyOf",
+					{
+					"type" : "HAS_ANOTHER_BONUS_LIMITER",
+					"bonusType" : "MORALE",
+					"bonusMinValue" : 0,
+					"bonusMaxValue" : 0
+					}
+				],
+				
+				[
+					"noneOf",
+					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage"]}
+				]
+					 ]
+				 },					 	 
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1,			
+				"limiters": [[ 
+					"anyOf",
+					{
+					"type" : "HAS_ANOTHER_BONUS_LIMITER",
+					"bonusType" : "MORALE",
+					"bonusMinValue" : 0,
+					"bonusMaxValue" : 0
+					}],
+				
+				[
+					"noneOf",
+					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage"]}
+				]
+					 ]
+			}		
+		}
+	}
+}
+
+

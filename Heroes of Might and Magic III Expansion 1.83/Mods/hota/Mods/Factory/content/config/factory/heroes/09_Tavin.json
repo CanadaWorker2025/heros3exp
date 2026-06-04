@@ -1,0 +1,73 @@
+{
+	"09_Tavin" :
+	{
+    "class": "factoryAClass",
+    "female" : false,
+	"special":true,
+		
+		"texts" :
+		{
+			"name" : "塔文",
+			"biography" : "塔文并不是唯一加入埃拉西亚军队的半身人。其他半身人不赞成他的生活方式，因为这些生物不喜欢冒险。然而，他的家人尊重塔文，尽管他们有点害怕并倾向于避开他。当克里根人入侵欧弗时，塔文很快成为当地抵抗运动的领袖，并仍准备保卫他的家园。",
+			"specialty" :
+			{
+				"description" : "在进攻术上每级得到5%的额外奖励。",
+				"tooltip" : "Receives a 5% per level bonus to Offence skill.",
+				"name" : "进攻术"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/09_Tavin/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/09_Tavin/bigS.bmp",
+			"large" : "factory/heroes/09_Tavin/bigP.bmp",
+			"small" : "factory/heroes/09_Tavin/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"offence" : {
+					"subtype" : "damageTypeMelee",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+

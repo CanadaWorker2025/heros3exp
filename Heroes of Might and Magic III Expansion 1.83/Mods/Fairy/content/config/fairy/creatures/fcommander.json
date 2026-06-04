@@ -1,0 +1,120 @@
+{
+	"ftCommander":
+	{
+		"name" :
+		{
+			"plural" : "花仙队长",
+			"singular" : "花仙队长"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"faction" : "neutral",
+		"aiValue" : 1000,
+		"attack" : 5,
+		"special" : true,
+		"doubleWide" : false,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"damage" :
+		{
+			"max" : 10,
+			"min" : 10
+		},
+		"defense" : 5,
+		"fightValue" : 1000,
+		"graphics" :
+		{
+			"animation" : "fairy/battle/creatures/fcommander.def",
+//			"map" : "fairy/map/creatures/mapfcommander.def",
+			"iconSmall" : "fairy/iconsSmall/creatures/fcommander.bmp",
+			"iconLarge" : "fairy/iconsBig/creatures/fcommander.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "CPRZEAX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},	
+		"growth" : 9,
+		"hasDoubleWeek": false,
+		"hitPoints" : 50,
+		"level" : 0,
+		"sound" :
+		{
+			"attack": "PIXIATTK.wav",
+			"defend": "PIXIDFND.wav",
+			"killed": "PIXIKILL.wav",
+			"move": "PIXIMOVE.wav",
+			"wince": "PIXIWNCE.wav"
+ 		},
+		"speed" : 5,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+        		"shooter" :
+			{
+				"type" : "SHOOTER"
+			},
+
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.counterstrike",
+				"val" : 3
+                  },
+                  "noMind":
+                  {
+                   "type": "MIND_IMMUNITY"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+		}
+	}
+}

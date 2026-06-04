@@ -1,0 +1,33 @@
+{
+	"APE_RUNE_LEVEL_COUNTER" : {
+		"hidden" : false,
+		"description" : "If this is shown, it's a bug with the YETI_RUNE_LEVEL_COUNTER.",
+		"graphics" : {
+			"valueIcons" : {
+				"0" : "skills/runeLevels/startCounter",
+				"1" : "skills/runeLevels/SpellIntA083",
+				"2" : "skills/runeLevels/SpellIntA084",
+				"3" : "skills/runeLevels/SpellIntA085",
+				"4" : "skills/runeLevels/SpellIntA086",
+				"5" : "skills/runeLevels/SpellIntA087",
+				"6" : "skills/runeLevels/SpellIntA088",
+				"7" : "skills/runeLevels/SpellIntA089",
+				"8" : "skills/runeLevels/SpellIntA090",
+				"9" : "skills/runeLevels/SpellIntA091"
+			}
+		},
+		"valueDescriptions" : {
+			"0" : "{符文}\n单位可以获得符文效果",
+			"1" : "{1层符文}\n获得额外2攻击力",
+            "2" : "{2层符文}\n获得额外2攻击2防御",
+			"3" : "{3层符文}\n获得额外2攻击2防御1速度",
+            "4" : "{4层符文}\n获得额外4攻击2防御1速度",
+			"5" : "{5层符文}\n获得额外4攻击4防御1速度",
+            "6" : "{6层符文}\n获得额外4攻击4防御2速度",
+			"7" : "{7层符文}\n获得额外6攻击4防御2速度",
+			"8" : "{8层符文}\n获得额外6攻击6防御2速度",
+            "9" : "{9层符文}\n获得额外6攻击6防御3速度"
+		},
+		"creatureNature" : false
+	}
+}

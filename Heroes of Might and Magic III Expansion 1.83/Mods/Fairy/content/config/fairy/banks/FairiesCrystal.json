@@ -1,0 +1,45 @@
+{
+	"fairyCrstPool" : {
+		"handler":"configurable",
+		"name" : "水晶花园",
+		"types" : {
+			"object" : {
+				"rmg" : {
+					"value"	: 750,
+					"rarity" : 80,
+					"zoneLimit" : 2
+				},
+				"sounds" : {
+					"visit" : ["Expernce"]
+				},
+				"rewards" : [
+					{
+						"message" : "{水晶花园}\r\n\r\n水晶花园里的花仙热情地接待了你，你对她们送上的茶点给予了很高的评价，听到你的赞誉后，她们送给你一些礼物，并邀请你下次再来。",
+						"appearChance" : { "max" : 50 },
+						"resources" : { "crystal" : 5 }
+					},
+					{
+						"message" : "{水晶花园}\r\n\r\n水晶花园里的花仙热情地接待了你，你对她们送上的茶点给予了很高的评价，听到你的赞誉后，她们送给你一些礼物，并邀请你下次再来。",
+						"appearChance" : { "min" : 50 },
+						"resources" : { "gold" : 500 }
+					}
+				],
+				"onVisitedMessage": "{水晶花园}\r\n\r\n水晶花园里的花仙热情地接待了你，但当她们照例送上红茶后，你却以一些理由拒绝了，并转身离开。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true,
+					"rewards" : true
+				},
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"templates" : {
+					"base" : { "animation" : "fairy/map/banks/crystalGarden3.def", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VV", "BA" ],
+					"allowedTerrains":[ "grass", "highlands"]
+					}
+				}
+			}
+		}
+	}		
+}

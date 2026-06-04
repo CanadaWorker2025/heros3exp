@@ -1,0 +1,112 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"guardTower" : 
+			{
+				"name" : "岗哨",
+				"aiValue": 5000,
+				"templates" :
+				{
+					"normal" :
+					{
+						"animation" : "hota/supplementary/others/guardTower",
+						"visitableFrom" : [ "---", "+++", "+++" ], 
+						"mask" : [ "VVVV", "VVVV", "VVBA"],
+						"allowedTerrains":["rough", "dirt", "sand", "wasteland"] 
+					}
+				},
+				"sounds": {
+					"ambient": ["LOOPFACT"]
+				},
+				"rmg" : {
+					"value"		: 7000,
+					"rarity"	: 10
+				},
+				"onGuardedMessage" : "{岗哨}\r\n\r\n你在岗哨附近徘徊，得知这座高塔中有不少雇佣兵枪手在守卫着，当然他们长期接受雇佣也攒下了不少财宝。你要进入这里挑战吗？",
+				"onVisited" : [
+					{
+						"message" : "{岗哨}\r\n\r\n你登上这个无人看守的哨塔，发现这里除了一些空箱子和桌椅之外，并没有值钱的东西。最终你登上塔楼顶端，这里的确是个绝佳的观景点。", // Such a despicable act reduces your army's morale.
+						"revealTiles" : {
+							"radius" : 15,
+							"surface" : 1,
+							"subterra" : 1,
+							"water" : 1,
+							"rock" : 1
+						}
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "你进入塔楼之后，在一些变节者的指引下，你得到了一些财宝。并且这些变节者也加入了你的部队。",
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 4, "type" : "hotaGunman" },
+							{ "amount": 4, "type" : "hotaGunman" },
+							{ "amount": 4, "type" : "hotaGunman", "upgradeChance" : 50},
+							{ "amount": 4, "type" : "hotaGunman" },
+							{ "amount": 4, "type" : "hotaGunman" }
+						],
+						"resources":
+							{
+								"gold" : 1000
+							},
+						"creatures": [ { "amount": 4, "type": "hotaGunman" } ]
+					},
+					{
+						"message" : "你进入塔楼之后，在一些变节者的指引下，你得到了一些财宝。并且这些变节者也加入了你的部队。",
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 6, "type" : "hotaGunman" },
+							{ "amount": 6, "type" : "hotaGunman" },
+							{ "amount": 6, "type" : "hotaGunman", "upgradeChance" : 50},
+							{ "amount": 6, "type" : "hotaGunman" },
+							{ "amount": 6, "type" : "hotaGunman" }
+						],
+						"resources":
+							{
+								"gold" : 2000
+							},
+						"creatures": [ { "amount": 6, "type": "hotaGunman" } ]
+					},
+					{
+						"message" : "你进入塔楼之后，在一些变节者的指引下，你得到了一些财宝。并且这些变节者也加入了你的部队。",
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 8, "type" : "hotaGunman" },
+							{ "amount": 8, "type" : "hotaGunman" },
+							{ "amount": 8, "type" : "hotaGunman", "upgradeChance" : 50},
+							{ "amount": 8, "type" : "hotaGunman" },
+							{ "amount": 8, "type" : "hotaGunman" }
+						],
+						"resources":
+							{
+								"gold" : 3000
+							},
+						"creatures": [ { "amount": 8, "type": "hotaGunman" } ]
+					},
+					{
+						"message" : "你进入塔楼之后，在一些变节者的指引下，你得到了一些财宝。并且这些变节者也加入了你的部队。",
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 12, "type" : "hotaGunman" },
+							{ "amount": 12, "type" : "hotaGunman" },
+							{ "amount": 12, "type" : "hotaGunman", "upgradeChance" : 50},
+							{ "amount": 12, "type" : "hotaGunman" },
+							{ "amount": 12, "type" : "hotaGunman" }
+						],
+						"resources":
+							{
+								"gold" : 4000
+							},
+						"creatures": [ { "amount": 12, "type": "hotaGunman" } ]
+					}
+				]
+			}
+		}
+	}
+}

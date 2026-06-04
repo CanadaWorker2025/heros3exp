@@ -1,0 +1,113 @@
+//Symbiosis Ability for grim hippogryph whose function is resurrect or cure Treant and Ancient Treant by a troop of grim hippogryph
+{
+	"symbiosisPr":
+	{
+		"type": "ability",
+		"name": "森林祝福",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0,
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+		"animation":{
+			"affect":[{"defName":"NewOldSpells/symbiosis.def","verticalPosition":"bottom"}]
+		},
+
+		"flags" : {"positive": true, "nonMagical":true},
+
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/USELESS.bmp",
+			"iconScroll": "NewOldSpells/USELESS2.bmp",
+			"iconScenarioBonus": "NewOldSpells/USELESS3.bmp",
+			"iconEffect": "NewOldSpells/IN7.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "SACRIF2"
+		},
+		"targetType" : "LOCATION",
+		"targetCondition" :
+		{
+			"anyOf" :
+			{
+				"preserve:creature.caveleaper":"absolute",
+				"preserve:creature.misfortuneeye":"absolute",
+				"preserve:creature.fairybear":"absolute",
+				"preserve:creature.mysticalbear":"absolute"
+			}
+		},
+
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+
+				"description": "{共生}\r\n\r\n迅猛角鹰可以治愈并复活战场上所有受损的己方迅猛角鹰，树精和远古树精，每队迅猛角鹰施放一次。",
+
+				"cost": 0,
+
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"effects":
+				{
+				"wolfBonus" :
+					{
+						"propagator" : 	"HERO",
+						"type" : "ADDITIONAL_ATTACK",
+						"val" : 1,
+						"limiters": [ {
+							"type":"CREATURE_TYPE_LIMITER",
+							"creature" : "caveleaper",
+							"includeUpgrades" : false
+						} ],
+					},
+					"tigerBonus" :
+					{
+						"propagator" : 	"HERO",
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.scout",
+						"val" : 20,
+						"limiters": [ {
+							"type":"CREATURE_TYPE_LIMITER",
+							"creature" : "misfortuneeye",
+							"includeUpgrades" : false
+						} ],
+					}
+				}
+			},
+			"none":
+			{
+
+			},
+			"basic":
+			{
+
+			},
+			"advanced":
+			{
+
+			},
+			"expert":
+			{
+
+			}
+		}
+	}
+}

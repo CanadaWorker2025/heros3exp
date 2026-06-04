@@ -1,0 +1,84 @@
+{
+	"p_Lynn" :
+	{
+    "class": "mentalist",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "琳恩",
+			"biography" : "因为家乡的战乱，琳恩在很小的时候就和姐姐蕾娜塔失散了。在悲伤中度过童年的她将这种悲痛转换成了魔力。当然寻找姐姐也是她能够支撑自己活下去的目标。就算是和邪恶力量合作，她也不会犹豫。",
+			"specialty" :
+			{
+				"description" : "开场可以施放悲痛欲绝。",
+				"tooltip" : "Spell bonus: Sorrow",
+				"name" : "悲痛欲绝"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/lynn/UN32T211.bmp",
+			"specialtyLarge" : "asylum/heroes/lynn/UN44T211.bmp",
+			"large" : "asylum/heroes/lynn/HPL007MN.bmp",
+			"small" : "asylum/heroes/lynn/HPS007MN.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"sorrow"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+		"specialty": 
+		{
+			"bonuses":
+			{
+				"choir":
+				{
+					"type": "OPENING_BATTLE_SPELL",
+					"subtype": "spell.sorrow",
+					"val" : 3,
+					"valueType" : "BASE_NUMBER"
+				},
+				"bind" : 
+				{
+				"subtype" : "spell.sorrow",
+				"type" : "SPELL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,157 @@
+{
+  "tartarca": {
+    "name": {
+      "plural": "冰恶魔",
+      "singular": "冰恶魔"
+    },
+    "advMapAmount": {
+ "max" : 12,
+ "min" : 5
+    },
+    "faction": "tartarus",
+	"doubleWide" : true,
+    "aiValue": 1438,
+    "attack": 15,
+    "cost": {
+      "gold": 800
+    },
+    "damage": {
+ "max" : 20,
+ "min" : 16
+    },
+    "defense": 14,
+    "fightValue": 1255,
+    "graphics": {
+      "animation": "tartarus/battle/creatures/Tar6.def",
+      "map": "tartarus/map/creatures/AVWTAR06.def",
+      "iconSmall": "tartarus/iconsSmall/creatures/Tar6iconS.bmp",
+      "iconLarge": "tartarus/iconsBig/creatures/T6icon.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.10,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 2,
+    "hitPoints": 80,
+    "level": 6,
+    "upgrades": [
+      "tartarcab"
+    ],
+    "sound": {
+      "attack": "tartarus/TAR6ATTK.wav",
+      "defend": "tartarus/TAR6DFND.wav",
+      "killed": "tartarus/TAR6KILL.wav",
+      "move": "tartarus/TAR6MOVE.wav",
+      "wince": "tartarus/TAR6WNCE.wav"
+    },
+    "speed": 7,
+    "abilities": {
+			"fireShieldVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 100,
+				"description" : "{火系弱点}\n受火盾，火墙，火球，末日，地狱火伤害加倍",
+				"icon" : "NewOldSpells/fireWeak.png",
+			},
+			"infernoVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.inferno",
+				"val" : 100,
+				"description" : "{痛苦印记}\n受伤害时积蓄杀伤力，主动攻击后需重新累计",
+				"icon" : "NewOldSpells/painAtt.png"
+			},
+			"fireballVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireball",
+				"val" : 100,
+				"hidden":true
+			},
+			"fireWallVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireWallTrigger",
+				"val" : 100,
+				"hidden":true
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"hidden":true
+			},
+			"immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"combatEvent":
+			{
+				"type" : "ON_COMBAT_EVENT",
+				"subtype" : "combatEventAfterAttacked",
+				"addInfo" : {
+					"effect" : [
+					{
+						"action" : "bonus",
+						"targetEnemy" : false,
+						"bonus" : {
+							"type": "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageBoth",
+								"val" : 15, 
+								"valueType": "PERCENT_TO_ALL",
+								"duration" : [
+										"UNTIL_OWN_ATTACK",
+											],
+							}				
+						}
+					]
+				},
+				"hidden": true
+			},
+
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			}
+		]
+}	
+}

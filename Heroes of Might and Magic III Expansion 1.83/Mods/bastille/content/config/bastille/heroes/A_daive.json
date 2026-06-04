@@ -1,0 +1,64 @@
+{
+	"a_daive" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "戴夫",
+			"biography" : "戴夫曾经是格鲁的忠实拥护者，他带领矮人加入埃里的军队，并且参与了很多场战役。但是从好友尤佛瑞汀处得知格鲁的疯狂后，他不再选择为精灵而战。但是征战多年的他却已经无法作为普通人而生活。为此他决定继续作为一个战士，至少还能保护自己的家乡。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高守卫者或盾卫士的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Defenders",
+				"name" : "守卫者"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "bastille/heroes/daive/skill32-1.bmp",
+			"specialtyLarge" : "bastille/heroes/daive/skill1.bmp",
+			"large" : "bastille/heroes/daive/HPL000DW.bmp",
+			"small" : "bastille/heroes/daive/HPS000DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 10
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : 
+		{
+			"creature" : "bdefender"
+		}
+	}
+}
+

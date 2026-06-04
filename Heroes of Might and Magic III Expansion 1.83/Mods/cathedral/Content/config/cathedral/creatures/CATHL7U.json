@@ -1,0 +1,157 @@
+{
+	"cthChasteners":
+	{
+		"name" :
+		{
+			"plural" : "堕天使",
+			"singular" : "堕天使"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 8,
+			 "min" : 3
+		},
+		"faction" : "cathedral",
+		"level" : 7,
+		"attack" : 30,
+		"defense" : 20,
+		"damage" :
+		{
+			 "min" : 45,
+			 "max" : 55
+		},
+		"growth" : 1,
+		"hitPoints" : 200,
+		"speed" : 20,
+		"fightValue" : 6480,
+		"aiValue" : 6671,
+		 "cost" :
+		{
+			"gold" : 4500,
+			"sulfur" : 2
+		},
+		"graphics" :
+		{
+			"animation" : "cathedral/creatures/battle/CATHL7U.def",
+			"map" : "cathedral/creatures/map/AVWCATH14.def",
+			"iconSmall" : "cathedral/creatures/iconsSmall/CRCT014S.bmp",
+			"iconLarge" : "cathedral/creatures/iconsBig/CRCT014.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"abilities" :
+		{
+            
+		    
+		   "flying" :
+			{
+				"type": "FLYING",
+				"subtype" : "movementTeleporting"
+			},
+			"hateAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.angel",
+				"val" : 50,
+				"description" : "{堕落天使}\n对{天使}和{大天使}伤害+50%",
+				"icon" : "catheSpells/fallen.png"
+			},
+			"hateArchAngels" : 
+			{
+				"hidden":true,
+				"type" : "HATE",
+				"subtype" : "creature.archangel",
+				"val" : 50
+			},
+			"advanceSlayer" : { "type" : "KING", "val": 2 },
+			"punishAttack" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.punishment",
+				"val" : 100,
+				"description" : "{惩戒}\n攻击后附加20点惩戒伤害",
+				"icon" : "catheSpells/sword.png"
+			},
+			"convictionAttack" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.conviction",
+				"val" : 20,
+				"icon" : "catheSpells/conv.png"
+			},
+			"punishStrength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.punishment",
+				"val" : 20
+			},
+			"casterPrayer" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.redeem",
+				"val" : 6,
+				"icon" : "catheSpells/redeem1.png"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			}
+		],
+		"sound" :
+		{
+			"attack": "PLIZATTK.wav",
+			"defend": "AAGLDFND.wav",
+			"killed": "NOSFEXT1.wav",
+			"move": "AAGLMOVE.wav",
+			"wince": "NOSFEXT2.wav",
+			"startMoving": "cathedral/CCT7EXT1.wav",
+			"endMoving": "cathedral/CCT7EXT2.wav"
+		}
+	}
+}
+
+
+

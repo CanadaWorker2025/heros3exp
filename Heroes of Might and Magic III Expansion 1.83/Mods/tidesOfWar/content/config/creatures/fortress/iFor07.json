@@ -1,0 +1,84 @@
+{
+	"iFor07"://blood hydra
+	{
+		"name" :
+		{
+			"plural" : "深渊九头怪",
+			"singular" : "深渊九头怪"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction": "fortress",
+		"doubleWide" : true,
+		"aiValue" : 5932,
+		"fightValue" : 5273,
+		"attack" : 18,
+		"defense" : 19,
+		"cost" :
+		{
+			"gold" : 3500,
+			"sulfur": 1
+		},
+		"damage" :
+		{
+			"min" : 30,
+			"max" : 40
+		},
+		"speed" : 8,
+		"upgrades": ["chaosHydra"],
+		"graphics" :
+		{
+			"animation" : "creatures/fortress/battle/iFor07B.def",
+			"map" : "creatures/fortress/map/iFor07M.def",
+			"iconSmall" : "creatures/fortress/iconsSmall/iFor07S.bmp",
+			"iconLarge" : "creatures/fortress/iconsBig/iFor07L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 220,
+		"growth" : 1,
+		"level" : 7,
+		"sound" :
+		{
+			"attack": "CHYDATTK.wav",
+			"defend": "CHYDDFND.wav",
+			"killed": "CHYDKILL.wav",
+			"move": "CHYDMOVE.wav",
+			"wince": "CHYDWNCE.wav"
+		},
+		"abilities":
+		{
+			"basicSlayer" : { "type" : "KING", "val": 0 },
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"regenerates" :
+			{
+				"type" : "HP_REGENERATION",
+				"val" : 35
+			},
+			"noRetaliate" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"attackAll" :
+			{
+				"type" : "ATTACKS_ALL_ADJACENT",
+				"icon": "bonuses/hydra.png"
+			}
+		}
+	}
+}
+
+

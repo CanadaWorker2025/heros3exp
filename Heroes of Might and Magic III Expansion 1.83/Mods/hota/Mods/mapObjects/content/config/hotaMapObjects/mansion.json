@@ -1,0 +1,118 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"mansion" : 
+			{
+				"name" : "大厦",
+				"templates" :
+				{
+					"base" :
+					{
+						"animation" : "hota/banks/avmnsion.def", 
+						"visitableFrom" : [ "---", "-+-", "+++" ], 
+						"mask" : [ "VVVV", "VVVV", "VBAB"],
+						"allowedTerrains":["grass", "swamp", "subterra", "rough", "dirt", "sand", "lava", "snow"] 							
+					}
+				},
+				"aiValue" : 7000,
+				"sounds": {
+					"ambient": ["hota/LOOPMANS.wav"],
+					"visit": ["hota/mansionv.wav"]
+				},
+				"rmg" : {
+					"value"		: 5000,
+					"rarity"	: 50
+				},
+				"onGuardedMessage" : "{大厦}\r\n\r\n一座古老的宅邸出现在你面前，它还没有失去往日的辉煌，看起来这里没有人，你敢进去吗？",
+				"onVisitedMessage" : "{大厦}\r\n\r\n这座宅邸还没有失去往日的辉煌，不过里面没有什么值钱的东西。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 5, "type" : "vampireLord" },
+							{ "amount": 5, "type" : "vampireLord" },
+							{ "amount": 5, "type" : "vampireLord"},
+							{ "amount": 5, "type" : "vampireLord" },
+							{ "amount": 5, "type" : "vampireLord" }
+						],
+						"resources": 
+							{
+								"gold" : 2500,
+								"mercury": 2,
+								"sulfur": 2,
+								"gems" : 2,
+								"crystal" : 2		
+							},
+							"artifacts": [ { "class" : "MAJOR" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 10, "type" : "vampireLord" },
+							{ "amount": 10, "type" : "vampireLord" },
+							{ "amount": 10, "type" : "vampireLord"},
+							{ "amount": 10, "type" : "vampireLord" },
+							{ "amount": 10, "type" : "vampireLord" }
+						],
+						"resources": 
+							{
+								"gold" : 5000,
+								"mercury": 3,
+								"sulfur": 3,
+								"gems" : 3,
+								"crystal" : 3		
+							},
+							"artifacts": [ { "class" : "MAJOR" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 15, "type" : "vampireLord" },
+							{ "amount": 15, "type" : "vampireLord" },
+							{ "amount": 15, "type" : "vampireLord"},
+							{ "amount": 15, "type" : "vampireLord" },
+							{ "amount": 15, "type" : "vampireLord" }
+						],
+						"resources": 
+							{
+								"gold" : 7500,
+								"mercury": 4,
+								"sulfur": 4,
+								"gems" : 4,
+								"crystal" : 4		
+							},
+							"artifacts": [ { "class" : "MAJOR" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 20, "type" : "vampireLord" },
+							{ "amount": 20, "type" : "vampireLord" },
+							{ "amount": 20, "type" : "vampireLord"},
+							{ "amount": 20, "type" : "vampireLord" },
+							{ "amount": 20, "type" : "vampireLord" }
+						],
+						"resources": 
+							{
+								"gold" : 10000,
+								"mercury": 5,
+								"sulfur": 5,
+								"gems" : 5,
+								"crystal" : 5		
+							},
+							"artifacts": [ { "class" : "MAJOR" } ]
+					}
+				]
+			}
+		}
+	}
+}

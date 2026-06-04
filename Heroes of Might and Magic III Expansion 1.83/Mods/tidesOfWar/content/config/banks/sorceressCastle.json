@@ -1,0 +1,124 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"sorceressCastle" : 
+			{
+				"name" : "术士城堡",
+				"aiValue" : 10000,
+				"templates" : {
+					"base" : { "animation" : "banks/sorceressCastle.def", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VVVVV", "VVBBV", "VBBBB", "VBBAV"], 
+					"allowedTerrains":[ "grass", "dirt" ] 
+					}
+				},
+				"sounds": {
+					"ambient": ["dwellings/banks/SORCERESSLOOP"],
+					"visit": ["dwellings/banks/SORCENTR"]
+				},
+				"rmg" : {
+					"value"		: 8000,
+					"rarity"	: 40,
+					"mapLimit" : 4,
+				},
+				"onGuardedMessage" : "{术士城堡}\r\n\r\n当你来到一片僻静的古堡时，你发现一群翩翩起舞的精灵正围绕着穿着神秘服饰的术士身边在耳语些什么，当你走近后，一群矮人和射手似乎让你不要靠近。在你想要一探究竟时，天空闪过一道火光，凤凰和独角兽也随之而来，都警示着你快点离开此地。你确定要此时闯入这神秘的城堡吗？",
+				"onVisitedMessage" : "{术士城堡}\r\n\r\n你来到这片古堡的时候，只看到到处是杂草无人打理，看起来也没有任何东西，你也失去了参观的欲望。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "在你强行不顾劝告闯入这神秘古堡同时将里面的生灵都赶走后，你环视了一圈，并将遗留下来的财物化为己有。",
+						"appearChance" : { "min" : 0, "max" : 20 },
+						"guards": [
+							{ "amount": 32, "type" : "pixie", "upgradeChance": 50 },
+							{ "amount": 16, "type" : "dwarf", "upgradeChance": 50 },
+							{ "amount": 8, "type" : "woodElf", "upgradeChance": 50 },
+							{ "amount": 4, "type" : "monk", "upgradeChance": 50 },
+							{ "amount": 2, "type" : "unicorn", "upgradeChance": 50 },
+							{ "amount" : 1, "type" : "phoenix", "upgradeChance": 50 }
+						], 
+							"resources": { "gold" : 3000, "wood" : 5 },
+							"artifacts": [ "inexhaustibleCartOfOre", "legsOfLegion" ]
+					},
+					{
+						"message" : "在你强行不顾劝告闯入这神秘古堡同时将里面的生灵都赶走后，你环视了一圈，并将遗留下来的财物化为己有。",
+						"appearChance" : { "min" : 20, "max" : 40 },
+						"guards": [
+							{ "amount": 64, "type" : "pixie", "upgradeChance": 50 },
+							{ "amount": 32, "type" : "dwarf", "upgradeChance": 50 },
+							{ "amount": 16, "type" : "woodElf", "upgradeChance": 50 },
+							{ "amount": 8, "type" : "monk", "upgradeChance": 50 },
+							{ "amount": 4, "type" : "unicorn", "upgradeChance": 50 },
+							{ "amount" : 2, "type" : "phoenix", "upgradeChance": 50 }
+						], 
+							"resources": { "gold" : 6000, "ore" : 5 },
+							"artifacts": [ "inexhaustibleCartOfOre", "inexhaustibleCartOfLumber", "loinsOfLegion" ]
+					},
+					{
+						"message" : "在你强行不顾劝告闯入这神秘古堡同时将里面的生灵都赶走后，你环视了一圈，并将遗留下来的财物化为己有。",
+						"appearChance" : { "min" : 40, "max" : 60 },
+						"guards": [
+							{ "amount": 128, "type" : "pixie", "upgradeChance": 60 },
+							{ "amount": 64, "type" : "dwarf", "upgradeChance": 60 },
+							{ "amount": 32, "type" : "woodElf", "upgradeChance": 60 },
+							{ "amount": 16, "type" : "monk", "upgradeChance": 50 },
+							{ "amount": 8, "type" : "unicorn", "upgradeChance": 50 },
+							{ "amount" : 4, "type" : "phoenix", "upgradeChance": 50 }
+						],
+							"resources": { "gold" : 8000, "ore" : 5, "wood" : 5 },
+							"artifacts": [ "inexhaustibleCartOfOre", "inexhaustibleCartOfLumber", "eversmokingRingOfSulfur", "torsoOfLegion" ],
+							"spells" : [ { "level" : 2 } ]
+					},
+					{
+						"message" : "在你强行不顾劝告闯入这神秘古堡同时将里面的生灵都赶走后，你环视了一圈，并将遗留下来的财物化为己有。",
+						"appearChance" : { "min" : 60, "max" : 80 },
+						"guards": [
+							{ "amount": 192, "type" : "pixie", "upgradeChance": 70 },
+							{ "amount": 96, "type" : "dwarf", "upgradeChance": 70 },
+							{ "amount": 48, "type" : "woodElf", "upgradeChance": 70 },
+							{ "amount": 24, "type" : "monk", "upgradeChance": 60 },
+							{ "amount": 12, "type" : "unicorn", "upgradeChance": 60 },
+							{ "amount" : 6, "type" : "phoenix", "upgradeChance": 60 }
+						],
+							"resources": { "gold" : 10000, "ore" : 10, "wood" : 10 },
+							"artifacts": [ "inexhaustibleCartOfOre", "inexhaustibleCartOfLumber", "eversmokingRingOfSulfur", "ringOfInfiniteGems", "armsOfLegion" ],
+							"spells" : [ { "level" : 3 } ]
+					},
+					{
+						"message" : "在你强行不顾劝告闯入这神秘古堡同时将里面的生灵都赶走后，你环视了一圈，并将遗留下来的财物化为己有。",
+						"appearChance" : { "min" : 80, "max" : 95 },
+						"guards": [
+							{ "amount": 256, "type" : "pixie", "upgradeChance": 70 },
+							{ "amount": 160, "type" : "dwarf", "upgradeChance": 70 },
+							{ "amount": 80, "type" : "woodElf", "upgradeChance": 70 },
+							{ "amount": 40, "type" : "monk", "upgradeChance": 70 },
+							{ "amount": 16, "type" : "unicorn", "upgradeChance": 70 },
+							{ "amount" : 8, "type" : "phoenix", "upgradeChance": 70 }
+						],
+							"resources": { "gold" : 10000, "gems" : 10, "sulfur" : 10 },
+							"artifacts": [ "inexhaustibleCartOfOre", "inexhaustibleCartOfLumber", "eversmokingRingOfSulfur", "ringOfInfiniteGems", "everpouringVialOfMercury", "headOfLegion"  ],
+							"spells" : [ { "level" : 4 } ]
+					},
+					{
+						"message" : "在你强行不顾劝告闯入这神秘古堡同时将里面的生灵都赶走后，你环视了一圈，并将遗留下来的财物化为己有。",
+						"appearChance" : { "min" : 95, "max" : 100 },
+						"guards": [
+							{ "amount": 384, "type" : "pixie", "upgradeChance": 80 },
+							{ "amount": 224, "type" : "dwarf", "upgradeChance": 80 },
+							{ "amount": 128, "type" : "woodElf", "upgradeChance": 80 },
+							{ "amount": 64, "type" : "monk", "upgradeChance": 80 },
+							{ "amount": 32, "type" : "unicorn", "upgradeChance": 80 },
+							{ "amount" : 10, "type" : "phoenix", "upgradeChance": 80 }
+						],
+							"resources": { "gold" : 12000, "mercury" : 12, "crystals" : 12 },
+							"artifacts": [ "inexhaustibleCartOfOre", "inexhaustibleCartOfLumber", "eversmokingRingOfSulfur", "ringOfInfiniteGems", "everpouringVialOfMercury", "everflowingCrystalCloak", "statueOfLegion"  ],
+							"spells" : [ { "level" : 5 } ]
+					}
+				]
+			}
+		}
+	}
+}

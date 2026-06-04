@@ -1,0 +1,25 @@
+{
+	"core:shipyard" : {
+		"types" : {
+			"airShipyard" : {
+				"rmg" : {
+					"value"	: 7000,
+					"rarity" : 10,
+					"zoneLimit" : 1
+				},
+				"boat" : "airshipFactory",
+				"sounds" : {
+					"ambient" : ["LOOPLUMB"],
+					"visit" : ["STORE"]
+				},
+				"templates" : {
+					"airShipyard01" : { "animation" : "factory/map/objects/AVGairy0", 
+						"mask" : [ "VVVV", "VVBV", "VBAB" ], 
+						"visitableFrom" : [ "---", "-++", "+++" ],
+						"allowedTerrains": [ "wasteland","dirt","sand","rough" ]
+					}
+				}
+			}
+		}
+	}		
+}

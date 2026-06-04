@@ -1,0 +1,128 @@
+{
+	"mdtTriton":
+	{
+		"name" :
+		{
+			"plural" : "海卫兵",
+			"singular" : "海卫兵"
+		},
+		"faction" : "conflux",		
+		"advMapAmount" :
+		{
+			 "min" : 12,
+			 "max" : 25
+		},
+		"level" : 3, 
+		"attack" : 10,
+		"defense" : 6,
+		"damage" :
+		{
+			 "min" : 2,
+			 "max" : 5
+		},
+		"growth" : 6, 
+		"hitPoints" : 25,
+		"speed" : 6, 
+		"fightValue" : 292,
+		"aiValue" : 297,
+		"cost" :
+		{
+			"gold" : 210 
+		},
+		"hasDoubleWeek": true,
+		"doubleWide" : false,
+		"upgrades"	: [ "mdtAbyssalTriton" ],
+		"graphics" :
+		{
+			"animation" : "creatures/conflux/battle/triton.def",
+			"map" : "creatures/conflux/map/mapTriton.def",
+			"iconSmall" : "creatures/conflux/iconssmall/tritonSmall.png",
+			"iconLarge" : "creatures/conflux/iconsbig/tritonBig.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.9,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "creatures/conflux/triton/TRITATTACK.wav",
+			"defend": "creatures/conflux/triton/TRITDFND.wav", 
+			"killed": "creatures/conflux/triton/TRITDEAD.wav", 
+			"move": "creatures/conflux/triton/TRITMOVE.wav", 
+			"wince": "creatures/conflux/triton/TRITHIT.wav" 
+        },
+		"abilities" :
+		{
+			"immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.iceBolt",
+					"addInfo" : [0, 2] //16 - iceBolt
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.protectFire"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 2, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

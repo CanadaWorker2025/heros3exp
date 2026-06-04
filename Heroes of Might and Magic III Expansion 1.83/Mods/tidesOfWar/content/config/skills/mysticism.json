@@ -1,0 +1,51 @@
+{
+  "core:mysticism": {
+	  "base" : {
+			"effects" : {
+				"main" : {
+					"type" : "MANA_REGENERATION",
+					"valueType" : "BASE_NUMBER"
+				},
+				"main2" : {
+					"type" : "MANA_PERCENTAGE_REGENERATION",
+					"val" : 5
+				}
+			}
+		},
+    "basic": {
+      "description": "{初级神秘术}\n\n掌握初级神秘术的英雄每天可以回复10%的魔法值，最少回复5点。",
+      "effects": {
+        "main": {
+          "val": 5
+        },
+		"main2": {
+          "val": 10
+        }
+      }
+    },
+
+    "advanced": {
+      "description": "{中级神秘术}\n\n掌握中级神秘术的英雄每天可以回复20%的魔法值，最少回复10点。",
+      "effects": {
+        "main": {
+          "val": 10
+        },
+		"main2": {
+          "val": 20
+        }
+      }
+    },
+
+    "expert": {
+      "description": "{高级神秘术}\n\n掌握高级神秘术的英雄每天可以回复30%的魔法值，最少回复15点。",
+      "effects": {
+        "main": {
+          "val": 15
+        },
+		"main2": {
+          "val": 30
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+	"automatonUp":
+	{
+		"name" :
+		{
+			"plural" : "守卫机甲",
+			"singular" : "守卫机甲"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 10
+		},
+		"faction" : "factory",
+		"doubleWide" : true,
+		"aiValue" : 709,
+		"attack" : 12,
+		"cost" :
+		{
+			"gold" : 450
+		},
+		"damage" :
+		{
+			 "max" : 9,
+			 "min" : 9
+		},
+		"defense" : 10,
+		"fightValue" : 672,
+		"graphics" :
+		{
+			"animation" : "factory/battle/creatures/CHAUTO.def",
+			"map" : "factory/map/creatures/AVWauth.def",
+			"mapMask" : [ "VVV", "VAV"],
+			"iconSmall": "factory/iconsSmall/creatures/CPrS008F.bmp",
+			"iconLarge": "factory/iconsBig/creatures/CPrL008F.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"growth" : 5,
+		"hitPoints" : 30,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "factory/AUTOATTK.wav",
+			"defend": "factory/AUTODFND.wav",
+			"killed": "factory/AUTOKILL.wav",
+			"move": "factory/AUTOMOVE.wav",
+			"wince": "factory/AUTOWNCE.wav",
+			"shoot" : "factory/AUTOSHOT.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"nonliving": {
+				"type": "MECHANICAL"
+			},
+			"castsymMeditation" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.detonates02",
+				"val" : 0,
+				"icon" : "factory/icons/bonuses/ignitionautomatonsentinel.png",
+				"description" : "{引爆}\n可以将自身引燃，进行自爆"
+			},
+			"healPower" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.detonates02",
+				"val" : 25
+			},
+		"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"blockRetaliation" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			}
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_IMMUNITY", 
+					"subtype" : "spell.dispelHelpful"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stoneGaze"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 2 ]
+			}
+		]
+	}
+}

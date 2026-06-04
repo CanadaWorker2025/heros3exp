@@ -1,0 +1,183 @@
+{
+  "tartarc8": {
+    "name": {
+      "plural": "寒冰恐惧者",
+      "singular": "寒冰恐惧者"
+    },
+    "advMapAmount": {
+ "max" : 16,
+ "min" : 10
+    },
+    "faction": "tartarus",
+    "aiValue": 586,
+    "attack": 10,
+    "cost": {
+      "gold": 350
+    },
+    "damage": {
+ "max" : 9,
+ "min" : 7
+    },
+    "defense": 12,
+    "fightValue": 563,
+    "graphics": {
+      "animation": "tartarus/battle/creatures/Tar4up.def",
+      "map": "tartarus/map/creatures/AVWTARU4.def",
+      "iconSmall": "tartarus/iconsSmall/creatures/Tar4uiconS.bmp",
+      "iconLarge": "tartarus/iconsBig/creatures/T4uicon.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.50,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 4,
+    "hitPoints": 40,
+    "level": 4,
+    "sound": {
+      "attack": "tartarus/TAR4ATTK.wav",
+      "defend": "tartarus/TAR4DFND.wav",
+      "killed": "tartarus/TAR4KILL.wav",
+      "move": "tartarus/TAR4MOVE.wav",
+      "wince": "tartarus/TAR4WNCE.wav"
+    },
+    "speed": 6,
+    "abilities": {
+       "immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"fireShieldVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 100,
+				"description" : "{火系弱点}\n受火盾，火墙，火球，末日，地狱火伤害加倍",
+				"icon" : "NewOldSpells/fireWeak.png",
+			},
+			"infernoVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.inferno",
+				"val" : 100,
+				"hidden":true
+			},
+			"fireballVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireball",
+				"val" : 100,
+				"hidden":true
+			},
+			"fireWallVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireWallTrigger",
+				"val" : 100,
+				"hidden":true
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"description" : "{冰霜之盾}\n在雪地和冰原地形上防御力+5",
+				"icon" : "NewOldSpells/iceShield.png",
+			},
+			"iceBonus" :
+			{
+				"type": "ENCHANTED",
+				"subtype": "spell.tarAbility2",
+				"val" : 0,	
+				"hidden":true,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["snow"]
+				} ]
+			},
+			"iceBonus2" :
+			{
+				"type": "ENCHANTED",
+				"subtype": "spell.tarAbility2",
+				"val" : 0,
+				"hidden":true,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["icelands"]
+				} ]
+			},
+      "caster": {
+        "type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.tarability5",
+				"val" : 20,
+				"icon" : "NewOldSpells/lv4.png"
+      }
+
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{	
+				"bonus" :
+				{
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : "spell.iceBolt",
+					"addInfo" : [3, 1]
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.protectWater"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 ]
+			}
+		]
+}	
+}

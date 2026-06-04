@@ -1,0 +1,55 @@
+{
+	"14bulwarkHaugir" : {
+		"class" : "elder",
+		"onlyOnWaterMap" : true,
+		"female" : false,
+		"images" : {
+			"large" : "hota/bulwark/heroes/haugir/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/haugir/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/haugir/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/haugir/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "navigation",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"secondary" : "navigation"
+		},
+		"spellbook" : [
+			"dispel"
+		],
+		"texts" : {
+			"name" : "高吉尔",
+			"biography" : "高吉尔的母亲曾远航海岛，有一次从遥远的异域归来，腹中怀着身孕。豪吉尔最大的遗憾是自己的眼睛没有真正霜巨人的冰冷光泽，于是他发誓要找到最大最纯净的水晶，为自己打造一双新的眼睛。目前，豪吉尔已经找到了一颗勉强够用的水晶，但他仍在寻找与之完美匹配的那一颗。",
+			"specialty" : {
+				"name" : "航海术",
+				"description" : "在航海术上获得每级5%的奖励。",
+				"tooltip" : "Secondary Skill Bonus: Navigation"
+			}
+		}
+	}
+}

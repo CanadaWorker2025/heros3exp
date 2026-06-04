@@ -1,0 +1,54 @@
+{
+	"specialKydoimos" :
+	{
+		"class" : "demoniac",
+		"female" : false,
+		"special": true,
+		"images" :
+		{
+			"large" : "hota/inferno/heroes/special/icons/KportraitLarge.png",
+			"small" : "hota/inferno/heroes/special/icons/KportraitSmall.png",
+			"specialtyLarge" : "hota/inferno/heroes/special/icons/Un44Efre",
+			"specialtySmall" : "hota/inferno/heroes/special/icons/Un32Efre"
+		},
+		"army" : [
+			{
+				"creature" : "imp",
+				"min" : 15,
+				"max" : 25
+			},
+			{
+				"creature" : "gog",
+				"min" : 5,
+				"max" : 8
+			},
+			{
+				"creature" : "hellHound",
+				"min" : 3,
+				"max" : 4
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "tactics",
+				"level" : "basic"
+			},
+			{
+				"skill" : "offence",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"creature" : "efreet"
+		},
+		"texts" : {
+			"biography" : "邪恶的恶魔军阀基多伊莫斯拥有可怕的势力，他的名字在神话中是战争的喧嚣、混乱、骚动和喧哗的化身。",
+			"name" : "基多伊莫斯",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Learning",
+				"name" : "火精灵",
+				"description" : "达到6级以后提高火精灵或烈火精灵的攻击力与防御力。"
+			}
+		}
+	}
+}

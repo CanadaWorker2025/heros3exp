@@ -1,0 +1,44 @@
+{
+	"core:angel" :
+	{
+		"abilities" :
+		{
+			"hateAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.cthPunisher",
+				"val" : 50,
+				"description" : "{光明天使}\n对{暗天使}和{堕天使}伤害+50%",
+				"icon" : "catheSpells/light.png"
+			},
+			"hateArchAngels" : 
+			{
+				"hidden":true,
+				"type" : "HATE",
+				"subtype" : "creature.cthChasteners",
+				"val" : 50
+			}
+		}
+	},
+		"core:archangel" :
+	{
+		"abilities" :
+		{
+			"hateAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.cthPunisher",
+				"val" : 50,
+				"description" : "{光明天使}\n对{暗天使}和{堕天使}伤害+50%",
+				"icon" : "catheSpells/light.png"
+			},
+			"hateArchAngels" : 
+			{
+				"hidden":true,
+				"type" : "HATE",
+				"subtype" : "creature.cthChasteners",
+				"val" : 50
+			}
+		}
+	}
+}

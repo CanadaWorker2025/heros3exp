@@ -1,0 +1,100 @@
+{
+	"gNec05"://masterLich
+	{
+		"name" :
+		{
+			"plural" : "妖巫王",
+			"singular" : "妖巫王"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction": "necropolis",
+		"aiValue" : 1077,
+		"fightValue" : 887,
+		"attack" : 13,
+		"defense" : 12,
+		"cost" :
+		{
+			"gold" : 600
+		},
+		"damage" :
+		{
+			"min" : 12,
+			"max" : 15
+		},
+		"speed" : 7,
+		"upgrades": ["powerLich"],
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/gNec05B.def",
+			"map" : "creatures/necropolis/map/gNec05M.def",
+			"iconSmall" : "creatures/necropolis/iconsSmall/gNec05S.bmp",
+			"iconLarge" : "creatures/necropolis/iconsBig/gNec05L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "PLICH.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"hitPoints" : 45,
+		"growth" : 3,
+		"level" : 5,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack": "LICHATTK.wav",
+			"defend": "LICHDFND.wav",
+			"killed": "LICHKILL.wav",
+			"move": "LICHMOVE.wav",
+			"shoot": "LICHSHOT.wav",
+			"wince": "LICHWNCE.wav"
+		},
+		"abilities":
+		{
+			"undead" : 
+			{ 
+				"type" : "UNDEAD",
+			},
+			"canShoot":
+			{	
+				"type" : "SHOOTER"
+			},
+			"castDisease" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.nec05",
+				"addInfo" : [0,1],
+				"val" : 25,
+				"icon": "bonuses/deathripple1.png"
+			},
+			"deathRippleStrength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.nec05",
+				"val" : 10
+			},
+		}
+	}
+}
+
+

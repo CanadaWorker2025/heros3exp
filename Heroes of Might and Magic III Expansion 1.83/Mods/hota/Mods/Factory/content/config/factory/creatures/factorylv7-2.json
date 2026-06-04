@@ -1,0 +1,177 @@
+{
+	"hotaDread":
+	{
+		"name" :
+		{
+			"plural" : "无畏机甲",
+			"singular" : "无畏机甲"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 4
+		},
+		"faction" : "factory",
+		"aiValue" : 3933,
+		"attack" : 18,
+		"cost" :
+		{
+      "gold": 2200,
+	  "crystal": 1
+		},
+		"damage" :
+		{
+			 "max" : 50,
+			 "min" : 40
+		},
+		"defense" : 20,
+		"fightValue" : 3879,
+    "graphics": {
+      "animation": "factory/battle/creatures/CDREAD.json",
+      "map": "factory/map/creatures/AvWdred.def",
+	  "mapMask" : [ "VVV", "VAV"],
+      "iconSmall": "factory/iconsSmall/creatures/CPrS015F.bmp",
+      "iconLarge": "factory/iconsBig/creatures/CPrL015F.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.5,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide" : true,
+		"growth" : 1,
+		"hitPoints" : 200,
+    "level": 7,
+    "upgrades":
+		[
+			"hotaJugger"
+		],
+		"sound" :
+		{
+			"attack" : "factory/DREDATTK.wav",
+			"defend" : "factory/DREDDFND.wav",
+			"killed" : "factory/DREDKILL.wav",
+			"move" : "factory/DREDMOVE.wav",
+			"shoot": "factory/DREDSHOT.wav",
+			"wince" : "factory/DREDWNCE.wav"
+ 		},
+		"speed" : 6,
+    "abilities" : {
+			"mechanical" : {
+				"type" : "MECHANICAL"
+			},
+			"heatStroke" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "heatStrokeDreadnought",
+				"description" : "{热射线}\n造成大范围的弧形射线攻击",
+				"icon" : "factory/icons/bonuses/hotshoot.png"
+			},
+			"casts" : {
+				"type" : "CASTS",
+				"val" : 99
+			},
+			"multiHexAttack" : {
+				"type" : "MULTIHEX_UNIT_ATTACK",
+				"addInfo" : [
+					"L",
+					"LL",
+					"FL",
+					"FF",
+					"RF",
+					"RR",
+					"R"
+				],
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "USED_HEATSTROKE_ABILITY"
+					}
+				]
+			},
+			"multiHexAnimation" : {
+				"type" : "MULTIHEX_ANIMATION",
+				"addInfo" : [
+					"L",
+					"LL",
+					"FL",
+					"FF",
+					"RF",
+					"RR",
+					"R"
+				],
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "USED_HEATSTROKE_ABILITY"
+					}
+				]
+			},
+			// Will be affected by Expert Slayer only
+			"KING_3" : {
+				"type" : "KING",
+				"val" : 3
+			}
+		},	
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" : 
+				{ 
+					"type" : "HP_REGENERATION" 
+				},
+				"values" : [ 5,10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+
+			},
+			{
+				"bonus" :
+				{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+				},
+				"values" : [ false, false, false, false, false, false, false, false, false, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

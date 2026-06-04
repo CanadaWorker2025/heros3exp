@@ -1,0 +1,59 @@
+{
+	"15astra": {
+		"class": "navigator",
+		"female" : true,
+		"images": {
+			"large": "hota/cove/heroes/astra/icons/portraitLarge.png",
+			"small": "hota/cove/heroes/astra/icons/portraitSmall.png",
+			"specialtyLarge": "hota/cove/heroes/astra/icons/specialtyLarge.png",
+			"specialtySmall": "hota/cove/heroes/astra/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "luck",
+				"level": "basic"
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"frostRing": {
+					"type": "SPECIAL_SPELL_LEV",
+					"subtype": "spell.cure",
+					"val": 3,
+					"updater": "TIMES_HERO_LEVEL"
+				}
+			}
+		},
+		"spellbook": ["frostRing"],
+		"texts": {
+			"biography" : "阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方，但是收获并不多。后来她成为了海洋女祭司，也许她认为仅仅这样做就能完美地使用水系魔法了。",
+			"name" : "阿斯特拉",
+			"specialty" : {
+				"tooltip" : "Spell Bonus: Cure",
+				"name" : "疗伤",
+				"description" : "使用疗伤魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。"
+			}
+		}
+	}
+}

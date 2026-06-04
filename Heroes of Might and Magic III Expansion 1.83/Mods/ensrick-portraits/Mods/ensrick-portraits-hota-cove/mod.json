@@ -1,0 +1,12 @@
+{
+    "name" : "HotA - Alternative Cove Hero Portraits",
+    "description" : "Replaces portraits for the HotA heroes.",
+    "author" : "Ensrick",
+    "modType" : "Graphical",
+	"contact" : "https://forum.vcmi.eu/t/ensricks-portrait-pack-for-vcmi/6028",
+    "version" : "1.0",
+    "depends" :
+    [
+        "hota.cove"
+    ]
+}

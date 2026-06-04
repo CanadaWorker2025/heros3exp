@@ -1,0 +1,98 @@
+{
+	"con06eff":
+	{
+		"type": "ability", 
+		"name": "咒力连结",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance" :
+		{
+			"conflux" : 0		
+		},
+ 
+		"animation":{
+			"affect": ["spells/extraEffect/con06eff.def"]
+		},
+ 
+		"flags" : {"negative": true},
+ 
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconEffect": "spells/extraEffect/con06eff.bmp"
+		},
+
+		"sounds":
+		{
+			"cast":"SACRIF1"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0-1",
+				"power": 10,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"description": "{连结}\r\n\r\n目标被咒力连结，可以被连结打击波及到。",	
+				"cost": 15,				
+				"battleEffects" : {
+					"vampirismEffect" :
+					{
+						"type": "core:timed",
+						"cumulative": false,
+						"bonus":
+						{
+							"lifeDrain":
+							{
+								"type": "DARKNESS",
+								"val" : 0,
+								"duration": "N_TURNS",
+								"turns": 6
+							}
+						}
+					}
+				}
+			},
+			"none":
+			{
+				"cost" : 20
+			},
+			"basic":
+			{
+				"description": "{连结}\r\n\r\n目标被咒力连结，可以被连结打击波及到。",	
+	 
+				"cost": 18
+			},
+			"advanced":
+			{
+				"description": "{连结}\r\n\r\n目标被咒力连结，可以被连结打击波及到。",	
+	 
+				"cost": 18
+			},
+			"expert":
+			{
+				"description": "{连结}\r\n\r\n目标被咒力连结，可以被连结打击波及到。",	
+	 
+				"cost": 18,		
+			}
+		}
+	}
+}

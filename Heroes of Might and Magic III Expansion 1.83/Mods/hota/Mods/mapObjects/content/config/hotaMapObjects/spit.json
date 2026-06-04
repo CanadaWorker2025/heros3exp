@@ -1,0 +1,93 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"spit" : 
+			{
+				"name" : "沼泽地洞",
+				"aiValue" : 5000,
+				"templates" :
+				{
+					"base" :
+					{
+						"animation" : "hota/banks/avbone02.def", 
+						"visitableFrom" : [ "---", "-+-", "+++" ], 
+						"mask" : [ "VVVV", "VVBB", "VBAB"],
+						"allowedTerrains":["swamp"]
+					}
+				},
+				"sounds": {
+					"ambient": ["hota/LOOPBASI.wav"]
+				},
+				"rmg" : {
+					"value"		: 1500,
+					"rarity"	: 100
+				},
+				"onGuardedMessage" : "{沼泽地洞}\r\n\r\n你站在一座长满青苔、杂草丛生的洞穴入口前。你听到里面传来怪物咆哮的声音。你敢进去一探究竟吗？",
+				"onVisitedMessage" : "{沼泽地洞}\r\n\r\n虽然看起来这里是一些巨蜥的洞穴，但周围似乎非常平静。你进入洞穴甚至没有找到一枚巨蜥的蛋。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankWide",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 4, "type" : "basilisk" },
+							{ "amount": 4, "type" : "basilisk" },
+							{ "amount": 4, "type" : "basilisk" },
+							{ "amount": 4, "type" : "basilisk" }
+						],
+							"resources": 
+							{
+								"gold" : 3000
+							}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 6, "type" : "basilisk" },
+							{ "amount": 6, "type" : "basilisk" },
+							{ "amount": 6, "type" : "basilisk" },
+							{ "amount": 6, "type" : "basilisk" }
+						],
+							"resources": 
+							{
+								"gold" : 4500
+							}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 8, "type" : "basilisk" },
+							{ "amount": 8, "type" : "basilisk" },
+							{ "amount": 8, "type" : "basilisk" },
+							{ "amount": 8, "type" : "basilisk" }
+						],
+							"resources": 
+							{
+								"gold" : 6000
+							}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 12, "type" : "basilisk" },
+							{ "amount": 12, "type" : "basilisk" },
+							{ "amount": 12, "type" : "basilisk" },
+							{ "amount": 12, "type" : "basilisk" }
+						],
+							"resources": 
+							{
+								"gold" : 9000
+							}
+					}
+				]
+			}
+		}
+	}
+}

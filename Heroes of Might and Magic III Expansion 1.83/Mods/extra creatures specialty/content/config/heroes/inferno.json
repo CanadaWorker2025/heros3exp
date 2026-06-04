@@ -1,0 +1,102 @@
+{
+	"core:ignatius":{
+		"specialty": {
+			"creature" : "imp",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "小怪物",
+                "description": "每1级提高小怪物及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:calh":{
+        "texts": {
+            "specialty": {
+                "name": "歌革",
+                "description": "每2级提高歌革及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:fiona":{
+        "texts": {
+            "specialty": {
+                "name": "地狱猎犬",
+                "description": "每3级提高地狱猎犬及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:marius":{
+        "texts": {
+            "specialty": {
+                "name": "恶鬼",
+                "description": "每4级提高恶鬼及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:nymus":{
+        "texts": {
+            "specialty": {
+                "name": "邪神",
+                "description": "每5级提高邪神及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:rashka":{
+        "texts": {
+            "specialty": {
+                "name": "火精灵",
+                "description": "每6级提高火精灵及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:xeron":{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"type" : "CREATURE_TYPE_LIMITER",
+						"creature" : "devil",
+						"includeUpgrades" : true
+					}
+				]
+			},
+			"bonuses" : {
+				"attack" : {
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				},
+				"defence" : {
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				},
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1
+				}
+			}
+		},
+        "texts": {
+            "specialty": {
+                "name": "恶魔",
+                "description": "使恶魔及其升级形态攻击力+10，防御力+10，速度+1。"
+            }
+        }
+	},
+	"core:pyre":{
+		"specialty": {
+			"creature": "ballista",
+			"creatureLevel" : 5,
+			"stepSize" : 30
+		},
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+            }
+        }
+	}
+}

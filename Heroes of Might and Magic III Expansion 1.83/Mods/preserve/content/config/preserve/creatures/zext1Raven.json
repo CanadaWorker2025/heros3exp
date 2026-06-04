@@ -1,0 +1,109 @@
+{
+	"extra2raven":
+	{
+		"name" :
+		{
+			"plural" : "乌鸦",
+			"singular" : "乌鸦"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 16
+		},
+		"faction" : "preserve",
+		"special" : true,
+		"aiValue" : 228,
+		"attack" : 7,
+		"cost" :
+		{
+			"gold" : 150
+		},
+		"damage" :
+		{
+			 "max" : 4,
+			 "min" : 3
+		},
+		"defense" : 4,
+		"fightValue" : 233,
+    "graphics": {
+      "animation": "preserve/battle/creatures/Z2Raven.def",
+      "map": "preserve/map/creatures/AVWC166.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrSEX2P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrLEX2P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.50,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+		"growth" : 8,
+		"hitPoints" : 13,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "ROCCATTK.wav",
+			"defend": "ROCCDFND.wav",
+			"killed": "ROCCKILL.wav",
+			"move": "ROCCMOVE.wav",
+			"wince": "ROCCWNCE.wav"
+		},
+		"speed" : 8,
+    "abilities":
+		{
+		"canFly" : 
+		{
+			"type" : "FLYING"
+		},
+			"extraRetaliation" :
+			{
+				"type" : "ADDITIONAL_RETALIATION",
+				"val" : 5
+			},
+			"blinds" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.blind",
+				"val" : 30
+			}
+		},	
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			}
+		]
+		}	
+	}

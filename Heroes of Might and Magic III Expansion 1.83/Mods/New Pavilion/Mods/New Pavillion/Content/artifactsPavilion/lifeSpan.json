@@ -1,0 +1,37 @@
+{
+	"lifeSpan":
+	{
+		"type": ["HERO"],
+		"slot" : "MISC",
+		"class" : "SPECIAL",
+		"value": 6000,		
+		"text":
+		{
+			"name": "生命之源",
+			"description": "{生命之源}\r\n\r\n拥有生命之源，会使你的生物+2生命值，并拥有每天600点的额外移动力。",
+			"event": "你来到一片山谷，在此处发现了生命的泉水。随后，你在泉水中搜索，获得了被称为生命之源的护身符。"
+		},
+		"graphics":
+		{
+			"scenarioBonus" : "artifactsPavilion/lifeSpanB.png",
+			"image": "artifactsPavilion/lifeSpan.png",
+			"map": "artifactsPavilion/lifespanmap.def"
+		},
+		"bonuses":
+		{
+			"stackHealth":
+			{
+				"type" : "STACK_HEALTH",
+				"val" : 2,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"movement":
+			{
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementLand",
+				"val" : 600,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		}
+	}
+}

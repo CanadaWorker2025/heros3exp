@@ -1,0 +1,53 @@
+{
+	"helena" :
+	{
+		"class" : "redtemplar",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/helena/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/helena/spec-large.bmp",
+			"large" : "cathedral/heroes/helena/portrait-large.bmp",
+			"small" : "cathedral/heroes/helena/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			}
+		],
+		"texts" :
+		{
+			"name" : "亚莉克希亚",
+			"biography" : "贵族出身的亚莉克希亚从不提起自己的往事。她也从不以自己的身份为荣。当其他贵族女孩还在家中学习礼仪时，她已经披上盔甲奔赴战场。也许战斗和冒险才是她所追求的生活。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供350个金币。",
+				"tooltip" : "特长：+350个金币",
+				"name" : "+350个金币"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}		
+	}
+}

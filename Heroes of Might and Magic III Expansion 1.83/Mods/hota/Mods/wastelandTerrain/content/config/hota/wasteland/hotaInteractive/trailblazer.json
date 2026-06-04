@@ -1,0 +1,42 @@
+{
+	"trailblazer" : {
+		"handler":"configurable",
+		"name" : "开拓者",
+		"types" : {
+			"trailblazer" : {
+				"aiValue" : 3000,
+				"rmg" : {
+					"value"		: 200,
+					"rarity" 	: 50,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["STORE"]
+				},
+				"onEmptyMessage" : "{开拓者}\r\n\r\n目前他们已经没有什么可以分享了。",
+				"onVisitedMessage" : "{开拓者}\r\n\r\n你在当地造访了一些住在帐篷里的开拓者，他们告诉你一些见闻，但你似乎早就听过了，也许下周再来还会有其他的见闻。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"templates" : {
+					"avstrblz" : {
+						"animation" : "hota/wasteland/hotaInteractive/trailblazer/avstrblz",
+						"mask" : [ "VVV","VVV", "VBA" ],
+						"visitableFrom" : [ "---", "-++", "+++" ],
+						"allowedTerrains": [ "wasteland"]
+					}
+				},
+				"rewards" : [
+					{
+						"message" : "{开拓者}\r\n\r\n你在当地造访了一些住在帐篷里的开拓者，他们告诉你一些见闻，使你能更快通过这片荒原。",
+						"movePoints" : 800,
+						"bonuses" : [ { "type" : "ROUGH_TERRAIN_DISCOUNT","val" : 100, "duration" : "ONE_WEEK", "valueType" : "ADDITIVE_VALUE"} ]
+					}
+				]
+			}
+		}
+	}		
+}

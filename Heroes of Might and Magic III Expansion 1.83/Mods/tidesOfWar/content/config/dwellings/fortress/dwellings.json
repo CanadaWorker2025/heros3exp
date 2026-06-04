@@ -1,0 +1,21 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"mdtSwampHut" : {
+				"name" : "沼泽小屋",
+				"creatures" : [[ "mdtTrollHag" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new08.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "dwellings/fortress/mapSwampHut.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				},
+				"sounds": {
+					"ambient": ["dwellings/fortress/LOOPWTCH"]
+				}
+			}
+		}
+	}	
+}

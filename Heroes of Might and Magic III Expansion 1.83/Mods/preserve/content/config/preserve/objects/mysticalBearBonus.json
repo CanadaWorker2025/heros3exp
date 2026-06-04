@@ -1,0 +1,317 @@
+{
+	"core:swanPond" : {
+		"types" : {
+			"swanPond" : {
+				"rewards" : [
+					{
+						"limiter" : {
+							"anyOf" : [
+								{ "creatures" : [ { "type" : "fairybear", "amount" : 1} ] },
+								{ "creatures" : [ { "type" : "mysticalbear", "amount" : 1} ] }
+							]
+						},
+						"message" : "{天鹅湖}\r\n\r\n传说红天鹅能带来好运，你决定今天就呆在这里。在你休息的期间，同行的高阶德鲁伊也获得了更强大的灵力。",
+						"movePercentage" : 0,
+						"bonuses" : [ 
+						{ "type" : "LUCK", "val" : 2, "duration" : "ONE_BATTLE", "description" : 67 },
+						{ 
+							"type" : "CASTS", 
+							"val" : 1,
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						},
+						{
+							"type" : "ENCHANTER",
+							"subtype" : "spell.forestPower",
+							"val" : 3,
+							"addInfo" : 3,
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						}
+						],
+						"changeCreatures" : {
+							"fairybear" : "mysticalbear"
+						}
+					},
+					
+					{
+						"message" : 29,
+						"movePercentage" : 0,
+						"bonuses" : [ { "type" : "LUCK", "val" : 2, "duration" : "ONE_BATTLE", "description" : 67 } ]
+					}
+					
+				]
+			}
+		}
+	},
+	"core:idolOfFortune" : {
+		"types" : {
+			"idolOfFortune" : {
+				"rewards" : [
+					{
+						"limiter" : {
+							"anyOf" : [
+								{ "creatures" : [ { "type" : "fairybear", "amount" : 1} ] },
+								{ "creatures" : [ { "type" : "mysticalbear", "amount" : 1} ] }
+							]
+						},
+						"message" : "{幸运雕像}\r\n\r\n你找到一个古老的石像，亲吻它给你带来了好运与幸福。在同行的德鲁伊的帮助下，你获得了祝福，并且是她们获得了更强大的灵力。",
+						"bonuses" : [ 
+						{ "type" : "MORALE", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 },
+						{ "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 } ,
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 1,
+							"subtype" : "primarySkill.attack",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						},
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 1,
+							"subtype" : "primarySkill.defence",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						},
+						{
+							"type" : "STACKS_SPEED",
+							"val" : 1,
+							"valueType" : "BASE_NUMBER",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						}
+						]
+					},
+					
+					{
+						"message" : 62,
+						"limiter" : { 
+							"anyOf" : [
+								{ "dayOfWeek" : 1 },
+								{ "dayOfWeek" : 3 },
+								{ "dayOfWeek" : 5 }
+							]
+						},
+						"bonuses" : [ { "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 } ]
+					},
+					{
+						"message" : 62,
+						"limiter" : { 
+							"anyOf" : [
+								{ "dayOfWeek" : 2 },
+								{ "dayOfWeek" : 4 },
+								{ "dayOfWeek" : 6 }
+							]
+						},
+						"bonuses" : [ { "type" : "MORALE", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 } ]
+					},
+					{
+						"message" : 62,
+						"limiter" : { "dayOfWeek" : 7 },
+						"bonuses" : [ 
+							{ "type" : "MORALE", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 },
+							{ "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 }  
+						]
+					}
+					
+				]
+			}
+		}
+	},
+	"core:faerieRing" : {
+		"types" : {
+			"faerieRing" : {
+				"rewards" : [
+					{
+						"limiter" : {
+							"anyOf" : [
+								{ "creatures" : [ { "type" : "fairybear", "amount" : 1} ] },
+								{ "creatures" : [ { "type" : "mysticalbear", "amount" : 1} ] }
+							]
+						},
+						"message" : "{仙女环}\r\n\r\n你走进仙女环，在下一场战斗结束之前，你的军队的幸运值提高了，且同行的德鲁伊也获得了更强大的灵力。",
+						"bonuses" : [ 
+						{ "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 71 },
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 1,
+							"subtype" : "primarySkill.attack",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						},
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 1,
+							"subtype" : "primarySkill.defence",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						},
+						{
+							"val" : 15,
+							"type" : "CREATURE_DAMAGE",
+							"subtype" : "creatureDamageBoth",
+							"valueType": "PERCENT_TO_BASE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						},
+						{
+							"type" : "STACKS_SPEED",
+							"val" : 1,
+							"valueType" : "BASE_NUMBER",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						}
+						]
+					},
+					
+					{
+						"message" : 49,
+						"bonuses" : [ { "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 71 } ]
+					}
+					
+				]
+			}
+		}
+	},
+	"core:fountainOfFortune" : {
+		"types" : {
+			"fountainOfFortune" : {
+				"rewards" : [
+					{
+						"limiter" : {
+							"anyOf" : [
+								{ "creatures" : [ { "type" : "fairybear", "amount" : 1} ] },
+								{ "creatures" : [ { "type" : "mysticalbear", "amount" : 1} ] }
+							]
+						},
+						"message" : "{幸运泉}\r\n\r\n由于德鲁伊的魔法保护，喝了幸运泉的水后，你的运气获得了提升。且同行的德鲁伊也获得了更强大的灵力。",
+						"bonuses" : [ 
+						{ "type" : "LUCK", "val" : 3, "duration" : "ONE_BATTLE", "description" : 69 },
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 2,
+							"subtype" : "primarySkill.attack",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						},
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 2,
+							"subtype" : "primarySkill.defence",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						},
+						{
+							"type" : "ENCHANTED",
+							"subtype" : "spell.bless",
+							"val" : 2,
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						},
+						{
+							"type" : "STACKS_SPEED",
+							"val" : 1,
+							"valueType" : "BASE_NUMBER",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ 
+							{
+								"type":"CREATURE_TYPE_LIMITER",
+								"creature":"fairybear",
+								"includeUpgrades" : true
+							} ]
+						}
+						]
+					},
+					
+					{
+						"message" : 55,
+						"appearChance" : { "min" : 0, "max" : 25 },
+						"bonuses" : [ { "type" : "LUCK", "val" : -1, "duration" : "ONE_BATTLE", "description" : 69 } ] // NOTE: strings has %s placeholder for morale value
+					},
+					{
+						"message" : 55,
+						"appearChance" : { "min" : 25, "max" : 50 },
+						"bonuses" : [ { "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 69 } ] // NOTE: strings has %s placeholder for morale value
+					},
+					{
+						"message" : 55,
+						"appearChance" : { "min" : 50, "max" : 75 },
+						"bonuses" : [ { "type" : "LUCK", "val" : 2, "duration" : "ONE_BATTLE", "description" : 69 } ] // NOTE: strings has %s placeholder for morale value
+					},
+					{
+						"message" : 55,
+						"appearChance" : { "min" : 75, "max" : 100 },
+						"bonuses" : [ { "type" : "LUCK", "val" : 3, "duration" : "ONE_BATTLE", "description" : 69 } ] // NOTE: strings has %s placeholder for morale value
+					},
+					
+				]
+			}
+		}
+	}
+}

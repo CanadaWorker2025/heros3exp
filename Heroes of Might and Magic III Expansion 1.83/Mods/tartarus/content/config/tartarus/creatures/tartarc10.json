@@ -1,0 +1,127 @@
+{
+  "tartarc10": {
+    "name": {
+      "plural": "水晶魔蛛",
+      "singular": "水晶魔蛛"
+    },
+    "advMapAmount": {
+ "max" : 12,
+ "min" : 8
+    },
+    "faction": "tartarus",
+    "aiValue": 1208,
+	"doubleWide" : true,
+    "attack": 15,
+    "cost": {
+      "gold": 650
+    },
+    "damage": {
+ "max" : 15,
+ "min" : 12
+    },
+    "defense": 13,
+    "fightValue": 1117,
+    "graphics": {
+      "animation": "tartarus/battle/creatures/Tar5up.def",
+      "map": "tartarus/map/creatures/AVWTARU5.def",
+      "iconSmall": "tartarus/iconsSmall/creatures/Tar5uiconS.bmp",
+      "iconLarge": "tartarus/iconsBig/creatures/T5uicon.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.50,
+        "attack": 1,
+        "idle": 10
+      },
+	  "missile": {
+      "projectile": "CPRZEAX.DEF",
+      "attackClimaxFrame": 7,
+      "offset": {
+        "upperX": 38,
+        "upperY": -65,
+        "middleX": 36,
+        "middleY": -59,
+        "lowerX": 21,
+        "lowerY": -50
+      },
+      "frameAngles": [ 90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0 ]
+    }
+    },
+    "growth": 3,
+    "hitPoints": 45,
+    "level": 5,
+    "sound": {
+      "attack": "tartarus/TAR5ATTK.wav",
+      "defend": "tartarus/TAR5DFND.wav",
+      "killed": "tartarus/TAR5KILL.wav",
+      "move": "tartarus/TAR5MOVE.wav",
+	  "shoot":"tartarus/TAR5SHOT.wav",
+      "wince": "tartarus/TAR5WNCE.wav"
+    },
+    "speed": 8,
+	"shots": 16,
+    "abilities": {
+       "canShoot": {
+        "type": "SHOOTER"
+      },
+	  "caster": {
+        "type" : "SPELL_AFTER_ATTACK",
+		"subtype" : "spell.tarAbility4",
+		"addInfo" : [0, 1],
+		"val" : 50,
+		"icon" : "NewOldSpells/lv51.png"
+      },
+      "caster2": {
+        "type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.tarAbility3",
+				"addInfo" : [0, 1],
+				"val" : 20,
+				"icon" : "NewOldSpells/lv52.png"
+      }
+
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 3, 3]
+			}
+		]
+}	
+}

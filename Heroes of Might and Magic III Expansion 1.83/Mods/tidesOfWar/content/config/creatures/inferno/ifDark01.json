@@ -1,0 +1,67 @@
+{
+	"ifDark01":
+	{
+		"name" :
+		{
+			"plural" : "使魔",
+			"singular" : "使魔"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction": "inferno",
+		"aiValue" : 60,
+		"fightValue" : 60,
+		"attack" : 4,
+		"defense" : 5,
+		"cost" :
+		{
+			"gold" : 60
+		},
+		"damage" :
+		{
+			"min" : 1,
+			"max" : 2
+		},
+		"speed" : 7,
+		"upgrades": ["familiar"],
+		"graphics" :
+		{
+			"animation" : "creatures/inferno/battle/CINF21.def",
+			"map" : "creatures/inferno/map/AVWinf01.def",
+			"iconSmall" : "creatures/inferno/iconsSmall/CINF21S.bmp",
+			"iconLarge" : "creatures/inferno/iconsBig/CINF21B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 4,
+		"growth" : 15,
+		"horde": 8,
+		"level" : 1,
+		"sound" :
+		{
+			"attack": "FMLRATTK.wav",
+			"defend": "FMLRDFND.wav",
+			"killed": "FMLRKILL.wav",
+			"move": "FMLRMOVE.wav",
+			"wince": "FMLRWNCE.wav"
+		},
+		"abilities" :
+		{
+			"drainsMana" :
+			{
+				"type" : "MANA_DRAIN",
+				"val" : 2
+			}			
+		}
+	}
+}
+
+

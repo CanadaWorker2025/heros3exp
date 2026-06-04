@@ -1,0 +1,70 @@
+{
+	"ffpaladin":
+	{
+		"name" :
+		{
+			"plural" : "圣殿骑士",
+			"singular" : "圣殿骑士"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"faction" : "castle",
+		"doubleWide" : true,
+		"level" : 6,
+		"attack" : 17,
+		"defense" : 13,
+		"damage" :
+		{
+			 "min" : 20,
+			 "max" : 25
+		},
+		"growth" : 2,
+		"hitPoints" : 100,
+		"speed" : 9,
+		"fightValue" : 1803,
+		"aiValue" : 2102,
+		"upgrades": ["champion"],
+		"cost" :
+		{
+			"gold" : 1200
+		},
+		"graphics" :
+		{
+			"animation" : "creatures/castle/battle/C196.def",
+			"map" : "creatures/castle/map/AVWC196.def",
+			"iconSmall" : "creatures/castle/iconsSmall/CPrS196C.bmp",
+			"iconLarge" : "creatures/castle/iconsBig/CPRL196C.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.1,
+				"attack" : 1,
+				"idle" : 10
+			}		
+		},
+		"sound" :
+		{
+			"attack": "CHMPATTK.wav",
+			"defend": "CHMPDFND.wav",
+			"killed": "CHMPKILL.wav",
+			"move": "CHMPMOVE.wav",
+			"wince": "CHMPWNCE.wav"
+		},
+		"abilities" :
+		{
+		"Jousting": { "type" : "JOUSTING", "val":5 },
+		  "twohexattackbreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH",
+				"description" : "{穿刺攻击}\n长枪可以攻击两格的部队",
+				"icon" : "spells/extraEffect/cas06eff.png"
+			}
+		}
+	}
+}
+
+
+

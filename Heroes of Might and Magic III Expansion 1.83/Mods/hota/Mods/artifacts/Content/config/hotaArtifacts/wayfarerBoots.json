@@ -1,0 +1,25 @@
+{
+	"wayfarerBoots" : {
+		"type" : [ "HERO" ],
+		"slot" : "FEET",
+		"class" : "MAJOR",
+		"value" : 5000,
+		"bonuses" : {
+			"terrain" : {
+				"type" : "ROUGH_TERRAIN_DISCOUNT",
+				"valueType" : "ADDITIVE_VALUE",
+				"val" : 100
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/wayfarerBoots",
+			"map" : "hota/artifactsMap/wayfarerBoots",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/wayfarerBoots"
+		},
+		"text" : {
+			"description" : "{远行之靴}\r\n\r\n穿在足部，这双靴子允许你的英雄在崎岖地形移动时不受阻碍。",
+			"event" : "你在一条浅滩路上遇见一位穿着大衣的旅行者。他拿出他的旧靴子来换你的披风。你无比热情地同意了。达成了这笔交易后他消失在地平线上。",
+			"name" : "远行之靴"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"cgPatronOfVenomousFire" : {
+		"bonuses" : {
+			"stackHealth" : {
+				"type" : "STACK_HEALTH",
+				"val" : -10,
+				"valueType" : "PERCENT_TO_BASE",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [ "OPPOSITE_SIDE" ],
+			}
+		},
+		"class" : "MAJOR",
+		"graphics" : { "image" : "patron/patron", "scenarioBonus" : "patron/patronL", "map" : "patron/moon" },
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{炎魔代言者}\r\n\r\n使所有敌人的生命值下降10%。",
+			"event" : "你走在路上，突然感觉空气灼热，随后一个恶魔挥舞着镰刀出现，但你不慌不忙，看出他挥舞镰刀时的破绽，并用魔法结果了他。你捡起他身上所带着的绿色小挂件，这想必也是他如此暴虐的原因。",
+			"name" : "炎魔代言者"
+		},
+		"type" : [ "HERO" ],
+		"value" : 7500
+	}
+}

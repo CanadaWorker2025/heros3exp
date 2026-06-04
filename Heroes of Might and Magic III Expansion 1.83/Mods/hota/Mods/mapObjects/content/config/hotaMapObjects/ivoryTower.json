@@ -1,0 +1,93 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"ivoryTower" : 
+			{
+				"name" : "象牙塔",
+				"aiValue": 5000,
+				"templates" :
+				{
+					"normal" :
+					{
+						"animation" : "hota/banks/avivtow2.def",
+						"visitableFrom" : [ "---", "+++", "+++" ], 
+						"mask" : [ "VVV", "VVV", "VVV", "VBA"],
+						"allowedTerrains":["grass", "swamp", "subterra", "rough", "dirt", "sand", "lava"] 
+					},
+					"snow" :
+					{
+						"animation" : "hota/banks/avivtow1.def",
+						"visitableFrom" : [ "---", "+++", "+++" ], 
+						"mask" : [ "VVV", "VVV", "VVV", "VBA"],
+						"allowedTerrains":["snow"] 
+					}
+				},
+				"sounds": {
+					"ambient": ["hota/IVORTWLO.wav"],
+					"visit": ["hota/IVORYTOW.wav"]
+				},
+				"rmg" : {
+					"value"		: 7000,
+					"rarity"	: 10
+				},
+				"onGuardedMessage" : "{象牙塔}\r\n\r\n你要求进入塔中参观，可是法师们粗鲁地拒绝了。你想到他们可能关押了一些囚犯，站在他们一边会让你获得宝贵的盟友。你准备好试试运气了吗？",
+				"onVisitedMessage" : "{象牙塔}\r\n\r\n你进入了这座象牙塔，参观了塔中魔法师们的手迹，可实际上，你没有得到任何有价值的东西。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 7, "type" : "archMage" },
+							{ "amount": 7, "type" : "archMage" },
+							{ "amount": 7, "type" : "archMage" },
+							{ "amount": 7, "type" : "archMage" },
+							{ "amount": 7, "type" : "archMage" }
+						],
+						"creatures": [ { "amount": 3, "type": "enchanter" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 10, "type" : "archMage" },
+							{ "amount": 10, "type" : "archMage" },
+							{ "amount": 10, "type" : "archMage" },
+							{ "amount": 10, "type" : "archMage" },
+							{ "amount": 10, "type" : "archMage" }
+						],
+						"creatures": [ { "amount": 6, "type": "enchanter" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 13, "type" : "archMage" },
+							{ "amount": 13, "type" : "archMage" },
+							{ "amount": 13, "type" : "archMage" },
+							{ "amount": 13, "type" : "archMage" },
+							{ "amount": 13, "type" : "archMage" }
+						],
+						"creatures": [ { "amount": 9, "type": "enchanter" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 16, "type" : "archMage" },
+							{ "amount": 16, "type" : "archMage" },
+							{ "amount": 16, "type" : "archMage" },
+							{ "amount": 16, "type" : "archMage" },
+							{ "amount": 16, "type" : "archMage" }
+						],
+						"creatures": [ { "amount": 12, "type": "enchanter" } ]
+					}
+				]
+			}
+		}
+	}
+}

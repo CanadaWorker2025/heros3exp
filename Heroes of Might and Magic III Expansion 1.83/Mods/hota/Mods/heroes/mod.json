@@ -1,0 +1,22 @@
+{
+	"name" : "HoTA Heroes",
+	"description" : "New heroes by HoTA Crew",
+	"modType" : "Heroes",
+	"author" : "Hota Crew, ported by VCMI Team",
+	"contact" : "http://forum.vcmi.eu/viewtopic.php?t=748",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"version" : "1.3.5",
+	"heroes" :
+	[
+		"config/castle/heroes/beatrice",
+		"config/necropolis/heroes/ranloo",
+		"config/necropolis/heroes/boyd",
+		"config/necropolis/heroes/hotaMaximus",
+		"config/fortress/heroes/kinkeria",
+		"config/fortress/heroes/pactal",
+		"config/inferno/heroes/kydoimos",
+		"config/inferno/heroes/miseria",
+		"config/inferno/heroes/Athe"
+	]
+}

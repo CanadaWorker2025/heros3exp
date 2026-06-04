@@ -1,0 +1,52 @@
+{
+	"name" : "HotA map objects",
+	"description" : "Mod adds multiple new objects added by HotA Crew to VCMI, available on random maps", 
+	"modType" : "Objects",
+	"author": "Graphics: HotA Crew, mod: avatar",
+	"contact": "http://forum.df2.ru/index.php?showtopic=32286",
+	"version" : "1.4.0",
+	"changelog" : 
+	{
+		"1.4.0"   : [ "Configured behavior for Seafaring academy and Skeleton transformer (Seafaring is not upgrading skills unlike HotA)" ]
+	},
+	"compatibility" :
+	{
+		"min" : "1.3.0"
+	},
+	"depends" : [ "hota.cove", "hota.neutralcreatures" ],
+	"objects" :
+	[
+		"config/hotaMapObjects/ancientLamp.json",
+		"config/hotaMapObjects/beholderSanctuary.json",
+		"config/hotaMapObjects/blackTower.json",
+		"config/hotaMapObjects/churchyard.json",
+		"config/hotaMapObjects/colosseum.json",
+		"config/hotaMapObjects/experimentalShop.json",
+		"config/hotaMapObjects/ivoryTower.json",
+		"config/hotaMapObjects/jetsam.json",
+		"config/hotaMapObjects/mansion.json",
+		"config/hotaMapObjects/observatory.json",
+		"config/hotaMapObjects/pirateCavern.json",
+		"config/hotaMapObjects/redTower.json",
+		"config/hotaMapObjects/seaBarrel.json",
+		"config/hotaMapObjects/shrineOfMagicMystery.json",
+		"config/hotaMapObjects/spit.json",
+		"config/hotaMapObjects/templeOfTheSea.json",
+		"config/hotaMapObjects/vialOfMana.json",
+		"config/hotaMapObjects/warehouse.json",
+		"config/hotaMapObjects/warlocksLab.json",
+		"config/hotaMapObjects/wateringPlace.json",
+		"config/hotaMapObjects/wolfRaiderPicket.json",
+		"config/hotaMapObjects/altarOfMana.json",
+		"config/hotaMapObjects/hillFort.json",
+		"config/hotaMapObjects/questGate.json",
+		"config/hotaMapObjects/seafaringAcademy",
+		"config/hotaMapObjects/skeletonTransformer",
+		"config/hotaMapObjects/templeOfLoyalty",
+		"config/hotaMapObjects/townGate"
+	],
+	"spells" : [
+		"config/hotaMapObjects/spells/townGateHelper.json"
+	]
+}
+

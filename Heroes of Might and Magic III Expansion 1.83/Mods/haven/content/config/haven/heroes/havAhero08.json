@@ -1,0 +1,60 @@
+{
+	"havAhero08" :
+	{
+		"class" : "havAhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "斯尼夫",
+			"biography" : "“斯尼夫（意为嗅觉）”似乎是一个嘲讽的绰号，但他真的为自己的嗅觉感到自豪。这也是为什么试图追踪他的敌人往往会发现自己反而被包围了起来。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "鼠人",
+				"description" : "达到1级以后提升鼠人和鼠人战狂的攻击力和防御力。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero8/skill8S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero8/skill8.bmp",
+			"large" : "haven/heroes/havHero8/hero8.bmp",
+			"small" : "haven/heroes/havHero8/hero8S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC01",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "havC01",
+				"max" : 20,
+				"min" : 15
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "havC01"
+		}	
+	}
+}

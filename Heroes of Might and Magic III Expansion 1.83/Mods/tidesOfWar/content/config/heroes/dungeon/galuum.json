@@ -1,0 +1,63 @@
+{
+  "mdtGaluum" :
+  {
+    "class" : "warlock",
+    "female" : false,
+    "special" : false,
+	"spellbook" : ["mdtAuraOfPower"],
+
+    "texts" :
+    {
+      "name" : "高伦",
+      "biography" : "许多人说，高伦曾经是奴隶贩子，由于施行一个古老的仪式，他变成了妖怪，但也成为了非常强大的术士。但是，没有人能证实这些传闻。不管这个传说是否真实，高伦都是一位很有才华的领导者，他不仅以自己的外表，而且以精湛的技能来降伏敌人。",
+      "specialty" :
+      {
+        "description" : "达到5级以后提高摄魂怪或噬魂怪的攻击力与防御力。",
+        "tooltip" : "Creature bonus: Illithid",
+        "name" : "摄魂怪"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/dungeon/galuum_spec-small.bmp",
+      "specialtyLarge" : "heroes/dungeon/galuum_spec-large.bmp",
+      "large" : "heroes/dungeon/galuum_portrait-large.bmp",
+      "small" : "heroes/dungeon/galuum_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "troglodyte",
+        "max" : 40,
+        "min" : 30
+      },
+      {
+        "creature" : "harpy",
+        "max" : 6,
+        "min" : 4
+      },
+      {
+        "creature" : "beholder",
+        "max" : 4,
+        "min" : 3
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "wisdom"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "resistance"
+      }
+    ],
+	"specialty" : {
+		"creature" : "mdtIllithid"
+	}
+  }
+}

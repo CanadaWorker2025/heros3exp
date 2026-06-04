@@ -1,0 +1,35 @@
+{
+// "special" heroes for new towns
+//	"core:dracon":
+//	{
+//		"specialty" : {
+//			"base" : {
+//				"addInfo" : "creature.enchanter",
+//				"type" : "SPECIAL_UPGRADE"
+//			},
+//			"bonuses" : {
+//				"foxdruid2enchanter" : { "subtype" : "creature.foxdruid" },
+//				"highdruid2enchanter" : { "subtype" : "creature.highdruid" },
+//			}
+//		},
+//	},
+	"core:ryland":
+	{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"parameters" : [ "treant", true ],
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+				]
+			},
+			"bonuses" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1
+				}
+			}
+		},
+	}
+}

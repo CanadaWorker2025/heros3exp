@@ -1,0 +1,100 @@
+{
+	"tarspell2":
+	{
+		"type": "combat", 
+		"name": "寒冰飓风",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 30,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"tartarus": 60,
+			"tower": 0,
+			"necropolis": 0,
+			"conflux" : 0,
+		},
+ 
+		"flags" :
+		{
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {}
+		}, 
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/TARSPELL21.bmp",
+			"iconScroll": "NewOldSpells/TARSPELL22.bmp",
+			"iconScenarioBonus": "NewOldSpells/TARSPELL23.bmp",
+			"iconEffect": "NewOldSpells/TARSPELL24.bmp",
+			"iconImmune": "NewOldSpells/confusionImmune.bmp"
+		},
+		
+		"animation":
+		{
+			"hit":[{ "defName" : "NewOldSpells/TAHUCI.def", "transparency" : 0.7}]
+		},
+
+		"sounds":
+		{
+			"cast": "TAILWIND"
+		},
+		"targetType": "LOCATION",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0-3",
+				"battleEffects" : {
+					"directDamage" : {"type":"core:damage"}
+				},
+				"targetModifier":{"smart": false}
+			},
+			"none":
+			{
+				"description": "{寒冰飓风}\n\n产生一个大面积的风暴，对涉及的所有部队造成伤害。\n",
+	 
+				"range": "0-3",
+				"cost": 25,
+				"power": 30
+	
+			},
+			"basic":
+			{
+				"description": "{初级寒冰飓风}\n\n产生一个大面积的风暴，对涉及的所有部队造成伤害。\n",
+	 
+				"range": "0-3",
+				"cost": 25,
+				"power": 30
+			},
+			"advanced":
+			{
+				"description": "{中级寒冰飓风}\n\n产生一个大面积的风暴，对涉及的所有部队造成伤害。\n\n效果是初级的1.5倍。\n",
+	 
+				"range": "0-3",
+				"cost": 20,
+				"power": 50
+			},
+			"expert":
+			{
+				"description": "{高级寒冰飓风}\n\n产生一个大面积的风暴，对涉及的所有部队造成伤害。\n\n效果是初级的2倍。\n",
+	 
+				"range": "0-3",
+				"cost": 20,
+				"power": 100
+			}
+		}
+	}
+ 
+}

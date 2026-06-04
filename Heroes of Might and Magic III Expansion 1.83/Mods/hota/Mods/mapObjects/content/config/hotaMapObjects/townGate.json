@@ -1,0 +1,36 @@
+{
+	"townGate" : {
+		"handler":"configurable",
+		"name" : "城堡大门",
+		"types" : {
+			"townGate" : {
+				"name": "城堡大门",
+				"rmg" : {
+					"value"	: 10000,
+					"rarity" : 20,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["MYSTERY"]
+				},
+				"onVisitedMessage": "{Town Gate}\r\n\r\nSelect a destination", //TODO: In HoTA there is no extra message, but custom icon
+				"visitMode" : "unlimited",
+				"rewards":
+				[
+					{
+						"spellCast" : {
+							"spell" : "townGateHelper",
+							"schoolLevel": 3
+						}
+					}
+				],
+				"templates" : {
+					"avxtwngt" : { "animation" : "hota/townGate/avxtwngt", 
+						"mask" : [ "VVV", "VVV", "BAB" ], 
+						"visitableFrom" : [ "---", "-+-", "+++" ]
+					}
+				}
+			}
+		}
+	}		
+}

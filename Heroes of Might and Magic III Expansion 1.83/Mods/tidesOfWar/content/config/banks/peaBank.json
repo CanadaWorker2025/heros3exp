@@ -1,0 +1,88 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"peasantbank" : 
+			{
+				"name" : "村落",
+				"aiValue" : 1500,
+				"templates" :
+				{
+					"normal" :
+					{
+						"animation" : "banks/AVpeaBank",
+						"visitableFrom" : [ "---", "+++","+++"], 
+						"mask" : [ "VVVVV", "VBAAB","VVVVV" ],
+						"allowedTerrains":[ "grass", "dirt", "swamp"]
+					}
+				},
+				"sounds": {
+					"ambient": ["LOOPMERC"]
+				},
+				"rmg" : {
+					"value"		: 2000,
+					"rarity"	: 80
+				},
+				"onGuardedMessage" : "{村落}\r\n\r\n村庄中有着烟火的气息，你发现这些居民们生活富足，但他们不欢迎外人，你想夺取他们的财产吗？",
+				"onVisitedMessage" : "{村落}\r\n\r\n村庄已经被强盗烧毁，这里什么也不剩了。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "在洗劫了村庄之后，你找到了一些黄金，并把一些房屋拆了换成木材，现在这里不剩什么东西了。",
+						"appearChance" : { "min" : 0, "max" : 40 },
+						"guards": [
+							{ "amount": 100, "type" : "peasant" },
+							{ "amount": 100, "type" : "peasant" },
+							{ "amount": 15, "type" : "nAnimal02" },
+							{ "amount": 100, "type" : "peasant" },
+							{ "amount": 100, "type" : "peasant" },
+							{ "amount": 15, "type" : "nAnimal02" }
+						], 
+							"resources": 
+							{
+								"gold" : 2000,
+								"wood": 5
+							}
+					},
+					{
+						"message" : "在洗劫了村庄之后，你找到了一些黄金，并把一些房屋拆了换成木材，现在这里不剩什么东西了。",
+						"appearChance" : { "min" : 40, "max" : 70 },
+						"guards": [
+							{ "amount": 150, "type" : "peasant" },
+							{ "amount": 150, "type" : "peasant" },
+							{ "amount": 20, "type" : "nAnimal02" },
+							{ "amount": 150, "type" : "peasant" },
+							{ "amount": 150, "type" : "peasant" },
+							{ "amount": 20, "type" : "nAnimal02" }
+						], 
+							"resources": 
+							{
+								"gold" : 3000,
+								"wood": 10
+							}
+					},
+					{
+						"message" : "在洗劫了村庄之后，你找到了一些黄金，并把一些房屋拆了换成木材，现在这里不剩什么东西了。",
+						"appearChance" : { "min" : 70, "max" : 100 },
+						"guards": [
+							{ "amount": 200, "type" : "peasant" },
+							{ "amount": 200, "type" : "peasant" },
+							{ "amount": 25, "type" : "nAnimal02" },
+							{ "amount": 200, "type" : "peasant" },
+							{ "amount": 200, "type" : "peasant" },
+							{ "amount": 25, "type" : "nAnimal02" }
+						], 
+							"resources": 
+							{
+								"gold" : 4000,
+								"wood": 15
+							}
+					}
+				]
+			}
+		}
+	}
+}

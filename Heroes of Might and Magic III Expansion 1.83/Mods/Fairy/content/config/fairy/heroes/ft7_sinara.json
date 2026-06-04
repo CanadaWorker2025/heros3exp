@@ -1,0 +1,59 @@
+{
+	"ftG_Sinara" :
+	{
+		"class" : "hunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "辛娜拉",
+			"biography" : "辛娜拉和她的族人守护森林已经长达数代。闲暇的时候她们也喜欢聚集在竖琴台旁，演奏森林中最美的乐曲。她们对冒险者们非常友善，但是对于妄图侵犯森林的人，她们的魔法力量也不可小视。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高女祭司或女术士的攻击力与防御力。",
+				"tooltip" : "{Flower Dragons}\r\n\r\nIncreases the Attack and Defense skills of Flower Dragons or Rainbow Dragons.",
+				"name" : "女祭司"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/phindara/un32bsrd.png",
+			"specialtyLarge" : "fairy/heroes/phindara/un44bsrd.png",
+			"large" : "fairy/heroes/phindara/hpl288.png",
+			"small" : "fairy/heroes/phindara/hps288.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftHatchling1",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+		"specialty": //special upgrade
+			{
+				"creature" : "ftHatchling1",
+			} 
+	}
+}
+

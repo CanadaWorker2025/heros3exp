@@ -1,0 +1,155 @@
+{
+	"foxdruid":
+	{
+		"name" :
+		{
+			"plural" : "蜂草",
+			"singular" : "蜂草"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 10
+		},
+		"faction" : "preserve",
+		"aiValue" : 574,
+		"attack" : 9,
+		"cost" :
+		{
+			"gold" : 370
+		},
+		"damage" :
+		{
+			 "max" : 10,
+			 "min" : 6
+		},
+		"defense" : 9,
+		"fightValue" : 553,
+		"graphics" :
+		{
+			"animation" : "preserve/battle/creatures/C4Fdru.def",
+			"map" : "preserve/map/creatures/AVWC169.def",
+			"iconSmall" : "preserve/iconsSmall/creatures/CPrS169P.bmp",
+			"iconLarge" : "preserve/iconsBig/creatures/CPrL169P.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "preserve/battle/creatures/projectile/zap1.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"growth" : 4,
+		"hitPoints" : 30,
+		"level" : 4,
+		"upgrades": [ "highdruid" ],
+		"shots" : 8,
+		"sound" :
+		{
+			"attack": "preserve/S169ATTK.wav",
+			"defend": "preserve/S169DFND.wav",
+			"killed": "preserve/S169KILL.wav",
+			"move": "preserve/S169MOVE.wav",
+			"wince": "FIRESHIE",
+			"shoot" : "FDFLSHOT"
+		},
+		"speed" : 4,
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"castsWeakness" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.weakness",
+				"val" : 100,
+				"addInfo" : [1,1],
+				"icon" : "preserve/icons/bonuses/weaknessattack.png"
+			}
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_IMMUNITY", 
+					"subtype" : "spell.dispelHelpful"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stoneGaze"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 2 ]
+			}
+		]
+	}
+}

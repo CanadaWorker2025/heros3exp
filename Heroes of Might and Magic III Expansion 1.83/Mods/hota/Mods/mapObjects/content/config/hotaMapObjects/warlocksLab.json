@@ -1,0 +1,29 @@
+{
+	"warlocksLab" : {
+		"handler" : "market",
+		"name" : "术士实验室",
+		"types" : {
+			"warlocksLab" : {
+				"aiValue" : 100,
+				"rmg" : {
+					"zoneLimit"	: 1,
+					"value"		: 500,
+					"rarity"	: 100
+				},
+				"modes" : ["resource-resource"],
+				"sounds" : {
+					"visit" : ["STORE"]
+				},
+				"efficiency" : 9,
+				"templates" : {	
+					"avxtrmts" : {
+						"animation" : "hota/warlocksLab/avxtrmts",
+						"mask" : [ "VVVV", "VVVV", "VBAB" ],
+						"visitableFrom" : [ "---", "-++", "+++" ],
+						"allowedTerrains": [ "snow"]
+					}
+				}
+			}
+		}
+	}		
+}

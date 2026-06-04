@@ -1,0 +1,57 @@
+{
+	"vseglas" :
+	{
+		"class" : "cthbishop",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/vseglas/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/vseglas/spec-large.bmp",
+			"large" : "cathedral/heroes/vseglas/portrait-large.bmp",
+			"small" : "cathedral/heroes/vseglas/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scholar"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "蕾娜",
+			"biography" : "作为男爵冯-克洛希奇的夫人，蕾娜无忧无虑地生活在她的庄园里。一切都有仆人照料。然而当灾难侵袭了她的庄园，她发现丈夫和所有的仆人都变成了死灵。在牧师的帮助下，她逃离了。随后，她决心为丈夫复仇，从而加入了教会。",
+			"specialty" :
+			{
+				"description" : "使用虚弱无力魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Secondary Skill Bonus: luck",
+				"name" : "虚弱无力"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"weakness" : {
+					"subtype" : "spell.weakness",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

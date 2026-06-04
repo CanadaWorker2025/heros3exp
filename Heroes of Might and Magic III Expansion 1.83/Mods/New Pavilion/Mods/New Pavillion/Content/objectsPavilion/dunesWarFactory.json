@@ -1,0 +1,40 @@
+{
+ "core:warMachineFactory" : {
+        "types" : {
+            "object4" : {
+                "name" : "兵工厂（售卖光子炮）",
+                "creatures" : [["photonCannon1"]],
+                "templates" : {
+                    "base" : {
+                        "animation" : "mapdefsPavilion/pyraWar01",
+                        "visitableFrom" : [ "---", "+++", "+++" ],
+                        "mask" : [ "VVV", "VAB"],
+						"allowedTerrains": [ "sand", "dunes","rough","dirt" ]
+                    }
+                },
+                "rmg" : {
+                    "value"   : 4000,
+                    "rarity"	: 40,
+					"zoneLimit" : 1
+                }
+            },
+			"object5" : {
+                "name" : "兵工厂（售卖{强化光子炮}）",
+                "creatures" : [["photonCannon2"]],
+                "templates" : {
+                    "base" : {
+                        "animation" : "mapdefsPavilion/pyraWar01",
+                        "visitableFrom" : [ "---", "+++", "+++" ],
+                        "mask" : [ "VVV", "VAB"],
+						"allowedTerrains": [ "sand", "dunes","rough","dirt" ]
+                    }
+                },
+                "rmg" : {
+                    "value"   : 4000,
+                    "rarity"	: 40,
+					"zoneLimit" : 1
+                }
+            }
+        }
+    }
+}	

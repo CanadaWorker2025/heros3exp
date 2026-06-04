@@ -1,0 +1,53 @@
+{
+	"altarOfMana" : {
+		"handler" : "configurable",
+		"name" : "海上祭坛",
+		"types" : {
+			"altarOfMana" : {
+				"rmg" : {
+					"value"	: 5000,
+					"rarity" : 20,
+					"zoneLimit" : 1
+				},
+				"compatibilityIdentifiers" : [ "object" ],
+
+				"onEmptyMessage" : "{海上祭坛}\r\n\r\n通过访问海上祭坛，你的魔法值得到了提升，但它现在已经满了。",
+				"onVisitedMessage" : "{海上祭坛}\r\n\r\n通过访问海上祭坛，你的魔法值得到了提升，但它现在没有能量了。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"rewards" : [
+					{
+						"limiter" : {
+							"noneOf" : [ { "manaPercentage" : 200 } ]
+						},
+						"bonuses" : [ { "type" : "NONE", "duration" : "ONE_DAY"} ],
+						"message" : "{海上祭坛}\r\n\r\n通过访问海上祭坛，你的魔法值得到了提升。",
+						"manaPercentage" : 200
+					}
+				],
+				"templates" : {
+					"AVXMALTW" : {
+						"animation" : "hota/altarOfMana/AVXMALTW",
+						"mask" : [
+							"VVV",
+							"VBV",
+							"VAA"
+						],
+						"visitableFrom" : [
+							"---",
+							"+-+",
+							"+++"
+						],
+						"allowedTerrains" : [
+							"water"
+						]
+					}
+				}				
+			}
+		}
+	}		
+}

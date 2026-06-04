@@ -1,0 +1,49 @@
+[HOMM3 HD CRASH INFO]
+
+HOMM3 HD version: 3.12
+
+Time
+{
+   Mon Nov 12 04:57:23 2012
+}
+
+Exception
+{
+   Module: 	_hd3_.dll
+   Adress:      0x10003620
+   Code:        EXCEPTION_ACCESS_VIOLATION
+   Flags:       0x00000000
+   Information: read of address: 0x7B207265
+}
+
+Call stack
+{
+             0x10003712 called from        0x10056E87
+             0x10056E20 called from        0x10001B70
+             0x10001B60 called from        0x10019F61
+             0x10019ED0 called from        0x1001F3FF
+             0x1001EB90 called from        0x1002199D
+             0x10021950 called from        0x1003584F
+   (spliced) 0x004F80C0 called from        0x0061A95F
+                      ? called from before 0x750A339A
+                      ? called from before 0x77549EF2
+             0x77549ECB called from        0x77549EC0
+                      ? called from before 0x00000000
+}
+
+Modules
+{
+
+   \\ main module:
+   0x00400000: Heroes3.exe	 (size: 0x002B4000, entry point: 0x0061A884)
+   
+   (null)\
+}
+
+Command Line
+{
+   "B:\WORK\HD 3f\Release\Heroes3.exe" 
+}
+
+Main INI
+{

@@ -1,0 +1,140 @@
+{
+	"nacrea01":
+	{
+		"name" :
+		{
+			"plural" : "女猎手",
+			"singular" : "女猎手"
+		},
+		"faction" : "neutral",		
+		"advMapAmount" :
+		{
+			 "min" : 12,
+			 "max" : 16
+		},
+		"level" : 3,
+		"attack" : 7,
+		"defense" : 6,
+		"damage" :
+		{
+			 "min" : 5,
+			 "max" : 6
+		},
+		"growth" : 7,
+		"hitPoints" : 16,
+		"speed" : 9,
+		"fightValue" : 412,
+		"aiValue" : 521,
+		"cost" :
+		{
+			"gold" : 180
+		},
+		"graphics" :
+		{
+			"animation" : "creatures/neutral/battle/A03C.def",
+			"map" : "creatures/neutral/map/A03M.def",
+			"iconSmall" : "creatures/neutral/iconsSmall/A03S.bmp",
+			"iconLarge" : "creatures/neutral/iconsBig/A03B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.9,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "LCRSATTK.wav",
+			"defend": "AAGLDFND.wav",
+			"killed": "creatures/rampart/dryad/DRYDKILL.wav",
+			"move": "PSNTMOVE.wav",
+			"wince": "creatures/inferno/sukkub/SUCCHIT.wav"
+		},
+		"abilities" :
+		{
+			"strikeAndReturn" : 
+			{
+				"type" : "RETURN_AFTER_STRIKE"
+			}
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SUMMON_GUARDIANS",
+					"subtype" : "creature.iceElemental"
+				},
+				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
+			},
+			{
+				"bonus" :
+				{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+				},
+				"values" : [ false, false, false, false, false, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.fortune" 
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 2 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.iceBolt",
+					"addInfo" : [0, 2] //16 - iceBolt
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]				
+			}
+		]
+	}
+}

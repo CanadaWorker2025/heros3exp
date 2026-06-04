@@ -1,0 +1,31 @@
+{
+	"name" : "Norwegian translation",
+	"description" : "Norwegian translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.0",
+	"author" : "",
+	"contact" : "",
+	"language" : "norwegian",
+	"modType" : "Translation",
+	"compatibility" :
+	{
+		"min" : "1.7.0"
+	},
+	"changelog" : 
+	{ 
+		"1.0.0" : [ "Initial release" ]
+	},
+	"german" : {
+		"name" : "Norwegische Übersetzung",
+		"description" : "Norwegische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"norwegian" : {
+		"name" : "Norsk oversettelse",
+		"description" : "Norsk oversettelse av Heroes of Might and Magic III: Complete Edition"	
+	},
+	"translations" : [
+		"config/vcmi-norwegian/game.json",
+		"config/vcmi-norwegian/maps.json",
+		"config/vcmi-norwegian/campaigns.json",
+		"config/vcmi-norwegian/chronicles.json"
+	]
+}

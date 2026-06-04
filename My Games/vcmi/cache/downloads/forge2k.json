@@ -1,0 +1,201 @@
+{
+	"name" : "Heavenly Forge 2000",
+	"description" : "The Forgest of all Forges for VCMI - Updated Forge town combined out of various assets made by the Heroes of Might & Magic modding community.",
+	"author" : "HOMM modding community",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "2.5.4",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"changelog" : {
+		"1.0" : [
+			"Initial release"
+		],
+		"1.1" : [
+			"Minor fixes and balancing based on community feedback"
+		],
+		"2.0" : [
+			"Conversion to vcmi-1.2 format"
+		],
+		"2.1" : [
+			"Conversion to vcmi-1.3 format"
+		],
+		"2.2" : [
+			"minor fixes"
+		],
+		"2.3" : [
+			"update to vcmi-1.4 format"
+		],
+		"2.3.1" : [
+			"Adjusted Commanders stats"
+		],
+		"2.3.2" : [
+			"Added Chinese translation, the creatures' stackExp and fixed the commander"
+		],
+		"2.3.3" : [
+			"Few creature portraits fixes"
+		],
+		"2.3.4" : [
+			"Russian translation by Anton Sergeew"
+		],
+		"2.3.5" : [
+			"Updated Russian translation"
+		],
+		"2.3.6" : [
+			"Polish translation by ToRRent1812"
+		],
+		"2.3.7" : [
+			"Update to vcmi-1.6 format"
+		],
+		"2.4.0" : [
+			"Added hero Null; standardised hero specialties; updated all specialty and hero graphics"
+		],
+		"2.4.1" : [
+			"Fix Grail not to produce gold"
+		],
+		"2.4.1.5" : [
+			"finishing touches on Polish translation"
+		],
+		"2.4.2" : [
+			"Ukrainian transtation by MyroSlave"
+		],
+		"2.5.0" : [
+			"some change due to vcmi-1.6 format"
+		],
+		"2.5.1" : [
+			"fixed size and masks for 2 dwellings"
+		],
+		"2.5.2" : [
+			"Update to vcmi-1.7 format"
+		],
+		"2.5.3" : [
+			"Another update to vcmi-1.7 format"
+		],
+		"2.5.4" : [
+			"Added flagport frames (Kingdom Overwiev window)"
+		]
+	},
+	"modType" : "Town",
+	"depends" : [
+		"asphalt-terrain"
+	],
+	"german" : {
+		"name" : "Himmlische Schmiede 2000",
+		"description" : "Die beste aller Schmieden für VCMI - Aktualisierte Schmiedestadt, zusammengestellt aus verschiedenen Assets der Heroes of Might & Magic Modding-Community.",
+
+		"translations" : [
+			"translation/forge2k/german.json"
+		]
+	},
+	"chinese" : {
+		"name" : "天堂铸造厂",
+		"description" : "天堂铸造厂是一个柴油朋克风格的高科技种族，基于《英雄无敌III》资料片机械族（Forge）废案制作，由Heroes of Might & Magic Modding Community社区的各种资源整理而成，是VCMI目前所有铸造厂项目中质量最好的。",
+		"translations" : [
+			"translation/forge2k/chinese.json"
+		]
+	},
+	"russian" : {
+		"name" : "Небесная Кузня 2000",
+		"description" : "Горница всех кузниц для VCMI — обновленный город-кузница, созданный из различных материалов, созданных сообществом моддеров Heroes of Might & Magic.",
+
+		"translations" : [
+			"translation/forge2k/russian.json"
+		]
+	},
+	"polish" : {
+		"name" : "Niebiańska Kuźnia 2000",
+		"description" : "Najkuźniejsza ze wszystkich Kuźni na VCMI - Zaktualizowane miasto Niebiańskiej Kuźni, stworzone na podstawie różnych zasobów autorstwa społeczności HoMM.",
+
+		"translations" : [
+			"translation/forge2k/polish.json"
+		]
+	},
+	"ukrainian" : {
+		"name" : "Небесна Кузня 2000",
+		"description" : "Найкраща Кузня з усіх Кузень для VCMI - оновлене місто створене з різних наробок ком'юніті Героїв Меча і Магії.",
+		"translations" : [
+			"translation/forge2k/ukrainian.json"
+		]
+	},
+
+	"factions" : [
+		"config/forge2k/town/buildings.json",
+		"config/forge2k/town/faction.json",
+		"config/forge2k/town/siege.json",
+		"config/forge2k/town/spells.json",
+		"config/forge2k/town/structures.json",
+		"config/forge2k/town/puzzle.json"
+	],
+	"creatures" : [
+		"config/forge2k/artifacts/supplyCart",
+
+		"config/forge2k/creatures/CyberDead.json",
+		"config/forge2k/creatures/CyberZombie.json",
+
+		"config/forge2k/creatures/GruntSoldier.json",
+		"config/forge2k/creatures/FootSoldier.json",
+
+		"config/forge2k/creatures/Pyro.json",
+		"config/forge2k/creatures/Pyromaniac.json",
+
+		"config/forge2k/creatures/Stringer.json",
+		"config/forge2k/creatures/Bruiser.json",
+		"config/forge2k/creatures/heavystringer.json",
+
+		"config/forge2k/creatures/JumpSoldier.json",
+		"config/forge2k/creatures/JumpTrooper.json",
+
+		"config/forge2k/creatures/NagaTank.json",
+		"config/forge2k/creatures/NagaHeavy.json",
+
+		"config/forge2k/creatures/Juggernaut.json",
+		"config/forge2k/creatures/Dreadnought.json",
+
+		"config/forge2k/creatures/creature-names2.json"
+	],
+	"artifacts" : [
+		"config/forge2k/artifacts/supplyCartArt"
+	],
+
+	"heroClasses" : [
+		"config/forge2k/heroes/cyborg.json",
+		"config/forge2k/heroes/technojunk.json"
+	],
+
+	"heroes" : [
+		"config/forge2k/heroes/cyb_deckard.json",
+		"config/forge2k/heroes/cyb_flamius.json",
+		"config/forge2k/heroes/cyb_jules.json",
+		"config/forge2k/heroes/cyb_null.json",
+		"config/forge2k/heroes/cyb_singhell.json",
+		"config/forge2k/heroes/cyb_rengust.json",
+		"config/forge2k/heroes/cyb_sprinter.json",
+		"config/forge2k/heroes/cyb_sturm.json",
+		"config/forge2k/heroes/cyb_sunnith.json",
+
+		"config/forge2k/heroes/tp_agar.json",
+		"config/forge2k/heroes/tp_charity.json",
+		"config/forge2k/heroes/tp_cistrict.json",
+		"config/forge2k/heroes/tp_elthas.json",
+		"config/forge2k/heroes/tp_leanne.json",
+		"config/forge2k/heroes/tp_sheikleen.json",
+		"config/forge2k/heroes/tp_everest.json",
+		"config/forge2k/heroes/tp_kastore.json"
+	],
+	"objects" : [
+		"config/forge2k/dwellings.json"
+	],
+	"skills" : [
+		//"config/forge2k/assumeControlDamage.json"
+	],
+	"spells" : [
+		"config/forge2k/assumeControl.json",
+		"config/forge2k/cyberBloodlust.json",
+		"config/forge2k/specialClone.json",
+		"config/forge2k/cartArmor.json",
+		"config/forge2k/teslasWrath.json",
+		"config/forge2k/moat.json"
+	]
+}

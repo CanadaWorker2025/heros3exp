@@ -1,0 +1,109 @@
+{
+	"hippogryph":
+	{
+		"name" :
+		{
+			"plural" : "螳螂",
+			"singular" : "螳螂"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 8
+		},
+		"faction" : "preserve",
+		"aiValue" : 982,
+		"attack" : 12,
+		"cost" :
+		{
+			"gold" : 600
+		},
+		"damage" :
+		{
+			 "max" : 14,
+			 "min" : 12
+		},
+		"defense" : 11,
+		"fightValue" : 899,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C5Hipp.def",
+      "map": "preserve/map/creatures/AVWC171.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS171P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL171P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide" : true,
+		"growth" : 3,
+		"hitPoints" : 50,
+		"level" : 5,
+		"upgrades":
+		[
+			"grimhippo"
+		],
+		"sound" :
+		{
+			"attack": "preserve/S171ATTK.wav",
+			"defend" : "preserve/S171DFND.wav",
+			"killed" : "preserve/S171KILL.wav",
+			"move" : "preserve/S171MOVE.wav",
+			"wince" : "preserve/S171WNCE.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING",
+				"icon" : "preserve/icons/bonuses/e_fly7.png"
+			},
+		   "reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
+			}
+	    },
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			}
+		]
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"name" : "Vampires only gameplay enhancements",
+	"description" : "<h1>Gameplay Enhancements for Vampires-Only Play Mode</h1><h2>Rules of the Game</h2><ol><li><strong>Vampires only:</strong><p>You are only allowed to play or engage in battles using only <em>vampires</em> or <em>vampire lords</em>.</p></li><li><strong>Secondary Heroes:</strong><ul><li>Secondary heroes are permitted, but their army must consist of exactly one <em>skeleton</em>.</li><li>If you recruit a new hero, immediately dismiss their starting army and replace it with one <em>skeleton</em>.</li></ul></li><li><strong>Castle Garrison:</strong><p>Do not leave any troops in the castle garrison. Always dismiss any surplus units.</p></li><li><strong>Adventure Map Army:</strong><p>Any army gained from Adventure Map sources (such as dwellings, conservatories, or Pandora's boxes) must be dismissed, unless the units are <em>vampires</em> or <em>vampire lords</em>.</p></li></ol><h2>Gameplay Variation</h2><ol><li><strong>Stricter Vampires only:</strong><p>You can further restrict secondary heroes by requiring them to use a <em>vampire</em> or <em>vampire lord</em> instead of a <em>skeleton</em>.</p></li></ol><p><strong>Note:</strong> For a refresher on vampire unit and Drain life ability visit this: <a href=\"https://heroes.thelazy.net/index.php/Vampire_and_Vampire_Lord\">Wiki</a></p>",
+	"modType" : "Mechanics",
+	"author" : "Krs",
+	"contact" : "",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"version" : "1.3",
+	"downloadSize" : 0.14,
+	"compatibility" :
+	{
+		"min" : "1.6.0"
+	},
+	"changelog" :
+	{
+		"1.3"   : [ "Upgraded Estate does not require Necromancy Amplifier anymore. Only Mage Guild level 1" ],
+		"1.2"   : [ "Fix Bubonic to start with plague tent and 1 skeleton. Removed mod warnings by splitting into compatibility type submods" ],
+		"1.1"   : [ "Fixed Classes modification", "Added HotA compatibility for Straker", "Added Czech translation" ],
+		"1.0"   : [ "Initial release" ]
+	},
+	"czech" : {
+		"name" : "Vylepšení pro hru pouze s upíry",
+		"description" : "Vylepšení hratelnosti pro režim hry pouze s upíry. Deaktivuje dovednost Nekromancie a související artefakty. Všichni hrdinové z Nekropolis začínají s 1 kostlivcem."
+	},
+	"factions" :
+	[
+		"config/upgEstateRequirements.json"
+	],
+	"artifacts":
+	[
+		"config/disableNecromancyArtifacts.json"
+	],
+	"heroClasses" :
+	[
+		"config/disableNecromancyFromNecropolisHeroClasses.json"
+	],
+	"heroes" :
+	[
+		"config/replaceNecromancyStartingSkill.json"
+	]
+}
+

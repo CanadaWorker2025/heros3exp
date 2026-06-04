@@ -1,0 +1,31 @@
+{
+	"name" : "Latvian translation",
+	"description" : "Latvian translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.0",
+	"author" : "Fabrice TIERCELIN",
+	"contact" : "",
+	"language" : "latvian",
+	"modType" : "Translation",
+	"compatibility" :
+	{
+		"min" : "1.7.0"
+	},
+	"changelog" : 
+	{ 
+		"1.0.0" : [ "Initial release" ]
+	},
+	"german" : {
+		"name" : "Lettische Übersetzung",
+		"description" : "Lettische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"latvian" : {
+		"name" : "Tulkojums latviešu valodā",
+		"description" : "Heroes of Might and Magic III: Pilnā izdevuma tulkojums latviešu valodā"	
+	},
+	"translations" : [
+		"config/vcmi-latvian/game.json",
+		"config/vcmi-latvian/maps.json",
+		"config/vcmi-latvian/campaigns.json",
+		"config/vcmi-latvian/chronicles.json"
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"sunShield":
+	{
+		"type": ["HERO"],
+		"slot" : "LEFT_HAND",
+		"class": "MAJOR",
+		"value": 8000,	
+		"text":
+		{
+			"name": "曜日之盾",
+			"description": "{曜日之盾}\r\n\r\n这件左手盾牌可以使你的防御+5，并且能增加10%的魔法抗性。",
+			"event": "在旅途中你的一个士兵注意到，在山顶附近有什么东西闪耀着光芒。你们走近那道光，发现附近有沙蛇在沉睡。你悄悄地取走了闪光的物件，仔细检查后，确定这是失落的曜日之盾。"
+					
+		},
+		"graphics":
+		{
+			"image": "artifactsPavilion/sunShield2.png",
+			"scenarioBonus": "artifactsPavilion/bonus6.png",
+			"map": "artifactsPavilion/sunShield2map.def"
+		},
+		"bonuses":
+		{
+			"defence":
+			{
+				"type": "PRIMARY_SKILL",
+				"subtype": "primarySkill.defence",
+				"val": 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"resistance":
+			{
+				"type": "MAGIC_RESISTANCE",
+				"val": 10,
+				"valueType" : "BASE_NUMBER"
+			}
+		}
+	}
+}

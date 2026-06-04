@@ -1,0 +1,176 @@
+{
+	"nec03":
+	{
+		"type": "ability", 
+		"name": "绝望云",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 1,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":["spells/extraEffect/nec3Eff.def"]
+		},
+ 
+		"flags" : {"negative": true},
+ 
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "normal",
+				"bonus.MECHANICAL" : "normal",
+				"bonus.UNDEAD" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconEffect": "spells/extraEffect/nec3Eff.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "WEAKNESS"
+		},
+		"targetType" : "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{绝望云}\r\n\r\n使敌人攻防-2，士气-1。",
+	 
+				"cost": 0,
+	 
+				"effects" : 
+				{
+					"morale" : 
+					{
+						"type" : "MORALE",
+						"val" : -1,
+						"duration" : "N_TURNS"
+					},
+					"attack" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{绝望云}\r\n\r\n使敌人攻防-2，士气-1",
+	 
+				"cost": 0,
+	 
+				"effects" : 
+				{
+					"morale" : 
+					{
+						"type" : "MORALE",
+						"val" : -1,
+						"duration" : "N_TURNS"
+					},
+					"attack" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{绝望云}\r\n\r\n使敌人攻防-2，士气-1",
+	 
+				"cost": 0,
+	 
+				"effects" : 
+				{
+					"morale" : 
+					{
+						"type" : "MORALE",
+						"val" : -1,
+						"duration" : "N_TURNS"
+					},
+					"attack" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{绝望云}\r\n\r\n使敌人攻防-2，士气-1。",
+	 
+				"cost": 0,
+	 
+				"effects" : 
+				{
+					"morale" : 
+					{
+						"type" : "MORALE",
+						"val" : -1,
+						"duration" : "N_TURNS"
+					},
+					"attack" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "N_TURNS"
+					},
+					"defence" : {
+						"val" : -2,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "N_TURNS"
+					}
+				}
+			}
+		}
+	}
+ 
+}

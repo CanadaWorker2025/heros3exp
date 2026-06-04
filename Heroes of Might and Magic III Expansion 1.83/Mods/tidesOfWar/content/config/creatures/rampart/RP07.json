@@ -1,0 +1,102 @@
+{
+	"nRP07":
+	{
+		"name" :
+		{
+			"plural" : "翡翠龙", //Emerald Dragon
+			"singular" : "翡翠龙"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction": "rampart",
+		"description" : "{技能说明}： \n{免疫土系魔法}： 免疫所有土系魔法。\n{酸液}： 降低对方防御力3点，可以叠加。",
+		"doubleWide" : true,
+		"aiValue" : 8612,
+		"fightValue" : 6220,
+		"attack" : 26,
+		"defense" : 27,
+		"cost" :
+		{
+			"gold" : 4000,
+			"crystal":2
+		},
+		"damage" :
+		{
+			"min" : 35,
+			"max" : 55
+		},
+		"speed" : 17,
+		"upgrades": ["goldDragon"],
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/RP07.def",
+			"map" : "creatures/rampart/map/RP07S.def",
+			"iconSmall" : "creatures/rampart/iconsSmall/RP07S.bmp",
+			"iconLarge" : "creatures/rampart/iconsBig/RP07.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 250,
+		"growth" : 1,
+		"level" : 7,
+		"sound" :
+		{
+			"attack": "GODRATTK.wav",
+			"defend": "GODRDFND.wav",
+			"killed": "GODRKILL.wav",
+			"move": "GODRMOVE.wav",
+			"wince": "GODRWNCE.wav"
+		},
+		"abilities" :
+		{
+			"basicSlayer" : { "type" : "KING", "val": 0 },
+			"FLYING_ARMY": 
+			{
+				"type": "FLYING",
+				"icon": "bonuses/e_fly2.png"
+			},
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"fireBreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH",
+				"icon": "bonuses/e_breathemerald.png"
+			},
+			"immuneToEarth" :
+			{
+				"subtype" : "spellSchool.earth",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+			},
+			"spellImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 3
+			},
+			"reduceDefence" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.acidBreath",
+				"val" : 25,
+				"icon": "bonuses/acidattack.png"
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,73 @@
+{
+	"14_Bertram" :
+	{
+    "class": "factoryMClass",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "伯特伦",
+			"biography" : "很少有矮人不仅能够发财，还能让财富运转起来。伯特伦自从成年后就离开了父亲的家。他在恩塔格瑞到处闲逛，通过投资化学和魔法事业而变得非常富有。当然有了钱之后，思想也是会跟上的。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "+350 黄金",
+				"description" : "为王国每天额外提供350黄金。"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/14_Bertram/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/14_Bertram/bigS.bmp",
+			"large" : "factory/heroes/14_Bertram/bigP.bmp",
+			"small" : "factory/heroes/14_Bertram/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"spellbook" :
+		[
+			"magicArrow"
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scholar"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"gems" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}
+	}
+}
+

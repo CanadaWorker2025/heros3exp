@@ -1,0 +1,78 @@
+{
+	"con01eff":
+	{
+		"type": "ability",
+		"name": "呼唤",
+		"school":
+			{
+				"air": false,
+				"earth": false,
+				"fire": false,
+				"water": false
+			},
+	"animation":{
+	
+		"cast":["SP02_"]
+	},
+	"sounds": {
+		"cast": "SPRTATTK.wav"
+	},		
+	"level": 1,
+	"power": 10,
+	"defaultGainChance": 0, 
+	"gainChance" :
+	{
+		"necropolis" : 0,
+		"dungeon" : 0,
+		"inferno" : 0,	
+	},
+	"flags" : {
+		"indifferent": true
+	},
+	//graphics - OPTIONAL; object;
+	"graphics":
+		{
+			"iconEffect": "spells/extraEffect/in1eff.bmp"
+		},
+
+
+	"targetType" : "NO_TARGET",
+
+	"levels":
+	{
+		"base":
+		{
+			"description": "{呼唤}\r\n\r\n呼唤妖精参战。",
+			"power": 2,
+			"cost": 20,
+			"range": "X",
+			"targetModifier":{"smart":true},
+			"battleEffects":{
+				"summon":{
+					"exclusive":false,
+					"id":"tidesofwar:nwCon01",
+					"permanent":false,
+					"type":"core:summon"
+				}
+			}				
+		},
+		"none":
+		{ 
+			"cost" : 25,
+			"power" : 1,		
+		},
+		"basic":
+		{
+			"power" :2
+		},
+		"advanced":
+		{
+			"power" : 3
+		},
+		"expert":
+		{
+			"power" : 4
+		}
+	}
+  }
+}

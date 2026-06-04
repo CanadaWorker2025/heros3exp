@@ -1,0 +1,92 @@
+{
+	
+	
+	"ageCamera":
+	{
+		"type": "ability", 
+		"targetType": "CREATURE", 
+		"name": "老化",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 0,
+		"power": 30,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":["SP01_"]
+		},
+ 
+		"flags" : {	"negative": true, "special":true,},
+"targetCondition" : {
+		"noneOf" : { "bonus.UNDEAD" : "absolute", "bonus.GARGOYLE" : "absolute", "bonus.MECHANICAL" : "absolute", "bonus.NON_LIVING" : "absolute" },
+		},
+ 
+		"graphics":
+		{
+			"iconEffect": "courtyard/spells/Age/Age_effect",
+
+		},
+
+		"sounds": {
+			"cast": "AGE"
+		},
+ 
+		"levels" : {
+			"base":{
+				"power": 10, //irrevelant?
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"cost": 18, 
+				"description": "UNAVAILABLE",
+				"battleEffects" : {
+					"spellsDamage" :
+					{
+						"type": "core:timed",
+						"bonus":
+						{
+							"reduceHEALTH":
+							{
+								"type": "STACK_HEALTH",
+								"val" : -33,
+								"valueType": "PERCENT_TO_ALL",
+								"duration": "N_TURNS",
+								"turns": 3,
+							},
+										
+						}	
+					},					
+				},
+			},
+				
+
+			"none":
+			{
+
+			},
+			"basic":
+			{ 
+				
+			},
+			"advanced":
+			{	 
+				
+			},
+			"expert":
+			{	 
+				
+
+			}
+		}
+	}
+}
+ 

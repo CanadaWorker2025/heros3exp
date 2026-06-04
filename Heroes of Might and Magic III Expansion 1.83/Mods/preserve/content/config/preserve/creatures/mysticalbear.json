@@ -1,0 +1,152 @@
+{
+	"mysticalbear":
+	{
+		"name" :
+		{
+			"plural" : "高阶德鲁伊",
+			"singular" : "高阶德鲁伊"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"faction" : "preserve",
+		"aiValue" : 1991,
+		"attack" : 16,
+		"cost" :
+		{
+			"gold" : 1100
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 16
+		},
+		"defense" : 16,
+		"fightValue" : 1821,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C6MBea.def",
+      "map": "preserve/map/creatures/AVWC174.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS174P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL174P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.5,
+        "attack": 1,
+        "idle": 10
+      },
+	  "missile" :
+			{
+				"projectile" : "CPRZEAX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+    },
+		"growth" : 2,
+		"shots" : 12,
+		"hitPoints" : 60,
+		"level" : 6,
+		"sound" :
+		{
+			"attack" : "CHYDDFND",
+			"defend" : "TELEIN",
+			"killed" : "GENIDFND",
+			"move" : "preserve/S173MOVE.wav",
+			"shoot": "CHYDDFND",
+			"wince" : "preserve/S173WNCE.wav"
+ 		},
+		"speed" : 8,
+    "abilities":
+      {
+		"canShoot" : {
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"throwingStorm" :
+			{
+				"description" : "{幸运奖励}\n访问地图上的幸运建筑物可获得额外奖励",
+				"icon" : "preserve/icons/bonuses/luck.png",
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.leshyBolt"
+			},
+			"wolfbonus" :
+			{
+				"propagator" : 	"HERO",
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1,
+				"description" : "{森林祝福}\n队伍中有{高阶德鲁伊}可使{灰狼}可以获得双击能力",
+				"icon" : "preserve/icons/bonuses/druidBonus.png",
+				"limiters": [ {
+						"type":"CREATURE_TYPE_LIMITER",
+						"creature" : "caveleaper",
+						"includeUpgrades" : false
+						} ]
+			},
+			"tigerBonus" :
+					{
+						"propagator" : 	"HERO",
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.scout",
+						"val" : 20,
+						"description" : "{森林祝福}\n队伍中有{高阶德鲁伊}可使{白虎}可以获得震慑能力",
+						"icon" : "preserve/icons/bonuses/druidBonus.png",
+						"limiters": [ {
+							"type":"CREATURE_TYPE_LIMITER",
+							"creature" : "misfortuneeye",
+							"includeUpgrades" : false
+						} ],
+					}
+	    },
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			}
+		]
+	}
+}

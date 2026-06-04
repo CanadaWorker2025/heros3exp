@@ -1,0 +1,64 @@
+{
+	"tarhero01" :
+	{
+    "class": "taHeroA",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "塔洛克斯",
+			"biography" : "塔洛克斯总是表现得无忧无虑。他总是关心自己的财富和快乐。为此，他吸引了很多年轻的恶魔成为他的随从。",
+			"specialty" :
+			{
+				"description" : "达到1级后提升恶灵仆从和冰封恶灵的攻击力和防御力。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "恶灵仆从"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero01/skill1.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero01/skills1.bmp",
+			"large" : "tartarus/heroes/tarhero01/tarH1.bmp",
+			"small" : "tartarus/heroes/tarhero01/tarH1S.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc1",
+				"max" : 25,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc1",
+				"max" : 25,
+				"min" : 20
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "demonicBlood"
+			},
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "tartarc1"
+		}
+	}
+}
+
+

@@ -1,0 +1,66 @@
+{
+	"ibrahim" :
+	{
+		"class" : "embalmer",
+		"female" : false,
+		
+		"texts" :
+		{
+			"name" : "亚伯拉罕",
+			"biography" : "亚伯拉罕最初想以和平的方式来改变布拉卡达统治下沙堡人民的苦难，而在见证了殖民者的傲慢嘴脸后，年事已高的他意识到只有斗争才能改变人民的未来。在看到埃尔斯佩思的能力与他对民众的同情心后，亚伯拉罕将生命之源传承给了这位学徒，并以殉道者的身份奔向最后的命运。",
+			"specialty" :
+			{
+				"description" : "达到3级以后提高骆驼骑兵或沙漠骑兵的攻击力与防御力。",
+				"tooltip" : "Creature Bonus: Priestesses",
+				"name" : "骆驼骑兵"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/un32Came.bmp",
+			"specialtyLarge" : "speciconsPavilion/un44Came.bmp",
+			"large" : "heroportraitsPavilion/Ibrahim.png",
+			"small" : "heroportraitsPavilion/IbrahimSmall.png"
+		},
+        "spellbook" :
+		[
+			"bless"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "camelRider"
+		}
+	}
+}

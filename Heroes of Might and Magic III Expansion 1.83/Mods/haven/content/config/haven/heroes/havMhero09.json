@@ -1,0 +1,61 @@
+{
+	"havMhero09" :
+	{
+		"class" : "havMhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "坎迪丝",
+			"biography" : "尽管坎迪丝为了爱人宁愿隐藏鱼尾进入人类社会，但终究她不能适应离开水太久的生活。最终她还是不得不和曾经的爱人分开，独自回到海洋之中。只是她没法割舍下曾经的感情。有时，她会游到港口，在水中看着自己曾经生活过的人类村落。但她知道，成为人类终究只是梦罢了。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "美人鱼",
+				"description" : "达到4级以后提升美人鱼和人鱼巫女的攻击力和防御力。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero9/skill9S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero9/skill9.bmp",
+			"large" : "haven/heroes/havHero9/hero9.bmp",
+			"small" : "haven/heroes/havHero9/hero9S.bmp"
+		},
+		"spellbook": [ "fortune" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC07",
+				"max" : 6,
+				"min" : 5
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "havC07"
+		}	
+	}
+}

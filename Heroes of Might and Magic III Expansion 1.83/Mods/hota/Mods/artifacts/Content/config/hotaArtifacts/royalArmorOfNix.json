@@ -1,0 +1,26 @@
+{
+	"royalArmorOfNix" : {
+		"type" : [ "HERO" ],
+		"slot" : "TORSO",
+		"class" : "MAJOR",
+		"value" : 7000,
+		"bonuses" : {
+			"skill" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "spellpower",
+				"valueType" : "BASE_NUMBER",
+				"val" : 6
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/royalArmorOfNix",
+			"map" : "hota/artifactsMap/royalArmorOfNix",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/royalArmorOfNix"
+		},
+		"text" : {
+			"description" : "{皇家海妖战甲}\r\n\r\n穿上皇家海妖战甲可以使你的力量+6。",
+			"event" : "你看见一场发生在附近山丘上的战斗，当你靠近时，你看见两只海妖，其中一只胜利了。当另一只海妖倒在地上要停止呼吸时，你救了他。战败的海妖感谢你的帮助并且送给你他的战甲作为礼物，他坚信你比他更应该得到它。",
+			"name" : "皇家海妖战甲"
+		}
+	}
+}

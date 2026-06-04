@@ -1,0 +1,20 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"mdtDrownedHall" : {
+				"name" : "沉没神殿",
+				"creatures" : [[ "mdtTriton" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new09.def",
+				"sounds": {
+					"ambient": ["dwellings/conflux/TritLOOP"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "dwellings/conflux/mapDrownedHall.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

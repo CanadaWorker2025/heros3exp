@@ -1,0 +1,109 @@
+{
+	
+	
+	"weaponPoisonPotion":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "毒液瓶",
+		"school":
+		{
+			"courtPotion": true
+		},
+		"level": 1,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":["courtyard/spells/Potions/Poison/poisonPotion.def"]
+		},
+ 
+		"flags" : { "positive": true, "special" : true },
+ 
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/Potions/Poison/poisonP_book1",
+			"iconEffect": "courtyard/spells/Potions/Poison/poisonP_effect1",
+			"iconScroll": "courtyard/spells/Potions/Poison/poisonP_scroll1",
+			"iconScenarioBonus": "courtyard/spells/Potions/Poison/poisonP_bonus1",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "courtyard/spells/POISONPOT.wav"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{毒液瓶}\n\n攻击时有10%的几率使对方部队中毒。\n\n需要： 药剂车", 
+				"effects":
+				{
+					"poison" :
+					{
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.poison",
+						"val" : 10,
+						"duration": "N_TURNS",
+					},							
+				}
+			},
+			"basic":
+			{
+				"description": "{浓缩毒液瓶}\n\n攻击时有15%的几率使对方部队中毒。\n\n需要： 药剂车，初级急救术", 
+				"effects":
+				{
+					"poison" :
+					{"type" : "SPELL_AFTER_ATTACK","subtype" : "spell.poison",
+						"val" : 15,
+						"duration": "N_TURNS",
+					},	
+				}	
+			},
+			"advanced":
+			{
+				"description": "{蒸馏毒液瓶}\n\n攻击时有20%的几率使对方部队中毒。\n\n需要： 药剂车，中级急救术", 
+				"effects":
+				{
+					"poison" :
+					{"type" : "SPELL_AFTER_ATTACK","subtype" : "spell.poison",
+						"val" : 20,
+						"duration": "N_TURNS",
+					},
+				}
+			},
+			"expert":
+			{
+				"description": "{纯化毒液瓶}\n\n攻击时有30%的几率使对方部队中毒。\n\n需要： 药剂车，高级急救术", 
+				"effects":
+				{
+					"poison" :
+					{"type" : "SPELL_AFTER_ATTACK","subtype" : "spell.poison",
+						"val" : 30,
+						"duration": "N_TURNS",
+					},
+				}
+			}
+		}
+	}
+ 
+}

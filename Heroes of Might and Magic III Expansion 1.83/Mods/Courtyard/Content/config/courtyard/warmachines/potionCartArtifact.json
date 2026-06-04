@@ -1,0 +1,24 @@
+{
+	"potionCartCreature":
+        {
+	"type" : ["HERO"],
+	"warMachine":"potionCartCreature",
+        "class": "SPECIAL",
+        "value": 1500,
+        "slot":"MACH2",
+        "text":
+		{
+			"name": "药剂车",
+			"description": "{药剂车}\r\n\r\n药剂车可以为你的军队提供实用药剂。",
+			"event": "你在一个老妇人居住的小屋前停下来。她热情邀请你进去坐坐，说你让她想起她的孙女，于是她一直喂水饺给你吃。吃了几口后你尽力告知她你不饿并且有事要离开，她便从壁橱中拿出够用一个月的治疗香膏和自制药剂，给你装了一推车带走。"
+		},
+		"graphics":
+		{
+			"image": "courtyard/icons/artifacts/PotCart_art01",
+			"scenarioBonus": "courtyard/icons/artifacts/PotCart_artBonus01.png",
+			"map"  : "courtyard/map/artPotCart.def",
+		},
+	}
+}
+
+

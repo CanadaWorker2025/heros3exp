@@ -1,0 +1,127 @@
+{
+	"hota.factory:01_Henrietta": {
+		"specialty": {
+			"creature" : "halfling",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "半身人",
+                "description": "每1级提高半身人及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:02_Sam": {
+        "texts": {
+            "specialty": {
+                "name": "机械师",
+                "description": "每2级提高机械师及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:03_Tancred": {
+        "texts": {
+            "specialty": {
+                "name": "快枪猎手",
+                "description": "每6级提高快枪猎手及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:11_Celestine": {
+        "texts": {
+            "specialty": {
+                "name": "铠兽",
+                "description": "每3级提高铠兽及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:12_Todd": {
+        "texts": {
+            "specialty": {
+                "name": "自行机甲",
+                "description": "每4级提高自行机甲及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:13_Agar": {
+        "texts": {
+            "specialty": {
+                "name": "沙虫",
+                "description": "每5级提高沙虫及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:s01_Jangaard": {
+        "texts": {
+            "specialty": {
+                "name": "快枪猎手",
+                "description": "每6级提高快枪猎手及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:s02_Stina": {
+        "texts": {
+            "specialty": {
+                "name": "机械师",
+                "description": "每2级提高机械师及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:s05_Elderian": {
+        "texts": {
+            "specialty": {
+                "name": "自行机甲",
+                "description": "每4级提高自行机甲及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:s06_Umender": {
+        "texts": {
+            "specialty": {
+                "name": "自行机甲",
+                "description": "每4级提高自行机甲及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.factory:19_Frederick": {
+		"specialty": {
+			"creature": null,
+			"bonuses": {
+                "damage":{
+                    "type": "SPECIFIC_SPELL_POWER",
+                    "subtype": "spell.detonation",
+                    "val" : 5,
+                    "valueType" : "PERCENT_TO_ALL",
+                    "updater" : "TIMES_HERO_LEVEL",
+					"limiters": [ 
+						{
+							"type":"CREATURE_TYPE_LIMITER",
+							"creature": "automaton",
+							"includeUpgrades" : true
+						}
+							],
+					"propagator": "HERO"
+                }    
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "机械狂人",
+                "description": "每1级增加自行机甲或守卫机甲5%的爆炸伤害。"
+            }
+        }
+	},
+	"hota.factory:08_Morton": {
+		"specialty": {
+			"creature": "ballista",
+			"creatureLevel" : 5,
+			"stepSize" : 30
+		},
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+            }
+        }
+	}
+}

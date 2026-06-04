@@ -1,0 +1,33 @@
+{
+	"name" : "Greek translation",
+	"description" : "Greek translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.2",
+	"author" : "",
+	"contact" : "",
+	"language" : "greek",
+	"modType" : "Translation",
+	"compatibility" :
+	{
+		"min" : "1.7.0"
+	},
+	"changelog" : 
+	{ 
+		"1.0.2" : [ "Remove custom inappropriate russian font" ],
+		"1.0.1" : [ "Menu screens" ],
+		"1.0.0" : [ "Initial release" ]
+	},
+	"german" : {
+		"name" : "Griechische Übersetzung",
+		"description" : "Griechische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"greek" : {
+		"name" : "Ελληνική μετάφραση",
+		"description" : "Ελληνική μετάφραση του Heroes of Might and Magic III: Complete Edition"	
+	},
+	"translations" : [
+		"config/vcmi-greek/game.json",
+		"config/vcmi-greek/maps.json",
+		"config/vcmi-greek/chronicles.json",
+		"config/vcmi-greek/campaigns.json"
+	]
+}

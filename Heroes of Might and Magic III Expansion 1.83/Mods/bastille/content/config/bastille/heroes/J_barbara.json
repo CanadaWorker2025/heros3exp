@@ -1,0 +1,74 @@
+{
+	"j_barbara" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "芭芭拉",
+			"biography" : "因为曾经在舞会上被拒绝请求，芭芭拉开始憎恨自己作为矮人的样子。她认为无论如何装饰，都不可能使她拥有人类女性的美丽。她总是渴望能够融入人类社会，但发现这一切确实如此之难。所以，她希望有朝一日能够找到方法去变成一个人类该有的样子。",
+			"specialty" :
+			{
+				"description" : "在智力技能上每级得到5%的额外奖励。",
+				"tooltip" : "Skill bonus: Intelligence",
+				"name" : "智力"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "bastille/heroes/barbara/skill32-10.bmp",
+			"specialtyLarge" : "bastille/heroes/barbara/skill10.bmp",
+			"large" : "bastille/heroes/barbara/HPL001PY.bmp",
+			"small" : "bastille/heroes/barbara/HPS001PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"protectFire" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"intelligence" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_PER_KNOWLEDGE_PERCENTAGE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

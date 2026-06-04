@@ -1,0 +1,23 @@
+{
+	"name" : "Simple Game Balance",
+	"modType" : "Other",
+	"author" : "Marc",
+	"contact" : "",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"version" : "1.0.1",
+	
+	"changelog" : 
+	{
+		"1.0.1"  : [ "Bug fix" ],
+		"1.0.0"  : [ "First" ]
+	},
+	"compatibility" :
+	{
+		"min" : "1.4.0"
+	},
+	
+	
+	"description" : "Improves some skills, spells and creatures that are too weak in the original game, to increase the amount of useful options. This mod does not nerf anything. Check sub-mods description for more details on each change."
+	
+}

@@ -1,0 +1,28 @@
+{
+ 	"core:dracon":
+ 	{
+ 		"specialty" : {
+ 			"base" : {
+ 				"type" : "SPECIAL_UPGRADE",
+				"addInfo" : "creature.enchanter"
+ 			},
+ 			"bonuses" : {
+ 				"ffheretic2enchanter" : { "subtype" : "creature.ffheretic" },
+				"twArcane04enchanter" : { "subtype" : "creature.twArcane04" }
+ 			}
+ 		},
+ 	},
+ 	"core:gelu":
+ 	{
+ 		"specialty" : {
+ 			"base" : {
+ 				"type" : "SPECIAL_UPGRADE",
+				"addInfo" : "creature.sharpshooter"
+ 			},
+ 			"bonuses" : {
+ 				"ffredcrossbowman2sharpshooter" : { "subtype" : "creature.ffredcrossbowman" },
+				"nRP03sharpshooter" : { "subtype" : "creature.nRP03" }
+ 			}
+ 		},
+ 	}
+}

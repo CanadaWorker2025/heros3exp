@@ -1,0 +1,98 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"ftfuryBank" : 
+			{
+				"name" : "血之塔",
+				"aiValue" : 3000,
+				"templates" : {
+					"base" : { "animation" : "tartarus/map/dwellings/SW_BMR.def", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VVV", "VVV", "VVV", "VVA" ],
+					"allowedTerrains":["dirt","lava","subterra"] 
+					}
+				},
+				"rmg" : {
+					"value"		: 2500,
+					"rarity"	: 50
+				},
+				"onGuardedMessage" : "{血之塔}\r\n\r\n奇形怪状的塔楼里传来女妖邪魅的笑声，而不慎闯入的路人都成了她们的猎物，你知道她们喜欢用鲜血作为祭品来进行邪恶的仪式。眼前是你为民除害的机会，你要消灭这群邪恶的女妖吗？",
+				"onVisitedMessage" : "{血之塔}\r\n\r\n奇形怪状的塔楼里出奇地安静，你进入塔楼，只有一些干涸的血迹让你知道这里曾经是邪恶的洞窟。但还好有英勇的战士铲除了邪恶，你不禁为这样的义举感到钦佩。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 15, "type" : "tartarc5" },
+							{ "amount": 15, "type" : "tartarc6" },
+							{ "amount": 10, "type" : "tidesofwar:creature.mdtSukkub"},
+							{ "amount": 10, "type" : "tidesofwar:creature.mdtLilim" }
+						],
+							"resources": 
+							{
+								"gold" : 4000,
+								"mercury" : 5,
+								"sulfur" : 5
+							}
+					},
+										
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 20, "type" : "tartarc5" },
+							{ "amount": 20, "type" : "tartarc6" },
+							{ "amount": 15, "type" : "tidesofwar:creature.mdtSukkub"},
+							{ "amount": 15, "type" : "tidesofwar:creature.mdtLilim" }
+						],
+							"resources": 
+							{
+								"gold" : 6000,
+								"mercury" : 7,
+								"sulfur" : 7
+							}
+					},
+					
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 25, "type" : "tartarc5" },
+							{ "amount": 25, "type" : "tartarc6" },
+							{ "amount": 20, "type" : "tidesofwar:creature.mdtSukkub"},
+							{ "amount": 20, "type" : "tidesofwar:creature.mdtLilim" }
+						],
+							"resources": 
+							{
+								"gold" : 8000,
+								"mercury" : 9,
+								"sulfur" : 9
+							}
+					},
+					
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 30, "type" : "tartarc5" },
+							{ "amount": 30, "type" : "tartarc6" },
+							{ "amount": 25, "type" : "tidesofwar:creature.mdtSukkub"},
+							{ "amount": 25, "type" : "tidesofwar:creature.mdtLilim" }
+						],
+							"resources": 
+							{
+								"gold" : 10000,
+								"mercury" : 12,
+								"sulfur" : 12
+							}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"core:firstAid" : {
+		//"index" : 27,
+		"base" : {
+			"effects" : {
+				"potionsExtra" : 			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.potionSupply",
+				"val" : 0,
+				"limiters": [ {
+					"type":"CREATURE_TYPE_LIMITER",
+					"creature": "potionCartCreature"
+					} ],
+				},
+			"additionalHP" : {
+					"type" : "DAMAGE_RECEIVED_CAP",
+					"propagator" : "ARMY",
+					"limiters" : [
+						{
+					"type" : "CREATURE_TYPE_LIMITER",
+					"creature" : "potionCartCreature"
+						}
+					],
+					"valueType" : "INDEPENDENT_MIN"
+				}
+			}
+		},
+		"basic" : {
+			"effects" : {
+				"potionsExtra" : {"val" : 1},
+				"additionalHP" : {"val" : 40}
+			}
+		},
+		"advanced" : {
+			"effects" : {
+				"potionsExtra" : {"val" : 2},
+				"additionalHP" : {"val" : 40}
+			}
+		},
+		"expert" : {
+			"effects" : {
+				"potionsExtra" : {"val" : 3},
+				"additionalHP" : {"val" : 40}	
+			}
+		}
+	}
+}

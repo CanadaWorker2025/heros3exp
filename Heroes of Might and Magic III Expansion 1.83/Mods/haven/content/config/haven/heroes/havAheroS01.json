@@ -1,0 +1,61 @@
+{
+	"havAheroS01" :
+	{
+		"class" : "havAhero",//Boyd
+		"female": false,
+		"special": true,
+		"texts" :
+		{
+			"name" : "博伊德",
+			"biography" : "所有恐怖故事里都有一个被绞死、刺杀甚至被斩首的骑士，在夜晚骑着马，打算对杀死自己的凶手报仇。亡灵法师可能会说这是无稽之谈，复活的死人不可能有记忆或者意志。可能是这样吧，但是博伊德不仅要与背叛他的叛徒算账，还要跟那些不让他安息的人清算。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "骷髅兵",
+				"description" : "达到1级以后提升骷髅兵和骷髅勇士的攻击力和防御力。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHeroS1/skill3S.bmp",
+			"specialtyLarge" : "haven/heroes/havHeroS1/skill3.bmp",
+			"large" : "haven/heroes/havHeroS1/hero3.bmp",
+			"small" : "haven/heroes/havHeroS1/hero3S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "skeleton",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "skeleton",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "skeleton",
+				"max" : 20,
+				"min" : 15
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "necromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "skeleton"
+		}	
+	}
+}

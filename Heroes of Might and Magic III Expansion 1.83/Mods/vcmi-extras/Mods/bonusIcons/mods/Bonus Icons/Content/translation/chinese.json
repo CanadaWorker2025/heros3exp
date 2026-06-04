@@ -1,0 +1,16 @@
+{
+	"creatures.core.ammoCart.bonus.inactive" : "{无法行动}\n补给车的行动不会出现在回合顺序中",
+	"creatures.core.ammoCart.bonus.dummyIcon" : "{战争机器补给}\n为战争机器提供无限弹药",
+	"creatures.core.ammoCart.bonus.siegeWeapon" : "{弹药补给}\n为远程单位提供无限弹药",
+	"creatures.core.ballista.bonus.siegeWeapon" : "{弩车}\n弩车可以在战场上进行射击",
+	"creatures.core.catapult.bonus.siegeWeapon" : "{投石车}\n投石车可以攻击箭塔和城墙等防御工事",
+	"creatures.core.firstAidTent.bonus.heals" : "{急救}\n恢复友军单位的部分生命值",
+	"creatures.core.firstAidTent.bonus.siegeWeapon" : "{急救帐篷}\n急救帐篷在回合最后行动",
+	"creatures.core.halfling.bonus.lucky" : "{幸运}\n该单位永远保持+1幸运",
+	"creatures.core.halfling.bonus.dummyluckyicon" : "{幸运}\n该单位永远保持+1幸运",
+	"creatures.core.minotaur.bonus.fearless" : "{士气}\n该单位永远保持+1士气",
+	"creatures.core.minotaur.bonus.dummyMoraleIcon" : "{士气}\n该单位永远保持+1士气",
+	"creatures.core.minotaurKing.bonus.fearless" : "{士气}\n该单位永远保持+1士气",
+	"creatures.core.minotaurKing.bonus.dummyMoraleIcon" : "{士气}\n该单位永远保持+1士气",
+	"creatures.core.crystalDragon.bonus.dummycrystalIcon" : "{结晶}\n每周额外产生3个水晶"
+}

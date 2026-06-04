@@ -1,0 +1,42 @@
+{
+	"mdtLightningboltWand":
+	{
+		"type": ["HERO"],
+		"class": "MINOR",
+		"slot":	"MISC",
+		"value": 4000,	
+		"text":
+		{
+			"name": "闪电魔杖",
+			"description": "{闪电魔杖}\r\n\r\n将霹雳闪电魔杖魔法加入魔法书，施展魔杖魔法不消耗魔法值，但魔杖本身拥有10次魔力值。\r\n魔力值耗尽后，魔杖将会消失。",
+			"event": "在旅途中，你偶然发现一小块被雷击的奇异土地。在这块土地的中央，你清晰地看到一根魔杖散发着魔力，被固定在地面上。你从毁坏的土壤中拿起魔杖，决定自己保管它。"
+		},
+		"graphics":
+		{
+			"image": "artifacts/iconsSmall/lightningboltWand",
+			"scenarioBonus": "artifacts/iconsBig/lightningWand",
+			"map": "artifacts/map/lightningboltWand"
+		},
+		"bonuses":
+		{
+			"spellGain":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.mdtLightningboltWand",
+				"limiters" : [
+				{
+				"type" : "HAS_CHARGES_LIMITER",
+				"parameters" : [1]
+					}
+				],
+				"hidden" : true
+			}
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 10
+		}
+	}
+}

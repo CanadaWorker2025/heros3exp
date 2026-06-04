@@ -1,0 +1,74 @@
+{
+	"n_renee" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "蕾妮",
+			"biography" : "蕾妮在矮人的社会中生存过很长时间。她并不喜欢矮人的生活方式，但为了生存，也不得不接受这一点。她的来历其实是个谜，而且她也从来不说起这一点。 ",
+			"specialty" :
+			{
+				"description" : "在神秘术上每级得到5%的额外奖励。",
+				"tooltip" : "Skill bonus: Mysticism",
+				"name" : "神秘术"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "bastille/heroes/renee/skill32-14.bmp",
+			"specialtyLarge" : "bastille/heroes/renee/skill14.bmp",
+			"large" : "bastille/heroes/renee/HPL005PY.bmp",
+			"small" : "bastille/heroes/renee/HPS005PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"visions" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+				"level" : "basic",
+				"skill" : "mysticism"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"mysticism" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_REGENERATION",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

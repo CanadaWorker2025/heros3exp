@@ -1,0 +1,64 @@
+{
+	"varn" :
+	{
+		"class" : "vizier",
+		"female" : false,
+		"special" : true,
+
+		"texts" :
+		{
+			"name" : "凡恩",
+			"biography" : "凡恩在沙漠中醒来时唯一记得的就是他的名字。他徘徊着寻找过去的奥秘和未来的答案。",
+			"specialty" :
+			{
+				"description" : "达到7级以后提高冥神使或冥神圣使的攻击力与防御力。",
+				"tooltip" : "Creature Bonus: Anubians",
+				"name" : "冥神使"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/un32Anub.bmp",
+			"specialtyLarge" : "speciconsPavilion/un44Anub.bmp",
+			"large" : "heroportraitsPavilion/Varn.png",
+			"small" : "heroportraitsPavilion/VarnSmall.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+		{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "anubis"
+		}
+	}
+}
+

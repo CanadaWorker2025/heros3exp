@@ -1,0 +1,76 @@
+{
+	"iFor05"://gorgon queen
+	{
+		"name" :
+		{
+			"plural" : "野牛王",
+			"singular" : "野牛王"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction": "fortress",
+		"doubleWide" : true,
+		"aiValue" : 1027,
+		"fightValue" : 1027,
+		"attack" : 12,
+		"defense" : 15,
+		"cost" :
+		{
+			"gold" : 600
+		},
+		"damage" :
+		{
+			"min" : 12,
+			"max" : 16
+		},
+		"speed" : 7,
+		"upgrades": ["mightyGorgon"],
+		"graphics" :
+		{
+			"animation" : "creatures/fortress/battle/iFor05B.def",
+			"map" : "creatures/fortress/map/iFor05M.def",
+			"iconSmall" : "creatures/fortress/iconsSmall/iFor05S.bmp",
+			"iconLarge" : "creatures/fortress/iconsBig/iFor05L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 70,
+		"growth" : 3,
+		"level" : 5,
+		"sound" :
+		{
+			"attack": "BGORATTK.wav",
+			"defend": "BGORDFND.wav",
+			"killed": "BGORKILL.wav",
+			"move": "BGORMOVE.wav",
+			"wince": "BGORWNCE.wav"
+		},
+		"abilities":
+		{
+			"setAflame":
+			{
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.iFor05eff",
+						"val" : 100,
+						"description" : "{魔之眼}\n攻击后直接多杀死一个敌人，对无生命无效",
+						"icon": "bonuses/fort5.png"
+			},
+			"deathStare" : 
+			{
+				"type" : "DEATH_STARE",
+				"subtype" : "deathStareGorgon",
+				"val" : 7
+			}
+		}
+	}
+}
+
+

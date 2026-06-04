@@ -1,0 +1,30 @@
+{
+	"core:gog" :
+	{
+		"abilities":
+		{
+			"fireball2" :
+			{
+				"hidden": true,
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.gogFireball"
+			}
+		}
+	},
+	"core:magog" :
+	{
+		"abilities#override":
+		{
+			"fireball2" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.friendlyFireball",
+				"icon": "friendlyFireball/exp01.png"
+			},
+			"shooter" :
+			{
+				"type" : "SHOOTER"
+			}
+		}
+	}
+}

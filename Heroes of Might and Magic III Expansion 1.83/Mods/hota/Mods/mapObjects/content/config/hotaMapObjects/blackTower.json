@@ -1,0 +1,101 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"blackTower" : 
+			{
+				"name" : "黑塔",
+				"aiValue" : 2000,
+				"templates" :
+				{
+
+					"normal" :
+					{
+						"animation" : "hota/banks/avblktgr.def",
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"mask" : [ "VVVV", "VVVV", "VVVV", "VVAV"],
+						"allowedTerrains":["subterra", "rough", "dirt", "sand", "lava"] 
+					},
+					"grass" :
+					{
+						"animation" : "hota/banks/avblktgr.def",
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"mask" : [ "VVVV", "VVVV", "VVVV", "VVAV"],
+						"allowedTerrains":["grass", "swamp"] 
+					},
+					"snow" :
+					{
+						"animation" : "hota/banks/avblktsn.def",
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"mask" : [ "VVVV", "VVVV", "VVVV", "VVAV"],
+						"allowedTerrains":["snow"] 
+					}
+				},
+				"sounds": {
+					"ambient": ["hota/BLCKTWRL.wav"],
+					"visit": ["hota/BLCKTWRS.wav"]
+				},
+				"rmg" : {
+					"value"		: 1500,
+					"rarity"	: 100
+				},
+				"onGuardedMessage" : "{黑塔}\r\n\r\n你听说这里住着一条龙，它每天吼叫的声音让周围的居民惊恐万分。你要与这条凶猛的恶龙作战吗？",
+				"onVisitedMessage" : "{黑塔}\r\n\r\n有人说这里曾经住着一条恶龙，但似乎当你靠近之后，没有听到任何龙的吼声。看来传闻也未必是真的。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "default",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 1, "type" : "greenDragon" }
+						],
+							"resources": 
+							{
+								"gold" : 2000
+							},
+							"artifacts": [ { "class" : "MINOR" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 1, "type" : "redDragon" }
+						],
+							"resources": 
+							{
+								"gold" : 2250
+							},
+							"artifacts": [ { "class" : "MINOR" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 1, "type" : "goldDragon", "upgradeChance": 50 }
+						],
+							"resources": 
+							{
+								"gold" : 3500
+							},
+							"artifacts": [ { "class" : "MINOR" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 1, "type" : "blackDragon", "upgradeChance": 50 }
+						],
+							"resources": 
+							{
+								"gold" : 3750
+							},
+							"artifacts": [ { "class" : "MINOR" } ]
+					}
+				]
+			}
+		}
+	}
+}

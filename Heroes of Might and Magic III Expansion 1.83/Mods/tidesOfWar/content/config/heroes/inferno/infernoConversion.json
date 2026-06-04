@@ -1,0 +1,326 @@
+{
+	"core:fiona" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:rashka" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:marius" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:ignatius" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:octavia" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:calh" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:pyre" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:nymus" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:ayden" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:xyron" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:axsis" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:olema" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:calid" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:ash" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:zydar" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"core:xarfax" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"eyzeaDemoniac" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		},
+	"kreevionHeretic" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark01","addInfo":	"creature.familiar"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.familiar","addInfo":	"creature.ifDark01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.ifDark02","addInfo":	"creature.magog"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.magog","addInfo":	"creature.ifDark02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.cerberus","addInfo" : "creature.ifDark03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark03","addInfo" : "creature.cerberus"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark04","addInfo" : "creature.hornedDemon"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.hornedDemon","addInfo" : "creature.ifDark04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.pitLord","addInfo" : "creature.ifDark05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark05","addInfo" : "creature.pitLord"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark06","addInfo" : "creature.efreetSultan"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.efreetSultan","addInfo" : "creature.ifDark06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.ifDark07","addInfo" : "creature.archDevil"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archDevil","addInfo" : "creature.ifDark07"}}}
+		}
+}

@@ -1,0 +1,85 @@
+{
+	"zamonth" :
+	{
+		"class" : "embalmer",
+		"female" : false,
+		"special": true,
+
+		"texts" :
+		{
+			"name" : "萨蒙特",
+			"biography" : "萨蒙特永远不会接受圣职者们禁止亡灵巫术的定规，学界也只是因为他几乎具有圣者的地位才允许他留下记录有禁忌知识的黑暗文献。",
+			"specialty" :
+			{
+				"description" : "将墓园不死生物转化为木乃伊。",
+				"tooltip" : "Special Upgrade: Mummies",
+				"name" : "木乃伊"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/un32Mummy.bmp",
+			"specialtyLarge" : "speciconsPavilion/un44Mummy.bmp",
+			"large" : "heroportraitsPavilion/Zamonth.png",
+			"small" : "heroportraitsPavilion/ZamonthSmall.png"
+		},
+		"spellbook" :
+		[
+			"animateDead"
+		],
+		"army" :
+		[
+			{
+				"creature" : "mummy",
+				"max" : 2,
+				"min" : 1
+			},
+			{
+				"creature" : "mummy",
+				"max" : 2,
+				"min" : 1
+			},
+			{
+				"creature" : "mummy",
+				"max" : 2,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "necromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty" : {
+			"base" : {
+				"type" : "SPECIAL_UPGRADE",
+				"addInfo" : "creature.mummy"
+			},
+			"bonuses" : {
+				"skeleton2mummy" : { "subtype" : "creature.skeleton" },
+				"skeletonWarrior2mummy" : { "subtype" : "creature.skeletonWarrior" },
+				"walkingDead2mummy" : { "subtype" : "creature.walkingDead" },
+				"zombie2mummy" : { "subtype" : "creature.zombieLord" },
+				"wight2mummy" : { "subtype" : "creature.wight" },
+				"wraith2mummy" : { "subtype" : "creature.wraith" },
+				"vampire2mummy" : { "subtype" : "creature.vampire" },
+				"vampireLord2mummy" : { "subtype" : "creature.vampireLord" },
+				"lich2mummy" : { "subtype" : "creature.lich" },
+				"powerLich2mummy" : { "subtype" : "creature.powerLich" },
+				"blackKnight2mummy" : { "subtype" : "creature.blackKnight" },
+				"dreadKnight2mummy" : { "subtype" : "creature.dreadKnight" },
+				"boneDragon2mummy" : { "subtype" : "creature.boneDragon" },
+				"zombie2ghostDragon" : { "subtype" : "creature.ghostDragon" }
+			}
+		}	
+	}
+}

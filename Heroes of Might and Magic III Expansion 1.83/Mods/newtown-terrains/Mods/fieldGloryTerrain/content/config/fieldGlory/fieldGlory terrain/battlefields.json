@@ -1,0 +1,15 @@
+{
+	"fieldGlory": 
+	{ 
+		"graphics" : "fieldGlory/fieldGlory bgy.bmp",
+		"bonuses": [
+			{
+				"type" : "LUCK",
+				"val" : -2,
+				"valueType" : "BASE_NUMBER",
+				"stacking" : "在荣耀原野上",
+				"propagator": "BATTLE_WIDE"
+			}
+		]
+	}
+}

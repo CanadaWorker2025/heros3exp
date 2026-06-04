@@ -1,0 +1,63 @@
+{
+	"b_pauline" :
+	{
+    "class": "pathfinder",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "波琳",
+			"biography" : "波琳犹如紫水晶一般的眼睛和一头天生的紫色长发是她作为贵族之女的象征。但是比起当个贵族，波琳更爱学习箭术。这个紫水晶般的女孩之前生活在布拉卡达，当她受到心灵力量感召后，她决定前往那个谜一般的异界寻找属于自己的天地。",
+			"specialty" :
+			{
+				"description" : "达到3级以后提高暗影猎手和魔影猎手的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Shadow Hunter",
+				"name" : "暗影猎手"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/pauline/UN32T197.bmp",
+			"specialtyLarge" : "asylum/heroes/pauline/UN44T197.bmp",
+			"large" : "asylum/heroes/pauline/HPL001PF.bmp",
+			"small" : "asylum/heroes/pauline/HPS001PF.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			}
+		],
+		
+				"specialty" : {
+			"creature" : "shadowhunter"
+		}
+	}
+}
+

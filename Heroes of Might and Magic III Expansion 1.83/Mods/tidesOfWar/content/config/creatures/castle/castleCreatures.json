@@ -1,0 +1,1470 @@
+{
+	"core:pikeman" :
+	{
+		"upgrades": ["halberdier", "ffpraetorian"]
+	},
+	"core:halberdier" :
+	{
+		"upgrades": ["ffpraetorian"]
+	},
+	"core:archer" :
+	{
+		"upgrades": ["marksman", "ffredcrossbowman"]
+	},
+	"core:marksman" :
+	{
+		"upgrades": ["ffredcrossbowman"]
+	},
+	"core:griffin" :
+	{
+		"upgrades": ["royalGriffin", "ffbattlegriffin"]
+	},
+	"core:royalGriffin" :
+	{
+		"upgrades": ["ffbattlegriffin"]
+	},
+	"core:swordsman" :
+	{
+		"upgrades": ["crusader", "ffvindicator"]
+	},
+	"core:crusader" :
+	{
+		"upgrades": ["ffvindicator"]
+	},
+	"core:monk" :
+	{
+		"upgrades": ["zealot", "ffheretic"]
+	},
+	"core:zealot" :
+	{
+		"upgrades": ["ffheretic"]
+	},
+	"core:cavalier" :
+	{
+		"upgrades": ["champion", "ffpaladin"]
+	},
+	"core:champion" :
+	{
+		"upgrades": ["ffpaladin"]
+	},
+	"core:angel" :
+	{
+		"upgrades": ["archangel", "ffseraph"],
+		"abilities" :
+		{
+			
+			"hateDevils" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.devil",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateArchDevils" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.archDevil",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateBarlogs" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.ifDark07",
+				"val" : 50,
+				"description" : "{光明使徒}\n对恶魔，大恶魔，黑恶魔造成额外50%伤害",
+				"icon" : "spells/extraEffect/hate1.png"
+			},
+			"raisesMorale" :
+			{
+				"type" : "MORALE",
+				"val" : 1,
+				"propagator" : "ARMY",
+				"description" : "{增加友军士气}\n天使可以增加1点友军士气",
+				"stacking" : "Angels"
+			}
+		}
+	},
+	"core:archangel" :
+	{
+		"upgrades": ["ffseraph"],
+		"abilities" :
+		{
+			"hateDevils" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.devil",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateArchDevils" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.archDevil",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateBarlogs" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.ifDark07",
+				"val" : 50,
+				"description" : "{光明使徒}\n对恶魔，大恶魔，黑恶魔造成额外50%伤害",
+				"icon" : "spells/extraEffect/hate1.png"
+			},
+			"raisesMorale" : {
+				"type" : "MORALE",
+				"val" : 1,
+				"propagator" : "ARMY",
+				"description" : "{增加友军士气}\n大天使可以增加1点友军士气",
+				"stacking" : "Angels"
+			}
+		}
+	},
+	"core:centaur" :
+	{
+		"upgrades": ["centaurCaptain", "nRP01"]
+	},
+	"core:centaurCaptain" :
+	{
+		"upgrades": ["nRP01"]
+	},
+	"core:dwarf" :
+	{
+		"upgrades": ["battleDwarf", "nRP02"]
+	},
+	"core:battleDwarf" :
+	{
+		"upgrades": ["nRP02"]
+	},
+	"core:woodElf" :
+	{
+		"upgrades": ["grandElf", "nRP03"]
+	},
+	"core:grandElf" :
+	{
+		"upgrades": ["nRP03"]
+	},
+	"core:pegasus" :
+	{
+		"upgrades": ["silverPegasus", "nRP04"]
+	},
+	"core:silverPegasus" :
+	{
+		"upgrades": ["nRP04"]
+	},
+	"core:dendroidGuard" :
+	{
+		"upgrades": ["dendroidSoldier", "nRP05"]
+	},
+	"core:dendroidSoldier" :
+	{
+		"upgrades": ["nRP05"]
+	},
+	"core:unicorn" :
+	{
+		"upgrades": ["warUnicorn", "nRP06"]
+	},
+	"core:warUnicorn" :
+	{
+		"upgrades": ["nRP06"]
+	},
+	"core:greenDragon" :
+	{
+		"upgrades": ["goldDragon", "nRP07"],
+		"abilities" :
+		{
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			}
+		}
+	},
+	"core:goldDragon" :
+	{
+		"upgrades": ["nRP07"],
+		"abilities" :
+		{
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			}
+		}
+	},
+	"core:gremlin" :
+	{
+		"upgrades": ["masterGremlin", "twArcane01"]
+	},
+	"core:masterGremlin" :
+	{
+		"upgrades": ["twArcane01"]
+	},
+	"core:stoneGargoyle" :
+	{
+		"upgrades": ["obsidianGargoyle", "twArcane02"]
+	},
+	"core:obsidianGargoyle" :
+	{
+		"upgrades": ["twArcane02"]
+	},
+	"core:ironGolem" :
+	{
+		"upgrades": ["stoneGolem", "twArcane03"],
+		"abilities" :
+		{
+		"nonliving" :
+			{
+				"type" : "MECHANICAL"
+			}
+		}
+	},
+	"core:stoneGolem" :
+	{
+		"upgrades": ["twArcane03"],
+		"abilities" :
+		{
+		"nonliving" :
+			{
+				"type" : "MECHANICAL"
+			}
+		}
+	},
+	"core:goldGolem" :
+	{
+		"abilities" :
+		{
+		"nonliving" :
+			{
+				"type" : "MECHANICAL"
+			}
+		}
+	},
+	"core:diamondGolem" :
+	{
+		"abilities" :
+		{
+		"nonliving" :
+			{
+				"type" : "MECHANICAL"
+			}
+		}
+	},
+	"core:mage" :
+	{
+		"upgrades": ["archMage", "twArcane04"]
+	},
+	"core:archMage" :
+	{
+		"upgrades": ["twArcane04"]
+	},
+	"core:genie" :
+	{
+		"upgrades": ["masterGenie", "twArcane05"],
+		"abilities" :
+		{
+			"hateEfreet" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.efreet",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateEfreetSultans" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.efreetSultan",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateSmokeEfreets" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.ifDark06",
+				"val" : 50,
+				"description" : "{生灵对立}\n对火精灵，烈火精灵，暗炎精灵造成额外50%伤害",
+				"icon" : "spells/extraEffect/hateM.png"
+			}
+		}
+	},
+	"core:masterGenie" :
+	{
+		"upgrades": ["twArcane05"],
+		"abilities" :
+		{
+			"hateEfreet" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.efreet",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateEfreetSultans" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.efreetSultan",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateSmokeEfreets" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.ifDark06",
+				"val" : 50,
+				"description" : "{生灵对立}\n对火精灵，烈火精灵，暗炎精灵造成额外50%伤害",
+				"icon" : "spells/extraEffect/hateM.png"
+			}
+		}
+	},
+	"core:naga" :
+	{
+		"upgrades": ["nagaQueen", "twArcane06"]
+	},
+	"core:nagaQueen" :
+	{
+		"upgrades": ["twArcane06"]
+	},
+	"core:giant" :
+	{
+		"upgrades": ["titan", "twArcane07"]
+	},
+	"core:titan" :
+	{
+		"upgrades": ["twArcane07"],
+		"abilities" :
+		{
+			"hateBlackDragons" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.blackDragon",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateShadowDragons" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.iDun07",
+				"val" : 50,
+				"description" : "{神圣化身}\n对黑龙，阴影龙造成额外50%伤害",
+				"icon" : "spells/extraEffect/hatetitan2.png"
+			}
+		}
+	},
+	"core:imp" :
+	{
+		"upgrades": ["familiar", "ifDark01"]
+	},
+	"core:familiar" :
+	{
+		"upgrades": ["ifDark01"]
+	},
+	"core:gog" :
+	{
+		"upgrades": ["magog", "ifDark02"]
+	},
+	"core:magog" :
+	{
+		"upgrades": ["ifDark02"]
+	},
+	"core:hellHound" :
+	{
+		"upgrades": ["cerberus", "ifDark03"]
+	},
+	"core:cerberus" :
+	{
+		"upgrades": ["ifDark03"]
+	},
+	"core:demon" :
+	{
+		"upgrades": ["hornedDemon", "ifDark04"]
+	},
+	"core:hornedDemon" :
+	{
+		"upgrades": ["ifDark04"]
+	},
+	"core:pitFiend" :
+	{
+		"upgrades": ["pitLord", "ifDark05"]
+	},
+	"core:pitLord" :
+	{
+		"upgrades": ["ifDark05"]
+	},
+	"core:efreet" :
+	{
+		"upgrades": ["efreetSultan", "ifDark06"],
+		"abilities" :
+		{
+			"hateGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.genie",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateMasterGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.masterGenie",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateGenieViziers" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.twArcane05",
+				"val" : 50,
+				"description" : "{生灵对立}\n对神怪，神怪主，神怪长造成额外50%伤害",
+				"icon" : "spells/extraEffect/hateS.png"	
+			}
+		}
+	},
+	"core:efreetSultan" :
+	{
+		"upgrades": ["ifDark06"],
+		"abilities" :
+		{
+			"hateGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.genie",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateMasterGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.masterGenie",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateGenieViziers" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.twArcane05",
+				"val" : 50,
+				"description" : "{生灵对立}\n对神怪，神怪主，神怪长造成额外50%伤害",
+				"icon" : "spells/extraEffect/hateS.png"	
+			}
+		}
+	},
+	"core:devil" :
+	{
+		"upgrades": ["archDevil", "ifDark07"],
+		"abilities" :
+		{
+			"hateAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.angel",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateArchAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.archangel",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateSeraphs" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.ffseraph",
+				"val" : 50,
+				"description" : "{恶魔使徒}\n对天使，大天使，炽天使造成额外50%伤害",
+				"icon" : "spells/extraEffect/hate2.png"	
+			},
+			"decreaseLuck" :
+			{
+				"type" : "LUCK",
+				"val" : -1,
+				"stacking" : "Devils",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"description" : "{减少敌人幸运}\n面对恶魔使敌人的运气减少1点",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			}
+		}
+	},
+	"core:archDevil" :
+	{
+		"upgrades": ["ifDark07"],
+		"abilities" :
+		{
+			"hateAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.angel",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateArchAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.archangel",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateSeraphs" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.ffseraph",
+				"val" : 50,
+				"description" : "{恶魔使徒}\n对天使，大天使，炽天使造成额外50%伤害",
+				"icon" : "spells/extraEffect/hate2.png"	
+			}
+		}		
+	},
+	"core:skeleton" :
+	{
+		"upgrades": ["skeletonWarrior", "gNec01"]
+	},
+	"core:skeletonWarrior" :
+	{
+		"upgrades": ["gNec01"]
+	},
+	"core:walkingDead" :
+	{
+		"upgrades": ["zombieLord", "gNec02"]
+	},
+	"core:zombieLord" :
+	{
+		"upgrades": ["gNec02"]
+	},
+	"core:wight" :
+	{
+		"upgrades": ["wraith", "gNec03"]
+	},
+	"core:wraith" :
+	{
+		"upgrades": ["gNec03"]
+	},
+	"core:vampire" :
+	{
+		"upgrades": ["vampireLord", "gNec04"]
+	},
+	"core:vampireLord" :
+	{
+		"upgrades": ["gNec04"]
+	},
+	"core:lich" :
+	{
+		"upgrades": ["powerLich", "gNec05"]
+	},
+	"core:powerLich" :
+	{
+		"upgrades": ["gNec05"]
+	},
+	"core:blackKnight" :
+	{
+		"upgrades": ["dreadKnight", "gNec06"]
+	},
+	"core:dreadKnight" :
+	{
+		"upgrades": ["gNec06"]
+	},
+	"core:boneDragon" :
+	{
+		"upgrades": ["ghostDragon", "gNec07"],
+		"abilities" :
+		{
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"decreaseMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"stacking" : "Undead Dragons",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"description" : "{减少敌人士气}\n面对骨龙使敌人的士气减少1点",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			}
+		}
+	},
+	"core:ghostDragon" :
+	{
+		"upgrades": ["gNec07"],
+		"abilities" :
+		{
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"decreaseMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"stacking" : "Undead Dragons",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"description" : "{减少敌人士气}\n面对鬼龙使敌人的士气减少1点",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			}
+		}
+	},
+	"core:troglodyte" :
+	{
+		"upgrades": ["infernalTroglodyte","iDun01"]
+	},
+	"core:infernalTroglodyte" :
+	{
+		"upgrades": ["iDun01"]
+	},
+	"core:harpy" :
+	{
+		"upgrades": ["harpyHag","iDun02"]
+	},
+	"core:harpyHag" :
+	{
+		"upgrades": ["iDun02"]
+	},
+	"core:beholder" :
+	{
+		"upgrades": ["evilEye","iDun03"]
+	},
+	"core:evilEye" :
+	{
+		"upgrades": ["iDun03"]
+	},
+	"core:medusa" :
+	{
+		"upgrades": ["medusaQueen","iDun04"]
+	},
+	"core:medusaQueen" :
+	{
+		"upgrades": ["iDun04"]
+	},
+	"core:minotaur" :
+	{
+		"upgrades": ["minotaurKing","iDun05"]
+	},
+	"core:minotaurKing" :
+	{
+		"upgrades": ["iDun05"]
+	},
+	"core:manticore" :
+	{
+		"upgrades": ["scorpicore","iDun06"]
+	},
+	"core:scorpicore" :
+	{
+		"upgrades": ["iDun06"],
+		"abilities" :
+		{
+			"paralize" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.paralyze",
+				"val" : 40
+			}
+		}	
+	},
+	"core:redDragon" :
+	{
+		"upgrades": ["blackDragon","iDun07"],
+		"abilities" :
+		{
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			}
+		}
+	},
+	"core:blackDragon" :
+	{
+		"upgrades": ["iDun07"],
+		"abilities" :
+		{
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"hateTitans" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.titan",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateStormTitans" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.twArcane07",
+				"val" : 50,
+				"description" : "{黑暗化身}\n对泰坦，风暴泰坦造成额外50%伤害",
+				"icon" : "spells/extraEffect/hatetitan1.png"
+			}
+		}
+	},
+	"core:goblin" :
+	{
+		"upgrades": ["hobgoblin","rStrn01"]
+	},
+	"core:hobgoblin" :
+	{
+		"upgrades": ["rStrn01"]
+	},
+	"core:goblinWolfRider" :
+	{
+		"upgrades": ["hobgoblinWolfRider","rStrn02"]
+	},
+	"core:hobgoblinWolfRider" :
+	{
+		"upgrades": ["rStrn02"]
+	},
+	"core:orc" :
+	{
+		"upgrades": ["orcChieftain","rStrn03"]
+	},
+	"core:orcChieftain" :
+	{
+		"upgrades": ["rStrn03"]
+	},
+	"core:ogre" :
+	{
+		"upgrades": ["ogreMage","rStrn04"]
+	},
+	"core:ogreMage" :
+	{
+		"upgrades": ["rStrn04"]
+	},
+	"core:roc" :
+	{
+		"upgrades": ["thunderbird","rStrn05"]
+	},
+	"core:thunderbird" :
+	{
+		"upgrades": ["rStrn05"],
+		"abilities" :
+		{
+		"newAbilityImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.strn05"
+			}
+		}
+	},
+	"core:cyclop" :
+	{
+		"upgrades": ["cyclopKing","rStrn06"]
+	},
+	"core:cyclopKing" :
+	{
+		"upgrades": ["rStrn06"]
+	},
+	"core:behemoth" :
+	{
+		"upgrades": ["ancientBehemoth","rStrn07"]
+	},
+	"core:ancientBehemoth" :
+	{
+		"upgrades": ["rStrn07"]
+	},
+	"core:gnoll" :
+	{
+		"upgrades": ["gnollMarauder","iFor01"]
+	},
+	"core:gnollMarauder" :
+	{
+		"upgrades": ["iFor01"]
+	},
+	"core:lizardman" :
+	{
+		"upgrades": ["lizardWarrior","iFor02"]
+	},
+	"core:lizardWarrior" :
+	{
+		"upgrades": ["iFor02"]
+	},
+	"core:serpentFly" :
+	{
+		"upgrades": ["fireDragonFly","iFor03"]
+	},
+	"core:fireDragonFly" :
+	{
+		"upgrades": ["iFor03"]
+	},
+	"core:basilisk" :
+	{
+		"upgrades": ["greaterBasilisk","iFor04"]
+	},
+	"core:greaterBasilisk" :
+	{
+		"upgrades": ["iFor04"]
+	},
+	"core:gorgon" :
+	{
+		"upgrades": ["mightyGorgon","iFor05"]
+	},
+	"core:mightyGorgon" :
+	{
+		"upgrades": ["iFor05"]
+	},
+	"core:wyvern" :
+	{
+		"upgrades": ["wyvernMonarch","iFor06"]
+	},
+	"core:wyvernMonarch" :
+	{
+		"upgrades": ["iFor06"]
+	},
+	"core:hydra" :
+	{
+		"upgrades": ["chaosHydra","iFor07"],
+		"abilities" :
+		{
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			}
+		}
+	},
+	"core:chaosHydra" :
+	{
+		"upgrades": ["iFor07"],
+		"abilities" :
+		{
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			}
+		}
+	},
+	"core:pixie" :
+	{
+		"upgrades": ["sprite","nwCon01"]
+	},
+	"core:sprite" :
+	{
+		"upgrades": ["nwCon01"]
+	},
+	"core:airElemental" :
+	{
+		"upgrades": ["stormElemental","nwCon02"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"meteorMDTImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.mdtMeteorWand",
+				"hidden": true
+			},
+			"lightingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.lightningBolt",
+				"val" : 100,
+				"hidden": true
+			},
+			"lightingMDTVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.mdtLightningboltWand",
+				"val" : 100,
+				"hidden": true
+			},
+			"chainLightingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.chainLightning",
+				"val" : 100,
+				"description" : "{闪电弱点}\n受霹雳闪电，连锁闪电，末日审判伤害加倍",
+				"icon" : "spells/extraEffect/elecWeak.png"
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeEarth" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.earthElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeMagma" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.magmaElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeLava" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon05",
+				"val" : 100,
+				"description" : "{元素对立}\n对土元素，石元素，熔岩元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hateearth.png"
+			}
+		}
+	},
+	"core:stormElemental" :
+	{
+		"upgrades": ["nwCon02"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"meteorMDTImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.mdtMeteorWand",
+				"hidden": true
+			},
+			"lightingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.lightningBolt",
+				"val" : 100,
+				"hidden": true
+			},
+			"chainLightingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.chainLightning",
+				"val" : 100,
+				"description" : "{闪电弱点}\n受霹雳闪电，连锁闪电，末日审判伤害加倍",
+				"icon" : "spells/extraEffect/elecWeak.png"
+			},
+			"lightingMDTVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.mdtLightningboltWand",
+				"val" : 100,
+				"hidden": true
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeEarth" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.earthElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeMagma" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.magmaElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeLava" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon05",
+				"val" : 100,
+				"description" : "{元素对立}\n对土元素，石元素，熔岩元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hateearth.png"
+			}
+		}
+	},
+	"core:waterElemental" :
+	{
+		"upgrades": ["iceElemental","nwCon03"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"immuneToIceBolt" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.iceBolt",
+				"hidden": true
+			},
+			"immuneToFrostRing" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.frostRing",
+				"hidden": true
+			},
+			"fireballVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireball",
+				"val" : 100,
+				"hidden": true
+			},
+			"fireballMDTVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.mdtFireballWand",
+				"val" : 100,
+				"hidden": true
+			},
+			"infernoVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.inferno",
+				"val" : 100,
+				"hidden": true
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"hidden": true
+			},
+			"fireShieldVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 100,
+				"hidden": true
+			},
+			"fireWallVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireWallTrigger",
+				"val" : 100,
+				"description" : "{火系弱点}\n受火盾，火墙，火球，末日，地狱火伤害加倍",
+				"icon" : "spells/extraEffect/fireweak.png"
+			},
+			"oppositeFire" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.fireElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeEnergy" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.energyElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"oppositeElectrical" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon04",
+				"val" : 100,
+				"description" : "{元素对立}\n对火元素，烈火元素，电子元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hateenergy.png"
+			}
+		}
+	},
+	"core:iceElemental" :
+	{
+		"upgrades": ["nwCon03"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"immuneToIceBolt" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.iceBolt",
+				"hidden": true
+			},
+			"immuneToFrostRing" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.frostRing",
+				"hidden": true
+			},
+			"fireballMDTVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.mdtFireballWand",
+				"val" : 100,
+				"hidden": true
+			},
+			"fireballVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireball",
+				"val" : 100,
+				"hidden": true
+			},
+			"infernoVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.inferno",
+				"val" : 100,
+				"hidden": true
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"hidden": true
+			},
+			"fireShieldVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 100,
+				"hidden": true
+			},
+			"fireWallVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireWallTrigger",
+				"val" : 100,
+				"description" : "{火系弱点}\n受火盾，火墙，火球，末日，地狱火伤害加倍",
+				"icon" : "spells/extraEffect/fireweak.png"
+			},
+			"oppositeFire" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.fireElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeEnergy" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.energyElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"oppositeElectrical" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon04",
+				"val" : 100,
+				"description" : "{元素对立}\n对火元素，烈火元素，电子元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hateenergy.png"
+			}
+		}
+	},
+	"core:fireElemental" :
+	{
+		"upgrades": ["energyElemental","nwCon04"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"iceBoltVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.iceBolt",
+				"val" : 0,
+				"hidden": true
+			},
+			"frostRingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.frostRing",
+				"val" : 0,
+				"hidden": true
+			},
+			"waterWeaken" :
+			{
+                 "type" : "SPELL_DAMAGE_REDUCTION",
+                 "val" : -100,
+                 "subtype" : "spellSchool.water",
+				 "description" : "{水系弱点}\n受水系法术伤害加倍",
+				"icon" : "spells/extraEffect/waterweak.png"
+            },
+			"oppositeWater" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.waterElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeIce" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.iceElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeSea" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon03",
+				"val" : 100,
+				"description" : "{元素对立}\n对水元素，冰元素，海元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hateice.png"
+			}
+		}
+	},
+	"core:energyElemental" :
+	{
+		"upgrades": ["nwCon04"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"iceBoltVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.iceBolt",
+				"val" : 0,
+				"hidden": true
+			},
+			"frostRingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.frostRing",
+				"val" : 0,
+				"hidden": true
+			},
+			"waterWeaken" :
+			{
+                 "type" : "SPELL_DAMAGE_REDUCTION",
+                 "val" : -100,
+                 "subtype" : "spellSchool.water",
+				 "description" : "{水系弱点}\n受水系法术伤害加倍",
+				"icon" : "spells/extraEffect/waterweak.png"
+            },
+			"oppositeWater" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.waterElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeIce" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.iceElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeSea" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon03",
+				"val" : 100,
+				"description" : "{元素对立}\n对水元素，冰元素，海元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hateice.png"
+			}
+		}
+	},
+	"core:earthElemental" :
+	{
+		"upgrades": ["magmaElemental","nwCon05"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"lightingImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.lightningBolt",
+				"hidden": true
+			},
+			"chainLightingImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.chainLightning",
+				"hidden": true
+			},
+			"lightningMdtChainImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.mdtLightningboltWand",
+				"hidden" : true
+			},
+			"armageddonImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.armageddon",
+				"description" : "{魔法抗性}\n免疫霹雳闪电，连锁闪电和末日审判",
+				"icon" : "spells/extraEffect/ground.png"
+			},
+			"meteorShowerVulnerability" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.meteorShower",
+				"val" : 100,
+				"description" : "{害怕流星火雨}\n受流星火雨伤害加倍",
+				"icon" : "spells/extraEffect/earthWeak.png"
+			},
+			"meteorMDTVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.mdtMeteorWand",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeAir" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.airElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeStorm" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.stormElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeLightning" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon02",
+				"val" : 100,
+				"description" : "{元素对立}\n对气元素，雷元素，闪电元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hatestorm.png"
+			}
+		}
+	},
+	"core:magmaElemental" :
+	{
+		"upgrades": ["nwCon05"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"lightingImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.lightningBolt",
+				"hidden": true
+			},
+			"chainLightingImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.chainLightning",
+				"hidden": true
+			},
+			"lightningMdtChainImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.mdtLightningboltWand",
+				"hidden" : true
+			},
+			"armageddonImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.armageddon",
+				"description" : "{魔法抗性}\n免疫霹雳闪电，连锁闪电和末日审判",
+				"icon" : "spells/extraEffect/ground.png"
+			},
+			"meteorShowerVulnerability" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.meteorShower",
+				"val" : 100,
+				"description" : "{害怕流星火雨}\n受流星火雨伤害加倍",
+				"icon" : "spells/extraEffect/earthWeak.png"
+			},
+			"meteorMDTVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.mdtMeteorWand",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeAir" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.airElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeStorm" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.stormElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeLightning" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon02",
+				"val" : 100,
+				"description" : "{元素对立}\n对气元素，雷元素，闪电元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hatestorm.png"
+			}
+		}
+	},
+	"core:psychicElemental" :
+	{
+		"upgrades": ["magicElemental","nwCon06"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			}
+		}
+	},
+	"core:magicElemental" :
+	{
+		"upgrades": ["nwCon06"],
+		"abilities" :
+		{
+			"nonLiving" : 
+			{
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			}
+		}
+	},
+	"core:firebird" :
+	{
+		"upgrades": ["phoenix","nwCon07"]
+	},
+	"core:phoenix" :
+	{
+		"upgrades": ["nwCon07"]
+	}
+}

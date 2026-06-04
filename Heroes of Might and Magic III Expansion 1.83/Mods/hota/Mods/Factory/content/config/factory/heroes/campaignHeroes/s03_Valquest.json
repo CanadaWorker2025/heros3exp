@@ -1,0 +1,73 @@
+{
+	"s03_Valquest" :
+	{
+    "class": "factoryAClass",
+    "female" : false,
+	"special": true,
+		
+		"texts" :
+		{
+			"name" : "瓦尔奎斯特",
+			"biography" : "在沙漠中穿行的瓦尔奎斯特掌握着非常出色的医疗技术，目前他加入了卡斯托的阵营，并且将这个医疗技术传授给别人。虽然看起来是一个残忍的人，但他却对一些小动物有爱心。",
+			"specialty" :
+			{
+				"description" : "在急救术上每级得到5%的额外奖励。",
+				"tooltip" : "{First Aid}\r\n\r\nReceives a 5% per level bonus to First Aid skill.",
+				"name" : "急救术"
+			}
+		},
+
+		"images" :
+		{
+			"small" : "factory/heroes/special/HPS204_0.bmp",
+			"large" : "factory/heroes/special/HPL204_0.bmp",
+			"specialtyLarge" : "factory/heroes/05_Floribert/bigS.bmp",
+			"specialtySmall" : "factory/heroes/05_Floribert/smallS.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "firstAidTent",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "firstAid"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"firstAid" : {
+					"subtype" : "spell.firstAid",
+					"type" : "SPECIFIC_SPELL_POWER",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}
+	}
+}
+

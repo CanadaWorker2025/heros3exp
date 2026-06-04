@@ -1,0 +1,326 @@
+{
+	"hollowEye" : {
+		"type" : [ "HERO" ],
+		"slot" : "MISC",
+		"class" : "MAJOR",
+		"value" : 7500,
+		"bonuses" : {
+			"immune":
+			{
+				"subtype" : "spell.blind",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"sight":
+			{
+				"type" : "SIGHT_RADIUS",
+				"val" : 2,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"graphics" : {
+			"image" : "hota/supplementary/artifacts/hollowEye",
+			"map" : "hota/supplementary/artifacts/hollowEyeMap",
+			"scenarioBonus" : "hota/supplementary/artifacts/hollowEyeBonus"
+		},
+		"text" : {
+			"description" : "{空洞之眼}\r\n\r\n使英雄视野提升2格,并且免疫失明魔法的影响。",
+			"event" : "在黑暗的沼泽中探索很久的你终于发现了一个神秘的望远镜，你捡起它，希望它能够帮你走出这片无尽的沼泽。",
+			"name" : "空洞之眼"
+		}
+	},
+	"greatBattleBow" : {
+		"type" : [ "HERO" ],
+		"slot" : "MISC",
+		"class" : "MAJOR",
+		"value" : 7500,
+		"bonuses" : {
+			"archery":
+			{
+				"type" : "PERCENTAGE_DAMAGE_BOOST",
+				"subtype" : "damageTypeRanged",
+				"val" : 15,
+				"valueType" : "ADDITIVE_VALUE",
+				"limiters" : 
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"parameters" : [
+							"PERCENTAGE_DAMAGE_BOOST",
+							"damageTypeRanged",
+							{
+								"type" : "SECONDARY_SKILL",
+								"id" : "secondarySkill.archery"
+							}
+						]
+					}
+			}
+		},
+		"graphics" : {
+			"image" : "hota/supplementary/artifacts/greaterBow",
+			"map" : "hota/supplementary/artifacts/greaterBowMap",
+			"scenarioBonus" : "hota/supplementary/artifacts/greaterBowBonus"
+		},
+		"text" : {
+			"description" : "{巨大战弓}\r\n\r\n巨大战弓使英雄的箭术提升15%。",
+			"event" : "有一个弓箭手试图拉开这个巨大的战弓，可是他使出全身力气都不行，你路过之后，轻易地拉开战弓，让他目瞪口呆，他已经没有脸面要回这把弓了。",
+			"name" : "巨大战弓"
+		}
+	},
+	"fangOfTheLastScream" : {
+		"type" : [ "HERO" ],
+		"slot" : "RIGHT_HAND",
+		"class" : "MAJOR",
+		"value" : 7500,
+		"bonuses" : {
+			"attack":
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"bloodlust":
+			{
+				"type" : "SPECIAL_PECULIAR_ENCHANT",
+				"subtype" : "spell.bloodlust",
+				"addInfo" : 0
+			}
+		},
+		"graphics" : {
+			"image" : "hota/supplementary/artifacts/fangScream",
+			"map" : "hota/supplementary/artifacts/fangScreamMap",
+			"scenarioBonus" : "hota/supplementary/artifacts/fangScreamBonus"
+		},
+		"text" : {
+			"description" : "{尖叫之牙}\r\n\r\n佩戴尖叫之牙可以使英雄的攻击力+5，并使英雄拥有嗜血奇术的特长加成。",
+			"event" : "在黑暗的沼泽中探索很久的你终于发现了一个神秘的钢爪，你捡起它，希望它能够帮你斩断荆棘，化险为夷。",
+			"name" : "尖叫之牙"
+		}
+	},
+	"greatWoeOfTheCrawlers" : {
+		"class" : "RELIC",
+		"components" : [ "fangOfTheLastScream", "greatBattleBow", "hollowEye" ],
+		"graphics" : {
+			"image" : "hota/supplementary/artifacts/crawler",
+			"map" : "hota/supplementary/artifacts/crawlerMap",
+			"scenarioBonus" : "hota/supplementary/artifacts/crawlerBonus"
+		},
+		"slot" : "RIGHT_HAND",
+		"text" : {
+			"description" : "{爬行者之灾}\r\n\r\n爬行者之灾是帕克塔尔家族世代传承的宝物。拥有它可以使英雄的四项基本属性+3，所有要塞生物可以获得30%的伤害加成和2点速度。",
+			"event" : "漏出地面的尖爪让你以为这是某种野兽的残骸，而走近查看，你发现了爬行者之灾。这是帕克塔尔家族世代传承的宝物。",
+			"name" : "爬行者之灾"
+		},
+		"bonuses":
+		{
+			"attack":
+			{
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defence":
+			{
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"spellpower":
+			{
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"knowledge":
+			{
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"creatureDamage":
+			{ 
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageBoth",
+					"valueType" : "PERCENT_TO_BASE",
+					"val" : 30,
+					"limiters": [ {"type": "CREATURE_FACTION_LIMITER","parameters" : ["fortress"]} ]
+			},
+			"stackSpeed":
+			{
+				"type" : "STACKS_SPEED",
+				"val" : 2,
+				"valueType" : "BASE_NUMBER",
+				"limiters": [ {"type": "CREATURE_FACTION_LIMITER","parameters" : ["fortress"]} ]
+			}
+		},
+
+		"type" : [ "HERO" ],
+		"value" : 10000
+	},
+	"helmetAnduran" : {
+		"type" : [ "HERO" ],
+		"slot" : "HEAD",
+		"class" : "MAJOR",
+		"value" : 8000,
+		"bonuses" : {
+			"knowledge" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.knowledge",
+				"valueType" : "BASE_NUMBER",
+				"val" : 5
+			}
+		},
+		"graphics" : {
+			"image" : "hota/supplementary/artifacts/anHem",
+			"map" : "hota/supplementary/artifacts/andu1Map",
+			"scenarioBonus" : "hota/supplementary/artifacts/anduran1"
+		},
+		"text" : {
+			"description" : "{安杜兰头盔}\r\n\r\n佩戴有安杜兰头盔可以使英雄的知识+5。",
+			"event" : "听说安杜兰头盔是神圣骑士的装备，你捡起它，希望神圣的光芒可以护佑自己。",
+			"name" : "安杜兰头盔"
+		}
+	},
+	"swordAnduran" : {
+		"type" : [ "HERO" ],
+		"slot" : "RIGHT_HAND",
+		"class" : "MAJOR",
+		"value" : 8000,
+		"bonuses" : {
+			"attack":
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"graphics" : {
+			"image" : "hota/supplementary/artifacts/anSword",
+			"map" : "hota/supplementary/artifacts/andu2Map",
+			"scenarioBonus" : "hota/supplementary/artifacts/anduran2"
+		},
+		"text" : {
+			"description" : "{安杜兰之剑}\r\n\r\n持有安杜兰之剑可以使英雄的攻击力+5。",
+			"event" : "听说安杜兰之剑是神圣骑士的武器，你捡起它，希望神圣的光芒可以护佑自己。",
+			"name" : "安杜兰之剑"
+		}
+	},
+	"plateAnduran" : {
+		"type" : [ "HERO" ],
+		"slot" : "TORSO",
+		"class" : "MAJOR",
+		"value" : 8000,
+		"bonuses" : {
+			"spellpower":
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.spellpower",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"graphics" : {
+			"image" : "hota/supplementary/artifacts/anPlate",
+			"map" : "hota/supplementary/artifacts/andu3Map",
+			"scenarioBonus" : "hota/supplementary/artifacts/anduran3"
+		},
+		"text" : {
+			"description" : "{安杜兰胸甲}\r\n\r\n穿着安杜兰胸甲可以使英雄的力量+5。",
+			"event" : "听说安杜兰胸甲是神圣骑士的装备，你捡起它，希望神圣的光芒可以护佑自己。",
+			"name" : "安杜兰胸甲"
+		}
+	},
+	"shieldAnduran" : {
+		"type" : [ "HERO" ],
+		"slot" : "LEFT_HAND",
+		"class" : "MAJOR",
+		"value" : 8000,
+		"bonuses" : {
+			"defence":
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"graphics" : {
+			"image" : "hota/supplementary/artifacts/anShield",
+			"map" : "hota/supplementary/artifacts/andu4Map",
+			"scenarioBonus" : "hota/supplementary/artifacts/anduran4"
+		},
+		"text" : {
+			"description" : "{安杜兰盾牌}\r\n\r\n持有安杜兰盾牌可以使英雄的防御力+5。",
+			"event" : "听说安杜兰盾牌是神圣骑士的装备，你捡起它，希望神圣的光芒可以护佑自己。",
+			"name" : "安杜兰盾牌"
+		}
+	},
+	"garbAnduran" : {
+		"type" : [ "HERO" ],
+		"slot" : "LEFT_HAND",
+		"class" : "RELIC",
+		"components" : [ "helmetAnduran", "swordAnduran", "plateAnduran", "shieldAnduran" ],
+		"fusedComponents" : true,
+		"value" : 15000,
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defence" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"spellpower" : {
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"knowledge" : {
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"morale" : {
+				"type" : "MORALE",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"luck" : {
+				"type" : "LUCK",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"townPortal" : {
+				"subtype" : "spell.townPortal",
+				"type" : "SPELL",
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX"
+			}
+		},
+		"graphics" : {
+			"image" : "hota/supplementary/artifacts/anGarb",
+			"map" : "hota/supplementary/artifacts/andu5Map",
+			"scenarioBonus" : "hota/supplementary/artifacts/anduran5"
+		},
+		"text" : {
+			"description" : "{安杜兰战斗装束}\r\n\r\n持有安杜兰战斗装束可以使四项基本技能+5，士气和运气+3，且可以使用最高等级的{时空之门}魔法。",
+			"event" : "听说安杜兰战斗装束是神圣骑士的装备，你捡起它，希望神圣的光芒可以护佑自己。",
+			"name" : "安杜兰战斗装束"
+		}
+	}
+	
+}

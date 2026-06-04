@@ -1,0 +1,68 @@
+{
+	"a_dvRoakshar" :
+	{
+		"class" : "dvDeathlord",
+		"female" : false,
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/roakshar/Un32Offe.bmp",
+			"specialtyLarge" : "deathvalley/heroes/roakshar/Un44Offe.bmp",
+			"large" : "deathvalley/heroes/roakshar/RoaksharL.png",
+			"small" : "deathvalley/heroes/roakshar/RoaksharS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "boneHook",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "mums",
+				"max" : 7,
+				"min" : 5
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"offence" : {
+					"subtype" : "damageTypeMelee",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		},
+			
+		"texts" : {
+			"biography" : "洛克沙尔是一个英勇的猎人。当他受命领导一支军队时，他通常以一心一意的热情和凶猛的态度寻找敌人，这在所有国家都是无与伦比的。",
+			"name" : "洛克沙尔",
+			"specialty" : {
+				"description" : "在进攻术上每级得到5%的额外奖励。",
+				"tooltip" : "Receives a 5% per level bonus to Offence skill.",
+				"name" : "进攻术"
+			}
+		}
+	}
+}
+

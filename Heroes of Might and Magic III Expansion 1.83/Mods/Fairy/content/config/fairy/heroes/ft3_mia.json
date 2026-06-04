@@ -1,0 +1,69 @@
+{
+	"ftC_ftMia" :
+	{
+		"class" : "hunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "米娅",
+			"biography" : "据说米娅出生时就有着一种独特的魅力，人们都觉得和她在一起的时光很是美好。每当她在城里驻防时候，她和她的部队都会在市场上露面，而她离开的时候库房总是会变得丰盈。也因此她获得了议会首领的提名。",
+			"specialty" : 
+			{
+				"description" : "为王国每天额外提供350个金币。",
+				"tooltip" : "{Gold}\r\n\r\nIncreases kingdom's income by 350 gold per day.",
+				"name" : "+350个金币"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/malla/UN32Engi.png",
+			"specialtyLarge" : "fairy/heroes/malla/UN44Engi.png",
+			"large" : "fairy/heroes/malla/hpl289.png",
+			"small" : "fairy/heroes/malla/hps289.png"
+		},	
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ballista",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 7,
+				"min" : 4
+			},
+		],
+		
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}		
+		],
+			
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}
+	}
+}
+
+

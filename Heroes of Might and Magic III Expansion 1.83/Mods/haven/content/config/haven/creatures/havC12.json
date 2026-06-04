@@ -1,0 +1,148 @@
+{
+	"havC12":
+	{
+		"name" :
+		{
+			"plural" : "龙龟",
+			"singular" : "龙龟"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"faction" : "haven",
+		"aiValue" : 2163,
+		"attack" : 14,
+		"cost" :
+		{
+			"gold" : 1300
+			
+		},
+		"damage" :
+		{
+			 "max" : 22,
+			 "min" : 18
+		},
+		"defense" : 18,
+		"fightValue" : 2123,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav12.def",
+			"map" : "haven/map/AVWHAV12.def",
+			"iconSmall" : "haven/iconsSmall/port12S.bmp",
+			"iconLarge" : "haven/iconsBig/port12.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.60,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+	
+		},
+		"growth" : 2,	
+		"hitPoints" : 110,
+		"doubleWide" : true,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "CGORATTK.wav",			
+			"defend" : "CGORDFND.wav",
+			"killed" : "HYDRKILL.wav",
+			"move": "HYDRMOVE.wav",			
+			"wince": "HYDRWNCE.wav"
+		},
+		"speed" : 7,
+		"abilities" : 
+		{
+            "shield" : { "type" : "ENEMY_ATTACK_REDUCTION", "val" : 50 },
+			"fireBreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			"attackInWater" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"defenceInWater"  : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"speedInWater" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			}
+			
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_WALL_PENALTY"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			}
+		]
+	}
+}

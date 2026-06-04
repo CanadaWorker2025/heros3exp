@@ -1,0 +1,66 @@
+{
+	"ftO_Elrisa" :
+	{
+		"class" : "warden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "艾瑞莎",
+			"biography" : "在和平时期，艾瑞莎加入了元素魔法师公会，并且凭借出色的记忆力掌握了所有的初级魔法。然而随着花仙和元素城的分离，她很快成为了花仙王国中最出色的魔法教师。",
+			"specialty" :
+			{
+				"description" : "初始即掌握所有1级魔法。",
+				"tooltip" : "{Scribe}\r\n\r\nAll 1st level spells in spellbook.",
+				"name" : "神秘先知"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/suliss/Un32Scri.png",
+			"specialtyLarge" : "fairy/heroes/suliss/Un44Scri.png",
+			"large" : "fairy/heroes/suliss/hpl293.png",
+			"small" : "fairy/heroes/suliss/hps293.png",
+		},
+		
+		"spellbook" :
+		[
+			"viewEarth", "bloodlust", "cure", "curse", "dispel", "bless", "haste", "magicArrow", "protectFire", "protectWater", "shield", "slow", "summonBoat", "stoneSkin", "viewAir"		
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		"specialty" : { "bonuses" : {  } } // has expert fire magic as "specialty"
+				//specialty//???
+	}
+}
+
+

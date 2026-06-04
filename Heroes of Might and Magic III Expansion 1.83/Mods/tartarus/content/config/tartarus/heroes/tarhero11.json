@@ -1,0 +1,67 @@
+{
+	"tarhero11" :
+	{
+    "class": "taHeroM",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "莫莉塔",
+			"biography" : "能够掌握领导术的女妖寥寥无几，但莫莉塔是个例外。布莱德扎尔注意到了这个女妖的天赋，并建议她认真从事这项工作。现在莫莉塔是最受尊敬的女妖之一，堪比一位优秀的开拓者。其他女妖嫉妒她，但没有一个表现出来- 因为没人想成为一件新的冰雕作品。",
+			"specialty" :
+			{
+				"description" : "达到3级后提升女妖和冥河女妖的攻击力和防御力。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "女妖"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero11/skill11.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero11/skills11.bmp",
+			"large" : "tartarus/heroes/tarhero11/tarH11.bmp",
+			"small" : "tartarus/heroes/tarhero11/tarH11S.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"frostRing"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 4
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "tartarc5"
+		}
+	}
+}
+

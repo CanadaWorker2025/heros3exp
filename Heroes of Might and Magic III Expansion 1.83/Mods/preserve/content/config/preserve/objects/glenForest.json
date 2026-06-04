@@ -1,0 +1,88 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"glenForest" : 
+			{
+				"name" : "森林幽谷",
+				"aiValue" : 5000,
+				"templates" :
+				{
+					"normal" :
+					{
+						"animation" : "preserve/map/glenForest.def",
+						"visitableFrom" : [ "---", "+++","+++"], 
+						"mask" : [ "VVV", "VBB","VBA" ],
+						"allowedTerrains":[ "grass", "dirt", "swamp"]
+					}
+				},
+				"sounds": {
+					"ambient": ["LOOPGARD"]
+				},
+				"rmg" : {
+					"value"		: 3000,
+					"rarity"	: 30
+				},
+				"onGuardedMessage" : "{森林幽谷}\r\n\r\n你走进这片美丽的森林，想要坐下歇脚，可是你却看见森林深处闪着寒光的眼睛，或许那来自于一些野兽。你要驱赶这群野兽吗？",
+				"onVisitedMessage" : "{森林幽谷}\r\n\r\n你走进这片美丽的森林，聆听着清脆的鸟鸣声，看着美丽的风景，坐下野餐是个不错的考虑！没有喧闹声，没有烦心事，当然，也没有危险。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankWide",
+				"rewards" : [
+					{
+						"message" : "驱赶了所有的野兽后，你发现了很多财宝，同时还有不错的木材和矿石。",
+						"appearChance" : { "min" : 0, "max" : 40 },
+						"guards": [
+							{ "amount": 15, "type" : "caveleaper" },
+							{ "amount": 15, "type" : "caveleaper" },
+							{ "amount": 15, "type" : "caveleaper" },
+							{ "amount": 10, "type" : "misfortuneeye" },
+							{ "amount": 10, "type" : "misfortuneeye" }
+						], 
+							"resources": 
+							{
+								"gold" : 3000,
+								"wood": 10,
+								"ore": 10
+							}
+					},
+					{
+						"message" : "驱赶了所有的野兽后，你发现了很多财宝，同时还有不错的木材和矿石。",
+						"appearChance" : { "min" : 40, "max" : 70 },
+						"guards": [
+							{ "amount": 25, "type" : "caveleaper" },
+							{ "amount": 25, "type" : "caveleaper" },
+							{ "amount": 25, "type" : "caveleaper" },
+							{ "amount": 20, "type" : "misfortuneeye" },
+							{ "amount": 20, "type" : "misfortuneeye" }
+						], 
+							"resources": 
+							{
+								"gold" : 4000,
+								"wood": 15,
+								"ore": 15
+							}
+					},
+					{
+						"message" : "驱赶了所有的野兽后，你发现了很多财宝，同时还有不错的木材和矿石。",
+						"appearChance" : { "min" : 70, "max" : 100 },
+						"guards": [
+							{ "amount": 35, "type" : "caveleaper" },
+							{ "amount": 35, "type" : "caveleaper" },
+							{ "amount": 35, "type" : "caveleaper" },
+							{ "amount": 25, "type" : "misfortuneeye" },
+							{ "amount": 25, "type" : "misfortuneeye" }
+						], 
+							"resources": 
+							{
+								"gold" : 5000,
+								"wood": 20,
+								"ore": 20
+							}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"13manfred" : {
+		"class" : "navigator",
+		"images" : {
+			"large" : "hota/cove/heroes/manfred/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/manfred/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/manfred/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/manfred/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "fireMagic",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"fireball" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.fireball",
+					"val" : 3,
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		},
+		"spellbook" : [ "fireball" ],
+		"texts" : {
+			"biography" : "就算是海盗中的亡命之徒也会避免遇到这个外地人，曼弗雷德的来历不为人知，但是谁都知道他强大的能力--仅仅一挥手便可以让一艘战船着火。曼弗雷德的口音和脾气都令人害怕，除了让人敬畏的魔法能力，其他方面他实在是很不受欢迎。",
+			"name" : "曼弗雷德",
+			"specialty" : {
+				"tooltip" : "Spell Bonus: Fireball",
+				"name" : "连珠火球",
+				"description" : "使用连珠火球魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。"
+			}
+		}
+	}
+}

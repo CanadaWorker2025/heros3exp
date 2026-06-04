@@ -1,0 +1,120 @@
+{
+	"cupid" : {
+		"abilities" : { 
+			
+			"canFly" :
+				{ "type" : "FLYING" },
+			"immuneToMind" : 
+				{ "type" : "MIND_IMMUNITY" },
+			"nonLiving" : 
+				{ "type" : "GARGOYLE" },
+		},
+		"advMapAmount" : { "max" : 50, "min" : 20 },
+		"aiValue" : 75,
+		"attack" : 3,
+		"cost" : { "gold" : 70 },
+		"damage" : { "max" : 2, "min" : 1 },
+		"defense" : 6,
+		"faction" : "courtyard",
+		"fightValue" : 70,
+		"graphics" : {
+			"animation" : "courtyard/battle/CCupid.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"iconLarge" : "courtyard/icons/units/IcCupid101",
+			"iconSmall" : "courtyard/icons/units/IsCupid101",
+			"map" : "courtyard/map/lvl2unit.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 12,
+		"horde" : 6,
+		"hasDoubleWeek" : true,
+		"hitPoints" : 8,
+		"level" : 1,
+		"name" : { "plural" : "石雕傀儡", "singular" : "石雕傀儡" },
+		"sound" : {
+			"attack" : "courtyard/lvl2/CupidATTK.wav",
+			"defend" : "courtyard/lvl2/CupidDFND.wav",
+			"killed" : "courtyard/lvl2/CupidDEAD.wav",
+			"move" : "courtyard/lvl2/CupidMOVE.wav",
+			"wince" : "courtyard/lvl2/CupidWNCE.wav"
+		},
+		"speed" : 6,
+		"upgrades" : [ "graniteCupid" ]
+	},
+
+
+
+	"graniteCupid" : {
+		"abilities" : { 
+			
+			"canFly" :
+				{ "type" : "FLYING" },
+			"immuneToMind" : 
+				{ "type" : "MIND_IMMUNITY" },
+			"nonLiving" : 
+				{ "type" : "GARGOYLE" },
+			"stun" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stunAbility",
+					"val" : 20,
+					"addInfo" : [0, 2],
+					"icon" : "courtyard/icons/bonuses/stun.png"
+				},				
+		},
+		"advMapAmount" : { "max" : 30, "min" : 20 },
+		"aiValue" : 110,
+		"attack" : 3,
+		"cost" : { "gold" : 95 },
+		"damage" : { "max" : 3, "min" : 1 },
+		"defense" : 10,
+		"faction" : "courtyard",
+		"fightValue" : 110,
+		"graphics" : {
+			"animation" : "courtyard/battle/CAmor.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"iconLarge" : "courtyard/icons/units/IcCupid102",
+			"iconSmall" : "courtyard/icons/units/IsCupid102",
+			"map" : "courtyard/map/lvl2unitup.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 12,
+		"horde" : 6,
+		"hitPoints" : 11,
+		"level" : 1,
+		"name" : { "plural" : "岩雕傀儡", "singular" : "岩雕傀儡" },
+		"sound" : {
+			"attack" : "courtyard/lvl2/CupidATTK.wav",
+			"defend" : "courtyard/lvl2/CupidDFND.wav",
+			"killed" : "courtyard/lvl2/CupidDEAD.wav",
+			"move" : "courtyard/lvl2/CupidMOVE.wav",
+			"wince" : "courtyard/lvl2/CupidWNCE.wav"
+		},
+		"speed" : 9,
+	},
+	"core:masterGremlin" :
+	{
+		"abilities" :
+		{
+			"repair" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.reconstruction",
+				"val" : 2,
+				"icon" : "courtyard/icons/bonuses/repair.png",
+				"description" : "{修复}\n可以修复机械（5点生命值*数量）"
+			},
+			"castLength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.reconstruction",
+				"val" : 5
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}			
+		}		
+	}
+}

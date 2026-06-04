@@ -1,0 +1,143 @@
+{
+  "shadowmare": {
+    "name": {
+      "plural": "阴影兽",
+      "singular": "阴影兽"
+    },
+    "advMapAmount": {
+ "max" : 10,
+ "min" : 5
+    },
+    "faction": "asylum",
+    "aiValue": 2755,
+    "attack": 18,
+    "cost": {
+      "gold": 1300
+    },
+    "damage": {
+ "max" : 24,
+ "min" : 18
+    },
+    "defense": 19,
+    "fightValue": 2345,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST6U.def",
+      "map": "asylum/map/creatures/AVWC188.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS188Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL188Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide": true,
+    "growth": 2,
+    "hitPoints": 95,
+    "level": 6,
+    "sound": {
+      "attack": "asylum/CPU6ATTK.wav",
+      "defend": "asylum/CPU6DFND.wav",
+      "killed": "asylum/CPU6KILL.wav",
+      "move": "asylum/CPU6MOVE.wav",
+      "wince": "asylum/CPU6WNCE.wav"
+    },
+    "speed": 9,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.terrorEye",
+				"val" : 30,
+				"icon" : "NewOldSpells/terroreye.png"
+			},
+			"summons40HP" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.summonApps",
+				"val" : 40
+			},
+			"resurrects" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.summonApps",
+				"val" : 0,
+				"icon" : "NewOldSpells/summon.png"
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" : 
+				{  
+					"type" : "DEATH_STARE" 
+				},
+				"values" : [ 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : "spell.deathRipple", //deathRipple
+					"addInfo" : [3, 2]
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}
+		]
+    }
+  
+	}

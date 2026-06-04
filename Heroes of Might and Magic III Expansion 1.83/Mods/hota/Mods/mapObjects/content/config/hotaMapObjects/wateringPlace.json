@@ -1,0 +1,42 @@
+{
+	"wateringPlace" : {
+		"handler":"configurable",
+		"name" : "水洼",
+		"types" : {
+			"wateringPlace" : {
+				"aiValue" : 3000,
+				"rmg" : {
+					"value"		: 500,
+					"rarity" 	: 50,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["STORE"]
+				},
+				"rewards" : [
+					{
+						"message" : "{水洼}\r\n\r\n看起来这里可以好好休息一天，明天你的部队将更有精神，也可以行进更长的路程。你确定要在此休息一下吗？",
+						"movePercentage" : 0,
+						"bonuses" : [ { "type" : "MOVEMENT", "subtype" : "heroMovementLand",  "val" : 1000, "valueType" : "ADDITIVE_VALUE", "duration" : "N_DAYS", "turns" : 2} ],
+					}
+				],
+				"onVisitedMessage": "{水洼}\r\n\r\n现在这里没有水，请下周再来吧。",
+				"compatibilityIdentifiers" : [ "object" ],
+//				"onXXXMessage" : "{Watering Place}\r\n\r\nTroops are in a full blown recuperation mode. No chance of getting them into marching mood until tomorrow.",// TODO: when this message is used?
+				"canRefuse": true,
+				"visitMode" : "once",
+				"resetParameters" : {
+					"period" : 1,
+					"visitors" : true
+				},
+				"templates" : {
+					"avwtplce" : { "animation" : "hota/wateringPlace/avwtplce", 
+						"mask" : [  "VV","BA" ], 
+						"visitableFrom" : [ "---", "+++", "+++" ],
+						"allowedTerrains": [ "rough"]
+					}
+				}
+			}
+		}
+	}		
+}

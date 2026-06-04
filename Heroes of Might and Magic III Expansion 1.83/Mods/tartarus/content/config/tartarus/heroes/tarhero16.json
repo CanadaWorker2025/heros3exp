@@ -1,0 +1,73 @@
+{
+	"tarhero16" :
+	{
+    "class": "taHeroM",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "西格亚丝",
+			"biography" : "克里根人喜欢拿活人做实验。在西格亚丝身上的实验中，结合了两种互不相容的魔力——土和气。令恶魔都惊讶的是，她活了下来，尽管她抱怨自己有时会感到被撕裂的痛楚。此外，西格亚丝获得了从任何事物中吸取魔法的能力——她需要有规律的法力注入，这样这两种相反的力量就不会伤害她。",
+			"specialty" :
+			{
+				"description" : "可以在施法时降低2点魔法消耗，最少为1点。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "-2 魔法消耗"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero16/skill16.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero16/skills16.bmp",
+			"large" : "tartarus/heroes/tarhero16/tarH16.bmp",
+			"small" : "tartarus/heroes/tarhero16/tarH16S.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"teleport"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			}
+		],
+		
+		"specialty" : {
+		"bonuses" : {
+			"reduceSpellCost" : 
+			{
+				"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+				"val" :  2
+			}
+		}
+	}
+	}
+}
+

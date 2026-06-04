@@ -1,0 +1,55 @@
+{
+	"specialAthe" : {
+		"class" : "heretic",
+		"female" : true,
+		"special" : true,
+		"images" : {
+			"large" : "hota/inferno/heroes/special/icons/AtheB.png",
+			"small" : "hota/inferno/heroes/special/icons/AtheS.png",
+			"specialtyLarge" : "hota/inferno/heroes/special/icons/Un44Sorc",
+			"specialtySmall" : "hota/inferno/heroes/special/icons/Un32Sorc"
+		},
+		"spellbook" : [
+			"bloodlust"
+		],
+		"army" : [
+			{
+				"creature" : "imp",
+				"min" : 15,
+				"max" : 25
+			},
+			{
+				"creature" : "gog",
+				"min" : 5,
+				"max" : 8
+			},
+			{
+				"creature" : "hellHound",
+				"min" : 3,
+				"max" : 4
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "earthMagic",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"secondary" : "sorcery"
+		},
+		"texts" : {
+			"biography" : "阿斯不在乎自己的处境，也不在乎追随克里根恶魔能给她带来什么好处。在她眼里，所有生物都是平等的，无论是灯神、火怪、人类还是恶魔。",
+			"name" : "阿斯",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Sorcery",
+				"name" : "魔力",
+				"description" : "在魔力上每级获得5%的奖励。"
+			}
+		}
+	}
+}

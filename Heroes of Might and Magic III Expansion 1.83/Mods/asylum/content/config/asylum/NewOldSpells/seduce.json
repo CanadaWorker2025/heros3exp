@@ -1,0 +1,166 @@
+{
+	"seduce":
+	{
+		"type": "combat", 
+		"name": "沉睡魔咒",
+		"school":
+		{
+			"air": true,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"asylum": 50,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":[{"defName":"NewOldSpells/DreadEye.def","verticalPosition":"bottom"}]
+		},
+ 
+		"flags" : {"negative": true},
+		"counters" : {
+			"spell.berserk": true,
+			"spell.hypnotize": true
+		},
+ 
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.MIND_IMMUNITY" : "normal",
+				"bonus.NON_LIVING" : "normal",
+				"bonus.MECHANICAL" : "normal",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/Seduced.bmp",
+			"iconScroll": "NewOldSpells/Seduced1.bmp",
+			"iconScenarioBonus": "NewOldSpells/Seduced2.bmp",
+			"iconEffect": "NewOldSpells/Seduced3.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "HYPNOTIZ"
+		},
+		"targetType" : "LOCATION",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{沉睡魔咒}\r\n\r\n使范围内的敌人陷入沉眠。\n\n持续的时间为2回合。",
+	 
+				"cost": 25,
+				"range" : "0-1",
+				"effects":
+				{
+					"undead":
+					{
+						"type": "NOT_ACTIVE",
+						"duration": ["N_TURNS","UNTIL_BEING_ATTACKED"],
+						"turns": 2
+					},
+					"speed":
+					{
+						"type": "NO_RETALIATION",
+						"val": 0,
+						"duration": ["N_TURNS","UNTIL_BEING_ATTACKED"],
+						"turns": 2
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级沉睡魔咒}\r\n\r\n使范围内的敌人陷入沉眠。\n\n持续的时间为2回合。",
+	 
+				"cost": 25,
+	 
+				"range" : "0-1",
+				"effects":
+				{
+					"undead":
+					{
+						"type": "NOT_ACTIVE",
+						"duration": ["N_TURNS","UNTIL_BEING_ATTACKED"],
+						"turns": 2
+					},
+					"speed":
+					{
+						"type": "NO_RETALIATION",
+						"val": 0,
+						"duration": ["N_TURNS","UNTIL_BEING_ATTACKED"],
+						"turns": 2
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级沉睡魔咒}\r\n\r\n使范围内的敌人陷入沉眠。\n\n持续的时间为3回合。",
+	 
+				"cost": 25,
+				
+				"range" : "0-1",
+				"effects":
+				{
+					"undead":
+					{
+						"type": "NOT_ACTIVE",
+						"duration": ["N_TURNS","UNTIL_BEING_ATTACKED"],
+						"turns": 3
+					},
+					"speed":
+					{
+						"type": "NO_RETALIATION",
+						"val": 0,
+						"duration": ["N_TURNS","UNTIL_BEING_ATTACKED"],
+						"turns": 3
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级沉睡魔咒}\r\n\r\n使范围内的敌人陷入沉眠。\n\n范围是初级的2倍。持续的时间为5回合。",
+	 
+				"cost": 20,
+				"range" : "0-2",
+				"effects":
+				{
+					"undead":
+					{
+						"type": "NOT_ACTIVE",
+						"duration": ["N_TURNS","UNTIL_BEING_ATTACKED"],
+						"turns": 5
+					},
+					"speed":
+					{
+						"type": "NO_RETALIATION",
+						"val": 0,
+						"duration": ["N_TURNS","UNTIL_BEING_ATTACKED"],
+						"turns": 5
+					}
+				}
+			}
+		}
+	}
+ 
+}

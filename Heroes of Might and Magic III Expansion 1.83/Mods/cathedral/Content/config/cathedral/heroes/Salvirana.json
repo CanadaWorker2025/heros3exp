@@ -1,0 +1,59 @@
+{
+	"salvirana" :
+	{
+		"class" : "cthbishop",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/salvirana/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/salvirana/spec-large.bmp",
+			"large" : "cathedral/heroes/salvirana/portrait-large.bmp",
+			"small" : "cathedral/heroes/salvirana/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "法拉比克",
+			"biography" : "法拉比克曾是一位天使，在灾难中由于翅膀受到了灼伤，他再也不能飞翔，于是他将自己隐藏在黑色的长袍下，并伪装成一位牧师。当然，虽然不再能飞，他也不认为自己堕落了。因为他的心中永远向往着光明。",
+			"specialty" :
+			{
+				"description" : "使所属部队的生命上限提高5%,最小提升为1点。",
+				"tooltip" : "生命奖励",
+				"name" : "+5% 生命值"
+			}
+		},
+		"spellbook" :
+		[
+			"cure"
+		],
+		"specialty":
+		{
+			"bonuses": {
+				"health1": {
+					"type" : "STACK_HEALTH",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER"
+				},
+				"health2": {
+					"type" : "STACK_HEALTH",
+					"val" : 4,
+					"valueType" : "PERCENT_TO_BASE"
+				}	
+			}
+		}			
+	}
+}

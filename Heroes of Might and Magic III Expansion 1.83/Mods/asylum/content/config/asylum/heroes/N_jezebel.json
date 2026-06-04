@@ -1,0 +1,73 @@
+{
+	"n_jezebel" :
+	{
+    "class": "mentalist",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "耶茨贝尔",
+			"biography" : "耶茨贝尔从小被遗弃在恩洛斯的野蛮人部落，但是她一点也不愿意和粗鲁的野蛮人一起生活。而是一直希望离开那里去寻找心中更美的世界。然而，即使离开了野蛮人部落，她依然不知道何处才是理想的世界。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供1宝石。",
+				"tooltip" : "Resource bonus: gems",
+				"name" : "+1宝石"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/jezebel/UN32T209.bmp",
+			"specialtyLarge" : "asylum/heroes/jezebel/UN44T209.bmp",
+			"large" : "asylum/heroes/jezebel/HPL005MN.bmp",
+			"small" : "asylum/heroes/jezebel/HPS005MN.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"visions"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"gems" : {
+					"subtype" : "resource.gems",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}
+

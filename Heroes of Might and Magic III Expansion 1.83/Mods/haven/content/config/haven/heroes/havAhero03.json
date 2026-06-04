@@ -1,0 +1,60 @@
+{
+	"havAhero03" :
+	{
+		"class" : "havAhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "马森",
+			"biography" : "马森曾经受鱼人统领塔克的指派，去深海寻找一种神秘的生物龙龟。在驯服了这群怪物之后，他认为自己的实力足够与旧主塔克分庭抗礼。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "巨龟",
+				"description" : "达到6级以后提升巨龟和龙龟的攻击力和防御力。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero3/skill3S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero3/skill3.bmp",
+			"large" : "haven/heroes/havHero3/hero3.bmp",
+			"small" : "haven/heroes/havHero3/hero3S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "havC11"
+		}	
+	}
+}

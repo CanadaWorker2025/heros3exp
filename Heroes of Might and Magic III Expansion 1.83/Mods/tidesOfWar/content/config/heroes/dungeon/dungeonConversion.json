@@ -1,0 +1,326 @@
+{
+	"core:lorelei" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:arlach" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:dace" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:ajit" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:damacon" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:gunnar" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:synca" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:shakti" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:alamar" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:jaegar" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:malekith" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:jeddite" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:geon" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:deemer" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:sephinroth" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"core:darkstorn" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"mdtCollivea" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		},
+	"mdtGaluum" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun01","addInfo":	"creature.infernalTroglodyte"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.infernalTroglodyte","addInfo":	"creature.iDun01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.iDun02","addInfo":	"creature.harpyHag"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.harpyHag","addInfo":	"creature.iDun02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.evilEye","addInfo" : "creature.iDun03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun03","addInfo" : "creature.evilEye"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun04","addInfo" : "creature.medusaQueen"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.medusaQueen","addInfo" : "creature.iDun04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.minotaurKing","addInfo" : "creature.iDun05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun05","addInfo" : "creature.minotaurKing"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun06","addInfo" : "creature.scorpicore"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.scorpicore","addInfo" : "creature.iDun06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.iDun07","addInfo" : "creature.blackDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.blackDragon","addInfo" : "creature.iDun07"}}}
+		}
+}

@@ -1,0 +1,65 @@
+{
+
+	"bastille:h_craighill": {
+        "texts": {
+            "specialty": {
+                "name": "角斗士",
+                "description": "每5级提高角斗士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"bastille:d_austin": {
+		"specialty": {
+			"creature": "ballista",
+			"creatureLevel" : 5,
+			"stepSize" : 30
+		},
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+            }
+        }
+	},
+
+	"bastille:b_richmond": {
+        "texts": {
+            "specialty": {
+                "name": "雪雕",
+                "description": "每4级提高雪雕及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"bastille:f_gestalt": {
+        "texts": {
+            "specialty": {
+                "name": "狂暴者",
+                "description": "每3级提高狂暴者及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"bastille:c_harrigan": {
+        "texts": {
+            "specialty": {
+                "name": "标枪手",
+                "description": "每2级提高标枪手及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"bastille:a_daive": {
+		"specialty": {
+			"creature": "bdefender",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "守卫者",
+                "description": "每1级提高守卫者及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

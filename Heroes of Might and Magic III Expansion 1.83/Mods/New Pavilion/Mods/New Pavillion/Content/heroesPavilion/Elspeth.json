@@ -1,0 +1,75 @@
+{
+	"elspeth" :
+	{
+		"class" : "vizier",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "埃尔斯佩思",
+			"biography" : "埃尔斯佩思无数次地穿越无尽的沙漠，似乎对那里的一切秘密都了如指掌。他的所有部队似乎总是充满活力，洋溢着不为人知的力量，也许要感谢传说中那神圣的生命之泉？",
+			"specialty" :
+			{
+				"description" : "所带领的所有部队生命值上限增加5%，最小提升为1点。",
+				"tooltip" : "Hit points + 5%",
+				"name" : "生命之源"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/32Ankh.bmp",
+			"specialtyLarge" : "speciconsPavilion/44Ankh.bmp",
+			"large" : "heroportraitsPavilion/Elspeth.png",
+			"small" : "heroportraitsPavilion/ElspethSmall.png"
+		},
+ 
+		"army" :
+		[
+	{
+		"creature" : "whipper",
+		"max" : 25,
+		"min" : 18
+	},
+	{
+		"creature" : "wadjet",
+		"max" : 9,
+		"min" : 7
+	},
+	{
+		"creature" : "camelRider",
+		"max" : 7,
+		"min" : 4
+		}
+	],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		], 		
+        "specialty":
+		{
+			"bonuses": {
+				"health1": {
+					"type" : "STACK_HEALTH",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER"
+				},
+				"health2": {
+					"type" : "STACK_HEALTH",
+					"val" : 4,
+					"valueType" : "PERCENT_TO_BASE"
+				}	
+			}
+		}
+	}
+}
+
+

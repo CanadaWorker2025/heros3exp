@@ -1,0 +1,98 @@
+{
+	"summonJester":
+	{
+		"type": "combat", 
+		"name": "礼物信使",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 4,
+		"power": 10,
+		"defaultGainChance": 10, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"inferno" : 20,
+			"tower" : 18,
+			"dungeon" : 20,
+			"asylum": 20,
+			"conflux" : 10
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":["C05SPF0"]
+		},
+ 
+		"flags" : {
+			"indifferent": true
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/jesterSBook.bmp",
+			"iconScroll": "NewOldSpells/jesterScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/jesterScenero.bmp",
+			"iconEffect": "NewOldSpells/jester4.bmp"
+		},
+
+		"sounds": {
+			"cast": "SUMNELM"
+		},
+		"targetType" : "NO_TARGET",
+ 
+		"levels":
+		{
+			"base":{
+				"range" : "X",
+				"battleEffects":{
+					"summon":{
+						"exclusive":false,
+						"id":"asylum:jesterDeliver",
+						"permanent":false,
+						"type":"core:summon"
+					}
+				}
+			},
+			"none":
+			{
+				"description": "{礼物信使}\r\n\r\n召唤一队小丑信使，攻击后可以造成小范围内的爆炸。召唤数量取决于施法者的法力等级。",
+	 
+				"cost": 20,
+				"power": 5
+	 
+			},
+			"basic":
+			{
+				"description": "{初级礼物信使}\r\n\r\n召唤一队小丑信使，攻击后可以造成小范围内的爆炸。召唤数量取决于施法者的法力等级。",
+	 
+				"cost": 18,
+				"power": 5
+	 
+			},
+			"advanced":
+			{
+				"description": "{中级礼物信使}\r\n\r\n召唤一队小丑信使，攻击后可以造成小范围内的爆炸。召唤数量取决于施法者的法力等级。",
+	 
+				"cost": 18,
+				"power": 8
+	 
+			},
+			"expert":
+			{
+				"description": "{高级礼物信使}\r\n\r\n召唤一队小丑信使，攻击后可以造成小范围内的爆炸。召唤数量取决于施法者的法力等级。",
+	 
+				"cost": 16,
+				"power": 10,
+				"range": "X"
+	 
+			}
+		}
+	}
+ 
+}

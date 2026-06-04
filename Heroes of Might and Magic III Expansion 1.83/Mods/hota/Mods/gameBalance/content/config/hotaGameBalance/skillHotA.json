@@ -1,0 +1,150 @@
+{
+	"core:pathfinding" : {
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "ROUGH_TERRAIN_DISCOUNT",
+					"valueType" : "BASE_NUMBER"
+				},
+				"main2" : {
+					"type" : "BASE_TILE_MOVEMENT_COST",
+					"valueType" : "BASE_NUMBER"
+				},
+			}
+		},
+		"basic" : {
+			"description" : "{初级寻路术}\n\n初级寻路术可以降低英雄对于崎岖地形的移动惩罚，移动一格降低25点移动力，最低消耗为95点。",
+			"effects" : {
+				"main" : { "val" : 25 },
+				"main2" : { "val" : -5 },
+			}
+		},
+		"advanced" : {
+			"description" : "{中级寻路术}\n\n中级寻路术可以降低英雄对于崎岖地形的移动惩罚，移动一格降低50点移动力，最低消耗为90点。",
+			"effects" : {
+				"main" : { "val" : 50 },
+				"main2" : { "val" : -10 },
+			}
+		},
+		"expert" : {
+			"description" : "{高级寻路术}\n\n高级寻路术可以降低英雄对于崎岖地形的移动惩罚，移动一格降低75点移动力，最低消耗为85点。",
+			"effects" : {
+				"main" : { "val" : 75 },
+				"main2" : { "val" : -15 },
+			}
+		}
+	},
+	"core:ballistics" : {
+		"base" : {
+			"effects" : {
+				"damageCap" : {
+					"type" : "DAMAGE_RECEIVED_CAP",
+					"propagator" : "ARMY",
+					"limiters" : [{
+						"type" : "CREATURE_TYPE_LIMITER",
+						"creature" : "catapult"
+					}],
+					"valueType" : "INDEPENDENT_MIN"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{初级弹道术}\n\n初级弹道术可以给英雄控制投石车的能力。投石车可以发射一次，并且有更高的几率击中防御工事。任何单一伤害来源对其造成的伤害都不会超过其生命值的40%。",
+			"effects" : {
+				"damageCap" : { "val" : 40 }
+			}
+		},
+		"advanced" : {
+			"description" : "{中级弹道术}\n\n中级弹道术可以给英雄控制投石车的能力。投石车可以发射两次，并且有更高的几率击中防御工事。任何单一伤害来源对其造成的伤害都不会超过其生命值的40%。",
+			"effects" : {
+				"damageCap" : { "val" : 40 }
+			}
+		},
+		"expert" : {
+			"description" : "{高级弹道术}\n\n高级弹道术可以给英雄控制投石车的能力。投石车可以发射两次，并且{必定}击中选中的防御工事。任何单一伤害来源对其造成的伤害都不会超过其生命值的40%。",
+			"effects" : {
+				"damageCap" : { "val" : 40 }
+				}
+			}
+	},
+	"core:firstAid" : {
+		"base" : {
+			"effects" : {
+				"damageCap" : {
+					"type" : "DAMAGE_RECEIVED_CAP",
+					"propagator" : "ARMY",
+					"limiters" : [{
+						"type" : "CREATURE_TYPE_LIMITER",
+						"creature" : "firstAidTent"
+					}],
+					"valueType" : "INDEPENDENT_MIN"
+				},
+				"hitPointUp1" : {
+					"type" : "MORE_DAMAGE_FROM_SPELL",
+					"propagator" : "ARMY",
+					"hidden": true
+				}
+			}
+		},
+		"basic" : {
+			"effects" : {
+				"damageCap" : { "val" : 40 },
+				"hitPointUp1" : {
+					"subtype" : "bless",
+					"val" : 0,
+					"hidden": true
+				}
+			}
+		},
+		"advanced" : {
+			"effects" : {
+				"damageCap" : { "val" : 40 },
+				"hitPointUp1" : {
+					"subtype" : "slow",
+					"val" : 0,
+					"hidden": true
+				}
+			}
+		},
+		"expert" : {
+			"effects" : {
+				"damageCap" : { "val" : 40 },
+				"hitPointUp1" : {
+					"subtype" : "prayer",
+					"val" : 0,
+					"hidden": true
+				}
+			}
+		}
+	},
+	"core:artillery" : {
+		"base" : {
+			"effects" : {
+				"damageCap" : {
+					"type" : "DAMAGE_RECEIVED_CAP",
+					"propagator" : "ARMY",
+					"limiters" : [{
+						"type" : "CREATURE_TYPE_LIMITER",
+						"creature" : "ballista"
+					}],
+					"valueType" : "INDEPENDENT_MIN"
+				}
+			}
+		},
+		"basic" : {
+			"effects" : {
+				"damageCap" : { "val" : 40 }
+			}
+		},
+		"advanced" : {
+			"effects" : {
+				"damageCap" : { "val" : 40 }
+			}
+		},
+		"expert" : {
+			"effects" : {
+				"damageCap" : { "val" : 40 }
+			}
+		}
+	}
+}

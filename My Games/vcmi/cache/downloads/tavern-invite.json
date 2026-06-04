@@ -1,0 +1,38 @@
+{
+	"name" : "Invite hero",
+	"description" : "Possibility to invite hero in the tavern",
+	"version" : "1.0.1",
+	"author"  : "Laserlicht",
+	"contact" : "",
+	"modType" : "Mechanics",
+	"compatibility":
+	{
+		"min" : "1.5.0"
+	},
+	"changelog":
+	{
+		"1.0"   : ["Initial version"],
+		"1.0.1" : ["Czech translation by George King"]
+	},
+	"settings" : {
+		"heroes" : {
+			"tavernInvite" : true
+		}
+	},
+	"german" : {
+		"name" : "Helden einladen",
+		"description" : "Möglichkeit in der Taverne Helden einzuladen"
+	},
+	"czech" : {
+		"name" : "Pozvat hrdinu",
+		"description" : "Možnost pozvat hrdinu v Putyce."
+	},	
+	"chinese" : {
+		"name" : "邀请英雄",
+		"description" : "允许从酒馆里邀请英雄。"
+	},
+	"polish" : {
+		"name" : "Zaproś bohatera",
+		"description" : "Możliwość zapraszania bohaterów w tawernie."
+	}
+}

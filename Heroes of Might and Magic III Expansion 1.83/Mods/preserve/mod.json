@@ -1,0 +1,93 @@
+{
+	"name" : "Preserve Town",
+	"description" : "New town made by Turbanellos, The Forgotten Fields, avatar, acidchalk",
+	
+	"author" : "FF Team, mod : Turbanellos",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "1.1.6",
+	"modType" : "Town",	
+	"chinese" : {
+		"name" : "禁林（Preserve）",
+		"description" : "EXP中的禁林种族"
+	},
+    "factions" : [ "config/preserve/town" ],
+	
+	"creatures" :
+	[
+		"config/preserve/creatures/halflings.json",
+		"config/preserve/creatures/hobbit.json",
+		"config/preserve/creatures/treelurker.json",
+		"config/preserve/creatures/caveleaper.json",
+		"config/preserve/creatures/magiceye.json",
+		"config/preserve/creatures/misfortuneeye.json",
+		"config/preserve/creatures/foxdruid.json",
+		"config/preserve/creatures/highdruid.json",
+		"config/preserve/creatures/hippogryph.json",
+		"config/preserve/creatures/grimhippo.json",
+		"config/preserve/creatures/fairybear.json",
+		"config/preserve/creatures/mysticalbear.json",
+		"config/preserve/creatures/treant.json",
+		"config/preserve/creatures/ancienttreant.json",	
+		"config/preserve/creatures/zext1Raven.json",
+		"config/preserve/creatures/zext2Benu.json",
+		"config/preserve/creatures/fcommander.json"
+	],
+	
+	"heroClasses" :
+	[
+		"config/preserve/classes/guardian.json",
+		"config/preserve/classes/bard.json"
+	],
+
+	"heroes" :
+	[
+		"config/preserve/heroes/A_kulkin.json",
+		"config/preserve/heroes/B_julian.json",
+		"config/preserve/heroes/C_hanna.json",
+		"config/preserve/heroes/D_terence.json",
+		"config/preserve/heroes/E_niclas.json",
+		"config/preserve/heroes/F_ceretus.json",
+		"config/preserve/heroes/G_agnes.json",
+		"config/preserve/heroes/H_lorenzo.json",
+		"config/preserve/heroes/I_anastasia.json",
+		"config/preserve/heroes/J_pamela.json",
+		"config/preserve/heroes/K_polly.json",
+		"config/preserve/heroes/L_ken.json",
+		"config/preserve/heroes/M_wildhayen.json",
+		"config/preserve/heroes/N_belinda.json",
+		"config/preserve/heroes/O_karen.json",
+		"config/preserve/heroes/P_renata.json",
+		"config/preserve/heroes/S_Aegrenal.json"
+		//"config/preserve/classes/HeroNeutralConversion.json"
+	],
+	"spells" :
+	[
+		"config/preserve/NewOldSpells/wolverineHeart.json",
+		"config/preserve/NewOldSpells/scout.json",
+		"config/preserve/NewOldSpells/symbiosis.json",
+		"config/preserve/NewOldSpells/leshyBolt.json",
+		"config/preserve/NewOldSpells/mantisReduce.json",
+		"config/preserve/NewOldSpells/symbActive.json",
+		"config/preserve/NewOldSpells/choir.json",
+		"config/preserve/NewOldSpells/forestPower.json",
+		"config/preserve/NewOldSpells/summonRaven.json"
+	],
+	"skills" : [
+		"config/preserve/skills/luck.json"
+	],
+	 "objects":
+    [
+		"config/preserve/dwellings.json",
+		"config/preserve/objects/glenForest.json",
+		"config/preserve/objects/mysticalBearBonus.json"
+    ],
+	"changelog" :
+    {
+        "1.1.6"   : [ "Partial special building support" ],
+		"1.1.5"   : [ "New abilities and animations" ],
+		"1.1.2"   : [ "Small bug fixes", "New puzzle by acidchalk" ],
+		"1.1.1"   : [  "Upgaded graphic", "Hero males and female sprites on the battlefields", "Bug fixes" ],
+		"1.1.0"   : [ "Bug fixes" ],
+		"1.0.0"   : [ "Initial release" ]
+    }
+}

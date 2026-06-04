@@ -1,0 +1,46 @@
+{
+	"name" : "Ukrainian translation",
+	"description" : "Ukrainian translation of Heroes of Might and Magic III: Complete Edition",
+	"modType" : "Translation",
+	"version" : "1.4.6",
+	"author" : "translation: Localize Team Hurtom, VCMI port: Ivan",
+	"contact" : "https://vcmi.eu/",
+	
+	"changelog" : {
+		"1.4.6" : [
+			"Виправлено назви деяких міст",
+			"Перейменовано фракцію Колонія на Злиття Стихій"
+		],
+		"1.4.5" : [
+			"Додано переклад Хронік Героїв",
+			"Вилучено шрифти з моду на користь вбудованих шрифтів VCMI"
+		],
+		"1.4.4" : [
+			"Виправлено описи кузні у містах",
+			"Виправлено назви деяких міст",
+			"полурослики -> напіврослики"
+		],
+		"1.4.3" : [
+			"Виправлена велика кількість помилок у описах спеціалізацій героїв",
+			"Назви деяких міст тепер перекладені, а не транслітеровані",
+			"Halflings тепер звуться полуросликами, а не халфінгами"
+		]
+	},
+	
+	"ukrainian" : {
+		"name" : "Український переклад",
+		"author" : "Переклад: Localize Team Hurtom, VCMI версія: Ivan",
+		"description" : "Українізатор гри Heroes of Might and Magic III: Complete Edition"
+	},
+	
+	"compatibility" : {
+		"min" : "1.2"
+	},
+	
+	"language" : "ukrainian",
+	"translations" : [
+		"config/vcmi-mod-ce-ukr/game.json",
+		"config/vcmi-mod-ce-ukr/maps.json",
+		"config/vcmi-mod-ce-ukr/campaigns.json"
+	]
+}

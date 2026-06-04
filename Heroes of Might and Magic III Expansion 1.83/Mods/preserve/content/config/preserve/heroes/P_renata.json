@@ -1,0 +1,83 @@
+{
+	"p_renata" :
+	{
+		"class" : "bard",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "蕾娜塔",
+			"biography" : "外表看起来蕾娜塔是个乐观而又活泼的女子，和她在一起的人都会觉得她能够带来喜悦的气氛。但是这并不代表她没有悲伤的往事。夜深之时有人会看到她独自弹奏曲子，寄予思念她从小失散的妹妹，琳恩。",
+			"specialty" :
+			{
+				"description" : "作战开场即施放欢欣鼓舞魔法。",
+				"tooltip" : "Bonus: spell",
+				"name" : "欢欣鼓舞"
+			}
+		},
+
+    "images": {
+      "specialtySmall": "preserve/heroes/renata/UN32T195.bmp",
+      "specialtyLarge": "preserve/heroes/renata/UN44T195.bmp",
+      "large": "preserve/heroes/renata/HPL007BR.bmp",
+      "small": "preserve/heroes/renata/HPS007BR.bmp"
+    },
+    
+    "spellbook" :
+		[
+			"mirth"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 7,
+				"min" : 6
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			}
+		],
+		"specialty": 
+		{
+			"bonuses":
+			{
+				"choir":
+				{
+					"type": "OPENING_BATTLE_SPELL",
+					"subtype": "spell.mirth",
+					"val" : 3,
+					"valueType" : "BASE_NUMBER"
+				},
+				"bind" : 
+				{
+				"subtype" : "spell.mirth",
+				"type" : "SPELL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+				}
+			}
+		}
+	}
+}
+
+

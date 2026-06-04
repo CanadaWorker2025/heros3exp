@@ -1,0 +1,16 @@
+{
+	"bluebottle" : {
+		"handler":"generic",
+		"name" : "水母",
+		"types" : {
+			"bluebottle" : {
+				"templates" : {
+					"Portu" : { "animation" : "hota/bluebottle/Portu", 
+						"mask" : [ "VV", "VV" ],
+						"allowedTerrains": [ "water"]
+					}
+				}
+			}
+		}
+	}
+}

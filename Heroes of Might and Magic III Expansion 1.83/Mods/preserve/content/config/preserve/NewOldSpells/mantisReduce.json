@@ -1,0 +1,92 @@
+//Symbiosis Ability for grim hippogryph whose function is resurrect or cure Treant and Ancient Treant by a troop of grim hippogryph
+{
+	"mantisReduce":
+	{
+		"type": "ability",
+		"name": "破甲弱化",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 1,
+		"power": 10,
+		"defaultGainChance": 0,
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+		"animation":{
+			"affect":[{"defName":"NewOldSpells/mantisReduce.def"}]
+		},
+
+		"flags" : {"negative": true, "nonMagical":true},
+
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/USELESS.bmp",
+			"iconScroll": "NewOldSpells/USELESS2.bmp",
+			"iconScenarioBonus": "NewOldSpells/USELESS3.bmp",
+			"iconEffect": "NewOldSpells/IN6.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "SLAYER"
+		},
+		"targetType" : "CREATURE",
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+
+				"description": "{破甲弱化}\r\n\r\n击中单位时，目标会多受到20%的物理攻击伤害。",
+
+				"cost": 0,
+
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"effects":
+				{
+					"mantisEffect" :
+					{
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val" : -20,
+						"duration" : "N_TURNS",
+						"turns": 3
+					},
+				}
+			},
+			"none":
+			{
+
+			},
+			"basic":
+			{
+
+			},
+			"advanced":
+			{
+
+			},
+			"expert":
+			{
+
+			}
+		}
+	}
+}

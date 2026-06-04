@@ -1,0 +1,193 @@
+{
+	"tartskill1":
+	{
+		"type": "ability", 
+		"name": "恶魔之力",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":[{"defName":"NewOldSpells/TARSKILL1.def"}]
+		},
+ 
+		"flags" : {"positive": true, "persistent" : true},
+ 
+		"targetCondition" : {
+			"anyOf" :
+			{
+				"creature.imp":"absolute",
+				"creature.familiar":"absolute",
+				"creature.gog":"absolute",
+				"creature.magog":"absolute",
+				"creature.hellHound":"absolute",
+				"creature.cerberus":"absolute",
+				"creature.demon":"absolute",
+				"creature.hornedDemon":"absolute",
+				"creature.pitFiend":"absolute",
+				"creature.pitLord":"absolute",
+				"creature.efreet":"absolute",
+				"creature.efreetSultan":"absolute",
+				"creature.devil":"absolute",
+				"creature.archDevil":"absolute",
+				"tidesofwar:creature.mdtSukkub":"absolute",//need tides of war
+				"tidesofwar:creature.mdtLilim":"absolute",
+				"tidesofwar:creature.ifDark01":"absolute",
+				"tidesofwar:creature.ifDark02":"absolute",
+				"tidesofwar:creature.ifDark03":"absolute",
+				"tidesofwar:creature.ifDark04":"absolute",
+				"tidesofwar:creature.ifDark05":"absolute",
+				"tidesofwar:creature.ifDark06":"absolute",
+				"tidesofwar:creature.ifDark07":"absolute",
+				"tartarus:creature.tartarc1":"absolute",
+				"tartarus:creature.tartarc2":"absolute",
+				"tartarus:creature.tartarc3":"absolute",
+				"tartarus:creature.tartarc4":"absolute",
+				"tartarus:creature.tartarc5":"absolute",
+				"tartarus:creature.tartarc6":"absolute",
+				"tartarus:creature.tartarc7":"absolute",
+				"tartarus:creature.tartarc8":"absolute",
+				"tartarus:creature.tartarc9":"absolute",
+				"tartarus:creature.tartarc10":"absolute",
+				"tartarus:creature.tartarca":"absolute",
+				"tartarus:creature.tartarcab":"absolute",
+				"tartarus:creature.tartarcc":"absolute",
+				"tartarus:creature.tartarcd":"absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/Useless1.bmp",
+			"iconScroll": "NewOldSpells/Useless2.bmp",
+			"iconScenarioBonus": "NewOldSpells/Useless3.bmp",
+			"iconEffect": "NewOldSpells/skill2.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "REMOVEOB"
+		},
+		"targetType" : "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{初级恶魔血统}\r\n\r\n使恶魔生物攻击+1，防御+1。",
+	 
+				"cost": 0,
+				"range" : "X",
+	 
+				"effects" : 
+				{
+					"attack" : {
+						"val" : 1,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "PERMANENT"
+					},
+					"defence" : {
+						"val" : 1,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "PERMANENT"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级恶魔血统}\r\n\r\n使恶魔生物攻击+1，防御+1。",
+	 
+				"cost": 0,
+				"range" : "X",
+	 
+				"effects" : 
+				{
+					"attack" : {
+						"val" : 1,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "PERMANENT"
+					},
+					"defence" : {
+						"val" : 1,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "PERMANENT"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{初级恶魔血统}\r\n\r\n使恶魔生物攻击+1，防御+1。",
+	 
+				"cost": 0,
+				"range" : "X",
+	 
+				"effects" : 
+				{
+					"attack" : {
+						"val" : 1,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "PERMANENT"
+					},
+					"defence" : {
+						"val" : 1,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "PERMANENT"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{初级恶魔血统}\r\n\r\n使恶魔生物攻击+1，防御+1。",
+	 
+				"cost": 0,
+				"range" : "X",
+	 
+				"effects" : 
+				{
+					"attack" : {
+						"val" : 1,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"duration" : "PERMANENT"
+					},
+					"defence" : {
+						"val" : 1,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"duration" : "PERMANENT"
+					}
+				}
+			}
+		}
+	}
+ 
+}

@@ -1,0 +1,51 @@
+{
+	"tark" : {
+		"class" : "captain",
+		"special" : true,
+		"images" : {
+			"large" : "hota/cove/heroes/tark/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/tark/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/tark/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/tark/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nix",
+				"min": 1,
+				"max": 1
+			},
+			{
+				"creature": "nix",
+				"min": 1,
+				"max": 1
+			},
+			{
+				"creature": "nix",
+				"min": 1,
+				"max": 1
+			}
+		],
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "basic"
+			},
+			{
+				"skill": "armorer",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"creature" : "hota.cove:nix"
+		},
+		"texts" : {
+			"biography" : "塔克的种族非常神秘，以致于很长时间人们都认为它们已经灭绝。作为神秘的鱼人族王子，塔克希望复兴自己的种族并且找到强大的盟友。而海盗们的强大已经证明了他们是可以依靠的。塔克像所有的鱼人一样精通于两栖作战，他也是所有鱼人崇拜和努力的榜样。",
+			"name" : "塔克",
+			"specialty" : {
+				"tooltip" : "Creature Bonus: Nix",
+				"name" : "鱼人",
+				"description" : "达到6级以后提高鱼人和鱼人勇士的攻击力与防御力。"
+			}
+		}
+	}
+}

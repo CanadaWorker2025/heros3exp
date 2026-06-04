@@ -1,0 +1,147 @@
+{
+	"mdtVampirism":
+	{
+		"type": "combat", 
+		"name": "吸血鬼之触",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 2, 
+		"gainChance" :
+		{
+			"necropolis" : 12,
+			"conflux" : 0		
+		},
+ 
+		"animation":{
+			"affect": ["spells/vampirism/SP_VAMPIRISM.def"]
+		},
+ 
+		"flags" : {"positive": true},
+ 
+		"targetCondition" : {
+			"noneOf" : {
+				"core:bonus.LIFE_DRAIN": "absolute",
+				"bonus.NON_LIVING" : "normal",
+				"core:bonus.GARGOYLE": "normal",
+				"core:bonus.SIEGE_WEAPON": "absolute",
+				"core:bonus.MECHANICAL": "normal"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "spells/vampirism/vampirism_iconBook.bmp",
+			"iconScroll": "spells/vampirism/vampirism_iconScroll.bmp",
+			"iconScenarioBonus": "spells/vampirism/vampirism_iconScenarioBonus.bmp",
+			"iconEffect": "spells/vampirism/vampirism_iconEffect.bmp"
+		},
+
+		"sounds":
+		{
+			"cast":"spells/vampirism/spell-vampirism.wav"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0",
+				"power": 10,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"description": "{吸血鬼之触}\r\n\r\n己方选定部队获得吸血能力，吸取的生命值为攻击伤害的20%。",	 
+				"cost": 15,				
+				"battleEffects" : {
+					"vampirismEffect" :
+					{
+						"type": "core:timed",
+						"cumulative": false,
+						"bonus":
+						{
+							"lifeDrain":
+							{
+								"type": "LIFE_DRAIN",
+								"val" : 20,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				}
+			},
+			"none":
+			{
+				"cost" : 20
+			},
+			"basic":
+			{
+				"description": "{初级吸血鬼之触}\r\n\r\n己方选定部队获得吸血能力，吸取的生命值为攻击伤害的30%。",
+	 
+				"cost": 18,			
+				"battleEffects" : {
+					"vampirismEffect" :
+					{
+						"type": "core:timed",
+						"cumulative": false,
+						"bonus":
+						{
+							"lifeDrain":
+							{
+								"val" : 30
+							}
+						}
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级吸血鬼之触}\r\n\r\n己方选定部队获得吸血能力，吸取的生命值为攻击伤害的40%。",
+	 
+				"cost": 18,		
+				"battleEffects" : {
+					"vampirismEffect" :
+					{
+						"type": "core:timed",
+						"cumulative": false,
+						"bonus":
+						{
+							"lifeDrain":
+							{
+								"val" : 40
+							}
+						}
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级吸血鬼之触}\r\n\r\n己方选定部队获得吸血能力，吸取的生命值为攻击伤害的50%。",
+	 
+				"cost": 18,		
+				"battleEffects" : {
+					"vampirismEffect" :
+					{
+						"type": "core:timed",
+						"cumulative": false,
+						"bonus":
+						{
+							"lifeDrain":
+							{
+								"val" : 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

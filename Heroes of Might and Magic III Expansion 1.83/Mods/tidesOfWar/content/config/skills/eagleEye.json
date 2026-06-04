@@ -1,0 +1,74 @@
+{
+  "core:eagleEye": {
+    "base": {
+      "effects": {
+        "xtra": {
+          "type": "CHANGES_SPELL_COST_FOR_ENEMY"
+        }
+      }
+    },
+
+    "basic": {
+      "description": "{初级鹰眼术}\n\n掌握鹰眼术的英雄可以40%几率在战斗中习得2级以下魔法。并使对方英雄的施法消耗+1。且可以破除对方的初级法术抑制。",
+      "effects": {
+        "xtra": {
+          "val": 1
+        },
+		"eyeimmume1" : {
+				"subtype" : "spell.blockBas",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+      }
+    },
+
+    "advanced": {
+      "description": "{中级鹰眼术}\n\n掌握鹰眼术的英雄可以50%几率在战斗中习得3级以下魔法。并使对方英雄的施法消耗+2。且可以破除对方的中级法术抑制。",
+      "effects": {
+        "xtra": {
+          "val": 2
+        },
+		"eyeimmume1" : {
+				"subtype" : "spell.blockBas",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"eyeimmume2" : {
+				"subtype" : "spell.blockAdv",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+      }
+    },
+
+    "expert": {
+      "description": "{高级鹰眼术}\n\n掌握鹰眼术的英雄可以60%几率在战斗中习得4级以下魔法。并使对方英雄的施法消耗+3。且可以破除对方的高级法术抑制。",
+      "effects": {
+        "xtra": {
+          "val": 3
+        },
+		"eyeimmume1" : {
+				"subtype" : "spell.blockBas",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"eyeimmume2" : {
+				"subtype" : "spell.blockAdv",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"eyeimmume3" : {
+				"subtype" : "spell.blockExp",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+      }
+    }
+  }
+}

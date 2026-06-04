@@ -1,0 +1,113 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"mdtScriptorium" : 
+			{
+				"name" : "书院",
+				"aiValue" : 4000,
+				"templates" :
+				{
+					"base" :
+					{
+						"animation" : "banks/scriptorium.def", 
+						"visitableFrom" : [ "---", "-+-", "+++" ], 
+						"mask" : [ "VVV", "VVV", "BAB"]						
+					}
+				},
+				"sounds": {
+					"ambient": ["dwellings/banks/SCRIPTORIUMLOOP"]
+				},
+				"rmg" : {
+					"value"		: 2500,
+					"rarity"	: 100
+				},
+				"onGuardedMessage" : "{书院}\r\n\r\n你发现一间修道院，这里存放着很多古老的经文，修道士也欢迎你和他们一起研习。但此时你并没有这些兴趣，而是记挂起这圣殿中神坛前的贡品，但你终究要战胜自己的良心。你确信要这么做吗？",
+				"onVisitedMessage" : "{书院}\r\n\r\n这间修道院曾经护佑着附近的村庄，但由于强盗劫掠了这里，修道士和周围的居民都搬走了。这里什么都没有剩下，那些强盗甚至拿走了墙上的挂毯。你想不到什么样邪恶的强盗会抢劫这神圣的地方？",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "在将所有修道士和信徒们都赶走之后，你大摇大摆地进入神坛，拿走了所有的贡品，并且撕下了华丽的挂毯。但对于他们诵读的经文，你没有什么兴趣，除了那本记载了魔法的羊皮卷轴。",
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 10, "type" : "monk" },
+							{ "amount": 10, "type" : "monk" },
+							{ "amount": 10, "type" : "monk", "upgradeChance": 50 },
+							{ "amount": 10, "type" : "monk" },
+							{ "amount": 10, "type" : "monk" }
+						],
+							"resources": 
+							{
+								"gold" : 4000,
+								"gems" : 2
+							},
+							"spells" : [ { "level" : 2 } ]
+					},
+					{
+						"message" : "在将所有修道士和信徒们都赶走之后，你大摇大摆地进入神坛，拿走了所有的贡品，并且撕下了华丽的挂毯。但对于他们诵读的经文，你没有什么兴趣，除了那本记载了魔法的羊皮卷轴。",
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 15, "type" : "monk" },
+							{ "amount": 15, "type" : "monk" },
+							{ "amount": 15, "type" : "monk", "upgradeChance": 50 },
+							{ "amount": 15, "type" : "monk" },
+							{ "amount": 15, "type" : "monk" }
+						],
+							"resources": 
+							{
+								"gold" : 5000,
+								"gems" : 3,
+								"crystal" : 3
+							},
+							"spells" : [ { "level" : 2 } ],
+							"artifacts": [ { "class" : "MINOR" } ]
+					},
+					{
+						"message" : "在将所有修道士和信徒们都赶走之后，你大摇大摆地进入神坛，拿走了所有的贡品，并且撕下了华丽的挂毯。但对于他们诵读的经文，你没有什么兴趣，除了那本记载了魔法的羊皮卷轴。",
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 20, "type" : "monk" },
+							{ "amount": 20, "type" : "monk" },
+							{ "amount": 20, "type" : "monk", "upgradeChance": 50 },
+							{ "amount": 20, "type" : "monk" },
+							{ "amount": 20, "type" : "monk" }
+						],
+							"resources": 
+							{
+								"gold" : 6000,
+								"gems" : 5,
+								"crystal" : 5,
+								"sulfur" : 5
+							},
+							"spells" : [ { "level" : 3 } ],
+							"artifacts": [ { "class" : "MINOR" },{ "class" : "MINOR" } ]
+					},
+					{
+						"message" : "在将所有修道士和信徒们都赶走之后，你大摇大摆地进入神坛，拿走了所有的贡品，并且撕下了华丽的挂毯。但对于他们诵读的经文，你没有什么兴趣，除了那本记载了魔法的羊皮卷轴。",
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 30, "type" : "monk" },
+							{ "amount": 30, "type" : "monk" },
+							{ "amount": 30, "type" : "monk", "upgradeChance": 50 },
+							{ "amount": 30, "type" : "monk" },
+							{ "amount": 30, "type" : "monk" }
+						],
+							"resources": 
+							{
+								"gold" : 7500,
+								"gems" : 7,
+								"crystal" : 7,
+								"sulfur" : 7,
+								"mercury" : 7
+							},
+							"spells" : [ { "level" : 3 } ],
+							"artifacts": [ { "class" : "MAJOR" },{ "class" : "MINOR" } ]
+					}
+				]
+			}
+		}
+	}
+}

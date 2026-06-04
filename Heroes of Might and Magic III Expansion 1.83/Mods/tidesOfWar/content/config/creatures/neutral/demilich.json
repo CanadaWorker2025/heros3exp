@@ -1,0 +1,147 @@
+{
+	"mdtDemilich":
+	{
+		"name" :
+		{
+			"plural" : "半巫妖",
+			"singular" : "半巫妖"
+		},
+		"faction" : "neutral",
+		"special" : true,		
+		"advMapAmount" :
+		{
+			 "min" : 5,
+			 "max" : 12
+		},
+		"level" : 6,
+		"attack" : 15,
+		"defense" : 11,
+		"damage" :
+		{
+			 "min" : 15,
+			 "max" : 20
+		},
+		"growth" : 2,
+		"hitPoints" : 75,
+		"speed" : 11,
+		"fightValue" : 1882,
+		"aiValue" : 1396,
+		"cost" :
+		{
+			"gold" : 1000
+		},
+		"hasDoubleWeek": false,
+		"doubleWide" : false,
+		"graphics" :
+		{
+			"animation" : "creatures/neutral/battle/CDemil.def",
+			"map" : "creatures/neutral/map/demilichmap.def",
+			"iconSmall" : "creatures/neutral/iconsSmall/demilichS.png",
+			"iconLarge" : "creatures/neutral/iconsBig/demilichB.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.9,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "creatures/neutral/demilich/DMLCATTK.wav",
+			"defend": "creatures/neutral/demilich/DMLCDFND.wav",
+			"killed": "creatures/neutral/demilich/DMLCDEAD.wav",
+			"move": "creatures/neutral/demilich/DMLCMOVE.wav",
+			"wince": "creatures/neutral/demilich/DMLCWNCE.wav"
+        },
+		"abilities" :
+		{
+			"undead" : 
+			{ 
+				"type" : "UNDEAD"
+			},
+			"canFly" : 
+			{ 
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly3.png"
+			},
+			"destruction" : 
+			{ 
+				"type" : "DESTRUCTION",
+				"subtype" : "destructionKillPercentage",
+				"val" : 10,
+				"addInfo" : 50
+			}
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SUMMON_GUARDIANS",
+					"subtype" :  "creature.wight"
+				},
+				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY",				
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.poison",
+					"addInfo" : [0, 2] //71 - poison
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : "spell.deathRipple",
+					"addInfo" : [0, 2] //advanced, only when shooting
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}
+		]
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"tarability7":
+	{
+		"type": "ability", 
+		"name": "冰尖柱",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":[{"defName":"NewOldSpells/TASPIK.def","verticalPosition":"bottom"}]
+		},
+ 
+		"flags" : {
+			"damage": true,
+			"negative": true
+		},
+ 
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/USELESS1.bmp",
+			"iconScroll": "NewOldSpells/USELESS2.bmp",
+			"iconScenarioBonus": "NewOldSpells/USELESS3.bmp",
+			"iconEffect": "NewOldSpells/icespike.png"
+		},
+
+		"sounds":
+		{
+			"cast": "ICERAY"
+		},
+		"targetType" : "LOCATION",
+ 
+		"levels" : {
+			"base":{
+				"range" : "0-1",
+				"battleEffects" : {
+					"directDamage" : {
+						"type":"core:damage",
+						"ignoreImmunity" : false
+					}
+				},
+				"targetModifier":{"smart":true}
+			},
+			"none":
+			{
+				"description": "{冰尖柱}\r\n\r\n对范围内的敌方单位造成水系魔法伤害。",
+	 
+				"cost": 0,
+				"power": 10
+			},
+			"basic":
+			{
+				"description": "{火风暴}\r\n\r\nYou cannot see this description.",
+	 
+				"cost": 0,
+				"power": 10
+			},
+			"advanced":
+			{
+				"description": "{火风暴}\r\n\r\nYou cannot see this description.。",
+	 
+				"cost": 0,
+				"power": 10
+			},
+			"expert":
+			{
+				"description": "{火风暴}\r\n\r\nYou cannot see this description.",
+	 
+				"cost": 0,
+				"power": 10
+			}
+			}
+		}
+	}

@@ -1,0 +1,74 @@
+{
+	"tarhero13" :
+	{
+    "class": "taHeroM",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "布里萨特",
+			"biography" : "这个弗里根人的真名已经被世人彻底遗忘了。布里萨特并不是一个很强大的恶魔，但她所有的罪犯都会在转瞬之间被变成冰雕。因此，她得到了“暴风雪”的绰号。她专注于使用附魔武器，为她忠实的手下提升战力。",
+			"specialty" :
+			{
+				"description" : "初始就携带陨星冻雨魔法，并且伤害随等级增加。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "陨星冻雨"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero13/skill13.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero13/skills13.bmp",
+			"large" : "tartarus/heroes/tarhero13/tarH13.bmp",
+			"small" : "tartarus/heroes/tarhero13/tarH13S.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"tarspell1"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			}
+		],
+		
+		"specialty" : {
+		"bonuses" : {
+			"meteorIce" : {
+				"subtype" : "spell.tarspell1",
+				"type" : "SPECIAL_SPELL_LEV",
+				"updater" : "TIMES_HERO_LEVEL",
+				"val" : 3
+			}
+		}
+	}
+	}
+}
+

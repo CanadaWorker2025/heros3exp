@@ -1,0 +1,300 @@
+{
+	"divinationHut" : {
+		"handler":"configurable",
+		"name" : "占卜师小屋",
+		"types" : {
+			"object" : {
+				"rmg" : {
+					"value"	: 750,
+					"rarity" : 20,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["Expernce"]
+				},
+				"rewards" : [
+					{
+						"appearChance": 
+						{
+							"min" : 0,
+							"max" : 5
+						},
+						"heroExperience" : 1000,
+						"artifacts": [ "tarotCards01" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{愚者}。有时候看似愚蠢鲁莽的人比聪明小心的人更容易闯出一番事业，你因此获得了1000点经验值。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 5,
+							"max" : 10
+						},
+						"manaPoints": 20,
+						"artifacts": [ "tarotCards02" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{魔法师}。魔法使拥有着变化莫测的能力和心想事成的本领，但越是强大的力量，它的两面性也越强。若是正面则能事半功倍，若是背面就会一事无成。你获得了20点的魔法值，祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 10,
+							"max" : 15
+						},
+						"manaPoints": 10,
+						"artifacts": [ "tarotCards03" ],
+						"bonuses" : [
+						{
+							"type" : "MANA_REGENERATION",
+							"val" : 3,
+							"valueType" : "BASE_NUMBER",
+							"duration" : "ONE_WEEK"
+						}
+						],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{女祭司}。女祭司拥有强大的洞察力，沉默寡言，心里却明了万事。睿智却又慈爱，仿佛能包容你的一切。你获得了10点魔法值，且本周每天都可以额外回复3点魔法值，祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 15,
+							"max" : 20
+						},
+						"resources" : { "gold" : 1000, "gems" : 5 },
+						"artifacts": [ "tarotCards04" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{女皇}。女皇代表着收获，更是给世间万物带来了生机。你获得了1000 黄金和5 宝石，祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 20,
+							"max" : 25
+						},
+						"bonuses" : [ { "type" : "MORALE", "val" : 3, "duration" : "ONE_BATTLE" } ],
+						"artifacts": [ "tarotCards05" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{皇帝}。皇帝象征着纪律与权威，他庄严威武，拥有强大的掌控能力。而他强硬的态度也使人无法违抗他的命令，世间的纪律与规条也因此不会被轻易改变。你的士气提升了3点。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 25,
+							"max" : 30
+						},
+						"bonuses" : [ 
+							{ "type" : "MORALE", "val" : 2, "duration" : "ONE_BATTLE" },
+							{ "type" : "LUCK", "val" : 2, "duration" : "ONE_BATTLE"}  
+						],
+						"artifacts": [ "tarotCards06" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{教皇}。教皇是精神方面的领袖。教皇向持有信仰的人们传达“上天的指引”，引导每一个迷途的羔羊走向光明。你的士气和运气都提升了2点。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 30,
+							"max" : 35
+						},
+						"bonuses" : [ 
+							{
+								"type" : "WANDERING_CREATURES_JOIN_BONUS",
+								"val" : 1,
+								"valueType" : "ADDITIVE_VALUE",
+								"duration" : "ONE_WEEK"
+							}
+						],
+						"artifacts": [ "tarotCards07" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{恋人}。恋人擅长联结和沟通，它教导人们如何选择，遵从感情，迈出艰难的一步。本周野外生物对你的敌意值降低了1点。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 35,
+							"max" : 40
+						},
+						"movePoints" : 400,
+						"artifacts": [ "tarotCards08" ],
+						"bonuses" : [ { "type" : "MOVEMENT", "subtype" : "heroMovementLand",  "val" : 400, "valueType" : "ADDITIVE_VALUE", "duration" : "ONE_WEEK"} ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{战车}。战车行事果断、迅速，但速度越快的战车，往往越难看清事实的真相和当下的形势，最终迷失目标。本周你的移动力每天都会提升400点。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 40,
+							"max" : 45
+						},
+						"primary" : { "spellpower" : 1 },
+						"artifacts": [ "tarotCards09" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{力量}。力量代表着爱与坚强的意志，意味着你有能力解决现在所面临的困难局面，并对自己内在的力量充满信心。你的力量技能提升了1点。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 45,
+							"max" : 50
+						},
+						"primary" : { "knowledge" : 1 },
+						"artifacts": [ "tarotCards10" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{隐士}。隐士试图放弃外在的诱惑，而达到内心的平静，进而在寂静的环境里通过冥想得到真理。你的知识技能提升了1点。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 50,
+							"max" : 55
+						},
+						"artifacts": [ "tarotCards11" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{命运之轮}。命运之轮掌握着每个人的命运，当轮盘开始旋转的时候，好运还是厄运都将是未知的。你没有任何的收获，也不会获得厄运。请你下周再来重新抽取一次命运吧。"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 55,
+							"max" : 60
+						},
+						"primary" : { "attack" : 1,"defence" : 1},
+						"artifacts": [ "tarotCards12" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{正义}。正义代表着权衡和公平，它理智的判断一切事物，却从不干涉。因果祸福皆由自己，不论什么结果，都需要自己承担。你的攻击和防御技能都提升了1点。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 60,
+							"max" : 65
+						},
+						"bonuses" : [ { "type" : "MORALE", "val" : -2, "duration" : "ONE_BATTLE"} ],
+						"artifacts": [ "tarotCards13" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{倒吊的人}。倒吊的人代表怜悯和同情，他牺牲自己，只为成全他人。你的士气降低了2点。这恐怕是不好的征兆。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 65,
+							"max" : 70
+						},
+						"bonuses" : [ 
+							{ "type" : "MORALE", "val" : -3, "duration" : "ONE_BATTLE"},
+							{ "type" : "LUCK", "val" : -3, "duration" : "ONE_BATTLE"}
+							],
+						"artifacts": [ "tarotCards14" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{死神}。他的出现伴随着死亡，意味着结束。这恐怕是不好的征兆，你的士气和运气降低了3点。但有生就有死，死后亦有生，死亡并没有那么消极，它带来的除了结束，还有新生。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 70,
+							"max" : 75
+						},
+						"resources" : { "gold" : 1000 },
+						"artifacts": [ "tarotCards15" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{节制}。人生在面临心中各种各样的欲望时，最重要的是如何将它控制得宜。你获得了1000黄金。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 75,
+							"max" : 80
+						},
+						"bonuses" : [ { "type" : "LUCK", "val" : -2, "duration" : "ONE_BATTLE"}],
+						"artifacts": [ "tarotCards16" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{恶魔}。恶魔代表着罪恶，他拥有诱惑的力量，诱惑他人失去理智，做出邪恶之事。这恐怕是不好的征兆，你的运气降低了2点。但面对诱惑，每个人都需要做出选择，是选择光明还是黑暗，只在一念之间。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 80,
+							"max" : 85
+						},
+						"movePercentage" : 0,
+						"bonuses" : [ { "type" : "LUCK", "val" : -1, "duration" : "ONE_BATTLE"}],
+						"artifacts": [ "tarotCards17" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{高塔}。这意味着你被困于高塔之中，无法逃脱。这恐怕是不好的征兆，你的运气降低了1点，而且今天的移动力清零。但再高的塔，也有倒塌的一天。人需要远瞻性，不能只是把自己困在高塔里，消极度日。有时跳出舒适区，才能真正的海阔天空。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 85,
+							"max" : 90
+						},
+						"bonuses" : [ { "type" : "LUCK", "val" : 2, "duration" : "ONE_BATTLE" } ],
+						"artifacts": [ "tarotCards18" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{星星}。星星代表着希望，这种情感能够帮助你成长，甚至是获得新生。但有希望，就也有毁灭，只有在绝望之际，希望的星星才会更加耀眼。你的运气提升了2点。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 90,
+							"max" : 94
+						},
+						"bonuses" : [ { "type" : "MORALE", "val" : -1, "duration" : "ONE_BATTLE" } ],
+						"artifacts": [ "tarotCards19" ],
+						"revealTiles" : {
+							"radius" : 15,
+							"surface" : 1,
+							"subterra" : 1,
+							"water" : 1,
+							"rock" : 1,
+							"hide" : true
+						},
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{月亮}。月亮代表代表迷惑、困顿和不安。这恐怕是不好的征兆，你周围笼罩在黑暗之中，且使你的士气降低了1点。月亮就像是每个人混乱的内心，总是为了无可奈何的事情感到挣扎。又放不下对过去的眷恋，活在幻想之中。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 94,
+							"max" : 97
+						},
+						"bonuses" : [ { "type" : "MORALE", "val" : 1, "duration" : "ONE_BATTLE" } ],
+						"artifacts": [ "tarotCards20" ],
+						"revealTiles" : {
+							"radius" : 15,
+							"surface" : 1,
+							"subterra" : 1,
+							"water" : 1,
+							"rock" : 1
+						},
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{太阳}。太阳代表着成功与喜悦，它有着最纯真的快乐和满足，却也拥有洞察一切真相的能力。你周围的视野也因此打开了，且使你的士气提升了1点。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 97,
+							"max" : 99
+						},
+						"bonuses" : [ 
+							{ "type" : "MORALE", "val" : -3, "duration" : "ONE_WEEK","description": "命运的审判 -3" },
+							{ "type" : "LUCK", "val" : -3, "duration" : "ONE_WEEK","description": "命运的审判 -3" }
+							],
+							"movePercentage" : 0,
+							"artifacts": [ "tarotCards21" ],
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{审判}。审判日来临，世界原有的秩序完全毁灭，这恐怕是最糟糕的命运！你今天无法再移动，且本周你的运气和士气都大大低落。而审判之日来临时，天使响起他的号角，死者由地面重生。祝你下次好运！"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 99,
+							"max" : 100
+						},
+						"bonuses" : [ { "type" : "MORALE", "val" : 3, "duration" : "ONE_BATTLE" } ],
+						"artifacts": [ "tarotCards22" ],
+						"revealTiles" : {
+							"surface" : 1,
+							"water" : 1,
+							"rock" : -1
+						},
+						"message": "{占卜师小屋}\r\n\r\n你走进占卜师小屋，占卜师拿出一些纸牌让你抽取一次命运，你抽中了{世界}。它告诉我们所有的事情都可以达成，所有的梦想都可以成为现实。地表的一切视野都打开了，且使你的士气提升了3点。这是最好的命运！祝你好运常伴！"
+					},
+				],
+				"onVisitedMessage": "{占卜师小屋}\r\n\r\n本周你已经占卜过了。无论是好运还是厄运，都请下周再来吧。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true,
+					"rewards" : true
+				},
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"templates" : {
+					"base" : { "animation" : "fairy/map/banks/divinationHut.def", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			}
+		}
+	}		
+}

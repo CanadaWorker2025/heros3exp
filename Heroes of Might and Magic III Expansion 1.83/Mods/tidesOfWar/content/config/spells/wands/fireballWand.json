@@ -1,0 +1,75 @@
+{
+	"mdtFireballWand":
+	{
+		"type": "combat",
+		"targetType": "LOCATION",
+		"name": "连珠火球魔杖",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 3,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+ 
+		"animation":{
+			"hit":["C13SPF"]
+		},
+ 
+		"flags" : {
+			"damage": true,
+			"negative": true,
+			"special": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+			}
+		},
+		"graphics":
+		{
+		"iconBook": "spells/wands/fireballWand_iconBook.png",
+		"iconScroll": "spells/wands/fireballWand_iconScroll.png",
+		"iconScenarioBonus": "spells/wands/fireballWand_iconScenarioBonus.png",
+		"iconEffect": "spells/wands/fireballWand_iconEffect.png"
+		},
+
+		"sounds": {
+			"cast": "FIREBALL"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{	 
+				"description": "{连珠火球魔杖}\r\n\r\n发射火球对敌方选中单位造成伤害。",	 
+				"cost": 0,
+				"range": "0,1",
+				"targetModifier":{"smart":false},
+				"power": 15,
+				"battleEffects" : {
+					"fireball" : {
+						"type" : "core:damage"
+					}
+				}
+			},			
+			"none":
+			{},
+			"basic":
+			{},
+			"advanced":
+			{
+				"power": 30	 
+			},
+			"expert":
+			{
+				"power": 60
+			}
+		}
+	}
+}

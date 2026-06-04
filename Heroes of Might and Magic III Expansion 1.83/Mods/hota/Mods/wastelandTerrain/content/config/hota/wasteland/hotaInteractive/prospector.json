@@ -1,0 +1,44 @@
+{
+	"prospector" : {
+		"handler":"configurable",
+		"name" : "淘金者",
+		"types" : {
+			"prospector" : {
+				"rmg" : {
+					"value"	: 500,
+					"rarity" : 30
+				},
+				"sounds" : {
+					"visit" : ["Expernce"]
+				},
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true,
+					"rewards" : true
+				},
+				"visitMode" : "once",
+				"rewards" : [
+					{
+						"message" : "{淘金者}\r\n\r\n你发现了淘金者，他送给你一些硫磺作为奖励，你很高兴和他分享旅行各地的见闻。",
+						"appearChance" : { "max" : 50 },
+						"resources" : { "sulfur" : 5 }
+					},
+					{
+						"message" : "{淘金者}\r\n\r\n你发现了淘金者，他送给你一些黄金作为奖励，你很高兴和他分享旅行各地的见闻。",
+						"appearChance" : { "min" : 50 },
+						"resources" : { "gold" : 500 }
+					}
+				],
+				"onVisitedMessage": "{淘金者}\r\n\r\n你并没有什么可以分享给他的见闻，他等着你下次再带来更好的东西。",
+				"templates" : {
+					"avtprosp" : {
+						"animation" : "hota/wasteland/hotaInteractive/prospector/avtprosp",
+						"mask" : [ "VVVV", "VBAB" ],
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains": [ "wasteland"]
+					}
+				}
+			}
+		}
+	}		
+}

@@ -1,0 +1,137 @@
+{
+	"special01Fairy" :
+	{
+		"class" : "hunter",
+		"female" : true,
+		"special": true,
+		
+		"texts" :
+		{
+			"name" : "阿里安娜",
+			"biography" : "阿里安娜可以选择自己的生活方式。她几乎可以种植任何东西，她美丽的玫瑰成为了传奇式的故事。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高风精灵或风女王的攻击力与防御力。",
+				"tooltip" : "{Forest Dragons}\r\n\r\nIncreases the Attack and Defense skills of Forest Dragons or Swamp Dragons or each level attained after 4th level.",
+				"name" : "风精灵"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/kyorlin/un32drud.png",
+			"specialtyLarge" : "fairy/heroes/kyorlin/un44drud.png",
+			"large" : "fairy/heroes/kyorlin/hpl288.png",
+			"small" : "fairy/heroes/kyorlin/hps288.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftWisp1",
+				"max" : 5,
+				"min" : 2
+			}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+		],
+		
+		"specialty": //special upgrade
+			{
+				"creature" : "ftWisp1",
+			} 
+	},
+	"special02Fairy" :
+	{
+		"class" : "warden",
+		"female" : true,
+		"special": true,
+
+		"texts" :
+		{
+			"name" : "萨娜",
+			"biography" : "许多同萨娜共同旅行过的人都认为有她在是一件快乐的事。在短短的几分钟内，她可以使你自我感觉更好。显然她的魅力是一种自然的流露，所以当有人爱上她时她总是十分惊讶和沮丧——她从来没有爱上过谁。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "智力",
+				"description" : "在智力上每级获得5%的提升。"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/wanre/skill10s.png",
+			"specialtyLarge" : "fairy/heroes/wanre/skill10.png",
+			"large" : "fairy/heroes/wanre/hpl296.png",
+			"small" : "fairy/heroes/wanre/hps296.png"
+		},
+
+		"spellbook" :
+		[
+			"magicArrow"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"intelligence" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_PER_KNOWLEDGE_PERCENTAGE",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

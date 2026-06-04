@@ -1,0 +1,167 @@
+{
+	"core:fortress" :
+	{
+
+		"description" : "{要塞}\n种族阵营： 绝对中立\n种族地形： 沼泽\n所在地： 恩塔格瑞大陆-塔塔利亚王国\n要塞曾经是被解放的奴隶，他们定居在塔塔利亚的沼泽地中，并将其称为自由国度。但近期他们和野蛮人还有埃拉西亚都存在着争斗，并且由于出色的航行能力，他们也和海盗有一些领地纠纷。",
+		"town" :
+		{
+			"structures" :
+			{
+			"dwellingUpEx1": {"animation" : "TBFRHRD2.def", "x" : 641, "y" : 68,  "z" : 1,  "border" : "TOFGNL2H.bmp", "area" : "TZFGNL2H.bmp" },
+			"dwellingUpEx2": { "animation" : "TBFRUP_1.def", "x" : 125, "y" : 163, "border" : "TOFLIZ2.bmp",  "area" : "TZFLIZ2.bmp" },
+			"dwellingUpEx3": { "animation" : "TBFRUP_3.def", "x" : 159, "y" : 19,  "border" : "TOFFLY2A.bmp", "area" : "TZFFLY2A.bmp" },
+			"dwellingUpEx4": { "animation" : "TBFRUP_4.def", "x" : 0,   "y" : 257, "border" : "TOFBAS2.bmp",  "area" : "TZFBAS2.bmp" },
+			"dwellingUpEx5": { "animation" : "TBFRUP_2.def", "x" : 15,  "y" : 69,  "z" : -2, "border" : "TOFGOR2.bmp",  "area" : "TZFGOR2.bmp" },
+			"dwellingUpEx6": { "animation" : "TBFRUP_5.def", "x" : 0,   "y" : 4,   "border" : "TOFWYV2.bmp",  "area" : "TZFWYV2.bmp" },
+			"dwellingUpEx7": { "animation" : "TBFRUP_6.def", "x" : 587, "y" : 263, "z" : 5,  "border" : "TOFHYD2A.bmp", "area" : "TZFHYD2A.bmp" },
+			"dwellingLvl5B": { "animation" : "town-screen/fortress/TBTWDW_6alt.def", "x" : 55, "y" : 90, "z" : -1, "border" : "town-screen/fortress/buildings-border/TOTTIT1_6alt.bmp", "area" : "town-screen/fortress/buildings-area/TZTTIT1_6alt.bmp" }, 
+			"dwellingUpLvl5B": { "animation" : "town-screen/fortress/TBTWUP_6alt.def", "x" : 55, "y" : 90, "z" : -1, "border" : "town-screen/fortress/buildings-border/TOTTIT2_6alt.bmp", "area" : "town-screen/fortress/buildings-area/TZTTIT2_6alt.bmp" } 
+			},
+			"buildingsIcons": "town-screen/fortress/HALLFORTALT.DEF",
+			"hallBackground": "town-screen/fortress/fortressHallBg.BMP",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3" ], [ "shipyard" ] ],
+				[ [ "special1" ], [ "special2", "special3" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1","dwellingUpEx1" ], [ "dwellingLvl2", "dwellingUpLvl2","dwellingUpEx2" ], [ "dwellingLvl3", "dwellingUpLvl3","dwellingUpEx3" ], [ "dwellingLvl4", "dwellingUpLvl4","dwellingUpEx4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5","dwellingUpEx5" ], [ "dwellingLvl5B", "dwellingUpLvl5B" ] ,[ "dwellingLvl6", "dwellingUpLvl6","dwellingUpEx6" ], [ "dwellingLvl7", "dwellingUpLvl7","dwellingUpEx7" ] ]
+			],
+			"creatures" :
+			[
+				["gnoll", "gnollMarauder","iFor01"],
+				["lizardman", "lizardWarrior","iFor02"],
+				["serpentFly", "fireDragonFly","iFor03"],
+				["basilisk", "greaterBasilisk","iFor04"],
+				["gorgon", "mightyGorgon","iFor05", "mdtTrollHag", "mdtTrollWitch"],
+				["wyvern", "wyvernMonarch","iFor06"],
+				["hydra", "chaosHydra","iFor07"]
+			],
+			
+			"buildings" :
+			{
+			"dwellingUpEx1": 
+				{ 
+				"name" : "高级狼屋",
+					"description" : "高级狼屋允许你招募豺狼劫掠者和豺狼巫医，并且可以在城中进行转换。",
+					"cost" : {
+						"wood": 10,
+						"gold" : 1000
+					},
+				"id" : 44, 
+				"upgrades" : "dwellingUpLvl1",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx2": 
+				{ 
+				"name" : "高级蜥蜴巢",
+					"description" : "高级蜥蜴巢允许你招募蜥蜴勇士和蜥蜴潜伏者，并且可以在城中进行转换。",
+					"cost" : {
+						"wood": 5,
+						"gold" : 1000
+					},
+				"id" : 45, 
+				"upgrades" : "dwellingUpLvl2",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx3": 
+				{ 
+				"name" : "高级毒蝇巢",
+					"description" : "高级毒蝇巢允许你招募龙蝇和沼蝇，并且可以在城中进行转换。",
+					"cost" : {
+						"sulfur": 2,
+						"mercury": 2,
+						"gold" : 1000
+					},
+				"id" : 46, 
+				"upgrades" : "dwellingUpLvl3",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx4": 
+				{ 
+				"name" : "高级蜥蜴洞",
+					"description" : "高级蜥蜴洞允许你招募巨蜥和女王蜥，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"wood" : 5,
+						"gold" : 2000
+					},
+				"id" : 47, 
+				"upgrades" : "dwellingUpLvl4",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx5": 
+				{ 
+				"name" : "高级野牛棚",
+					"description" : "高级野牛棚允许你招募蛮牛和野牛王，并且可以在城中进行转换。",
+					"cost" : {
+						"wood": 5,
+						"ore" : 5,
+						"gold" : 2000
+					},
+				"id" : 48, 
+				"upgrades" : "dwellingUpLvl5",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx6": 
+				{ 
+				"name" : "高级飞龙巢",
+					"description" : "高级飞龙巢允许你招募飞龙王和腐血飞龙，并且可以在城中进行转换。",
+					"cost" : {
+						"wood": 10,
+						"mercury": 10,
+						"gold" : 3000
+					},
+				"id" : 49, 
+				"upgrades" : "dwellingUpLvl6",
+				"mode" : "auto"
+				},
+				"dwellingUpEx7": 
+				{ 
+				"name" : "高级九头怪池塘",
+					"description" : "高级九头怪池塘允许你招募终极九头怪和深渊九头怪，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 10,
+						"ore" : 10,
+						"sulfur": 20,
+						"gold" : 15000
+					},
+				"id" : 50, 
+				"upgrades" : "dwellingUpLvl7",
+				"mode" : "auto" 
+				},
+			"dwellingLvl5":   
+			{ 
+				"requires" : [ "allOf", [ "dwellingLvl2" ], [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl5B" ] ] ]
+			},
+			
+			"dwellingLvl5B" :
+				{
+					"description" : "沼泽小屋允许你招募洞穴巫女。",
+					"name" : "沼泽小屋",
+					"cost" : 
+					{
+						"gold" : 2500,
+						"wood" : 5,
+						"sulfur" : 5
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "dwellingLvl2" ], [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl5" ] ] ],
+					"id" : 55
+				},
+			"dwellingUpLvl5B" :
+				{
+					"description" : "高级沼泽小屋允许你招募洞穴魔女。",
+					"name" : "高级沼泽小屋",
+					"cost" : 
+					{
+						"wood" : 10,
+						"gold" : 2000,
+						"sulfur" : 5
+					},
+					"id" : 62,
+					"upgrades" : "dwellingLvl5B"
+				}
+			}
+		}
+	}	
+}

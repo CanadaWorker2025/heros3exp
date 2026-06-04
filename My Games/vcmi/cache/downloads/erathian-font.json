@@ -1,0 +1,15 @@
+{
+	"name" : "Erathian font [read description!]",
+	"description" : "Very hard to read. Not recommend for non erathians, only for hardcore fans. Font of Erathian language in the universe of (Heroes of) Might and Magic game series.",
+	"version" : "2.1.1",
+	"author" : "Tom Chen",
+	"contact" : "https://might-and-magic.github.io/erathian-font/",
+	"modType" : "Graphical",
+	"licenseName" : "SIL Open Font License, Version 1.1",
+	"licenseURL" : "https://scripts.sil.org/cms/scripts/page.php?id=OFL",
+	"keepDisabled" : true,
+    "czech" : {
+		"name": "Erathijské písmo [přečtěte si popis!]",
+		"description": "Velmi obtížné na čtení. Nedoporučuje se pro ty, kteří nejsou z Erathie, pouze pro zapálené fanoušky. Písmo erathijského jazyka z univerza herní série Might and Magic."
+    }
+}

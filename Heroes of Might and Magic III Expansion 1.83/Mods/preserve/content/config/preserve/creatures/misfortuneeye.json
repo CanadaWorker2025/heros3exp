@@ -1,0 +1,108 @@
+{
+	"misfortuneeye":
+	{
+		"name" :
+		{
+			"plural" : "白虎",
+			"singular" : "白虎"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "preserve",
+		"aiValue" : 412,
+		"attack" : 9,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 4
+		},
+		"defense" : 8,
+		"doubleWide": true,
+		"fightValue" : 381,
+		"graphics" :
+		{
+			"animation" : "preserve/battle/creatures/C3UEye.def",
+			"map" : "preserve/map/creatures/AVWC168.def",
+			"iconSmall" : "preserve/iconsSmall/creatures/CPrS168P.bmp",
+			"iconLarge" : "preserve/iconsBig/creatures/CPrL168P.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10
+			},
+	       },
+		"growth" : 7,
+		"hitPoints" : 25,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "preserve/S167ATTK.wav",
+			"defend": "preserve/S167DFND.wav",
+			"killed": "preserve/S167KILL.wav",
+			"move": "preserve/S165MOVE.wav",
+			"wince": "preserve/S167WNCE.wav"
+		},
+		"speed" : 8,
+		"abilities" :
+		{
+					"firstStrike" : 
+			{
+				"type" : "FIRST_STRIKE"
+			}
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "RETURN_AFTER_STRIKE"
+				},
+				"values" : [ false, false, false, true, true, true, true, true, true, true ]
+			}
+		]
+	}
+}

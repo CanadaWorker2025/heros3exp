@@ -1,0 +1,145 @@
+{
+  "tarSpirit": {
+    "name": {
+      "plural": "恶魔之魂",//Ice Spawn
+      "singular": "恶魔之魂"
+    },
+    "advMapAmount": {
+ "max" : 50,
+ "min" : 20
+    },
+    "faction": "neutral",
+	"special": true,
+    "aiValue": 93,
+    "attack": 5,
+    "cost": {
+      "gold": 50
+    },
+    "damage": {
+ "max" : 2,
+ "min" : 1
+    },
+    "defense": 5,
+    "fightValue": 301,
+    "graphics": {
+      "animation": "tartarus/battle/creatures/CDemonSp.def",
+      "map": "tartarus/map/creatures/demonSpmap.def",
+      "iconSmall": "tartarus/iconsSmall/creatures/demonS.bmp",
+      "iconLarge": "tartarus/iconsBig/creatures/demonB.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 16,
+    "hitPoints": 2,
+    "level": 6,
+    "sound": {
+     "attack": "tartarus/TAR6ATTK.wav",
+      "defend": "tartarus/TAR6DFND.wav",
+      "killed": "tartarus/TAR6KILL.wav",
+      "move": "ICELMOVE",
+      "wince": "tartarus/TAR6WNCE.wav"
+    },
+    "speed": 20,
+    "abilities": {
+		"canFly": {"type": "FLYING"},
+		"demonStrength":
+			{
+				"type": "ENCHANTER",
+				"subtype": "spell.tartskill4",
+				"val" : 3		
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"spellPower" : 
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 50
+			},
+			"blockRetaliation" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			},	
+			"ephemeral" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.tarSpAbility",
+					"val" : 1
+				}
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.gremlin"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.fortune"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 3, 3, 3 ]
+			},
+			{	
+				"bonus" :
+				{
+					"type" : "FLYING"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			}
+		]
+  }	
+	}

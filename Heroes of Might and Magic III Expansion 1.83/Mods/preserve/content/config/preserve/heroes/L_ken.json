@@ -1,0 +1,73 @@
+{
+	"l_ken" :
+	{
+    "class": "bard",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "肯恩",
+			"biography" : "肯恩厌倦了尼根的一切，因为在那里毫无道理可言。他离开那里正是为了寻找秩序。在一片森林中迷失的他没有办法继续前行，只好在此定居。不过他还是没有放弃对秩序和真理的追求。",
+			"specialty" :
+			{
+				"description" : "使用虚弱无力魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Bonus: spell",
+				"name" : "虚弱无力"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/ken/Un32Weak.bmp",
+			"specialtyLarge" : "preserve/heroes/ken/Un44Weak.bmp",
+			"large" : "preserve/heroes/ken/HPL003BR.bmp",
+			"small" : "preserve/heroes/ken/HPS003BR.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"weakness"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"weakness" : {
+					"type" : "SPECIAL_PECULIAR_ENCHANT",
+					"subtype" : "spell.weakness",
+					"addInfo" : 0
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,66 @@
+{
+	"courtyard:00auk": {
+		"specialty": {
+			"creature": "dodo",
+		},
+        "texts": {
+            "specialty": {
+                "name": "陆行鸟",
+                "description": "每5级提高陆行鸟及其升级形态20%的攻击力和防御力。速度+1。战斗巨鸟的抗魔光环加倍，华丽巨鸟的士气+2。"
+            }
+        }
+	},
+	"courtyard:02kanim": {
+		"specialty": {
+			"creature": "arquebusier",
+		},
+        "texts": {
+            "specialty": {
+                "name": "火枪手",
+                "description": "每4级提高火枪手及其升级形态20%的攻击力和防御力。速度+1。并增加5发弹药。"
+            }
+        }
+	},
+	"courtyard:05raphus": {
+		"specialty": {
+			"creature": "cupid",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "石雕傀儡",
+                "description": "每1级提高石雕傀儡及其升级形态10%的攻击力和防御力。速度+1。并使{修复}魔法达到高级。"
+            }
+        }
+	},
+	"courtyard:06ophrys": {
+		"specialty": {
+			"creature": "mandrake",
+		},
+        "texts": {
+            "specialty": {
+                "name": "曼陀罗",
+                "description": "每6级提高曼陀罗及其升级形态20%的攻击力和防御力。速度+1。召唤的藤护卫速度+1并获得先手反击技能。"
+            }
+        }
+	},
+	"courtyard:08audred": {
+        "texts": {
+            "specialty": {
+                "name": "侏儒怪",
+                "description": "每2级提高侏儒怪及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"courtyard:11nefefareen": {
+		"specialty": {
+			"creature": "fireNewt",
+		},
+        "texts": {
+            "specialty": {
+                "name": "火蜥蜴人",
+                "description": "每3级提高火蜥蜴人及其升级形态20%的攻击力和防御力。速度+1。拥有正士气且接受火系有益魔法。被施加烈火神盾后火蜥蜴人攻击有33%的几率施放献祭。"
+            }
+        }
+	}
+}

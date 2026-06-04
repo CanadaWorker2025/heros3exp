@@ -1,0 +1,84 @@
+{
+	"ffbattlegriffin":
+	{
+		"name" :
+		{
+			"plural" : "战斗狮鹫",
+			"singular" : "战斗狮鹫"
+		},
+		"advMapAmount" :
+		{
+
+			 "max" : 20,
+			 "min" : 12
+		},
+                "faction" : "castle",
+		"aiValue" : 449,
+		"attack" : 10,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 3
+		},
+		"defense" : 8,
+		"doubleWide" : true,
+		"fightValue" : 365,
+		"horde": 3,
+		"level" : 3,
+		"upgrades": ["royalGriffin"],
+         "graphics" :
+		{
+			"animation" : "creatures/castle/battle/C193.def",
+			"map" : "creatures/castle/map/AVWC193.def",
+			"iconSmall" : "creatures/castle/iconsSmall/CPrS193C.bmp",
+			"iconLarge" : "creatures/castle/iconsBig/CPRL193C.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			
+		},
+		"growth" : 7,
+		"hitPoints" : 25,
+		"speed" : 9,
+		"sound" :
+		{
+			"attack": "RGRFATTK.wav",
+			"defend": "RGRFDFND.wav",
+			"killed": "RGRFKILL.wav",
+			"move": "RGRFMOVE.wav",
+			"wince": "RGRFWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" :
+			{
+				"type" : "FLYING"
+			},
+			"extraRetaliation" :
+			{
+				"type" : "ADDITIONAL_RETALIATION",
+				"val" : 2
+			},
+			"attackBooster":
+			{
+			"type" : "ENCHANTED",
+			"subtype" : "spell.cas03eff",
+			"val" : 3,
+			"icon" : "bonuses/cas03.png"
+			}		
+		}
+	}
+}
+
+
+
+
+

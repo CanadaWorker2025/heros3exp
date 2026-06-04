@@ -1,0 +1,63 @@
+{
+	"core:fireElemental" : {
+		"levels" : {
+			"base":{
+				"range" : "X",
+				"battleEffects":{
+					"summon":{
+						"exclusive":false,
+						"id":"fireElemental",
+						"permanent":false,
+						"type":"core:summon"
+					}
+				}
+			}
+			}
+		},
+		"core:waterElemental" : {
+		"levels" : {
+			"base":{
+				"range" : "X",
+				"battleEffects":{
+					"summon":{
+						"exclusive":false,
+						"id":"waterElemental",
+						"permanent":false,
+						"type":"core:summon"
+					}
+				}
+			}
+			}
+		},
+		"core:airElemental" : {
+		"levels" : {
+			"base":{
+				"range" : "X",
+				"battleEffects":{
+					"summon":{
+						"exclusive":false,
+						"id":"airElemental",
+						"permanent":false,
+						"type":"core:summon"
+					}
+				}
+			}
+			}
+		},
+		"core:earthElemental" : {
+		"levels" : {
+			"base":{
+				"range" : "X",
+				"battleEffects":{
+					"summon":{
+						"exclusive":false,
+						"id":"earthElemental",
+						"permanent":false,
+						"type":"core:summon"
+					}
+				}
+			}
+			}
+		}
+}
+		

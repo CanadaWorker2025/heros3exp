@@ -1,0 +1,82 @@
+{
+	"nRP06":
+	{
+		"name" :
+		{
+			"plural" : "圣光独角兽", //Holy Unicorn
+			"singular" : "圣光独角兽"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 5
+		},
+		"faction": "rampart",
+		"doubleWide" : true,
+		"aiValue" : 2033,
+		"fightValue" : 1741,
+		"attack" : 15,
+		"defense" : 15,
+		"cost" :
+		{
+			"gold" : 950
+		},
+		"damage" :
+		{
+			"min" : 18,
+			"max" : 22
+		},
+		"speed" : 9,
+		"upgrades": ["warUnicorn"],
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/RP06.def",
+			"map" : "creatures/rampart/map/RP06S.def",
+			"iconSmall" : "creatures/rampart/iconsSmall/RP06S.bmp",
+			"iconLarge" : "creatures/rampart/iconsBig/RP06.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 110,
+		"growth" : 2,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "WUNCATTK.wav",
+			"defend": "WUNCDFND.wav",
+			"killed": "WUNCKILL.wav",
+			"move": "WUNCMOVE.wav",
+			"wince": "WUNCWNCE.wav"
+		},
+		"abilities" :
+		{
+			"blinds" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.blind",
+				"val" : 20,
+				"icon": "bonuses/blindattack.png"
+			},
+			"manaCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.antiMagic",
+				"addInfo": 1,
+				"val" : 3,
+				"icon": "bonuses/antimagic1.png"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+		}
+	}
+}
+
+

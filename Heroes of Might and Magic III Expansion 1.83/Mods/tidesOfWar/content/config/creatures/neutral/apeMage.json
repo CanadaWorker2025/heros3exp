@@ -1,0 +1,160 @@
+{
+	"napeMage" : 
+	{
+		"name" :
+		{
+			"singular" : "猩法师",
+			"plural" : "猩法师"
+		},
+		"level" : 4,
+		"special" : false,
+		"faction" : "neutral", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 450
+		},
+		"fightValue" : 650,
+		"aiValue" : 610,
+		"growth" : 4,
+		
+		"attack" : 10,
+		"defense" : 8,
+		"hitPoints" : 30,
+		"shots" : 8,
+		"speed" : 4,
+		"damage" :
+		{
+			"min" : 5,
+			"max" : 8
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 7,
+			"max" : 11
+		},
+		"doubleWide" : false,
+		"abilities" : {
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"landKnowledge":{
+				"type" : "ROUGH_TERRAIN_DISCOUNT",
+				"valueType" : "PERCENT_TO_ALL",
+				"val" : 25
+			},
+			"runeApe" : {
+				"type" : "NONE",
+				"icon" : "skills/runeLevels/startCounterApe",
+				"description" : "{符文奖励}\n自身被高级符文术影响"
+			},
+			"apeRunesCap" : { "type" : "APE_RUNE_LEVEL_COUNTER", "valueType" : "INDEPENDENT_MIN", "val" : 9 },
+			"apeRunesBase" : { "type" : "APE_RUNE_LEVEL_COUNTER", "val" : 0 },
+
+			"apeRunesBonusAttackTier1" : { "type" : "PRIMARY_SKILL", "subtype" : "attack", "val" : 2, "limiters" : { "type" : "HAS_ANOTHER_BONUS_LIMITER", "bonusType" : "APE_RUNE_LEVEL_COUNTER", "bonusMinValue" : 1, "bonusMaxValue" : 3 } },
+			"apeRunesBonusAttackTier2" : { "type" : "PRIMARY_SKILL", "subtype" : "attack", "val" : 4, "limiters" : { "type" : "HAS_ANOTHER_BONUS_LIMITER", "bonusType" : "APE_RUNE_LEVEL_COUNTER", "bonusMinValue" : 4, "bonusMaxValue" : 6 } },
+			"apeRunesBonusAttackTier3" : { "type" : "PRIMARY_SKILL", "subtype" : "attack", "val" : 6, "limiters" : { "type" : "HAS_ANOTHER_BONUS_LIMITER", "bonusType" : "APE_RUNE_LEVEL_COUNTER", "bonusMinValue" : 7, "bonusMaxValue" : 9 } },
+			"apeRunesBonusDefenseTier1" : { "type" : "PRIMARY_SKILL", "subtype" : "defence", "val" : 2, "limiters" : { "type" : "HAS_ANOTHER_BONUS_LIMITER", "bonusType" : "APE_RUNE_LEVEL_COUNTER", "bonusMinValue" : 2, "bonusMaxValue" : 4 } },
+			"apeRunesBonusDefenseTier2" : { "type" : "PRIMARY_SKILL", "subtype" : "defence", "val" : 4, "limiters" : { "type" : "HAS_ANOTHER_BONUS_LIMITER", "bonusType" : "APE_RUNE_LEVEL_COUNTER", "bonusMinValue" : 5, "bonusMaxValue" : 7 } },
+			"apeRunesBonusDefenseTier3" : { "type" : "PRIMARY_SKILL", "subtype" : "defence", "val" : 6, "limiters" : { "type" : "HAS_ANOTHER_BONUS_LIMITER", "bonusType" : "APE_RUNE_LEVEL_COUNTER", "bonusMinValue" : 8, "bonusMaxValue" : 9 } },
+			"apeRunesBonusSpeedTier1" : { "type" : "STACKS_SPEED", "val" : 1, "limiters" : { "type" : "HAS_ANOTHER_BONUS_LIMITER", "bonusType" : "APE_RUNE_LEVEL_COUNTER", "bonusMinValue" : 3, "bonusMaxValue" : 5 } },
+			"apeRunesBonusSpeedTier2" : { "type" : "STACKS_SPEED", "val" : 2, "limiters" : { "type" : "HAS_ANOTHER_BONUS_LIMITER", "bonusType" : "APE_RUNE_LEVEL_COUNTER", "bonusMinValue" : 6, "bonusMaxValue" : 8 } },
+			"apeRunesBonusSpeedTier3" : { "type" : "STACKS_SPEED", "val" : 3, "limiters" : { "type" : "HAS_ANOTHER_BONUS_LIMITER", "bonusType" : "APE_RUNE_LEVEL_COUNTER", "bonusMinValue" : 9, "bonusMaxValue" : 9 } },
+
+			"apeCombatAttackRuneLevels" :		{ "type" : "ON_COMBAT_EVENT", "subtype" : "combatEventAfterAttack",		"addInfo" : { "effect" : [ { "action" : "bonus", "targetEnemy" : false, "bonus" : { "type" : "APE_RUNE_LEVEL_COUNTER", "val" : 1, "duration" : "ONE_BATTLE" } } ] } },
+			"apeCombatAttackedRuneLevels" :	{ "type" : "ON_COMBAT_EVENT", "subtype" : "combatEventAfterAttacked",	"addInfo" : { "effect" : [ { "action" : "bonus", "targetEnemy" : false, "bonus" : { "type" : "APE_RUNE_LEVEL_COUNTER", "val" : 2, "duration" : "ONE_BATTLE" } } ] } },
+			"apeCombatDefendRuneLevels" :		{ "type" : "ON_COMBAT_EVENT", "subtype" : "combatEventDefend",			"addInfo" : { "effect" : [ { "action" : "bonus", "targetEnemy" : false, "bonus" : { "type" : "APE_RUNE_LEVEL_COUNTER", "val" : 3, "duration" : "ONE_BATTLE" } } ] } }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}
+		],
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "creatures/neutral/battle/apeMage.def",
+			"map" :       "creatures/neutral/map/apeMage.def",
+			"iconSmall" : "creatures/neutral/iconsSmall/apeMage.bmp",
+			"iconLarge" : "creatures/neutral/iconsBig/apeMage.bmp",
+			"timeBetweenFidgets" : 2.00,
+			"animationTime": {
+				"walk": 1.20,
+				"attack": 1,
+				"idle": 10
+			},
+			"missile" :
+			{
+				"projectile": "CPRZEAX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+		},
+		"sound": {
+			"attack": "OGREATTK.wav",
+			"defend": "OGREDFND.wav",
+			"shoot": "MONKSHOT.wav",
+			"killed": "OGREKILL.wav",
+			"move": "OGREMOVE.wav",
+			"wince": "OGREWNCE.wav"
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{
+"a_kulkin" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"b_julian" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"c_hanna" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"d_terence" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"e_niclas" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"f_ceretus" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"g_agnes" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"h_lorenzo" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"i_anastasia" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"j_pamela" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"k_polly" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"l_ken" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"m_wildhayen" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"n_belinda" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"o_karen" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"p_renata" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}},
+"s_Agrenal" :{
+	"specialty" :{	"bonuses" :{
+			"conversionHalfling":{			"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.halfling",			"addInfo":	"creature.halflings"}}}}
+}

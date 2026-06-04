@@ -1,0 +1,113 @@
+{
+	"bbrute":
+	{
+		"name" :
+		{
+			"plural" : "狂暴者",
+			"singular" : "狂暴者"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "bastille",
+		"aiValue" : 299,
+		"attack" : 7,
+		"cost" :
+		{
+			"gold" : 200
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 4
+		},
+		"defense" : 5,
+		"fightValue" : 299,
+		"graphics" :
+		{
+			"animation" : "bastille/battle/creatures/CFG3.def",
+			"map" : "bastille/map/creatures/AVWC154.def",
+			"iconSmall" : "bastille/iconsSmall/creatures/CPrS154B.bmp",
+			"iconLarge" : "bastille/iconsBig/creatures/CPrL154B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10
+			},
+	       },
+    "growth": 7,
+    "horde": 3,
+		"hitPoints" : 20,
+		"level" : 3,
+		"upgrades":
+		[
+			"bberserker"
+		],
+		"sound" :
+		{
+			"attack": "bastille/FG3ATTK.wav",
+			"defend" : "bastille/FG3DFND.wav",
+			"killed" : "bastille/FG3KILL.wav",
+			"move" : "bastille/FG3MOVE.wav",
+			"wince" : "bastille/FG3WNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"fearless" : {
+				"type" : "FEARFUL",
+				"valueType" : "INDEPENDENT_MIN",
+				"val" : 0,
+				"description" : "{无惧}\n免疫恐惧",
+				"icon" : "bastille/icons/bonusIcons/e_fearl.png"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"name" : "Serbian translation",
+	"description" : "Serbian translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.0",
+	"author" : "Fabrice TIERCELIN",
+	"contact" : "",
+	"language" : "serbian",
+	"modType" : "Translation",
+	"compatibility" :
+	{
+		"min" : "1.7.0"
+	},
+	"changelog" : 
+	{ 
+		"1.0.0" : [ "Initial release" ]
+	},
+	"german" : {
+		"name" : "Serbische Übersetzung",
+		"description" : "Serbische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"serbian" : {
+		"name" : "Српски превод",
+		"description" : "Српски превод игре Heroes of Might and Magic III: Complete Edition"	
+	},
+	"translations" : [
+		"config/vcmi-serbian/game.json",
+		"config/vcmi-serbian/maps.json",
+		"config/vcmi-serbian/campaigns.json",
+		"config/vcmi-serbian/chronicles.json"
+	]
+}

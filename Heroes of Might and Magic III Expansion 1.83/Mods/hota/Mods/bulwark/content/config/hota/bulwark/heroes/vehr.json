@@ -1,0 +1,60 @@
+{
+	"16bulwarkVehr" : {
+		"class" : "elder",
+		"female" : true,
+		"images" : {
+			"large" : "hota/bulwark/heroes/vehr/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/vehr/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/vehr/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/vehr/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "eagleEye",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		},
+		"spellbook" : [
+			"viewEarth"
+		],
+		"texts" : {
+			"name" : "薇尔",
+			"biography" : "薇尔早在用纯金属牙齿替换掉磨损的牙齿之前，就赢得了“金牙”这个绰号。时至今日，她的牙齿仍然是她赖以谋生的主要工具，因为她拥有非凡的天赋，只需咬一口就能辨别岩石的成分。拥有如此天赋，她从不把时间浪费在琐事上；她的专长在于寻找富含金矿的矿脉。",
+			"specialty" : {
+				"name" : "+350个金币",
+				"description" : "为王国每天额外提供350个金币。",
+				"tooltip" : "Resource Bonus: +350 Gold"
+			}
+		}
+	}
+}

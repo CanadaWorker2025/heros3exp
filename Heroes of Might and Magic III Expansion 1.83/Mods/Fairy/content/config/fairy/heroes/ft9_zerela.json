@@ -1,0 +1,69 @@
+{
+	"ftI_Zerela" ://Vanessa
+	{
+		"class" : "warden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "凡妮莎",
+			"biography" : "凡妮莎是这片土地上最勇敢的花仙之一。她带领她的草原亲族参加一些最艰险的任务，鼓舞她们在胜利中成就梦想。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高花精或花仙的攻击力与防御力。",
+				"tooltip" : "{Fairies}\r\n\r\nIncreases the Attack and Defense skills of Fairies or Grassland Fairies",
+				"name" : "花精"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/velkyn/UN32Dark.png",
+			"specialtyLarge" : "fairy/heroes/velkyn/UN44Dark.png",
+			"large" : "fairy/heroes/velkyn/hpl296.png",
+			"small" : "fairy/heroes/velkyn/hps296.png",
+		},
+
+		"spellbook" :
+		[
+			"haste" 
+		],
+		
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFairy1",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "ftFairy1",
+				"max" : 15,
+				"min" : 10
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "luck"
+				}
+		],
+		
+		"specialty": //special upgrade
+			{
+				"creature" : "ftFairy1",
+			} 
+	}
+}
+
+

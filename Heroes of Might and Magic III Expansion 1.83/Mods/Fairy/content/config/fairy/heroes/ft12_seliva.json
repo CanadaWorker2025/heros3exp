@@ -1,0 +1,76 @@
+{
+	"ftL_Seliva" :
+	{
+		"class" : "warden",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "赛丽娃",
+			"biography" : "赛丽娃出生之时就充斥着不祥的气息。虽然她长相美丽，但没什么人愿意去接近她。她眼下血红色的印记会让人打消对于花仙善良的幻想。",
+			"specialty" :
+			{
+				"description" : "所带领生物的最小伤害值和最大伤害值各增加1。",
+				"tooltip" : "{Rage}\r\n\r\nAll creatures get +1 to damage.",
+				"name" : "战争狂人"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/velve/UN32Blsh.png",
+			"specialtyLarge" : "fairy/heroes/velve/UN44Blsh.png",
+			"large" : "fairy/heroes/velve/hpl298.png",
+			"small" : "fairy/heroes/velve/hps298.png",
+		},
+		
+		"spellbook" :
+		[
+			"bloodlust"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			}
+		],
+		"specialty": //+1 dmg
+			{
+				"bonuses":{
+				"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 1,
+						"valueType" : "BASE_NUMBER"
+					}
+				}
+			}
+	}
+}
+
+

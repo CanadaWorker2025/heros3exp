@@ -1,0 +1,61 @@
+{
+	"m_SdvdarkNova" :
+	{
+		"class" : "dvNecropriest",
+		"female" : true,
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/darkNova/Un32Reap.bmp",
+			"specialtyLarge" : "deathvalley/heroes/darkNova/Un44Reap.bmp",
+			"large" : "deathvalley/heroes/darkNova/DarkNovaL.png",
+			"small" : "deathvalley/heroes/darkNova/DarkNovaS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "boneHook",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "mums",
+				"max" : 7,
+				"min" : 5
+			}
+		],
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"creature" : "reaper1"
+		},
+		"texts" : {
+			"biography" : "从小被黑暗力量附身的诺娃被带给泰塔利亚女巫抚养，然而女巫们没有人能够控制她的黑暗力量。在她成长到8岁时，诺娃离开了女巫们，独自找寻着她真正的身世。她相信自己的力量来自一个伟大的家族。找到这个结果也是她活着的唯一动力。",
+			"name" : "黑暗诺娃",
+			"specialty" : {
+				"description" : "达到6级以后提高收割者或冷酷收割者的攻击力与防御力。",
+				"tooltip" : "Receives a 7% per level bonus to Intelligence skill.",
+				"name" : "收割者"
+			}
+		}
+	}
+}
+

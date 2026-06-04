@@ -1,0 +1,93 @@
+{
+  "soulcrus": {
+    "name": {
+      "plural": "灵魂剑圣",
+      "singular": "灵魂剑圣"
+    },
+    "advMapAmount": {
+ "max" : 12,
+ "min" : 8
+    },
+    "faction": "asylum",
+    "aiValue": 1208,
+    "attack": 14,
+    "cost": {
+      "gold": 620
+    },
+    "damage": {
+ "max" : 17,
+ "min" : 13
+    },
+    "defense": 14,
+    "fightValue": 1117,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST5U.def",
+      "map": "asylum/map/creatures/AVWC186.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS186Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL186Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 3,
+    "hitPoints": 40,
+    "level": 5,
+    "sound": {
+      "attack": "asylum/CPU5ATTK.wav",
+      "defend": "asylum/CPU5DFND.wav",
+      "killed": "asylum/CPU5KILL.wav",
+      "move": "asylum/CPU5MOVE.wav",
+      "wince": "asylum/CPU5WNCE.wav"
+    },
+    "speed": 8,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "Spirit": {
+        "type" : "ENEMY_ATTACK_REDUCTION",
+		"val" : 30
+      },
+      "deathStrike" :
+			{
+				"type" : "DOUBLE_DAMAGE_CHANCE",
+				"val" : 50
+			}
+    },
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			}
+		]
+  }	
+	}

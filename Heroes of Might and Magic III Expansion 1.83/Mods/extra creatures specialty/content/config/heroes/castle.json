@@ -1,0 +1,71 @@
+{
+	"core:valeska":{
+        "texts": {
+            "specialty": {
+                "name": "弓箭手",
+                "description": "每2级提高弓箭手及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:edric":{
+        "texts": {
+            "specialty": {
+                "name": "狮鹫",
+                "description": "每3级提高狮鹫及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:roland":{
+        "texts": {
+            "specialty": {
+                "name": "剑士",
+                "description": "每4级提高剑士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:catherine":{
+        "texts": {
+            "specialty": {
+                "name": "剑士",
+                "description": "每4级提高剑士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:sorsha":{
+        "texts": {
+            "specialty": {
+                "name": "剑士",
+                "description": "每4级提高剑士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:ingham":{
+        "texts": {
+            "specialty": {
+                "name": "僧侣",
+                "description": "每5级提高僧侣及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:tyris":{
+        "texts": {
+            "specialty": {
+                "name": "骑士",
+                "description": "每6级提高骑士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:christian":{
+        "specialty": {
+			"creature": "ballista",
+			"creatureLevel" : 5,
+			"stepSize" : 30
+		},
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+            }
+        }
+	}
+}

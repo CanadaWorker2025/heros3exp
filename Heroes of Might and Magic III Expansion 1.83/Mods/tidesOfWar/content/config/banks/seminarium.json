@@ -1,0 +1,84 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"mdtSeminarium" : 
+			{
+				"name" : "修会",
+				"aiValue" : 6000,
+				"templates" :
+				{
+					"base" :
+					{
+						"animation" : "banks/seminarium.def", 
+						"visitableFrom" : [ "---", "-+-", "+++" ], 
+						"mask" : [ "VVV", "VBV", "BAB"] 							
+					}
+				},
+				"sounds": {
+					"ambient": ["dwellings/banks/SEMINARIUMLOOP"]
+				},
+				"rmg" : {
+					"value"		: 3500,
+					"rarity"	: 80
+				},
+				"onGuardedMessage" : "{修会}\r\n\r\n这里是圣武士的修会，这些圣武士通常带有很多侍从，如果你想要这些圣武士加入你，就必须战胜他们的护卫。你要试试自己的实力吗？",
+				"onVisitedMessage" : "{修会}\r\n\r\n这里曾经是圣武士的修会，但现在这里没有人居住，偶尔只有一两个路过的游客进去参观，他们想让你当向导，但你拒绝了他们的请求。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 10, "type" : "swordsman" },
+							{ "amount": 10, "type" : "swordsman" },
+							{ "amount": 10, "type" : "swordsman", "upgradeChance": 50 },
+							{ "amount": 10, "type" : "swordsman" },
+							{ "amount": 10, "type" : "swordsman" }
+						],
+						"creatures": [ { "amount": 2, "type": "mdtTemplar" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 20, "type" : "swordsman" },
+							{ "amount": 20, "type" : "swordsman" },
+							{ "amount": 20, "type" : "swordsman", "upgradeChance": 50 },
+							{ "amount": 20, "type" : "swordsman" },
+							{ "amount": 20, "type" : "swordsman" }
+						],
+						"creatures": [ { "amount": 3, "type": "mdtTemplar" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 30, "type" : "swordsman" },
+							{ "amount": 30, "type" : "swordsman" },
+							{ "amount": 30, "type" : "swordsman", "upgradeChance": 50 },
+							{ "amount": 30, "type" : "swordsman" },
+							{ "amount": 30, "type" : "swordsman" }
+						],
+						"creatures": [ { "amount": 4, "type": "mdtTemplar" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 40, "type" : "swordsman" },
+							{ "amount": 40, "type" : "swordsman" },
+							{ "amount": 40, "type" : "swordsman", "upgradeChance": 50 },
+							{ "amount": 40, "type" : "swordsman" },
+							{ "amount": 40, "type" : "swordsman" }
+						],
+						"creatures": [ { "amount": 6, "type": "mdtTemplar" } ]
+					}
+				]
+			}
+		}
+	}
+}

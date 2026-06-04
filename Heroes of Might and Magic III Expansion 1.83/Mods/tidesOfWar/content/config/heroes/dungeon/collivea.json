@@ -1,0 +1,63 @@
+{
+  "mdtCollivea" :
+  {
+    "class" : "overlord",
+    "female" : true,
+    "special" : false,
+	"spellbook": [],
+    "texts" :
+    {
+      "name" : "柯莉维亚",
+      "biography" : "当年轻的柯莉维亚加入尼贡的部队时，术士们惊奇地发现她对美杜莎的光线具有抵抗力。这奠定了她作为美杜莎一族霸主的生涯。",
+      "specialty" :
+      {
+        "description" : "达到4级以后提高美杜莎或美杜莎女王的攻击力与防御力。",
+        "tooltip" : "Creature bonus: Medusa",
+        "name" : "美杜莎"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/dungeon/collivea_spec-small.bmp",
+      "specialtyLarge" : "heroes/dungeon/collivea_spec-large.bmp",
+      "large" : "heroes/dungeon/collivea_portrait-large.bmp",
+      "small" : "heroes/dungeon/collivea_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "troglodyte",
+        "max" : 40,
+        "min" : 30
+      },
+      {
+        "creature" : "harpy",
+        "max" : 6,
+        "min" : 4
+      },
+      {
+        "creature" : "beholder",
+        "max" : 4,
+        "min" : 3
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "archery"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "leadership"
+      }
+    ],
+    
+	"specialty" : {
+		"creature" : "medusa"
+	}
+  }
+}

@@ -1,0 +1,62 @@
+{
+	"08bulwarkErgon" : {
+		"class" : "chieftain",
+		"female" : false,
+		"images" : {
+			"large" : "hota/bulwark/heroes/ergon/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/ergon/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/ergon/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/ergon/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "pathfinding",
+				"level" : "basic"
+			},
+			{
+				"skill" : "scouting",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"baseTileCost" : {
+					"type" : "BASE_TILE_MOVEMENT_COST",
+					"valueType" : "ADDITIVE_VALUE",
+					"val" : -5
+				},
+				"terrainCostReduction" : {
+					"type" : "ROUGH_TERRAIN_DISCOUNT",
+					"valueType" : "ADDITIVE_VALUE",
+					"val" : 5
+				}
+			}
+		},
+		"texts" : {
+			"name" : "埃尔贡",
+			"biography" : "埃尔贡一生都在劳累奔波。他曾经侍奉恩洛斯的野蛮人之王，后来去贾达密护送精灵商队。到恩塔格瑞之后，则是成为雇佣兵赚取酬劳。直到最近的几年，他才想到在一个时间仿佛静止的地方度过余生。尽管如此，他组织快速行军的能力依然不会随时间减弱，只要有需要，他还是可以做到。",
+			"specialty" : {
+				"name" : "寻路术",
+				"description" : "在寻路术上获得额外的5点移动点减少。",
+				"tooltip" : "Skill Bonus: Pathfinding"
+			}
+		}
+	}
+}

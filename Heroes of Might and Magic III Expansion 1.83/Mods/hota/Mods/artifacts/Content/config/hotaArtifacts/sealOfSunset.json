@@ -1,0 +1,29 @@
+{
+	"sealOfSunset" : {
+		"type" : [ "HERO" ],
+		"slot" : "RING",
+		"class" : "MINOR",
+		"value" : 5000,
+		"bonuses" : {
+			"skill" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "spellpower",
+				"valueType" : "PERCENT_TO_ALL",
+				"val" : -10,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : ["OPPOSITE_SIDE"]
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/sealOfSunset",
+			"map" : "hota/artifactsMap/sealOfSunset",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/sealOfSunset"
+		},
+		"text" : {
+			"description" : "{黄昏之戒}\r\n\r\n降低敌人10%的力量。",
+			"event" : "被戴着奇异指环的拳头击中从来都不会是一件好事，那是你在与一位熟识的老英雄友好切磋时发生的事情。此后，你在很长一段时间内都无法施展最简单的魔法来缓解不适。",
+			"name" : "黄昏之戒"
+		}
+	}
+}

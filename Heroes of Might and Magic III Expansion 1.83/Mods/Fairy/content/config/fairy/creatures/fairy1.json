@@ -1,0 +1,136 @@
+{
+	"ftFairy1":
+	{
+		"name" :
+		{
+			"plural" : "花精",
+			"singular" : "花精"
+		},
+		"advMapAmount" :
+		{
+			"max" : 50,
+			"min" : 20
+		},
+		"faction" : "fairy",
+		"aiValue" : 90,
+		"attack" : 2,
+		"cost" :
+		{
+			"gold" : 25
+		},
+		"damage" :
+		{
+			"max" : 2,
+			"min" : 1
+		},
+		"defense" : 2,
+		"fightValue" : 90,
+		"graphics" :
+		{
+			"animation" : "fairy/battle/creatures/CFar01.def",
+			"map" : "fairy/map/creatures/mapfairy1.def",
+			"iconSmall" : "fairy/iconsSmall/creatures/fay01.bmp",
+			"iconLarge" : "fairy/iconsBig/creatures/fairy01.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"growth" : 20,
+		"hitPoints" : 3,
+		"horde" : 8,
+        "level" : 1,
+		"upgrades":
+		[
+			"ftFairy2"
+		],
+		"sound" :
+		{
+			"attack": "PIXIATTK.wav",
+			"defend": "PIXIDFND.wav",
+			"killed": "PIXIKILL.wav",
+			"move": "PIXIMOVE.wav",
+			"wince": "PIXIWNCE.wav"
+        },
+		"speed" : 7,
+		"abilities" :
+		{
+			"canFly" :  
+			{ 
+				"type" : "FLYING",
+				"icon" : "fairy/icons/bonuses/e_fly4"
+			}
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth", //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.skeleton"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.skeletonWarrior"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]				
+	}
+}

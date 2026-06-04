@@ -1,0 +1,74 @@
+{
+	"tarhero09" :
+	{
+    "class": "taHeroM",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "埃利卡",
+			"biography" : "以往，埃利卡认为自己不可能和恶魔有关系。但在探险生涯中她却无意中追逐恶魔来到了更深的地底洞穴。虽然消灭了她追逐的恶魔，但她却被寒冷的气息所吸引。现在她已经不认为她能够走出这个深渊了。",
+			"specialty" :
+			{
+				"description" : "使用霹雳寒冰魔法时效果大增，与英雄等级同攻击目标单位等级的比值有关(对于越弱的部队施加的效果越好)。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "霹雳寒冰"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero09/skill9.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero09/skills9.bmp",
+			"large" : "tartarus/heroes/tarhero09/tarH9.bmp",
+			"small" : "tartarus/heroes/tarhero09/tarH9S.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"subtype" : "spell.iceBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}
+

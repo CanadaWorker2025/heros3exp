@@ -1,0 +1,126 @@
+{
+	"sandworm":
+	{
+		"name" :
+		{
+			"plural" : "沙虫",
+			"singular" : "沙虫"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 8
+		},
+		"faction" : "factory",
+		"aiValue" : 982,
+		"attack" : 13,
+		"cost" :
+		{
+			"gold" : 575
+		},
+		"damage" :
+		{
+			 "max" : 16,
+			 "min" : 12
+		},
+		"defense" : 12,
+		"fightValue" : 899,
+    "graphics": {
+      "animation": "factory/battle/creatures/CSANDWX.json",
+      "map": "factory/map/creatures/AVWworm.def",
+	  "mapMask" : [ "VVV", "VAV"],
+      "iconSmall": "factory/iconsSmall/creatures/CPrS009F.bmp",
+		"iconLarge": "factory/iconsBig/creatures/CPrL009F.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide" : true,
+		"growth" : 3,
+		"hitPoints" : 50,
+		"level" : 5,
+		"upgrades":
+		[
+			"olgoiKhorkhoi"
+		],
+		"sound" :
+		{
+			"attack": "factory/WORMATTK.wav",
+			"defend": "factory/WORMDFND.wav",
+			"killed": "factory/WORMKILL.wav",
+			"move": "factory/WORMMOVE.wav",
+			"wince": "factory/WORMWNCE.wav",
+			"startMoving": "factory/WORMEXT1.wav",
+			"endMoving": "factory/WORMEXT2.wav"
+ 		},
+		"speed" : 8,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING",
+				"subtype" : "movementTeleporting",
+				"icon" : "factory/icons/bonuses/burrowing.png",
+				"description" : "{挖洞}\n可以在除了船上的任何地形进行传送移动",
+				"limiters" : [
+					"noneOf",
+					{
+						"type" : "TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				]
+			},
+		   "blindImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.blind"
+			},
+			"petrifyImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.stoneGaze"
+			}
+	    },
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			}
+		]
+	}
+}

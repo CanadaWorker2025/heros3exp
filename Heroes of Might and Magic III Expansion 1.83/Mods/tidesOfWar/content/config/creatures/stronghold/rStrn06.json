@@ -1,0 +1,102 @@
+{
+	"rStrn06"://bloodeyed cyclop
+	{
+		"name" :
+		{
+			"plural" : "血瞳独眼",
+			"singular" : "血瞳独眼"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 5
+		},
+		"faction": "stronghold",
+		"description" : "{技能说明}： \n{血之瞳}：被失明后第二回合觉醒血瞳，对最近的部队进行攻击，同时具有龙息和近战不减能力。",
+		"aiValue" : 1444,
+		"fightValue" : 1111,
+		"attack" : 17,
+		"defense" : 13,
+		"cost" :
+		{
+			"gold" : 1100
+		},
+		"damage" :
+		{
+			"min" : 16,
+			"max" : 20
+		},
+		"speed" : 8,
+		"upgrades": ["cyclopKing"],
+		"graphics" :
+		{
+			"animation" : "creatures/stronghold/battle/rStrn06B.def",
+			"map" : "creatures/stronghold/map/rStrn06M.def",
+			"iconSmall" : "creatures/stronghold/iconsSmall/rStrn06S.bmp",
+			"iconLarge" : "creatures/stronghold/iconsBig/rStrn06L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "PCYCLBX.DEF",
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+		},
+		"hitPoints" : 70,
+		"growth" : 2,
+		"shots": 8,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "CCYCATTK.wav",
+			"defend": "CCYCDFND.wav",
+			"killed": "CCYCKILL.wav",
+			"move": "CCYCMOVE.wav",
+			"shoot": "CCYCSHOT.wav",
+			"wince": "CCYCWNCE.wav"
+		},
+		"abilities" :
+		{
+			 "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"rangedShoot" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.cyclopRangedShot",
+				"description" : "{范围射击}\n该生物可以范围射击(按F选定)",
+				"icon": "bonuses/areashot.png"
+			},
+			"petrification" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.misfortune",
+				"val" : 100,
+				"addInfo" : [0,2],
+				"icon": "bonuses/misfortuneattack.png"
+			},
+			"siege" : {
+				"subtype" : "spell.cyclopsShot",
+				"type" : "CATAPULT"
+			}
+		}
+	}
+}
+
+

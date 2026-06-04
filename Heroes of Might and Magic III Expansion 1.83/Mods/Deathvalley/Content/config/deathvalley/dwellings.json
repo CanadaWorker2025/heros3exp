@@ -1,0 +1,86 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"dvGraveyard" : {
+				"name" : "乱坟岗",
+				"creatures" : [[ "skelh" ]],
+				"kingdomOverviewImage" : "deathvalley/adventure-map/flagport/dv1.def",
+				"templates" : {
+					"default" : {
+						"animation" : "deathvalley/adventure-map/dwelling-1.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"dvWasteMountain" : {
+				"name" : "坟冢",
+				"creatures" : [[ "boneHook" ]],
+				"kingdomOverviewImage" : "deathvalley/adventure-map/flagport/dv2.def",
+				"templates" : {
+					"default" : {
+						"animation" : "deathvalley/adventure-map/dwelling-2.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"dvPyramid" : {
+				"name" : "腐烂地窖",
+				"creatures" : [[ "mums" ]],
+				"kingdomOverviewImage" : "deathvalley/adventure-map/flagport/dv3.def",
+				"templates" : {
+					"default" : {	
+						"animation" : "deathvalley/adventure-map/dwelling-3.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"dvValley" : {
+				"name" : "荒弃塔",
+				"creatures" : [[ "gghost" ]],
+				"kingdomOverviewImage" : "deathvalley/adventure-map/flagport/dv4.def",
+				"templates" : {
+					"default" : {
+						"animation" : "deathvalley/adventure-map/dwelling-4.def",
+						"mask" : [ "VVV", "VBB", "VAB" ]
+					}
+				}
+			},
+			"dvAbode" : {
+				"name" : "黑夜礼堂",
+				"creatures" : [[ "banshee" ]],
+				"kingdomOverviewImage" : "deathvalley/adventure-map/flagport/dv5.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "deathvalley/adventure-map/dwelling-5.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dvHallOfDarkness" : {
+				"name" : "阴影大厅",
+				"creatures" : [[ "reaper1" ]],
+				"kingdomOverviewImage" : "deathvalley/adventure-map/flagport/dv6.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "deathvalley/adventure-map/dwelling-6.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"dvTemple" : {
+				"name" : "骸骨实验室",
+				"creatures" : [[ "bonegolem" ]],
+				"kingdomOverviewImage" : "deathvalley/adventure-map/flagport/dv7.def",
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "deathvalley/adventure-map/dwelling-7.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			}
+		}		
+	}
+}

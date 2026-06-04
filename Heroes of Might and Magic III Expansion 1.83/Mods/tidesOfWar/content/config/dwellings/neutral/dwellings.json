@@ -1,0 +1,178 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"mdtPigsDen" :
+             {
+				"name" : "猪圈",
+				"creatures" : [[ "nAnimal02" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new13.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/AVWaftrpi02.def",
+						"mask" : [ "VV", "AB" ]
+					}
+				},
+				"sounds": {
+					"ambient": ["dwellings/neutral/PIGSND"]
+				}								
+            },
+			"mdtChicDen" :
+             {
+				"name" : "鸡窝",
+				"creatures" : [[ "nAnimal03" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new10.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/AVWChic.def",
+						"mask" : [ "VV", "AB" ]
+					}
+				},
+				"sounds": {
+					"ambient": ["dwellings/neutral/CHICK"]
+				}								
+            },
+			"mdtApeMage" :
+             {
+				"name" : "猩法师祭坛",
+				"creatures" : [[ "napeMage" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new14.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/apeMageD.def",
+						"mask" : [ "VVV", "VAB" ]
+					}
+				},
+				"sounds": {
+					"ambient": ["LOOPCAVE"]
+				}								
+            },
+			"mdtHuntress" :
+             {
+				"name" : "精灵村落",
+				"creatures" : [[ "nacrea01" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new11.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/AVWaftrpi01.def",
+						"mask" : [ "VV", "AB" ]
+					}
+				},
+				"sounds": {
+					"ambient" : ["LOOPCAVE"]
+				}								
+            },
+			"mdtCoralReef" :
+             {
+				"name" : "拜像者祭坛",
+				"creatures" : [[ "mdtMermaid" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new15.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/mermaiddw.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}								
+            },
+			"mdtWhiteQueen" :
+             {
+				"name" : "鲜花王座",
+				"bannedForRandomDwelling" : true,
+				"creatures" : [[ "ffWhiteQueen" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new16.def",
+				"guards" : [
+                    { "amount" : 3, "type" : "ffWhiteQueen" }
+                ],
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/whitequeenD.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}								
+            },
+			"mdtEvilSorc" :
+             {
+				"name" : "巫术结界",
+				"bannedForRandomDwelling" : true,
+				"creatures" : [[ "evilSor01" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new17.def",
+				"guards" : [
+                    { "amount" : 3, "type" : "evilSor01" }
+                ],
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/AVGEVS.def",
+						"mask" : [ "VVV", "VVV", "BAB" ]
+					}
+				}								
+            },
+			"mdtvenomSpawn" :
+             {
+				"name" : "魔爪之屋",
+				"creatures" : [[ "ffvenomSpawn" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new18.def",
+				"guards" : [
+                    { "amount" : 6, "type" : "ffvenomSpawn" }
+                ],
+				"sounds": {
+					"ambient": ["dwellings/neutral/hutHensLeg"]
+				},
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/ne03D.def",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}								
+            },
+			"mdtDragonQueen" :
+             {
+				"name" : "魔龙洞窟",
+				"creatures" : [[ "ffQueenDragon" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new19.def",
+				"guards" : [
+                    { "amount" : 3, "type" : "ffQueenDragon" }
+                ],
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/ne01D.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}								
+            },
+			"mdtMegaDragon" :
+             {
+				"name" : "巨龙巢穴",
+				"creatures" : [[ "ffMegaDragon" ]],
+				"kingdomOverviewImage" : "dwellings/flagport/new20.def",
+				"guards" : [
+                    { "amount" : 3, "type" : "ffMegaDragon" }
+                ],
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "dwellings/neutral/ne02D.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}								
+            }
+		}
+	}
+}

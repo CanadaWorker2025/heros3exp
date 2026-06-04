@@ -1,0 +1,73 @@
+{
+	"s04_Winzells" :
+	{
+    "class": "factoryAClass",
+    "female" : false,
+	"special": true,
+		
+		"texts" :
+		{
+			"name" : "温泽尔斯",
+			"biography" : "总是认为自己是绅士的温泽尔斯尤其看重自己的打扮，他总是会去采购更好的面料制作服装。但当他出现在战场上时，却又完全没有绅士的样子。",
+			"specialty" :
+			{
+				"description" : "在进攻术上每级得到5%的额外奖励。",
+				"tooltip" : "Receives a 5% per level bonus to Offence skill.",
+				"name" : "进攻术"
+			}
+		},
+
+		"images" :
+		{
+			"small" : "factory/heroes/special/HPS206_0.bmp",
+			"large" : "factory/heroes/special/HPL206_0.bmp",
+			"specialtyLarge" : "factory/heroes/09_Tavin/bigS.bmp",
+			"specialtySmall" : "factory/heroes/09_Tavin/smallS.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"offence" : {
+					"subtype" : "damageTypeMelee",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+

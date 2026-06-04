@@ -1,0 +1,77 @@
+{
+	"gNec03"://ghostpl
+	{
+		"name" :
+		{
+			"plural" : "游魂",
+			"singular" : "游魂"
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 12
+		},
+		"faction": "necropolis",
+		"aiValue" : 321,
+		"fightValue" : 252,
+		"attack" : 8,
+		"defense" : 7,
+		"cost" :
+		{
+			"gold" : 230
+		},
+		"damage" :
+		{
+			"min" : 3,
+			"max" : 5
+		},
+		"speed" : 8,
+		"upgrades": ["wraith"],
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/gNec03B.def",
+			"map" : "creatures/necropolis/map/gNec03M.def",
+			"iconSmall" : "creatures/necropolis/iconsSmall/gNec03S.bmp",
+			"iconLarge" : "creatures/necropolis/iconsBig/gNec03L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 20,
+		"growth" : 7,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "WRTHATTK.wav",
+			"defend": "WRTHDFND.wav",
+			"killed": "WRTHKILL.wav",
+			"move": "WRTHMOVE.wav",
+			"wince": "WRTHWNCE.wav"
+		},
+		"abilities":
+		{
+			"undead" : 
+			{ 
+				"type" : "UNDEAD",
+			},
+			"canFly" :
+			{
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly3.png"
+			},
+			"castDisease" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.nec03",
+				"val" : 30,
+				"icon": "bonuses/nec03.png"
+			}
+		}
+	}
+}
+
+

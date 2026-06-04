@@ -1,0 +1,107 @@
+{
+    "core:creatureGeneratorCommon" : {
+        "types" : {
+            "factoryLevel1" : {
+                "name" : "半身人小屋",
+                "creatures" : [[ "halfling" ]],
+				"kingdomOverviewImage" : "factory/map/dwellings/flagport/flafac1.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "factory/map/dwellings/AVG2half",
+                        "mask" : ["VVV","VVV","VAB" ]
+                    }
+                }
+            },
+            "factoryLevel2" : {
+                "name" : "铸造厂",
+                "creatures" : [[ "hotaMechanic" ]],
+				"kingdomOverviewImage" : "factory/map/dwellings/flagport/flafac2.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "factory/map/dwellings/AVGmecha",
+                        "mask" : [ "VVV","VVV","VVV","VBA" ]
+                    }
+                }
+            },
+            "factoryLevel3" : {
+                "name" : "牧场",
+                "creatures" : [[ "armadillo" ]],
+				"kingdomOverviewImage" : "factory/map/dwellings/flagport/flafac3.def",
+                "templates" : {
+                    "default" : {   
+                        "animation" : "factory/map/dwellings/AVGarma",
+                        "mask" : ["VVV","VVV","VBA" ]
+                    }
+                }
+            },
+            "factoryLevel4" : {
+                "name" : "机械工厂",
+                "creatures" : [[ "automaton" ]],
+				"kingdomOverviewImage" : "factory/map/dwellings/flagport/flafac4.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "factory/map/dwellings/AVGauto",
+                        "mask" : ["VVV","VVV","VVV","VAB" ]
+                    }
+                }
+            },
+            "factoryLevel5" : {
+                "name" : "沙虫地穴",
+                "creatures" : [[ "sandworm" ]],
+                "guards" : [
+                    { "amount" : 9, "type" : "sandworm" }
+                ],
+				"kingdomOverviewImage" : "factory/map/dwellings/flagport/flafac5.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "factory/map/dwellings/AVGworm",
+                        "mask" : [ "VVV","VBA"]
+                    }
+                }
+            },
+            "factoryLevel6" : {
+                "name" : "哨塔",
+                "creatures" : [[ "hotaGunman" ]],
+                "guards" : [
+                    { "amount" : 6, "type" : "hotaGunman" }
+                ],
+				"kingdomOverviewImage" : "factory/map/dwellings/flagport/flafac6.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "factory/map/dwellings/AVGguns",
+                        "mask" : ["VVV","VVV","VVV","VBA" ]
+                    }
+                }
+            },
+            "factoryLevel7" : {
+                "name" : "羽蛇殿堂",
+                "creatures" : [[ "hotaCouatl" ]],
+                "guards" : [
+                    { "amount" : 3, "type" : "hotaCouatl" }
+                ],
+				"kingdomOverviewImage" : "factory/map/dwellings/flagport/flafac7.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "factory/map/dwellings/AVGcoatl",
+                        "mask" : ["VVV","VVV","VBA" ]
+                    }
+                }
+            },
+			"factoryLevel7-2" : {
+                "name" : "重型制造场",
+                "creatures" : [[ "hotaDread" ]],
+                "guards" : [
+                    { "amount" : 3, "type" : "hotaDread" }
+                ],
+				"kingdomOverviewImage" : "factory/map/dwellings/flagport/flafac8.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "factory/map/dwellings/AVGdread",
+                        "mask" : ["VVV","VVV","VBA" ]
+                    }
+                }
+            }
+
+        }       
+    }
+} 

@@ -1,0 +1,250 @@
+{
+	"mdtQuetzalcouatl" : 
+	{	
+		"advMapAmount" : {"max" : 10, "min" : 5},
+		"aiValue" : 1829,
+		"attack" : 18,
+		"cost" : { "gold" : 950 },
+		"damage" : {"max" : 24, "min" : 18},
+		"defense" : 11,
+		"faction" : "stronghold",
+		"fightValue" : 1588,
+		"graphics" : {
+			"animation" : "creatures/stronghold/battle/CQouatl.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1.0 },
+			"iconLarge" : "creatures/stronghold/iconsbig/qcouatl_big.png",
+			"iconSmall" : "creatures/stronghold/iconssmall/qcouatl_small.png",
+			"map" : "creatures/stronghold/map/mapQcouatl.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 2,
+		"hitPoints" : 85,
+        "doubleWide" : true,
+		"level" : 6,
+		"name" : { "plural" : "风蛇王", "singular" : "风蛇王" },
+		"sound" : {
+			"attack" : "creatures/stronghold/couatl/COATATTK.wav",
+			"defend" : "creatures/stronghold/couatl/COATDFND.wav",
+			"killed" : "creatures/stronghold/couatl/COATDEAD.wav",
+			"move" : "creatures/stronghold/couatl/COATMOVE.wav",
+			"wince" : "creatures/stronghold/couatl/COATWNCE.wav"
+		},
+		"speed" : 14,
+		"abilities" : 
+		{
+			"canFly" : 
+			{ 
+				"type" : "FLYING"
+			},
+			"stoneGazeImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.stoneGaze",
+				"hidden": true
+			},
+			"poisonImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.poison",
+				"hidden": true
+			},
+			"bindImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.bind",
+				"hidden": true
+			},
+			"diseaseImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.disease",
+				"hidden": true
+			},
+			"paralyzeImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.paralyze",
+				"hidden": true
+			},
+			"ageImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.age",
+				"hidden": true
+			},
+			"deathCloudImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.deathCloud",
+				"hidden": true
+			},
+			"thunderboltImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.thunderbolt",
+				"hidden": true
+			},
+			"dispelHelpfulImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.dispelHelpful",
+				"hidden": true
+			},
+			"deathStareImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.deathStare",
+				"hidden": true
+			},
+			"acidBreathImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.acidBreath",
+				"hidden": true
+			},
+			"acidBreathDamageImm" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.acidBreathDamage",
+				"hidden": true
+			},
+			"newimm01" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.con06eff",
+				"hidden": true
+			},
+			"newimm02" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.con07eff",
+				"hidden": true
+			},
+			"newimm03" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.paraFungus",
+				"hidden": true
+			},
+			"newimm04" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.fungus",
+				"hidden": true
+			},
+			"newimm05" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.iFor04eff",
+				"hidden": true
+			},
+			"newimm06" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.iFor05eff",
+				"hidden": true
+			},
+			"newimm07" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.iFor06eff",
+				"hidden": true
+			},
+			"newimm08" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.inf01",
+				"hidden": true
+			},
+			"newimm09" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.inf02",
+				"hidden": true
+			},
+			"newimm10" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.nec03",
+				"hidden": true
+			},
+			"newimm11" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.nec06",
+				"hidden": true
+			},
+			"newimm12" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.strn05",
+				"hidden": true
+			},
+			"newimm13" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.tw04eff",
+				"hidden": true
+			},
+			"newimm14" : 
+			{ 
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.tw07eff",
+				"description" : "{免疫生物特技}\n免疫所有来自生物的负面技能",
+				"icon" : "spells/extraEffect/e_spdisb.png"
+			}	
+			
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 2, 2, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY",				
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 3, 3, 4 ]
+			}
+		]	
+	}
+}

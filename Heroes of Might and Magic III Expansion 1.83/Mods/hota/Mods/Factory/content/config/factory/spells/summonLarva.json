@@ -1,0 +1,52 @@
+{
+	"summonLarva" : {
+		"type": "ability",
+		"targetType" : "CREATURE",
+		"name": "吞噬尸体",
+		"school" : {},
+		"level": 2,
+		"power": 1,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"animation":{
+			"affect":["CSGRCK"]
+		},
+		"graphics":
+		{
+			"iconEffect": "spells/devour.png"
+		},
+		"sounds": {
+			"cast": "DISEASE"
+		},
+		"levels" : {
+			"base": {
+				"description" : "{吞噬尸体}\n\n将一个单位的尸体吞噬，并且产生一个沙虫幼虫。控制沙虫幼虫可以给本体提升一次攻击次数。\n",
+				"power" : 1,
+				"cost" : 1,
+				"targetModifier":{"smart":false},
+				"range" : "0",
+				"battleEffects":{
+					"demonSummon":{
+						"id":"sandwormLarva",
+						"permanent":false,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+			"none" :{},
+			"basic" :{},
+			"advanced" :{},
+			"expert" :{}
+		},
+		"flags" : {
+			"rising": true,
+			"nonMagical":true,
+			"positive": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		}
+	}
+}

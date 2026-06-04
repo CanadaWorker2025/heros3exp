@@ -1,0 +1,21 @@
+{
+	"core:grail":
+	{
+		
+		"text" : {
+			"name" : "  神器  ",
+			"description" : "{  神器  }\r\n\r\n带着神器前往某个城镇，那儿的居民会为它建造一座奇迹，从而给该城的主人带来极大的好处。",
+			"event" : "你发现了神器并将它放入行囊。"
+		},
+		"class" : "SPECIAL",
+		"slot" : "MISC",
+		"components":
+		[
+			"cgEtherElementalsAviary",
+			"cgSirensStar",
+			"cgMagnusCoffer",
+			"cgPatronOfVenomousFire",
+			"cgMagicSweaterSutra"
+		]
+	}
+}

@@ -1,0 +1,70 @@
+{
+  "zamNecromancer" :
+  {
+    "class" : "necromancer",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "扎姆",
+      "biography" : "阿基巴德输掉了继承权战争后，扎姆决定离开恩洛斯，在埃拉西亚永久定居。他躲在实验室里已有多年，意外的是，他听到了德迦老统治者被废的消息，对新国王的手段感到失望的扎姆迅速放弃了对他的效忠。",
+      "specialty" :
+      {
+        "description" : "使用吸血鬼之触魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+        "tooltip" : "Spell Bonus: Vampirism",
+        "name" : "吸血鬼之触"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/necropolis/zam_spec-small.bmp",
+      "specialtyLarge" : "heroes/necropolis/zam_spec-large.bmp",
+      "large" : "heroes/necropolis/zam_portrait-large.bmp",
+      "small" : "heroes/necropolis/zam_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "skeleton",
+        "max" : 30,
+        "min" : 20
+      },
+      {
+        "creature" : "walkingDead",
+        "max" : 6,
+        "min" : 4
+      },
+      {
+        "creature" : "wight",
+        "max" : 6,
+        "min" : 4
+      }
+    ],
+	"spellbook": [ "mdtVampirism" ],
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "estates"
+      },
+      {
+        "level" : "basic",
+        "skill" : "necromancy"
+      }
+    ],
+    
+	"specialty" : {
+		"bonuses" : {
+			"vampirism" : {
+				"subtype" : "spell.mdtVampirism",
+				"type" : "SPECIAL_SPELL_LEV",
+				"updater" : "TIMES_HERO_LEVEL",
+				"val" : 3
+			}
+		}
+	}
+  }	
+}

@@ -1,0 +1,87 @@
+{
+	"gNec01"://skeletonMage
+	{
+		"name" :
+		{
+			"plural" : "骷髅法师",
+			"singular" : "骷髅法师"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction": "necropolis",
+		"aiValue" : 85,
+		"fightValue" : 85,
+		"attack" : 5,
+		"defense" : 4,
+		"cost" :
+		{
+			"gold" : 70
+		},
+		"damage" :
+		{
+			"min" : 1,
+			"max" : 3
+		},
+		"speed" : 4,
+		"upgrades": ["skeletonWarrior"],
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/gNec01B.def",
+			"map" : "creatures/necropolis/map/gNec01M.def",
+			"iconSmall" : "creatures/necropolis/iconsSmall/gNec01S.bmp",
+			"iconLarge" : "creatures/necropolis/iconsBig/gNec01L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "CPRZEAX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"hitPoints" : 5,
+		"growth" : 12,
+		"shots" : 8,
+		"horde" : 6,
+		"level" : 1,
+		"sound" :
+		{
+			"attack": "SKLWATTK.wav",
+			"defend": "SKLWDFND.wav",
+			"killed": "SKLWKILL.wav",
+			"shoot": "LICHSHOT.wav",
+			"move": "SKLWMOVE.wav",
+			"wince": "SKLWWNCE.wav"
+		},
+		"abilities":
+		{
+			"undead" : 
+			{ 
+				"type" : "UNDEAD",
+			},
+			"canShoot":
+			{	
+				"type" : "SHOOTER"
+			}
+		}
+	}
+}
+
+

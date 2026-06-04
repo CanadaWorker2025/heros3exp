@@ -1,0 +1,68 @@
+{
+	"s05_Elderian" :
+	{
+    "class": "factoryMClass",
+    "female" : false,
+	"special": true,
+		
+		"texts" :
+		{
+			"name" : "埃尔多安",
+			"biography" : "生活在布拉卡达，想要研究禁忌法术的埃尔多安访问了很多学者，但却找不到自己真正追求的东西，据说来到伯顿他可以完成自己的研究。即使是加入邪恶的阵营他也不在乎。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "自行机甲",
+				"description" : "达到4级以后提高自行机甲或守卫机甲的攻击力与防御力。"
+			}
+		},
+
+		"images" :
+		{
+			"small" : "factory/heroes/special/HPS203_0.bmp",
+			"large" : "factory/heroes/special/HPL203_0.bmp",
+			"specialtyLarge" : "factory/heroes/12_Todd/bigS.bmp",
+			"specialtySmall" : "factory/heroes/12_Todd/smallS.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "automaton",
+				"max" : 5,
+				"min" : 3
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"spellbook" :
+		[
+			"shield"
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "automaton"
+		}
+	}
+}
+

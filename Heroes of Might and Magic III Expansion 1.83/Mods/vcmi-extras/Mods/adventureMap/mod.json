@@ -1,0 +1,25 @@
+{
+	"name" : "Revisit and Search Buttons",
+	"description" : "Adds two new buttons to the adventure map interface:<br><br>• <b>Revisit</b> – allows re-entering the currently occupied object<br>• <b>Search</b> – allows finding objects within the explored area of the map<br><br>Also includes a custom hero icon.",
+	"author" : "Graphics - Edeksumo, Mechanics - Ivan",
+	"contact" : "http://vcmi.eu",
+	"version" : "1.0",
+	"modType" : "Graphical",
+
+	"chinese" : {
+		"name" : "原地访问和搜索按钮",
+		"description" : "在冒险地图界面添加两个新按钮：<br><br>• <b>原地访问</b> – 允许重新进入当前占据的物体<br>• <b>搜索</b> – 允许在地图已探索区域查找物体<br><br>也引入一个自定义英雄按钮。"
+	},
+	"czech" : {
+		"name" : "Tlačítka Znovunavštívit a Vyhledat",
+		"description" : "Přidává dvě nová tlačítka do rozhraní dobrodružné mapy:<br><br>• <b>Znovunavštívit</b> – umožňuje znovu vstoupit do aktuálního objektu<br>• <b>Vyhledat</b> – umožňuje najít objekt v již prozkoumané části mapy<br><br>Součástí je také nová ikona hrdiny."
+	},
+	"polish" : {
+		"name" : "Przyciski Ponownego Wejścia i Znajdź",
+		"description" : "Dodaje dwa nowe przyciski do interfejsu mapy przygód:<br><br>• <b>Wejdź ponownie</b> – umożliwia powrót do aktualnie zajmowanego obiektu<br>• <b>Znajdź</b> – pozwala znaleźć obiekt na już odkrytej części mapy<br><br>Zawiera także nową ikonę bohatera."
+	},
+	"german" : {
+		"name" : "Wiederbesuch- und Suchfunktion-Buttons",
+		"description" : "Erweiteret die Abenteuerkartenoberfläche mit zwei neuen Buttons:<br/><br/>• <b>Wiederbesuch</b> – erlaubt den erneuten Besuch des Objekts auf dem Euer Held gerade steht.<br/>• <b>Suchen</b> – erlaubt es Objekte im aufgedecken Bereich der Karte zu finden<br/><br/>Verbessert außerdem die Symbole für die Heldenoptionen."
+	}
+}

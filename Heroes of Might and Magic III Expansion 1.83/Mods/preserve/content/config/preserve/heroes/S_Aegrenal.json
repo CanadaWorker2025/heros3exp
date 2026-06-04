@@ -1,0 +1,85 @@
+{
+	"s_Agrenal" :
+	{
+		"class" : "bard",
+		"female" : true,
+		"special": true,
+
+		"texts" :
+		{
+			"name" : "艾格瑞奈尔",
+			"biography" : "艾格瑞奈尔出生在一个位于森林边缘的村庄里，她的父母丧生于邻国发动的一次袭击中。为了通过歌曲让自己关于父母的记忆永存，也为了能够从普通人民的立场记载历史，艾格瑞奈尔选择成为一位吟游诗人。",
+			"specialty" :
+			{
+				"description" : "拥有吟唱魔法并且开场可以施放。",
+				"tooltip" : "Bonus: spell",
+				"name" : "吟唱"
+			}
+		},
+
+    "images": {
+      "specialtySmall": "preserve/heroes/s_agrenal/UN32Mo.bmp",
+      "specialtyLarge": "preserve/heroes/s_agrenal/UN44Mo.bmp",
+      "large": "preserve/heroes/s_agrenal/HPL009BR.bmp",
+      "small": "preserve/heroes/s_agrenal/HPS009BR.bmp"
+    },
+	"battleImage" : "preserve/battle/heroes/CH21SP",
+    
+    "spellbook" :
+		[
+			"choir"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 7,
+				"min" : 6
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			}
+		],
+		"specialty": 
+		{
+			"bonuses":
+			{
+				"choir":
+				{
+					"type": "OPENING_BATTLE_SPELL",
+					"subtype": "spell.choir",
+					"val" : 7,
+					"valueType" : "BASE_NUMBER"
+				},
+				"bind" : 
+				{
+				"subtype" : "spell.choir",
+				"type" : "SPELL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+				}
+			}
+		}
+	}
+}
+
+

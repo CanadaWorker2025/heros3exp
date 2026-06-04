@@ -1,0 +1,26 @@
+{
+	"crownOfTheFiveSeas" : {
+		"type" : [ "HERO" ],
+		"slot" : "HEAD",
+		"class" : "MAJOR",
+		"value" : 7000,
+		"bonuses" : {
+			"skill" : {
+				"subtype" : "knowledge",
+				"type" : "PRIMARY_SKILL",
+				"valueType" : "BASE_NUMBER",
+				"val" : 6
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/crownOfTheFiveSeas",
+			"map" : "hota/artifactsMap/crownOfTheFiveSeas",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/crownOfTheFiveSeas"
+		},
+		"text" : {
+			"description" : "{七海之冠}\r\n\r\n戴上七海之冠可以使你的知识+6。",
+			"event" : "你费力地扎下营地，当你一天以来头一次下了马鞍时，一些生物悄然靠近你并把你的一只靴子推进它们的洞穴里，你心中咒骂着，用手搜索这个洞穴，你没搜寻到靴子而是触碰到一件尖利的东西。惊喜地，你拽出来一顶头冠。",
+			"name" : "七海之冠"
+		}
+	}
+}

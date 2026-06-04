@@ -1,0 +1,58 @@
+{
+	"amesh" :
+	{
+		"class" : "vizier",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "阿米什",
+			"biography" : "阿米什是唯一一个在谜题比赛中与斯芬克斯不相上下的人。他热衷于解答谜语，并提出新的谜题，这使他在这些深奥的生物中声名远扬，倍受尊敬。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高人面狮或人面狮先知的攻击力与防御力。",
+				"tooltip" : "Creature Bonus: Sphinxes",
+				"name" : "人面狮"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/Un32Sphi.bmp",
+			"specialtyLarge" : "speciconsPavilion/Un44Sphi.bmp",
+			"large" : "heroportraitsPavilion/Amesh.png",
+			"small" : "heroportraitsPavilion/AmeshSmall.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+		
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "tactics"
+			}	
+		],
+			
+		"specialty" : {
+			"creature" : "sphinx"
+		}
+	}
+}

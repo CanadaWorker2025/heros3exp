@@ -1,0 +1,91 @@
+{
+	"rStrn03"://orc captain
+	{
+		"name" :
+		{
+			"plural" : "半兽人队长",
+			"singular" : "半兽人队长"
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 12
+		},
+		"faction": "stronghold",
+		"aiValue" : 241,
+		"fightValue" : 201,
+		"attack" : 8,
+		"defense" : 5,
+		"cost" :
+		{
+			"gold" : 165
+		},
+		"damage" :
+		{
+			"min" : 3,
+			"max" : 6
+		},
+		"speed" : 6,
+		"upgrades": ["orcChieftain"],
+		"graphics" :
+		{
+			"animation" : "creatures/stronghold/battle/rStrn03B.def",
+			"map" : "creatures/stronghold/map/rStrn03M.def",
+			"iconSmall" : "creatures/stronghold/iconsSmall/rStrn03S.bmp",
+			"iconLarge" : "creatures/stronghold/iconsBig/rStrn03L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "PORCHX.DEF",
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+		},
+		"hitPoints" : 20,
+		"growth" : 7,
+		"shots": 16,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "ORCCATTK.wav",
+			"defend": "ORCCDFND.wav",
+			"killed": "ORCCKILL.wav",
+			"move": "ORCCMOVE.wav",
+			"shoot": "ORCCSHOT.wav",
+			"wince": "ORCCWNCE.wav"
+		},
+		"abilities" :
+		{
+			 "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"halfShoot" :
+			{
+				"type" : "LIMITED_SHOOTING_RANGE",
+				"val": 10
+			}
+		}
+	}
+}
+
+

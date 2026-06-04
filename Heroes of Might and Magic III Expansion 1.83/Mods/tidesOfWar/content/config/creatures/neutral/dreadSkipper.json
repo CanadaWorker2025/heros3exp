@@ -1,0 +1,142 @@
+{
+	"mdtDreadSkipper":
+	{
+		"name" :
+		{
+			"plural" : "恐怖船长",
+			"singular" : "恐怖船长"
+		},
+		"faction" : "neutral",
+		"special" : false,		
+		"advMapAmount" :
+		{
+			 "min" : 12,
+			 "max" : 25
+		},
+		"level" : 3,
+		"attack" : 8,
+		"defense" : 8,
+		"damage" :
+		{
+			 "min" : 4,
+			 "max" : 5
+		},
+		"growth" : 7,
+		"hitPoints" : 25,
+		"speed" : 6,
+		"fightValue" : 311,
+		"aiValue" : 311,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"hasDoubleWeek": true,
+		"doubleWide" : false,
+		"graphics" :
+		{
+			"animation" : "creatures/neutral/battle/CSkipper.def",
+			"map" : "creatures/neutral/map/dskippermap.def",
+			"iconSmall" : "creatures/neutral/iconsSmall/dskipperS.png",
+			"iconLarge" : "creatures/neutral/iconsBig/dskipperB.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "creatures/neutral/dreadSkipper/DRSKATTK.wav",
+			"defend": "creatures/neutral/dreadSkipper/DRSKDFND.wav",
+			"killed": "creatures/neutral/dreadSkipper/DRSKDEAD.wav",
+			"move": "creatures/neutral/dreadSkipper/DRSKMOVE.wav",
+			"wince": "creatures/neutral/dreadSkipper/DRSKWNCE.wav"
+        },
+		"abilities" :
+		{
+			"undead" : 
+			{ 
+				"type" : "UNDEAD"
+			},
+			"canSorrow" : 
+			{ 
+				"type" : "SPELL_BEFORE_ATTACK",
+				"subtype" : "spell.sorrow",
+				"val" : 20,
+				"addInfo" : [0,2],
+				"icon": "bonuses/sorrowattack.png"
+			},
+			"sorrowPower" : 
+			{ 
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 300 //spell power = 3
+			},
+			"sorrowLenght" : 
+			{ 
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 5 //spell duration =5
+			}
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 0, 1, 2, 3]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+			}
+		]
+	}
+}

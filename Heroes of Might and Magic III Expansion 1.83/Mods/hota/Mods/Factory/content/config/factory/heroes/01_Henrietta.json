@@ -1,0 +1,63 @@
+{
+	"01_Henrietta" :
+	{
+    "class": "factoryAClass",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "亨丽埃塔",
+			"biography" : "一场史无前例的灾难来袭时，即使是来自欧弗边远森林的卑微半身人也能做出壮举。 这个没有茅草屋顶、胡萝卜床，也没有老头子的喋喋不休的新世界已经改变了亨丽埃塔，而她也已经准备好改变这个世界。 克里根的火焰将她的故土和她的心一起燃成灰烬，但她却用它锻造了自己钢铁般的意志。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高半身人或半身掷雷手的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "半身人"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/01_Henrietta/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/01_Henrietta/bigS.bmp",
+			"large" : "factory/heroes/01_Henrietta/bigP.bmp",
+			"small" : "factory/heroes/01_Henrietta/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "halfling"
+		}
+	}
+}
+

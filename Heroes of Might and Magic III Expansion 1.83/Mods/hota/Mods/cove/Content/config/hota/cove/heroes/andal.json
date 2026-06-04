@@ -1,0 +1,57 @@
+{
+	"12andal" : {
+		"class" : "navigator",
+		"images" : {
+			"large" : "hota/cove/heroes/andal/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/andal/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/andal/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/andal/icons/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "nymph",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "crewmate",
+				"min" : 6,
+				"max" : 9
+			},
+			{
+				"creature" : "pirate",
+				"min" : 4,
+				"max" : 7
+			}
+		],
+		"skills" : [ 
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "pathfinding",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.crystal",
+					"val" : 1
+				}
+			}
+		},
+		"spellbook" : [ "weakness" ],
+		"texts" : {
+			"biography" : "虽然安戴尔是一个经验丰富的海盗，但是他一开始根本就没想走上学习魔法和偷窃的道路。他曾经做过商人，直到他的生意倒闭并且负债累累。从那以后，安戴尔离开了家乡，开始寻找快速挣钱的方法。当他作为一个著名的走私贩重新回到家乡后，已经过了很长一段时间了。安戴尔经常贩卖宝石和水晶，但是没人知道他是如何获得这些东西的。",
+			"name" : "安戴尔",
+			"specialty" : {
+				"tooltip" : "+1 Crystal each day",
+				"name" : "+1水晶",
+				"description" : "为王国每天额外提供1水晶。"
+			}
+		}
+	}
+}

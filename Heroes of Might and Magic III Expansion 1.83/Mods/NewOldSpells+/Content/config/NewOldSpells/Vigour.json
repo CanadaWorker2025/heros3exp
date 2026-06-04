@@ -1,0 +1,140 @@
+{
+	"vigour":
+	{
+		"type": "combat", 
+		"name": "全神贯注",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 4,
+		"power": 10,
+		
+		"defaultGainChance": 10, 
+		"gainChance":
+		{
+			"rampart": 15,
+			"necropolis": 5
+		},
+ 
+		"flags" : {"positive": true},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {
+				"bonus.MIND_IMMUNITY" : "normal",
+				"bonus.UNDEAD" : "normal",
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+	},		
+
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/vigourBook.bmp",
+			"iconScroll": "NewOldSpells/vigourScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/vigourScenario.bmp",
+			"iconEffect": "NewOldSpells/vigourEffect.bmp"
+		},
+		
+		"animation":
+		{
+			"affect":["NewOldSpells/vigourSpell.def"]
+		},
+
+		"sounds":
+		{
+			"cast": "NewOldSpells/sound.spell.reflexes.wav"
+		},
+		
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{全神贯注}\n\n使生物攻击可以双击。攻击后失效。如果生物本身可以双击，则三连击。\n\n对不死生物，精神免疫单位无效。",
+	 
+				"cost": 18,
+	 
+				"effects":
+				{
+					"attacks":
+					{
+						"type": "ADDITIONAL_ATTACK",
+						"val": 1,
+						"duration": [
+							"UNTIL_ATTACK",
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级全神贯注}\n\n使生物攻击可以双击。攻击后失效。如果生物本身可以双击，则三连击。\n\n对不死生物，精神免疫单位无效。",
+	 
+				"cost": 14,
+	 
+				"effects":
+				{
+					"attacks":
+					{
+						"type": "ADDITIONAL_ATTACK",
+						"val": 1,
+						"duration": [
+							"UNTIL_ATTACK",
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级全神贯注}\n\n使生物攻击可以双击。如果生物本身可以双击，则三连击。\n\n对不死生物，精神免疫单位无效。",
+	 
+				"cost": 14,
+//				"range": "1",
+	 
+				"effects":
+				{
+					"attacks":
+					{
+						"type": "ADDITIONAL_ATTACK",
+						"val": 1,
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级全神贯注}\n\n使范围生物攻击可以双击。如果生物本身可以双击，则三连击。\n\n对不死生物，精神免疫单位无效。",
+	 
+				"cost": 14,
+				"range": "0-1",	 
+				"effects":
+				{
+					"attacks":
+					{
+						"type": "ADDITIONAL_ATTACK",
+						"val": 1,
+						"duration": "N_TURNS"
+					}
+				}
+			}
+		}
+	}
+ 
+}

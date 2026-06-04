@@ -1,0 +1,157 @@
+{
+	"tw01eff":
+	{
+		"type": "ability", 
+		"name": "瘫痪机械",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":["spells/extraEffect/tw1Eff.def"]
+		},
+ 
+		"flags" : {"negative": true},
+		"targetCondition" : {
+			"anyOf" : {	
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconEffect": "spells/extraEffect/tw1eff.bmp"
+		},
+
+		"sounds":
+		{
+			"cast":"FORCEFLD"
+		},
+		"targetType" : "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{机械瘫痪}\r\n\r\n使机械单位2个回合无法行动。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "spell.stoneGaze",
+						"duration" : [
+							"N_TURNS"
+						]
+					},
+					"noRetaliation" : {
+						"val" : 0,
+						"type" : "NO_RETALIATION",
+						"duration" : [
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{机械瘫痪}\r\n\r\n使机械单位2个回合无法行动。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "spell.stoneGaze",
+						"duration" : [
+							"N_TURNS"
+						]
+					},
+					"noRetaliation" : {
+						"val" : 0,
+						"type" : "NO_RETALIATION",
+						"duration" : [
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{机械瘫痪}\r\n\r\n使机械单位2个回合无法行动。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "spell.stoneGaze",
+						"duration" : [
+							"N_TURNS"
+						]
+					},
+					"noRetaliation" : {
+						"val" : 0,
+						"type" : "NO_RETALIATION",
+						"duration" : [
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{机械瘫痪}\r\n\r\n使机械单位2个回合无法行动。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "spell.stoneGaze",
+						"duration" : [
+							"N_TURNS"
+						]
+					},
+					"noRetaliation" : {
+						"val" : 0,
+						"type" : "NO_RETALIATION",
+						"duration" : [
+							"N_TURNS"
+						]
+					}
+				}
+			}
+		}
+	}
+ 
+}

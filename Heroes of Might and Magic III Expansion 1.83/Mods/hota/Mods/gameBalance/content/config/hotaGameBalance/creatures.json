@@ -1,0 +1,81 @@
+{
+	"core:monk" :
+	{
+		"aiValue" : 582
+	},
+	"core:archDevil" :
+	{
+		"abilities" :
+		{
+			"decreaseLuck" :
+			{
+				"type" : "LUCK",
+				"val" : -2,
+				"stacking" : "Devils",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"description" : "{减少敌人幸运}\n面对大恶魔使敌人的运气减少2点",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			}
+		}
+	},
+	"core:efreetSultan" :
+	{
+		"aiValue" : 2343
+	},
+	"core:psychicElemental" :
+	{
+		"cost" :
+		{
+			"gold" : 950
+		}
+	},
+	"core:magicElemental" :
+	{
+		"cost" :
+		{
+			"gold" : 1200
+		}
+	},
+	"core:firebird" :
+	{
+		"aiValue" :4336,
+		"fightValue" : 3097,
+		"horde" : 1,
+		"growth" : 1,
+		"cost" :
+		{
+			"gold" : 2000
+		},	
+		"abilities":
+		{
+			"magicResistance" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.fire",
+				"val" : 50
+			},
+			"immuneToFire" : null
+		}
+	},
+	"core:phoenix" :
+	{
+		"horde" : 1,
+		"growth" : 1,
+		"cost" :
+		{
+			"gold" : 3000
+		}
+	},
+	"core:fairieDragon" :
+	{
+		"aiValue" :30501
+	},
+	"core:ballista" :
+	{
+		"cost" :
+		{
+			"gold" : 1500
+		}
+	},
+}

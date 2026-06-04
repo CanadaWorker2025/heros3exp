@@ -1,0 +1,105 @@
+{
+	"primeMissile":
+	{
+		"type": "combat", 
+		"name": "源力飞弹",
+		"school":
+		{
+			"pavillionPrime": true
+		},
+		"level": 1,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+ 
+		"flags" :
+		{
+			"special" : true,
+			"damage": true,
+			"negative": true
+		},
+ 
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {}
+	},  
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/01PrimeMissile/missileBook.bmp",
+			"iconScroll": "spellsPyramids/01PrimeMissile/missileScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/01PrimeMissile/missileBonus.bmp",
+			"iconEffect": "spellsPyramids/01PrimeMissile/missileEffect.bmp"
+		},
+		
+		"animation":{
+			"projectile": [
+				{"minimumAngle": 0 ,"defName":"C20SPX4"},
+				{"minimumAngle": 0.60 ,"defName":"C20SPX3"},
+				{"minimumAngle": 0.90 ,"defName":"C20SPX2"},
+				{"minimumAngle": 1.20 ,"defName":"C20SPX1"},
+				{"minimumAngle": 1.50 ,"defName":"C20SPX0"}
+			],
+			"hit":["C20SPX"]
+		},
+
+		"sounds": {
+			"cast": "MAGICBLT"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0",
+				"battleEffects" : {
+					"directDamage" : {
+						"type":"core:damage"
+					}
+					},
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{源力飞弹}\n\n对敌人丢出无属性的源力之箭。\n",
+	 
+				"range": "0",
+				"cost": 5,
+				"power": 10
+	
+			},
+			"basic":
+			{
+				"description": "{初级源力飞弹}\n\n对敌人丢出无属性的源力之箭。\n",
+	 
+				"range": "0",
+				"cost": 4,
+				"power": 15
+			},
+			"advanced":
+			{
+				"description": "{中级源力飞弹}\n\n对敌人丢出无属性的源力之箭。\n",
+	 
+				"range": "0",
+				"cost": 4,
+				"power": 15
+			},
+			"expert":
+			{
+				"description": "{高级源力飞弹}\n\n对敌人丢出无属性的源力之箭。\n",
+	 
+				"range": "0",
+				"cost": 3,
+				"power": 20
+			}
+		}
+	}
+ 
+}

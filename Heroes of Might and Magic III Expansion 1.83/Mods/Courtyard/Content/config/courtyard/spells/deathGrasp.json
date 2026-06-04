@@ -1,0 +1,106 @@
+{
+	
+	
+	"deathGrasp":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "死亡触摸",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"courtyard" : 0
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName":"courtyard/spells/DeathGrasp/DeathGrasp.def", "verticalPosition":"bottom"}]
+		},
+ 
+		"flags" : { "damage": true, "negative" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "normal",
+				"bonus.MECHANICAL" : "normal",
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+ 
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/DeathGrasp/DGrasp_book1",
+			"iconEffect": "courtyard/spells/DeathGrasp/DGrasp_effect1",
+			"iconScroll": "courtyard/spells/DeathGrasp/DGrasp_scroll1",
+			"iconScenarioBonus": "courtyard/spells/DeathGrasp/DGrasp_bonus1",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds" : {
+			"cast" : "courtyard/spells/SPELLDGRASP.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"cost" : 60,
+				"range" : "0",
+				"power" : 0.1,
+				//				"aiValue": 70,
+				"targetModifier" : {
+					"smart" : true
+				},
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage",
+						"killByCount" : true
+						//						"val": 5,
+						//						"valueType": "INDEPENDENT_MIN"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{死亡触摸}\n\n杀死一定数量的敌人，取决于英雄的法术力量值。"
+			},
+			"basic" : {
+				"power" : 0.15,
+				"description" : "{初级死亡触摸}\n\n杀死一定数量的敌人，取决于英雄的法术力量值。",
+				"battleEffects" : {
+					"directDamage" : {
+						//						"val": 1,
+					}
+				}
+			},
+			"advanced" : {
+				"power" : 0.2,
+				"description" : "{中级死亡触摸}\n\n杀死一定数量的敌人，取决于英雄的法术力量值。",
+				"battleEffects" : {
+					"directDamage" : {
+						//						"val": 2,
+					}
+				}
+			},
+			"expert" : {
+				"power" : 0.25,
+				"description" : "{高级死亡触摸}\n\n杀死一定数量的敌人，取决于英雄的法术力量值。",
+				"battleEffects" : {
+					"directDamage" : {
+						//						"val": 3,
+					}
+				}
+			}
+		}
+	}
+}

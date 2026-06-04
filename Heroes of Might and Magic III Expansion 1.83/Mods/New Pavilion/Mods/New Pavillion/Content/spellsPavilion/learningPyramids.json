@@ -1,0 +1,159 @@
+{
+	"core:learning" : {
+		//"index" : 27,
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"valueType" : "PERCENT_TO_BASE"
+				},
+				"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.primeMissile",
+						"val" : 1
+					},
+					"addManaFlare" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.manaFlarePyra",
+						"val" : 1
+					}
+			}
+		},
+		"basic" : {
+			"description": "{初级学习能力}\n\n掌握初级学习能力的英雄可以提升获得的经验值25%，并且学会源力系魔法{源力飞弹}和{魔力闪光}。",
+			"effects" : {
+				"main" : { "val" : 25 },
+				"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.primeMissile",
+						"val" : 1
+					},
+					"addManaFlare" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.manaFlarePyra",
+						"val" : 1
+					}
+			}
+		},
+		"advanced" : {
+			"description": "{中级学习能力}\n\n掌握中级学习能力的英雄可以提升获得的经验值35%，并且学会源力系魔法{中级源力飞弹}，{中级魔力闪光}，{时间停滞}和{法老诅咒}。",
+			"effects" : {
+				"main" : { "val" : 35 },
+				"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.primeMissile",
+						"val" : 2
+					},
+					"addManaFlare" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.manaFlarePyra",
+						"val" : 2
+					},
+					"addTimeStasis" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.timeStasis",
+						"val" : 2
+					},
+					"addCurseOfPharaoh" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.curseOfPharaoh",
+						"val" : 2
+					}
+			}
+		},
+		"expert" : {
+			"description": "{高级学习能力}\n\n掌握高级学习能力的英雄可以提升获得的经验值50%，并且学会源力系魔法{高级源力飞弹}，{高级魔力闪光}，{高级时间停滞}和{高级法老诅咒}。在有{光子炮}的情况下，可以学会{灵魂烈焰}或{死亡时计}。",
+			"effects" : {
+				"main" : { "val" : 50 },
+				"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.primeMissile",
+						"val" : 3
+					},
+					"addManaFlare" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.manaFlarePyra",
+						"val" : 3
+					},
+					"addTimeStasis" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.timeStasis",
+						"val" : 3
+					},
+					"addCurseOfPharaoh" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.curseOfPharaoh",
+						"val" : 3
+					},
+					"pyramids01Extra" : 			
+					{
+						"type" : "ENCHANTED",
+						"subtype" : "spell.pyramid01Supply",
+						"val" : 3,
+						"limiters": [ {
+							"type":"CREATURE_TYPE_LIMITER",
+							"creature": "photonCannon1"
+							} ],
+					},
+					"pyramids02Extra" : 			
+					{
+						"type" : "ENCHANTED",
+						"subtype" : "spell.pyramid02Supply",
+						"val" : 3,
+						"limiters": [ {
+							"type":"CREATURE_TYPE_LIMITER",
+							"creature": "photonCannon2"
+							} ],
+					},
+					"pyramidActive01" :
+					{
+						"propagator" : 	"HERO","type" : "MORE_DAMAGE_FROM_SPELL","subtype" : "spell.soulConflagration",
+						"val" : 0,
+						"hidden":true
+					},
+					"pyramidActive02" :
+					{
+						"propagator" : 	"HERO","type" : "MORE_DAMAGE_FROM_SPELL","subtype" : "spell.hourglassOfDeath",
+						"val" : 0,
+						"hidden":true
+					}
+			}
+		}
+	}
+}

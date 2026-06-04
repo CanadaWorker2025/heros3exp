@@ -1,0 +1,119 @@
+{
+	"mdtAuraOfPower" : {
+		"type": "combat",
+		"name": "力量光环",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"targetType": "NO_TARGET",
+		"level": 3,
+		"power": 10, //i think power is irrevelant in this case
+		"defaultGainChance": 5, 
+		"gainChance" :
+		{
+			"inferno" : 12,
+			"dungeon" : 8,
+			"tower" : 8,
+			"rampart" :  8,
+			"castle" : 2,
+			"stronghold" : 2 		
+		},
+		"animation":{
+			"hit":[ "spells/auraOfPower/SP_AURA.def" ]
+		},
+		"flags" :
+		{
+			"indifferent": true,
+			"nonMagical": true
+		},
+		"sounds": {
+			"cast": "spells/auraOfPower/spell-auraofpower.wav"
+		},
+		"graphics":
+		{
+			"iconBook": "spells/auraOfPower/aop_iconBook.bmp",
+			"iconScroll": "spells/auraOfPower/aop_iconScroll.bmp",
+			"iconScenarioBonus": "spells/auraOfPower/aop_iconScenarioBonus.bmp",
+			"iconEffect": "spells/auraOfPower/aop_iconEffect.png"
+		},
+		"levels" : {
+			"base":{
+				"power": 10, //irrevelant?
+				"range" : "X", //like armageddon, death ripple, destroy undead
+				"targetModifier":{"smart":false},
+				"cost": 12, 
+				"description": "{力量光环}\r\n\r\n创造一个魔法结界，使所有生物受到魔法伤害+5%。可以多次使用叠加。",
+				"battleEffects" : {
+					"spellsDamage" :
+					{
+						"type": "core:timed",
+						"cumulative": true,
+						"ignoreImmunity" : true,
+						"bonus":
+						{
+							"spellDamage" : {
+								"subtype" : "spellSchool.any",
+								"type" : "SPELL_DAMAGE_REDUCTION",
+								"val" : -5,
+								"valueType" : "BASE_NUMBER"
+							}
+						}	
+					}	
+				}				
+			},
+			"none":
+			{				
+				"cost": 12
+			},
+			"basic":
+			{ 
+				"description": "{初级力量光环}\r\n\r\n创造一个魔法结界，使所有生物受到魔法伤害+5%。可以多次使用叠加。",
+				"battleEffects" : {
+					"spellsDamage" :
+					{
+						"bonus":
+						{
+							"spellDamage" : {
+								"val" : -5
+							}
+						}
+					}
+				}
+			},
+			"advanced":
+			{	 
+				"description": "{中级力量光环}\r\n\r\n创造一个魔法结界，使所有生物受到魔法伤害+10%。可以多次使用叠加。",
+				"battleEffects" : {
+					"spellsDamage" :
+					{
+						"bonus":
+						{
+							"spellDamage" : {
+								"val" : -10
+							}
+						}
+					}
+				}
+			},
+			"expert":
+			{	 
+				"description": "{高级力量光环}\r\n\r\n创造一个魔法结界，使所有生物受到魔法伤害+20%。可以多次使用叠加。",
+				"battleEffects" : {
+					"spellsDamage" :
+					{
+						"bonus":
+						{
+							"spellDamage" : {
+								"val" : -20
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}	

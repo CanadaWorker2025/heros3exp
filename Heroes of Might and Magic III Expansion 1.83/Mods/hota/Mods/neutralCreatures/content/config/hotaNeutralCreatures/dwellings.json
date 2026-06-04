@@ -1,0 +1,75 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"wineyard" :
+			{
+				"name" : "酒屋",
+				"creatures" : [[ "satyr" ]],
+				"sounds": {
+					"ambient": ["LOOPLEPR.wav"]
+				},
+				"kingdomOverviewImage" : "hota/dwellings/flagport/flagn1.def",
+				"templates" : 
+				{
+					"default" : 
+					{
+						"animation" : "hota/dwellings/AVGsaty0.def",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}
+			},
+			"ziggurat" :
+			{
+				"name" : "尖塔",
+				"creatures" : [[ "fangarm" ]],
+				"sounds": {
+					"ambient": ["hota/dwellings/LOOPBEHD.wav"]
+				},
+				"kingdomOverviewImage" : "hota/dwellings/flagport/flagn2.def",
+				"templates" : 
+				{
+					"default" : 
+					{
+						"animation" : "hota/dwellings/AVGfngrm.def",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}
+			},
+			"alehouse" :
+			{
+				"name" : "灾祸酒馆",
+				"creatures" : [[ "leprechaun" ]],
+				"sounds": {
+					"ambient": ["LOOPGARD.wav"]
+				},
+				"kingdomOverviewImage" : "hota/dwellings/flagport/flagn3.def",
+				"templates" : 
+				{
+					"default" : 
+					{
+						"animation" : "hota/dwellings/AVGlprch.def",
+						"mask" : [ "VVV", "VVB", "VBA" ]
+					}
+				}
+			},
+			"dwequnRed":
+			{
+				"name" : "鲜花宫殿",
+				"bannedForRandomDwelling" : true,
+				"creatures" : [[ "redQueen" ]],
+				"guards" : true,
+				"sounds": {
+					"ambient": ["LOOPGARD.wav"]
+				},
+				"templates" : 
+				{
+					"default" : 
+					{
+						"animation" : "hota/dwellings/AVGqunRed.def",
+						"mask" : [ "VVV", "VVV", "VBV", "VAB" ]
+					}
+				}
+			}
+		}
+	}
+}

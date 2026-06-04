@@ -1,0 +1,47 @@
+{
+	"nariko" :
+	{
+		"class" : "redtemplar",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/nariko/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/nariko/spec-large.bmp",
+			"large" : "cathedral/heroes/nariko/portrait-large.bmp",
+			"small" : "cathedral/heroes/nariko/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+		
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			},
+		],
+		"texts" :
+		{
+			"name" : "莱奥诺",
+			"biography" : "莱奥诺在灾难到来的时候年仅9岁。差点被野犬咬死的她被一位牧师所救，并将她带回了教会。她到现在还会认为当年救她的人其实是一位天使。因为这个坚定的信念，她也变得越来越虔诚，甚至狂热了。",
+			"specialty" :
+			{
+				"tooltip" : "特长：飞蛇",
+				"description" : "达到4级以后提高飞蛇和血翼飞蛇的攻击力和防御力。",
+				"name" : "飞蛇"
+			}
+		},
+		"specialty" : {
+			"creature" : "cthCouatl"
+		}
+	}
+}

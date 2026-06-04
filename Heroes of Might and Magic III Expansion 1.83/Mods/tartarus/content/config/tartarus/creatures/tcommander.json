@@ -1,0 +1,109 @@
+{
+	"tcommander":
+	{
+		"name" :
+		{
+			"plural" : "寒霜术士",
+			"singular" : "寒霜术士"
+		},
+		"special" : true,
+		"faction" : "neutral",
+    "advMapAmount": {
+ "max" : 25,
+ "min" : 16
+    },
+		"aiValue" : 1000,
+		"attack" : 5,
+		"damage" :
+		{
+			 "max" : 10,
+			 "min" : 10
+		},
+		"defense" : 5,
+    "cost": {
+      "gold": 140
+    },
+		"fightValue" : 1000,
+		"graphics" :
+		{
+			"animation" : "tartarus/battle/creatures/tcommander.def",
+//			"map" : "tartarus/map/creatures/maptcommander.def",
+			"iconSmall" : "tartarus/iconsSmall/creatures/tcommander.bmp",
+			"iconLarge" : "tartarus/iconsBig/creatures/tcommander.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "CPRZEAX.def",
+				"attackClimaxFrame" : 6,
+				"offset" :
+				{
+					"upperX" : 37,
+					"upperY" : -98,
+					"middleX" : 62,
+					"middleY" : -53,
+					"lowerX" : 28,
+					"lowerY" : 3
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+
+			}
+		},
+		"growth" : 9,
+		"hitPoints" : 50,
+		"level" : 0,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack": "ENCHATTK.wav",
+			"defend": "ENCHDFND.wav",
+			"killed": "ENCHKILL.wav",
+			"move": "ENCHMOVE.wav",
+			"shoot": "ENCHSHOT.wav",
+			"wince": "ENCHWNCE.wav"
+ 		},
+		"speed" : 5,
+		"abilities" :
+		{
+		    "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.bloodlust",
+				"val" : 3
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+	    }
+	}
+}

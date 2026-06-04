@@ -1,0 +1,110 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"templeOfTheSea" : 
+			{
+				"name" : "海洋神殿",
+				"aiValue" : 11000,
+				"templates" :
+				{
+					"base" :
+					{
+						"animation" : "hota/banks/AVSutopW.def", 
+						"visitableFrom" : [ "---", "-+-", "+++" ], 
+						"mask" : [ "VVVVV", "VVVVV", "VBBBV", "VBBBV", "VBABV"],
+						"allowedTerrains":["water"] 							
+					}
+				},
+				"sounds": {
+					"ambient": ["hota/LOOPSTPL.wav"],
+					"visit": ["hota/SEATEMPL.wav"]
+				},
+				"rmg" : {
+					"value"		: 10000,
+					"rarity"	: 100
+				},
+				"onGuardedMessage" : "{海洋神殿}\r\n\r\n船只航行到一片宁静的海域，你发现这里矗立着海神殿，但时间久远，很可能不再有海魔法师们去打理这些贡品，你要进去看看吗？",
+				"onVisitedMessage" : "{海洋神殿}\r\n\r\n你航行到这座宏伟的神殿，好奇心驱使你进去参观，但除了古老的石柱和空荡荡的神坛，这里什么也没有。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankWide",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 8, "type" : "hydra" },
+							{ "amount": 6, "type" : "seaserpent"},
+							{ "amount": 3, "type" : "chaosHydra" },
+							{ "amount": 2, "type" : "haspid" }
+						],
+						"resources": 
+							{
+								"gold" : 10000
+							},
+							"artifacts": [ { "class" : "TREASURE" },
+											{ "class" : "MINOR" },
+											{ "class" : "MINOR" },
+											{ "class" : "MAJOR" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 8, "type" : "hydra" },
+							{ "amount": 7, "type" : "seaserpent"},
+							{ "amount": 4, "type" : "chaosHydra" },
+							{ "amount": 3, "type" : "haspid" }
+						],
+						"resources": 
+							{
+								"gold" : 15000
+							},
+							"artifacts": [ { "class" : "TREASURE" },
+											{ "class" : "MINOR" },
+											{ "class" : "MAJOR" },
+											{ "class" : "MAJOR" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 8, "type" : "hydra" },
+							{ "amount": 7, "type" : "seaserpent"},
+							{ "amount": 5, "type" : "chaosHydra" },
+							{ "amount": 4, "type" : "haspid" }
+						],
+						"resources": 
+							{
+								"gold" : 20000
+							},
+							"artifacts": [ { "class" : "MINOR" },
+											{ "class" : "MAJOR" },
+											{ "class" : "MAJOR" },
+											{ "class" : "RELIC" }]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 10, "type" : "hydra" },
+							{ "amount": 9, "type" : "seaserpent"},
+							{ "amount": 6, "type" : "chaosHydra" },
+							{ "amount": 5, "type" : "haspid" }
+						],
+						"resources": 
+							{
+								"gold" : 30000
+							},
+							"artifacts": [ { "class" : "MAJOR" },
+											{ "class" : "MAJOR" },
+											{ "class" : "RELIC" },
+											{ "class" : "RELIC" }]
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,159 @@
+{
+  "tartarc3": {
+    "name": {
+      "plural": "冰傀儡",//Ice Golem
+      "singular": "冰傀儡"
+    },
+    "advMapAmount": {
+ "max" : 30,
+ "min" : 16
+    },
+    "faction": "tartarus",
+    "aiValue": 180,
+    "attack": 6,
+    "cost": {
+      "gold": 125
+    },
+    "damage": {
+ "max" : 4,
+ "min" : 2
+    },
+    "defense": 5,
+    "fightValue": 187,
+    "graphics": {
+      "animation": "tartarus/battle/creatures/Tar2.def",
+      "map": "tartarus/map/creatures/AVWTAR02.def",
+      "iconSmall": "tartarus/iconsSmall/creatures/Tar2iconS.bmp",
+      "iconLarge": "tartarus/iconsBig/creatures/T2icon.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 8,
+    "hitPoints": 15,
+    "level": 2,
+    "upgrades":
+		[
+			"tartarc4"
+		],
+    "sound": {
+			"attack": "SGLMATTK.wav",
+			"defend": "SGLMDFND.wav",
+			"killed": "SGLMKILL.wav",
+			"move": "SGLMMOVE.wav",
+			"wince": "SGLMWNCE.wav"
+		},
+    "speed": 4,
+    "abilities": {
+	"gargoyle" :
+			{
+				"type" : "GARGOYLE"
+			},
+			"fireShieldVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 100,
+				"description" : "{火系弱点}\n受火盾，火墙，火球，末日，地狱火伤害加倍",
+				"icon" : "NewOldSpells/fireWeak.png",
+			},
+			"infernoVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.inferno",
+				"val" : 100,
+				"hidden":true
+			},
+			"fireballVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireball",
+				"val" : 100,
+				"hidden":true
+			},
+			"fireWallVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireWallTrigger",
+				"val" : 100,
+				"hidden":true
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100,
+				"hidden":true
+			},
+	  "immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			}
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : "spellSchool.any"
+				},
+				"values" : [ 54, 58, 62, 66, 70, 74, 78, 82, 86, 90 ]
+			}
+		]
+  }	
+	}

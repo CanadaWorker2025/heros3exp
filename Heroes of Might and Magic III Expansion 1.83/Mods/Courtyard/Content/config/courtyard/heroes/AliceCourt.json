@@ -1,0 +1,67 @@
+{
+	"16aliceCourt" : {
+		"army" : [
+			{ "creature" : "cupid", "max" : 18, "min" : 10 },
+			{ "creature" : "homunculus", "max" : 11, "min" : 5 },
+			{ "creature" : "fireNewt", "max" : 5, "min" : 3 }
+		],
+		"class" : "philosopher",
+		"special" : true,
+		"female" : true,
+		"images" : {
+			"large" : "courtyard/heroes/AliceCourt/AliceWonder.bmp",
+			"small" : "courtyard/heroes/AliceCourt/AliceWonderS.bmp",
+			"specialtyLarge" : "courtyard/heroes/AliceCourt/speclarge1.png",
+			"specialtySmall" : "courtyard/heroes/AliceCourt/specsmall1.png"
+		},
+		"skills" : [ { "level" : "basic", "skill" : "wisdom" }, { "level" : "basic", "skill" : "luck" }],
+		"spellbook" :
+		[
+			"magicMirror"
+		],
+		"battleImage" :"courtyard/heroes/CourtAlice.def",
+		"specialty": 
+			{
+				"bonuses":{
+				"mirror" : 
+					{
+						"type": "SPECIAL_SPELL_LEV",
+						"subtype": "spell.magicMirror",
+						"addInfo": 5
+					}
+				}
+			}
+	},
+	"18AtheCourt" : {
+		"army" : [
+			{ "creature" : "cupid", "max" : 18, "min" : 10 },
+			{ "creature" : "homunculus", "max" : 11, "min" : 5 },
+			{ "creature" : "fireNewt", "max" : 5, "min" : 3 }
+		],
+		"class" : "philosopher",
+		"female" : true,
+		"special" : true,
+		"images" : {
+			"large" : "courtyard/heroes/AliceCourt/AtheB.png",
+			"small" : "courtyard/heroes/AliceCourt/AtheS.png",
+			"specialtyLarge" : "courtyard/heroes/Dictamnus/speclarge1.png",
+			"specialtySmall" : "courtyard/heroes/Dictamnus/specsmall1.png"
+		},
+		"skills" : [ { "level" : "basic", "skill" : "fireMagic" }, { "level" : "basic", "skill" : "wisdom" } ],
+		"spellbook" :
+		[
+			"inferno", "fireball"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"fireMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.fire",
+					"val" : 5,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

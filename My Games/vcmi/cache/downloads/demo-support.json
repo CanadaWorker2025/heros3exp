@@ -1,0 +1,79 @@
+{
+	"name" : "Heroes III Demo",
+	"description": "This mod enables support for playing with the demo version of Heroes of Might and Magic III.<br/>It includes a limited selection of content while still offering a variety of gameplay elements.<br/><br/>Playable towns:<br/>- 🏰 Castle<br/>- 🏛️ Dungeon<br/>- ☠️ Necropolis<br/><br/>You can play the original demo map <b>Dead and Buried</b> or generate a random one.<br/><br/>Additionally, you can enable other mods to add new towns, objects, and much more!",
+	"author" : "misiokles, SXX, George King",
+	"contact" : "",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"modType" : "Other",
+	"version" : "0.4",
+	"softDepends" : [
+		"hota",
+		"hota.confluxvaultofashes",
+		"hota.heroes3datapatch",
+		"tides-of-war",
+		"tides-of-war.alternative-creatures",
+		"tides-of-war.hota-balance-compatibility-patch"
+	],
+	"changelog" :
+	{
+		"0.4" : [ "Castle, Dungeon, Necropolis music theme is now Stronghold theme which exist in Demo instead of nothing", "Fixed missing dwellings and banks" ],
+		"0.3" : [ "Added Horn of the Abyss compatibility", "Added Tides of War compatibility", "Added In The Wake of Gods compatibility", "Added New Monsters pack compatibility", "Added Moon Artifacts compatibility", "Added Asylum, Cathedral, Fairy, Haven, Refugee, Tartarus towns compatibility", "Added HQ Music mod compatibility", "Added Antagarich Burning compatibility" ],
+		"0.2" : [ "Fixed factions configs", "Added main menu config", "Added Czech and Polish translations" ],
+		"0.1" : [ "Initial release" ]
+	},
+	"czech" : {
+		"name" : "Heroes III Demo",
+		"description" : "Tato modifikace umožňuje hraní s demoverzí Heroes of Might and Magic III.<br/>Obsahuje omezený výběr obsahu, ale stále nabízí pestrou hratelnost.<br/><br/>Hratelná města:<br/>- 🏰 Hrad<br/>- 🏛️ Kobka<br/>- ☠️ Nekropole<br/><br/>Můžeš si zahrát demo mapu <b>Mrtví a pohřbení</b> nebo vygenerovat náhodnou mapu.<br/><br/>Navíc můžeš povolit další modifikace a přidat nová města, objekty a mnoho dalšího!",
+		"translations" : [
+			"translation/czech.json"
+		]
+	},
+	"polish" : {
+		"name" : "Heroes III Demo",
+		"description" : "Ten mod umożliwia grę w wersję demonstracyjną Heroes of Might and Magic III.<br/>Zawiera ograniczony wybór treści, ale nadal oferuje różnorodne elementy rozgrywki.<br/><br/>Dostępne miasta:<br/>- 🏰 Zamek (Castle)<br/>- 🏛️ Lochy (Dungeon)<br/>- ☠️ Nekropolia (Necropolis)<br/><br/>Możesz zagrać na oryginalnej mapie demo <b>Martwi i pochowani</b> lub wygenerować losową.<br/><br/>Dodatkowo możesz włączyć inne mody, aby dodać nowe miasta, obiekty i wiele więcej!",
+		"translations" : [
+			"translation/polish.json"
+		]
+	},
+	"factions" :
+	[
+		"config/demo-support/factions/castle.json",
+		"config/demo-support/factions/dungeon.json",
+		"config/demo-support/factions/necropolis.json",
+		"config/demo-support/factions-without-town/conflux.json",
+		"config/demo-support/factions-without-town/fortress.json",
+		"config/demo-support/factions-without-town/inferno.json",
+		"config/demo-support/factions-without-town/rampart.json",
+		"config/demo-support/factions-without-town/stronghold.json",
+		"config/demo-support/factions-without-town/tower.json"
+	],
+	"creatures" :
+	[
+		"config/demo-support/creatures/conflux.json",
+		"config/demo-support/creatures/fortress.json",
+		"config/demo-support/creatures/inferno.json",
+		"config/demo-support/creatures/rampart.json",
+		"config/demo-support/creatures/stronghold.json",
+		"config/demo-support/creatures/tower.json",
+		"config/demo-support/creatures/neutral.json"
+	],
+	"heroes" :
+	[
+		"config/demo-support/heroes/conflux.json",
+		"config/demo-support/heroes/fortress.json",
+		"config/demo-support/heroes/inferno.json",
+		"config/demo-support/heroes/rampart.json",
+		"config/demo-support/heroes/stronghold.json",
+		"config/demo-support/heroes/tower.json"
+	],
+	"terrains":
+	[
+		"config/demo-support/terrains.json"
+	],
+	"objects" : 
+	[
+		"config/demo-support/patched-objects/banks.json",
+		"config/demo-support/patched-objects/dwellings.json"
+	]
+}

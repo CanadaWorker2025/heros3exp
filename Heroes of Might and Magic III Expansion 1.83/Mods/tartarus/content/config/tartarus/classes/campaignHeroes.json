@@ -1,0 +1,35 @@
+{
+// "special" heroes for new towns
+	"core:fiona":
+	{
+		"skills":
+		[
+			{ "skill" : "scouting", "level": "basic" },
+			{ "skill" : "demonicBlood", "level": "basic" }
+		]
+	},
+	"core:marius":
+	{
+		"skills":
+		[
+			{ "skill" : "armorer", "level": "basic" },
+			{ "skill" : "demonicBlood", "level": "basic" }
+		]
+	},
+	"core:calh":
+	{
+		"skills":
+		[
+			{ "skill" : "archery", "level": "basic" },
+			{ "skill" : "demonicBlood", "level": "basic" }
+		]
+	},
+	"core:nymus":
+	{
+		"skills":
+		[
+			{ "skill" : "offence", "level": "basic" },
+			{ "skill" : "demonicBlood", "level": "basic" }
+		]
+	}
+}

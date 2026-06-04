@@ -1,0 +1,157 @@
+{
+	"havC09":
+	{
+		"name" :
+		{
+			"plural" : "水灵",
+			"singular" : "水灵"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 8
+		},
+		"faction" : "haven",
+		"aiValue" : 812,
+		"attack" : 12,
+		"cost" :
+		{
+			"gold" : 450
+		},
+		"damage" :
+		{
+			 "max" : 15,
+			 "min" : 12
+		},
+		"defense" : 11,
+		"fightValue" : 760,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav09.def",
+			"map" : "haven/map/AVWHAV09.def",
+			"iconSmall" : "haven/iconsSmall/port9S.bmp",
+			"iconLarge" : "haven/iconsBig/port9.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.60,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+	
+		},
+
+        "growth" : 3,
+		"hitPoints" : 50,
+		"level" : 5,
+        "upgrades":
+		[
+			"havC10"
+		],
+		"sound" :
+		{
+			"attack" : "haven/CHV5ATTK.wav",
+			"defend" : "haven/CHV5DFND.wav",
+			"killed" : "haven/CHV5KILL.wav",
+			"move": "haven/CHV5MOVE.wav",
+			"wince" : "haven/CHV5WNCE.wav"
+ 		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+			    "type" : "FLYING",
+				"icon" : "haven/icons/bonuses/e_fly3.png"
+			},
+			"immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"attackInWater" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"defenceInWater"  : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"speedInWater" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION"
+				},
+				"values" : [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
+			}
+		]
+	}
+}
+

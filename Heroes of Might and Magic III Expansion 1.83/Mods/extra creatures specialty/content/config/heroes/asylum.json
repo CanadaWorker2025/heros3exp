@@ -1,0 +1,60 @@
+{
+
+	"asylum:g_stacia": {
+        "texts": {
+            "specialty": {
+                "name": "梦魇兽",
+                "description": "每6级提高梦魇兽及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"asylum:f_judith": {
+        "texts": {
+            "specialty": {
+                "name": "灵魂剑士",
+                "description": "每5级提高灵魂剑士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"asylum:e_renner": {
+        "texts": {
+            "specialty": {
+                "name": "幽影",
+                "description": "每4级提高幽影及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"asylum:b_pauline": {
+        "texts": {
+            "specialty": {
+                "name": "暗影猎手",
+                "description": "每3级提高暗影猎手及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"asylum:d_sisElisa": {
+        "texts": {
+            "specialty": {
+                "name": "风舞者",
+                "description": "每2级提高风舞者及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"asylum:c_harker": {
+		"specialty": {
+			"creature": "darksquire",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "黑暗侍从",
+                "description": "每1级提高黑暗侍从及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

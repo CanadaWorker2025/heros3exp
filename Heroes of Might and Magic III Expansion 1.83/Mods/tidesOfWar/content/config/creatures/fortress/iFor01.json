@@ -1,0 +1,74 @@
+{
+	"iFor01"://Gnoll Shaman
+	{
+		"name" :
+		{
+			"plural" : "豺狼巫医",
+			"singular" : "豺狼巫医"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction": "fortress",
+		"aiValue" : 87,
+		"fightValue" : 87,
+		"attack" : 5,
+		"defense" : 5,
+		"cost" :
+		{
+			"gold" : 70
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 3
+		},
+		"speed" : 5,
+		"upgrades": ["gnollMarauder"],
+		"graphics" :
+		{
+			"animation" : "creatures/fortress/battle/iFor01B.def",
+			"map" : "creatures/fortress/map/iFor01M.def",
+			"iconSmall" : "creatures/fortress/iconsSmall/iFor01S.bmp",
+			"iconLarge" : "creatures/fortress/iconsBig/iFor01L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 6,
+		"growth" : 12,
+		"horde" : 6,
+		"level" : 1,
+		"sound" :
+		{
+			"attack": "GNLMATTK.wav",
+			"defend": "GNLMDFND.wav",
+			"killed": "GNLMKILL.wav",
+			"move": "GNLMMOVE.wav",
+			"wince": "GNLMWNCE.wav"
+		},
+		"abilities":
+		{
+			"manaCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.iFor01eff",
+				"val" : 3,
+				"icon": "bonuses/quickswamp1.png"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,27 @@
+{
+	"demonsHorseshoe" : {
+		"type" : [ "HERO" ],
+		"slot" : "MISC",
+		"class" : "TREASURE",
+		"value" : 2000,
+		"bonuses" : {
+			"luck" : {
+				"type" : "LUCK",
+				"val" : -1,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : ["OPPOSITE_SIDE"]
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/demonsHorseshoe",
+			"map" : "hota/artifactsMap/demonsHorseshoe",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/demonsHorseshoe"
+		},
+		"text" : {
+			"description" : "{恶魔马蹄铁}\r\n\r\n降低敌人1点幸运。",
+			"event" : "你过夜时听见附近有蹄子声。你看向周围的黑暗并且注意到一个恶魔的身影，准备用他的角刺向你，你勉强从攻击中活了下来并留下他的马蹄铁作为纪念品。",
+			"name" : "恶魔马蹄铁"
+		}
+	}
+}

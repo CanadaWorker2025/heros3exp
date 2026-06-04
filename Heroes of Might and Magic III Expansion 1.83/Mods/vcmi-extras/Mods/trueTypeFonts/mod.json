@@ -1,0 +1,17 @@
+{
+	"name" : "True Type Fonts",
+	"description" : "Provides true type fonts that provide support for multiple languages not supported by Heroes III fonts.",
+	"version" : "1.1",
+	"author" : "Ivan",
+	"contact" : "http://vcmi.eu/",
+	"modType" : "Graphical",
+	"compatibility":
+	{
+		"min" : "1.2"
+	},
+	"changelog":
+	{
+		"1.0": ["Initial version"],
+		"1.1": ["Replace used font with WenQuanYi Micro Hei Regular to support way more characters"]
+	}
+}

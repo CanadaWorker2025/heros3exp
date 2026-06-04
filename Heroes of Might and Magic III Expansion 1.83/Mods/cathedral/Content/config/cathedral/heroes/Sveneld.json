@@ -1,0 +1,63 @@
+{
+	"sveneld" :
+	{
+		"class" : "cthbishop",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/sveneld/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/sveneld/spec-large.bmp",
+			"large" : "cathedral/heroes/sveneld/portrait-large.bmp",
+			"small" : "cathedral/heroes/sveneld/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "earthMagic"
+			},
+		],
+		"texts" :
+		{
+			"name" : "加布里埃尔",
+			"biography" : "加布里埃尔是一位牧师的女儿。当年还是孩子的她就目睹了这场灾难。在漆黑的小屋中，她整整度过了几个星期。没有人比她更痛恨罪恶。她选择成为一名牧师，当然是为了惩罚所有的罪恶者。",
+			"specialty" :
+			{
+				"description" : "战斗中使敌人运气-1。",
+				"tooltip" : "Creature Bonus: Nerubians",
+				"name" : "-1运气"
+			}
+		},
+		"spellbook" :
+		[
+		       "slow"
+		],
+		"specialty": 
+			{
+				"bonuses":
+				{
+					"luckReduce":
+					{
+					"type" : "LUCK",
+					"val" : -1,
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"stacking" : "面对-1运气特长的英雄"
+					}
+				}
+			}		
+	}
+}

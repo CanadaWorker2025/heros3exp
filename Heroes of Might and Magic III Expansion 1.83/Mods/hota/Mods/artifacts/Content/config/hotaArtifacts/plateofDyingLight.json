@@ -1,0 +1,29 @@
+{
+	"plateOfDyingLight" : {
+		"type" : [ "HERO" ],
+		"slot" : "TORSO",
+		"class" : "RELIC",
+		"value" : 10000,
+		"bonuses" : {
+			"skill" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "spellpower",
+				"valueType" : "PERCENT_TO_ALL",
+				"val" : -25,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : ["OPPOSITE_SIDE"]
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/plateOfDyingLight",
+			"map" : "hota/artifactsMap/plateOfDyingLight",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/plateOfDyingLight"
+		},
+		"text" : {
+			"description" : "{死光战甲}\r\n\r\n降低敌人25%的力量。",
+			"event" : "你在小酒馆遇到的大耳怪行为诡异，显然是他身上穿着的豪华盔甲所造成。很快你就看出，这盔甲防护能力欠佳，穿着它无法很好地战斗，但是它还是有一定的帮助，能够干扰敌方的施法。",
+			"name" : "死光战甲"
+		}
+	}
+}

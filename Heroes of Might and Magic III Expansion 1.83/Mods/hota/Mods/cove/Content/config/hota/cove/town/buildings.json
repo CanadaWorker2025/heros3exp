@@ -1,0 +1,356 @@
+{
+	"cove" : {
+		"town" : {
+			"buildings" : {
+				"villageHall" : {
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。",
+					"mode" : "auto"
+				},
+				"townHall" : {
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost" : { "gold" : 2500 }
+				},
+				"cityHall" : {
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑，并每天向你提供2000个金币。",
+					"cost" : { "gold" : 5000 }
+				},
+				"capitol" : {
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" : { "gold" : 10000 }
+				},
+
+				"fort" : {
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" : {
+						"gold" : 5000,
+						"wood" : 20,
+						"ore" : 20
+					}
+				},
+				"citadel" : {
+					"name" : "大本营",
+					"description" : "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" : {
+						"gold" : 2500,
+						"ore" : 5
+					}
+				},
+				"castle" : {
+					"name" : "城堡",
+					"description" : "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"cost" : {
+						"gold" : 5000,
+						"wood" : 10,
+						"ore" : 10
+					}
+				},
+
+				"tavern" : {
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" : {
+						"gold" : 500,
+						"wood" : 5
+					}
+				},
+				"blacksmith" : {
+					"name" : "铁匠铺",
+					"description" : "铁匠铺可向你的军队提供加农炮。",
+					"warMachine" : "cannon",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5
+					}
+				},
+				"marketplace" : {
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" : {
+						"gold" : 500,
+						"wood" : 5
+					}
+				},
+				"resourceSilo" : {
+					"name" : "物资仓库",
+					"description" : "物资仓库每天为你额外提供1硫磺。",
+					"produce": { "sulfur": 1},
+					"cost" : {
+						"gold" : 5000,
+						"ore" : 5
+					}
+				},
+				"shipyard" : {
+					"name" : "船坞",
+					"description" : "船坞允许你购买船只。",
+					"cost" : {
+						"gold" : 2000,
+						"wood" : 20
+					}
+				},
+				"ship" : {
+					"name" : "船坞",
+					"description" : "船坞允许你购买船只。",
+					"cost" : null
+				},
+
+				"special3" : {
+					"name" : "盗贼公会",
+					"description" : "盗贼公会可以酒馆显示敌方信息量增加。",
+					"bonuses": [
+						{
+						"propagator": "PLAYER",
+						"type": "THIEVES_GUILD_ACCESS",
+						"val": 2
+						}
+					],
+					"cost" : {
+						"gold" : 600,
+						"wood" : 3
+					}
+				},
+				"special1" : {
+					"name" : "洞窟",
+					"description" : "洞窟允许你献祭生物或宝物获取经验值。",
+					"marketModes" : ["artifact-experience", "creature-experience"],
+					"cost" : {
+						"gold" : 7500,
+						"wood": 15,
+						"ore": 15
+					}
+				},
+				"horde1" : {
+					"name" : "酒吧",
+					"description" : "酒吧使水手和海员的周产量+4。",
+					"cost" : { "gold" : 1000 }
+				},
+				"horde1Upgr" : {
+					"name" : "酒吧",
+					"description" : "酒吧使水手和海员的周产量+4。",
+					"cost" : { "gold" : 1000 },
+					"mode" : "auto"
+				},
+				"horde2" : {
+					"name" : "栖木",
+					"description" : "栖木使暴风鸟和暴风雕的周产量+3。",
+					"cost" : { "gold" : 1000 }
+				},
+				"horde2Upgr" : {
+					"name" : "栖木",
+					"description" : "栖木使暴风鸟和暴风雕的周产量+3。",
+					"cost" : { "gold" : 1000 },
+					"mode" : "auto"
+				},
+				"grail" : {
+					"name" : "启明星",
+					"description" : "启明星使每周的生物产量提高50%，每天为你的王国额外提供5000个金币，并使全部地形成为港口的优势地形。",
+					"produce": { "gold": 5000 },
+					"bonuses" : [
+						{
+							"type" : "TERRAIN_NATIVE",
+							"propagator" : "GLOBAL_EFFECT",
+							"limiters" : [
+								{
+									"type": "CREATURE_FACTION_LIMITER",
+									"faction" : "cove"
+								}
+							]
+						}
+					],
+					"mode" : "grail"
+				},
+
+				"mageGuild1" : {
+					"name" : "1级魔法行会",
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"cost" : {
+						"gold" : 2000,
+						"wood" : 5,
+						"ore" : 5
+					}
+				},
+				"mageGuild2" : {
+					"name" : "2级魔法行会",
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5,
+						"mercury" : 4,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4
+					}
+				},
+				"mageGuild3" : {
+					"name" : "3级魔法行会",
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5,
+						"mercury" : 6,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6
+					}
+				},
+				"mageGuild4" : {
+					"name" : "4级魔法行会",
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5,
+						"mercury" : 8,
+						"sulfur" : 8,
+						"crystal" : 8,
+						"gems" : 8
+					}
+				},
+
+				"dwellingLvl1" : {
+					"name" : "瀑布",
+					"description" : "瀑布允许你招募泉水精灵。",
+					"cost" : {
+						"gold" : 300,
+						"wood" : 5,
+						"ore" : 5
+					}
+				},
+				"dwellingLvl2" : {
+					"name" : "水手茅舍",
+					"description" : "水手茅舍允许你招募水手。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 10
+					}
+				},
+				"dwellingLvl3" : {
+					"name" : "战船",
+					"description" : "战船允许你招募海贼。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 10
+					}
+				},
+				"dwellingLvl4" : {
+					"name" : "栖巢",
+					"description" : "栖巢允许你招募暴风鸟。",
+					"cost" : {
+						"gold" : 2000,
+						"gems" : 2,
+						"crystal" : 2,
+						"ore" : 5
+					}
+				},
+				"dwellingLvl5" : {
+					"name" : "海洋之塔",
+					"description" : "海洋之塔允许你招募海洋女巫。",
+					"cost" : {
+						"gold" : 3000,
+						"wood" : 5,
+						"ore" : 5,
+						"crystal" : 5
+					}
+				},
+				"dwellingLvl6" : {
+					"name" : "鱼人要塞",
+					"description" : "鱼人要塞允许你招募鱼人。",
+					"cost" : {
+						"gold" : 4000,
+						"wood" : 5,
+						"ore" : 10
+					}
+				},
+				"dwellingLvl7" : {
+					"name" : "大漩涡",
+					"description" : "大漩涡允许你招募海蛇。",
+					"cost" : {
+						"gold" : 15000,
+						"ore" : 15,
+						"wood" : 15,
+						"sulfur" : 10
+					}
+				},
+				"dwellingUpLvl1" : {
+					"name" : "高级瀑布",
+					"description" : "高级瀑布允许你招募泉水精灵。",
+					"cost" : {
+						"gold" : 1000
+					}
+				},
+				"dwellingUpLvl2" : {
+					"name" : "高级水手茅舍",
+					"description" : "高级水手茅舍允许你招募海员。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5
+					}
+				},
+				"dwellingUpLvl3" : {
+					"name" : "高级战船",
+					"description" : "高级战船允许你招募海盗。",
+					"cost" : {
+						"gold" : 1500,
+						"wood" : 5
+					}
+				},
+				"dwellingUpLvl4" : {
+					"name" : "高级栖巢",
+					"description" : "高级栖巢允许你招募暴风雕。",
+					"cost" : {
+						"gold" : 1500,
+						"gems" : 2,
+						"crystal" : 2
+					}
+				},
+				"dwellingUpLvl5" : {
+					"name" : "高级海洋之塔",
+					"description" : "高级海洋之塔允许你招募海洋术士。",
+					"cost" : {
+						"gold" : 2000,
+						"crystal" : 5
+					}
+				},
+				"dwellingUpLvl6" : {
+					"name" : "高级鱼人要塞",
+					"description" : "高级鱼人要塞允许你招募鱼人勇士。",
+					"cost" : {
+						"gold" : 3000,
+						"wood" : 5,
+						"ore" : 5,
+						"sulfur" : 5
+					}
+				},
+				"dwellingUpLvl7" : {
+					"name" : "高级大漩涡",
+					"description" : "高级大漩涡允许你招募深渊海蛇。",
+					"cost" : {
+						"gold" : 15000,
+						"ore" : 15,
+						"sulfur" : 20,
+						"wood" : 15
+					}
+				},
+				"dwellingUp2Lvl3" : {
+					"name" : "火药库",
+					"description" : "火药库允许你招募皇家海盗。",
+					"cost" : {
+						"gold" : 3000,
+						"wood" : 5,
+						"ore" : 5,
+						"mercury" : 5,
+						"sulfur" : 5,
+						"crystal" : 5,
+						"gems" : 5
+					}
+				}
+			}
+		}
+	}
+}

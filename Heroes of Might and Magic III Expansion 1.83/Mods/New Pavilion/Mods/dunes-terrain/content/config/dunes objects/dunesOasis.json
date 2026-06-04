@@ -1,0 +1,36 @@
+{
+	"core:lake": {
+		"types": {
+			"object": {
+				"templates": {
+
+					"duneOasis01": {
+						"animation": "dunes oasis/oasis01",
+						"mask": ["VVVV", "BBBB", "BBBB"],
+						"zIndex": 100,
+						"allowedTerrains": [
+							"dunes"
+						]
+					},
+					"duneOasis02": {
+						"animation": "dunes oasis/oasis02",
+						"mask": ["VVBBBBBV", "VVBBBBBV", "VVBBBBBV"],
+						"zIndex": 100,
+						"allowedTerrains": [
+							"dunes"
+						]
+					},
+					"duneOasis03": {
+						"animation": "dunes oasis/oasis03",
+						"mask": ["VVVVBBBV", "VVVBBBBV", "VVVVBBBV"],
+						"zIndex": 100,
+						"allowedTerrains": [
+							"dunes"
+						]
+					}
+				}
+			}
+		}
+	}
+
+}

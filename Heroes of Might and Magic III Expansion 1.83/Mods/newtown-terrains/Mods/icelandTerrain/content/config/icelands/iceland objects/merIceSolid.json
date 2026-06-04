@@ -1,0 +1,47 @@
+{
+	"merIceSolid"	: {
+		"name" : "水银冰",
+		"handler": "configurable",
+		"types" : {
+			"starFlake" : {
+				"name":"水银冰",
+				"rmg" : {
+					"value"		: 1000,
+					"rarity"	: 400
+				},
+				"sounds" : {
+					"visit" : ["EXPERNCE"],
+					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
+				},
+				"rewards" : [
+					{
+						"message": "{水银冰}\r\n\r\n你在冻结的地面找到一些金属固体，或许是水银和一些其他金属矿凝结而成的，你可以回收到一些资源。",
+						"removeObject" : true,
+						"resources" : [
+							{
+								"anyOf" : [ "ore", "mercury" ],
+								"min" : 3,
+								"max" : 5
+							},
+							{
+								"type" : "gold",
+								"amount" : [ 300, 400, 500 ]
+							}
+						]
+					}
+				],
+				"visitMode" : "once",
+				"selectMode": "selectRandom",
+				"templates" : {
+					"AVAbrrlw" :
+					{
+						"animation" : "ice object/FTRME003",
+						"visitableFrom" : [ "+++", "+++", "+++" ],
+						"mask" : [ "VA"],
+						"allowedTerrains": [ "icelands" ]
+					}
+				}
+			}
+		}
+	}
+}

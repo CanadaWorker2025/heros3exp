@@ -1,0 +1,98 @@
+{
+	"twArcane04":
+	{
+		"name" :
+		{
+			"plural" : "奥术法师",
+			"singular" : "奥术法师"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"faction": "tower",
+		"aiValue" : 682,
+		"fightValue" : 467,
+		"attack" : 11,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 450
+		},
+		"damage" :
+		{
+			"min" : 7,
+			"max" : 9
+		},
+		"speed" : 7,
+		"upgrades": ["archMage"],
+		"graphics" :
+		{
+			"animation" : "creatures/tower/battle/CTW4-2.def",
+			"map" : "creatures/tower/map/AVWtw4.def",
+			"iconSmall" : "creatures/tower/iconsSmall/CPrSTW024.bmp",
+			"iconLarge" : "creatures/tower/iconsBig/CPrLTW024.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "PMAGEX.DEF",
+				"attackClimaxFrame" : 12,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"hitPoints" : 30,
+		"growth" : 4,
+		"shots": 24,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "AMAGATTK.wav",
+			"defend": "AMAGDFND.wav",
+			"killed": "AMAGKILL.wav",
+			"move": "AMAGMOVE.wav",
+			"shoot": "AMAGSHOT.wav",
+			"wince": "AMAGWNCE.wav"
+		},
+		"abilities" :
+		{
+			 "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"noPenalty" : 
+			{
+				"type" : "NO_WALL_PENALTY"
+			},
+			"magicSabotage" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.tw04eff",
+				"addInfo" : [0,1],
+				"val" : 100,
+				"icon": "bonuses/tw04.png"
+			}			
+		}
+	}
+}
+
+

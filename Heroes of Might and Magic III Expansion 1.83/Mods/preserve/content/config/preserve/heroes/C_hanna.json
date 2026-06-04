@@ -1,0 +1,144 @@
+{
+	"c_hanna" :
+	{
+    "class": "guardian",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "汉娜",
+			"biography" : "汉娜从小就不喜欢和其他人说话，她能够安静地思考一整天。当同伴们都奔赴战场，她却依然坐在家里。当她身边的所有人都因为战争而受害，她开始憎恨战争，憎恨不断打仗的埃里统治者。在她心目中，没有一场战斗是正义的。",
+			"specialty" :
+			{
+				"description" : "在防御术上每级得到5%的额外奖励。",
+				"tooltip" : "Bonus: secondary skill",
+				"name" : "防御术"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/hanna/Un32Defe.bmp",
+			"specialtyLarge" : "preserve/heroes/hanna/Un44Defe.bmp",
+			"large" : "preserve/heroes/hanna/HPL002GN.bmp",
+			"small" : "preserve/heroes/hanna/HPS002GN.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		 "specialty": 
+		{
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	},
+	"c_faruk" :
+	{
+    "class": "guardian",
+    "female" : false,
+	"special": true,
+		
+		"texts" :
+		{
+			"name" : "法鲁克",
+			"biography" : "法鲁克-维尔宁是维尔宁独立时的领袖，在他的带领下，哈蒙戴尔也在赢得独立战争的胜利后翻开了新的历史篇章。而在获得短暂的稳定生活之后，新一轮的动荡似乎又在整个恩塔格瑞大陆蔓延开来。",
+			"specialty" :
+			{
+				"description" : "在防御术上每级得到5%的额外奖励。",
+				"tooltip" : "Bonus: secondary skill",
+				"name" : "防御术"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/hanna/Un32Defe.bmp",
+			"specialtyLarge" : "preserve/heroes/hanna/Un44Defe.bmp",
+			"large" : "preserve/heroes/hanna/HPL011GN.bmp",
+			"small" : "preserve/heroes/hanna/HPS011GN.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		 "specialty": 
+		{
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}
+

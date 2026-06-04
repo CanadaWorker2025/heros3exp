@@ -1,0 +1,63 @@
+{
+	"08_Morton" :
+	{
+    "class": "factoryAClass",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "莫顿",
+			"biography" : "莫顿和食人魔战斗已经很久了，那群巨魔毁坏了他的家园，让他不得已离开自己的家乡克鲁罗德。现在他专精于弩炮的制造。他可以通过一次射击可以击碎食人魔的数量来衡量弩炮的质量。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高弩车的攻击力与防御力。",
+				"tooltip" : "{Armorer}\r\n\r\nReceives a 5% per level bonus to Armorer skill percentage.",
+				"name" : "弩车"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/08_Morton/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/08_Morton/bigS.bmp",
+			"large" : "factory/heroes/08_Morton/bigP.bmp",
+			"small" : "factory/heroes/08_Morton/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "ballista",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "ballistics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "ballista"
+		}
+	}
+}
+

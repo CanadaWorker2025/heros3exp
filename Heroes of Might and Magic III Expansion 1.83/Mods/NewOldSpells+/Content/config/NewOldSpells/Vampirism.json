@@ -1,0 +1,153 @@
+{
+	"vampirism":
+	{
+		"type": "combat", 
+		"name": "吸血鬼化",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"necropolis": 20,
+			"inferno": 5,
+			"dungeon" : 1
+		},
+ 
+		//implosion animation?
+		"animation":{
+			"affect":[{ "defName" : "Sp06_", "transparency" : 0.5}]
+		},
+ 
+		"flags" : {"positive": true},
+ 
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {
+				"core:bonus.NON_LIVING": "normal",
+				"core:bonus.GARGOYLE": "normal",
+				"core:bonus.SIEGE_WEAPON": "absolute",
+				"core:bonus.MECHANICAL": "normal",
+				"core:bonus.LIFE_DRAIN": "absolute"
+			}
+	},	
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/vampirismBook.bmp",
+			"iconScroll": "NewOldSpells/vampirismScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/vampirismScenario.bmp",
+			"iconEffect": "NewOldSpells/vampirismEffect.bmp"
+		},
+
+		"sounds":
+		{
+			"cast":"NewOldSpells/sound.spell.vampirism.wav"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0",
+				"power": 10,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{吸血鬼化}\n\n使一个生物获得不死属性，并吸取攻击伤害的20%恢复自身。\n",
+	 
+				"cost": 24,
+				"effects":
+				{
+					"undead":
+					{
+						"type": "UNDEAD",
+						"duration": "N_TURNS"
+					},
+					"lifeDrain":
+					{
+						"type": "LIFE_DRAIN",
+						"val" : 20,
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级吸血鬼化}\n\n使一个生物获得不死属性，并吸取攻击伤害的20%恢复自身。\n",
+	 
+				"cost": 19,
+	 
+				"effects":
+				{
+					"undead":
+					{
+						"type": "UNDEAD",
+						"duration": "N_TURNS"
+					},
+					"lifeDrain":
+					{
+						"type": "LIFE_DRAIN",
+						"val" : 20,
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级吸血鬼化}\n\n使一个生物获得不死属性，并吸取攻击伤害的25%恢复自身。\n",
+	 
+				"cost": 19,
+	 
+				"effects":
+				{
+					"undead":
+					{
+						"type": "UNDEAD",
+						"duration": "N_TURNS"
+					},
+					"lifeDrain":
+					{
+						"type": "LIFE_DRAIN",
+						"val" : 25,
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级吸血鬼化}\n\n使一个生物获得不死属性，并吸取攻击伤害的40%恢复自身。\n",
+	 
+				"cost": 19,
+	 
+				"effects":
+				{
+					"undead":
+					{
+						"type": "UNDEAD",
+						"duration": "N_TURNS"
+					},
+					"lifeDrain":
+					{
+						"type": "LIFE_DRAIN",
+						"val" : 40,
+						"duration": "N_TURNS"
+					}
+				}
+			}
+		}
+	}
+ 
+}

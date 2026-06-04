@@ -1,0 +1,196 @@
+{
+	
+	
+	"pyramid01Supply":
+	{
+		"type": "ability", 
+		"targetType": "CREATURE", 
+		"name": "灵能金字塔", 
+		"school":
+		{
+			"pavillionPrime": true
+		},
+		"level": 0,
+		"power": 0,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+		},
+ 
+		"flags" : { "positive": true, "special" : true },
+
+ 
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/Potions/potSupply1",
+			"iconEffect": "courtyard/spells/Potions/potSupply1",
+			"iconScroll": "courtyard/spells/Potions/potSupply1",
+			"iconScenarioBonus": "courtyard/spells/Potions/potSupply1",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": null
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 10,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				
+				"effects":
+				{
+				"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.primeMissile",
+						"val" : 0
+					}
+				}
+			},
+			"none":
+			{
+				"description": "",
+				"effects":
+				{
+				"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.primeMissile",
+						"val" : 0
+					}
+				}
+				
+			},
+			"basic":
+			{ 
+				"description": "", 
+				"effects":
+				{
+					"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.primeMissile",
+						"val" : 1
+					},
+					"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.manaFlarePyra",
+						"val" : 1
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "", 
+				"effects":
+				{					
+					"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.primeMissile",
+						"val" : 2
+					},
+					"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.manaFlarePyra",
+						"val" : 2
+					},
+					"addTimeStasis" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.timeStasis",
+						"val" : 2
+					},
+					"addCurseOfPharaoh" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.curseOfPharaoh",
+						"val" : 2
+					}
+					
+				}
+			},
+			"expert":
+			{
+				"description": "", 
+				"effects":
+				{
+					"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.primeMissile",
+						"val" : 3
+					},
+					"addPrimeMissile" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.manaFlarePyra",
+						"val" : 3
+					},
+					"addTimeStasis" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.timeStasis",
+						"val" : 3
+					},
+					"addCurseOfPharaoh" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.curseOfPharaoh",
+						"val" : 3
+					},
+					"addSoulConflagration" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.soulConflagration",
+						"val" : 3
+					}
+				}
+			}
+		}
+	}
+}

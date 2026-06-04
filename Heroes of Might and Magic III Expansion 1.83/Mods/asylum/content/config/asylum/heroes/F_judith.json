@@ -1,0 +1,63 @@
+{
+	"f_judith" :
+	{
+    "class": "pathfinder",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "朱迪兹",
+			"biography" : "作为埃拉西亚军队的一位指挥官，朱迪兹领导军队的能力让他的上级非常欣赏。不过获得虚无的荣誉并不是他的目标。表面上整洁有礼的他却有比任何人都黑暗的心。人们总是猜不透这个高贵的骑士为什么在战争中杀死自己的长官，而事实上这样做的目的仅仅是为了欣赏他被自己所信任的人杀死的表情。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高灵魂剑士和灵魂剑圣的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Spirit Crusaders",
+				"name" : "灵魂剑士"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/judith/UN32T201.bmp",
+			"specialtyLarge" : "asylum/heroes/judith/UN44T201.bmp",
+			"large" : "asylum/heroes/judith/HPL005PF.bmp",
+			"small" : "asylum/heroes/judith/HPS005PF.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 6,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "diplomacy"
+			}
+		],
+		
+			"specialty" : {
+			"creature" : "spiritcrus"
+		}
+	}
+}
+

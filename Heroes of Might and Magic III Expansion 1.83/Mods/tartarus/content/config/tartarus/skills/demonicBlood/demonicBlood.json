@@ -1,0 +1,159 @@
+{
+	"demonicBlood" : {
+		"name" : "恶魔血统",
+		"specialty" : [],
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0,
+			"demoniac": 8,
+			"heretic": 8,
+			"taHeroM": 10
+		},
+		"obligatoryMajor" : true,
+		"base" : {
+			"effects" : {
+			"main":{
+				"subtype" : "spell.tartskill1",
+				"type" : "ENCHANTED",
+				"propagator": "ARMY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER",
+				"limiters": [
+					"anyOf",
+					{
+						"type" : "FACTION_LIMITER",
+						"faction" : "inferno"
+					},
+					{
+						"type" : "FACTION_LIMITER",
+						"faction" : "tartarus"
+					},
+				],
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small" : "tartarus/skills/demonicBlood/taSkillBS",
+				"medium" : "tartarus/skills/demonicBlood/taSkillBM",
+				"large" : "tartarus/skills/demonicBlood/taSkillBL",
+				"scenarioBonus" : "tartarus/scenarioBonuses/senarioExtra1.png"
+			},
+			"description" : "{初级恶魔血统}\n\n在战场上施放恶魔之力，使地狱和冰地狱的生物攻击力+1，防御力+1。",
+			"effects" : {
+				"main":{
+				"subtype" : "spell.tartskill1",
+				"type" : "ENCHANTED",
+				"propagator": "ARMY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER",
+				"limiters": [
+					"anyOf",
+					{
+						"type" : "FACTION_LIMITER",
+						"faction" : "inferno"
+					},
+					{
+						"type" : "FACTION_LIMITER",
+						"faction" : "tartarus"
+					}
+				]
+				}
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small" : "tartarus/skills/demonicBlood/taSkillAS",
+				"medium" : "tartarus/skills/demonicBlood/taSkillAM",
+				"large" : "tartarus/skills/demonicBlood/taSkillAL",
+				"scenarioBonus" : "tartarus/scenarioBonuses/senarioExtra2.png"
+			},
+			"description" : "{中级恶魔血统}\n\n在战场上施放恶魔之力，使地狱和冰地狱的生物攻击力+2，防御力+2，速度+1。",
+			"effects" : {
+				"main":{
+				"subtype" : "spell.tartskill2",
+				"type" : "ENCHANTED",
+				"propagator": "ARMY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER",
+				"limiters": [
+					"anyOf",
+					{
+						"type" : "FACTION_LIMITER",
+						"faction" : "inferno"
+					},
+					{
+						"type" : "FACTION_LIMITER",
+						"faction" : "tartarus"
+					}
+				]
+				}
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small" : "tartarus/skills/demonicBlood/taSkillES",
+				"medium" : "tartarus/skills/demonicBlood/taSkillEM",
+				"large" : "tartarus/skills/demonicBlood/taSkillEL",
+				"scenarioBonus" : "tartarus/scenarioBonuses/senarioExtra3.png"
+			},
+			"description" : "{高级恶魔血统}\n\n在战场上施放恶魔之力，使地狱和冰地狱的生物攻击力+4，防御力+4，速度+2。\n\n同时掌握{高级学习能力}的情况下，可以习得源力系魔法{鲜血祭典}和{冥府诅咒}。",
+			"effects" : {
+				"main":{
+				"subtype" : "spell.tartskill3",
+				"type" : "ENCHANTED",
+				"propagator": "ARMY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER",
+				"limiters": [
+					"anyOf",
+					{
+						"type" : "FACTION_LIMITER",
+						"faction" : "inferno"
+					},
+					{
+						"type" : "FACTION_LIMITER",
+						"faction" : "tartarus"
+					}
+				]
+				},
+				"primeDemonLink01" : 
+					{
+						"propagator" : "HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.tarspell3",
+						"val" : 3,
+						"limiters": [ { "type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.tarspell3" ] }	]
+					},
+					"primeDemonLink02" : 
+					{
+						"propagator" : "HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.tarspell4",
+						"val" : 3,
+						"limiters": [ { "type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.tarspell4" ] }	]
+					}
+			}
+		}
+	},
+	"core:learning" : {
+		"expert" : {
+			"effects" : {
+				"activeDemonic01" : 
+					{
+						"propagator" : 	"HERO","type" : "MORE_DAMAGE_FROM_SPELL","subtype" : "spell.tarspell3",
+						"val" : 0,
+						"hidden":true
+					},
+					"activeDemonic02" : 
+					{
+						"propagator" : 	"HERO","type" : "MORE_DAMAGE_FROM_SPELL","subtype" : "spell.tarspell4",
+						"val" : 0,
+						"hidden":true
+					}
+			}
+		}
+	}
+}

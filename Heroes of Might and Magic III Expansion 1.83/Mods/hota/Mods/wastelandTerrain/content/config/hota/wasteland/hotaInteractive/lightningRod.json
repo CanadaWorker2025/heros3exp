@@ -1,0 +1,54 @@
+{
+	"lightningRod" :{
+		"name": "闪电发生器",
+		"handler": "configurable",
+		"types" : {
+			"lightningRod" :
+			{
+				"name": "闪电发生器",
+				"rmg" : {
+					"value" : 500,
+					"rarity" : 20,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["FAERIE"],
+					"ambient" : ["hota/wasteland/LOOPDRRK"]
+				},
+				"canRefuse" : true,
+				"rewards" : [
+					{
+						"message" : "{闪电发生器}\r\n\r\n闪电发生器是对使用电能的一次小实验，现在控制器已经充能完毕，你需要体验一次闪电的力量吗？",
+						"bonuses" : 
+					[
+						{
+						"type" : "OPENING_BATTLE_SPELL",
+						"val" : 3,
+						"subtype" : "spell.teslaLightning",
+						"propagator" : "HERO",
+						"duration" : "ONE_BATTLE"
+						}
+					]
+					}
+				],
+				"onVisitedMessage": "{闪电发生器}\r\n\r\n闪电发生器正在充能中，等待着下一次的启动实验。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"templates" :
+				{
+					"AVCnlr01" :
+					{
+						"animation" : "hota/wasteland/others/AVCnlr01",
+						"visitableFrom" : [ "---", "-++", "+++" ],
+						"mask" : ["VVV", "VVV", "VBA"],
+						"allowedTerrains": ["wasteland"]
+					}
+				}
+			}
+		}
+	}
+}

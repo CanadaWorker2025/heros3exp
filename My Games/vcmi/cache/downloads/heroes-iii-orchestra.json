@@ -1,0 +1,26 @@
+{
+	"name" : "Heroes III Orchestra",
+	"description" : "Orchestral tracks of Heroes III towns and combat, arranged by Heroes Orchestra",
+	"version" : "1.0.2",
+	"author" : "Heroes Orchestra, /a/non from Heroes General thread",
+	"contact" : "",
+	"modType" : "Music",
+	"changelog" :
+    {
+		"1.0.2" : [ "Added soft depency" ],
+		"1.0.1" : [ "Czech translation by George King" ],
+        "1.0"   : [ "Initial release" ]        
+    },
+	"softDepends" :
+	[
+		"abyss-town.new battle music"
+	],
+	"czech" : {
+		"name" : "Orchestrální hudba Heroes III",
+		"description" : "Nové orchestrální aranže hudby měst a soubojů z Heroes III, v podání Heroes Orchestra."
+	},
+	"polish" : {
+		"name" : "Heroes III Orkiestra",
+		"description" : "Orkiestrowe utwory dla miast i walk w Heroes III, zaaranżowane przez Heroes Orchestra"
+	}
+}

@@ -1,0 +1,107 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"sphinxZiggurat" : 
+			{
+				"name" : "塔庙",
+				"aiValue" : 7000,
+				"sounds": {
+					"ambient": ["objectsPavilion/ziggurat"]
+				},
+				"templates" : {
+					"base" : { "animation" : "mapdefsPavilion/ziggurat.def", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VVVV", "VBBV", "BBBB", "VBAA"], 
+					"allowedTerrains":["subterra", "rough", "dirt", "sand", "lava","dunes"] 
+					}
+				},
+				"rmg" : {
+					"value"		: 2000,
+					"rarity"	: 100
+				},
+				"onGuardedMessage" : "{塔庙}\r\n\r\n远古的斯芬克斯神庙看起来很是神秘，你知道这些居民们崇拜神灵，并会每年奉上贡品，你要进入这座神庙吗？",
+				"onVisitedMessage" : "{塔庙}\r\n\r\n远古的斯芬克斯神庙看起来很是神秘。但进入这里后你发现什么也没有，没有贡品，没有声响。当然，也没有危险。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankWide",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 4, "type" : "sphinx" },
+							{ "amount": 4, "type" : "sphinx" },
+							{ "amount": 4, "type" : "sphinx", "upgradeChance": 50 },
+							{ "amount": 4, "type" : "sphinx" },
+							{ "amount": 4, "type" : "sphinx" }
+						],
+							"resources": 
+							{
+							
+								"crystal" : 8,
+								"gems" : 8,
+								"gold" : 5000
+							}
+					},					
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 5, "type" : "sphinx" },
+							{ "amount": 5, "type" : "sphinx" },
+							{ "amount": 5, "type" : "sphinx", "upgradeChance": 50 },
+							{ "amount": 5, "type" : "sphinx" },
+							{ "amount": 5, "type" : "sphinx" }
+						],
+							"resources": 
+							{
+							
+								"crystal" : 10,
+								"gems" : 10,
+								"gold" : 7000
+							}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 7, "type" : "sphinx" },
+							{ "amount": 7, "type" : "sphinx" },
+							{ "amount": 7, "type" : "sphinx", "upgradeChance": 50},
+							{ "amount": 7, "type" : "sphinx" },
+							{ "amount": 7, "type" : "sphinx" }
+						],
+							"resources": 
+							{
+							
+								"crystal" : 15,
+								"gems" : 15,
+								"gold" : 10000
+							}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 10, "type" : "sphinx" },
+							{ "amount": 10, "type" : "sphinx" },
+							{ "amount": 10, "type" : "sphinx", "upgradeChance": 50 },
+							{ "amount": 10, "type" : "sphinx" },
+							{ "amount": 10, "type" : "sphinx" }
+						],
+							"resources": 
+							{
+							
+								"crystal" : 20,
+								"gems" : 20,
+								"gold" : 12000
+							}
+					}
+
+				]
+			}
+		}
+	}
+}

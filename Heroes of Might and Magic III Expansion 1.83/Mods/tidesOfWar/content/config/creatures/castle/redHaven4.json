@@ -1,0 +1,64 @@
+{	
+        "ffvindicator" :
+	{
+		"name" :
+		{
+			"plural" : "维护者",
+			"singular" : "维护者"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"faction" : "castle",
+		"level" : 4,
+		"attack" : 13,
+		"defense" : 11,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 10
+		},
+		"growth" : 4,
+		"hitPoints" : 35,
+		"speed" : 6,
+		"fightValue" : 587,
+		"aiValue" : 586,
+		"upgrades": ["crusader"],
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"graphics" :
+		{
+			"animation" : "creatures/castle/battle/C194.def",
+			"map" : "creatures/castle/map/AVWC194.def",
+			"iconSmall" : "creatures/castle/iconsSmall/CPrS194C.bmp",
+			"iconLarge" : "creatures/castle/iconsBig/CPRL194C.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1.00,
+				"idle" : 10.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "CRUSATTK.wav",
+			"defend": "CRUSDFND.wav",
+			"killed": "CRUSKILL.wav",
+			"move": "CRUSMOVE.wav",
+			"wince": "CRUSWNCE.wav"
+		},
+		"abilities":
+		{
+			"doubleAttack" : 
+			{
+				"type" : "FEROCITY",
+				"val" : 1
+			}
+		}	
+	}
+}

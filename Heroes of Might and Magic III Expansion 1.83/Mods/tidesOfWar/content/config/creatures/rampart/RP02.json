@@ -1,0 +1,87 @@
+{
+	"nRP02":
+	{
+		"name" :
+		{
+			"plural" : "矮人祭司", //Dwarf Priest
+			"singular" : "矮人祭司"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction": "rampart",
+		"aiValue" : 210,
+		"fightValue" : 210,
+		"attack" : 6,
+		"defense" : 6,
+		"cost" :
+		{
+			"gold" : 150
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 4
+		},
+		"speed" : 5,
+		"horde": 4,
+		"upgrades": ["battleDwarf"],
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/RP02.def",
+			"map" : "creatures/rampart/map/RP02S.def",
+			"iconSmall" : "creatures/rampart/iconsSmall/RP02S.bmp",
+			"iconLarge" : "creatures/rampart/iconsBig/RP02.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "CPRZEAX.DEF",
+				"attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"lowerX" : 12,
+					"lowerY" : -23,
+					"middleX" : 62,
+					"middleY" : -53,
+					"upperX" : 60,
+					"upperY" : -56
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+		},
+		"hitPoints" : 18,
+		"shots": 4,
+		"growth" : 8,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "BDRFATTK.wav",
+			"defend": "BDRFDFND.wav",
+			"killed": "BDRFKILL.wav",
+			"move": "BDRFMOVE.wav",
+			"shoot": "WUNCSHOT.wav",
+			"wince": "BDRFWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canShoot":
+			{	
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+		}
+	}
+}
+
+

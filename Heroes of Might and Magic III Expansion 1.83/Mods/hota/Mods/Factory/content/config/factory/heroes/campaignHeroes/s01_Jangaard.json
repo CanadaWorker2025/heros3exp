@@ -1,0 +1,60 @@
+{
+	"s01_Jangaard" :
+	{
+    "class": "factoryAClass",
+    "female" : false,
+	"special": true,
+		
+		"texts" :
+		{
+			"name" : "詹加德",
+			"biography" : "詹加德生性残忍，曾经他在渡鸦海岸的海盗团队里让人闻风丧胆。此时他似乎加入了卡斯托的卫队，为这个残忍的主人效力。在战场上詹加德总是会给敌人出其不意的一击。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高快枪猎手或快枪猎头者的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "快枪猎手"
+			}
+		},
+
+		"images" :
+		{
+			"small" : "factory/heroes/special/HPS205_0.bmp",
+			"large" : "factory/heroes/special/HPL205_0.bmp",
+			"specialtyLarge" : "factory/heroes/03_Tancred/bigS.bmp",
+			"specialtySmall" : "factory/heroes/03_Tancred/smallS.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "archery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "hotaGunman"
+		}
+	}
+}
+

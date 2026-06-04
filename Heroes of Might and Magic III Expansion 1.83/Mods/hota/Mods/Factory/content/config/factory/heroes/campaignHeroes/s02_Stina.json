@@ -1,0 +1,64 @@
+{
+	"s02_Stina" :
+	{
+    "class": "factoryAClass",
+    "female" : true,
+	"special": true,
+		
+		"texts" :
+		{
+			"name" : "斯蒂娜",
+			"biography" : "斯蒂娜一直生活在伯顿，她为了生计可以和任何人合作。这个女孩的胆量很大，据说她敢于独自在沙漠中面对十几名劫掠者，并且击退他们。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高机械师或工程师的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "机械师"
+			}
+		},
+
+		"images" :
+		{
+			"small" : "factory/heroes/special/HPS201_0.bmp",
+			"large" : "factory/heroes/special/HPL201_0.bmp",
+			"specialtyLarge" : "factory/heroes/02_Sam/bigS.bmp",
+			"specialtySmall" : "factory/heroes/02_Sam/smallS.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "hotaMechanic",
+				"max" : 6,
+				"min" : 4
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 6,
+				"min" : 4
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "hotaMechanic"
+		}
+	}
+}
+

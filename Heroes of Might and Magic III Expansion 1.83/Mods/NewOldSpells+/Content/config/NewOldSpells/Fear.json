@@ -1,0 +1,148 @@
+{
+	"oh3Fear":
+	{
+		"type": "combat", 
+		"name": "惊恐万状",
+		"school":
+		{
+			"air": true,
+			"earth": true,
+			"fire": true,
+			"water": true
+		},
+		"level": 5,
+		"power": 1,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+ 
+		//implosion animation?
+		"animation":{
+			"affect":["NewOldSpells/fearSpell"] //fear animation
+		},
+ 
+		"flags" : {"negative": true,"special":true},
+ 
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {
+
+				"core:bonus.NON_LIVING": "normal",
+				"bonus.MIND_IMMUNITY" : "normal",
+				"bonus.MECHANICAL" : "normal",
+				"core:bonus.FEARFUL": "normal",
+				"core:bonus.UNDEAD": "normal"
+			}
+	},	
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/fearBook.bmp",
+			"iconScroll": "NewOldSpells/fearScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/fearScenario.bmp",
+			"iconEffect": "NewOldSpells/fearEffect.bmp",
+			"iconImmune": "NewOldSpells/fearImmune.bmp"
+		},
+		"sounds":
+		{
+			"cast":"FEAR" //fear snd
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{惊恐万状}\n\n使敌人在战场上无法移动。持续3个回合。\n",
+	 
+				"cost": 30,
+				"effects":
+				{
+					"reduceSpeed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : -100, //-25% speed?
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns": 3
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级惊恐万状}\n\n使敌人在战场上无法移动。持续3个回合。\n",
+	 
+				"cost": 30,
+	 
+				"effects":
+				{
+					"reduceSpeed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : -100, //-25% speed?
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns": 3
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级惊恐万状}\n\n使敌人无法移动，且伤害减半。持续3个回合。\n",
+	 
+				"cost": 25,
+	 
+				"effects":
+				{
+					"generalAttackReduction" : 
+					{
+						"type" : "GENERAL_ATTACK_REDUCTION",
+						"duration" : "N_TURNS"
+					},
+					"reduceSpeed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : -100,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns": 3
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级惊恐万状}\n\n使敌人无法移动，且伤害减半。持续3个回合。\n",
+	 
+				"cost": 20,
+	 
+				"effects":
+				{
+					"generalAttackReduction" : 
+					{
+						"type" : "GENERAL_ATTACK_REDUCTION",
+						"duration" : "N_TURNS"
+					},
+					"reduceSpeed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType": "PERCENT_TO_BASE",
+						"val" : -100,
+						"duration": "N_TURNS",
+						"turns": 3
+					}
+				}
+			}
+		}
+	}
+}

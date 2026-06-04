@@ -1,0 +1,56 @@
+{
+	"04elmore" : {
+		"class" : "captain",
+		"onlyOnWaterMap" : true,
+		"images" : {
+			"large" : "hota/cove/heroes/elmore/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/elmore/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/elmore/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/elmore/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "navigation",
+				"level": "advanced"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"navigation" : {
+					"type" : "MOVEMENT",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementSea",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		},
+		"texts": {
+			"biography" : "埃尔默童年的时候就喜欢待在海边，听水手讲海上的故事。因此他也幻想成为一名水手。长大后埃尔默迷上了海上的航行生活。对于他来说，只有甲板上的生活才会使他感到安逸和自由。去探索更大的海域是他一直以来的目标。",
+			"name" : "埃尔默",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Navigation",
+				"name" : "航海术",
+				"description" : "在航海术上每级得到5%的奖励。"
+			}
+		}
+	}
+}

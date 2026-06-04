@@ -1,0 +1,79 @@
+{
+	"jetsam" :{
+		"name" : "废弃物",
+		"handler": "configurable",
+		"types" : {
+			"jetsam" : {
+				"name" : "废弃物",
+				"rmg" : {
+					"value"		: 500,
+					"rarity"	: 600
+				},
+				"sounds" : {
+					"visit" : ["GENIE"],
+					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
+				},
+				"blockedVisitable" : true,
+				"rewards" :
+				[
+					{
+						"appearChance": 
+						{
+							"max" : 25
+						},
+						"message": "{废弃物}\r\n\r\n你搜索了废弃物，但一无所获。真是浪费时间。",
+						"removeObject": true
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 25,
+							"max" : 50
+						},
+						"resources":
+						{
+							"ore": 5
+						},
+						"message": "{废弃物}\r\n\r\n你搜索了废弃物，找到了一些矿石。",
+						"removeObject": true
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 50,
+							"max" : 75
+						},
+						"resources":
+						{
+							"ore": 5,
+							"gold": 200
+						},
+						"message": "{废弃物}\r\n\r\n你搜索了废弃物，找到了一些矿石和黄金。",
+						"removeObject": true
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 75,
+							"max" : 100
+						},
+						"resources":
+						{
+							"ore": 10,
+							"gold": 500
+						},
+						"message": "{废弃物}\r\n\r\n你搜索了废弃物，找到了一些矿石和黄金。",
+						"removeObject": true
+					}
+				],
+				"templates" : {
+					"AVAcratw" : { "animation" : "hota/jetsam/AVAcratw",
+						"mask" : [ "VV", "VA" ], 
+						"visitableFrom" : [ "+++", "+++", "+++" ],
+						"allowedTerrains":[ "water" ] 
+					}
+				}
+			}
+		}
+	}
+}

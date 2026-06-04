@@ -1,0 +1,53 @@
+{
+	"havAheroS02" :
+	{
+		"class" : "havMhero",//Swarn
+		"female": false,
+		"special": true,
+		"texts" :
+		{
+			"name" : "斯瓦恩",
+			"biography" : "从未有人能真正让斯瓦恩成为他的同伴，在贾达密的海盗团里，斯瓦恩是唯一不顺从任何人统治的海盗船长，在他的观念中，只有短暂的结盟，从来没有屈服和顺从。也因此，斯瓦恩在伯顿开拓者们打败海盗之后很快离开了那里，或许他会定居在瑞格纳，又或者他想建立自己的王国。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "海魔法师",
+				"description" : "达到6级以后提升海魔法师和海魔导师的攻击力和防御力。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHeroS2/skill3S.bmp",
+			"specialtyLarge" : "haven/heroes/havHeroS2/skill3.bmp",
+			"large" : "haven/heroes/havHeroS2/hero3.bmp",
+			"small" : "haven/heroes/havHeroS2/hero3S.bmp"
+		},
+		
+		"spellbook": [ "bless" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC11B",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "havC11B"
+		}	
+	}
+}

@@ -1,0 +1,68 @@
+{
+	"tarhero02" :
+	{
+    "class": "taHeroA",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "布莱德扎尔",
+			"biography" : "布莱德扎尔是最受尊敬的恶魔之一。他以能够用最奇形怪状的冰制作成艺术品而闻名。即使是克里根的同类人也对布莱德扎尔的能力感到惊叹。在战争中，他会不断去收集材料来完成自己的艺术品。",
+			"specialty" :
+			{
+				"description" : "提升初始携带部队的数量，并且额外施放一个初级恶魔力量。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "恶魔血统"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero02/skill2.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero02/skills2.bmp",
+			"large" : "tartarus/heroes/tarhero02/tarH2.bmp",
+			"small" : "tartarus/heroes/tarhero02/tarH2S.bmp"
+		},
+		
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 40,
+				"min" : 30
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 12,
+				"min" : 8
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 10,
+				"min" : 5
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "demonicBlood"
+			}
+		],
+		
+		"specialty": 
+			{
+				"bonuses":
+				{
+					"demonExtra":
+					{
+						"type": "OPENING_BATTLE_SPELL",
+						"subtype": "spell.tartskill1",
+						"val" : 255,
+						"valueType" : "BASE_NUMBER"
+					}
+				}
+			}
+	}
+}
+

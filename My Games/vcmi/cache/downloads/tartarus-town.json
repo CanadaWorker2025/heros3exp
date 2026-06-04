@@ -1,0 +1,200 @@
+{
+	"name" : "Tartarus",
+	"author" : "Ben YAN, collaborators: Kurek and Yan Liu",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "2.12",
+	"changelog" : {
+		"2.12" : [
+			"Fixed New terrains patches, dwellings are now correctly genereated on both Snow or Iceland",
+			"Removed BMPs for already existing PNGs",
+			"Converted BMP2PNG, mod is now about 30% smaller"
+		],
+		"2.11" : [
+			"Moved mod to root",
+			"Turned into release package",
+			"Added description.md"
+		],
+		"2.10" : [
+			"Remove Tides of Wars hard depency, no functionality change when Tides of Wars mod is enabled",
+			"Remove New tarrains hard depency, default terrains is snow, New terrains mod is enabled Iceland terrain is default",
+			"Fixed all console warnings",
+			"Removed incomplete Game balace submod and when possible merged into hero configs"
+		],
+		"2.01" : [
+			"Fix for Bloody Tower bank"
+		],
+		"2.00" : [
+			"New update by Ben Yan"
+		],
+		"1.46" : [
+			"Added additional creatures abilities icons by Kurek"
+		],
+		"1.45" : [
+			"Added flagport frames (Kingdom Overview window)"
+		],
+		"1.44" : [
+			"Another update to vcmi-1.7 format"
+		],
+		"1.43" : [
+			"Update to vcmi-1.7 format"
+		],
+		"1.42" : [
+			"Fix Grail not to produce gold"
+		],
+		"1.41" : [
+			"Update to vcmi-1.6 format"
+		],
+		"1.40" : [
+			"Enabled Bloody Tower creature bank.",
+			"Updated PL and RU translations"
+		],
+		"1.39" : [
+			"Russian translation by Anton Sergeew."
+		],
+		"1.38" : [
+			"Updates the Ice cache and the map by Fabrice-TIERCELIN."
+		],
+		"1.37" : [
+			"New town theme by Fabrice-TIERCELIN and AI Udio"
+		],
+		"1.36" : [
+			"Added polish translation by FallainBlack"
+		],
+		"1.35" : [
+			"Added 'People mostly die in winter' map by Fabrice-TIERCELIN"
+		],
+		"1.34" : [
+			"Fixed the creatures' stackExp, the commander and other bugs"
+		],
+		"1.33" : [
+			"Update to vcmi-1.4 format"
+		],
+		"1.32" : [
+			"Updated to new ToW structure"
+		],
+		"1.31" : [
+			"New update for units and banks"
+		],
+		"1.30" : [
+			"Remake town screens and other elements"
+		],
+		"1.05" : [
+			"Update to vcmi-1.3"
+		],
+		"1.04" : [
+			"Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"
+		],
+		"1.03" : [
+			"Update to vcmi-1.2"
+		],
+		"1.02" : [
+			"New lvl6 creatures graphic"
+		],
+		"1.01" : [
+			"Fixes, added Arrow Towers icons"
+		],
+		"1.00" : [
+			"Initial release"
+		]
+	},
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"modType" : "Town",
+	"chinese" : {
+		"name" : "冰狱",
+		"translations" : [
+			"translation/tartarus/chinese.json"
+		]
+	},
+	"german" : {
+		"name" : "Tartarus",
+		"translations" : [
+			"translation/tartarus/german.json"
+		]
+	},
+	"polish" : {
+		"name" : "Tartar",
+		"translations" : [
+			"translation/tartarus/polish.json"
+		]
+	},
+	"russian" : {
+		"name" : "Тартарус",
+		"translations" : [
+			"translation/tartarus/russian.json"
+		]
+	},
+	"factions" : [
+		"config/tartarus/town"
+	],
+	"creatures" : [
+		"config/tartarus/creatures/tartarc1.json",
+		"config/tartarus/creatures/tartarc2.json",
+		"config/tartarus/creatures/tartarc3.json",
+		"config/tartarus/creatures/tartarc4.json",
+		"config/tartarus/creatures/tartarc5.json",
+		"config/tartarus/creatures/tartarc6.json",
+		"config/tartarus/creatures/tartarc7.json",
+		"config/tartarus/creatures/tartarc8.json",
+		"config/tartarus/creatures/tartarc9.json",
+		"config/tartarus/creatures/tartarc10.json",
+		"config/tartarus/creatures/tartarca.json",
+		"config/tartarus/creatures/tartarcb.json",
+		"config/tartarus/creatures/tartarcc.json",
+		"config/tartarus/creatures/tartarcd.json",
+		"config/tartarus/creatures/tartarcbe.json",
+		"config/tartarus/creatures/tcommander.json"
+	],
+
+	"heroClasses" : [
+		"config/tartarus/classes/taheroA.json",
+		"config/tartarus/classes/taheroM.json",
+		"config/tartarus/classes/InfernoExtra.json"
+	],
+
+	"heroes" : [
+		"config/tartarus/heroes/tarhero01.json",
+		"config/tartarus/heroes/tarhero02.json",
+		"config/tartarus/heroes/tarhero03.json",
+		"config/tartarus/heroes/tarhero04.json",
+		"config/tartarus/heroes/tarhero05.json",
+		"config/tartarus/heroes/tarhero06.json",
+		"config/tartarus/heroes/tarhero07.json",
+		"config/tartarus/heroes/tarhero08.json",
+		"config/tartarus/heroes/tarhero09.json",
+		"config/tartarus/heroes/tarhero10.json",
+		"config/tartarus/heroes/tarhero11.json",
+		"config/tartarus/heroes/tarhero12.json",
+		"config/tartarus/heroes/tarhero13.json",
+		"config/tartarus/heroes/tarhero14.json",
+		"config/tartarus/heroes/tarhero15.json",
+		"config/tartarus/heroes/tarhero16.json",
+		"config/tartarus/classes/campaignHeroes.json"
+	],
+	"objects" : [
+		"config/tartarus/dwellings.json",
+		"config/tartarus/banks/IceBank.json",
+		"config/tartarus/banks/furyBank.json"
+	],
+	"spells" : [
+		"config/tartarus/NewOldSpells/tarability1.json",
+		"config/tartarus/NewOldSpells/tarability2.json",
+		"config/tartarus/NewOldSpells/tarability3.json",
+		"config/tartarus/NewOldSpells/tarability4.json",
+		"config/tartarus/NewOldSpells/tarability5.json",
+		"config/tartarus/NewOldSpells/tarability6.json",
+		"config/tartarus/NewOldSpells/tarability7.json",
+		"config/tartarus/NewOldSpells/tarability8.json",
+		"config/tartarus/NewOldSpells/tarability9.json",
+		"config/tartarus/NewOldSpells/tartspell1.json",
+		"config/tartarus/NewOldSpells/tartspell2.json",
+		"config/tartarus/NewOldSpells/tartskill1.json",
+		"config/tartarus/NewOldSpells/tartskill2.json",
+		"config/tartarus/NewOldSpells/tartskill3.json",
+		"config/tartarus/NewOldSpells/moat.json"
+	],
+	"skills" : [
+		"config/tartarus/skills/demonicBlood/demonicBlood.json"
+	]
+}

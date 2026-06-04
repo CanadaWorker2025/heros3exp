@@ -1,0 +1,233 @@
+{
+	"seaWrath" : {
+		"type": "ability",
+		"name": "海之怒",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"targetType": "CREATURE",
+		"targetCondition" : {
+			"anyOf" : {
+				"haven:creature.havC14":"absolute"}
+		},
+		"level": 1,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+		"animation":{
+			"affect":[{"defName":"haven/spells/seaWrath.def","verticalPosition":"bottom","transparency" : 0.5}]
+		},
+		"flags" : {
+			"positive": true,
+			"nonMagical": true
+					},
+		"sounds": {
+			"cast": "LICHDFND"
+		},
+		"graphics":
+		{
+			"iconEffect": "haven/spells/havspell2.bmp"
+		},
+		"levels" : {
+			"base":{
+		
+				"range": "0-2",
+				"power": 10,
+				"cost": 0,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"battleEffects":
+			{
+
+					"lifeEater" :
+				{
+					"type": "core:timed",
+					"cumulative": true,
+					"bonus":
+					{
+					"boostAttack":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					},
+					"boostDefense":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					}
+					}
+				}
+			},
+				"description": "{海之怒}\n\n使部队每次攻击提升5%的攻击和防御。"
+			},
+			"none":
+			{
+			
+			"range": "0-2",
+				"power": 10,
+				"cost": 0,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"battleEffects":{
+
+					"lifeEater" :
+					{
+					"type": "core:timed",
+					"cumulative": true,
+					"bonus":
+					{
+					"boostAttack":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					},
+					"boostDefense":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					}
+					}
+			}
+				},
+				"description": "{海之怒}\n\n使部队每次攻击提升5%的攻击和防御。"
+			},
+			"basic":
+			{
+			"range": "0-2",
+				"power": 10,
+				"cost": 0,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"battleEffects":{
+
+					"lifeEater" :
+					{
+					"type": "core:timed",
+					"cumulative": true,
+					"bonus":
+					{
+					"boostAttack":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					},
+					"boostDefense":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					}
+					}
+			}
+				},
+				"description": "{海之怒}\n\n使部队每次攻击提升5%的攻击和防御。"
+			},
+			"advanced":
+			{
+			"range": "0-2",
+				"power": 10,
+				"cost": 0,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"battleEffects":{
+
+					"lifeEater" :
+					{
+					"type": "core:timed",
+					"cumulative": true,
+					"bonus":
+					{
+					"boostAttack":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					},
+					"boostDefense":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					}
+					}
+			}
+				},
+				"description": "{海之怒}\n\n使部队每次攻击提升5%的攻击和防御。"
+			},
+			"expert":
+			{
+			"range": "0-2",
+				"power": 10,
+				"cost": 0,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"battleEffects":{
+
+					"lifeEater" :
+					{
+					"type": "core:timed",
+					"cumulative": true,
+					"bonus":
+					{
+					"boostAttack":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					},
+					"boostDefense":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "PERMANENT"
+					}
+					}
+			}
+				},
+				"description": "{海之怒}\n\n使部队每次攻击提升5%的攻击和防御。"
+			}
+		}
+	}
+}
+

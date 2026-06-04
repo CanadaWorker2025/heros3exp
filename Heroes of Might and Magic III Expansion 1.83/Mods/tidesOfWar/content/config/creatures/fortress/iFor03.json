@@ -1,0 +1,80 @@
+{
+	"iFor03"://sucker
+	{
+		"name" :
+		{
+			"plural" : "沼蝇",
+			"singular" : "沼蝇"
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 12
+		},
+		"faction": "fortress",
+		"aiValue" : 313,
+		"fightValue" : 251,
+		"attack" : 9,
+		"defense" : 9,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 5
+		},
+		"speed" : 12,
+		"upgrades": ["fireDragonFly"],
+		"graphics" :
+		{
+			"animation" : "creatures/fortress/battle/iFor03B.def",
+			"map" : "creatures/fortress/map/iFor03M.def",
+			"iconSmall" : "creatures/fortress/iconsSmall/iFor03S.bmp",
+			"iconLarge" : "creatures/fortress/iconsBig/iFor03L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 22,
+		"growth" : 8,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "FDFLATTK.wav",
+			"defend": "FDFLDFND.wav",
+			"killed": "FDFLKILL.wav",
+			"move": "FDFLMOVE.wav",
+			"wince": "FDFLWNCE.wav"
+		},
+		"abilities":
+		{
+			"FLYING_ARMY": 
+			{
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly7.png"
+			},
+			"dispellHelpful" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.dispelHelpful",
+				"val" : 100,
+				"icon": "bonuses/dispelattack.png"
+			},
+			"castWeakness" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.disease",
+				"val" : 100,
+				"icon": "bonuses/diseaseattack.png"
+			}
+		}
+	}
+}
+
+

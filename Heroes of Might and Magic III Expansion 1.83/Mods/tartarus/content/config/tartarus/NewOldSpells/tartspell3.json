@@ -1,0 +1,133 @@
+{
+	"tarspell3":
+	{
+		"type": "combat", 
+		"name": "冥府诅咒",
+		"school":
+		{
+			"pavillionPrime": true
+		},
+		"level": 5,
+		"power": 20,
+		"defaultGainChance": 0, 
+		"gainChance" :
+		{ 		
+		},
+		"flags" : {
+			"damage": true,
+			"negative": true,
+			"special": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"creature.imp":"absolute",
+				"creature.familiar":"absolute",
+				"creature.gog":"absolute",
+				"creature.magog":"absolute",
+				"creature.hellHound":"absolute",
+				"creature.cerberus":"absolute",
+				"creature.demon":"absolute",
+				"creature.hornedDemon":"absolute",
+				"creature.pitFiend":"absolute",
+				"creature.pitLord":"absolute",
+				"creature.efreet":"absolute",
+				"creature.efreetSultan":"absolute",
+				"creature.devil":"absolute",
+				"creature.archDevil":"absolute",
+				"tidesofwar:creature.mdtSukkub":"absolute",
+				"tidesofwar:creature.mdtLilim":"absolute",
+				"tidesofwar:creature.ifDark01":"absolute",
+				"tidesofwar:creature.ifDark02":"absolute",
+				"tidesofwar:creature.ifDark03":"absolute",
+				"tidesofwar:creature.ifDark04":"absolute",
+				"tidesofwar:creature.ifDark05":"absolute",
+				"tidesofwar:creature.ifDark06":"absolute",
+				"tidesofwar:creature.ifDark07":"absolute",
+				"tartarus:creature.tartarc1":"absolute",
+				"tartarus:creature.tartarc2":"absolute",
+				"tartarus:creature.tartarc3":"absolute",
+				"tartarus:creature.tartarc4":"absolute",
+				"tartarus:creature.tartarc5":"absolute",
+				"tartarus:creature.tartarc6":"absolute",
+				"tartarus:creature.tartarc7":"absolute",
+				"tartarus:creature.tartarc8":"absolute",
+				"tartarus:creature.tartarc9":"absolute",
+				"tartarus:creature.tartarc10":"absolute",
+				"tartarus:creature.tartarca":"absolute",
+				"tartarus:creature.tartarcab":"absolute",
+				"tartarus:creature.tartarcc":"absolute",
+				"tartarus:creature.tartarcd":"absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.UNDEAD" : "absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/Tarnew01.bmp",
+			"iconScroll": "NewOldSpells/Tarnew02.bmp",
+			"iconScenarioBonus": "NewOldSpells/Tarnew03.bmp",
+			"iconEffect": "NewOldSpells/Tarnew04.bmp",
+			"iconImmune": "NewOldSpells/confusionImmune.bmp"
+		},
+
+		"sounds": {
+			"cast": "DEATHCLD"
+		},
+		"targetType" : "CREATURE",
+		
+		"animation":
+		{
+			"affect":[{ "defName" : "NewOldSpells/tarnew01.def", "transparency" : 0.5}]
+		},
+		
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "X",
+				"battleEffects" : {
+					"directDamage" : {
+						"type":"core:damage"
+					}
+					},
+				"targetModifier":
+				{
+					"smart": false
+				}
+			},
+			"none":
+			{
+				"description": "{冥府诅咒}\n\n对所有战场上的生物进行黑暗力量打击，不死生物，机械单位和来自恶魔阵营（地狱，冰狱）的生物对此效果免疫。\n",
+	 
+				"cost": 18,
+				"power": 30
+	
+			},
+			"basic":
+			{
+				"description": "{冥府诅咒}\n\n对所有战场上的生物进行黑暗力量打击，不死生物，机械单位和来自恶魔阵营（地狱，冰狱）的生物对此效果免疫。\n",
+	 
+				"cost": 18,
+				"power": 30
+			},
+			"advanced":
+			{
+				"description": "{冥府诅咒}\n\n对所有战场上的生物进行黑暗力量打击，不死生物，机械单位和来自恶魔阵营（地狱，冰狱）的生物对此效果免疫。\n",
+	 
+				"cost": 18,
+				"power": 30
+			},
+			"expert":
+			{
+				"description": "{冥府诅咒}\n\n对所有战场上的生物进行黑暗力量打击，不死生物，机械单位和来自恶魔阵营（地狱，冰狱）的生物对此效果免疫。\n",
+	 
+				"cost": 18,
+				"power": 30
+			}
+		}
+	}
+ 
+}

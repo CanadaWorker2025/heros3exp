@@ -1,0 +1,142 @@
+{
+	"bberserker":
+	{
+		"name" :
+		{
+			"plural" : "狂战士",
+			"singular" : "狂战士"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "bastille",
+		"aiValue" : 463,
+		"attack" : 9,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 4
+		},
+		"defense" : 5,
+		"fightValue" : 454,
+		"graphics" :
+		{
+			"animation" : "bastille/battle/creatures/CFG3U.def",
+			"map" : "bastille/map/creatures/AVWC155.def",
+			"iconSmall" : "bastille/iconsSmall/creatures/CPrS155B.bmp",
+			"iconLarge" : "bastille/iconsBig/creatures/CPrL155B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10
+			}
+	       },
+    "growth": 7,
+    "horde": 3,
+		"hitPoints" : 25,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "bastille/FG3UATTK.wav",
+			"defend": "bastille/FG3UDFND.wav",
+			"killed": "bastille/FG3UKILL.wav",
+			"move": "bastille/FG3UMOVE.wav",
+			"wince": "bastille/FG3UWNCE.wav"
+		},
+		"speed" : 7,
+		"abilities" :
+		{
+			"fearless" : {
+				"type" : "FEARFUL",
+				"valueType" : "INDEPENDENT_MIN",
+				"val" : 0,
+				"description" : "{无惧}\n免疫恐惧",
+				"icon" : "bastille/icons/bonusIcons/e_fearl.png"
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 2
+			},
+			"barbarity" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.barbarity",
+				"val" : 0,
+				"icon" : "bastille/icons/bonusIcons/frenzy0.png"
+			},
+      "extraAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.frenzy", 
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 2, 2, 3 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+}

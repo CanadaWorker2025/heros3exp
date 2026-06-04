@@ -1,0 +1,26 @@
+{
+	"tridentOfDominion" : {
+		"type" : [ "HERO" ],
+		"slot" : "RIGHT_HAND",
+		"class" : "MAJOR",
+		"value" : 7000,
+		"bonuses" : {
+			"skill" : {
+				"subtype" : "attack",
+				"type" : "PRIMARY_SKILL",
+				"valueType" : "BASE_NUMBER",
+				"val" : 7
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/tridentOfDominion",
+			"map" : "hota/artifactsMap/tridentOfDominion",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/tridentOfDominion"
+		},
+		"text" : {
+			"description" : "{统御三叉戟}\r\n\r\n拿在右手，统御三叉戟可以使你的攻击力+7。",
+			"event" : "长时间的搜索后你终于找到了一口井。无论怎样你的士兵无法从中打出任何一桶水，有什么东西阻挡着水流涌出，你最好的搬运工不得不自己下到井里，发现一支三叉戟阻塞在水路中。",
+			"name" : "统御三叉戟"
+		}
+	}
+}

@@ -1,0 +1,69 @@
+{
+	"e_niclas" :
+	{
+    "class": "guardian",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "尼科拉斯",
+			"biography" : "尼科拉斯从小就被迫离开家乡，因为那里被战争所摧毁。他很多次都因穷困潦倒而濒临死亡。可是他依然努力面对生活。当他流浪到一个深山中的时候，他发现了一个神奇的戒指，这让他每天都能获得一些硫磺用于交易。久而久之，他也对炼金术产生了兴趣。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供1硫磺。",
+				"tooltip" : "Bonus: resource",
+				"name" : "+1硫磺"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/niclas/UN32T184.bmp",
+			"specialtyLarge" : "preserve/heroes/niclas/UN44T184.bmp",
+			"large" : "preserve/heroes/niclas/HPL004GN.bmp",
+			"small" : "preserve/heroes/niclas/HPS004GN.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"gems" : {
+					"subtype" : "resource.sulfur",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}
+

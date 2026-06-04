@@ -1,0 +1,257 @@
+{
+	"core:prayer" :
+	{	
+	"levels" : {
+		"base":{
+			"effects" : {
+					"atta2" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 1,2]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"defe2" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 1,2]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"speed2" : {
+						"type" : "STACKS_SPEED",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 1,2 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"atta3" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 2,3 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"defe3" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 2,3 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"speed3" : {
+						"type" : "STACKS_SPEED",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 2,3 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"atta4" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 3,4 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"defe4" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 3,4 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"speed4" : {
+						"type" : "STACKS_SPEED",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 3,4 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"atta5" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 4,5 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"defe5" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 4,5 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"speed5" : {
+						"type" : "STACKS_SPEED",
+						"val" : 5,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 4,5 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"atta6" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 4,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 5,6 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"defe6" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 4,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 5,6 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"speed6" : {
+						"type" : "STACKS_SPEED",
+						"val" : 4,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 5,6 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"atta7" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 4,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 6,7 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"defe7" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 4,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 6,7 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"speed7" : {
+						"type" : "STACKS_SPEED",
+						"val" : 4,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 6,7 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"atta8" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 3,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 7 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"defe8" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 3,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 7 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					},
+					"speed8" : {
+						"type" : "STACKS_SPEED",
+						"val" : 3,
+						"duration" : "N_TURNS",
+						"limiters": ["allOf" ,{"type":"CREATURE_LEVEL_LIMITER","parameters": [ 7 ]}, {"type":"HAS_ANOTHER_BONUS_LIMITER","parameters": [ "SPECIFIC_SPELL_DAMAGE", "spell.prayer" ]}]
+					}
+				}
+		},
+			"none":
+			{
+			"effects" : {
+				"atta2":{"val" : 5},
+				"defe2":{"val" : 5},	
+				"speed2":{"val" : 5},
+				"atta3":{"val" : 5},
+				"defe3":{"val" : 5},	
+				"speed3":{"val" : 5},
+				"atta4":{"val" : 5},
+				"defe4":{"val" : 5},	
+				"speed4":{"val" : 5},
+				"atta5":{"val" : 5},
+				"defe5":{"val" : 5},	
+				"speed5":{"val" : 5},
+				"atta6":{"val" : 4},
+				"defe6":{"val" : 4},	
+				"speed6":{"val" : 4},
+				"atta7":{"val" : 4},
+				"defe7":{"val" : 4},	
+				"speed7":{"val" : 4},
+				"atta8":{"val" : 3},
+				"defe8":{"val" : 3},	
+				"speed8":{"val" : 3}
+				}
+			},
+			"basic":
+			{
+			"effects" : {
+				"atta2":{"val" : 5},
+				"defe2":{"val" : 5},	
+				"speed2":{"val" : 5},
+				"atta3":{"val" : 5},
+				"defe3":{"val" : 5},	
+				"speed3":{"val" : 5},
+				"atta4":{"val" : 5},
+				"defe4":{"val" : 5},	
+				"speed4":{"val" : 5},
+				"atta5":{"val" : 5},
+				"defe5":{"val" : 5},	
+				"speed5":{"val" : 5},
+				"atta6":{"val" : 4},
+				"defe6":{"val" : 4},	
+				"speed6":{"val" : 4},
+				"atta7":{"val" : 4},
+				"defe7":{"val" : 4},	
+				"speed7":{"val" : 4},
+				"atta8":{"val" : 3},
+				"defe8":{"val" : 3},	
+				"speed8":{"val" : 3}
+				}
+			},
+			"advanced":
+			{
+			"effects" : {
+				"atta2":{"val" : 7},
+				"defe2":{"val" : 7},	
+				"speed2":{"val" : 7},
+				"atta3":{"val" : 7},
+				"defe3":{"val" : 7},	
+				"speed3":{"val" : 7},
+				"atta4":{"val" : 7},
+				"defe4":{"val" : 7},	
+				"speed4":{"val" : 7},
+				"atta5":{"val" : 7},
+				"defe5":{"val" : 7},	
+				"speed5":{"val" : 7},
+				"atta6":{"val" : 6},
+				"defe6":{"val" : 6},	
+				"speed6":{"val" : 6},
+				"atta7":{"val" : 6},
+				"defe7":{"val" : 6},	
+				"speed7":{"val" : 6},
+				"atta8":{"val" : 5},
+				"defe8":{"val" : 5},	
+				"speed8":{"val" : 5}
+				}
+			},
+			"expert":
+			{
+			"effects" : {
+				"atta2":{"val" : 7},
+				"defe2":{"val" : 7},	
+				"speed2":{"val" : 7},
+				"atta3":{"val" : 7},
+				"defe3":{"val" : 7},	
+				"speed3":{"val" : 7},
+				"atta4":{"val" : 7},
+				"defe4":{"val" : 7},	
+				"speed4":{"val" : 7},
+				"atta5":{"val" : 7},
+				"defe5":{"val" : 7},	
+				"speed5":{"val" : 7},
+				"atta6":{"val" : 6},
+				"defe6":{"val" : 6},	
+				"speed6":{"val" : 6},
+				"atta7":{"val" : 6},
+				"defe7":{"val" : 6},	
+				"speed7":{"val" : 6},
+				"atta8":{"val" : 5},
+				"defe8":{"val" : 5},	
+				"speed8":{"val" : 5}
+				}
+			}
+		}
+	}
+
+
+}

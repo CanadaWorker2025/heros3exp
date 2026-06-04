@@ -1,0 +1,135 @@
+{
+	"regeneration":
+	{
+		"type": "combat", 
+		"name": "活力重生",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 3,
+		"power": 10,
+		"defaultGainChance": 10, 
+		"gainChance":
+		{
+			"necropolis": 0,
+			"castle": 20,
+			"inferno": 10,
+			"conflux" : 20
+		},
+ 
+		//implosion animation?
+		"animation":{
+			"affect":[{"defName" :"Sp12_", "transparency" : 0.5}]
+		},
+ 
+		"flags" : {"positive": true},
+ 
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {
+				"core:bonus.NON_LIVING": "absolute",
+				"core:bonus.SIEGE_WEAPON": "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"core:bonus.HP_REGENERATION": "absolute",
+				"core:bonus.UNDEAD": "absolute"
+			}
+	},	
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/regenerationBook.bmp",
+			"iconScroll": "NewOldSpells/regenerationScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/regenerationScenario.bmp",
+			"iconEffect": "NewOldSpells/regenerationEffect.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "REGENER"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"range": "0",
+				"power": 10,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{活力重生}\n\n使一个生物获得自我复原能力。\n\n每回合回复25点生命值。\n",
+	 
+				"cost": 15,
+				"effects":
+				{
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 25,
+						"valueType" : "BASE_NUMBER",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级活力重生}\n\n使一个生物获得自我复原能力。\n\n每回合回复25点生命值。\n",
+	 
+				"cost": 15,
+	 
+				"effects":
+				{
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 25,
+						"valueType" : "BASE_NUMBER",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级活力重生}\n\n使一个生物获得自我复原能力。\n\n每回合回复50点生命值。\n",
+	 
+				"cost": 12,
+	 
+				"effects":
+				{
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 50,
+						"valueType" : "BASE_NUMBER",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级活力重生}\n\n使所有己方生物获得自我复原能力。\n\n每回合回复75点生命值。\n",
+	 
+				"cost": 12,
+				"range": "X",
+	 
+				"effects":
+				{
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 75,
+						"valueType" : "BASE_NUMBER",
+						"duration": "N_TURNS"
+					}
+				}
+			}
+		}
+	}
+ 
+}

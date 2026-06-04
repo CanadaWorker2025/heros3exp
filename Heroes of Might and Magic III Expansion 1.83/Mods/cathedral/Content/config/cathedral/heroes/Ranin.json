@@ -1,0 +1,55 @@
+{
+	"ranin" :
+	{
+		"class" : "redtemplar",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/ranin/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/ranin/spec-large.bmp",
+			"large" : "cathedral/heroes/ranin/portrait-large.bmp",
+			"small" : "cathedral/heroes/ranin/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+		],
+		"texts" :
+		{
+			"name" : "冯-费德勒",
+			"biography" : "冯-费德勒是最年长的幸存者。在灾难到来之时，他是这座城镇的总督。虽然他在灾难中幸存，但他的3个孩子和妻子却死在了亡灵的手中。人们有时会看到他出现在小教堂中，对着神灵忏悔。直到现在，他还是坚信这一切都是自己的过错。",
+			"specialty" : 
+			{
+				"description" : "在抵抗力上每级获得5%的奖励。",
+				"tooltip" : "抵抗奖励",
+				"name" : "抵抗力"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"resistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

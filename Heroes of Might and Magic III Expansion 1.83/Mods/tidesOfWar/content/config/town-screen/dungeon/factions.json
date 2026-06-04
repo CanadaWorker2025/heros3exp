@@ -1,0 +1,165 @@
+{
+	"core:dungeon" :
+	{
+		"description" : "{地下城}\n种族阵营： 邪恶，中立\n种族地形： 地底\n所在地： 恩塔格瑞大陆-尼贡王国\n地下城的是主要势力在尼贡，由洞穴人和牛头人为主要居民的国度。他们偏好生活在地下洞穴中，且拥有此处在地表和地下隧道中的全部土地。在邪恶阵营中他们算是偏中立的一方，虽然本质上更为混乱，但通常他们只是依附其他邪恶阵营的帮凶。",
+		"town" :
+		{
+			"hallBackground": "town-screen/dungeon/dungeonHallBg.BMP",
+			"buildingsIcons": "town-screen/dungeon/AltHallDung.DEF",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special2" ], [ "special3" ] ],
+				[ [ "special1" ], [ "special4" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1","dwellingUpEx1" ], [ "dwellingLvl2", "dwellingUpLvl2","dwellingUpEx2" ], [ "dwellingLvl3", "dwellingUpLvl3","dwellingUpEx3" ], [ "dwellingLvl4", "dwellingUpLvl4","dwellingUpEx4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5","dwellingUpEx5" ], [ "dwellingLvl5B", "dwellingUpLvl5B" ] ,[ "dwellingLvl6", "dwellingUpLvl6","dwellingUpEx6" ], [ "dwellingLvl7", "dwellingUpLvl7","dwellingUpEx7" ] ]
+			],
+			"creatures" :
+			[
+				["troglodyte", "infernalTroglodyte","iDun01"],
+				["harpy", "harpyHag","iDun02"],
+				["beholder", "evilEye","iDun03"],
+				["medusa", "medusaQueen","iDun04"],
+				["minotaur", "minotaurKing","iDun05", "mdtIllithid", "mdtAlhoon" ],
+				["manticore", "scorpicore","iDun06"],
+				["redDragon", "blackDragon","iDun07"]
+			],
+
+			"structures" :
+			{
+				"dwellingUpEx1": { "animation" : "TBDNHRD2.def", "x" : 0,   "y" : 300, "z" : 2,  "border" : "TODTR2HA.bmp", "area" : "TZDTR2HA.bmp" },
+				"dwellingUpEx2": { "animation" : "TBDNUP_1.def", "x" : 0,   "y" : 26,  "border" : "TODHAR2.bmp",  "area" : "TZDHAR2.bmp" },
+				"dwellingUpEx3": { "animation" : "TBDNUP_2.def", "x" : 118, "y" : 256, "z" : 1,  "border" : "TODBEH2A.bmp", "area" : "TZDBEH2A.bmp" },
+				"dwellingUpEx4": { "animation" : "TBDNUP_3.def", "x" : 300, "y" : 29,  "z" : -1, "border" : "TODMED2.bmp",  "area" : "TZDMED2.bmp" },
+				"dwellingUpEx5": { "animation" : "TBDNUP_4.def", "x" : 519, "y" : 172, "z" : 1,  "border" : "TODMIN2.bmp",  "area" : "TZDMIN2.bmp" },
+				"dwellingUpEx6": { "animation" : "TBDNUP_5.def", "x" : 270, "y" : 253, "z" : -1, "border" : "TODMAN2.bmp",  "area" : "TZDMAN2.bmp" },
+				"dwellingUpEx7": { "animation" : "TBDNUP_6.def", "x" : 550, "y" : 0,   "z" : -1, "border" : "TODDRA2A.bmp", "area" : "TZDDRA2A.bmp" },
+				"dwellingLvl5B":   { "animation" : "town-screen/dungeon/primevalMaw.def", "x" : 520, "y" : 140, "z" : 5, "border" : "town-screen/dungeon/buildings-border/TODMIN1",  "area" : "town-screen/dungeon/buildings-area/TZDMIN1" },
+				"dwellingUpLvl5B": { "animation" : "town-screen/dungeon/primevalMawUpg.def", "x" : 520, "y" : 140, "z" : 5, "border" : "town-screen/dungeon/buildings-border/TODMIN2",  "area" : "town-screen/dungeon/buildings-area/TZDMIN2" }
+			},
+
+			"buildings" :
+			{
+				"dwellingUpEx1": 
+				{ 
+				"name" : "高级暗穴",
+					"description" : "高级暗穴允许你招募地狱洞穴人和深坑洞穴人，并且可以在城中进行转换。",
+					"cost" : {
+						"wood": 5,
+						"gold" : 1000
+					},
+				"id" : 44, 
+				"upgrades" : "dwellingUpLvl1",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx2": 
+				{ 
+				"name" : "高级鸟阁",
+					"description" : "高级鸟阁允许你招募鹰身女妖和鹰身魔女，并且可以在城中进行转换。",
+					"cost" : {
+						"sulfur": 2,
+						"crystal": 2,
+						"gold" : 1500
+					},
+				"id" : 45, 
+				"upgrades" : "dwellingUpLvl2",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx3": 
+				{ 
+				"name" : "高级邪眼之柱",
+					"description" : "高级邪眼之柱允许你招募毒眼和魔眼，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 1,
+						"wood": 1,
+						"sulfur": 1,
+						"gems": 1,
+						"crystal": 1,
+						"mercury": 1,
+						"gold" : 1000
+					},
+				"id" : 46, 
+				"upgrades" : "dwellingUpLvl3",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx4": 
+				{ 
+				"name" : "高级静默之堂",
+					"description" : "高级静默之堂允许你招募美杜莎女王和美杜莎女巫，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 5,
+						"gold" : 1500
+					},
+				"id" : 47, 
+				"upgrades" : "dwellingUpLvl4",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx5": 
+				{ 
+				"name" : "高级迷宫",
+					"description" : "高级迷宫允许你招募牛头王和牛头守卫，并且可以在城中进行转换。",
+					"cost" : {
+						"gems": 5,
+						"ore" : 5,
+						"gold" : 3000
+					},
+				"id" : 48, 
+				"upgrades" : "dwellingUpLvl5",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx6": 
+				{ 
+				"name" : "高级蝎狮巢",
+					"description" : "高级蝎狮巢允许你招募毒蝎狮和魔蝎狮，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"wood": 5,
+						"sulfur": 5,
+						"mercury": 5,
+						"gold" : 3000
+					},
+				"id" : 49, 
+				"upgrades" : "dwellingUpLvl6",
+				"mode" : "auto"
+				},
+				"dwellingUpEx7": 
+				{ 
+				"name" : "高级龙穴",
+					"description" : "高级龙穴允许你招募黑龙和阴影龙，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 15,
+						"ore" : 15,
+						"sulfur": 20,
+						"gold" : 15000
+					},
+				"id" : 50, 
+				"upgrades" : "dwellingUpLvl7",
+				"mode" : "auto" 
+				},
+				"dwellingLvl5":   { "requires" : ["allOf", [ "dwellingLvl4" ], [ "noneOf", [ "dwellingLvl5B" ] ] ] },
+				"dwellingLvl5B" :
+				{
+					"name" : "原生质团",
+					"description" : "原生质团允许你招募摄魂怪。",
+					"cost" : {
+						"ore" : 5,
+						"gold" : 1000
+					},
+					"id" : 55, 
+					"requires" : [ "allOf", [ "fort" ],[ "mageGuild1" ], [ "special2" ], [ "noneOf", [ "dwellingLvl5" ] ] ]
+				},
+				"dwellingUpLvl5B" :
+				{
+					"name" : "高级原生质团",
+					"description" : "高级原生质团允许你招募噬魂怪。",
+					"cost" : {
+						"ore" : 5,
+						"gold" : 1000
+					},
+					"id" : 62, 
+					"upgrades" : "dwellingLvl5B"
+				}	
+			}
+		}
+	}
+}

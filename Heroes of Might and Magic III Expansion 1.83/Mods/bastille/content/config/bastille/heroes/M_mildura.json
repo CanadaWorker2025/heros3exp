@@ -1,0 +1,72 @@
+{
+	"m_mildura" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "米尔杜拉",
+			"biography" : "作为牧师塞亚的助手，米尔杜拉在修道院里度过了早年的时光。当她回到家乡之时，她的举止已经让她完全脱离了矮人社会。不过她还是决定用多年在修道院里修习到的真理，来教化家乡的人们，听从神的指示。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供1水晶。",
+				"tooltip" : "+1 Crystal per day",
+				"name" : "+1水晶"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "bastille/heroes/mildura/skill32-13.bmp",
+			"specialtyLarge" : "bastille/heroes/mildura/skill13.bmp",
+			"large" : "bastille/heroes/mildura/HPL004PY.bmp",
+			"small" : "bastille/heroes/mildura/HPS004PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"cure" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+				"level" : "basic",
+				"skill" : "eagleEye"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"crystal" : {
+					"subtype" : "resource.crystal",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}

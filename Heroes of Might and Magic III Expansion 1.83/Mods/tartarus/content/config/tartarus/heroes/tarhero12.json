@@ -1,0 +1,67 @@
+{
+	"tarhero12" :
+	{
+    "class": "taHeroM",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "阿提娜",
+			"biography" : "阿提娜非常憎恨她的妹妹莫莉塔，因为她的妹妹取代了她的女妖领袖地位。现在阿提娜被迫暂时安于莫莉妲助手的位置，但她制定了一个报复计划。虽然她的武技不如妹妹，但她对战术非常了解，并且拥有大量用于贿赂的珠宝。",
+			"specialty" :
+			{
+				"description" : "达到5级后提升魔蛛和水晶魔蛛的攻击力和防御力。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "魔蛛"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero12/skill12.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero12/skills12.bmp",
+			"large" : "tartarus/heroes/tarhero12/tarH12.bmp",
+			"small" : "tartarus/heroes/tarhero12/tarH12S.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"dispel"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "tartarc9"
+		}
+	}
+}
+

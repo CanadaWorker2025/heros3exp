@@ -1,0 +1,48 @@
+{
+	"patricia" :
+	{
+		"class" : "redtemplar",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/patricia/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/patricia/spec-large.bmp",
+			"large" : "cathedral/heroes/patricia/portrait-large.bmp",
+			"small" : "cathedral/heroes/patricia/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthWitchHunter", "min" :  6, "max" :  8 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+		],
+		"texts" :
+		{
+			"name" : "卢塞洛",
+			"biography" : "卢塞洛是一位赏金猎人。她的家中挂满了曾经的战利品，有女巫的头骨，美杜莎的蛇发和鹰身女妖的羽毛。久而久之，她将猎杀魔物当成了唯一的兴趣，当然，即使没有人雇佣她。",
+			"specialty" :
+			{
+				"description" : "达到3级以后提高猎巫人和猎魔人的攻击力和防御力。",
+				"tooltip" : "Bonus: WitchHunter",
+				"name" : "猎巫人"
+			}
+		},
+		"specialty" : {
+			"creature" : "cthWitchHunter"
+		}		
+	}
+}

@@ -1,0 +1,69 @@
+{
+	"o_melisa" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "梅丽莎",
+			"biography" : "梅丽莎自称是一场生存游戏的唯一生还者。这是曾经在克里根学习的一场毕业考试。参赛者必须杀死所有的对手来获得胜利。在残暴规则下，梅丽莎最终击杀了所有的对手，也因此获得了克里根恶魔的赞誉。但是，没人知道这到底是不是真的。 ",
+			"specialty" :
+			{
+				"description" : "使用烈火神盾魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Spell bonus: Fire Shield",
+				"name" : "烈火神盾"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "bastille/heroes/melisa/skill32-15.bmp",
+			"specialtyLarge" : "bastille/heroes/melisa/skill15.bmp",
+			"large" : "bastille/heroes/melisa/HPL006PY.bmp",
+			"small" : "bastille/heroes/melisa/HPS006PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"fireShield" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "advanced",
+        "skill": "fireMagic"
+      }
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"fireShield" : {
+					"subtype" : "spell.fireShield",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

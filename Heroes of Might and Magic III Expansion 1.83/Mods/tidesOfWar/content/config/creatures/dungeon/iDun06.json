@@ -1,0 +1,75 @@
+{
+	"iDun06"://Manticore Magnuticore
+	{
+		"name" :
+		{
+			"plural" : "魔蝎狮",
+			"singular" : "魔蝎狮"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 5
+		},
+		"faction": "dungeon",
+		"aiValue" : 1589,
+		"fightValue" : 1249,
+		"doubleWide" : true,
+		"attack" : 17,
+		"defense" : 15,
+		"cost" :
+		{
+			"gold" : 1050
+		},
+		"damage" :
+		{
+			"min" : 16,
+			"max" : 20
+		},
+		"speed" : 10,
+		"upgrades": ["scorpicore"],
+		"graphics" :
+		{
+			"animation" : "creatures/dungeon/battle/iDun06B.def",
+			"map" : "creatures/dungeon/map/iDun06M.def",
+			"iconSmall" : "creatures/dungeon/iconsSmall/iDun06S.bmp",
+			"iconLarge" : "creatures/dungeon/iconsBig/iDun06L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 90,
+		"growth" : 2,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "MANTATTK.wav",
+			"defend": "MANTDFND.wav",
+			"killed": "MANTKILL.wav",
+			"move": "MANTMOVE.wav",
+			"shoot": "MANTSHOT.wav",
+			"wince": "MANTWNCE.wav"
+		},
+		"abilities":
+		{
+			"canFly" :
+			{
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly2.png"
+			},
+			"enchanted" : 	
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.slayer",
+				"val" : 2,
+				"icon": "bonuses/enchantedslayer.png"
+			}
+		}
+	}
+}
+
+

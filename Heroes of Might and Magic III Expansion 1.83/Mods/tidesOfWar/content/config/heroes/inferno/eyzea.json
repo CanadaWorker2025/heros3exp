@@ -1,0 +1,63 @@
+{
+  "eyzeaDemoniac" :
+  {
+    "class" : "demoniac",
+    "female" : true,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "以赛亚",
+      "biography" : "以赛亚自称是“厄瑞玻斯之子”领袖塞尔伦的真正母亲。当伊欧弗输掉了末日之战时，她不得不躲在地下苟延残喘。现在，她等待着返回地面并带领克里根军队取得最后胜利。",
+      "specialty" :
+      {
+        "description" : "达到4级以后提高魅魔或艳魔的攻击力与防御力。",
+        "tooltip" : "{Succubi and Lilims}\r\n\r\nIncreases the Attack and Defense skills of any Succubi and Lilims for each level attained after 4th level. Additionally, Succubi and Lilims get a permanent +1 Speed bonus",
+        "name" : "魅魔"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/inferno/eyzea_spec-small.bmp",
+      "specialtyLarge" : "heroes/inferno/eyzea_spec-large.bmp",
+      "large" : "heroes/inferno/eyzea_portrait-large.bmp",
+      "small" : "heroes/inferno/eyzea_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "imp",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "hellHound",
+        "max" : 2,
+        "min" : 1
+      },
+	  {
+        "creature" : "mdtSukkub",
+        "max" : 7,
+        "min" : 4
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "diplomacy"
+      },
+      {
+        "level" : "basic",
+        "skill" : "intimidation"
+      }
+    ],
+    
+	"specialty" : {
+		"creature" : "mdtSukkub"
+	}
+  }
+}

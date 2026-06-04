@@ -1,0 +1,23 @@
+{
+	"author" : "avatar, Trith, Hobbit",
+	"contact" : "http://www.forum.acidcave.net/topic.php?TID=1423",
+	"description" : "Grail as combined artifact",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"modType" : "Artifacts",
+	"name" : "Combine Grail",
+	"version" : "1.2",
+	"chinese" : {
+		"name" : "合成神器",
+		"description" : "神器的组件"
+	},
+	"artifacts" :
+	[
+		"config/grail",
+		"config/aviary",
+		"config/sirensStar",
+		"config/magnusCoffer",
+		"config/patron",
+		"config/sutra"
+	]
+}

@@ -1,0 +1,125 @@
+{
+	"name" : "Cradle-town",
+	"description" : "The new city of soul guides, Cradle, connected to the otherworldly dimension of eternity, night and dreams.",
+	"author" : "Vovan1698",
+	"contact" : "discord: Vovan1698, zeryss",
+	"version" : "1.0.1",
+	"modType" : "Town",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"chinese" : {
+		"name" : "摇篮",
+		"description" : "灵魂指引者的新城镇摇篮，连接者包含永恒、黑夜与梦境的异界。",
+		"translations" : [
+			"translation/cradle/chinese.json"
+		]
+	},
+	"russian" : {
+		"name" : "Колыбель",
+		"description" : "Новый город проводников душ Колыбель, связанный с потусторонним измерением вечности, ночи и снов.",
+		"translations" : [
+			"translation/cradle/russian.json"
+		]
+	},
+	"changelog" : {
+		"1.0.1" : [
+			"Fix for lvl 5 creatures animations"
+		],
+		"1.0.0" : [
+			"Initial release"
+		]
+	},
+	"factions" : [
+		"config/cradle/town/faction.json",
+		"config/cradle/town/buildings.json",
+		"config/cradle/town/structures.json",
+		"config/cradle/town/spells.json",
+		"config/cradle/town/siege.json",
+		"config/cradle/town/puzzle.json"
+	],
+	"creatures" : [
+		"config/cradle/creatures/cradle_lvl1.json",
+		"config/cradle/creatures/cradle_lvl1up.json",
+		"config/cradle/creatures/cradle_lvl2.json",
+		"config/cradle/creatures/cradle_lvl2up.json",
+		"config/cradle/creatures/cradle_lvl3.json",
+		"config/cradle/creatures/cradle_lvl3up.json",
+		"config/cradle/creatures/cradle_lvl4.json",
+		"config/cradle/creatures/cradle_lvl4up.json",
+		"config/cradle/creatures/cradle_lvl5.json",
+		"config/cradle/creatures/cradle_lvl5up.json",
+		"config/cradle/creatures/cradle_lvl5a.json",
+		"config/cradle/creatures/cradle_lvl5aup.json",
+		"config/cradle/creatures/cradle_lvl6.json",
+		"config/cradle/creatures/cradle_lvl6up.json",
+		"config/cradle/creatures/cradle_lvl7.json",
+		"config/cradle/creatures/cradle_lvl7up.json",
+		"config/cradle/creatures/cradle_lvl8.json",
+		"config/cradle/creatures/cradle_cmd.json"
+	],
+	"heroClasses" : [
+		"config/cradle/classes/oneiroguard.json",
+		"config/cradle/classes/soulguide.json"
+	],
+	"heroes" : [
+		"config/cradle/heroes/astralia.json",
+		"config/cradle/heroes/dreamMelanis.json",
+		"config/cradle/heroes/dustNaithel.json",
+		"config/cradle/heroes/fogNoctus.json",
+		"config/cradle/heroes/guardPiron.json",
+		"config/cradle/heroes/imageTeyra.json",
+		"config/cradle/heroes/kalinor.json",
+		"config/cradle/heroes/lightHeilian.json",
+		"config/cradle/heroes/lumisa.json",
+		"config/cradle/heroes/moonSelena.json",
+		"config/cradle/heroes/nightElyon.json",
+		"config/cradle/heroes/selarin.json",
+		"config/cradle/heroes/shadowElystra.json",
+		"config/cradle/heroes/starMiara.json",
+		"config/cradle/heroes/visionIle.json",
+		"config/cradle/heroes/whisperArvin.json"
+	],
+	"spells" : [
+		"config/cradle/spells/cradle_comet.json",
+		"config/cradle/spells/cradle_StarCaster.json",
+		"config/cradle/spells/cradle_starfall.json"
+	],
+	"battlefields" : [
+		"config/cradle/terrain/battlefields/battlefields.json"
+	],
+	"terrains" : [
+		"config/cradle/terrain/terrain/terrains.json"
+	],
+	"rivers" : [
+		"config/cradle/terrain/terrain/rivers.json"
+	],
+	"skills" : [
+		"config/cradle/skills/reflection.json"
+	],
+	"obstacles" : [
+		"config/cradle/terrain/obstacles/obstacles.json"
+	],
+	"objects" : [
+		"config/cradle/terrain/decorations/canyon.json",
+		"config/cradle/terrain/decorations/flowers.json",
+		"config/cradle/terrain/decorations/fracture.json",
+		"config/cradle/terrain/decorations/hole.json",
+		"config/cradle/terrain/decorations/mountains.json",
+		"config/cradle/terrain/decorations/rock.json",
+		"config/cradle/terrain/decorations/shrub.json",
+		"config/cradle/terrain/decorations/stone.json",
+		"config/cradle/terrain/decorations/trees.json",
+		"config/cradle/terrain/decorations/deltas.json",
+		"config/cradle/terrain/objects/abandonedMine.json",
+		"config/cradle/terrain/objects/hillFort.json",
+		"config/cradle/terrain/objects/signs.json",
+		"config/cradle/terrain/objects/treeOfKnowledge.json",
+		"config/cradle/terrain/special/mines.json",
+		"config/cradle/terrain/special/obelisk.json",
+		"config/cradle/terrain/special/subgates.json",
+		"config/cradle/dwellings.json",
+		"config/cradle/banks/bankA.json",
+		"config/cradle/banks/bankB.json"
+	]
+}

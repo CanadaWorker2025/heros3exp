@@ -1,0 +1,109 @@
+{
+	"core:creatureBank" :
+	{
+		"types" :
+		{
+			"ruins" :
+			{
+				"name" : "废墟",
+				"aiValue" : 2000,
+				"templates" :
+				{
+					"base" :
+					{
+						"animation" : "hota/highlands/hotaInteractive/ruins/avxruins.def",
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"mask" : [ "VVVV", "VVBV", "VBAB"],
+						"allowedTerrains":["highlands"]
+					}
+				},
+				"sounds": {
+					"ambient": ["hota/highlands/LOOPRUIN.wav"],
+					"visit": ["hota/highlands/RUINSVIS.wav"]
+				},
+				"rmg" : {
+					"value" : 1000,
+					"rarity" : 100
+				},
+				"onGuardedMessage" : "{废墟}\r\n\r\n当你路过一片废墟时，你听到嚎叫声在摇摇欲坠的墙壁和塔楼之间回荡。你想探索这里吗？",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"onVisited" : [
+					{
+						"message" : "{废墟}\r\n\r\n风在废墟中呼啸而过，你发现这里虽然没有值钱的东西，但却是个绝佳的观景点。好吧，至少你设法从塔上好好地环顾了一下这个地方。", // Such a despicable act reduces your army's morale.
+						"revealTiles" : {
+							"radius" : 12,
+							"surface" : 1,
+							"subterra" : 1,
+							"water" : 1,
+							"rock" : 1
+						}
+					}
+				],
+				"rewards" : [
+					{
+						"message" : "打败了尸巫王之后，你搜索废墟后，发现了一些东西。看来探寻这里是值得的。",
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 20, "type" : "skeleton" },
+							{ "amount": 3, "type" : "wight" },
+							{ "amount": 3, "type" : "wraith"},
+							{ "amount": 10, "type" : "skeletonWarrior" },
+							{ "amount": 1, "type" : "powerLich" }
+						],
+						"resources":
+							{
+								"gold" : 1000
+							}
+					},
+					{
+						"message" : "打败了尸巫王之后，你搜索废墟后，发现了一些东西。看来探寻这里是值得的。",
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 30, "type" : "skeleton" },
+							{ "amount": 5, "type" : "wight" },
+							{ "amount": 5, "type" : "wraith"},
+							{ "amount": 10, "type" : "skeletonWarrior" },
+							{ "amount": 1, "type" : "powerLich" }
+						],
+						"resources":
+							{
+								"gold" : 2000
+							}
+					},
+					{
+						"message" : "打败了尸巫王之后，你搜索废墟后，发现了一些东西。看来探寻这里是值得的。",
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 40, "type" : "skeleton" },
+							{ "amount": 7, "type" : "wight" },
+							{ "amount": 7, "type" : "wraith"},
+							{ "amount": 20, "type" : "skeletonWarrior" },
+							{ "amount": 2, "type" : "powerLich" }
+						],
+						"resources":
+							{
+								"gold" : 3000
+							}
+					},
+					{
+						"message" : "打败了尸巫王之后，你搜索废墟后，发现了一些东西。看来探寻这里是值得的。",
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 50, "type" : "skeleton" },
+							{ "amount": 9, "type" : "wight" },
+							{ "amount": 9, "type" : "wraith"},
+							{ "amount": 20, "type" : "skeletonWarrior" },
+							{ "amount": 3, "type" : "powerLich" }
+						],
+						"resources":
+							{
+								"gold" : 4000
+							}
+					}
+				]
+			}
+		}
+	}
+}

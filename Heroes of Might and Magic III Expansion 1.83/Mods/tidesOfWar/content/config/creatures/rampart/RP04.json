@@ -1,0 +1,76 @@
+{
+	"nRP04":
+	{
+		"name" :
+		{
+			"plural" : "金飞马", //Gold Pegasus
+			"singular" : "金飞马"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"faction": "rampart",
+		"doubleWide" : true,
+		"aiValue" : 535,
+		"fightValue" : 419,
+		"attack" : 9,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 275
+		},
+		"damage" :
+		{
+			"min" : 6,
+			"max" : 9
+		},
+		"speed" : 11,
+		"upgrades": ["silverPegasus"],
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/RP04.def",
+			"map" : "creatures/rampart/map/RP04S.def",
+			"iconSmall" : "creatures/rampart/iconsSmall/RP04S.bmp",
+			"iconLarge" : "creatures/rampart/iconsBig/RP04.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 35,
+		"growth" : 5,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "APEGATTK.wav",
+			"defend": "APEGDFND.wav",
+			"killed": "APEGKILL.wav",
+			"move": "APEGMOVE.wav",
+			"wince": "APEGWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" :
+			{
+				"type" : "FLYING"
+			},
+			"increaseManaCost" :
+			{
+				"type" : "CHANGES_SPELL_COST_FOR_ENEMY",
+				"val" : 1
+			},
+			"reduceSpellCost" : 
+			{
+				"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+				"val" :  1
+			}
+		}
+	}
+}
+
+

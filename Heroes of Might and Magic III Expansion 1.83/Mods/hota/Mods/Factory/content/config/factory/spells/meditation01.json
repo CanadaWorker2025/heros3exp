@@ -1,0 +1,72 @@
+{
+	"meditation01" : {
+		"type" : "ability",
+		"name" : "冥想",
+		"level" : 0,
+		"power" : 0,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"animation" : {
+			"affect" : [
+				{
+					"effectName" : "bloodlust"
+				}
+			]
+		},
+		"flags" : {
+			"persistent" : true,
+			"nonMagical":true,
+			"positive" : true,
+			"special" : true
+		},
+		"targetCondition" : {},
+		"canCastWithoutSkip" : false,
+		"canCastOnlyOnSelf" : true,
+		"graphics" : {
+			"iconEffect" : "spells/medi001"
+		},
+		"sounds" : {},
+		"targetType" : "CREATURE",
+		"levels" : {
+			"base" : {
+				"description" : "{冥想}\n\n冥想中的单位可以不受任何攻击的影响。\n",
+				"range" : "0",
+				"power" : 0,
+				"cost" : 0,
+				"targetModifier" : {
+					"smart" : true
+				},
+				"battleEffects" : {
+					"crimsonMeditation" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"invincible" : {
+								"type" : "INVINCIBLE",
+								"duration" : [
+									"STACK_GETS_TURN"
+								]
+							},
+							"immunityToHarmfulEffects" : {
+								"type" : "NEGATIVE_EFFECTS_IMMUNITY",
+								"subtype" : "spellSchool.any",
+								"duration" : [
+									"STACK_GETS_TURN"
+								]
+							}
+						}
+					}
+				}
+			},
+			"none" : {},
+			"basic" : {},
+			"advanced" : {},
+			"expert" : {}
+		}
+	}
+}

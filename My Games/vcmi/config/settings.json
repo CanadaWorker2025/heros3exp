@@ -1,0 +1,40 @@
+{
+	"adventure" : {
+		"enemyMoveTime" : 25,
+		"heroMoveTime" : 50,
+		"scrollSpeedPixels" : 1200
+	},
+	"battle" : {
+		"cellBorders" : true,
+		"showHealthBar" : true,
+		"speedFactor" : 6
+	},
+	"gameTweaks" : {
+		"numericCreaturesQuantities" : true,
+		"skipBattleIntroMusic" : true
+	},
+	"general" : {
+		"language" : "chinese",
+		"lastDifficulty" : 4,
+		"lastMap" : "MAPS/Good to Go",
+		"lastSave" : "SAVES/AUTOSAVE/2026-05-17_10-29_臣服/5",
+		"lastSettingsTab" : 2,
+		"multiPlayerNames" : [
+			"3"
+		],
+		"playerName" : "玩家"
+	},
+	"launcher" : {
+		"setupCompleted" : true
+	},
+	"video" : {
+		"fullscreen" : false,
+		"performanceOverlay" : {
+		},
+		"resolution" : {
+			"height" : 1440,
+			"scaling" : 150,
+			"width" : 1920
+		}
+	}
+}

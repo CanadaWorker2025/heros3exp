@@ -1,0 +1,37 @@
+{
+	"observatory" : {
+		"handler":"configurable",
+		"name" : "观测塔",
+		"types" : {
+			"observatory" : {
+				"sounds" : {
+					"visit" : ["LIGHTHOUSE"]
+				},
+				"rmg" : {
+					"value"	: 500,
+					"rarity" : 20,
+					"zoneLimit" : 1
+				},
+				"rewards" :
+				[
+					{
+						"message" : "{观测塔}\r\n\r\n一位天文学家邀请你一起观测天空。他对你的冒险经历很是满意，请求让他的徒弟和你一起出海航行一周。年轻人似乎也不需要总是学习，适当休息下也是好的。",
+						"bonuses" : [ { "type" : "SIGHT_RADIUS", "val" : 2, "valueType" : "BASE_NUMBER", "duration" : "ONE_WEEK" } ]
+					},
+				],
+				"blockedVisitable" : true, // TODO: recheck HotA
+				"onVisitedMessage": "{观测塔}\r\n\r\n天文学家看到他的徒弟又回来了，急忙让你把他带走，这么早回来对他没有好处。",
+				"canRefuse": false,
+				"visitMode" : "hero",
+				"selectMode" : "selectPlayer",
+				"templates" : {
+					"avxwobs" : { "animation" : "hota/observatory/avxwobs", 
+						"mask" : [ "VVV", "VVV", "VBA" ], 
+						"visitableFrom" : [ "---", "-++", "+++" ],
+						"allowedTerrains": [ "water" ]
+					}
+				}
+			}
+		}
+	}		
+}

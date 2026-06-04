@@ -1,0 +1,32 @@
+{
+	"name" : "New Old Spells+",
+	"description" : "9 spells from other Homm games",
+	"author" : "Warmonger, Andruids",
+	"contact" : "http://forum.vcmi.eu/viewforum.php?f=15",
+	"version" : "0.9.5",
+	"modType" : "Spells",	
+	"chinese" : {
+		"name" : "新魔法",
+		"description" : "EXP中的部分新法术"
+	},
+	"spells" :
+	[
+		"config/NewOldSpells/WaspSwarm.json",
+		"config/NewOldSpells/Vampirism.json",
+		"config/NewOldSpells/PuppetMaster.json",
+		"config/NewOldSpells/Levitation.json",
+		"config/NewOldSpells/DeepFreeze.json",
+		"config/NewOldSpells/Regeneration.json",
+		"config/NewOldSpells/DragonStrength.json",
+		"config/NewOldSpells/Confusion.json",
+		"config/NewOldSpells/Vigour.json",
+		"config/NewOldSpells/Fear.json"
+	],
+	"changelog" :
+    {
+		"0.8" : ["Initial release"],
+		"0.9" : ["Added spell Fear (abandoned H3 spell)"],
+		"0.9.1" : ["Small improvements"],
+		"0.9.5" : ["Graphical lifting, some balancing improvements and adapting to the new spell format"]
+    }
+}

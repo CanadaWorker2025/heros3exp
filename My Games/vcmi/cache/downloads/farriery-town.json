@@ -1,0 +1,132 @@
+{
+	"name" : "Farriery",
+	"description" : "Town Farriery based on old Forge project. Connected with Spoiled Land inside New Terrains Pack submods (see Screenshots TAB).",
+	"author" : "Polish modders team, Zeryss",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "2.1.4",
+	"modType" : "Town",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"changelog" : {
+		"2.1.4" : [
+			"Added flagport frames (Kingdom Overview window)",
+			"Added Neuromacy skill for some heroes"
+		],
+		"2.1.3" : [
+			"Update to vcmi-1.7 format"
+		],
+		"2.1.2" : [
+			"kdmcser fixes"
+		],
+		"2.1.1" : [
+			"Fix Grail not to produce gold"
+		],
+		"2.1.0" : [
+			"Update to vcmi-1.6 format",
+			"Added creature system experience by fog"
+		],
+		"2.0.5" : [
+			"Updated russian translation"
+		],
+		"2.0.4" : [
+			"Russian translation by Anton Sergeew"
+		],
+		"2.0.3" : [
+			"Added Chinese translation, the creatures' stackExp and fixed the commander"
+		],
+		"2.0.2" : [
+			"Adjusted Commanders stats"
+		],
+		"2.0.1" : [
+			"Removed Spoiled land to independed mod"
+		],
+		"2.0.0" : [
+			"Initial release"
+		]
+	},
+	"chinese" : {
+		"name" : "异星",
+		"description" : "异星是是一个柴油朋克风格的高科技种族，基于《英雄无敌III》资料片机械族（Forge）废案制作，和新地形模组的Spoiled Land Terrain地形接壤。",
+		"translations" : [
+			"translation/farriery/chinese.json"
+		]
+	},
+	"russian" : {
+		"name" : "Кузница",
+		"description" : "Новый город Кузница, основанный на старом проекте Forge. Связан с Spoiled Land внутри подмодов New Terrains Pack",
+		"translations" : [
+			"translation/farriery/russian.json"
+		]
+	},
+	"depends" : [
+		"newtown-terrains.spoiledland"
+	],
+	"factions" : [
+		"config/farriery/town/buildings.json",
+		"config/farriery/town/faction.json",
+		"config/farriery/town/siege.json",
+		"config/farriery/town/spells.json",
+		"config/farriery/town/structures.json",
+		"config/farriery/town/puzzle.json"
+	],
+	"creatures" : [
+		"config/farriery/creatures/lv1.json",
+		"config/farriery/creatures/lv1up.json",
+		"config/farriery/creatures/lv2.json",
+		"config/farriery/creatures/lv2up.json",
+		"config/farriery/creatures/lv3.json",
+		"config/farriery/creatures/lv3up.json",
+		"config/farriery/creatures/lv4.json",
+		"config/farriery/creatures/lv4up.json",
+		"config/farriery/creatures/lv5.json",
+		"config/farriery/creatures/lv5up.json",
+		"config/farriery/creatures/lv6.json",
+		"config/farriery/creatures/lv6up.json",
+		"config/farriery/creatures/lv7.json",
+		"config/farriery/creatures/lv7up.json",
+		"config/farriery/creatures/Arkhon.json",
+		"config/farriery/creatures/Mortira.json"
+	],
+	"heroClasses" : [
+		"config/farriery/heroClasses/Marshal.json",
+		"config/farriery/heroClasses/Technomage.json"
+	],
+	"artifacts" : [
+		"config/farriery/artifacts/MortiraArt.json"
+	],
+	"heroes" : [
+		"config/farriery/heroes/amaya.json",
+		"config/farriery/heroes/steraks.json",
+		"config/farriery/heroes/seprinteer.json",
+		"config/farriery/heroes/Meltes.json",
+		"config/farriery/heroes/wolgert.json",
+		"config/farriery/heroes/niclas.json",
+		"config/farriery/heroes/olgrin.json",
+		"config/farriery/heroes/silas.json",
+		"config/farriery/heroes/sunnir.json",
+		"config/farriery/heroes/kastore.json",
+		"config/farriery/heroes/rengist.json",
+		"config/farriery/heroes/minore.json",
+		"config/farriery/heroes/leane.json",
+		"config/farriery/heroes/tarkin.json",
+		"config/farriery/heroes/tronhill.json",
+		"config/farriery/heroes/maximus.json",
+		"config/farriery/heroes/cistrict.json",
+		"config/farriery/heroes/kreyk.json",
+		"config/farriery/heroes/shandri.json",
+		"config/farriery/heroes/yagnik.json"
+	],
+	"objects" : [
+		"config/farriery/dwellings",
+		"config/farriery/boats.json"
+	],
+	"spells" : [
+		"config/farriery/moat.json"
+	],
+
+	"skills" : [
+		"config/farriery/skills/neuromancy",
+		"config/farriery/skills/artillery.json"
+	]
+}

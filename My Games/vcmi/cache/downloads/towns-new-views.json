@@ -1,0 +1,39 @@
+{
+	"author" : "Zachari, J.M.Sower, Trith, Toffi, macron1, avatar",
+	"contact" : "http://www.forum.acidcave.net/topic.php?TID=2393&page=1",
+	"description" : "Now some town's adventure map sprites have graphics connected to the terrains on which they stand.",
+	"licenseName" : "",
+	"licenseURL" : "",
+	"modType" : "Graphical",
+	"name" : "Towns new views",
+	"version" : "1.06",
+	"factions" : 
+	[ 
+		"config/castle",
+		"config/tower",
+		"config/inferno",
+		"config/necropolis",
+		"config/stronghold",
+		"config/dungeon"
+	],
+	"conflicts" :
+    [
+        "hota.newGraphics"
+    ],
+	"changelog" :
+    {
+        "1.0"  : [ "Initial release" ],
+		"1.01" : [ "Fixed some bugs with yellow flags" ],
+		"1.04" : [ "New graphic added" ],
+		"1.05" : [ "New graphic added" ],
+		"1.06" : [ "Czech translation by George King" ]
+    },
+	"compatibility" :
+	{
+		"min" : "1.0.0"
+	},
+	"czech" : {
+		"name" : "Nové pohledy na města",
+		"description" : "Některé objekty měst nyní mění svůj vzhled podle terénu, na kterém se nacházejí."
+	}
+}

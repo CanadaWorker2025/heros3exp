@@ -1,0 +1,76 @@
+{
+	"i_kaspar" :
+	{
+    "class": "mentalist",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "卡斯帕",
+			"biography" : "卡斯帕因为冒充贵族随意挥霍，而欠下了百万的债务。他被囚禁在埃拉西亚的一座监狱里。在监狱中他遇到了一位无名术士，并且学会了强大的精神魔法。在一次尝试越狱的行动中，他控制了守卫并让他们打开了监室的门。从此他跟随那个术士作为一个新的身份生活。",
+			"specialty" :
+			{
+				"description" : "使用丧心病狂魔法时初始为中级火系效果。",
+				"tooltip" : "Spell bonus: berserk",
+				"name" : "丧心病狂"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/kaspar/UN32T204.bmp",
+			"specialtyLarge" : "asylum/heroes/kaspar/UN44T204.bmp",
+			"large" : "asylum/heroes/kaspar/HPL000MN.bmp",
+			"small" : "asylum/heroes/kaspar/HPS000MN.bmp"
+		},
+		
+		"spellbook" :
+		[
+			"berserk"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scholar"
+			}
+		],
+		
+		"specialty": //weakness
+			{
+				"bonuses":
+				{
+				"reconstruction":{
+				"type" : "SPELL",
+				"subtype" : "spell.berserk",
+				"val" : 2,
+				"valueType" : "INDEPENDENT_MAX"
+					}
+				}
+			}
+	}
+}
+

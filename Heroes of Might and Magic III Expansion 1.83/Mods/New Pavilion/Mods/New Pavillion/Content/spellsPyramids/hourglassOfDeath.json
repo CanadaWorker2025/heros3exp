@@ -1,0 +1,542 @@
+{
+	"hourglassOfDeath" : 
+	{
+		"type": "combat",
+		"targetType" : "CREATURE",
+		"name" : "死亡时计",
+		"school":
+		{
+			"pavillionPrime": true
+		},
+		"level": 5,
+		"power": 45,
+		"defaultGainChance": 0, 		
+		"gainChance":{},
+		"counters": {"spell.hourglassOfDeath": true},		
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/05hourglass/hourglassBook.bmp",
+			"iconScroll": "spellsPyramids/05hourglass/hourglassScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/05hourglass/hourglassBonus.bmp",
+			"iconEffect": "spellsPyramids/05hourglass/hourglassEffect.bmp"
+		},
+		"animation":{
+			"affect":["spellsPyramids/05hourglass/hourglassAni.def"]
+		},
+		"sounds": {
+			"cast": "AGE"
+		},
+		"levels" : 
+			{
+			
+			"base":{
+				"description": "{死亡时计}\n\n可以使己方所有部队都获得计时效果，在一个回合内必须对一个敌方单位造成5次伤害，5次伤害后敌方部队将全部被消灭，被死亡时计消灭的部队无法再被复活。",
+				"cost": 30,
+				"power": 10,
+				"range" : "X",
+				"targetModifier":{"smart":true},
+				},
+					
+					"none":
+					{
+						"description": "{死亡时计}\n\n可以使己方所有部队都获得计时效果，在一个回合内必须对一个敌方单位造成5次伤害，5次伤害后敌方部队将全部被消灭，被死亡时计消灭的部队无法再被复活。",
+						"effects" : {
+							"castsTime1" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass2",
+								"val" : 100,
+								"addInfo" : [0,0,0],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime2" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass3",
+								"val" : 100,
+								"addInfo" : [0,0,1],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime3" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass4",
+								"val" : 100,
+								"addInfo" : [0,0,2],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime4" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass5",
+								"val" : 100,
+								"addInfo" : [0,0,3],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime5" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass6",
+								"val" : 100,
+								"addInfo" : [0,0,4],
+								"duration" : "N_TURNS",
+								"turns" : 1
+							}
+						}
+					},
+					"basic":
+					{
+						"description": "{死亡时计}\n\n可以使己方所有部队都获得计时效果，在一个回合内必须对一个敌方单位造成5次伤害，5次伤害后敌方部队将全部被消灭，被死亡时计消灭的部队无法再被复活。",
+						"effects" : {
+							"castsTime1" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass2",
+								"val" : 100,
+								"addInfo" : [0,0,0],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime2" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass3",
+								"val" : 100,
+								"addInfo" : [0,0,1],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime3" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass4",
+								"val" : 100,
+								"addInfo" : [0,0,2],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime4" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass5",
+								"val" : 100,
+								"addInfo" : [0,0,3],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime5" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass6",
+								"val" : 100,
+								"addInfo" : [0,0,4],
+								"duration" : "N_TURNS",
+								"turns" : 1
+							}
+						}
+					},
+						"advanced":
+					{
+						"description": "{死亡时计}\n\n可以使己方所有部队都获得计时效果，在一个回合内必须对一个敌方单位造成5次伤害，5次伤害后敌方部队将全部被消灭，被死亡时计消灭的部队无法再被复活。",
+						"effects" : {
+							"castsTime1" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass2",
+								"val" : 100,
+								"addInfo" : [0,0,0],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime2" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass3",
+								"val" : 100,
+								"addInfo" : [0,0,1],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime3" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass4",
+								"val" : 100,
+								"addInfo" : [0,0,2],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime4" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass5",
+								"val" : 100,
+								"addInfo" : [0,0,3],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime5" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass6",
+								"val" : 100,
+								"addInfo" : [0,0,4],
+								"duration" : "N_TURNS",
+								"turns" : 1
+							}
+						}
+					},
+						"expert":
+					{
+						"description": "{死亡时计}\n\n可以使己方所有部队都获得计时效果，在一个回合内必须对一个敌方单位造成5次伤害，5次伤害后敌方部队将全部被消灭，被死亡时计消灭的部队无法再被复活。",
+						"effects" : {
+							"castsTime1" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass2",
+								"val" : 100,
+								"addInfo" : [0,0,0],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime2" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass3",
+								"val" : 100,
+								"addInfo" : [0,0,1],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime3" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass4",
+								"val" : 100,
+								"addInfo" : [0,0,2],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime4" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass5",
+								"val" : 100,
+								"addInfo" : [0,0,3],
+								"duration" : "N_TURNS",
+								"turns" : 1
+											},
+							"castsTime5" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.hourglass6",
+								"val" : 100,
+								"addInfo" : [0,0,4],
+								"duration" : "N_TURNS",
+								"turns" : 1
+							}
+						}
+					}
+			},	
+			
+		"targetCondition" : {},		
+		"flags" : {
+			"positive": true,
+			"nonMagical":true,
+			"special" : true
+		}
+	},
+	"hourglass2" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "死亡时计",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 45,
+		"defaultGainChance": 0, 		
+		"gainChance":{},
+		"counters": {"spell.hourglassOfDeath": true},		
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/05hourglass/hourglassBook.bmp",
+			"iconScroll": "spellsPyramids/05hourglass/hourglassScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/05hourglass/hourglassBonus.bmp",
+			"iconEffect": "spellsPyramids/05hourglass/4hour04.bmp"
+		},
+		"animation":{
+			"affect":["spellsPyramids/05hourglass/deadTime1.def"]
+		},
+		"sounds": {
+			"cast": "objectsPavilion/clock"
+		},
+		"levels" : 
+			{
+			
+			"base":{
+				"description": "{死亡时计}\n\n计时：还剩4次攻击会被全灭。",
+				"cost": 10,
+				"power": 10,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				},
+					
+					"none":
+					{
+						"description": "{死亡时计}\n\n计时：还剩4次攻击会被全灭。",
+						"effects" : {
+							"attack" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "primarySkill.attack",
+								"val" : -1,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "N_TURNS",
+								"turns" : 1
+								},
+							
+						}
+					},
+						"basic":
+						{},
+						"advanced":
+						{},
+						"expert":
+						{}
+			},	
+		"targetCondition" : {},		
+		"flags" : {
+			"negative": true,
+			"nonMagical":true,
+			"special" : true
+		}
+	},
+	"hourglass3" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "死亡时计",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 45,
+		"defaultGainChance": 0, 		
+		"gainChance":{},
+		"counters": {"spell.hourglassOfDeath": true},		
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/05hourglass/hourglassBook.bmp",
+			"iconScroll": "spellsPyramids/05hourglass/hourglassScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/05hourglass/hourglassBonus.bmp",
+			"iconEffect": "spellsPyramids/05hourglass/4hour03.bmp"
+		},
+		"animation":{
+			"affect":["spellsPyramids/05hourglass/deadTime2.def"]
+		},
+		"sounds": {
+			"cast": "objectsPavilion/clock"
+		},
+		"levels" : 
+			{
+			
+			"base":{
+				"description": "{死亡时计}\n\n计时：还剩3次攻击会被全灭。",
+				"cost": 10,
+				"power": 10,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				},
+					
+					"none":
+					{
+						"description": "{死亡时计}\n\n计时：还剩3次攻击会被全灭。",
+						"effects" : {
+							"attack" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "primarySkill.attack",
+								"val" : -1,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "N_TURNS",
+								"turns" : 1
+								},
+							
+						}
+					},
+						"basic":
+						{},
+						"advanced":
+						{},
+						"expert":
+						{}
+			},	
+		"targetCondition" : {},		
+		"flags" : {
+			"negative": true,
+			"nonMagical":true,
+			"special" : true
+		}
+	},
+	"hourglass4" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "死亡时计",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 45,
+		"defaultGainChance": 0, 		
+		"gainChance":{},
+		"counters": {"spell.hourglassOfDeath": true},		
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/05hourglass/hourglassBook.bmp",
+			"iconScroll": "spellsPyramids/05hourglass/hourglassScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/05hourglass/hourglassBonus.bmp",
+			"iconEffect": "spellsPyramids/05hourglass/4hour02.bmp"
+		},
+		"animation":{
+			"affect":["spellsPyramids/05hourglass/deadTime3.def"]
+		},
+		"sounds": {
+			"cast": "objectsPavilion/clock"
+		},
+		"levels" : 
+			{
+			
+			"base":{
+				"description": "{死亡时计}\n\n计时：还剩2次攻击会被全灭。",
+				"cost": 10,
+				"power": 10,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				},
+					
+					"none":
+					{
+						"description": "{死亡时计}\n\n计时：还剩2次攻击会被全灭。",
+						"effects" : {
+							"disintegrate": {
+								"type": "DISINTEGRATE",
+								"duration" : "N_TURNS",
+								"turns" : 1
+							}	
+						}
+					},
+						"basic":
+						{},
+						"advanced":
+						{},
+						"expert":
+						{}
+			},	
+		"targetCondition" : {},		
+		"flags" : {
+			"negative": true,
+			"nonMagical":true,
+			"special" : true
+		}
+	},
+	"hourglass5" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "死亡时计",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 45,
+		"defaultGainChance": 0, 		
+		"gainChance":{},
+		"counters": {"spell.hourglassOfDeath": true},		
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/05hourglass/hourglassBook.bmp",
+			"iconScroll": "spellsPyramids/05hourglass/hourglassScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/05hourglass/hourglassBonus.bmp",
+			"iconEffect": "spellsPyramids/05hourglass/4hour01.bmp"
+		},
+		"animation":{
+			"affect":["spellsPyramids/05hourglass/deadTime4.def"]
+		},
+		"sounds": {
+			"cast": "objectsPavilion/clock"
+		},
+		"levels" : 
+			{
+			
+			"base":{
+				"description": "{死亡时计}\n\n计时：还剩1次攻击会被全灭。",
+				"cost": 10,
+				"power": 10,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				},
+					
+					"none":
+					{
+						"description": "{死亡时计}\n\n计时：还剩1次攻击会被全灭。",
+						"effects" : {
+							"disintegrate": {
+								"type": "DISINTEGRATE",
+								"duration" : "N_TURNS",
+								"turns" : 1
+							}	
+						}
+					},
+						"basic":
+						{},
+						"advanced":
+						{},
+						"expert":
+						{}
+			},	
+		"targetCondition" : {},		
+		"flags" : {
+			"negative": true,
+			"nonMagical":true,
+			"special" : true
+		}
+	},
+	"hourglass6" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "死亡时计",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 0,
+		"power": 0,
+		"defaultGainChance": 0, 		
+		"gainChance":{},
+		"animation":{
+			"affect":["spellsPyramids/05hourglass/deadTime5.def"]
+		},
+		"sounds": {
+			"cast": "objectsPavilion/clock"
+		},
+		"counters": {"spell.hourglassOfDeath": true},
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/05hourglass/hourglassBook.bmp",
+			"iconScroll": "spellsPyramids/05hourglass/hourglassScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/05hourglass/hourglassBonus.bmp",
+			"iconEffect": "spellsPyramids/05hourglass/4hour01.bmp"
+		},
+		"levels" : 
+			{
+			"base":
+			{
+				"description": "Kills 100% of creatures in a stack and minimalises morale of the rest.",
+				"power": 100,
+				"cost": 0,
+				"range": "0",
+				"targetModifier":{"smart":true},
+				"battleEffects":
+				{
+					"directDamage" : {
+						
+						"type":"core:damage",
+						"killByPercentage" : true
+					
+					}
+					
+				}
+			},
+			"none": {},
+			"basic": {},
+			"advanced":{},
+			"expert": {}
+		},
+		"targetCondition" : {
+	},		
+		"flags" : {
+			"negative": true,
+			"special" : true
+		}
+	}
+}

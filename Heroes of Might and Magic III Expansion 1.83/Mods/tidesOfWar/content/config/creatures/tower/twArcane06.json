@@ -1,0 +1,66 @@
+{
+	"twArcane06":
+	{
+		"name" :
+		{
+			"plural" : "蛇妖礼官",
+			"singular" : "蛇妖礼官"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 5
+		},
+		"faction": "tower",
+		"aiValue" : 2843,
+		"fightValue" : 2838,
+		"doubleWide" : true,
+		"attack" : 17,
+		"defense" : 14,
+		"cost" :
+		{
+			"gold" : 1600
+		},
+		"damage" :
+		{
+			"min" : 25,
+			"max" : 30
+		},
+		"speed" : 8,
+		"upgrades": ["nagaQueen"],
+		"graphics" :
+		{
+			"animation" : "creatures/tower/battle/CTW6-2.def",
+			"map" : "creatures/tower/map/AVWtw6.def",
+			"iconSmall" : "creatures/tower/iconsSmall/CPrSTW026.bmp",
+			"iconLarge" : "creatures/tower/iconsBig/CPrLTW026.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10
+			},
+		},
+		"hitPoints" : 110,
+		"growth" : 2,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "NGRDATTK.wav",
+			"defend": "NGRDWNCE.wav",
+			"killed": "NGRDKILL.wav",
+			"move": "NGRDMOVE.wav",
+			"wince": "NGRDWNCE.wav"
+		},
+		"abilities" :
+		{
+			"threeHeads" : 
+			{
+				"type" : "THREE_HEADED_ATTACK"
+			}
+		}
+	}
+}
+
+

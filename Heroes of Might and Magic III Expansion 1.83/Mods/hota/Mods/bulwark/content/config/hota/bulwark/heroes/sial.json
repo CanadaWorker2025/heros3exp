@@ -1,0 +1,61 @@
+{
+	"11bulwarkSial" : {
+		"class" : "elder",
+		"female" : true,
+		"images" : {
+			"large" : "hota/bulwark/heroes/sial/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/sial/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/sial/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/sial/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "intelligence",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"subtype" : "spell.iceBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"spellbook" : [
+			"iceBolt"
+		],
+		"texts" : {
+			"name" : "西娅",
+			"biography" : "在战场上，总能找到西娅留下的痕迹，那就是她曾经的敌人留下的冰雕碎片。传说她还创造了臭名昭著的水晶湖，即使在短暂的夏季，湖面也始终冰封。据说，湖水曾吞噬了一个触怒了她的部落首领，自此，他们便永远地沉睡在湖底。",
+			"specialty" : {
+				"name" : "霹雳寒冰",
+				"description" : "施放霹雳寒冰时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。",
+				"tooltip" : "Spell Bonus: Ice Bolt"
+			}
+		}
+	}
+}

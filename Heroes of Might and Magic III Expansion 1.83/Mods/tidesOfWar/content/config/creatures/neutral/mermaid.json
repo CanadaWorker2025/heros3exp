@@ -1,0 +1,106 @@
+{
+	"mdtMermaid":
+{
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"faction" : "neutral",
+		"level" : 4,
+		"growth" : 5,		
+		"cost" :
+		{
+			"gold" : 330
+		},
+		"name" :
+		{			
+			"plural" : "异教徒",
+			"singular" : "异教徒"
+		},		
+		
+		"aiValue" : 1328,
+		"fightValue" : 1091,
+
+		"hitPoints" : 25,		
+		"attack" : 12,
+		"defense" : 6,
+		"speed" : 8,		
+		"damage" :
+		{
+			"max" : 10,
+			"min" : 7
+		},
+
+		"graphics" :
+		{
+			"animation" : "creatures/neutral/battle/mermaid.def",
+			"map" : "creatures/neutral/map/mermaidmap.def",
+			"iconSmall" : "creatures/neutral/iconsSmall/mermaidS.png",
+			"iconLarge" : "creatures/neutral/iconsBig/mermaidB.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"idle" : 10,
+				"attack" : 1
+			},
+			"missile" :
+			{
+				"projectile" : "PLICH.DEF",
+			    "attackClimaxFrame" : 11,
+				"offset" :
+				{
+					"upperX" : 20,
+					"upperY" : -99,
+					"middleX" : 46,
+					"middleY" : -83,
+					"lowerX" : 32,
+					"lowerY" : -55
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"horde": 4,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack": "LICHATTK.wav",
+			"defend" : "MAGCHFIL",
+			"killed" : "EFRTKILL",
+			"move": "LICHMOVE.wav",
+			"shoot": "LICHSHOT.wav",
+			"wince": "ZELTWNCE.wav"  
+		},
+
+		"abilities" :
+		{
+
+		"magic attack" :
+			{
+				"type" : "SHOOTER"
+			},	
+		"tentacle attack" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},	
+			
+			"apostate1":
+			{
+				"type": "HATE",
+				"subtype": "creature.monk",
+				"val" : 50,
+				"icon": "bonuses/neu01.png",
+				"description" : "{黑暗誓约}\n对{僧侣}，{祭司}造成额外50%的伤害",
+			},
+			
+			"apostate2":
+			{
+				"type": "HATE",
+				"subtype": "creature.zealot",
+				"val" : 50,
+				"hidden": true
+			}		
+		}	
+	}
+}

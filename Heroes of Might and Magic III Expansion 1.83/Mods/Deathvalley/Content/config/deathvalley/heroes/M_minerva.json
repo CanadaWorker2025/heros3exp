@@ -1,0 +1,69 @@
+{
+	"m_dvMinerva" :
+	{
+		"class" : "dvNecropriest",
+		"female" : true,
+
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/minerva/Un32Anim.bmp",
+			"specialtyLarge" : "deathvalley/heroes/minerva/Un44Anim.bmp",
+			"large" : "deathvalley/heroes/minerva/MinervaL.png",
+			"small" : "deathvalley/heroes/minerva/MinervaS.png"
+		},
+
+                  "army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "boneHook",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "mums",
+				"max" : 7,
+				"min" : 5
+			}
+		],
+		"spellbook" :
+		[
+			"animateDead"
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"animateDead" : {
+					"subtype" : "spell.animateDead",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}			
+			}
+		},
+			
+		"texts" : {
+			"biography" : "密涅瓦是一个比较理智的女祭司。她深爱自己的部队，就好像他们是自己的孩子一样，不断地寻找自己的福祉，并不断地寻求发展壮大自己的“家庭”。",
+			"name" : "密涅瓦",
+			"specialty" : {
+				"description" : "使用聚灵奇术魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Spell bonus: Animate Dead",
+				"name" : "聚灵奇术"
+			}
+		}
+	}
+}
+

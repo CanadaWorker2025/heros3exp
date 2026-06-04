@@ -1,0 +1,67 @@
+{
+	"11_Celestine" :
+	{
+    "class": "factoryMClass",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "塞莱斯廷",
+			"biography" : "一位失去了树林的埃里德鲁伊穿越了荒野，向任何寻求知识的人传授知识。他将自然魔法的秘密和他的女儿米兰达留在了塔塔利亚，而后来塞莱斯廷诞生了，继承了他另一方面的天赋。她的父亲教她如何驯服最暴力的野兽，并为它们提供友谊，而不是塔塔利亚驯兽师标志性的残酷对待。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "铠兽",
+				"description" : "达到3级以后提高铠兽或铠兽头目的攻击力与防御力。"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/11_Celestine/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/11_Celestine/bigS.bmp",
+			"large" : "factory/heroes/11_Celestine/bigP.bmp",
+			"small" : "factory/heroes/11_Celestine/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"spellbook" :
+		[
+			"haste"
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "armadillo"
+		}
+	}
+}
+

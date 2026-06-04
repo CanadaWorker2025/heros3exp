@@ -1,0 +1,26 @@
+{
+	"core:beholder" :
+	{
+		"abilities":
+		{
+			"hotaRay" :
+			{
+				"hidden": true,
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.hotaRay"
+			}
+		}
+	},
+	"core:evilEye" :
+	{
+		"abilities":
+		{
+			"hotaRay" :
+			{
+				"hidden": true,
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.hotaRay"
+			}
+		}
+	}
+}

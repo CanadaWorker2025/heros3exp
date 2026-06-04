@@ -1,0 +1,35 @@
+{
+	"iceVoyageTent" : {
+		"handler":"configurable",
+		"name" : "冰屋",
+		"types" : {
+			"object" : {
+				"rmg" : {
+					"value"	: 750,
+					"rarity" : 50,
+					"zoneLimit" : 2
+				},
+				"sounds" : {
+					"visit" : ["MORALE"]
+				},
+				"onVisitedMessage" : "{冰屋}\r\n\r\n猎人明显出去打猎了，你已经拿走了他所有的物资，请不要再逗留了。",
+				"visitMode" : "bonus",
+				"selectMode" : "selectFirst",
+				"rewards" : [
+					{
+						"message" : "{冰屋}\r\n\r\n在冰天雪地中，你发现了猎人建造的冰屋。趁着他不在家，你走进去找到了一些补给，以维持你穿过这片冰原。",
+						"movePoints" : 400,
+						"bonuses" : [ { "type" : "MORALE", "val" : 1, "duration" : "ONE_BATTLE", "description" : 95 } ]
+					}
+				],
+				"templates" : {
+					"avtprosp" : { "animation" : "ice object/FSNF0010", 
+						"mask" : [ "VV", "VA" ], 
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains": [ "icelands"]
+					}
+				}
+			}
+		}
+	}		
+}

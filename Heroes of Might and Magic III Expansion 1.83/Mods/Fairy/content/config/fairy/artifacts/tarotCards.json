@@ -1,0 +1,885 @@
+{
+	"tarotCards01" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC01.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{愚者(编号#00)}\r\n\r\n愚者是塔罗牌的第一张牌。",
+			"event" : "no description",
+			"name" : "愚者(编号#00)"
+		}
+	},
+	"tarotCards02" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC02.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{魔法师(编号#01)}\r\n\r\n魔法师是塔罗牌的第二张牌。",
+			"event" : "no description",
+			"name" : "魔法师(编号#01)"
+		}
+	},
+	"tarotCards03" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC03.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{女祭司(编号#02)}\r\n\r\n女祭司是塔罗牌的第三张牌。",
+			"event" : "no description",
+			"name" : "女祭司(编号#02)"
+		}
+	},
+	"tarotCards04" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC04.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{女皇(编号#03)}\r\n\r\n女皇是塔罗牌的第四张牌。",
+			"event" : "no description",
+			"name" : "女皇(编号#03)"
+		}
+	},
+	"tarotCards05" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC05.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{皇帝(编号#04)}\r\n\r\n皇帝是塔罗牌的第五张牌。",
+			"event" : "no description",
+			"name" : "皇帝(编号#04)"
+		}
+	},
+	"tarotCards06" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC06.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{教皇(编号#05)}\r\n\r\n教皇是塔罗牌的第六张牌。",
+			"event" : "no description",
+			"name" : "教皇(编号#05)"
+		}
+	},
+	"tarotCards07" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC07.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{恋人(编号#06)}\r\n\r\n恋人是塔罗牌的第七张牌。",
+			"event" : "no description",
+			"name" : "恋人(编号#06)"
+		}
+	},
+	"tarotCards08" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC08.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{战车(编号#07)}\r\n\r\n战车是塔罗牌的第八张牌。",
+			"event" : "no description",
+			"name" : " 战车(编号#07)"
+		}
+	},
+	"tarotCards09" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC09.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{力量(编号#08)}\r\n\r\n力量是塔罗牌的第九张牌。",
+			"event" : "no description",
+			"name" : "力量(编号#08)"
+		}
+	},
+	"tarotCards10" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC10.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{隐士(编号#09)}\r\n\r\n隐士是塔罗牌的第十张牌。",
+			"event" : "no description",
+			"name" : "隐士(编号#09)"
+		}
+	},
+	"tarotCards11" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC11.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{命运之轮(编号#10)}\r\n\r\n命运之轮是塔罗牌的第十一张牌。",
+			"event" : "no description",
+			"name" : "命运之轮(编号#10)"
+		}
+	},
+	"tarotCards12" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC12.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{正义(编号#11)}\r\n\r\n正义是塔罗牌的第十二张牌。",
+			"event" : "no description",
+			"name" : "正义(编号#11)"
+		}
+	},
+	"tarotCards13" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC13.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{倒吊的人(编号#12)}\r\n\r\n倒吊的人是塔罗牌的第十三张牌。",
+			"event" : "no description",
+			"name" : "倒吊的人(编号#12)"
+		}
+	},
+	"tarotCards14" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC14.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{死神(编号#13)}\r\n\r\n死神是塔罗牌的第十四张牌。",
+			"event" : "no description",
+			"name" : "死神(编号#13)"
+		}
+	},
+	"tarotCards15" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC15.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{节制(编号#14)}\r\n\r\n节制是塔罗牌的第十五张牌。",
+			"event" : "no description",
+			"name" : "节制(编号#14)"
+		}
+	},
+	"tarotCards16" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC16.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{恶魔(编号#15)}\r\n\r\n恶魔是塔罗牌的第十六张牌。",
+			"event" : "no description",
+			"name" : "恶魔(编号#15)"
+		}
+	},
+	"tarotCards17" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC17.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{高塔(编号#16)}\r\n\r\n高塔是塔罗牌的第十七张牌。",
+			"event" : "no description",
+			"name" : "高塔(编号#16)"
+		}
+	},
+	"tarotCards18" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC18.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{星星(编号#17)}\r\n\r\n星星是塔罗牌的第十八张牌。",
+			"event" : "no description",
+			"name" : "星星(编号#17)"
+		}
+	},
+	"tarotCards19" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC19.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{月亮(编号#18)}\r\n\r\n月亮是塔罗牌的第十九张牌。",
+			"event" : "no description",
+			"name" : "月亮(编号#18)"
+		}
+	},
+	"tarotCards20" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC20.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{太阳(编号#19)}\r\n\r\n太阳是塔罗牌的第二十张牌。",
+			"event" : "no description",
+			"name" : "太阳(编号#19)"
+		}
+	},
+	"tarotCards21" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC21.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{审判(编号#20)}\r\n\r\n审判是塔罗牌的第二十一张牌。",
+			"event" : "no description",
+			"name" : "审判(编号#20)"
+		}
+	},
+	"tarotCards22" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "fairy/map/artifacts/tarotC22.bmp",
+			"map": "fairy/map/artifacts/tarotMap.def",
+			"scenarioBonus" : "fairy/map/artifacts/tarotBonus.def"
+		},
+		"text" : {
+			"description" : "{世界(编号#21)}\r\n\r\n世界是塔罗牌的第二十二张牌。",
+			"event" : "no description",
+			"name" : "世界(编号#21)"
+		}
+	},
+	"tarotArtifact01" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"HEAD",
+		"value" : 4000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus1.bmp",
+			"image": "fairy/map/artifacts/arti01.bmp",
+			"map": "fairy/map/artifacts/aq1.def"
+		},
+		"text" : {
+			"description" : "{法师之帽}\r\n\r\n佩戴法师之帽可以提升5%的魔法伤害。",
+			"event" : "no description",
+			"name" : "法师之帽"
+		},
+		"bonuses":
+		{
+			"spellDamage":
+			{
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "spellSchool.any",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards01",
+			"tarotCards02"
+		]
+	},
+	"tarotArtifact02" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"HEAD",
+		"value" : 7000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus8.bmp",
+			"image": "fairy/map/artifacts/arti08.bmp",
+			"map": "fairy/map/artifacts/aq8.def"
+		},
+		"text" : {
+			"description" : "{教皇之冠}\r\n\r\n佩戴教皇之冠可以提升英雄的力量和知识+4。",
+			"event" : "no description",
+			"name" : "教皇之冠"
+		},
+		"bonuses":
+		{
+			"spellpower":
+			{
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			},
+			"knowledge":
+			{
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards04",
+			"tarotCards05",
+			"tarotCards06"
+		]
+	},
+	"tarotArtifact03" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"SHOULDERS",
+		"value" : 4000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus3.bmp",
+			"image": "fairy/map/artifacts/arti03.bmp",
+			"map": "fairy/map/artifacts/aq3.def"
+		},
+		"text" : {
+			"description" : "{魔力长袍}\r\n\r\n穿上魔力长袍使英雄施法消耗-1。",
+			"event" : "no description",
+			"name" : "魔力长袍"
+		},
+		"bonuses":
+		{
+			"spellcost":
+			{
+				"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+				"val" :  1
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards02",
+			"tarotCards03"
+		]
+	},
+	"tarotArtifact04" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"RIGHT_HAND",
+		"value" : 7000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus4.bmp",
+			"image": "fairy/map/artifacts/arti04.png",
+			"map": "fairy/map/artifacts/aq4.def"
+		},
+		"text" : {
+			"description" : "{王者之剑}\r\n\r\n持有王者之剑可以提升英雄的攻击力和防御力+4。",
+			"event" : "no description",
+			"name" : "王者之剑"
+		},
+		"bonuses":
+		{
+			"attack":
+			{
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defence" :
+			{
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards05",
+			"tarotCards08",
+			"tarotCards11"
+		]
+	},
+	"tarotArtifact05" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"RIGHT_HAND",
+		"value" : 7000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus5.bmp",
+			"image": "fairy/map/artifacts/arti05.bmp",
+			"map": "fairy/map/artifacts/aq5.def"
+		},
+		"text" : {
+			"description" : "{死棘之枪}\r\n\r\n持有死棘之枪可以提升英雄的攻击力+6。",
+			"event" : "no description",
+			"name" : "死棘之枪"
+		},
+		"bonuses":
+		{
+			"attack":
+			{
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 6,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards09",
+			"tarotCards11",
+			"tarotCards14"
+		]
+	},
+	"tarotArtifact06" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"TORSO",
+		"value" : 7000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus7.bmp",
+			"image": "fairy/map/artifacts/arti07.bmp",
+			"map": "fairy/map/artifacts/aq7.def"
+		},
+		"text" : {
+			"description" : "{隐者之袍}\r\n\r\n穿上隐者之袍可以提升15%的魔法伤害。",
+			"event" : "no description",
+			"name" : "隐者之袍"
+		},
+		"bonuses":
+		{
+			"spellDamage":
+			{
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "spellSchool.any",
+				"val" : 15,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards07",
+			"tarotCards10",
+			"tarotCards12"
+		]
+	},
+	"tarotArtifact07" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 7000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus6.bmp",
+			"image": "fairy/map/artifacts/arti06.bmp",
+			"map": "fairy/map/artifacts/aq6.def"
+		},
+		"text" : {
+			"description" : "{厄运水晶球}\r\n\r\n持有厄运水晶球可以降低敌人3点幸运，并使敌我双方在战场上的正幸运无效。",
+			"event" : "no description",
+			"name" : "厄运水晶球"
+		},
+		"bonuses":
+		{
+			"luckBlock":
+			{
+				"type" : "LUCK",
+				"val" : 0,
+				"valueType" : "INDEPENDENT_MIN",
+				"propagator": "BATTLE_WIDE"
+			},
+			"luck":
+			{ 
+				"type" : "LUCK", 
+				"val" : -3,
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			} 
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards08",
+			"tarotCards13",
+			"tarotCards16"
+		]
+	},
+	"tarotArtifact08" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"RING",
+		"value" : 4000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus13.bmp",
+			"image": "fairy/map/artifacts/arti13.bmp",
+			"map": "fairy/map/artifacts/aq13.def"
+		},
+		"text" : {
+			"description" : "{绿松石戒指}\r\n\r\n佩戴绿松石戒指使英雄知识+2。",
+			"event" : "no description",
+			"name" : "绿松石戒指"
+		},
+		"bonuses":
+		{
+			"knowledge":
+			{
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 2,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards07",
+			"tarotCards15"
+		]
+	},
+	"tarotArtifact09" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"RING",
+		"value" : 7000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus14.bmp",
+			"image": "fairy/map/artifacts/arti14.bmp",
+			"map": "fairy/map/artifacts/aq14.def"
+		},
+		"text" : {
+			"description" : "{星光戒指}\r\n\r\n佩戴星光戒指可以提升10%的魔法伤害。",
+			"event" : "no description",
+			"name" : "星光戒指"
+		},
+		"bonuses":
+		{
+			"spellDamage":
+			{
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "spellSchool.any",
+				"val" : 10,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards02",
+			"tarotCards07",
+			"tarotCards18"
+		]
+	},
+	"tarotArtifact10" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 10000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus9.bmp",
+			"image": "fairy/map/artifacts/arti09.png",
+			"map": "fairy/map/artifacts/aq9.def"
+		},
+		"text" : {
+			"description" : "{贤者之石-光明}\r\n\r\n持有光明贤者之石使获得的经验值增加50%，并且在战场上提升20%的魔法力量。",
+			"event" : "no description",
+			"name" : "贤者之石-光明"
+		},
+		"bonuses":
+		{
+			"expGain":
+			{
+				"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+				"valueType" : "PERCENT_TO_BASE",
+				"val" : 50
+			},
+			"powerGain":
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.spellpower",
+				"valueType" : "PERCENT_TO_ALL",
+				"val": 20,
+				"propagator" : "BATTLE_WIDE"
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards18",
+			"tarotCards19",
+			"tarotCards20"
+		]
+	},
+	"tarotArtifact11" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 10000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus10.bmp",
+			"image": "fairy/map/artifacts/arti10.png",
+			"map": "fairy/map/artifacts/aq10.def"
+		},
+		"text" : {
+			"description" : "{贤者之石-黑暗}\r\n\r\n持有黑暗贤者之石使获得的经验值增加50%，并且在战场上降低敌人20%的魔法力量。",
+			"event" : "no description",
+			"name" : "贤者之石-黑暗"
+		},
+		"bonuses":
+		{
+			"expGain":
+			{
+				"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+				"valueType" : "PERCENT_TO_BASE",
+				"val" : 50
+			},
+			"powerLose":
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.spellpower",
+				"valueType" : "PERCENT_TO_ALL",
+				"val": -20,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards16",
+			"tarotCards17",
+			"tarotCards19"
+		]
+	},
+	"tarotArtifact12" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"RIGHT_HAND",
+		"value" : 10000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus12.bmp",
+			"image": "fairy/map/artifacts/arti12.png",
+			"map": "fairy/map/artifacts/aq12.def"
+		},
+		"text" : {
+			"description" : "{屠龙者之刃}\r\n\r\n持有屠龙者之刃可以提升英雄的攻击力+8，并且在战斗开始时施放屠戮成性魔法。",
+			"event" : "no description",
+			"name" : "屠龙者之刃"
+		},
+		"bonuses":
+		{
+			"attack":
+			{
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 8,
+				"valueType" : "BASE_NUMBER"
+			},
+			"slayer":
+			{
+				"type" : "OPENING_BATTLE_SPELL",
+				"subtype" : "spell.slayer",
+				"valueType" : "BASE_NUMBER",
+				"val" : 50
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards03",
+			"tarotCards10",
+			"tarotCards11",
+			"tarotCards12"
+		]
+	},
+	"tarotArtifact13" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"LEFT_HAND",
+		"value" : 10000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus11.bmp",
+			"image": "fairy/map/artifacts/arti11.png",
+			"map": "fairy/map/artifacts/aq11.def"
+		},
+		"text" : {
+			"description" : "{深渊恶魔之盾}\r\n\r\n持有深渊恶魔之盾可以提升英雄的防御力+8，并且在战斗开始时施放烈火神盾魔法。",
+			"event" : "no description",
+			"name" : "深渊恶魔之盾"
+		},
+		"bonuses":
+		{
+			"defence":
+			{
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"valueType" : "BASE_NUMBER",
+				"val" : 8
+			},
+			"fireShield":
+			{
+				"type" : "OPENING_BATTLE_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 50
+			}
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards01",
+			"tarotCards14",
+			"tarotCards16",
+			"tarotCards19"
+		]
+	},
+	"tarotArtifact14" : {
+		"type" : [ "HERO" ],
+		"class" : "SPECIAL",
+		"slot":	"TORSO",
+		"value" : 10000,
+		"graphics" : {
+			"scenarioBonus": "fairy/map/artifacts/bonus15.bmp",
+			"image": "fairy/map/artifacts/arti15.png",
+			"map": "fairy/map/artifacts/aq15.def"
+		},
+		"text" : {
+			"description" : "{曜日战甲}\r\n\r\n穿着曜日战甲可以提升英雄的力量+8，并且在战斗开始时施放魔法神镜魔法。",
+			"event" : "no description",
+			"name" : "曜日战甲"
+		},
+		"bonuses":
+		{
+			"spellpower":
+			{
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"valueType" : "BASE_NUMBER",
+				"val" : 8
+			},
+			"magicMirror":
+			{
+				"type" : "OPENING_BATTLE_SPELL",
+				"subtype" : "spell.magicMirror",
+				"val" : 50
+			},
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards09",
+			"tarotCards18",
+			"tarotCards20",
+			"tarotCards22"
+		]
+	},
+	"core:armageddonsBlade":
+	{
+		"fusedComponents" : true,
+		"components":
+		[
+			"tarotCards13",
+			"tarotCards14",
+			"tarotCards16",
+			"tarotCards17",
+			"tarotCards19",
+			"tarotCards21"
+		]
+	}
+	
+}

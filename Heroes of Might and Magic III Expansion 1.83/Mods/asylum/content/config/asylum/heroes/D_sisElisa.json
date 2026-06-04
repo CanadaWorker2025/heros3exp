@@ -1,0 +1,63 @@
+{
+	"d_sisElisa" :
+	{
+    "class": "pathfinder",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "伊莉莎修女",
+			"biography" : "在恩洛斯时，伊莉莎虽然只是在修道院中修行，但她依然不会放弃获得荣誉的任何机会。在罗兰德国王的邀请下，她加入了反抗阿基巴德的军队。但同时，她却爱上了阿基巴德的黑暗魔法。在战斗结束后，她很快堕入黑暗魔法的怀抱中。而此时的她却并不认为她的行为对于修女来说算是“堕落”。她认为找到自己的理想才是最重要的。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高风舞者和影舞者的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Wind Dancers",
+				"name" : "风舞者"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/sisElisa/UN32T199.bmp",
+			"specialtyLarge" : "asylum/heroes/sisElisa/UN44T199.bmp",
+			"large" : "asylum/heroes/sisElisa/HPL003PF.bmp",
+			"small" : "asylum/heroes/sisElisa/HPS003PF.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 9,
+				"min" : 5
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			}
+		],
+		
+			"specialty" : {
+			"creature" : "winddancer"
+		}
+	}
+}
+

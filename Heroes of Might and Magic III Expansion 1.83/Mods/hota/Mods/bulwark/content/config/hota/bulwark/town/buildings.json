@@ -1,0 +1,505 @@
+{
+	"bulwark" : {
+		"town" : {
+			"buildings" : {
+				"villageHall" : {
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑并每天向你提供500个金币。"
+				},
+				"townHall" : {
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑并每天向你提供1000个金币。",
+					"cost" : {
+						"gold" : 2500
+					}
+				},
+				"cityHall" : {
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"cost" : {
+						"gold" : 5000
+					}
+				},
+				"capitol" : {
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" : {
+						"gold" : 10000
+					}
+				},
+
+				"fort" : {
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" : {
+						"gold" : 5000,
+						"wood" : 20,
+						"ore" : 20
+					},
+					"fortifications" : {
+						"wallsHealth" : 3
+					}
+				},
+				"citadel" : {
+					"name" : "大本营",
+					"description" : "大本营不仅能使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" : {
+						"gold" : 2500,
+						"ore" : 5
+					},
+					"fortifications" : {
+						"citadelHealth" : 3
+					}
+				},
+				"castle" : {
+					"name" : "城堡",
+					"description" : "城堡可提供2座箭塔以加强城镇的防御，而且还可使生物的基本生长率加倍。",
+					"cost" : {
+						"gold" : 5000,
+						"wood" : 10,
+						"ore" : 10
+					},
+					"fortifications" : {
+						// should be uncommented, but currently buggy - sets health to 1 instead
+						// "wallsHealth" : 4,
+						"upperTowerHealth" : 3,
+						"lowerTowerHealth" : 3
+					}
+				},
+
+				"tavern" : {
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" : {
+						"gold" : 500,
+						"wood" : 5
+					}
+				},
+				"blacksmith" : {
+					"name" : "铁匠铺",
+					"description" : "铁匠铺可向你的军队提供急救帐篷。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5
+					},
+					"warMachine" : "firstAidTent"
+				},
+				"marketplace" : {
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" : {
+						"gold" : 500,
+						"wood" : 5
+					}
+				},
+				"resourceSilo" : {
+					"name" : "物资仓库",
+					"description" : "物资仓库每天为你额外提供1木材和1矿石。",
+					"cost" : {
+						"gold" : 5000,
+						"ore" : 5
+					},
+					"produce" : {
+						"wood" : 1,
+						"ore" : 1
+					}
+				},
+				"shipyard" : {
+					"name" : "船坞",
+					"description" : "船坞允许你购买船只。",
+					"cost" : {
+						"gold" : 2000,
+						"wood" : 20
+					}
+				},
+				"ship" : {
+					"name" : "船坞",
+					"description" : "船坞允许你购买船只。",
+					"cost" : null
+				},
+
+				"special1" : {
+					"name" : "集市",
+					"description" : "集市可以提升市场的交易率（价格为+2市场）。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5
+					},
+					"requires" : [
+						"allOf",
+						[
+							"townHall"
+						],
+						[
+							"marketplace"
+						]
+					],
+					"marketModes" : [
+						"resource-resource",
+						"resource-player"
+					],
+					"bonuses": [
+						{
+							"propagator": "PLAYER",
+							"type": "MARKETPLACE_ACCESS",
+							"val": 2
+						}
+					]
+				},
+				"special2" : {
+					"name" : "符文祭坛",
+					"description" : "符文祭坛允许本地英雄学习基础符文辅助技能。",
+					"cost" : {
+						"gold" : 1000,
+						"ore" : 5,
+						"crystal" : 2,
+						"gems" : 2
+					},
+					"manualHeroVisit" : true,
+					"configuration" : {
+						"visitMode" : "limiter",
+						"visitLimiter" : {
+							"secondary" : {
+								"runes" : 1
+							}
+						},
+						"onVisitedMessage" : "你的英雄可以学习符文技能。",
+						"selectMode" : "selectFirst",
+						"canRefuse" : true,
+						"rewards" : [
+							{
+								"limiter" : {
+									"anyOf" : [
+										{
+											"heroClasses" : [
+												"elder",
+												"chieftain"
+											],
+											"canLearnSkills" : true
+										},
+										{
+											"secondary" : {
+												"scholar" : 1
+											},
+											"canLearnSkills" : true
+										}
+									]
+								},
+								"message" : "你需要学习符文技能吗？",
+								"secondary" : [
+									{
+										"type" : "runes",
+										"amount" : 1
+									}
+								]
+							}
+						],
+						"onEmpty" : [
+							{
+								"limiter" : {
+									"anyOf" : [
+										{
+											"heroClasses" : [
+												"elder",
+												"chieftain"
+											]
+										},
+										{
+											"secondary" : {
+												"scholar" : 1
+											}
+										}
+									]
+								},
+								"message" : "你的英雄试图掌握符文的知识，却徒劳无功。他已经掌握了许多技能，却无法学习任何新东西。"
+							},
+							{
+								"message" : "你的英雄试图掌握符文的知识，却发现自己根本无法解读它们。看来这门技艺只有当地人和了解{学术}技能的人才能掌握。"
+							}
+						]
+					}
+				},
+				"special3" : {
+					"name" : "符文神祠",
+					"description" : "符文神祠在战斗开始时为玩家的单位增加 1 个符文等级。",
+					"cost" : {
+						"gold" : 1000,
+						"crystal" : 2,
+						"gems" : 2
+					},
+					"upgrades" : "special2",
+					"bonuses" : [
+						{
+							"propagator" : "PLAYER",
+							"val" : 1,
+							"type" : "RUNE_LEVEL_COUNTER",
+							"limiters" : [
+								"CREATURES_ONLY"
+							],
+							"hidden" : true
+						},
+						{
+							"propagator" : "PLAYER",
+							"type" : "YETI_RUNE_LEVEL_COUNTER",
+							"val" : 1,
+							"valueType" : "ADDITIVE_VALUE",
+							"limiters" : [
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "bulwarkYetiRunemaster",
+									"includeUpgrades" : false
+								}
+							]
+						}
+					]
+				},
+				"horde1" : {
+					"name" : "饲养栏",
+					"description" : "饲养栏使猛犸的产量每周增加1个。",
+					"cost" : {
+						"gold" : 2000
+					},
+					"upgrades" : "dwellingLvl6"
+				},
+				"horde1Upgr" : {
+					"name" : "饲养栏",
+					"description" : "饲养栏使战争猛犸的产量每周增加1个。",
+					"cost" : {
+						"gold" : 2000
+					},
+					"upgrades" : "dwellingUpLvl6",
+					"requires" : [
+						"horde1"
+					]
+				},
+				"grail" : {
+					"name" : "先祖之灵",
+					"description" : "先祖之灵每周可使生物产量增加 50%，每天为你的王国额外提供 5000 金币，并在守城时使驻守英雄的防御力增加 20。",
+					"bonuses": [
+						{ 
+							"type": "PRIMARY_SKILL",
+							"subtype": "primarySkill.defence", 
+							"val": 20
+						} 
+					]
+				},
+
+				"mageGuild1" : {
+					"name" : "1级魔法行会",
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"cost" : {
+						"gold" : 2000,
+						"wood" : 5,
+						"ore" : 5
+					}
+				},
+				"mageGuild2" : {
+					"name" : "2级魔法行会",
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5,
+						"mercury" : 4,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4
+					}
+				},
+				"mageGuild3" : {
+					"name" : "3级魔法行会",
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5,
+						"mercury" : 6,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6
+					}
+				},
+				"mageGuild4" : {
+					"name" : "4级魔法行会",
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5,
+						"mercury" : 8,
+						"sulfur" : 8,
+						"crystal" : 8,
+						"gems" : 8
+					}
+				},
+
+				"dwellingLvl1" : {
+					"name" : "矿井",
+					"description" : "矿井允许你招募狗头人。",
+					"cost" : {
+						"gold" : 400,
+						"ore" : 10
+					},
+					"requires" : [
+						"fort"
+					]
+				},
+				"dwellingLvl2" : {
+					"name" : "寒冰山脊",
+					"description" : "寒冰山脊允许你招募岩羚。",
+					"cost" : {
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"requires" : [
+						"dwellingLvl1"
+					]
+				},
+				"dwellingLvl3" : {
+					"name" : "勇者大厅",
+					"description" : "勇者大厅允许你招募雪精灵。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"requires" : [
+							"dwellingLvl2"
+					]
+				},
+				"dwellingLvl4" : {
+					"name" : "山间馆舍",
+					"description" : "山间馆舍允许你招募雪怪。",
+					"cost" : {
+						"gold" : 2000,
+						"ore" : 10
+					},
+					"requires" : [
+						"dwellingLvl3"
+					]
+				},
+				"dwellingLvl5" : {
+					"name" : "萨满神坛",
+					"description" : "萨满神坛允许你招募萨满。",
+					"cost" : {
+						"gold" : 3000,
+						"wood" : 5,
+						"ore" : 5,
+						"crystal" : 1,
+						"sulfur" : 1,
+						"mercury" : 1,
+						"gems" : 1
+					},
+					"requires" : [
+						"allOf",
+						[
+							"mageGuild1"
+						],
+						[
+							"dwellingLvl3"
+						]
+					]
+				},
+				"dwellingLvl6" : {
+					"name" : "猛犸围场",
+					"description" : "猛犸围场允许你招募猛犸。",
+					"cost" : {
+						"gold" : 4000,
+						"wood" : 15
+					},
+					"requires" : [
+						"dwellingLvl3"
+					]
+				},
+				"dwellingLvl7" : {
+					"name" : "冰霜殿堂",
+					"description" : "冰霜殿堂运行你招募冰霜巨人。",
+					"cost" : {
+						"gold" : 10000,
+						"wood" : 10,
+						"ore" : 10,
+						"gems" : 10
+					},
+					"requires" : [
+						"dwellingLvl5"
+					]
+				},
+				"dwellingUpLvl1" : {
+					"name" : "高级矿井",
+					"description" : "高级矿井允许你招募狗头人工长。",
+					"cost" : {
+						"gold" : 1000
+					},
+					"upgrades" : "dwellingLvl1"
+				},
+				"dwellingUpLvl2" : {
+					"name" : "高级寒冰山脊",
+					"description" : "高级寒冰山脊允许你招募雪羚。",
+					"cost" : {
+						"gold" : 1000,
+						"gems" : 2,
+						"crystal" : 2
+					},
+					"upgrades" : "dwellingLvl2"
+				},
+				"dwellingUpLvl3" : {
+					"name" : "高级勇者大厅",
+					"description" : "高级勇者大厅允许你招募铁甲雪精灵。",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" : {
+					"name" : "高级山间馆舍",
+					"description" : "高级山间馆舍允许你招募雪怪符文师。",
+					"cost" : {
+						"gold" : 2000,
+						"crystal" : 5,
+						"ore" : 5
+					},
+					"upgrades" : "dwellingLvl4",
+					"requires" : [
+						"special2"
+					]
+				},
+				"dwellingUpLvl5" : {
+					"name" : "高级萨满神坛",
+					"description" : "高级萨满神坛舍允许你招募萨满长老。",
+					"cost" : {
+						"gold" : 2000,
+						"ore" : 5,
+						"crystal" : 2,
+						"gems" : 2
+					},
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" : {
+					"name" : "高级猛犸围场",
+					"description" : "高级猛犸围场允许你招募战斗猛犸。",
+					"cost" : {
+						"gold" : 3000,
+						"wood" : 10
+					},
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl7" : {
+					"name" : "高级冰霜殿堂",
+					"description" : "高级冰霜殿堂运行你招募冰霜领主。",
+					"cost" : {
+						"gold" : 15000,
+						"wood" : 10,
+						"ore" : 10,
+						"gems" : 20
+					},
+					"requires" : [
+						"special2"
+					],
+					"upgrades" : "dwellingLvl7"
+				}
+			}
+		}
+	}
+}

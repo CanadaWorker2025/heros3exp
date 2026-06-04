@@ -1,0 +1,128 @@
+{
+	"ffheretic":
+	{
+		"name" :
+		{
+			"plural" : "狂热者",
+			"singular" : "狂热者"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 8
+		},
+		"faction" : "castle",
+		"level" : 5,
+		"attack" : 13,
+		"defense" : 8,
+		"damage" :
+		{
+			 "min" : 10,
+			 "max" : 12
+		},
+		"growth" : 3,
+		"hitPoints" : 30,
+		"speed" : 7,
+		"shots" : 16,
+		"fightValue" : 499,
+		"aiValue" : 748,
+		"upgrades": ["zealot"],
+		"cost" :
+		{
+			"gold" : 450
+		},
+		"graphics" :
+		{
+			"animation" : "creatures/castle/battle/C195.def",
+			"map" : "creatures/castle/map/AVWC195.def",
+			"iconSmall" : "creatures/castle/iconsSmall/CPrS195C.bmp",
+			"iconLarge" : "creatures/castle/iconsBig/CPRL195C.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.3,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "CPRGOGX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"sound" :
+		{
+			"attack": "ZELTATTK.wav",
+			"defend": "ZELTDFND.wav",
+			"killed": "ZELTKILL.wav",
+			"move": "ZELTMOVE.wav",
+			"shoot": "ZELTSHOT.wav",
+			"wince": "ZELTWNCE.wav"
+		},
+		"abilities" :
+		{
+		  "canShoot":
+			{	
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"bloodlusts" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.bloodlust",
+				"val" : 2,
+				"icon" : "bonuses/bloodlust2.png"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"dispellHelpful" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"addInfo" : [0,2],
+				"subtype" : "spell.dispelHelpful",
+				"val" : 100,
+				"icon" : "bonuses/dispelattack.png"
+			}
+		}
+	},
+	"core:zealot" :
+	{
+		"abilities" :
+		{
+			"repair" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.cure",
+				"val" : 2,
+				"icon" : "bonuses/cure2.png"
+			},
+			"castLength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.cure",
+				"val" : 25
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			}			
+		}		
+	}
+}

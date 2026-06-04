@@ -1,0 +1,69 @@
+{
+	"havMhero12" :
+	{
+		"class" : "havMhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "贝丝",
+			"biography" : "贝丝从小就失去了家人，她被迫成为海盗船中最小的船员。在长期的战斗中，她的性格变得极度暴躁，身为女性的她比海盗中的男人还要危险很多。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "进攻术",
+				"description" : "在进攻术上每级获得5%的提升。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero12/skillS12.bmp",
+			"specialtyLarge" : "haven/heroes/havHero12/skill12.bmp",
+			"large" : "haven/heroes/havHero12/hero12.bmp",
+			"small" : "haven/heroes/havHero12/hero12S.bmp"
+		},
+		"spellbook": [ "bloodlust" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"offence" : {
+					"subtype" : "damageTypeMelee",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}	
+	}
+}

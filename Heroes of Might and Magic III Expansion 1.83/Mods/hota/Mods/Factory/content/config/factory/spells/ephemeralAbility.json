@@ -1,0 +1,76 @@
+{
+ "sandephemeral":
+	{
+		"type": "ability", 
+		"targetType": "CREATURE", 
+		"name": "消散",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 1,
+		"power": 1, //this times spell power
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+		},
+ 
+		"flags" : { "damage": true, "negative" : true, "special" : true },
+
+ 
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconEffect": "spells/sandEffect.bmp"
+		},
+
+		"sounds": {
+			"cast": "FIREBLST"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 5,
+				"range": "0",
+				"power": 1, //base dmg
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"description": "{消散}\n\n沙虫幼虫一回合后消散。",
+	 
+				"battleEffects" : {
+					"directDamage" : {"type":"core:damage", "killByCount" : true},
+				},
+			},
+			"none":
+			{
+				"description": "{消散}\n\n沙虫幼虫一回合后消散。",
+			},
+			"basic":
+			{
+				"description": "{消散}\n\n沙虫幼虫一回合后消散。",
+			},
+			"advanced":
+			{
+				"description": "{消散}\n\n沙虫幼虫一回合后消散。",
+			},
+			"expert":
+			{
+				"description": "{消散}\n\n沙虫幼虫一回合后消散。"
+			}
+		}
+	}
+ 
+ 
+}

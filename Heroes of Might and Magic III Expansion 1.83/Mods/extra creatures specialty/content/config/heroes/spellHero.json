@@ -1,0 +1,2724 @@
+{
+	"core:adela":{
+		"specialty" : {
+			"bonuses" : {
+				"bless" : {
+					"type" : "GENERAL_DAMAGE_PREMY",
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.bless"
+						}
+					],
+					"updater" : "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+        "texts": {
+            "specialty": {
+                "name": "圣灵佑佐",
+                "description": "施放圣灵佑佐时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位的伤害就会增加10%。"
+						}
+				}
+	},
+    "core:cuthbert": {
+        "specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "weak12": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -4
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -6
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -8
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -10
+                }
+            }
+		},
+		"texts": {
+            "specialty": {
+                "name": "虚弱无力",
+                "description": "施放虚弱无力时，对1-2级生物效果增加4，对3-4级生物效果增加6，对5-6级生物效果增加8，对7级生物效果增加10。"
+				}
+		}
+	},
+	"core:loynis":{
+		"specialty#override" : {
+			"base" : {
+				"valueType" : "ADDITIVE_VALUE",
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusSourceType" : "SPELL_EFFECT",
+						"bonusSourceID" : "spell.prayer"
+					}
+				]
+			},
+			"bonuses" : {
+				"bonusSpeed14" : {
+					"type" : "STACKS_SPEED",
+					"limiters" : {
+						"append" : {
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"maxlevel" : 5
+						}
+					},
+					"val" : 3
+				},
+				"bonusAttack14" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack",
+					"limiters" : {
+						"append" : {
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"maxlevel" : 5
+						}
+					},
+					"val" : 3
+				},
+				"bonusDefense14" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence",
+					"limiters" : {
+						"append" : {
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"maxlevel" : 5
+						}
+					},
+					"val" : 3
+				},
+				"bonusSpeed56" : {
+					"type" : "STACKS_SPEED",
+					"limiters" : {
+						"append" : {
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 5,
+							"maxlevel" : 7
+						}
+					},
+					"val" : 2
+				},
+				"bonusAttack56" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack",
+					"limiters" : {
+						"append" : {
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 5,
+							"maxlevel" : 7
+						}
+					},
+					"val" : 2
+				},
+				"bonusDefense56" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence",
+					"limiters" : {
+						"append" : {
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 5,
+							"maxlevel" : 7
+						}
+					},
+					"val" : 2
+				},
+				"bonusSpeed7" : {
+					"type" : "STACKS_SPEED",
+					"limiters" : {
+						"append" : {
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 7
+						}
+					},
+					"val" : 1
+				},
+				"bonusAttack7" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack",
+					"limiters" : {
+						"append" : {
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 7
+						}
+					},
+					"val" : 1
+				},
+				"bonusDefense7" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence",
+					"limiters" : {
+						"append" : {
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 7
+						}
+					},
+					"val" : 1
+				}
+			}
+		},
+        "texts": {
+            "specialty": {
+                "name": "祈祷",
+                "description": "施放祈祷时，对1-4级生物效果增加3，对5-6级生物效果增加2，对7级生物效果增加1。"
+            }
+        }
+	},
+	"core:adelaide":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"frostRing" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.frostRing",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "寒冰魔环",
+                "description": "施放寒冰魔环时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"core:coronius":{
+        "texts": {
+            "specialty": {
+                "name": "屠戮成性",
+                "description": "施放屠戮成性时，对1级生物效果增加4，对2级生物效果增加3，对3级生物效果增加2，对4级生物效果增加1。"
+            }
+        }
+	},
+	"core:melodia":{
+        "texts": {
+            "specialty": {
+                "name": "幸运之神",
+                "description": "施放幸运之神时，固定增加选定部队的幸运值3点。"
+            }
+        }
+	},
+	"core:uland":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"cure" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.cure",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "疗伤",
+                "description": "施放疗伤时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的治疗值。"
+						}
+				}
+	},
+	"core:alagar":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.iceBolt",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "霹雳寒冰",
+                "description": "施放霹雳寒冰时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"core:astral":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"hypnotize" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.hypnotize",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "蛊惑人心",
+                "description": "施放蛊惑人心时，当提升和目标生物等级相同个英雄等级时，可以多影响10%血量的单位。"
+						}
+				}
+	},
+	"core:daremyth":{
+        "texts": {
+            "specialty": {
+                "name": "幸运之神",
+                "description": "施放幸运之神时，固定增加选定部队的幸运值3点。"
+            }
+        }
+	},
+	"core:cyra":{
+		"specialty#override": {
+            "base": {
+                "type": "STACKS_SPEED",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "speed14": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 4
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.haste"
+                        }
+                    ],
+                    "val": 3
+                },
+                "speed56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 4,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.haste"
+                        }
+                    ],
+                    "val": 2
+                },
+                "speed7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.haste"
+                        }
+                    ],
+                    "val": 1
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "攻击加速",
+                "description": "施放攻击加速时，对1-4级生物效果增加3，对5-6级生物效果增加2，对7级生物效果增加1。"
+            }
+        }
+	},
+	"core:solmyr":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"chainLightning" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.chainLightning",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "连锁闪电",
+                "description": "施放连锁闪电时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的伤害。"
+						}
+				}
+	},
+	"core:xyron":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"inferno" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.inferno",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "地狱烈焰",
+                "description": "施放地狱烈焰时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"core:olema":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "weak12": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -4
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -6
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -8
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -10
+                }
+            }
+		},
+		"texts": {
+            "specialty": {
+                "name": "虚弱无力",
+                "description": "施放虚弱无力时，对1-2级生物效果增加4，对3-4级生物效果增加6，对5-6级生物效果增加8，对7级生物效果增加10。"
+				}
+		}
+	},
+	"core:ash":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+				"effectRange" : "ONLY_MELEE_FIGHT",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "lust12": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.bloodlust"
+                        }
+                    ],
+                    "val": 10
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.bloodlust"
+                        }
+                    ],
+                    "val": 8
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.bloodlust"
+                        }
+                    ],
+                    "val": 6
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.bloodlust"
+                        }
+                    ],
+                    "val": 4
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "嗜血奇术",
+                "description": "施放嗜血奇术时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。"
+            }
+        }
+	},
+	"core:xarfax":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"fireball" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.fireball",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "连珠火球",
+                "description": "施放连珠火球时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"core:septienna":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"deathRipple" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.deathRipple",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "死亡波纹",
+                "description": "施放死亡波纹时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"core:aislinn":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"meteorShower" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.meteorShower",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "流星火雨",
+                "description": "施放流星火雨时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的伤害。"
+						}
+				}
+	},
+	"core:xsi":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.defence",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "skin12": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 10
+                },
+                "skin34": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 8
+                },
+                "skin56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 6
+                },
+                "skin7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 4
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "护体石肤",
+                "description": "施放护体石肤时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。"
+            }
+        }
+	},
+	"core:thant":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"animateDead" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.animateDead",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "聚灵奇术",
+                "description": "施放聚灵奇术时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的治疗值。"
+						}
+				}
+	},
+	"core:alamar":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"resurrection" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.resurrection",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "转世重生",
+                "description": "施放转世重生时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的治疗值。"
+						}
+				}
+	},
+	"core:jeddite":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"resurrection" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.resurrection",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "转世重生",
+                "description": "施放转世重生时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的治疗值。"
+						}
+				}
+	},
+	"core:deemer":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"meteorShower" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.meteorShower",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "流星火雨",
+                "description": "施放流星火雨时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的伤害。"
+						}
+				}
+	},
+	"core:darkstorn":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.defence",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "skin12": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 10
+                },
+                "skin34": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 8
+                },
+                "skin56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 6
+                },
+                "skin7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 4
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "护体石肤",
+                "description": "施放护体石肤时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。"
+            }
+        }
+	},
+	"core:terek":{
+		"specialty#override": {
+            "base": {
+                "type": "STACKS_SPEED",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "speed14": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 4
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.haste"
+                        }
+                    ],
+                    "val": 3
+                },
+                "speed56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 4,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.haste"
+                        }
+                    ],
+                    "val": 2
+                },
+                "speed7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.haste"
+                        }
+                    ],
+                    "val": 1
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "攻击加速",
+                "description": "施放攻击加速时，对1-4级生物效果增加3，对5-6级生物效果增加2，对7级生物效果增加1。"
+            }
+        }
+	},
+	"core:zubin":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+				"effectRange" : "ONLY_DISTANCE_FIGHT",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "lust12": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.precision"
+                        }
+                    ],
+                    "val": 10
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.precision"
+                        }
+                    ],
+                    "val": 8
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.precision"
+                        }
+                    ],
+                    "val": 6
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.precision"
+                        }
+                    ],
+                    "val": 4
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "百发百中",
+                "description": "施放百发百中时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。"
+            }
+        }
+	},
+	"core:mirlanda":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "weak12": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -4
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -6
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -8
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -10
+                }
+            }
+		},
+		"texts": {
+            "specialty": {
+                "name": "虚弱无力",
+                "description": "施放虚弱无力时，对1-2级生物效果增加4，对3-4级生物效果增加6，对5-6级生物效果增加8，对7级生物效果增加10。"
+				}
+		}
+	},
+	"core:merist":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.defence",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "skin12": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 10
+                },
+                "skin34": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 8
+                },
+                "skin56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 6
+                },
+                "skin7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 4
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "护体石肤",
+                "description": "施放护体石肤时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。"
+            }
+        }
+	},
+	"core:adrienne":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"fireMagic" : 
+				{
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.fire",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "火系魔法",
+                "description": "提升所有火系魔法的伤害50%。"
+						}
+				}
+	},
+	"core:brissa":{
+		"specialty#override": {
+            "base": {
+                "type": "STACKS_SPEED",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "speed14": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 4
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.haste"
+                        }
+                    ],
+                    "val": 3
+                },
+                "speed56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 4,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.haste"
+                        }
+                    ],
+                    "val": 2
+                },
+                "speed7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.haste"
+                        }
+                    ],
+                    "val": 1
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "攻击加速",
+                "description": "施放攻击加速时，对1-4级生物效果增加3，对5-6级生物效果增加2，对7级生物效果增加1。"
+            }
+        }
+	},
+	"core:labetha":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.defence",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "skin12": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 10
+                },
+                "skin34": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 8
+                },
+                "skin56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 6
+                },
+                "skin7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 4
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "护体石肤",
+                "description": "施放护体石肤时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。"
+            }
+        }
+	},
+	"core:inteus":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+				"effectRange" : "ONLY_MELEE_FIGHT",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "lust12": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.bloodlust"
+                        }
+                    ],
+                    "val": 10
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.bloodlust"
+                        }
+                    ],
+                    "val": 8
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.bloodlust"
+                        }
+                    ],
+                    "val": 6
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.bloodlust"
+                        }
+                    ],
+                    "val": 4
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "嗜血奇术",
+                "description": "施放嗜血奇术时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。"
+            }
+        }
+	},
+	"core:aenain":{
+		"specialty" : {
+            "bonuses" : {
+                "disruptingRay" : {
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT",
+					"subtype" : "spell.disruptingRay",
+					"addInfo" : -10
+					}
+				}
+            },
+        "texts": {
+            "specialty": {
+                "name": "毁灭之光",
+                "description": "施放毁灭之光时，额外造成10点魔法效果。"
+            }
+        }
+	},
+	"hota.cove:13manfred":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"fireball" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.fireball",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "连珠火球",
+                "description": "施放连珠火球时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"hota.cove:14zilare":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"forgetfulness" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.forgetfulness",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "失忆大法",
+                "description": "施放失忆大法时，当提升和目标生物等级相同个英雄等级时，可以多影响10%血量的单位。"
+						}
+				}
+	},
+	"hota.cove:blackBalfour":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"forgetfulness" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.forgetfulness",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "失忆大法",
+                "description": "施放失忆大法时，当提升和目标生物等级相同个英雄等级时，可以多影响10%血量的单位。"
+						}
+				}
+	},
+	"hota.cove:15astra":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"cure" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.cure",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "疗伤",
+                "description": "施放疗伤时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的治疗值。"
+						}
+				}
+	},
+	"hota.cove:16dargem":
+	{
+		"specialty#override" : {
+			"base" : {
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeRanged",
+				"targetSourceType" : "SPELL_EFFECT",
+				"valueType" : "PERCENT_TO_TARGET_TYPE",
+				"updater" : {
+					"type" : "GROWS_WITH_LEVEL",
+					"valPer20" : 200
+				}
+			},
+			"bonuses" : {
+				"tier1Creatures" : {
+					"updater" : {
+						"stepSize" : 1
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"maxlevel" : 2
+						}
+					]
+				},
+				"tier2Creatures" : {
+					"updater" : {
+						"stepSize" : 2
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 2,
+							"maxlevel" : 3
+						}
+					]
+				},
+				"tier3Creatures" : {
+					"updater" : {
+						"stepSize" : 3
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 3,
+							"maxlevel" : 4
+						}
+					]
+				},
+				"tier4Creatures" : {
+					"updater" : {
+						"stepSize" : 4
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 4,
+							"maxlevel" : 5
+						}
+					]
+				},
+				"tier5Creatures" : {
+					"updater" : {
+						"stepSize" : 5
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 5,
+							"maxlevel" : 6
+						}
+					]
+				},
+				"tier6Creatures" : {
+					"updater" : {
+						"stepSize" : 6
+					},
+					"limiters" : [
+						"allOf",
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 6,
+							"maxlevel" : 7
+						}
+					]
+				},
+				"tier7Creatures" : {
+					"updater" : {
+						"stepSize" : 7
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 7
+						}
+					]
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "大气神盾",
+                "description": "施放大气神盾时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的远程伤害减少。"
+						}
+				}
+	},
+	"hota.factory:15_Wrathmont":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"frenzy" : {
+					"subtype" : "spell.frenzy",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "孤注一掷",
+                "description": "施放孤注一掷时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的攻击力加成。"
+						}
+				}
+	},
+	"hota.factory:16_Ziph":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"lightningBolt" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.lightningBolt",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "霹雳闪电",
+                "description": "施放霹雳闪电时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"hota.factory:17_Victoria":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"landMine" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.landMineTrigger",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "埋设地雷",
+                "description": "施放埋设地雷时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"hota.factory:18_Eanswythe":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "weak12": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -4
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -6
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -8
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -10
+                }
+            }
+		},
+		"texts": {
+            "specialty": {
+                "name": "虚弱无力",
+                "description": "施放虚弱无力时，对1-2级生物效果增加4，对3-4级生物效果增加6，对5-6级生物效果增加8，对7级生物效果增加10。"
+				}
+		}
+	},
+	"asylum:k_viola":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"hypnotize" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.hypnotize",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "蛊惑人心",
+                "description": "施放蛊惑人心时，当提升和目标生物等级相同个英雄等级时，可以多影响10%血量的单位。"
+						}
+				}
+	},
+	"asylum:o_margareta":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"forgetfulness" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.forgetfulness",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "失忆大法",
+                "description": "施放失忆大法时，当提升和目标生物等级相同个英雄等级时，可以多影响10%血量的单位。"
+						}
+				}
+	},
+	"bastille:k_cynthia":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.iceBolt",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "霹雳寒冰",
+                "description": "施放霹雳寒冰时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"bastille:l_astride":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"fireball" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.fireball",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "连珠火球",
+                "description": "施放连珠火球时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"bastille:o_melisa":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"fireShield" : {
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT",
+					"subtype" : "spell.fireShield",
+					"updater" : "TIMES_HERO_LEVEL",
+					"addInfo" : 3
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "烈火神盾",
+                "description": "英雄每升一级，施放的烈火神盾魔法反弹的伤害增加3%。"
+						}
+				}
+	},
+	"cathedral:susan":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"frostRing" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.frostRing",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "寒冰魔环",
+                "description": "施放寒冰魔环时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"cathedral:vseglas":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "weak12": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -4
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -6
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -8
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -10
+                }
+            }
+		},
+		"texts": {
+            "specialty": {
+                "name": "虚弱无力",
+                "description": "施放虚弱无力时，对1-2级生物效果增加4，对3-4级生物效果增加6，对5-6级生物效果增加8，对7级生物效果增加10。"
+				}
+		}
+	},
+	"cathedral:volh":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"fireball" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.fireball",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "连珠火球",
+                "description": "施放连珠火球时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"deathvalley:m_dvAgorratha":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"deathRipple" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.deathRipple",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "死亡波纹",
+                "description": "施放死亡波纹时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"deathvalley:m_dvRezziLeAnte":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.defence",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "skin12": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 10
+                },
+                "skin34": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 8
+                },
+                "skin56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 6
+                },
+                "skin7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.stoneSkin"
+                        }
+                    ],
+                    "val": 4
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "护体石肤",
+                "description": "施放护体石肤时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。"
+            }
+        }
+	},
+	"deathvalley:m_dvMinerva":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"animateDead" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.animateDead",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "聚灵奇术",
+                "description": "施放聚灵奇术时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的治疗值。"
+						}
+				}
+	},
+	"haven:havMhero11":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"lightningBolt" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.lightningBolt",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "霹雳闪电",
+                "description": "施放霹雳闪电时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"haven:havMhero16":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"cure" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.cure",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "疗伤",
+                "description": "施放疗伤时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的治疗值。"
+						}
+				}
+	},
+	"preserve:l_ken":{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "weak12": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -4
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -6
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -8
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        "OPPOSITE_SIDE",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.weakness"
+                        }
+                    ],
+                    "val": -10
+                }
+            }
+		},
+		"texts": {
+            "specialty": {
+                "name": "虚弱无力",
+                "description": "施放虚弱无力时，对1-2级生物效果增加4，对3-4级生物效果增加6，对5-6级生物效果增加8，对7级生物效果增加10。"
+				}
+		}
+	},
+	"preserve:j_pamela":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.iceBolt",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "霹雳寒冰",
+                "description": "施放霹雳寒冰时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"tartarus:tarhero09":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.iceBolt",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "霹雳寒冰",
+                "description": "施放霹雳寒冰时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。"
+						}
+				}
+	},
+	"tartarus:tarhero13":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"meteorIce" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.tarspell1",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "陨星冻雨",
+                "description": "施放陨星冻雨时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的伤害。"
+						}
+				}
+	},
+	"tidesofwar:mdtGwenneth":
+	{
+		"specialty#override" : {
+			"base" : {
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeRanged",
+				"targetSourceType" : "SPELL_EFFECT",
+				"valueType" : "PERCENT_TO_TARGET_TYPE",
+				"updater" : {
+					"type" : "GROWS_WITH_LEVEL",
+					"valPer20" : 200
+				}
+			},
+			"bonuses" : {
+				"tier1Creatures" : {
+					"updater" : {
+						"stepSize" : 1
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"maxlevel" : 2
+						}
+					]
+				},
+				"tier2Creatures" : {
+					"updater" : {
+						"stepSize" : 2
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 2,
+							"maxlevel" : 3
+						}
+					]
+				},
+				"tier3Creatures" : {
+					"updater" : {
+						"stepSize" : 3
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 3,
+							"maxlevel" : 4
+						}
+					]
+				},
+				"tier4Creatures" : {
+					"updater" : {
+						"stepSize" : 4
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 4,
+							"maxlevel" : 5
+						}
+					]
+				},
+				"tier5Creatures" : {
+					"updater" : {
+						"stepSize" : 5
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 5,
+							"maxlevel" : 6
+						}
+					]
+				},
+				"tier6Creatures" : {
+					"updater" : {
+						"stepSize" : 6
+					},
+					"limiters" : [
+						"allOf",
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 6,
+							"maxlevel" : 7
+						}
+					]
+				},
+				"tier7Creatures" : {
+					"updater" : {
+						"stepSize" : 7
+					},
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 7
+						}
+					]
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "大气神盾",
+                "description": "施放大气神盾时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的远程伤害减少。"
+						}
+				}
+	},
+	"tidesofwar:mdtOdetta":
+	{
+		"specialty#override": {
+            "base": {
+                "type": "PRIMARY_SKILL",
+                "subtype": "primarySkill.attack",
+                "valueType": "ADDITIVE_VALUE",
+				"effectRange" : "ONLY_DISTANCE_FIGHT",
+                "propagator": "BATTLE_WIDE",
+                "propagationUpdater": "BONUS_OWNER_UPDATER"
+            },
+            "bonuses": {
+                "lust12": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "maxlevel": 3
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.precision"
+                        }
+                    ],
+                    "val": 10
+                },
+                "weak34": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 3,
+                            "maxlevel": 5
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.precision"
+                        }
+                    ],
+                    "val": 8
+                },
+                "weak56": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 5,
+                            "maxlevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.precision"
+                        }
+                    ],
+                    "val": 6
+                },
+                "weak7": {
+                    "limiters": [
+                        "allOf",
+                        {
+                            "type": "CREATURE_LEVEL_LIMITER",
+                            "minLevel": 7
+                        },
+                        {
+                            "type": "HAS_ANOTHER_BONUS_LIMITER",
+                            "bonusSourceType": "SPELL_EFFECT",
+                            "bonusSourceID": "spell.precision"
+                        }
+                    ],
+                    "val": 4
+                }
+            }
+		},
+        "texts": {
+            "specialty": {
+                "name": "百发百中",
+                "description": "施放百发百中时，对1-2级生物效果增加10，对3-4级生物效果增加8，对5-6级生物效果增加6，对7级生物效果增加4。"
+            }
+        }
+	},
+	"tidesofwar:kreevionHeretic":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"frenzy" : {
+					"subtype" : "spell.frenzy",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "孤注一掷",
+                "description": "施放孤注一掷时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的攻击力加成。"
+						}
+				}
+	},
+	"tidesofwar:mdtTartarr":
+	{
+		"specialty#override" : {
+			"base" : {
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",
+				"updater" : {
+					"type" : "GROWS_WITH_LEVEL",
+					"valPer20" : 60
+				}
+			},
+			"bonuses" : {
+				"tier1Creatures" : {
+					"updater" : {
+						"stepSize" : 1
+					},
+					"limiters" : [
+						"allOf",
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"maxlevel" : 2
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.shield"
+						}
+					]
+				},
+				"tier2Creatures" : {
+					"updater" : {
+						"stepSize" : 2
+					},
+					"limiters" : [
+						"allOf",
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 2,
+							"maxlevel" : 3
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.shield"
+						}
+					]
+				},
+				"tier3Creatures" : {
+					"updater" : {
+						"stepSize" : 3
+					},
+					"limiters" : [
+						"allOf",
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 3,
+							"maxlevel" : 4
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.shield"
+						}
+					]
+				},
+				"tier4Creatures" : {
+					"updater" : {
+						"stepSize" : 4
+					},
+					"limiters" : [
+						"allOf",
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 4,
+							"maxlevel" : 5
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.shield"
+						}
+					]
+				},
+				"tier5Creatures" : {
+					"updater" : {
+						"stepSize" : 5
+					},
+					"limiters" : [
+						"allOf",
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 5,
+							"maxlevel" : 6
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.shield"
+						}
+					]
+				},
+				"tier6Creatures" : {
+					"updater" : {
+						"stepSize" : 6
+					},
+					"limiters" : [
+						"allOf",
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 6,
+							"maxlevel" : 7
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.shield"
+						}
+					]
+				},
+				"tier7Creatures" : {
+					"updater" : {
+						"stepSize" : 7
+					},
+					"limiters" : [
+						"allOf",
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 7
+						},
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.shield"
+						}
+					]
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "护体神盾",
+                "description": "施放护体神盾时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的近战伤害减少。"
+						}
+				}
+	},
+	"tidesofwar:zamNecromancer":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"vampirism" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.mdtVampirism",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "吸血鬼之触",
+                "description": "施放吸血鬼之触时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的吸取伤害。"
+						}
+				}
+	},
+	"new pavilion.new pavillion:jaffa":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"meteorShower" : {
+					"type" : "SPECIAL_SPELL_LEV",
+					"subtype" : "spell.meteorShower",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "流星火雨",
+                "description": "施放流星火雨时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到5%的伤害。"
+						}
+				}
+	},
+	"new pavilion.new pavillion:seref":
+	{
+		"specialty" : {
+			"bonuses" : {
+				"fireShield" : {
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT",
+					"subtype" : "spell.fireShield",
+					"updater" : "TIMES_HERO_LEVEL",
+					"addInfo" : 3
+				}
+			}
+		},
+		"texts": {
+            "specialty": {
+                "name": "烈火神盾",
+                "description": "英雄每升一级，施放的烈火神盾魔法反弹的伤害增加3%。"
+						}
+				}
+	}
+	
+}

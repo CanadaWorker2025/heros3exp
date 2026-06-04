@@ -1,0 +1,18 @@
+{
+	"energyStone" : {
+		"type" : [ "CREATURE" ],
+		"class" : "SPECIAL",
+		"slot":	"MISC",
+		"value" : 500,
+		"graphics" : {
+			"image": "artifacts/iconsSmall/charger1",
+			"scenarioBonus": "artifacts/iconsBig/charger1",
+			"map": "artifacts/map/fireballWand"
+		},
+		"text" : {
+			"description" : "{充能水晶}\r\n\r\n充能水晶可以对魔杖进行充能，使其重新运作。",
+			"event" : "no description",
+			"name" : "充能水晶"
+		}
+	}
+}

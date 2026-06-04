@@ -1,0 +1,131 @@
+{
+	"name" : "Tarnum is back!",
+	"description" : "Playable Tarnum in all his previous incarnations (Knight, Ranger, Barbarian, Wizard, Beastmaster and Overlord) as well as 3 new ones (Death Knight, Demoniac and Planeswalker). Most of the graphics are exported from Heroes Chronicles, Heroes of Might and Magic 3 Complete or Horn of the Abyss. Also there are some new Tarnum incarantions for new mod towns. Check them yourself",
+
+	"author" : "marif, Hobbit, HotA Team",
+	"contact" : "http://forum.vcmi.eu/viewtopic.php?t=798",
+	"version" : "1.2.9",
+	"modType" : "Heroes",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"changelog" : {
+		"1.0.0" : [
+			"Initial release"
+		],
+		"1.0.1" : [
+			"Bug fixes"
+		],
+		"1.0.2" : [
+			"Changed Overlord Tarnum speciality icons to the ones used in HotA",
+			"Changes in abilities of Death Knight Tarnum (added basic Offence, reduced Necromancy to basic)",
+			"Fixed quantity of Beastmaster Tarnum's Serpent Flies"
+		],
+		"1.0.3" : [
+			"Bug fixes"
+		],
+		"1.0.4" : [
+			"Updated mod file to VCMI version 0.96"
+		],
+		"1.0.5" : [
+			"Graphic fixes",
+			"New specialty format"
+		],
+		"1.1.0" : [
+			"Few new Tarnums were added :)"
+		],
+		"1.1.1" : [
+			"Update to vcmi-1.2"
+		],
+		"1.1.2" : [
+			"Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"
+		],
+		"1.1.3" : [
+			"Update to vcmi-1.4"
+		],
+		"1.1.4" : [
+			"New Tarnum! Now he's Vizier in Pavilion town."
+		],
+		"1.1.5" : [
+			"Fixed error in dependency mod list."
+		],
+		"1.1.6" : [
+			"Updated chinese translation."
+		],
+		"1.1.7" : [
+			"Better submods compatibility system."
+		],
+		"1.1.8" : [
+			"Czech translation by George King"
+		],
+		"1.2.0" : [
+			"Again new Tarnum! Now he's Mercenary in Factory town."
+		],
+		"1.2.1" : [
+			"Polish translation by FallainBlack"
+		],
+		"1.2.2" : [
+			"Added krs' changes to HotA to the Tarnum the Mercenary"
+		],
+		"1.2.3" : [
+			"Three new Tarnums for Refugee, Fairy and Retreat"
+		],
+		"1.2.4" : [
+			"Again new Tarnum! Now he's Mercenary in Unofficial Factory town as well."
+		],
+		"1.2.5" : [
+			"Update Format for the new factory naming and file structure."
+		],
+		"1.2.6" : [
+			"Added Tarnum for Asylum (Pathfinder)."
+		],
+		"1.2.7" : [
+			"Added Tarnum for Heavenly Forge 2000 (Cyborg)."
+		],
+		"1.2.8" : [
+			"Update to vcmi-1.7 format."
+		],
+		"1.2.9" : [
+			"Another update to vcmi-1.7 format."
+		]
+	},
+	"german" : {
+		"name" : "Tarnum ist zurück!",
+		"description" : "Spielbarer Tarnum in all seinen bisherigen Inkarnationen (Ritter, Waldläufer, Barbar, Zauberer, Beastmaster und Overlord) sowie 3 neuen (Todesritter, Dämoniker und Gestaltwandler). Die meisten Grafiken wurden aus Heroes Chronicles, Heroes of Might and Magic 3 Complete oder Horn of the Abyss exportiert. Außerdem gibt es einige neue Tarnum-Inkarantionen für neue Mod-Städte. Überprüfen Sie sie selbst",
+		"translations" : [
+			"translation/tarnum/german.json"
+		]
+	},
+	"polish" : {
+		"name" : "Tarnum powraca!",
+		"description" : "Grywalny Tarnum we wszystkich jego poprzednich wcieleniach (Rycerz, Łowca, Barbarzyńca, Czarodziej, Władca Bestii i Władca), a także 3 nowe (Rycerz Śmierci, Demoniak i Wędrowiec). Większość grafiki jest eksportowana z Heroes Chronicles, Heroes of Might and Magic 3 Complete lub Horn of the Abyss. Jest też kilka nowych inkarnacji Tarnum dla nowych modowych miast. Sprawdź je sam",
+		"translations" : [
+			"translation/tarnum/polish.json"
+		]
+	},
+	"chinese" : {
+		"name" : "塔南的归还",
+		"description" : "包含了塔南之前的所有化身（骑士，巡逻兵，术士，野蛮人，驯兽师，妖术师）以及三个新化身（死亡骑士，魔鬼，元素人）。大部分素材来自《英雄无敌历代记》，《魔法门之英雄无敌III：完整版》，《深渊号角》。此外，还有一些针对新种族的新塔南化身，需要自行查找。",
+		"translations" : [
+			"translation/tarnum/chinese.json"
+		]
+	},
+	"czech" : {
+		"name" : "Tarnum se vrátil!",
+		"description" : "Hratelný Tarnum ve všech jeho předchozích inkarnacích (rytíř, strážce, barbar, kouzelník, mistr bestií a vládce) a také 3 nové (smrtelný rytíř, démonolog a obyvatel rovin). Většina grafiky je exportována z Heroes Chronicles, Heroes of Might and Magic 3 Complete nebo Horn of the Abyss. Také jsou zde některé nové inkarnace Tarnuma pro nové městské módy. Zkontrolujte je sami.",
+		"translations" : [
+			"translation/tarnum/czech.json"
+		]
+	},
+	"heroes" : [
+		"config/Tarnum/TarnumKnight.json",
+		"config/Tarnum/TarnumRanger.json",
+		"config/Tarnum/TarnumWizard.json",
+		"config/Tarnum/TarnumBarbarian.json",
+		"config/Tarnum/TarnumOverlord.json",
+		"config/Tarnum/TarnumBeastmaster.json",
+		"config/Tarnum/TarnumDeathKnight.json",
+		"config/Tarnum/TarnumDemoniac.json",
+		"config/Tarnum/TarnumPlaneswalker.json"
+	]
+}

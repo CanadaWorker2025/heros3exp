@@ -1,0 +1,102 @@
+{
+	
+	
+	"pyramid01Supply":
+	{
+		"type": "ability", 
+		"targetType": "CREATURE", 
+		"name": "灵能加强", 
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 0,
+		"power": 0,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+		},
+ 
+		"flags" : { "positive": true, "special" : true },
+
+ 
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "spellsPavilion/pyraSupplyIcon",
+			"iconEffect": "spellsPavilion/pyraSupplyIcon",
+			"iconScroll": "spellsPavilion/pyraSupplyIcon",
+			"iconScenarioBonus": "spellsPavilion/pyraSupplyIcon"
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": null
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 10,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				
+				"effects":
+				{
+				}
+			},
+			"none":
+			{
+				"description": "在光子炮存在的同时，可以受到灵能加强，获得施放{灵魂烈焰}的能力。", 
+				"effects":
+				{
+				}
+				
+			},
+			"basic":
+			{ 
+				"description": "在光子炮存在的同时，可以受到灵能加强，获得施放{灵魂烈焰}的能力。", 
+				"effects":
+				{
+				}
+			},
+			"advanced":
+			{
+				"description": "在光子炮存在的同时，可以受到灵能加强，获得施放{灵魂烈焰}的能力。", 
+				"effects":{
+					
+				}
+			},
+			"expert":
+			{
+				"description": "在光子炮存在的同时，可以受到灵能加强，获得施放{灵魂烈焰}的能力。", 
+				"effects":
+				{
+					"addSoulConflagration" :
+					{
+						"propagator" : 	"HERO",
+						"sourceType" : "CREATURE_ABILITY",
+						"type" : "SPELL",
+						"subtype" : "spell.soulConflagration",
+						"val" : 3
+					}
+				}
+			}
+		}
+	}
+}

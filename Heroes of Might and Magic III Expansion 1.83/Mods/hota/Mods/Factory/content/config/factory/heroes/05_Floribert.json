@@ -1,0 +1,72 @@
+{
+	"05_Floribert" :
+	{
+    "class": "factoryAClass",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "弗洛里伯特",
+			"biography" : "弗洛里伯特被认为是恩洛斯最优秀的野战外科医生之一，他引入了许多新工具来加快手术速度，从而减轻伤员的痛苦。弗洛里伯特也从女友维多利亚的实验中获得了稳定的练习材料。",
+			"specialty" :
+			{
+				"description" : "在急救术上每级得到5%的额外奖励。",
+				"tooltip" : "{First Aid}\r\n\r\nReceives a 5% per level bonus to First Aid skill.",
+				"name" : "急救术"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/05_Floribert/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/05_Floribert/bigS.bmp",
+			"large" : "factory/heroes/05_Floribert/bigP.bmp",
+			"small" : "factory/heroes/05_Floribert/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "firstAidTent",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "firstAid"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"firstAid" : {
+					"subtype" : "spell.firstAid",
+					"type" : "SPECIFIC_SPELL_POWER",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,67 @@
+{
+	"ftH_Uliri" :
+	{
+		"class" : "hunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "尤莉莉",
+			"biography" : "据说尤莉莉是花仙王国最坚强的将军之一。她不断地对部下进行最严苛的训练，使她们变得越来越强大，从而能够承受越来越复杂的挑战。",
+			"specialty" :
+			{
+				"description" : "在防御术上每级得到5%的额外奖励。",
+				"tooltip" : "{Armorer}\r\n\r\nReceives a 5% per level bonus to Armorer skill percentage.",
+				"name" : "防御术"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/ultrin/Un32Defe.png",
+			"specialtyLarge" : "fairy/heroes/ultrin/Un44Defe.png",
+			"large" : "fairy/heroes/ultrin/hpl287.png",
+			"small" : "fairy/heroes/ultrin/hps287.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "advanced",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

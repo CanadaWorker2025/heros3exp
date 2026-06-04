@@ -1,0 +1,101 @@
+{
+  "extra1benu": {
+    "name": {
+      "plural": "贝努鸟",
+      "singular": "贝努鸟"
+    },
+    "advMapAmount": {
+ "max" : 10,
+ "min" : 5
+    },
+    "faction": "preserve",
+    "aiValue": 1360,
+	"special" : true,
+    "attack": 15,
+    "cost": {
+      "gold": 700
+    },
+    "damage": {
+ "max" : 40,
+ "min" : 27
+    },
+    "defense": 15,
+    "fightValue": 1234,
+    "graphics": {
+      "animation": "preserve/battle/creatures/Z1Benu.def",
+      "map": "preserve/map/creatures/AVWC172.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrSEX1P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrLEX1P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide": true,
+    "growth": 1,
+    "hitPoints": 140,
+    "level": 7,
+    "sound": {
+      "attack": "ROCCATTK.wav",
+	"defend": "ROCCDFND.wav",
+			"killed": "ROCCKILL.wav",
+			"move": "ROCCMOVE.wav",
+			"wince": "ROCCWNCE.wav"
+    },
+    "speed": 16,
+    "abilities": {
+      "canFly": {
+        "type": "FLYING"
+      },
+	  "advancedSlayer" : { "type" : "KING","val":0 },
+	  "fireBreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			"mirror" :
+			{
+				"type" : "MAGIC_MIRROR",
+				"val" : 15
+			}
+    },	
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			}
+		]
+  }
+}

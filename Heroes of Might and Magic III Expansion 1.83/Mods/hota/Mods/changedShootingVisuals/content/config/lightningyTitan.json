@@ -1,0 +1,15 @@
+{
+	"core:titan" :
+	{
+		"abilities" :
+		{
+			"lightningIsComing" :
+			{
+				"hidden": true,
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.hotaLightning",
+				"val" : 1
+			}
+		}
+	}
+}

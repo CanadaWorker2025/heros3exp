@@ -1,0 +1,190 @@
+{
+  "demonicfafnir": {
+    "name": {
+      "plural": "岩浆龙",
+      "singular": "岩浆龙"
+    },
+    "advMapAmount": {
+ "max" : 8,
+ "min" : 3
+    },
+    "faction": "bastille",
+    "aiValue": 5937,
+    "attack": 18,
+    "cost": {
+      "gold": 3500,
+      "ore": 2
+    },
+    "damage": {
+ "max" : 45,
+ "min" : 30
+    },
+    "defense": 22,
+    "fightValue": 5853,
+    "graphics": {
+      "animation": "bastille/battle/creatures/CFG7U.def",
+      "map": "bastille/map/creatures/AVWC163.def",
+      "iconSmall": "bastille/iconsSmall/creatures/CPrS163B.bmp",
+      "iconLarge": "bastille/iconsBig/creatures/CPrL163B.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.5,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide": true,
+    "growth": 1,
+    "hitPoints": 250,
+    "level": 7,
+    "sound": {
+      "attack": "bastille/FG7ATTK.wav",
+      "defend": "bastille/FG7DFND.wav",
+      "killed": "MAGMKILL.wav",
+      "move": "MAGMMOVE.wav",
+      "wince": "bastille/FG7WNCE.wav"
+    },
+    "speed": 7,
+    "abilities": 
+    {
+      "nonLiving" : 
+			{
+				"type" : "NON_LIVING",
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+				"icon" : "bastille/icons/bonusIcons/NonLivingelemental.png"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"basicSlayer" : { "type" : "KING", "val": 0 },
+			"immuneToFire" :
+			{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+			},
+			"heatStroke" :
+			{
+				"type" : "MULTIHEX_UNIT_ATTACK",
+				"addInfo": ["FF","FFF"],
+				"description" : "{熔岩吐息}\n吐息攻击(3格范围)",
+				"icon" : "bastille/icons/bonusIcons/fireshot.png",
+			},
+			"fireShield" :
+			{
+				"type" : "FIRE_SHIELD",
+				"val" : 30
+			},
+			"disintegrate":
+			{
+				"type": "DISINTEGRATE",
+			},
+			"waterWeaken" :
+			{
+                 "type" : "SPELL_DAMAGE_REDUCTION",
+                 "val" : -100,
+                 "subtype" : "spellSchool.water",
+				 "description" : "{水系弱点}\n受水系法术伤害加倍",
+				"icon" : "bastiSpells/waterweak.png"
+            },
+			"attackInLava" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["lava"]
+				} ]
+				
+			},
+			"defenceInLava"  : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["lava"]
+				} ]
+				
+			},
+			"speedInLava" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["lava"]
+				} ]
+				
+			}
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.boneDragon"
+				},
+				"values" : [ 70, 90, 110, 130, 150, 170, 190, 210, 230, 250 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.ghostDragon"
+				},
+				"values" : [ 70, 90, 110, 130, 150, 170, 190, 210, 230, 250 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "RECEPTIVE"
+				},
+				"values" : [ false, false, false, false, false, false, false, true, true, true ]
+			}
+		]
+    }
+  }

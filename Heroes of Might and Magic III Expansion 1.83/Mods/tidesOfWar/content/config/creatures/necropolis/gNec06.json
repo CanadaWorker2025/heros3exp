@@ -1,0 +1,94 @@
+{
+	"gNec06"://DarkChampion
+	{
+		"name" :
+		{
+			"plural" : "冠军黑骑士",
+			"singular" : "冠军黑骑士"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 5
+		},
+		"faction": "necropolis",
+		"aiValue" : 2383,
+		"fightValue" : 2029,
+		"doubleWide" : true,
+		"attack" : 17,
+		"defense" : 17,
+		"cost" :
+		{
+			"gold" : 1500
+		},
+		"damage" :
+		{
+			"min" : 15,
+			"max" : 30
+		},
+		"speed" : 9,
+		"upgrades": ["dreadKnight"],
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/gNec06B.def",
+			"map" : "creatures/necropolis/map/gNec06M.def",
+			"iconSmall" : "creatures/necropolis/iconsSmall/gNec06S.bmp",
+			"iconLarge" : "creatures/necropolis/iconsBig/gNec06L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 120,
+		"growth" : 2,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "BLRDATTK.wav",
+			"defend": "BLRDDFND.wav",
+			"killed": "BLRDKILL.wav",
+			"move": "BLRDMOVE.wav",
+			"wince": "BLRDWNCE.wav"
+		},
+		"abilities":
+		{
+			"undead" : 
+			{ 
+				"type" : "UNDEAD",
+			},
+			"Jousting": { "type" : "JOUSTING", "val":5 },
+			"regenerate" : 
+			{
+				"type" : "HP_REGENERATION",
+				"val" : 50
+			},
+			"noCastByDefault" :
+			{
+				"type" : "NO_SPELLCAST_BY_DEFAULT"
+			},
+			"castLength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.nec06",
+				"val" : 2
+			},
+			"castTerror" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.nec06",
+				"val" : 2,
+				"icon": "bonuses/fear2.png"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}
+		}
+	}
+}
+
+

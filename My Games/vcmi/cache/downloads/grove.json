@@ -1,0 +1,173 @@
+{
+	"name" : "Grove town (Trith edition)",
+	"description" : "New town made by New Grove Team & Trith",
+	"author" : "New Grove Team & Trith, mod : Kuririn & Pointer, fixes: avatar, Alyx182008",
+	"contact" : "http://www.grovetown.acidcave.net/indexen.htm",
+	"version" : "1.37",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"modType" : "Town",
+	"chinese" : {
+		"name" : "丛林",
+		"description" : "丛林的设计脱胎于《魔兽争霸 III》，居住着其中的暗夜精灵族。由New Grove Team & Trith打造。",
+		"translations" : [
+			"translation/grove/chinese.json"
+		]
+	},
+	"french" : {
+		"name" : "Bosquet",
+		"description" : "Une ville créée par New Grove Team & Trith",
+		"translations" : [
+			"translation/grove/french.json"
+		]
+	},
+	"german" : {
+		"name" : "Hain",
+		"description" : "Hain Stadt",
+		"translations" : [
+			"translation/grove/german.json"
+		]
+	},
+	"polish" : {
+		"name" : "Gaj",
+		"description" : "Mod dodaje miasto Gaj",
+		"translations" : [
+			"translation/grove/polish.json"
+		]
+	},
+	"russian" : {
+		"name" : "Роща",
+		"description" : "Новый город Роща, созданный в стиле волшебного леса ночных эльфов.",
+		"translations" : [
+			"translation/grove/russian.json"
+		]
+	},
+	"changelog" : {
+		"1.37" : [
+			"Added additional creatures abilities icons by Kurek"
+		],
+		"1.36" : [
+			"Added flagport frames (Kingdom Overwiev window)"
+		],
+		"1.35" : [
+			"Another update to vcmi-1.7 format"
+		],
+		"1.34" : [
+			"Update to vcmi-1.7 format"
+		],
+		"1.33" : [
+			"Minor fixes"
+		],
+		"1.32" : [
+			"French translation by Fabrice-TIERCELIN"
+		],
+		"1.31" : [
+			"Fix Grail not to produce gold"
+		],
+		"1.30" : [
+			"Update to vcmi-1.6 format"
+		],
+		"1.29" : [
+			"Fixed Grove Guards/Keepers stats (by Dark Imagine)"
+		],
+		"1.28" : [
+			"Updated russian translation"
+		],
+		"1.27" : [
+			"Russian translation by Anton Sergeew"
+		],
+		"1.26" : [
+			"Fixed the commander and other bugs"
+		],
+		"1.24" : [
+			"Adjusted Commanders stats"
+		],
+		"1.23" : [
+			"Update to vcmi-1.4 format"
+		],
+		"1.22" : [
+			"Chinese translation update by Rindlit"
+		],
+		"1.21" : [
+			"Small graphic fixes"
+		],
+		"1.20" : [
+			"Polish translation by Dru"
+		],
+		"1.19" : [
+			"Update to vcmi-1.3"
+		],
+		"1.18" : [
+			"Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"
+		],
+		"1.17" : [
+			"Update to vcmi-1.2"
+		],
+		"1.00" : [
+			"Initial release"
+		]
+	},
+	"factions" : [
+		"config/grove/town"
+	],
+
+	"creatures" : [
+		"config/grove/creatures/satyr.json",
+		"config/grove/creatures/faun.json",
+		"config/grove/creatures/moonhunter.json",
+		"config/grove/creatures/moonslayer.json",
+		"config/grove/creatures/groveguard.json",
+		"config/grove/creatures/grovekeeper.json",
+		"config/grove/creatures/nightdruid.json",
+		"config/grove/creatures/elderdruid.json",
+		"config/grove/creatures/basiliskrider.json",
+		"config/grove/creatures/basiliskchampion.json",
+		"config/grove/creatures/spiderprincess.json",
+		"config/grove/creatures/spiderqueen.json",
+		"config/grove/creatures/quartzdragon.json",
+		"config/grove/creatures/amethystdragon.json",
+		"config/grove/creatures/saphiredragon.json",
+		"config/grove/creatures/treebeard.json",
+		"config/grove/creatures/NightFalcon.json",
+		"config/grove/commander/nightstalker.json",
+		"config/grove/creatures/stack_exp.json"
+	],
+	"artifacts" : [
+		"config/grove/artifacts/NightFalcon.json"
+	],
+
+	"heroClasses" : [
+		"config/grove/classes/warden.json",
+		"config/grove/classes/hunter.json"
+	],
+
+	"heroes" : [
+		"config/grove/heroes/artehel.json",
+		"config/grove/heroes/kyorlin.json",
+		"config/grove/heroes/malla.json",
+		"config/grove/heroes/mrimm.json",
+		"config/grove/heroes/olath.json",
+		"config/grove/heroes/phindara.json",
+		"config/grove/heroes/sargh.json",
+		"config/grove/heroes/shebali.json",
+		"config/grove/heroes/sithyrr.json",
+		"config/grove/heroes/ssin.json",
+		"config/grove/heroes/suliss.json",
+		"config/grove/heroes/tuidhana.json",
+		"config/grove/heroes/ultrin.json",
+		"config/grove/heroes/velkyn.json",
+		"config/grove/heroes/velve.json",
+		"config/grove/heroes/vlos.json",
+		"config/grove/heroes/wanre.json"
+	],
+	"objects" : [
+		"config/grove/dwellings",
+		"config/grove/banks/templeNight.json"
+	],
+
+	"spells" : [
+		"config/grove/spells/summonTreebeard.json",
+		"config/grove/spells/moat.json"
+	]
+}

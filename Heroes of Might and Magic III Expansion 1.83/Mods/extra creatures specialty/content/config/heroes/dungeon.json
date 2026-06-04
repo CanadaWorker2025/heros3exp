@@ -1,0 +1,107 @@
+{
+	"core:shakti":{
+		"specialty": {
+			"creature": "troglodyte",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "洞穴人",
+                "description": "每1级提高洞穴人及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:lorelei":{
+        "texts": {
+            "specialty": {
+                "name": "鹰身女妖",
+                "description": "每2级提高鹰身女妖及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:ajit":{
+        "texts": {
+            "specialty": {
+                "name": "邪眼",
+                "description": "每3级提高邪眼及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:dace":{
+        "texts": {
+            "specialty": {
+                "name": "牛头怪",
+                "description": "每5级提高牛头怪及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:synca":{
+        "texts": {
+            "specialty": {
+                "name": "蝎狮",
+                "description": "每6级提高蝎狮及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:mutare":{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "DRAGON_NATURE"
+					}
+				],
+				"type" : "PRIMARY_SKILL",
+				"val" : 10
+			},
+			"bonuses" : {
+				"attack" : { "subtype" : "primarySkill.attack" },
+				"defence" : { "subtype" : "primarySkill.defence" }
+			}
+		},
+        "texts": {
+            "specialty": {
+                "name": "龙",
+                "description": "使龙攻击力+10，防御力+10。"
+            }
+        }
+	},
+	"core:mutareDrake":{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "DRAGON_NATURE"
+					}
+				],
+				"type" : "PRIMARY_SKILL",
+				"val" : 10
+			},
+			"bonuses" : {
+				"attack" : { "subtype" : "primarySkill.attack" },
+				"defence" : { "subtype" : "primarySkill.defence" }
+			}
+		},
+        "texts": {
+            "specialty": {
+                "name": "龙",
+                "description": "使龙攻击力+10，防御力+10。"
+            }
+        }
+	},
+	"core:arlach":{
+		"specialty": {
+			"creature": "ballista",
+			"creatureLevel" : 5,
+			"stepSize" : 30
+		},
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+            }
+        }
+	}
+}

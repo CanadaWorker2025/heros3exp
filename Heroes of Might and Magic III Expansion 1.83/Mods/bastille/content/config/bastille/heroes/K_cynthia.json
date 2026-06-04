@@ -1,0 +1,73 @@
+{
+	"k_cynthia" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "辛西娅",
+			"biography" : "辛西娅自小就生活在精灵的领地里。她虽然拥有娇小的身材，却没有精灵的耳朵和蝴蝶一般的双翼，但是她并没有感觉到奇怪，依然按照精灵的方式生活。而当后来人们指出她实际上是个矮人时，她却不以为意。也许她已经把自己当成一个精灵了。",
+			"specialty" :
+			{
+				"description" : "使用霹雳寒冰魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Spell bonus: Ice Bolt",
+				"name" : "霹雳寒冰"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "bastille/heroes/cynthia/skill32-11.bmp",
+			"specialtyLarge" : "bastille/heroes/cynthia/skill11.bmp",
+			"large" : "bastille/heroes/cynthia/HPL002PY.bmp",
+			"small" : "bastille/heroes/cynthia/HPS002PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"iceBolt" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"subtype" : "spell.iceBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

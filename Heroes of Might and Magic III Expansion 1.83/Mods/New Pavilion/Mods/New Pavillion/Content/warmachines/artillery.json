@@ -1,0 +1,83 @@
+{
+  "core:artillery" : {
+		"base" : {
+			"effects" : {
+				"cannon1Extra" : {
+					"subtype" : "creature.photonCannon1",
+					"type" : "BONUS_DAMAGE_CHANCE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"damagePowerCannon1" : {
+					"subtype" : "creature.photonCannon1",
+					"type" : "BONUS_DAMAGE_PERCENTAGE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"damageCapCannon1" : {
+					"type" : "DAMAGE_RECEIVED_CAP",
+					"propagator" : "ARMY",
+					"limiters" : [
+						{
+					"type" : "CREATURE_TYPE_LIMITER",
+					"creature" : "photonCannon1"
+						}
+					],
+					"valueType" : "INDEPENDENT_MIN"
+				},
+				"cannon2Extra" : {
+					"subtype" : "creature.photonCannon2",
+					"type" : "BONUS_DAMAGE_CHANCE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"damagePowerCannon2" : {
+					"subtype" : "creature.photonCannon2",
+					"type" : "BONUS_DAMAGE_PERCENTAGE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"damageCapCannon2" : {
+					"type" : "DAMAGE_RECEIVED_CAP",
+					"propagator" : "ARMY",
+					"limiters" : [
+						{
+					"type" : "CREATURE_TYPE_LIMITER",
+					"creature" : "photonCannon2"
+						}
+					],
+					"valueType" : "INDEPENDENT_MIN"
+				}
+			}
+		},
+		"basic" : {
+			"description": "{初级炮术}\n\n初级炮术允许英雄手动控制箭车攻击目标，并增加攻击次数，伤害力，也可以控制箭塔的攻击。攻击一次，50%几率出现双倍伤害。可以使所有受炮术影响的战争机器受到的来自任何单一伤害来源的伤害不能超过其生命值的40%。",
+			"effects" : {
+				"cannon1Extra" : { "val" : 0 },
+				"damagePowerCannon1" : { "val" : 0 },
+				"damageCapCannon1" : { "val" : 40 },
+				"cannon2Extra" : { "val" : 0 },
+				"damagePowerCannon2" : { "val" : 0 },
+				"damageCapCannon2" : { "val" : 40 }
+			}
+		},
+		"advanced" : {
+			"description": "{中级炮术}\n\n中级炮术允许英雄手动控制箭车攻击目标，并增加攻击次数，伤害力，也可以控制箭塔的攻击。攻击2次，75%几率出现双倍伤害。\n\n同时75%使{加农炮}，{铁甲战车}，{光子炮}的伤害提升1倍。可以使所有受炮术影响的战争机器受到的来自任何单一伤害来源的伤害不能超过其生命值的40%。",
+			"effects" : {
+				"cannon1Extra" : { "val" : 75 },
+				"damagePowerCannon1" : { "val" : 100 },
+				"damageCapCannon1" : { "val" : 40 },
+				"cannon2Extra" : { "val" : 75 },
+				"damagePowerCannon2" : { "val" : 100 },
+				"damageCapCannon2" : { "val" : 40 }
+			}
+		},
+		"expert" : {
+			"description": "{高级炮术}\n\n高级炮术允许英雄手动控制箭车攻击目标，并增加攻击次数，伤害力，也可以控制箭塔的攻击。攻击2次，100%几率出现双倍伤害。\n\n同时100%使{加农炮}的伤害提升2倍，{铁甲战车}，{光子炮}的伤害提升1.5倍。可以使所有受炮术影响的战争机器受到的来自任何单一伤害来源的伤害不能超过其生命值的40%。",
+			"effects" : {
+				"cannon1Extra" : { "val" : 100 },
+				"damagePowerCannon1" : { "val" : 150 },
+				"damageCapCannon1" : { "val" : 40 },
+				"cannon2Extra" : { "val" : 100 },
+				"damagePowerCannon2" : { "val" : 150 },
+				"damageCapCannon2" : { "val" : 40 },
+			}
+		}
+  }
+}

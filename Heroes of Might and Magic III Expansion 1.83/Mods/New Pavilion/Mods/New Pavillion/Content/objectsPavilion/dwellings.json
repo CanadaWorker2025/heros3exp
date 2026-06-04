@@ -1,0 +1,154 @@
+{
+	"core:creatureGeneratorCommon" : 
+    {
+		"types" : 
+        {
+			"wadjetNest" :
+             {
+				"name" : "蛇洞",
+				"creatures" : [[ "wadjet" ]],
+				"sounds": {
+					"ambient": ["objectsPavilion/maplvl2"]
+				},
+				"kingdomOverviewImage" : "mapdefsPavilion/flagport/sand2.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "mapdefsPavilion/wadjetNest.def",
+						"mask" : [ "VVV", "VVV", "VAA" ]
+					}
+				}
+             },
+                
+             "whipperVillage" :
+             {
+				"name" : "村庄",
+				"creatures" : [[ "whipper" ]],
+				"sounds": {
+					"ambient": ["objectsPavilion/desertGarrison"]
+				},
+				"kingdomOverviewImage" : "mapdefsPavilion/flagport/sand1.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "mapdefsPavilion/village.def",
+						"mask" : [ "VVV", "VBB", "VAB" ]
+					}
+				}
+                
+			},
+                "camelTent" :
+             {
+				"name" : "沙漠营帐",
+				"creatures" : [[ "camelRider" ]],
+				"sounds": {
+					"ambient": ["objectsPavilion/mapCamels"]
+				},
+				"kingdomOverviewImage" : "mapdefsPavilion/flagport/sand3.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "mapdefsPavilion/tent.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+                
+			},
+                   "sekhmetAltar" :
+             {
+				"name" : "谜影祭坛",
+				"creatures" : [[ "sekhmet" ]],
+				"sounds": {
+					"ambient": ["objectsPavilion/maplvl4"]
+				},
+				"kingdomOverviewImage" : "mapdefsPavilion/flagport/sand4.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "mapdefsPavilion/sekhetAltar.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+                
+			},
+			"caveOfFear" :
+            {
+				"name" : "恐惧之穴",
+				"creatures" : [[ "ammut" ]],
+				"sounds": {
+					"ambient": ["objectsPavilion/maplvl5"]
+				},
+                 "guards" : true,
+				 "kingdomOverviewImage" : "mapdefsPavilion/flagport/sand5.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "mapdefsPavilion/caveOfFear.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+                
+			},
+            "sphinxGarnison" :
+             {
+				"name" : "人面狮围栏",
+				"creatures" : [[ "sphinx" ]],
+				"sounds": {
+					"ambient": ["objectsPavilion/mapElephants"]
+				},
+                "guards" : true,
+				"kingdomOverviewImage" : "mapdefsPavilion/flagport/sand6.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "mapdefsPavilion/sphinxGarnison.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+                
+			},
+                     "anubisTomb" :
+             {
+				"name" : "帝王陵墓",
+				"creatures" : [[ "anubis" ]],
+				"sounds": {
+					"ambient": ["objectsPavilion/maplvl7"]
+				},
+                 "guards" : true,
+				 "kingdomOverviewImage" : "mapdefsPavilion/flagport/sand7.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "mapdefsPavilion/tomb.def",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}
+                
+			},
+				"scarabAltar" :
+             {
+				"name" : "圣甲虫祭坛",
+				"creatures" : [[ "scarab" ]],
+				"sounds": {
+					"ambient": ["objectsPavilion/mapScarabAltar"]
+				},
+				"kingdomOverviewImage" : "mapdefsPavilion/flagport/sand8.def",
+				"templates" : 
+                {
+					"default" : 
+                    {
+						"animation" : "mapdefsPavilion/scarabAltar.def",
+						"mask" : [ "VVV", "VBA" ]
+					}
+				}
+             }
+		}	
+	}
+}

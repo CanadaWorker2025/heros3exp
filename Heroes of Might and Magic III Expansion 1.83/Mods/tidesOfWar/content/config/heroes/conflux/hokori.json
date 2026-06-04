@@ -1,0 +1,70 @@
+{
+  "mdtHokori" :
+  {
+    "class" : "elementalist",
+    "female" : true,
+    "special" : false,
+	"spellbook": [ "mdtAuraOfPower" ],
+    "texts" :
+    {
+      "name" : "星尘", //Hokori Hoshi
+      "biography" : "作为羊鸣教的女祭司，星尘离开恩洛斯并定居在埃拉西亚，以传播自己的信仰。最终，她在元素城得到顿悟，因此她放弃了宗教信仰，留在了元素城。",
+      "specialty" :
+      {
+        "description" : "施放力量光环时，按照英雄等级，每级提升5%的效果。",
+        "tooltip" : "Bonus: Aura of Power",
+        "name" : "力量光环"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/conflux/hokori_spec-small.bmp",
+      "specialtyLarge" : "heroes/conflux/hokori_spec-large.bmp",
+      "large" : "heroes/conflux/hokori_portrait-large.bmp",
+      "small" : "heroes/conflux/hokori_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "pixie",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "airElemental",
+        "max" : 5,
+        "min" : 3
+      },
+      {
+        "creature" : "waterElemental",
+        "max" : 3,
+        "min" : 2
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "wisdom"
+      },
+      {
+        "level" : "basic",
+        "skill" : "earthMagic"
+      }
+    ],
+    
+    "specialty": {
+		"bonuses" : {
+			"auraOfPower" : {
+				"subtype" : "spell.mdtAuraOfPower",
+				"type" : "SPECIAL_SPELL_LEV",
+				"updater" : "TIMES_HERO_LEVEL",
+				"val" : 5
+			}
+		}
+	  }
+	}
+ }

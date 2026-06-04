@@ -1,0 +1,67 @@
+{
+	"hota.cove:03illor": {
+        "texts": {
+            "specialty": {
+                "name": "暴风鸟",
+                "description": "每4级提高暴风鸟及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.cove:06anabel": {
+        "texts": {
+            "specialty": {
+                "name": "海贼",
+                "description": "每3级提高海贼及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.cove:07cassiopeia": {
+		"specialty": {
+			"creature": "nymph",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "泉水精灵",
+                "description": "每1级提高泉水精灵及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.cove:09casmetra": {
+        "texts": {
+            "specialty": {
+                "name": "海洋女巫",
+                "description": "每5级提高海洋女巫及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.cove:derek": {
+        "texts": {
+            "specialty": {
+                "name": "水手",
+                "description": "每2级提高水手及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.cove:tark": {
+        "texts": {
+            "specialty": {
+                "name": "鱼人",
+                "description": "每6级提高鱼人及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"hota.cove:02jeremy": {
+		"specialty": {
+			"creature": "cannon",
+			"creatureLevel" : 6,
+			"stepSize" : 20
+		},
+        "texts": {
+            "specialty": {
+                "name": "加农炮",
+                "description": "每6级提高加农炮20%的攻击力和防御力。"
+            }
+        }
+	}
+}

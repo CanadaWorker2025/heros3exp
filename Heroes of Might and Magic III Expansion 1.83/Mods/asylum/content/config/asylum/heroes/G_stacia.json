@@ -1,0 +1,59 @@
+{
+	"g_stacia" :
+	{
+    "class": "pathfinder",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "斯蒂西亚",
+			"biography" : "斯蒂西亚很不喜欢独角兽，它们额头上长着的角让她觉得恶心。所以切下那只恶心的角成了她追随的目标。没人统计过她杀死了多少独角兽。据说她的宅邸中有专门收藏独角兽的角的密室。也许以前她是因为恶心而这么做，但久而久之她却喜欢上了收集这些带血的收藏品。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高梦魇兽和阴影兽的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Nightmares",
+				"name" : "梦魇兽"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/stacia/UN32T202.bmp",
+			"specialtyLarge" : "asylum/heroes/stacia/UN44T202.bmp",
+			"large" : "asylum/heroes/stacia/HPL006PF.bmp",
+			"small" : "asylum/heroes/stacia/HPS006PF.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 6,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "luck"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "asnightmare"
+		}
+	}
+}
+

@@ -1,0 +1,166 @@
+{
+	"core:tower" :
+	{
+		"description" : "{塔楼}\n种族阵营： 正义，守序\n种族地形： 雪地\n所在地： 恩塔格瑞大陆-布拉卡达王国\n塔楼的主要势力在布拉卡达，当然也包括一些异界的领土管辖。法师们是这里的统治阶级，这里的居民也偏好研习魔法。布拉卡达高原的雪山是他们的大本营。在此之外，大量布拉卡达的沙漠地带也是他们宣称所拥有的。",
+		"town" :
+		{
+			"hallBackground": "town-screen/tower/TowerHallBg.png",
+			"buildingsIcons": "town-screen/tower/ALTHALLTOWR.DEF",
+			"hallSlots":
+			[
+			
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special3" ], [ "special4" ] ],
+				[ [ "special1" ], [ "special2" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1","dwellingUpEx1" ], [ "dwellingLvl2", "dwellingUpLvl2","dwellingUpEx2" ], [ "dwellingLvl3", "dwellingUpLvl3","dwellingUpEx3" ], [ "dwellingLvl4", "dwellingUpLvl4","dwellingUpEx4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5","dwellingUpEx5" ], [ "dwellingLvl6", "dwellingUpLvl6","dwellingUpEx6" ], [ "dwellingLvl7", "dwellingUpLvl7","dwellingUpEx7" ], [ "dwellingLvl7B", "dwellingUpLvl7B" ] ]
+			],
+			"creatures" :
+			[
+				["gremlin", "masterGremlin", "twArcane01"],
+				["stoneGargoyle", "obsidianGargoyle", "twArcane02"],
+				["ironGolem", "stoneGolem", "twArcane03"],
+				["mage", "archMage", "twArcane04"],
+				["genie", "masterGenie", "twArcane05"],
+				["naga", "nagaQueen", "twArcane06"],
+				["giant", "titan", "twArcane07", "mdtDrakeGolem", "mdtDragonGolem"]
+			],
+
+			"structures" :
+			{
+				"dwellingUpEx1": { "animation" : "TBTWUP_0.def", "x" : 446, "y" : 221, "z" : 1,  "border" : "TOTGRM2A.bmp", "area" : "TZTGRM2A.bmp" },
+				"dwellingUpEx2": { "animation" : "TBTWHRD2.def", "x" : 0,   "y" : 28,  "border" : "TOTGAR2H.bmp", "area" : "TZTGAR2H.bmp" },
+				"dwellingUpEx3": { "animation" : "TBTWUP_2.def", "x" : 209, "y" : 177, "z" : 1,  "border" : "TOTGOL2A.bmp", "area" : "TZTGOL2A.bmp" },
+				"dwellingUpEx4": { "animation" : "TBTWUP_3.def", "x" : 613, "y" : 74,  "border" : "TOTMAG2.bmp",  "area" : "TZTMAG2.bmp" },
+				"dwellingUpEx5": { "animation" : "TBTWUP_4.def", "x" : 511, "y" : 8,   "border" : "TOTGEN2.bmp",  "area" : "TZTGEN2.bmp" },
+				"dwellingUpEx6": { "animation" : "TBTWUP_5.def", "x" : 681, "y" : 157, "z" : 2,  "border" : "TOTNAG2.bmp",  "area" : "TZTNAG2.bmp" },
+				"dwellingUpEx7": { "animation" : "TBTWUP_6.def", "x" : 75,  "y" : 91,  "z" : -1, "border" : "TOTTIT2.bmp",  "area" : "TZTTIT2.bmp" },
+				"dwellingLvl7B":   { "animation" : "town-screen/tower/TBDRGM1", "x" : 75, "y" : 114, "z" : -1,  "border" : "town-screen/tower/buildings-border/TBTwA7un.bmp", "area" : "town-screen/tower/buildings-area/TATwA7un.bmp" },
+				"dwellingUpLvl7B": { "animation" : "town-screen/tower/TBDRGM2", "x" : 75, "y" : 114, "z" : -1,  "border" : "town-screen/tower/buildings-border/TBTwA7up.bmp", "area" : "town-screen/tower/buildings-area/TATwA7up.bmp" }
+			},
+
+			"buildings" :
+			{
+				"dwellingUpEx1": 
+				{ 
+				"name" : "高级钟楼",
+					"description" : "高级钟楼允许你招募大妖精和精怪破坏者，并且可以在城中进行转换。",
+					"cost" : {
+						"gold" : 1000
+					},
+				"id" : 44, 
+				"upgrades" : "dwellingUpLvl1",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx2": 
+				{ 
+				"name" : "高级鬼楼",
+					"description" : "高级鬼楼允许你招募石像怪和黄晶石像怪，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"gold" : 1500
+					},
+				"id" : 45, 
+				"upgrades" : "dwellingUpLvl2",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx3": 
+				{ 
+				"name" : "高级制造工场",
+					"description" : "高级制造工场允许你招募铁人和合金铁人，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"wood": 5,
+						"mercury": 5,
+						"gold" : 1500
+					},
+				"id" : 46, 
+				"upgrades" : "dwellingUpLvl3",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx4": 
+				{ 
+				"name" : "高级法师塔",
+					"description" : "高级法师塔允许你招募大法师和奥术法师，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 5,
+						"gold" : 2000
+					},
+				"id" : 47, 
+				"upgrades" : "dwellingUpLvl4",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx5": 
+				{ 
+				"name" : "高级祈愿神坛",
+					"description" : "高级祈愿神坛允许你招募神怪主和神怪长，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 5,
+						"gold" : 2000
+					},
+				"id" : 48, 
+				"upgrades" : "dwellingUpLvl5",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx6": 
+				{ 
+				"name" : "高级金色帐篷",
+					"description" : "高级金色帐篷允许你招募蛇妖和蛇妖礼官，并且可以在城中进行转换。",
+					"cost" : {
+						"sulfur": 3,
+						"gems": 3,
+						"crystal": 3,
+						"mercury": 3,
+						"gold" : 2000
+					},
+				"id" : 49, 
+				"upgrades" : "dwellingUpLvl6",
+				"mode" : "auto"
+				},
+				"dwellingUpEx7": 
+				{ 
+				"name" : "高级云殿",
+					"description" : "高级云殿允许你招募泰坦巨人和风暴泰坦，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 5,
+						"ore" : 5,
+						"gems": 30,
+						"gold" : 20000
+					},
+				"id" : 50, 
+				"upgrades" : "dwellingUpLvl7",
+				"mode" : "auto" 
+				},
+				"dwellingLvl7":   
+				{ 
+					"requires" : [ "allOf", [ "dwellingLvl5" ], [ "dwellingLvl6" ], [ "noneOf", [ "dwellingLvl7B" ] ] ]
+				},
+				"dwellingLvl7B" :
+				{
+					"name" : "傀儡龙工厂",
+					"description" : "傀儡龙工厂允许你招募傀儡龙。",
+					"cost" : {
+						"wood" : 20,
+						"ore" : 20,
+						"gold" : 10000
+					},
+					"id" : 57, 
+					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "blacksmith" ], [ "noneOf", [ "dwellingLvl7" ] ] ]
+				},
+				"dwellingUpLvl7B" :
+				{
+					"name" : "高级傀儡龙工厂",
+					"description" : "高级傀儡龙工厂允许你招募机械龙。",
+					"cost" : {
+						"wood" : 20,
+						"mercury" : 20,
+						"ore" : 20,
+						"gold" : 20000
+					},
+					"id" : 64, 
+					"upgrades" : "dwellingLvl7B"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"14Ekaterina" : {
+		"army" : [
+			{ "creature" : "cupid", "max" : 18, "min" : 10 },
+			{ "creature" : "homunculus", "max" : 11, "min" : 5 },
+			{ "creature" : "fireNewt", "max" : 5, "min" : 3 }
+		],
+		"class" : "philosopher",
+		"female" : true,
+		"images" : {
+			"large" : "courtyard/heroes/Ekaterina/portraitlarge.png",
+			"small" : "courtyard/heroes/Ekaterina/portraitsmall.png",
+			"specialtyLarge" : "courtyard/heroes/Ekaterina/speclarge1.png",
+			"specialtySmall" : "courtyard/heroes/Ekaterina/specsmall1.png"
+		},
+		"skills" : [ { "level" : "basic", "skill" : "wisdom" }, { "level" : "basic", "skill" : "scouting" } ],
+		"spellbook" :
+		[
+			"pacifism"
+		],
+		"battleImage" :"courtyard/heroes/CourtAlice.def",
+		"specialty" : {
+			"bonuses" : {
+				"pacifism" : {
+					"subtype" : "spell.pacifism",
+					"type" : "SPELL",
+					"val" : 3,
+					"valueType" : "INDEPENDENT_MAX"
+				}				
+			}
+		},
+	}
+}

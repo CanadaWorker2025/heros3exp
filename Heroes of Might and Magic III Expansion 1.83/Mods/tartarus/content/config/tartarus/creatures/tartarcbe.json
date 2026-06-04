@@ -1,0 +1,126 @@
+{
+  "tartarcabe": {
+    "name": {
+      "plural": "极冰恶魔幻象",
+      "singular": "极冰恶魔幻象"
+    },
+	"special" : true,
+	"doubleWide" : true,
+    "advMapAmount": {
+ "max" : 50,
+ "min" : 20
+    },
+    "faction": "tartarus",
+    "aiValue": 1438,
+    "attack": 18,
+    "cost": {
+      "gold": 850
+    },
+    "damage": {
+ "max" : 22,
+ "min" : 17
+    },
+    "defense": 17,
+    "fightValue": 1255,
+    "graphics": {
+      "animation": "tartarus/battle/creatures/Tar6E.def",
+      "map": "tartarus/map/creatures/AVWTARE6.def",
+      "iconSmall": "tartarus/iconsSmall/creatures/Tar6EiconS.bmp",
+      "iconLarge": "tartarus/iconsBig/creatures/T6Eicon.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.10,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 20,
+    "hitPoints": 1,
+    "level": 1,
+    "sound": {
+      "attack": "tartarus/TAR6ATTK.wav",
+      "defend": "tartarus/TAR6DFND.wav",
+      "killed": "tartarus/TAR6KILL.wav",
+      "move": "tartarus/TAR6MOVE.wav",
+      "wince": "tartarus/TAR6WNCE.wav"
+    },
+    "speed": 9,
+    "abilities": {
+			"fireShieldVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 100
+			},
+			"infernoVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.inferno",
+				"val" : 100
+			},
+			"fireballVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireball",
+				"val" : 100
+			},
+			"fireWallVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireWallTrigger",
+				"val" : 100
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100
+			},
+			"immuneToWater" :
+			{
+				"subtype" : "spellSchool.water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			}
+
+    },
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth", //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			}
+		],
+    
+}	
+}

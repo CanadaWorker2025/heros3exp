@@ -1,0 +1,93 @@
+{
+    "core:creatureGeneratorCommon" : {
+        "types" : {
+            "preserveLevel1" : {
+                "name" : "棕妖精村落",
+                "creatures" : [[ "halflings" ]],
+				"kingdomOverviewImage" : "preserve/map/dwellings/flagport/pre1.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre1",
+                        "mask" : ["VVV","VVV","VBA" ]
+                    }
+                }
+            },
+            "preserveLevel2" : {
+                "name" : "岩洞",
+                "creatures" : [[ "treelurker" ]],
+				"kingdomOverviewImage" : "preserve/map/dwellings/flagport/pre2.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre2",
+                        "mask" : [ "VVV","VBB", "VAB" ]
+                    }
+                }
+            },
+            "preserveLevel3" : {
+                "name" : "虎穴",
+                "creatures" : [[ "magiceye" ]],
+				"kingdomOverviewImage" : "preserve/map/dwellings/flagport/pre3.def",
+                "templates" : {
+                    "default" : {   
+                        "animation" : "preserve/map/dwellings/AVGpre3",
+                        "mask" : ["VVV","VVV","VAB" ]
+                    }
+                }
+            },
+            "preserveLevel4" : {
+                "name" : "温室",
+                "creatures" : [[ "foxdruid" ]],
+				"kingdomOverviewImage" : "preserve/map/dwellings/flagport/pre4.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre4",
+                        "mask" : ["VVV","VVV","VAB" ]
+                    }
+                }
+            },
+            "preserveLevel5" : {
+                "name" : "螳螂巢",
+                "creatures" : [[ "hippogryph" ]],
+                "guards" : [
+                    { "amount" : 9, "type" : "hippogryph" }
+                ],
+				"kingdomOverviewImage" : "preserve/map/dwellings/flagport/pre5.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre5",
+                        "mask" : [ "VVV","VBB","VAB" ]
+                    }
+                }
+            },
+            "preserveLevel6" : {
+                "name" : "森林祭坛",
+                "creatures" : [[ "fairybear" ]],
+                "guards" : [
+                    { "amount" : 6, "type" : "fairybear" }
+                ],
+				"kingdomOverviewImage" : "preserve/map/dwellings/flagport/pre6.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre6",
+                        "mask" : ["VVV","VVV","VAB" ]
+                    }
+                }
+            },
+            "preserveLevel7" : {
+                "name" : "金色阁楼",
+                "creatures" : [[ "treant" ]],
+                "guards" : [
+                    { "amount" : 3, "type" : "treant" }
+                ],
+				"kingdomOverviewImage" : "preserve/map/dwellings/flagport/pre7.def",
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre7",
+                        "mask" : ["VVV","VVV","VAB" ]
+                    }
+                }
+            }
+
+        }       
+    }
+} 

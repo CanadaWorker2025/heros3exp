@@ -1,0 +1,72 @@
+{
+	"a_alach" :
+	{
+    "class": "pathfinder",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "阿拉克",
+			"biography" : "阿拉克从小就生活在充斥着杀机的森林里，在贾达密的丛林中他也学会了和各种野兽搏斗。有人说他是黑暗精灵里的作战大师。只要他出现的地方，必将出现战争和恐慌。",
+			"specialty" :
+			{
+				"description" : "在进攻术上每级得到5%的额外奖励。",
+				"tooltip" : "Secondary skill bonus: Offence",
+				"name" : "进攻术"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/alach/UN32T196.bmp",
+			"specialtyLarge" : "asylum/heroes/alach/UN44T196.bmp",
+			"large" : "asylum/heroes/alach/HPL000PF.bmp",
+			"small" : "asylum/heroes/alach/HPS000PF.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"offence" : {
+					"subtype" : "damageTypeMelee",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}
+	}
+}
+

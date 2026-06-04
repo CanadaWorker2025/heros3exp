@@ -1,0 +1,32 @@
+{
+	"goldenGoose" : {
+		"type" : [ "HERO" ],
+		"slot" : "MISC",
+		"class" : "RELIC",
+		"value" : 0,
+		"components" : [
+			"endlessPurseOfGold",
+			"endlessBagOfGold",
+			"endlessSackOfGold"
+		],
+		"bonuses" : {
+			"gold" : {
+				"type" : "GENERATE_RESOURCE",
+				"subtype" : "gold",
+				"valueType" : "BASE_NUMBER",
+				"val" : 2500 // Toghether with component effects, this adds up to 7000
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/goldenGoose",
+			"map" : "hota/artifactsMap/goldenGoose",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/goldenGoose"
+		},
+		"text" : {
+			"description" : "{  金鹅  }\r\n\r\n带上金鹅可以使你的收入每天增加4750金币。",
+			"event" : "你惊奇地在一个收藏家的宿营地里寻找到一个被遗弃的房子，大多数的物品都让强盗偷走了，但是你能够找到一对落满灰尘的宠物塑像，你模糊地认出它们中的一个，擦掉它的灰尘，于是你找到了一个金鹅。",
+			"name" : "  金鹅  "
+		}
+	}
+}
+

@@ -1,0 +1,133 @@
+{
+	"nwCon04":
+	{
+		"name" :
+		{
+			"plural" : "电子元素",
+			"singular" : "电子元素"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 12
+		},
+		"faction": "conflux",
+		"aiValue" : 471,
+		"fightValue" : 361,
+		"attack" : 11,
+		"defense" : 9,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"damage" :
+		{
+			"min" : 4,
+			"max" : 6
+		},
+		"speed" : 8,
+		"upgrades": ["energyElemental"],
+		"graphics" :
+		{
+			"animation" : "creatures/conflux/battle/CON04.def",
+			"map" : "creatures/conflux/map/CON04S.def",
+			"iconSmall" : "creatures/conflux/iconsSmall/CON04S.bmp",
+			"iconLarge" : "creatures/conflux/iconsBig/CON04L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 35,
+		"growth" : 5,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "ENERATTK.wav",
+			"defend": "ENERDFND.wav",
+			"killed": "ENERKILL.wav",
+			"move": "ENERMOVE.wav",
+			"wince": "ENERWNCE.wav"
+		},
+		"abilities":
+		{
+			"canFly" :
+			{
+				"type" : "FLYING",
+				"icon": "bonuses/e_teleport.png"
+			},
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING",
+				"icon": "bonuses/NonLivingelemental.png",
+				"description" : "{元素生物}\n无生命，可以接受{回流}复活",
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"immuneToFire" : 
+			{
+				"type" : "SPELL_SCHOOL_IMMUNITY",
+				"subtype" : "spellSchool.fire"
+			},
+			"paralize" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.blind",
+				"addInfo":3,
+				"val" : 20,
+				"icon": "bonuses/blindattack.png",
+			},
+			"iceBoltVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.iceBolt",
+				"val" : 0,
+				"hidden": true
+			},
+			"frostRingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.frostRing",
+				"val" : 0,
+				"hidden": true
+			},
+			"waterWeaken" :
+			{
+                 "type" : "SPELL_DAMAGE_REDUCTION",
+                 "val" : -100,
+                 "subtype" : "spellSchool.water",
+				 "description" : "{水系弱点}\n受水系法术伤害加倍",
+				"icon" : "spells/extraEffect/waterweak.png"
+            },
+			"oppositeWater" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.waterElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeIce" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.iceElemental",
+				"val" : 100,
+				"hidden": true
+			},
+			"oppositeSea" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.nwCon03",
+				"val" : 100,
+				"description" : "{元素对立}\n对水元素，冰元素，海元素造成额外100%伤害",
+				"icon" : "spells/extraEffect/hateice.png"
+			}
+		}
+	}
+}
+
+

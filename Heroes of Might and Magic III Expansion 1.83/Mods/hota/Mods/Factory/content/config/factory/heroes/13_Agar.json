@@ -1,0 +1,63 @@
+{
+	"13_Agar" :
+	{
+    "class": "factoryMClass",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "阿伽",
+			"biography" : "许多人认为术士阿伽是一个疯子，然后是一个死人。虽然后者已被证明是错误的，但恩洛斯的科学界对前者仍然没有达成一致。事实上，阿伽的创造物无疑是可行的和实用的——但是一个头脑清醒的科学家能想到将如此令人讨厌的倾向和倾向灌输给一个生物吗？",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "沙虫",
+				"description" : "达到5级以后提高沙虫或死亡沙虫的攻击力与防御力。"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/13_Agar/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/13_Agar/bigS.bmp",
+			"large" : "factory/heroes/13_Agar/bigP.bmp",
+			"small" : "factory/heroes/13_Agar/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"spellbook" :
+		[
+			"viewEarth"
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "sandworm"
+		}
+	}
+}
+

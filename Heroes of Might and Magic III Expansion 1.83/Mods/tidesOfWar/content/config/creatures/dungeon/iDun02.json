@@ -1,0 +1,89 @@
+{
+	"iDun02"://Harpy Witch
+	{
+		"name" :
+		{
+			"plural" : "鹰身魔女",
+			"singular" : "鹰身魔女"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction": "dungeon",
+		"aiValue" : 236,
+		"fightValue" : 197,
+		"attack" : 7,
+		"defense" : 5,
+		"cost" :
+		{
+			"gold" : 170
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 4
+		},
+		"speed" : 8,
+		"upgrades": ["harpyHag"],
+		"graphics" :
+		{
+			"animation" : "creatures/dungeon/battle/iDun02B.def",
+			"map" : "creatures/dungeon/map/iDun02M.def",
+			"iconSmall" : "creatures/dungeon/iconsSmall/iDun02S.bmp",
+			"iconLarge" : "creatures/dungeon/iconsBig/iDun02L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 16,
+		"growth" : 8,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "HARPATTK.wav",
+			"defend": "HARPDFND.wav",
+			"killed": "HARPKILL.wav",
+			"move": "HARPMOVE.wav",
+			"wince": "HARPWNCE.wav"
+		},
+		"abilities":
+		{
+			"canFly" :
+			{
+				"type" : "FLYING"
+			},
+			"strikeAndReturn" : 
+			{
+				"type" : "RETURN_AFTER_STRIKE"
+			},
+			"noRetaliation" : 
+			{
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"noCastByDefault" :
+			{
+				"type" : "NO_SPELLCAST_BY_DEFAULT"
+			},
+			"curses" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.disruptingRay",
+				"val" : 3,
+				"icon": "bonuses/disruptingray2.png"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,68 @@
+{
+	"havMhero11" :
+	{
+		"class" : "havMhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "雷蒙",
+			"biography" : "雷蒙放荡不羁。有人说比起做海盗，他更喜欢捕鱼。有点时候他会从遥远的海域带来那里的独特海产品，并且在村镇中卖出很高的价格。有人说他是第一个发现深海中大海蛇的人。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "霹雳闪电",
+				"description" : "使用霹雳闪电魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero11/skill11S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero11/skill11.bmp",
+			"large" : "haven/heroes/havHero11/hero11.bmp",
+			"small" : "haven/heroes/havHero11/hero11S.bmp"
+		},
+		"spellbook": [ "lightningBolt" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"lightningBolt" : {
+					"subtype" : "spell.lightningBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,92 @@
+{
+	"twArcane01":
+	{
+		"name" :
+		{
+			"plural" : "精怪破坏者",
+			"singular" : "精怪破坏者"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction": "tower",
+		"aiValue" : 65,
+		"fightValue" : 54,
+		"attack" : 5,
+		"defense" : 3,
+		"cost" :
+		{
+			"gold" : 40
+		},
+		"damage" :
+		{
+			"min" : 1,
+			"max" : 2
+		},
+		"speed" : 5,
+		"upgrades": ["masterGremlin"],
+		"graphics" :
+		{
+			"animation" : "creatures/tower/battle/CTW1-2.def",
+			"map" : "creatures/tower/map/AVWtw1.def",
+			"iconSmall" : "creatures/tower/iconsSmall/CPrSTW021.bmp",
+			"iconLarge" : "creatures/tower/iconsBig/CPrLTW021.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" : {
+				"attackClimaxFrame" : 11,
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0 ],
+				"offset" : {
+					"lowerX" : 9,
+					"lowerY" : 9,
+					"middleX" : 46,
+					"middleY" : -17,
+					"upperX" : 55,
+					"upperY" : -52
+				},
+				"projectile": "CPRGRE.DEF"
+			}
+		},
+		"hitPoints" : 4,
+		"growth" : 16,
+		"shots": 6,
+		"level" : 1,
+		"sound" :
+		{
+			"attack": "AAGLATTK.wav",
+			"defend": "MGRMDFND.wav",
+			"killed": "MGRMKILL.wav",
+			"move": "MGRMMOVE.wav",
+			"shoot": "AGRMSHOT.wav",
+			"wince": "MGRMWNCE.wav"
+		},
+		"abilities" :
+		{
+			 "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"sabotage" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.tw01eff",
+				"val" : 2,
+				"icon": "bonuses/tw01.png"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},			
+		}
+	}
+}
+
+

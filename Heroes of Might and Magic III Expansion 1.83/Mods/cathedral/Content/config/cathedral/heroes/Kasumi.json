@@ -1,0 +1,47 @@
+{
+	"kasumi" :
+	{
+		"class" : "redtemplar",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/kasumi/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/kasumi/spec-large.bmp",
+			"large" : "cathedral/heroes/kasumi/portrait-large.bmp",
+			"small" : "cathedral/heroes/kasumi/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  7 }
+		],
+		
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{ 
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+		],
+		"texts" :
+		{
+			"name" : "卡瓦耶罗",
+			"biography" : "作为豺狼人的卡瓦耶罗曾是塔洛斯国王的私人刽子手。因为一次失败的暗杀行动，他被放逐到边境小镇。亲眼目睹亡灵入侵和瘟疫的他致力于拯救陷于灾难的人们。同时，他加入了幸存者组建的教会，开始新的生活。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高屠杀者和刽子手的攻击力和防御力。",
+				"tooltip" : "特长：屠杀者和刽子手",
+				"name" : "屠杀者"
+			}
+		},
+		"specialty" : {
+			"creature" : "cthSlayer"
+		}		
+	}
+}

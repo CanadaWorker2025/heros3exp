@@ -1,0 +1,47 @@
+{
+	"core:lake" : {
+		"types" : {
+			"starLakes" : {
+				"name" : "湖",
+				"templates" : {
+			
+					"STARLKl00" : { "animation" : "star lakes/starlk01",  
+					"mask": ["BB", "BB"],
+					"zIndex": 100,
+                    "allowedTerrains": [ "stardust" ]
+					},						
+					
+					"STARLKl01" : { "animation" : "star lakes/starlk02", 					 
+					"mask": ["VBB", "BBB"],
+					"zIndex": 100,
+                    "allowedTerrains": [ "stardust" ]
+					},
+					
+					"STARLKl02" : { "animation" : "star lakes/starlk03", 					 
+					"mask": ["BBB", "BBB"],
+					"zIndex": 100,
+                    "allowedTerrains": [ "stardust" ]
+					},
+					
+					"STARLKl03" : { "animation" : "star lakes/starlk04", 					 
+					"mask": ["BBB", "VBB"],
+					"zIndex": 100,
+                    "allowedTerrains": [ "stardust" ]
+					},
+					
+					"STARLKl04" : { "animation" : "star lakes/starlk05", 
+					"mask": ["BBBBBB", "BBBBBB"], 
+					"zIndex": 100,
+                    "allowedTerrains": [ "stardust" ]
+					}
+				}
+			}
+			
+		}	
+	}	
+}
+	
+	
+
+
+	

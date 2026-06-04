@@ -1,0 +1,219 @@
+{
+	"name" : "Haven",
+	"description" : "Haven Town",
+	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
+	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
+	"version" : "1.56",
+	"modType" : "Town",
+	"changelog" : {
+		"1.56" : [
+			"Fixed configs after BMPs to PNGs conversion"
+		],
+		"1.55" : [
+			"Fixed town view palette, now it's correctly recolored per player color",
+			"Converted BMPs to PNGs",
+			"Updated Czech translation"
+		],
+		"1.54" : [
+			"Improved Leviathans graphics",
+			"Improved some creature abilities icons"
+		],
+		"1.53" : [
+			"Another update to vcmi-1.7 format"
+		],
+		"1.52" : [
+			"Update to vcmi-1.7 format"
+		],
+		"1.51" : [
+			"Updated Czech translation",
+			"Updated screenshots"
+		],
+		"1.50" : [
+			"Remade by Ben Yan"
+		],
+		"1.43" : [
+			"Russian translation by Keloraen"
+		],
+		"1.42" : [
+			"Fix Grail not to produce gold"
+		],
+		"1.41" : [
+			"Fix for creature banks"
+		],
+		"1.40" : [
+			"Update to vcmi-1.6 format"
+		],
+		"1.31" : [
+			"Czech translation by George King"
+		],
+		"1.30" : [
+			"New Marids models by Kurek"
+		],
+		"1.29" : [
+			"New female hero's battle model",
+			"Improved battle model for Hydromancer (lvl 6 unit)"
+		],
+		"1.28" : [
+			"New town theme by Fabrice-TIERCELIN and AI Udio"
+		],
+		"1.27" : [
+			"Fixed the creatures' stackExp, the commander and other bugs"
+		],
+		"1.26" : [
+			"Updated polish translation by ToRRent1812"
+		],
+		"1.25" : [
+			"Polish translation by Dru"
+		],
+		"1.24" : [
+			"Update chinese translation"
+		],
+		"1.23" : [
+			"New level 6 units for an alternative change",
+			"Update to vcmi-1.4 format"
+		],
+		"1.22" : [
+			"Improved chinese translation by Rindlit"
+		],
+		"1.21" : [
+			"New banks and chests"
+		],
+		"1.20" : [
+			"New update for VCMI-1.3"
+		],
+		"1.13" : [
+			"Update to vcmi-1.3"
+		],
+		"1.12" : [
+			"Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"
+		],
+		"1.11" : [
+			"Update to vcmi-1.2"
+		],
+		"1.10" : [
+			"Great Updates"
+		],
+		"1.04" : [
+			"Special buildings support"
+		],
+		"1.03" : [
+			"Another fixes"
+		],
+		"1.02" : [
+			"Some missing buildings"
+		],
+		"1.01" : [
+			"New hero specialty format",
+			"Bugfixes"
+		],
+		"1.0" : [
+			"Initial release"
+		]
+	},
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"chinese" : {
+		"name" : "峡湾",
+		"description" : "峡湾是独立于港口的种族。因为彼得利用深渊号角的力量统一了瑞格纳，而不服从者则想要摆脱深渊号角的控制。这些海盗也因此去深海寻找克制这件神器的力量。",
+		"translations" : [
+			"translation/haven/chinese.json"
+		]
+	},
+	"german" : {
+		"name" : "Hafen",
+		"description" : "Hafen Stadt",
+		"translations" : [
+			"translation/haven/german.json"
+		]
+	},
+	"polish" : {
+		"name" : "Przystań",
+		"description" : "Dodaje miasto stworzeń morskich - Przystań",
+		"translations" : [
+			"translation/haven/polish.json"
+		]
+	},
+	"czech" : {
+		"name" : "Přístav",
+		"description" : "Přístav je město na pobřeží, kde se pirátské posádky a mořské bytosti spojily v touze po svobodě a moci. Vládnou mu kapitáni a hydromanti, kteří využívají sílu oceánu i zrádných proudů.<br/><br/>Jeho armádu tvoří <b>krysáci</b>, <b>potápky</b>, <b>kušnice</b> a <b>mořské panny</b>, posílené tajemnými <b>maridy</b>, obřími <b>želvami</b> a hrozivými <b>leviatany</b>.<br/><br/>Přístav se specializuje na <b>vodní magii</b>, námořní bitvy a schopnosti, které zajišťují výhodu na moři. Díky své pohyblivosti a lstivosti dokáže překvapit protivníky a ovládnout širý oceán.<br/><br/>Je to frakce pro hráče, kteří chtějí vládnout mořím, spoléhat na vodní kouzla a využívat smělost pirátů i sílu dávných bytostí hlubin.",
+		"translations" : [
+			"translation/haven/czech.json"
+		]
+	},
+	"russian" : {
+		"name" : "Гавань",
+		"description" : "Добавляет город морских существ - Гавань",
+		"translations" : [
+			"translation/haven/russian.json"
+		]
+	},
+	"factions" : [
+		"config/haven/town/buildings.json",
+		"config/haven/town/faction.json",
+		"config/haven/town/siege.json",
+		"config/haven/town/spells.json",
+		"config/haven/town/structures.json",
+		"config/haven/town/puzzle.json"
+	],
+	"creatures" : [
+		"config/haven/creatures/havC01.json",
+		"config/haven/creatures/havC02.json",
+		"config/haven/creatures/havC03.json",
+		"config/haven/creatures/havC04.json",
+		"config/haven/creatures/havC05.json",
+		"config/haven/creatures/havC06.json",
+		"config/haven/creatures/havC07.json",
+		"config/haven/creatures/havC08.json",
+		"config/haven/creatures/havC09.json",
+		"config/haven/creatures/havC10.json",
+		"config/haven/creatures/havC11.json",
+		"config/haven/creatures/havC12.json",
+		"config/haven/creatures/havC11B.json",
+		"config/haven/creatures/havC12B.json",
+		"config/haven/creatures/havC13.json",
+		"config/haven/creatures/havC14.json",
+		"config/haven/creatures/yachtswoman.json",
+		"config/haven/creatures/wiki.json"
+	],
+	"heroClasses" : [
+		"config/haven/heroes/havAhero.json",
+		"config/haven/heroes/havMhero.json"
+	],
+
+	"heroes" : [
+		"config/haven/heroes/havAhero01.json",
+		"config/haven/heroes/havAhero02.json",
+		"config/haven/heroes/havAhero03.json",
+		"config/haven/heroes/havAhero04.json",
+		"config/haven/heroes/havAhero05.json",
+		"config/haven/heroes/havAhero05B.json",
+		"config/haven/heroes/havAhero06.json",
+		"config/haven/heroes/havAhero07.json",
+		"config/haven/heroes/havAhero08.json",
+		"config/haven/heroes/havMhero09.json",
+		"config/haven/heroes/havMhero10.json",
+		"config/haven/heroes/havMhero11.json",
+		"config/haven/heroes/havMhero12.json",
+		"config/haven/heroes/havMhero13.json",
+		"config/haven/heroes/havMhero14.json",
+		"config/haven/heroes/havMhero15.json",
+		"config/haven/heroes/havMhero16.json"
+	],
+	"spells" : [
+		"config/haven/spells/mermaidSeduce.json",
+		"config/haven/spells/seaWrath.json",
+		"config/haven/spells/iceShot.json",
+		"config/haven/spells/havWaterWeaken.json",
+		"config/haven/spells/tidePower.json",
+		"config/haven/spells/smokeShell.json"
+	],
+	"objects" : [
+		"config/haven/dwellings",
+		"config/haven/banks/chestHaven01",
+		"config/haven/banks/chestHaven02",
+		"config/haven/banks/havenBank",
+		"config/haven/banks/havenBank2",
+		"config/haven/boats"
+	]
+}

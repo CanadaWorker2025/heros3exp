@@ -1,0 +1,64 @@
+{
+	"c_harrigan" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "哈里根",
+			"biography" : "作为“猎手同盟”的领导者，哈里根经常带领狩猎队在山上打猎，并将猎物分给山下的穷人们。他并不珍惜他猎取的成果，因为他仅仅是为了提高自己的捕猎技巧。虽然矮人种族长年都处于和平之中，但他相信总有一天战争会来临。那是就是他大显身手的时机。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高标枪手或猎叉手的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Javeliners",
+				"name" : "标枪手"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "bastille/heroes/harrigan/skill32-3.bmp",
+			"specialtyLarge" : "bastille/heroes/harrigan/skill3.bmp",
+			"large" : "bastille/heroes/harrigan/HPL002DW.bmp",
+			"small" : "bastille/heroes/harrigan/HPS002DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		
+				"specialty" : 
+		{
+			"creature" : "bjaveliner"
+		}
+	}
+}
+

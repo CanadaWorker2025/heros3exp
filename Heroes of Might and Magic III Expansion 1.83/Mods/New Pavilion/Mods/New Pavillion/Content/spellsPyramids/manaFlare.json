@@ -1,0 +1,97 @@
+{
+	"manaFlarePyra" : {
+		"type": "combat",
+		"name": "魔力闪光",
+		"school":
+		{
+			"pavillionPrime": true
+		},
+		"targetType": "NO_TARGET",
+		"level": 1,
+		"power": 10, //i think power is irrevelant in this case
+		"defaultGainChance": 0, 
+		"gainChance" :
+		{ 		
+		},
+		"animation":{
+			"hit":[ "spellsPyramids/01ManaFlare/flareAni.def" ]
+		},
+		"flags" : { "positive": true, "special" : true },
+		"sounds": {
+			"cast": "ESULSHOT"
+		},
+		"graphics":
+		{
+			"iconBook": "spellsPyramids/01ManaFlare/flareBook.bmp",
+			"iconScroll": "spellsPyramids/01ManaFlare/flareScroll.bmp",
+			"iconScenarioBonus": "spellsPyramids/01ManaFlare/flareBonus.bmp",
+			"iconEffect": "spellsPyramids/01ManaFlare/flareEffect.bmp"
+		},
+		"levels" : {
+			"base":{
+				"power": 10, //irrevelant?
+				"range" : "X", //like armageddon, death ripple, destroy undead
+				"targetModifier":{"smart":false},
+				"cost": 4, 
+				"description": "{魔力闪光}\r\n\r\n使己方英雄的魔法消耗降低1。",
+				"battleEffects" : {
+					"spellsDamage" :
+					{
+						"type": "core:timed",
+						"cumulative": false,
+						"bonus":
+						{
+							"reduceSpellCost" : 
+							{
+							"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+							"val" :  1
+							}
+						}	
+					}	
+				}				
+			},
+			"none":
+			{				
+				"cost": 4
+			},
+			"basic":
+			{ 
+				"description": "{初级魔力闪光}\r\n\r\n使己方英雄的魔法消耗降低1。"
+			},
+			"advanced":
+			{	 
+				"description": "{中级魔力闪光}\r\n\r\n使己方英雄的魔法消耗降低2。",
+				"battleEffects" : {
+					"spellsDamage" :
+					{
+						"bonus":
+						{
+							"reduceSpellCost" : 
+							{
+							"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+							"val" :  2
+							}
+						}
+					}
+				}
+			},
+			"expert":
+			{	 
+				"description": "{高级魔力闪光}\r\n\r\n使己方英雄的魔法消耗降低3。",
+				"battleEffects" : {
+					"spellsDamage" :
+					{
+						"bonus":
+						{
+							"reduceSpellCost" : 
+							{
+							"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+							"val" :  3
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}	

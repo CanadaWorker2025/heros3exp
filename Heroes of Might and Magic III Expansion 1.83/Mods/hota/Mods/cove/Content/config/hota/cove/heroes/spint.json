@@ -1,0 +1,60 @@
+{
+	"11spint" : {
+		"class" : "navigator",
+		"images" : {
+			"large" : "hota/cove/heroes/spint/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/spint/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/spint/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/spint/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "sorcery",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"sorcery" : {
+					"type" : "SPELL_DAMAGE",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "spellSchool.any",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		},
+		"spellbook" : [ "iceBolt" ],
+		"texts" : {
+			"biography" : "史宾特在布拉卡达学习的时候就表现出他对法术的极强天赋，但有一天他被野蛮人所俘获并且把他买给一个船长做了奴隶。他的魔法天赋很快被船长发现并愿意给他一个管理商船的职务。现在史宾特已经有了自己的船，为了报仇，他用魔法毁掉了克鲁洛德所有的船只并且开始享受新的生活。",
+			"name" : "史宾特",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Sorcery",
+				"name" : "魔力",
+				"description" : "在魔力技能上每级得到5%的额外奖励。"
+			}
+		}
+	}
+}

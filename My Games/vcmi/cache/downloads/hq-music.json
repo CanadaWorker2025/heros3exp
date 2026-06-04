@@ -1,0 +1,30 @@
+{
+    "name": "High-Quality Heroes Soundtrack",
+    "description": "An enhanced high-quality music edition featuring Heroes Orchestra's arrangements.",
+	"author" : "CarvenX22",
+	"version" : "1.0",
+	"contact" : "https://www.nexusmods.com/heroesofmightandmagiciii/mods/17",
+	"modType" : "Music",
+	"compatibility" : {
+		"min" : "1.4.0"
+	},
+	"softDepends" :
+	[
+		"abyss-town.new battle music",
+		"heroes-iii-orchestra",
+		"heroes3-extended-soundtrack.heroes-legacy-bonus",
+		"heroes3-extended-soundtrack.heroes-legacy-terrains",
+		"wake-of-gods.mainmenu"
+	],
+	"changelog" : {
+		"1.00" : [ "Initial release" ]
+	},
+	"czech" : {
+		"name": "Soundtrack Heroes ve vysoké kvalitě",
+		"description": "Vylepšená edice hudby ve vysoké kvalitě s aranžemi od Heroes Orchestra."
+	},
+	"polish" : {
+		"name": "Wysokiej jakości ścieżka dźwiękowa Heroes",
+		"description": "Ulepszona edycja muzyki w wysokiej jakości z aranżacjami Heroes Orchestra."
+	}
+}

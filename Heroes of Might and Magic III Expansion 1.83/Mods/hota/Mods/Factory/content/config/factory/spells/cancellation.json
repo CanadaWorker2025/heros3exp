@@ -1,0 +1,80 @@
+{
+	"mdtCancel" : {
+		"type": "combat",
+		"name": "废除",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"targetType": "CREATURE",
+		"level": 2,
+		"power": 0, //duration spellpower=turns
+		"defaultGainChance": 10, 
+		"gainChance" :
+		{
+			"inferno" : 5,
+			"dungeon" : 10,
+			"conflux" : 5,
+			"necropolis" :  0 		
+		},
+		"animation":{
+			"affect":["spells/effCancel"]
+		},
+		"flags" : 
+		{
+			"negative": true
+		},
+		"sounds": {
+			"cast": "DISPELL"
+		},
+		"graphics":
+		{
+			"iconBook": "spells/iconCancel2.bmp",
+			"iconImmune":"spells/fungusImmune",
+			"iconScroll": "spells/iconCancel3.bmp",
+			"iconScenarioBonus": "spells/iconCancel.bmp",
+			"iconEffect": "spells/iconCancel4.bmp"
+		},
+		"levels" : {
+			"base":{
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"cost": 8, 
+				"description": "{废除}\r\n\r\n将选中敌人身上的增益魔法去除。",
+				"power": 25,
+				"battleEffects":{
+					"dispelPos":{
+						"type":"core:dispel",
+						"optional":true,
+						"ignoreImmunity" : true,
+						"dispelNegative":false,
+						"dispelNeutral":false,
+						"dispelPositive":true
+					}
+				}
+			},
+			"none":
+			{
+				"cost" : 8
+			},
+			"basic":
+			{	 
+				"description": "{初级废除}\r\n\r\n将选中敌人身上的增益魔法去除。"
+			},
+			"advanced":
+			{	 
+				"description": "{中级废除}\r\n\r\n将选中敌人身上的增益魔法去除。",
+				"cost" : 7
+			},
+			"expert":
+			{	 
+				"range" : "X",
+				"description": "{高级废除}\r\n\r\n将所有敌人身上的增益魔法去除。",
+				"cost" : 6
+			}
+		}
+	}
+}

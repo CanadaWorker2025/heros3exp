@@ -1,0 +1,65 @@
+{
+	"beatrice" :
+	{
+		"class" : "knight",
+		"female" : true,
+		"onlyOnMapWithoutWater" : true,
+		"images" :
+		{
+			"large" : "hota/castle/heroes/beatrice/icons/portraitLarge.png",
+			"small" : "hota/castle/heroes/beatrice/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/castle/heroes/beatrice/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/castle/heroes/beatrice/icons/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "pikeman",
+				"min" : 10,
+				"max" : 20
+			},
+			{
+				"creature" : "archer",
+				"min" : 4,
+				"max" : 7
+			},
+			{
+				"creature" : "griffin",
+				"min" : 2,
+				"max" : 3
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "leadership",
+				"level" : "basic"
+			},
+			{
+				"skill" : "scouting",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"sight" : {
+					"type" : "SIGHT_RADIUS",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 6,
+						"stepSize" : 2
+					}
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "碧翠丝是埃拉西亚的侦察天才，不亚于很多著名的精灵探路者。这个女孩的天赋是凯瑟琳亲自发现的，并将这位杰出的女侦察员提拔为将军。尽管加官进爵，她的侦察能力仍然不减当年。",
+			"name" : "碧翠丝",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Scouting",
+				"name" : "侦察术",
+				"description" : "在侦察术上每级得到5%的奖励。"
+			}
+		}
+	}
+}

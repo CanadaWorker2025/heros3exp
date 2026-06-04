@@ -1,0 +1,132 @@
+{
+	"mdtSukkub" : {
+		"abilities" : {	
+			"shoter" : 
+			{
+				"type" : "SHOOTER",
+			},
+			"canFly" :
+			{
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly2.png"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"spellAfterAttack" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.mdtHateSpike",
+				"val" : 1,
+				"hidden": true
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_DISTANCE_PENALTY"
+				},
+				"values" : [ false, false, false, false, false, false, false, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		],	
+		"advMapAmount" : {"max" : 20, "min" : 10},
+		"aiValue" : 490,
+		"attack" : 12,
+		"cost" : { "gold" : 275 },
+		"damage" : {"max" : 8, "min" : 5},
+		"shots" : 8,
+		"defense" : 7,
+		"faction" : "inferno",
+		"fightValue" : 481,
+		"graphics" : {
+			"animation" : "creatures/inferno/battle/Csukub.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 0.8 },
+			"iconLarge" : "creatures/inferno/iconsBig/sukkubBig.bmp",
+			"iconSmall" : "creatures/inferno/iconsSmall/sukkubSmall.bmp",
+			"map" : "creatures/inferno/map/sukkubMap.def",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile" : "creatures/inferno/battle/projectile/null.def",
+				"attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"lowerX" : 28,
+					"lowerY" : 3,
+					"middleX" : 62,
+					"middleY" : -53,
+					"upperX" : 37,
+					"upperY" : -98
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},	
+		"growth" : 4,
+		"hitPoints" : 25,
+        "doubleWide" : false,
+		"level" : 4,
+		"name" : { "plural" : "魅魔", "singular" : "魅魔" },
+		"upgrades": ["mdtLilim"],
+		"sound" : {
+			"attack" : "creatures/inferno/sukkub/SUCCATTACK.wav",
+			"defend" : "creatures/inferno/sukkub/SUCCDFND.wav",
+			"killed" : "creatures/inferno/sukkub/SUCCDEAD.wav",
+			"move" : "creatures/inferno/sukkub/SUCCMOVE.wav",
+			"wince" : "creatures/inferno/sukkub/SUCCHIT.wav",
+			"shoot" : "creatures/inferno/sukkub/SUCCSHOT.wav"
+		},
+		"speed" : 7
+	}
+}

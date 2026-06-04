@@ -1,0 +1,102 @@
+//Barbarity ability for Highlands berserkers
+{
+	"barbarity":
+	{
+		"type": "ability",
+		"name": "狂暴攻击",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0,
+		"canCastOnSelf" : true,
+		"canCastWithoutSkip": true,
+		"canCastOnlyOnSelf": true,
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+		"animation":{
+			"affect":["C08SPF0"]
+		},
+
+		"flags" : {"positive": true, "indifferent": true},
+
+		"graphics":
+		{
+			"iconBook": "bastiSpells/USELESS.bmp",
+			"iconScroll": "bastiSpells/USELESS2.bmp",
+			"iconScenarioBonus": "bastiSpells/USELESS3.bmp",
+			"iconEffect": "bastiSpells/INBAR.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "FRENZY"
+		},
+		"targetType" : "LOCATION",
+		"targetCondition" :
+		{
+			"anyOf" :
+			{
+				"bastille:creature.bberserker":"absolute"
+			}
+		},
+
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+
+				"description": "",
+
+				"cost": 0,
+
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"effects":
+				{
+					"attacksNearestCreature" : {
+						"type" : "ATTACKS_NEAREST_CREATURE",
+						"duration" : "N_TURNS",
+						"turns": 1
+					},
+					"inFrenzy" : 
+					{
+						"type" : "IN_FRENZY",
+						"val" : 150,
+						"duration" : "N_TURNS",
+						"turns": 1
+					}
+				}
+			},
+			"none":
+			{
+				"description": "{狂暴攻击}\r\n\r\n此举动会使生物陷入狂暴，防御力清零，且不能等待。",
+			},
+			"basic":
+			{
+				"description": "{狂暴攻击}\r\n\r\n此举动会使生物陷入狂暴，防御力清零，且不能等待。",
+			},
+			"advanced":
+			{
+				"description": "{狂暴攻击}\r\n\r\n此举动会使生物陷入狂暴，防御力清零，且不能等待。",
+			},
+			"expert":
+			{
+				"description": "{狂暴攻击}\r\n\r\n此举动会使生物陷入狂暴，防御力清零，且不能等待。",
+			}
+		}
+	}
+}

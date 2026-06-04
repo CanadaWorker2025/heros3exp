@@ -1,0 +1,326 @@
+{
+	"core:piquedram" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:thane" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:josephine" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:neela" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:torosar" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:fafner" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:rissa" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:iona" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:astral" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:halon" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:serena" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:daremyth" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:theodorus" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:solmyr" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:cyra" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"core:aine" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"mdtOdetta" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		},
+	"mdtVerstan" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane01","addInfo":	"creature.masterGremlin"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.masterGremlin","addInfo":	"creature.twArcane01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.twArcane02","addInfo":	"creature.obsidianGargoyle"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.obsidianGargoyle","addInfo":	"creature.twArcane02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.stoneGolem","addInfo" : "creature.twArcane03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane03","addInfo" : "creature.stoneGolem"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane04","addInfo" : "creature.archMage"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.archMage","addInfo" : "creature.twArcane04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.masterGenie","addInfo" : "creature.twArcane05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane05","addInfo" : "creature.masterGenie"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane06","addInfo" : "creature.nagaQueen"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nagaQueen","addInfo" : "creature.twArcane06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.twArcane07","addInfo" : "creature.titan"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.titan","addInfo" : "creature.twArcane07"}}}
+		}
+}

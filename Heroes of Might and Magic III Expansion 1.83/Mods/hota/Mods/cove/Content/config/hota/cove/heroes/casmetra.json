@@ -1,0 +1,52 @@
+{
+	"09casmetra" : {
+		"class": "navigator",
+		"female": true,
+		"images" : {
+			"large" : "hota/cove/heroes/casmetra/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/casmetra/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/casmetra/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/casmetra/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "waterMagic",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"creature" : "hota.cove:seaWitch"
+		},
+		"spellbook" : [ "dispel" ],
+		"texts": {
+			"biography" : "这位神秘的拜海女祭司的首领最近很被人关注。没人知道这个女人的过去，但任何亲眼见过卡斯梅特拉惊人美貌和神奇魔法能力的人都觉得这无法用言语表达。一些人相信卡斯梅特拉加入海盗仅仅为了她的利益，但是不久一些被迫成为她手下的海盗和女巫都成为了她最忠实的伙伴。",
+			"name" : "卡斯梅特拉",
+			"specialty" : {
+				"tooltip" : "Creature Bonus: Sea Witches",
+				"name" : "海洋女巫",
+				"description" : "达到5级以后提高海洋女巫或海洋术士的攻击力与防御力。"
+			}
+		}
+	}
+}

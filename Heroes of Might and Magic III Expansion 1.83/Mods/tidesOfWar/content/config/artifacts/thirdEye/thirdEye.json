@@ -1,0 +1,62 @@
+{
+	"mdtThirdEye" : {
+		"bonuses" : 
+		{
+			"blockFader1":
+			{
+				"subtype" : "spell.blockBas",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"blockFader2":
+			{
+				"subtype" : "spell.blockAdv",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"blockFader3":
+			{
+				"subtype" : "spell.blockExp",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"eagleEyeGain":
+			{
+				"type" : "LEARN_BATTLE_SPELL_CHANCE",
+				"val" : 90,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"eagleEyeGain2":
+			{
+					"type" : "LEARN_BATTLE_SPELL_LEVEL_LIMIT",
+					"val" : 5,
+					"valueType" : "ADDITIVE_VALUE"
+			}
+		},
+		
+		"class" : "MAJOR",
+		"graphics" : 
+		{ 
+			"image" : "artifacts/iconsSmall/thirdEyeS", 
+			"scenarioBonus" : "artifacts/iconsBig/thirdEyeL", 
+			"map" : "artifacts/map/thirdEye" 
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{第三只眼}\r\n\r\n使英雄在战斗中学会敌方施展的一个5级魔法。并且佩戴第三只眼的英雄可以免疫对方的法术抑制（无需学会鹰眼术）。",
+			"event" : "一个老妇人，似乎是个曾经生活在偏僻寺院里的巫婆，在见到你后就向你尖叫，这可能是由于她的视力不佳。经过一段时间的抽搐之后，她突然送给你一尊金色的半身像，消失在了稀薄的空气中。",
+			"name" : "第三只眼"
+		},
+		"components":
+		[
+			"birdOfPerception",
+			"stoicWatchman",
+			"emblemOfCognizance"
+		],
+		"type" : [ "HERO" ],
+		"value" : 6500
+	}
+}

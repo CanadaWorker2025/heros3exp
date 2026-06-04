@@ -1,0 +1,211 @@
+{
+	"hotafirstaid":
+	{
+		"type": "ability", 
+		"targetType": "CREATURE", 
+		"name": "急救术增益", 
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 0,
+		"power": 0,
+		"defaultGainChance": 0, 
+		"gainChance":{},
+		"animation":{},
+		"flags" : { 
+			"positive": true, 
+			"nonMagical": true,
+			"special" : true 
+		},
+		"graphics":
+		{
+			"iconEffect": "spellsPavilion/firstaidtent1.png"
+		},
+		"sounds": {
+			"cast": null
+		},
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 10,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"effects":
+				{
+					"HPextra" :{
+						"type" : "STACK_HEALTH",
+						"val" : 0,
+						"valueType" : "PERCENT_TO_ALL",
+						"sourceType" : "CREATURE_ABILITY",
+						"propagator" : "HERO",
+						"limiters" : [
+							"noneOf",
+							"IS_UNDEAD",
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "SIEGE_WEAPON" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "GARGOYLE" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "NON_LIVING" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "MECHANICAL" ]
+							}
+						]
+					}
+				}
+			},
+			"none":
+			{
+				"description": "{急救术增益}\r\n\r\n提升所有己方生物的生命值5%，但对无生命单位无效。",
+				"effects":
+				{
+					"HPextra" :{
+						"type" : "STACK_HEALTH",
+						"val" : 0,
+						"valueType" : "PERCENT_TO_ALL",
+						"sourceType" : "CREATURE_ABILITY",
+						"propagator" : "HERO",
+						"limiters" : [
+							"noneOf",
+							"IS_UNDEAD",
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "SIEGE_WEAPON" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "GARGOYLE" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "NON_LIVING" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "MECHANICAL" ]
+							}
+						]
+					}
+				}
+			},
+			"basic":
+			{ 
+				"description": "{急救术增益}\r\n\r\n提升所有己方生物的生命值5%，但对无生命单位无效。",
+				"effects":
+				{
+					"HPextra" :{
+						"type" : "STACK_HEALTH",
+						"val" : 5,
+						"valueType" : "PERCENT_TO_ALL",
+						"sourceType" : "CREATURE_ABILITY",
+						"propagator" : "HERO",
+						"limiters" : [
+							"noneOf",
+							"IS_UNDEAD",
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "SIEGE_WEAPON" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "GARGOYLE" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "NON_LIVING" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "MECHANICAL" ]
+							}
+						]
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{急救术增益}\r\n\r\n提升所有己方生物的生命值10%，但对无生命单位无效。",
+				"effects":
+				{					
+					"HPextra" :{
+						"type" : "STACK_HEALTH",
+						"val" : 10,
+						"valueType" : "PERCENT_TO_ALL",
+						"sourceType" : "CREATURE_ABILITY",
+						"propagator" : "HERO",
+						"limiters" : [
+							"noneOf",
+							"IS_UNDEAD",
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "SIEGE_WEAPON" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "GARGOYLE" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "NON_LIVING" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "MECHANICAL" ]
+							}
+						]
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{急救术增益}\r\n\r\n提升所有己方生物的生命值15%，但对无生命单位无效。", 
+				"effects":
+				{
+					"HPextra" :{
+						"type" : "STACK_HEALTH",
+						"val" : 15,
+						"valueType" : "PERCENT_TO_ALL",
+						"sourceType" : "CREATURE_ABILITY",
+						"propagator" : "HERO",
+						"limiters" : [
+							"noneOf",
+							"IS_UNDEAD",
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "SIEGE_WEAPON" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "GARGOYLE" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "NON_LIVING" ]
+							},
+							{
+								"type" : "HAS_ANOTHER_BONUS_LIMITER",
+								"parameters" : [ "MECHANICAL" ]
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

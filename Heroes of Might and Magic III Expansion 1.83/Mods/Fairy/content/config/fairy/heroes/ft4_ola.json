@@ -1,0 +1,70 @@
+{
+	"ftD_Ola" :
+	{
+		"class" : "hunter",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "奥拉",
+			"biography" : "据说奥拉是这片土地上最优秀的珠宝商之一，即使是最有缺陷的原石，她也能将其切割出完美的作品。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供1水晶。",
+				"tooltip" : "{Gems}\r\n\r\n+1 Gem each day",
+				"name" : "+1 水晶"
+			}
+		},
+
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/olath/un32crys.png",
+			"specialtyLarge" : "fairy/heroes/olath/un44crys.png",
+			"large" : "fairy/heroes/olath/hpl299.png",
+			"small" : "fairy/heroes/olath/hps299.png"
+		},
+
+
+		"army" :
+		[
+			{
+				"creature" : "ftFairy1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 8,
+				"min" : 3
+			},
+			{
+				"creature" : "ftNoble1",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"crystal" : {
+					"subtype" : "resource.crystal",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}

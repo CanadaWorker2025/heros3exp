@@ -1,0 +1,118 @@
+{
+	"treelurker":
+	{
+		"name" :
+		{
+			"plural" : "棕狼",
+			"singular" : "棕狼"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 30,
+			 "min" : 16
+		},
+		"faction" : "preserve",
+		"aiValue" : 133,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 110
+		},
+		"damage" :
+		{
+			 "max" : 4,
+			 "min" : 2
+		},
+		"defense" : 3,
+		"fightValue" : 109,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C2Cree.def",
+      "map": "preserve/map/creatures/AVWC165.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS165P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL165P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide" : true,
+		"growth" : 8,
+		"hitPoints" : 10,
+		"level" : 2,
+		"upgrades":
+		[
+			"caveleaper"
+		],
+		"sound" :
+		{
+			"attack": "preserve/S165ATTK.wav",
+			"defend": "preserve/S165DFND.wav",
+			"killed": "preserve/S165KILL.wav",
+			"move": "preserve/S165MOVE.wav",
+			"wince": "preserve/S165WNCE.wav"
+		},
+		"speed" : 6,
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FLYING"
+				},
+				"values" : [ false, false, true, true, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.airShield"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 2, 2, 3, 3, 3 ]			
+			}
+		]
+	}
+}

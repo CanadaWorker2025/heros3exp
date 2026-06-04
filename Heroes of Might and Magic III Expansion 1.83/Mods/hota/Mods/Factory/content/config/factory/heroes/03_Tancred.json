@@ -1,0 +1,59 @@
+{
+	"03_Tancred" :
+	{
+    "class": "factoryAClass",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "坦克雷德",
+			"biography" : "早在炼金术士时代，坦克雷德就发现了一种古老的配方，可以在不使用魔法的情况下爆炸。令他非常沮丧的是，恩塔格瑞几乎完全不存在关键成分——硝石。只有在贾达密，坦克雷德才发现了充满这种稀有元素的巨大洞穴，并完善了火绳枪的设计，可以用这种可怕的力量投掷微小的子弹。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高快枪猎手或快枪猎头者的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "快枪猎手"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/03_Tancred/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/03_Tancred/bigS.bmp",
+			"large" : "factory/heroes/03_Tancred/bigP.bmp",
+			"small" : "factory/heroes/03_Tancred/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "archery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "hotaGunman"
+		}
+	}
+}
+

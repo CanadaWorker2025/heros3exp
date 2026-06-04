@@ -1,0 +1,75 @@
+{
+	// Naga Bank gives gems instead of sulfur as a reward
+	"core:creatureBank" : {
+		"types" : {
+			"nagaBank" : {
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards" : [
+							{ "amount" : 2, "type" : "naga" },
+							{ "amount" : 2, "type" : "naga" },
+							{ "amount" : 2, "type" : "naga", "upgradeChance" : 50 },
+							{ "amount" : 2, "type" : "naga" },
+							{ "amount" : 2, "type" : "naga" }
+						],
+						"resources" :
+						{
+							"gems" : 8,
+							"gold" : 4000
+						}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards" : [
+							{ "amount" : 3, "type" : "naga" },
+							{ "amount" : 3, "type" : "naga" },
+							{ "amount" : 3, "type" : "naga", "upgradeChance" : 50 },
+							{ "amount" : 3, "type" : "naga" },
+							{ "amount" : 3, "type" : "naga" }
+						],
+						"resources" :
+						{
+							"gems" : 12,
+							"gold" : 6000
+						}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards" : [
+							{ "amount" : 4, "type" : "naga" },
+							{ "amount" : 4, "type" : "naga" },
+							{ "amount" : 4, "type" : "naga", "upgradeChance" : 50 },
+							{ "amount" : 4, "type" : "naga" },
+							{ "amount" : 4, "type" : "naga" }
+						],
+						"resources" :
+						{
+							"gems" : 16,
+							"gold" : 8000
+						}
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards" : [
+							{ "amount" : 6, "type" : "naga" },
+							{ "amount" : 6, "type" : "naga" },
+							{ "amount" : 6, "type" : "naga", "upgradeChance" : 50 },
+							{ "amount" : 6, "type" : "naga" },
+							{ "amount" : 6, "type" : "naga" }
+						],
+						"resources" :
+						{
+							"gems" : 24,
+							"gold" : 12000
+						}
+					}
+				]
+			}
+		}
+	}
+}

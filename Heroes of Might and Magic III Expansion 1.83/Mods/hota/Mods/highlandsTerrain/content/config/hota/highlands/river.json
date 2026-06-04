@@ -1,0 +1,9 @@
+{
+    "highRiver":
+    {
+        "text" : "highland river",
+        "shortIdentifier": "hr", //must be 2 characters
+        "tilesFilename": "hota/highlands/hotaStatic/river/Hlrrvr",
+        "delta": "hota/highlands/hotaStatic/river/hlrdelt"
+    }
+}

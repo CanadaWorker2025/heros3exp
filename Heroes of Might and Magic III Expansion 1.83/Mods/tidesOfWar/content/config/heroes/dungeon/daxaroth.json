@@ -1,0 +1,68 @@
+{
+  "mdtDaxaroth" :
+  {
+    "class" : "overlord",
+    "female" : false,
+    "special" : true,
+	"spellbook": [],
+    "texts" :
+    {
+      "name" : "达萨洛斯",
+      "biography" : "达萨洛斯是龙女王摩莉尔的右爪。一些人怀疑摩莉尔的死是达萨洛斯的夺权阴谋。尽管如此，龙族还是听命于他，他俨然已是它们的新国王。",
+      "specialty" :
+      {
+        "description" : "使所有龙获得弧形龙息能力。",
+        "tooltip" : "Creature bonus: Dragons",
+        "name" : "弧形龙息"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/dungeon/daxaroth_spec-small",
+      "specialtyLarge" : "heroes/dungeon/daxaroth_spec-large",
+      "large" : "heroes/dungeon/daxaroth_portrait-large",
+      "small" : "heroes/dungeon/daxaroth_portrait-small"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "troglodyte",
+        "max" : 40,
+        "min" : 30
+      },
+      {
+        "creature" : "harpy",
+        "max" : 6,
+        "min" : 4
+      },
+      {
+        "creature" : "beholder",
+        "max" : 4,
+        "min" : 3
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "offence"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "fireMagic"
+      }
+    ],
+    
+	"specialty" : {
+		"bonuses" : {
+			"wideBreath" : {
+				"type" : "WIDE_BREATH",
+				"limiters" : ["DRAGON_NATURE"],
+			}
+		}
+	} 
+  }
+}

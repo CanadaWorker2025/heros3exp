@@ -1,0 +1,11 @@
+{
+    "id": "CAST_SPELL_NO_TURN",
+    "type": "CAST_SPELL",
+    "parameters": {
+        "spell": "meditation02",  // Replace with the actual spell ID you want the creature to cast
+        "type": "AUTOCAST",
+        "subtype": "BEGINNING_OF_TURN",
+        "useAI": true,
+        "useAnimation": true
+    }
+}

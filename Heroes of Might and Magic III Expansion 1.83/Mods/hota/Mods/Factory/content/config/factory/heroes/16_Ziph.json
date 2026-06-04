@@ -1,0 +1,74 @@
+{
+	"16_Ziph" :
+	{
+    "class": "factoryMClass",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "齐芙",
+			"biography" : "齐芙长期担任一位老法师的女仆，这位老法师瞧不起她和她的亲属。巫师不知道她的名字在精怪的语言中意味着“自由”，更不知道她在听他的讲座。有一天，齐芙将主人实验室的一半塞进一个魔法袋，躲进船舱，永远逃离了布拉卡达。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "霹雳闪电",
+				"description" : "使用霹雳闪电魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/16_Ziph/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/16_Ziph/bigS.bmp",
+			"large" : "factory/heroes/16_Ziph/bigP.bmp",
+			"small" : "factory/heroes/16_Ziph/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "hotaMechanic",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"lightningBolt" : {
+					"subtype" : "spell.lightningBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}	
+	}
+}
+

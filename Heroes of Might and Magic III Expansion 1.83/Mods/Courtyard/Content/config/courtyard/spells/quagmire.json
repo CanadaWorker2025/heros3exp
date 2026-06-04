@@ -1,0 +1,114 @@
+{
+	"quagmire" : {
+		"type": "combat",
+		"name": "禁足",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"targetType": "NO_TARGET",
+		"level": 3,
+		"power": 10, //i think power is irrevelant in this case
+		"defaultGainChance": 7, 
+		"gainChance" :
+		{
+			"rampart" : 6,
+			"fortress" : 20,
+			"necropolis" : 20,
+			"stronghold" : 15,
+			"tower" : 3,
+			"dungeon" : 15,
+			"castle" : 0,
+			"conflux" : 15,
+			"courtyard" : 15,
+		},
+		"animation":{
+			"hit":[ "courtyard/spells/Quagmire/Quagmire.def" ]
+		},
+		"flags" : { "positive": false, "negative": false, "indifferent": true },
+		"immunity":
+		{
+		},
+		"sounds": {
+			"cast": "courtyard/spells/SPELLQUAGMIRE.wav"
+		},
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/Quagmire/Quagmire_book1",
+			"iconEffect": "courtyard/spells/Quagmire/Quagmire_effect1",
+			"iconScroll": "courtyard/spells/Quagmire/Quagmire_scroll1",
+			"iconScenarioBonus": "courtyard/spells/Quagmire/Quagmire_bonus1",
+		},
+		"levels" : {
+			"base":{
+				"power": 10, //irrevelant?
+				"range" : "X", //like armageddon, death ripple, destroy undead
+				"targetModifier":{"smart":false},
+				"cost": 13,
+				"effects" : {
+					"noFleeing" : {
+						"type" : "BATTLE_NO_FLEEING",
+						"duration" : "N_TURNS",
+						"turns": 1,
+						"propagator" : "BATTLE_WIDE"
+					},
+				}
+			},
+			"none":
+			{	 
+				"description": "{禁足}\n\n使英雄1回合内无法离开战场（逃跑或投降）。\n\n若敌方有单位在禁足期间被击杀，魔法将失效。",
+				"effects" : {
+					"noFleeing" : {
+						"type" : "BATTLE_NO_FLEEING",
+						"duration" : "N_TURNS",
+						"turns": 1,
+						"propagator" : "BATTLE_WIDE"
+					}
+				}
+			},
+			"basic":
+			{	 
+				"description": "{初级禁足}\n\n使英雄1回合内无法离开战场（逃跑或投降）。\n\n若敌方有单位在禁足期间被击杀，魔法将失效。",
+				"cost": 12,
+				"effects" : {
+					"noFleeing" : {
+						"type" : "BATTLE_NO_FLEEING",
+						"duration" : "N_TURNS",
+						"turns": 1,
+						"propagator" : "BATTLE_WIDE"
+					}
+				}
+			},
+			"advanced":
+			{	 
+				"description": "{中级禁足}\n\n使英雄2回合内无法离开战场（逃跑或投降）。\n\n若敌方有单位在禁足期间被击杀，魔法将失效。",
+				"cost": 10,
+				"effects" : {
+					"noFleeing" : {
+						"type" : "BATTLE_NO_FLEEING",
+						"duration" : "N_TURNS",
+						"turns": 2,
+						"propagator" : "BATTLE_WIDE"
+					}
+				}
+			},
+			"expert":
+			{	 
+				"description": "{高级禁足}\n\n使英雄3回合内无法离开战场（逃跑或投降）。\n\n若敌方有单位在禁足期间被击杀，魔法将失效。",
+				"cost": 10,
+				"effects" : {
+					"noFleeing" : {
+						"type" : "BATTLE_NO_FLEEING",
+						"duration" : "N_TURNS",
+						"turns": 3,
+						"propagator" : "BATTLE_WIDE"
+						//"limiters" : [ "OPPOSITE_SIDE" ],
+					}
+				}
+			}
+		}
+	}	
+}

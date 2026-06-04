@@ -1,0 +1,63 @@
+{
+	"rStrn02"://Wolf Warrior
+	{
+		"name" :
+		{
+			"plural" : "恶狼战士",
+			"singular" : "恶狼战士"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction": "stronghold",
+		"aiValue" : 203,
+		"fightValue" : 174,
+		"doubleWide" : true,
+		"attack" : 7,
+		"defense" : 6,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"damage" :
+		{
+			"min" : 3,
+			"max" : 4
+		},
+		"speed" : 8,
+		"upgrades": ["hobgoblinWolfRider"],
+		"graphics" :
+		{
+			"animation" : "creatures/stronghold/battle/rStrn02B.def",
+			"map" : "creatures/stronghold/map/rStrn02M.def",
+			"iconSmall" : "creatures/stronghold/iconsSmall/rStrn02S.bmp",
+			"iconLarge" : "creatures/stronghold/iconsBig/rStrn02L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 12,
+		"growth" : 9,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "HGWRATTK.wav",
+			"defend": "HGWRDFND.wav",
+			"killed": "HGWRKILL.wav",
+			"move": "HGWRMOVE.wav",
+			"wince": "HGWRWNCE.wav"
+		},
+		"abilities":
+		{
+			"Jousting": { "type" : "JOUSTING", "val":5 }
+		}
+	}
+}
+
+

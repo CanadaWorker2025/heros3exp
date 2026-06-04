@@ -1,0 +1,38 @@
+{
+ "core:warMachineFactory" : {
+        "types" : {
+            "object2" : {
+                "name" : "兵工厂（售卖药剂车）",
+                "creatures" : [["potionCartCreature"]],
+                "templates" : {
+                    "base" : {
+                        "animation" : "courtyard/map/Mlabi",
+                        "visitableFrom" : [ "---", "+++", "+++" ],
+                        "mask" : [ "VVV", "VAB"]
+                    }
+                },
+                "rmg" : {
+                    "value"   : 2000,
+                    "rarity"	: 40,
+					"zoneLimit" : 1
+                }
+            },
+			"object3" : {
+                "name" : "兵工厂（售卖魔相机）",
+                "creatures" : [["cameraObscuraCreature"]],
+                "templates" : {
+                    "base" : {
+                        "animation" : "courtyard/map/Mcamr",
+                        "visitableFrom" : [ "---", "+++", "+++" ],
+                        "mask" : [ "VVV", "VAB"]
+                    }
+                },
+                "rmg" : {
+                    "value"   : 2000,
+                    "rarity"	: 20,
+					"zoneLimit" : 1
+                }
+            }
+        }
+    }
+}	

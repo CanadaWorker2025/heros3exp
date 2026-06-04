@@ -1,0 +1,57 @@
+{
+	"graveGlory" : {
+		"handler":"configurable",
+		"name" : "墓穴",
+		"types" : {
+			"graveGlory" : {
+				"name": "墓穴(花费移动力挖掘，可获得宝物)",
+				"rmg" : {
+					"value" : 500,
+					"rarity" : 30,
+					"zoneLimit" : 4
+				},
+				"rewards" :
+				[
+					{
+						"message" : "{墓穴}\r\n\r\n你发现一座崭新的坟墓，或许它还是新修的，你掩住口鼻，拿起铲子挖开，获得了一些东西。只是这可怜的墓主只能曝尸荒野，由于你的行为令人不齿，也因此使你的士气大大低落。",
+						"appearChance" : { "max" : 50 },
+						"resources" : [
+							{
+								"type" : "gold",
+								"amount" : [ 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 ]
+							}
+						],
+						"bonuses" : [ { "type" : "MORALE", "val" : -3, "duration" : "ONE_BATTLE" } ],
+						"artifacts" : [ { "class" : "TREASURE" } ],
+						"movePercentage" : 0,
+						"removeObject" : true
+					},
+					{
+						"message" : "{墓穴}\r\n\r\n你发现一座崭新的坟墓，或许它还是新修的，你掩住口鼻，拿起铲子挖开，获得了一些东西。只是这可怜的墓主只能曝尸荒野，由于你的行为令人不齿，也因此使你的士气大大低落。",
+						"appearChance" : { "min" : 50 },
+						"resources" : [
+							{
+								"type" : "gold",
+								"amount" : [ 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 ]
+							}
+						],
+						"bonuses" : [ { "type" : "MORALE", "val" : -3, "duration" : "ONE_BATTLE" } ],
+						"artifacts" : [ { "class" : "MINOR" } ],
+						"movePercentage" : 0,
+						"removeObject" : true
+					}
+				],
+
+				"visitMode" : "hero",
+				"templates" : {
+					"avxgravw" : {
+						"animation" : "GloryObject/glorygrave",
+						"mask" : [ "A" ],
+						"visitableFrom" : [ "+++", "+++", "+++" ], //disabled for not spawning at random maps
+						"allowedTerrains": [ "fieldGlory"]
+					}
+				}
+			}
+		}
+	}	
+}

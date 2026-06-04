@@ -1,0 +1,55 @@
+{
+	"13bulwarkBiarma" : {
+		"class" : "elder",
+		"female" : true,
+		"onlyOnMapWithoutWater" : true,
+		"images" : {
+			"large" : "hota/bulwark/heroes/biarma/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/biarma/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/biarma/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/biarma/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "firstAidTent",
+				"min" : 1,
+				"max" : 1
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "firstAid",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"secondary" : "firstAid"
+		},
+		"spellbook" : [
+			"dispel"
+		],
+		"texts" : {
+			"name" : "拜娅玛",
+			"biography" : "沃里城中人人都知道：当已经无药可救时，病人最后的也是唯一的出路就是去找老拜娅玛。那些敢于面对她的人，早已不在乎拜娅玛究竟想让谁重获新生，而是甘愿献出自己的头骨，作为她那偏僻居所栅栏上令人毛骨悚然的装饰。",
+			"specialty" : {
+				"name" : "急救术",
+				"description" : "在急救术技能上每级得到5%的额外奖励。",
+				"tooltip" : "Skill Bonus: First Aid"
+			}
+		}
+	}
+}

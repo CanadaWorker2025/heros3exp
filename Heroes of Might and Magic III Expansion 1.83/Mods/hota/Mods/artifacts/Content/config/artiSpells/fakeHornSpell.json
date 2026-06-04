@@ -1,0 +1,97 @@
+{
+	"fakeHornSpell":
+	{
+		"type": "combat",
+		"targetType" : "CREATURE",
+		"name": "召唤夺心魔",
+		"school":
+			{
+				"air": false,
+				"earth": false,
+				"fire": false,
+				"water": true
+			},		
+	"level": 5,
+	"power": 30,
+	"defaultGainChance": 0, 
+	"gainChance":
+	{
+	},
+	"animation":{
+			"affect":["C13SPF0"]
+		},
+		"sounds": {
+			"cast": "ANIMDEAD"
+		},
+	"flags" : {
+		"rising": true,
+		"special": true
+	},
+	//graphics - OPTIONAL; object;
+	"graphics":
+	{
+		"iconBook": "hota/artifactsCampaignBonuses/fakehornEffect.bmp",
+		"iconScroll": "hota/artifactsCampaignBonuses/fakehornScroll.bmp",
+		"iconScenarioBonus": "hota/artifactsCampaignBonuses/fakehornScene.bmp",
+		"iconImmune":"hota/artifactsCampaignBonuses/fakehornImmune.bmp",
+		"iconEffect": "hota/artifactsCampaignBonuses/fakehornEffect.bmp"
+	},
+	"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "absolute",
+				"hota.neutralcreatures:creature.fangarm" : "absolute",
+				"bonus.GARGOYLE" : "absolute"
+			}
+		},
+
+	"levels":
+	{
+		"base": {
+				"description" : "{召唤夺心魔}\r\n\r\n从尸体上召唤一队夺心魔，战后不会消失。对亡灵和无生命的生物无效。",
+				"power" : 40,
+				"cost" : 0,
+				"targetModifier":{"smart":false},
+				"range" : "0",
+				"battleEffects":{
+					"demonSummon":{
+						"id":"hota.neutralcreatures:fangarm",
+						"permanent":true,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+		"none":
+		{ 			
+		},
+		"basic":
+		{
+		},
+		"advanced":
+		{	
+		},
+		"expert":
+		{	
+		}
+	}
+  },
+  "core:animateDead" : {
+				"graphics":
+				{
+					"iconImmune":"hota/artifactsCampaignBonuses/immuneRaise"
+				}
+			},
+			"core:resurrection" : {
+				"graphics":
+				{
+					"iconImmune":"hota/artifactsCampaignBonuses/immuneResurrection"
+				}
+			},
+			"core:sacrifice" : {
+				"graphics":
+				{
+					"iconImmune":"hota/artifactsCampaignBonuses/immuneSacriface"
+				}
+			}
+}

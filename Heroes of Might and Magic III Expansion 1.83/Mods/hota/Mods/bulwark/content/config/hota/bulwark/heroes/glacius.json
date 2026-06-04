@@ -1,0 +1,61 @@
+{
+	"10bulwarkGlacius" : {
+		"class" : "elder",
+		"female" : false,
+		"images" : {
+			"large" : "hota/bulwark/heroes/glacius/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/glacius/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/glacius/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/glacius/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "learning",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"frostRing" : {
+					"subtype" : "spell.frostRing",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10
+				}
+			}
+		},
+		"spellbook" : [
+			"frostRing"
+		],
+		"texts" : {
+			"name" : "格拉修斯",
+			"biography" : "沃里广袤的土地，常年积雪覆盖，看似死寂；但懂得探寻的人会发现，这片土地上那些无形的居民，或许是绝佳的交谈对象，甚至是力量的源泉。格拉修斯素有“亡灵克星”之名：他贪婪地吞噬亡灵的能量，并将之释放到敌人身上，而亡灵空洞的躯壳则会化作阵阵魔法光芒。",
+			"specialty" : {
+				"name" : "寒冰魔环",
+				"description" : "施放寒冰魔环时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位多受到10%的伤害。",
+				"tooltip" : "Spell Bonus: Frost Ring"
+			}
+		}
+	}
+}

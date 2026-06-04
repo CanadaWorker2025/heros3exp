@@ -1,0 +1,110 @@
+{
+	"ifDark07":
+	{
+		"name" :
+		{
+			"plural" : "黑恶魔",
+			"singular" : "黑恶魔"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction": "inferno",
+		"aiValue" : 7114,
+		"fightValue" : 5242,
+		"attack" : 28,
+		"defense" : 26,
+		"cost" :
+		{
+			"gold" : 4500,
+			"mercury" : 2
+		},
+		"damage" :
+		{
+			"min" : 35,
+			"max" : 45
+		},
+		"speed" : 18,
+		"upgrades": ["archDevil"],
+		"graphics" :
+		{
+			"animation" : "creatures/inferno/battle/CINF27.def",
+			"map" : "creatures/inferno/map/AVWinf07.def",
+			"iconSmall" : "creatures/inferno/iconsSmall/CINF27S.bmp",
+			"iconLarge" : "creatures/inferno/iconsBig/CINF27B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 210,
+		"growth" : 1,
+		"level" : 7,
+		"sound" :
+		{
+			"attack": "ADVLATTK.wav",
+			"defend": "ADVLDFND.wav",
+			"killed": "ADVLKILL.wav",
+			"move": "ADVLMOVE.wav",
+			"wince": "ADVLWNCE.wav",
+			"startMoving": "ADVLEXT1.wav",
+			"endMoving": "ADVLEXT2.wav"
+		},
+		"abilities" :
+		{
+			"canFly" :
+			{
+				"type" : "FLYING",
+				"subtype" : "movementTeleporting"
+			},
+			"basicSlayer" : { "type" : "KING", "val": 2 },
+			"hateAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.angel",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateArchAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.archangel",
+				"val" : 50,
+				"hidden": true
+			},
+			"hateSeraphs" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.ffseraph",
+				"val" : 50,
+				"description" : "{恶魔使徒}\n对天使，大天使，炽天使造成额外50%伤害",
+				"icon" : "spells/extraEffect/hate2.png"	
+			},
+			"decreaseLuck" :
+			{
+				"type" : "LUCK",
+				"val" : -1,
+				"stacking" : "Devils",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"description" : "{减少敌人幸运}\n面对黑恶魔使敌人的运气减少1点",
+				"icon": "bonuses/misfortuneaura.png",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			},
+			"petrification" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 40,
+				"icon": "bonuses/turntostone1.png",
+			}
+		}
+	}
+}
+
+

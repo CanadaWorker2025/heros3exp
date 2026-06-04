@@ -1,0 +1,93 @@
+{
+	"redtemplar" :
+	{
+		"faction" : "cathedral",
+		"animation" :
+		{
+			"battle" : 
+			{
+                 "male"   : "cathedral/battle/CH22b.def",
+				"female" : "cathedral/battle/CH23b.def"
+				
+			},
+		},
+		"mapObject" : {
+			"templates" : {
+				"male"   : { "animation" : "cathedral/map/AH23_.def" },
+				"female" : { "animation" : "cathedral/map/AH23_.def" }
+			}
+		},
+		
+		"name" : "神殿骑士",
+		
+		"affinity" : "might",
+		
+	        "commander" : "saRedFanatic",
+
+		"primarySkills" :
+		{
+			"attack"     : 2,
+			"defence"    : 1,
+			"spellpower" : 1,
+			"knowledge"  : 2
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 30,
+			"defence"    : 30,
+			"spellpower" : 20,
+			"knowledge"  : 20
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 25,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 25
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 7,
+			"archery"      : 7,
+			"logistics"    : 6,
+			"scouting"     : 6,
+			"diplomacy"    : 4,
+			"navigation"   : 3,
+			"leadership"   : 6,
+			"wisdom"       : 5,
+			"mysticism"    : 3,
+			"luck"         : 7,
+			"ballistics"   : 8,
+			"eagleEye"     : 3,
+			"necromancy"   : 0,
+			"estates"      : 6,
+			"fireMagic"    : 4,
+			"airMagic"     : 4,
+			"waterMagic"   : 3,
+			"earthMagic"   : 3,
+			"scholar"      : 3,
+			"tactics"      : 7,
+			"artillery"    : 8,
+			"learning"     : 3,
+			"offence"      : 8,
+			"armorer"      : 7,
+			"intelligence" : 4,
+			"sorcery"      : 4,
+			"resistance"   : 4,
+			"firstAid"     : 7
+		},
+		"defaultTavern" : 5,
+		"tavern" :
+		{
+			"castle"     : 4,
+			"rampart"    : 4,
+			"tower"      : 4,
+			"inferno"    : 0,
+			"necropolis" : 4,
+			"dungeon"    : 4,
+			"stronghold" : 4,
+			"fortress"   : 4,
+			"conflux"    : 4
+		}
+	}
+}

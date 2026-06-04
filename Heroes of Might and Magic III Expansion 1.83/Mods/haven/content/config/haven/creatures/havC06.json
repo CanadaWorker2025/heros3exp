@@ -1,0 +1,193 @@
+{
+	"havC06":
+	{
+		"name" :
+		{
+			"plural" : "宝藏猎人",
+			"singular" : "宝藏猎人"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "haven",
+		"aiValue" : 281,
+		"attack" : 10,
+        "cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 4
+		},
+		"defense" : 7,
+		"fightValue" : 287,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav06.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/AVWHAV06.def",
+			"iconSmall" : "haven/iconsSmall/port6S.bmp",
+			"iconLarge" : "haven/iconsBig/port6.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+     			"projectile" : "PELFX.DEF",	
+			    "attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},
+		},
+		"growth" : 7,
+		"horde" : 3,
+		"hitPoints" : 15,
+		"level" : 3,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack" : "haven/CHV3ATTK.wav",
+			"defend" : "haven/CHV3DFND.wav",
+			"killed" : "haven/CHV3KILL.wav",
+			"move": "haven/CHV3MOVE.wav",
+			"shoot": "haven/CHV3SHOT.wav",
+			"wince" : "haven/CHV3WNCE.wav"
+		},
+		"speed" : 7,
+		"abilities" :
+		{
+			"shooter" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noCastByDefault" :
+			{
+				"type" : "NO_SPELLCAST_BY_DEFAULT"
+			},
+			"castMarkedTarget" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.smokeShell",
+				"val" : 0,
+				"icon" : "haven/icons/bonuses/shot.png"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 30
+			},
+			"attackInWater" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"defenceInWater"  : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"speedInWater" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee", //shield effect
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeRanged", //shield effect
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		]
+	}
+}

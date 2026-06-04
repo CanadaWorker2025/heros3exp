@@ -1,0 +1,30 @@
+{
+  "core:estates": {
+    "basic": {
+      "description": "{初级理财术}\n\n为你的王国每天增加250黄金。",
+      "effects": {
+        "main": {
+          "val": 250
+        }
+      }
+    },
+
+    "advanced": {
+      "description": "{中级理财术}\n\n为你的王国每天增加500黄金。",
+      "effects": {
+        "main": {
+          "val": 500
+        }
+      }
+    },
+
+    "expert": {
+      "description": "{高级理财术}\n\n为你的王国每天增加1000黄金。",
+      "effects": {
+        "main": {
+          "val": 1000
+        }
+      }
+    }
+  }
+}

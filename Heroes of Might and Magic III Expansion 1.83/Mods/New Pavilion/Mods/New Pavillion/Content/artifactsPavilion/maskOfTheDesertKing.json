@@ -1,0 +1,38 @@
+{
+	"maskOfTheDesertKing":
+	{
+		"type": ["HERO"],
+		"slot" : "HEAD",
+		"class": "RELIC",
+		"value": 8000,	
+		"text":
+		{
+			"name": "法老面具",
+			"description": "{法老面具}\r\n\r\n戴在面部，会使你的知识技能提高4点，并提高中立生物加入的几率（降低野外生物敌意1点）。",
+			"event": "在古城的废墟中，你发现了一个破旧的面具。当你戴上它时，过去帝国的盛景闪现在你的脑海中，你听到一个声音：“自古无不灭之朝。也许你会成为下一个雄主。”"
+		},
+		"graphics":
+		{
+			"image": "artifactsPavilion/maskOfTheDesertKing.png",
+			"scenarioBonus": "artifactsPavilion/bonus3.png",
+			"map": "artifactsPavilion/maskOfTheDesertKingmap.def"
+		},
+		"bonuses":
+		{
+			
+			"knowledge":
+			{
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			},
+			"diplomacy":
+			{
+				"type" : "WANDERING_CREATURES_JOIN_BONUS",
+				"val" : 1,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		}
+	}
+}

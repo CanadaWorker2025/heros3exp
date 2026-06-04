@@ -1,0 +1,58 @@
+{
+	"g_agnes" :
+	{
+		"class" : "guardian",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "卡勒姆",
+			"biography" : "卡勒姆自幼就在精灵的军队中服役，他对于敌人有着极为敏锐的洞察力，这使长官对其非常赞赏。但是因为战火毁坏了妹妹的花田，让她痛不欲生时，卡勒姆也开始明白战争的危害。为了妹妹能够更好的生活，他决定不再为埃里而战。",
+			"specialty" :
+			{
+				"description" : "在侦察术上每级得到5%的额外奖励。",
+				"tooltip" : "Bonus: secondary skill",
+				"name" : "侦察术"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/agnes/UN32T186.bmp",
+			"specialtyLarge" : "preserve/heroes/agnes/UN44T186.bmp",
+			"large" : "preserve/heroes/agnes/HPL006GN.bmp",
+			"small" : "preserve/heroes/agnes/HPS006GN.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "scouting"
+			}
+		],
+		
+		"specialty" : {
+			"secondary" : "scouting"
+		}
+	}
+}

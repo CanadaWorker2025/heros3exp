@@ -1,0 +1,58 @@
+{
+	"name" : "HotA balance mod",
+	"description" : "Balance improvements made by HotA Crew for Horn of The Abbys expansion.", 
+	"modType" : "Mechanics",
+	"author": "Kuririn & avatar",
+	"contact": "http://forum.df2.ru/index.php?showtopic=32286",
+	"version" : "1.3.6",
+	"settings" : {
+		"heroes" :
+		{
+			"tavernInvite"            : true,
+			"specialtyCreatureGrowth" : 20
+		},
+		"dwellings" : {
+			"accumulateWhenOwned" : true
+		},
+		"mapObjects" : 
+		{
+			"h3BugQuestTakesEntireArmy" : true
+		},
+		"pathfinder" :
+		{
+			"useMonolithOneWayUnique" : true,
+			"useMonolithOneWayRandom" : true,
+			"originalFlyRules" : false
+		},
+		"combat": {
+			"badLuckChance" : [2,4,6],
+			"areaShotCanTargetEmptyHex" : true
+		}
+	},
+	"factions" :
+	[
+		"config/hotaGameBalance/factions.json"
+	],
+	"creatures" :
+	[
+		"config/hotaGameBalance/creatures.json"
+	],
+	"spells" :
+	[
+		"config/hotaGameBalance/spells.json",
+		"config/hotaGameBalance/catapultHotA.json"
+	],
+	"artifacts" :
+	[
+		"config/hotaGameBalance/tentHotA.json"
+	],
+	"skills" :
+	[
+		"config/hotaGameBalance/skillHotA.json"
+	],
+	"objects" :
+	[
+		"config/hotaGameBalance/creatureBanks.json",
+		"config/hotaGameBalance/objectsRefusable.json"
+	]
+}

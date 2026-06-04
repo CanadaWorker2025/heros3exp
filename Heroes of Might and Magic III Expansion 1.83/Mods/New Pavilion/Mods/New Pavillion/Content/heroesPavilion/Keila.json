@@ -1,0 +1,81 @@
+{
+	"keila" :
+	{
+		"class" : "embalmer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "凯拉",
+			"biography" : "年轻的凯拉从不寻求什么名望或认同，但是当一位著名的魔法师邀请她做助手时，她无法拒绝。抄写成百上千的羊皮纸和大量文献给了她很多神秘的知识和满足感。",
+			"specialty" :
+			{
+				"description" : "使用迟缓秘法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Spell Bonus: Slow",
+				"name" : "迟缓秘法"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/32Slow.bmp",
+			"specialtyLarge" : "speciconsPavilion/44Slow.bmp",
+			"large" : "heroportraitsPavilion/Keila3.png",
+			"small" : "heroportraitsPavilion/Keila3Small.png"
+		},
+		
+		"spellbook" :
+		[
+			"slow", "specialSlowPav" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			}
+		],
+		"specialty":
+		{
+			"bonuses" : {
+//				"slow" : {
+//					"subtype" : "spell.slow",
+//					"type" : "SPECIAL_SPELL_LEV",
+//					"updater" : "TIMES_HERO_LEVEL",
+//					"val" : 3
+//				}
+			"specialSlow" : 
+			{
+				"subtype" : "spell.specialSlowPav",
+				"type" : "SPELL"
+			} 
+
+			}
+		}
+	}
+}
+
+

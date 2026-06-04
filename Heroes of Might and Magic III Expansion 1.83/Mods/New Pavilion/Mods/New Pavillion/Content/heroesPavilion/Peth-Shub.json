@@ -1,0 +1,76 @@
+{
+	"peth-Shub" :
+	{
+		"class" : "embalmer",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "佩-沙伯",
+			"biography" : "神秘的猎鹰族人佩-沙伯在皇室卫队服役多年。由于他敏锐的直觉和精准的眼光，他消除了对法老的无数威胁，并成为最受信赖的护卫官之一。",
+			"specialty" :
+			{
+
+				"description" : "在鹰眼术上每级得到5%的额外奖励，可以学习高级魔法。",
+				"tooltip" : "Secondary Skill Bonus: Eagle Eye",
+				"name" : "鹰眼术"				
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/32Eagle.bmp",
+			"specialtyLarge" : "speciconsPavilion/44Eagle.bmp",
+			"large" : "heroportraitsPavilion/PethShub.png",
+			"small" : "heroportraitsPavilion/PethShubSmall.png"
+		},
+
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "eagleEye"
+			}
+		],
+		"specialty": 
+		{
+			"bonuses" : {
+				"eagleEye" : {
+			    "targetSourceType" : "SECONDARY_SKILL",
+				"type" : "LEARN_BATTLE_SPELL_CHANCE",
+				"val" : 5,
+				"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}		
+
+	}
+}

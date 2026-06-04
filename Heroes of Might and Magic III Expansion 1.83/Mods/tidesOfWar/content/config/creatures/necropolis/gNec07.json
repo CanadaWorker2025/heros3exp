@@ -1,0 +1,107 @@
+{
+	"gNec07"://DarkChampion
+	{
+		"name" :
+		{
+			"plural" : "幽龙",
+			"singular" : "幽龙"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction": "necropolis",
+		"aiValue" : 4696,
+		"fightValue" : 3228,
+		"doubleWide" : true,
+		"attack" : 19,
+		"defense" : 18,
+		"cost" :
+		{
+			"gold" : 3000,
+			"mercury": 1
+		},
+		"damage" :
+		{
+			"min" : 25,
+			"max" : 50
+		},
+		"speed" : 15,
+		"upgrades": ["ghostDragon"],
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/gNec07B.def",
+			"map" : "creatures/necropolis/map/gNec07M.def",
+			"iconSmall" : "creatures/necropolis/iconsSmall/gNec07S.bmp",
+			"iconLarge" : "creatures/necropolis/iconsBig/gNec07L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 200,
+		"growth" : 1,
+		"level" : 7,
+		"sound" :
+		{
+			"attack": "GHDRATTK.wav",
+			"defend": "GHDRDFND.wav",
+			"killed": "GHDRKILL.wav",
+			"move": "GHDRMOVE.wav",
+			"wince": "GHDRWNCE.wav"
+		},
+		"abilities":
+		{
+			"canFly" :
+			{
+				"type" : "FLYING",
+				"icon": "bonuses/e_fly2.png"
+			},
+			"undead" : 
+			{ 
+				"type" : "UNDEAD",
+			},
+			"basicSlayer" : { "type" : "KING", "val": 0 },
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"dragonSkeleton" : 
+			{
+				"type" : "SKELETON_TRANSFORMER_TARGET",
+				"subtype" : "boneDragon",
+				"hidden": true
+			},
+			"decreaseMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"stacking" : "Undead Dragons",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"description" : "{减少敌人士气}\n面对幽龙使敌人的士气减少1点",
+				"icon": "bonuses/e_moral.png",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			},
+			"castLength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.nec06",
+				"val" : 1
+			},
+			"castDisease" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.nec06",
+				"val" : 20,
+				"icon": "bonuses/e_fear.png"
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,78 @@
+{
+    "ffredcrossbowman":
+    {
+    "name": {
+      "plural": "十字弓手",
+      "singular": "十字弓手"
+    },
+    "advMapAmount": {
+ "max" : 25,
+ "min" : 16
+    },
+    "faction": "castle",
+    "aiValue": 185,
+    "attack": 7,
+    "cost": {
+      "gold": 150
+    },
+    "damage": {
+ "max" : 5,
+ "min" : 3
+    },
+    "defense": 4,
+    "fightValue": 116,
+    "graphics": {
+      "animation" : "creatures/castle/battle/C192.def",
+      "map" :       "creatures/castle/map/AVWC192.def",
+	"iconSmall" : "creatures/castle/iconsSmall/CPrS192C.bmp",
+	"iconLarge" : "creatures/castle/iconsBig/CPRL192C.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.20,
+        "attack": 1,
+        "idle": 10
+      },
+			"missile" :
+			{
+				"projectile": "PPLIZAX.DEF",
+				"attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+    },
+    "growth": 9,
+    "hitPoints": 10,
+	"upgrades": ["marksman"],
+    "shots" : 24,
+		"level": 2,
+		"sound" :
+		{
+			"attack": "HCRSATTK.wav",
+			"defend": "HCRSDFND.wav",
+			"killed": "HCRSKILL.wav",
+			"move": "HCRSMOVE.wav",
+			"shoot": "HCRSSHOT.wav",
+			"wince": "HCRSWNCE.wav"
+		},
+    "speed": 6,
+		"abilities" :
+		{	
+                    "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noDistancePenalty" :
+			{
+				"type" : "NO_DISTANCE_PENALTY"
+			}
+		}
+	}
+}

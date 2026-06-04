@@ -1,0 +1,72 @@
+{
+	"h_karth" :
+	{
+    "class": "pathfinder",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "卡思",
+			"biography" : "卡思认为自己能够看到任何阴谋，有一次他竟然愚蠢地指控凯瑟琳王后是个克里根恶魔的内应。当然他这么做的下场是被流放到埃拉西亚的边境小镇。但是他却宣称自己有充足的证据。也许回到埃拉西亚揪出这个最大的“奸细”是他后半生追寻的目标。在完成这个目标之前，他可以与任何人合作。",
+			"specialty" :
+			{
+				"description" : "在后勤学上每级得到5%的额外奖励。",
+				"tooltip" : "Secondary skill bonus: Logistics",
+				"name" : "后勤学"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/karth/UN32T203.bmp",
+			"specialtyLarge" : "asylum/heroes/karth/UN44T203.bmp",
+			"large" : "asylum/heroes/karth/HPL007PF.bmp",
+			"small" : "asylum/heroes/karth/HPS007PF.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "winddancer",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "shadowhunter",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}
+

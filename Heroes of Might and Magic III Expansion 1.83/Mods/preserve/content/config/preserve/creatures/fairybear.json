@@ -1,0 +1,129 @@
+{
+	"fairybear":
+	{
+		"name" :
+		{
+			"plural" : "德鲁伊",
+			"singular" : "德鲁伊"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 5
+		},
+		"faction" : "preserve",
+		"aiValue" : 1554,
+		"attack" : 15,
+		"cost" :
+		{
+			"gold" : 900
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 16
+		},
+		"defense" : 14,
+		"fightValue" : 1341,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C6Bear.def",
+      "map": "preserve/map/creatures/AVWC173.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS173P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL173P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1,
+        "attack": 1,
+        "idle": 10
+      },
+	  "missile" :
+			{
+				"projectile" : "CPRZEAX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+    },
+		"growth" : 2,
+		"shots" : 8,
+		"hitPoints" : 55,
+		"level" : 6,
+		"upgrades":
+		[
+			"mysticalbear"
+		],
+		"sound" :
+		{
+			"attack" : "CHYDDFND",
+			"defend" : "TELEIN",
+			"killed" : "GENIDFND",
+			"move" : "preserve/S173MOVE.wav",
+			"shoot": "CHYDDFND",
+			"wince" : "preserve/S173WNCE.wav"
+ 		},
+		"speed" : 6,
+    "abilities":
+      {
+		"canShoot" : {
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"throwingStorm" :
+			{
+				"description" : "{幸运奖励}\n访问地图上的幸运建筑物可获得额外奖励",
+				"icon" : "preserve/icons/bonuses/luck.png",
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.leshyBolt"
+			}
+	    },
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			}
+		]
+	}
+}

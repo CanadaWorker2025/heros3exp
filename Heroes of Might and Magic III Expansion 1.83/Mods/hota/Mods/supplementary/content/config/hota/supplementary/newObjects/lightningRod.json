@@ -1,0 +1,270 @@
+{
+	"lightningRod" :{
+		"name": "闪电发生器",
+		"handler": "configurable",
+		"types" : {
+			"lightningRod" :
+			{
+				"name": "闪电发生器",
+				"rmg" : {
+					"value" : 5500,
+					"rarity" : 10,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : ["FAERIE"]
+				},
+				"canRefuse" : true,
+				"rewards" : [
+					{
+						"message" : "{闪电发生器}\r\n\r\n闪电发生器是对使用电能的一次小实验，现在控制器已经充能完毕，你需要体验一次闪电的力量吗？",
+						"bonuses" : 
+					[
+						{
+						"type" : "OPENING_BATTLE_SPELL",
+						"val" : 3,
+						"subtype" : "spell.teslaLightning",
+						"propagator" : "HERO",
+						"duration" : "ONE_BATTLE"
+						}
+					]
+					}
+				],
+				"onVisitedMessage": "{闪电发生器}\r\n\r\n闪电发生器正在充能中，等待着下一次的启动实验。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true
+				},
+				"templates" :
+				{
+					"AVCnlr01" :
+					{
+						"animation" : "hota/supplementary/others/AVCnlr01",
+						"visitableFrom" : [ "---", "-++", "+++" ],
+						"mask" : ["VVV", "VVV", "VBA"],
+						"allowedTerrains": ["wasteland"]
+					}
+				}
+			}
+		}
+	},
+	"windGenerator" :{
+		"name": "风力发电机",
+		"handler": "configurable",
+		"base" : {
+			"sounds" : {
+				"ambient" : ["LOOPWIND"],
+				"visit" : ["GENIE"]
+			}
+		},
+		"types" : {
+			"windGenerator" : {
+				"aiValue" : 1500,
+				"rmg" : {
+					"value"		: 1500,
+					"rarity"	: 40,
+					"zoneLimit" : 1
+				},
+				"compatibilityIdentifiers" : [ "object" ],
+
+				"onVisitedMessage" : "{风力发电机}\r\n\r\n风力发电机暂时没有产生更多的能源，你可以等它进行下一次的充能。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true,
+					"rewards" : true
+				},
+				"templates" :
+				{
+					"windGenerator" :
+					{
+						"animation" : "hota/supplementary/others/windGene",
+						"visitableFrom" : [ "---", "-++", "+++" ],
+						"mask" : ["VVVV", "VVVV", "VVVV","VVBA"],
+						"allowedTerrains": ["wasteland"]
+					}
+				},
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"rewards" : [
+					{
+						"appearChance": 
+						{
+							"max" : 10
+						},
+						"bonuses" :
+						[
+							{
+								"type" : "GENERATE_RESOURCE",
+								"subtype" : "resource.crystal",
+								"val" : 1,
+								"valueType" : "BASE_NUMBER",
+								"stacking" : "ALWAYS",
+								"duration" : "ONE_WEEK"
+							}
+						],
+						"resources" : [
+							{
+								"type" : "crystal",
+								"amount" : 5
+							}
+						],
+						"message": "{风力发电机}\r\n\r\n看起来风力发电机是一种使用风能发电的复杂装置，利用风能发电你的生产效率大大提升了。"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 10,
+							"max" : 20
+						},
+						"bonuses" :
+						[
+							{
+								"type" : "GENERATE_RESOURCE",
+								"subtype" : "resource.gems",
+								"val" : 1,
+								"valueType" : "BASE_NUMBER",
+								"stacking" : "ALWAYS",
+								"duration" : "ONE_WEEK"
+							}
+						],
+						"resources" : [
+							{
+								"type" : "gems",
+								"amount" : 5
+							}
+						],
+						"message": "{风力发电机}\r\n\r\n看起来风力发电机是一种使用风能发电的复杂装置，利用风能发电你的生产效率大大提升了。"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 20,
+							"max" : 30
+						},
+						"bonuses" :
+						[
+							{
+								"type" : "GENERATE_RESOURCE",
+								"subtype" : "resource.sulfur",
+								"val" : 1,
+								"valueType" : "BASE_NUMBER",
+								"stacking" : "ALWAYS",
+								"duration" : "ONE_WEEK"
+							}
+						],
+						"resources" : [
+							{
+								"type" : "sulfur",
+								"amount" : 5
+							}
+						],
+						"message": "{风力发电机}\r\n\r\n看起来风力发电机是一种使用风能发电的复杂装置，利用风能发电你的生产效率大大提升了。"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 30,
+							"max" : 40
+						},
+						"bonuses" :
+						[
+							{
+								"type" : "GENERATE_RESOURCE",
+								"subtype" : "resource.mercury",
+								"val" : 1,
+								"valueType" : "BASE_NUMBER",
+								"stacking" : "ALWAYS",
+								"duration" : "ONE_WEEK"
+							}
+						],
+						"resources" : [
+							{
+								"type" : "mercury",
+								"amount" : 5
+							}
+						],
+						"message": "{风力发电机}\r\n\r\n看起来风力发电机是一种使用风能发电的复杂装置，利用风能发电你的生产效率大大提升了。"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 40,
+							"max" : 60
+						},
+						"bonuses" :
+						[
+							{
+								"type" : "GENERATE_RESOURCE",
+								"subtype" : "resource.wood",
+								"val" : 2,
+								"valueType" : "BASE_NUMBER",
+								"stacking" : "ALWAYS",
+								"duration" : "ONE_WEEK"
+							}
+						],
+						"resources" : [
+							{
+								"type" : "wood",
+								"amount" : 10
+							}
+						],
+						"message": "{风力发电机}\r\n\r\n看起来风力发电机是一种使用风能发电的复杂装置，利用风能发电你的生产效率大大提升了。"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 60,
+							"max" : 80
+						},
+						"bonuses" :
+						[
+							{
+								"type" : "GENERATE_RESOURCE",
+								"subtype" : "resource.ore",
+								"val" : 2,
+								"valueType" : "BASE_NUMBER",
+								"stacking" : "ALWAYS",
+								"duration" : "ONE_WEEK"
+							}
+						],
+						"resources" : [
+							{
+								"type" : "ore",
+								"amount" : 10
+							}
+						],
+						"message": "{风力发电机}\r\n\r\n看起来风力发电机是一种使用风能发电的复杂装置，利用风能发电你的生产效率大大提升了。"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 80,
+							"max" : 100
+						},
+						"bonuses" :
+						[
+							{
+								"type" : "GENERATE_RESOURCE",
+								"subtype" : "resource.gold",
+								"val" : 1000,
+								"valueType" : "BASE_NUMBER",
+								"stacking" : "ALWAYS",
+								"duration" : "ONE_WEEK"
+							}
+						],
+						"resources" : [
+							{
+								"type" : "gold",
+								"amount" : 2000
+							}
+						],
+						"message": "{风力发电机}\r\n\r\n看起来风力发电机是一种使用风能发电的复杂装置，利用风能发电你的生产效率大大提升了。"
+					}
+				]
+					
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+  "mdtCharles" :
+  {
+    "class" : "knight",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "查尔斯爵士",
+      "biography" : "多年以来，查尔斯爵士在斯坦德维克训练圣堂武士，后来他放弃了当教官，开始了在贾达密的猎龙者生涯。但是，战争爆发后，他又回到了埃拉西亚，开始以摩根·肯达尔的部将身份战斗。",
+      "specialty" :
+      {
+        "description" : "使圣堂武士和高阶圣武士总是有正士气。",
+        "tooltip" : "Creature bonus: Templars",
+        "name" : "圣堂武士"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/castle/charles_spec-small.bmp",
+      "specialtyLarge" : "heroes/castle/charles_spec-big.bmp",
+      "large" : "heroes/castle/charles_portrait-big.bmp",
+      "small" : "heroes/castle/charles_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "pikeman",
+        "max" : 20,
+        "min" : 10
+      },
+      {
+        "creature" : "archer",
+        "max" : 7,
+        "min" : 4
+      },
+      {
+        "creature" : "griffin",
+        "max" : 3,
+        "min" : 2
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "leadership"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "tactics"
+      }
+    ],
+    
+    "specialty": {
+        "bonuses": {
+			"selfMorale": {
+				"type": "MORALE",
+				"limiters":
+				[{
+                "type": "CREATURE_TYPE_LIMITER",
+                "parameters" : ["mdtTemplar", true]
+              }]
+			}
+		}
+	 }
+  }	
+}

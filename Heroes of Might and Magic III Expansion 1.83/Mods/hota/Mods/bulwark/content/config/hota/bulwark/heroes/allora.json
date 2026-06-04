@@ -1,0 +1,54 @@
+{
+	"17bulwarkAllora" : {
+		"class" : "elder",
+		"female" : true,
+		"images" : {
+			"large" : "hota/bulwark/heroes/allora/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/allora/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/allora/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/allora/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "sorcery",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+			"secondary" : "sorcery"
+		},
+		"spellbook" : [
+			"haste"
+		],
+		"texts" : {
+			"name" : "奥萝拉",
+			"biography" : "这位神秘女子曾从大陆逃往沃里，据说是因为干涉某个男爵领地的继承而面临处决。奥萝拉本人否认此事，但她高超的魔法技艺能够影响其他有感知生物的身心。这或许是她被沃里接纳，至今仍未被流放的唯一原因。",
+			"specialty" : {
+				"name" : "魔力",
+				"description" : "在魔力技能上每级得到5%的额外奖励。",
+				"tooltip" : "Skill Bonus: Sorcery"
+			}
+		}
+	}
+}

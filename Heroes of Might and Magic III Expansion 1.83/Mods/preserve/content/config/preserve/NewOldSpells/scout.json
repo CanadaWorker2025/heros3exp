@@ -1,0 +1,129 @@
+{
+	"scout":
+	{
+		"type": "ability", 
+		"name": "震慑",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 0,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":[{"defName":"NewOldSpells/scout.def"}]
+		},
+ 
+		"flags" : {"negative": true},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.MIND_IMMUNITY" : "normal",
+				"bonus.NON_LIVING" : "normal",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "absolute"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/USELESS.bmp",
+			"iconScroll": "NewOldSpells/USELESS2.bmp",
+			"iconScenarioBonus": "NewOldSpells/USELESS3.bmp",
+			"iconEffect": "NewOldSpells/IN3.bmp"
+		},
+
+		"sounds":
+		{
+			"cast": "CCYCDFND"
+		},
+		"targetType" : "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 0,
+				"range" : "0",
+				"targetModifier":
+				{
+					"smart": false
+				}
+			},
+			"none":
+			{
+				"description": "{震慑}\r\n\r\n使战场上的任何敌人停止行动一回合，只能施放一次。",
+	 
+				"cost": 0, 
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns": 1
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{震慑}\r\n\r\n使战场上的任何敌人停止行动一回合，只能施放一次。",
+	 
+				"cost": 0,
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns": 1
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{震慑}\r\n\r\n使战场上的任何敌人停止行动一回合，只能施放一次。",
+	 
+				"cost": 0,
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns": 1
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{震慑}\r\n\r\n使战场上的任何敌人停止行动一回合，只能施放一次。",
+	 
+				"cost": 0,
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns": 1
+					}
+				}
+			}
+		}
+	}
+}

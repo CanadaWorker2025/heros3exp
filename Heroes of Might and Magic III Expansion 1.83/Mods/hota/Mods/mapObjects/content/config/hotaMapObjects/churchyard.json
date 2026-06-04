@@ -1,0 +1,67 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"churchyard" : 
+			{
+				"name" : "坟地",
+				"aiValue" : 2000,
+				"templates" :
+				{
+					"normal" :
+					{
+						"animation" : "hota/banks/avcmetry.def",
+						"visitableFrom" : [ "---", "-+-", "+++" ], 
+						"mask" : [ "VVVV", "VVVV", "VBAB"],							
+						"allowedTerrains":[ "swamp", "subterra", "rough", "dirt", "sand", "lava"] 
+					},
+					"snow" :
+					{
+						"animation" : "hota/banks/avcmetrs.def",
+						"visitableFrom" : [ "---", "-+-", "+++" ], 
+						"mask" : [ "VVVV", "VVVV", "VBAB"],
+						"allowedTerrains":["snow"] 
+					}
+				},
+				"sounds": {
+					"ambient": ["hota/LOOPCMTR.wav"],
+					"visit": ["hota/CEMETRY.wav"]
+				},
+				"rmg" : {
+					"value"		: 1500,
+					"rarity"	: 100
+				},
+				"onGuardedMessage" : "{坟地}\r\n\r\n你在行进途中发现了一座公墓，这附近的居民都说这里晚上闹鬼，你要进去探查一番吗？",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"onVisited" : [
+					{
+						"message" : "{坟地}\r\n\r\n空荡荡的坟地里什么都没有，只有一些似乎被盗墓者们弄乱的墓碑和不值钱的陪葬品。你的士气也因此低落。", // Such a despicable act reduces your army's morale.
+						"bonuses" : [ { "type" : "MORALE", "val" : -1, "duration" : "ONE_BATTLE" } ]
+					}
+				],
+				"rewards" : [
+					{
+						"message" : "打败了僵尸之后，你搜索它们的坟墓，发现了一些东西。看来探寻墓地是值得的。",
+						"appearChance" : { "min" : 0, "max" : 100 },
+						"guards": [
+							{ "amount": 15, "type" : "zombieLord" },
+							{ "amount": 15, "type" : "zombieLord", "upgradeChance": 50 },
+							{ "amount": 15, "type" : "zombieLord", "upgradeChance": 50 },
+							{ "amount": 15, "type" : "zombieLord", "upgradeChance": 50 },
+							{ "amount": 15, "type" : "zombieLord" },
+							{ "amount": 15, "type" : "zombieLord" }
+						],
+						"resources" :
+						{
+							"gold" : 2000
+						},
+						"artifacts": [ { "class" : "MINOR" } ]
+					}
+				]
+			}
+		}
+	}
+}

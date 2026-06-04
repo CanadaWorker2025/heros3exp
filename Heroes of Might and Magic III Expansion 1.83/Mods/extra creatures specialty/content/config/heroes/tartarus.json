@@ -1,0 +1,74 @@
+{
+
+	"tartarus:tarhero03": {
+        "texts": {
+            "specialty": {
+                "name": "冰恶魔",
+                "description": "每6级提高冰恶魔及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"tartarus:tarhero08": {
+		"specialty": {
+			"creature": "ballista",
+			"creatureLevel" : 5,
+			"stepSize" : 30
+		},
+        "texts": {
+            "specialty": {
+                "name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+            }
+        }
+	},
+
+	"tartarus:tarhero12": {
+        "texts": {
+            "specialty": {
+                "name": "魔蛛",
+                "description": "每5级提高魔蛛及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"tartarus:tarhero10": {
+        "texts": {
+            "specialty": {
+                "name": "寒冰守卫",
+                "description": "每4级提高寒冰守卫及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"tartarus:tarhero11": {
+        "texts": {
+            "specialty": {
+                "name": "女妖",
+                "description": "每3级提高女妖及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"tartarus:tarhero07": {
+        "texts": {
+            "specialty": {
+                "name": "冰傀儡",
+                "description": "每2级提高冰傀儡及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+
+	"tartarus:tarhero01": {
+		"specialty": {
+			"creature": "tartarc1",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "恶灵仆从",
+                "description": "每1级提高恶灵仆从及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

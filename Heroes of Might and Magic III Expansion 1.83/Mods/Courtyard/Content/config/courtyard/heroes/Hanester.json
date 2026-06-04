@@ -1,0 +1,35 @@
+{
+	"12hanester" : {
+		"army" : [
+			{ "creature" : "cupid", "max" : 25, "min" : 12 },
+			{ "creature" : "homunculus", "max" : 11, "min" : 5 },
+			{ "creature" : "fireNewt", "max" : 5, "min" : 3 }
+		],
+		"class" : "philosopher",
+		"female" : true,
+		"images" : {
+			"large" : "courtyard/heroes/Hanester/portraitlarge.png",
+			"small" : "courtyard/heroes/Hanester/portraitsmall.png",
+			"specialtyLarge" : "courtyard/heroes/Hanester/speclarge1.png",
+			"specialtySmall" : "courtyard/heroes/Hanester/specsmall1.png"
+		},
+		"skills" : [ { "level" : "basic", "skill" : "interference" }, { "level" : "basic", "skill" : "intelligence" } ],
+		"spellbook" :
+		[
+			"antiMagic",
+		],
+		"specialty" : {
+			"secondary" : "interference",
+			"bonuses" : {
+				"selfCounter" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "spellpower",
+					"val" : -5,
+					"targetSourceType" : "SECONDARY_SKILL",
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,345 @@
+{
+	"core:mephala" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:ufretin" :
+	{
+	"specialty" :{	
+		"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+	},
+	"core:jenova" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:ryland" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:thorgrim" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:ivor" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:clancy" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:kyrre" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+	},
+	"core:coronius" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:uland" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:elleshar" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:gem" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:malcom" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:melodia" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:alagar" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"core:aeris" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"mdtEurydis" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"mdtGhuri" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		},
+	"giselle" :
+	{
+	"specialty" :{	"bonuses" : {
+		"conversion1":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP01","addInfo":	"creature.centaurCaptain"},
+		"conversion2":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.centaurCaptain","addInfo":	"creature.nRP01"},
+		"conversion3":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.nRP02","addInfo":	"creature.battleDwarf"},
+		"conversion4":{"type" :"SPECIAL_UPGRADE",	"subtype":	"creature.battleDwarf","addInfo":	"creature.nRP02"},
+ 		"conversion5":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.grandElf","addInfo" : "creature.nRP03"},
+		"conversion6":{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP03","addInfo" : "creature.grandElf"},
+		"conversion7" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP04","addInfo" : "creature.silverPegasus"},
+		"conversion8" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.silverPegasus","addInfo" : "creature.nRP04"},
+		"conversion9" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.dendroidSoldier","addInfo" : "creature.nRP05"},
+		"conversion10" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP05","addInfo" : "creature.dendroidSoldier"},
+		"conversion11" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP06","addInfo" : "creature.warUnicorn"},
+		"conversion12" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.warUnicorn","addInfo" : "creature.nRP06"},
+		"conversion13" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.nRP07","addInfo" : "creature.goldDragon"},
+		"conversion14" :{"type" : "SPECIAL_UPGRADE","subtype" : "creature.goldDragon","addInfo" : "creature.nRP07"}}}
+		}
+}

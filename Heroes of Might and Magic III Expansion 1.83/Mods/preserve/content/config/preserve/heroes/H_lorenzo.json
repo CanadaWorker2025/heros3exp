@@ -1,0 +1,62 @@
+{
+	"h_lorenzo" :
+	{
+		"class" : "guardian",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "卡洛琳",
+			"biography" : "花田曾经是卡洛琳的全部。她每天都会去看花，等待花开的漫长过程也成了她人生中最美好的追求。然而战火毁坏了她的家乡，也毁掉了她视若生命的花田。至此，卡洛琳哭了几天几夜。在此之后，她决定和哥哥一样，为了心中的美好而战斗到最后一刻。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高蜂草和毒蜂草的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "蜂草"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/lorenzo/Un32Meye.bmp",
+			"specialtyLarge" : "preserve/heroes/lorenzo/Un44Meye.bmp",
+			"large" : "preserve/heroes/lorenzo/HPL007GN.bmp",
+			"small" : "preserve/heroes/lorenzo/HPS007GN.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "foxdruid",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "foxdruid"
+		}
+	}
+}

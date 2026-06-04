@@ -1,0 +1,80 @@
+{
+	"summonGhost":
+	{
+		"type": "combat",
+		"name": "召唤恶灵",
+		"school":
+			{
+				"air": false,
+				"earth": true,
+				"fire": false,
+				"water": false
+			},
+	"animation":{
+	
+		"cast":["spells/summonGhost/SP_summonGhost"]
+	},
+	"sounds": {
+//		"cast": "Magic/Summon"
+	},		
+	"level": 5,
+	"power": 10,
+	"defaultGainChance": 2, 
+	"gainChance" :
+	{
+		"necropolis" : 12,
+		"dungeon" : 6,
+		"inferno" : 6,	
+	},
+	"flags" : {
+		"indifferent": true
+	},
+	//graphics - OPTIONAL; object;
+	"graphics":
+	{
+		"iconBook": "spells/summonGhost/ghostIconBook",
+		"iconScroll": "spells/summonGhost/ghostIconScroll",
+		"iconScenarioBonus": "spells/summonGhost/ghostIconScenario",
+		"iconEffect": "spells/summonGhost/ghostIconEffect"
+	},
+
+	"targetType" : "NO_TARGET",
+
+	"levels":
+	{
+		"base":
+		{
+			"description": "{召唤恶灵}\r\n\r\n召唤恶灵参战。",
+			"power": 2,
+			"cost": 20,
+			"range": "X",
+			"targetModifier":{"smart":true},
+			"battleEffects":{
+				"summon":{
+					"exclusive":false,
+					"id":"tidesofwar:mdtGhost",
+					"permanent":false,
+					"type":"core:summon"
+				}
+			}				
+		},
+		"none":
+		{ 
+			"cost" : 25,
+			"power" : 1,			
+		},
+		"basic":
+		{
+			"power" :2
+		},
+		"advanced":
+		{
+			"power" : 3
+		},
+		"expert":
+		{
+			"power" : 4
+		}
+	}
+  }
+}

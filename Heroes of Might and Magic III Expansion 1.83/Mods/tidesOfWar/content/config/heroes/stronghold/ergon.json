@@ -1,0 +1,133 @@
+{
+  "mdtErgon" :
+  {
+    "class" : "barbarian",
+    "female" : false,
+    "special" : true,
+
+    "texts" :
+    {
+      "name" : "埃尔贡",
+      "biography" : "在克鲁洛德登基后，科尔格任命了埃尔贡去平定仍然忠于云斯顿·伯拉格的食人魔，即使在他死后也是如此。不用多说，这个参加过继承权战争的老兵率领着异国情调的野兽蹂躏了不臣服的部落，非常高效地完成了他的工作。",
+      "specialty" :
+      {
+        "description" : "达到6级以后提高风蛇或风蛇王的攻击力与防御力。",
+        "tooltip" : "Creature bonus: Couatl",
+        "name" : "风蛇"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/stronghold/ergon_spec-small.bmp",
+      "specialtyLarge" : "heroes/stronghold/ergon_spec-large.bmp",
+      "large" : "heroes/stronghold/ergon_portrait-large.bmp",
+      "small" : "heroes/stronghold/ergon_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "goblin",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "goblinWolfRider",
+        "max" : 7,
+        "min" : 5
+      },
+      {
+        "creature" : "orc",
+        "max" : 6,
+        "min" : 4
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "offence"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "intimidation"
+      }
+    ],
+    "specialty" : {
+			"creature" : "mdtCouatl"
+	}
+  },
+  "mdtBofmog" :
+  {
+    "class" : "barbarian",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "波弗莫克",
+      "biography" : "波弗莫克是科尔格的御用刽子手，当一些科尔格本人不适合出面的场合，他就会默默的将任务交给波弗莫克来执行。当然，这个疯狂国王不知道的是，波弗莫克有权决定谁该死，对于那些他觉得不该死的人，他甚至会放他们逃生。",
+      "specialty" :
+      {
+        "description" : "在寻路术上获得额外的5点移动点减少。",
+        "tooltip" : "Skill bonus: Pathfinding",
+        "name" : "寻路术"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/stronghold/bofmog_spec-small.bmp",
+      "specialtyLarge" : "heroes/stronghold/bofmog_spec-large.bmp",
+      "large" : "heroes/stronghold/bofmog_portrait-large.bmp",
+      "small" : "heroes/stronghold/bofmog_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "goblin",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "goblinWolfRider",
+        "max" : 7,
+        "min" : 5
+      },
+      {
+        "creature" : "orc",
+        "max" : 6,
+        "min" : 4
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "offence"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "pathfinding"
+      }
+    ],
+    "specialty" : {
+			"bonuses" : {
+				"baseTileCost" : {
+					"type" : "BASE_TILE_MOVEMENT_COST",
+					"valueType" : "ADDITIVE_VALUE",
+					"val" : -5
+				},
+				"terrainCostReduction" : {
+					"type" : "ROUGH_TERRAIN_DISCOUNT",
+					"valueType" : "ADDITIVE_VALUE",
+					"val" : 5
+				}
+			}
+		}
+	}
+}

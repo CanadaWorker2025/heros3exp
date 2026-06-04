@@ -1,0 +1,500 @@
+{
+	"core:knight":
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "hota/castle/heroClasses/knight/AH00b_.def",
+					"editorAnimation": "hota/castle/heroClasses/knight/AH00b_e.def"
+				},
+				"male" : {
+					"animation" : "AH00_.def",
+					"editorAnimation": "AH00_E.def"
+				},
+				"default" : {
+					"animation" : "hota/castle/heroClasses/knight/AH00_.def",
+					"editorAnimation": "AH00_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH00.DEF",
+				"female" : "hota/castle/heroClasses/knight/CH00b.DEF"
+			}
+		}
+	},
+	"core:cleric" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "AH01_.def",
+					"editorAnimation": "AH01_e.def"
+				},
+				"male" : {
+					"animation" : "hota/castle/heroClasses/cleric/AH01b_.def",
+					"editorAnimation": "hota/castle/heroClasses/cleric/AH01b_E.def"
+				},
+				"default" : {
+					"animation" : "hota/castle/heroClasses/cleric/AH01b_.def",
+					"editorAnimation": "hota/castle/heroClasses/cleric/AH01b_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "hota/castle/heroClasses/cleric/CH01b.DEF",
+				"female" : "CH01.DEF"
+			}
+		}
+	},
+	"core:ranger" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "hota/rampart/heroClasses/ranger/AH02b_.def",
+					"editorAnimation": "hota/rampart/heroClasses/ranger/AH02b_e.def"
+				},
+				"male" : {
+					"animation" : "AH02_.def",
+					"editorAnimation": "AH02_E.def"
+				},
+				"default" : {
+					"animation" : "AH02_.def",
+					"editorAnimation": "AH02_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH02.DEF",
+				"female" : "hota/rampart/heroClasses/ranger/CH02b.DEF"
+			}
+		}
+	},
+	"core:druid" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "AH03_.def",
+					"editorAnimation": "AH03_e.def"
+				},
+				"male" : {
+					"animation" : "hota/rampart/heroClasses/druid/AH03b_.def",
+					"editorAnimation": "hota/rampart/heroClasses/druid/AH03b_E.def"
+				},
+				"default" : {
+					"animation" : "hota/rampart/heroClasses/druid/AH03b_.def",
+					"editorAnimation": "hota/rampart/heroClasses/druid/AH03b_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "hota/rampart/heroClasses/druid/CH03b.DEF",
+				"female" : "CH03.DEF"
+			}
+		}
+	},
+	"core:alchemist" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "AH04_.def",
+					"editorAnimation": "AH04_e.def"
+				},
+				"male" : {
+					"animation" : "hota/tower/heroClasses/alchemist/AH04b_.def",
+					"editorAnimation": "hota/tower/heroClasses/alchemist/AH04b_E.def"
+				},
+				"default" : {
+					"animation" : "hota/tower/heroClasses/alchemist/AH04b_.def",
+					"editorAnimation": "hota/tower/heroClasses/alchemist/AH04b_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "hota/tower/heroClasses/alchemist/CH04b.DEF",
+				"female" : "CH04.DEF"
+			}
+		}
+	},
+	"core:wizard" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "hota/tower/heroClasses/wizard/AH05b_.def",
+					"editorAnimation": "hota/tower/heroClasses/wizard/AH05b_e.def"
+				},
+				"male" : {
+					"animation" : "AH05_.def",
+					"editorAnimation": "AH05_E.def"
+				},
+				"default" : {
+					"animation" : "AH05_.def",
+					"editorAnimation": "AH05_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH05.DEF",
+				"female" : "hota/tower/heroClasses/wizard/CH05b.DEF"
+			}
+		}
+	},
+	"core:demoniac" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "hota/inferno/heroClasses/demoniac/AH06b_.def",
+					"editorAnimation": "hota/inferno/heroClasses/demoniac/AH06b_e.def"
+				},
+				"male" : {
+					"animation" : "AH06_.def",
+					"editorAnimation": "AH06_E.def"
+				},
+				"default" : {
+					"animation" : "AH06_.def",
+					"editorAnimation": "AH06_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH06.DEF",
+				"female" : "hota/inferno/heroClasses/demoniac/CH06b.DEF"
+			}
+		}
+	},
+	"core:heretic" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "AH07_.def",
+					"editorAnimation": "AH07_e.def"
+				},
+				"male" : {
+					"animation" : "hota/inferno/heroClasses/heretic/AH07b_.def",
+					"editorAnimation": "hota/inferno/heroClasses/heretic/AH07b_E.def"
+				},
+				"default" : {
+					"animation" : "AH07_.def",
+					"editorAnimation": "AH07_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "hota/inferno/heroClasses/heretic/CH07b.DEF",
+				"female" : "CH07.DEF"
+			}
+		}
+	},
+	"core:deathknight" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "hota/necropolis/heroClasses/deathknight/AH08b_.def",
+					"editorAnimation": "hota/necropolis/heroClasses/deathknight/AH08b_e.def"
+				},
+				"male" : {
+					"animation" : "AH08_.def",
+					"editorAnimation": "AH08_E.def"
+				},
+				"default" : {
+					"animation" : "AH08_.def",
+					"editorAnimation": "AH08_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH08.DEF",
+				"female" : "hota/necropolis/heroClasses/deathknight/CH08b.DEF"
+			}
+		}
+	},
+	"core:necromancer" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "AH09_.def",
+					"editorAnimation": "AH09_e.def"
+				},
+				"male" : {
+					"animation" : "hota/necropolis/heroClasses/necromancer/AH09b_.def",
+					"editorAnimation": "hota/necropolis/heroClasses/necromancer/AH09b_E.def"
+				},
+				"default" : {
+					"animation" : "hota/necropolis/heroClasses/necromancer/AH09b_.def",
+					"editorAnimation": "hota/necropolis/heroClasses/necromancer/AH09b_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "hota/necropolis/heroClasses/necromancer/CH09b.DEF",
+				"female" : "CH09.DEF"
+			}
+		}
+	},
+	"core:overlord" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "hota/dungeon/heroClasses/warlock/AH10b_.def",
+					"editorAnimation": "hota/dungeon/heroClasses/warlock/AH10b_e.def"
+				},
+				"male" : {
+					"animation" : "AH10_.def",
+					"editorAnimation": "AH10_E.def"
+				},
+				"default" : {
+					"animation" : "AH10_.def",
+					"editorAnimation": "AH10_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH010.DEF",
+				"female" : "hota/dungeon/heroClasses/warlock/CH010b.DEF"
+			}
+		}
+	},
+	"core:warlock" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "AH11_.def",
+					"editorAnimation": "AH11_e.def"
+				},
+				"male" : {
+					"animation" : "hota/dungeon/heroClasses/overlord/AH11b_.def",
+					"editorAnimation": "hota/dungeon/heroClasses/overlord/AH11b_E.def"
+				},
+				"default" : {
+					"animation" : "hota/dungeon/heroClasses/overlord/AH11b_.def",
+					"editorAnimation": "hota/dungeon/heroClasses/overlord/AH11b_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "hota/dungeon/heroClasses/overlord/CH011b.DEF",
+				"female" : "CH11.DEF"
+			}
+		}
+	},
+	"core:barbarian" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "AH12_.def",
+					"editorAnimation": "AH12_e.def"
+				},
+				"male" : {
+					"animation" : "AH13_.def",
+					"editorAnimation": "AH13_E.def"
+				},
+				"default" : {
+					"animation" : "AH13_.def",
+					"editorAnimation": "AH13_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH013.DEF",
+				"female" : "CH012.DEF"
+			}
+		}
+	},
+	"core:battlemage" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "hota/stronghold/heroClasses/battlemage/AH12b_.def",
+					"editorAnimation": "hota/stronghold/heroClasses/battlemage/AH12b_e.def"
+				},
+				"male" : {
+					"animation" : "hota/stronghold/heroClasses/battlemage/AH13b_.def",
+					"editorAnimation": "hota/stronghold/heroClasses/battlemage/AH13b_E.def"
+				},
+				"default" : {
+					"animation" : "hota/stronghold/heroClasses/battlemage/AH13b_.def",
+					"editorAnimation": "hota/stronghold/heroClasses/battlemage/AH13b_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "hota/stronghold/heroClasses/battlemage/CH013b.DEF",
+				"female" : "hota/stronghold/heroClasses/battlemage/CH012b.DEF"
+			}
+		}
+	},
+	"core:beastmaster" :
+	{
+		"mapObject" : {
+			"templates" : {
+				"default" : {
+					"animation" : "AH14_.def",
+					"editorAnimation": "AH14_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH014.DEF",
+				"female" : "CH015.DEF"
+			}
+		}
+	},
+	"core:witch" :
+	{
+		"mapObject" : {
+			"templates" : {
+				"default" : {
+					"animation" : "AH15_.def",
+					"editorAnimation": "AH15_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH014.DEF",
+				"female" : "CH015.DEF"
+			}
+		}
+	},
+	"core:planeswalker" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "hota/conflux/heroClasses/planeswalker/AH16b_.def",
+					"editorAnimation": "hota/conflux/heroClasses/planeswalker/AH16b_e.def"
+				},
+				"male" : {
+					"animation" : "AH16_.def",
+					"editorAnimation": "AH16_E.def"
+				},
+				"default" : {
+					"animation" : "AH16_.def",
+					"editorAnimation": "AH16_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH16.DEF",
+				"female" : "hota/conflux/heroClasses/planeswalker/CH16b.DEF"
+			}
+		}
+	},
+	"core:elementalist" :
+	{
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : {
+				"female" : {
+					"animation" : "hota/conflux/heroClasses/elementalist/AH17b_.def",
+					"editorAnimation": "hota/conflux/heroClasses/elementalist/AH17b_e.def"
+				},
+				"male" : {
+					"animation" : "AH17_.def",
+					"editorAnimation": "AH17_E.def"
+				},
+				"default" : {
+					"animation" : "AH17_.def",
+					"editorAnimation": "AH17_E.def"
+				}
+			}
+		},
+		"animation" : {
+			"battle" : {
+				"male" : "CH17.DEF",
+				"female" : "hota/conflux/heroClasses/elementalist/CH17b.DEF"
+			}
+		}
+	}
+}

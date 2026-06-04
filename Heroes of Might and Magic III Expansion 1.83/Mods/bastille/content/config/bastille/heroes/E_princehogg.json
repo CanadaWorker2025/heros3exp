@@ -1,0 +1,65 @@
+{
+	"e_princehogg" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "霍格王子",
+			"biography" : "霍格王子经常声称他才是王位的继承者。虽然他的兄长在各个方面都远胜于他，但是他却坚信矮人王的位子只有自己能够胜任。因此，他靠实力建立了一支只为自己效忠的部队。总有一天，他要让愚蠢的哥哥明白，力量才是掌控世界的真理。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供350个金币。",
+				"tooltip" : "+350 Gold each day",
+				"name" : "+350个金币"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "bastille/heroes/princehogg/skill32-5.bmp",
+			"specialtyLarge" : "bastille/heroes/princehogg/skill5.bmp",
+			"large" : "bastille/heroes/princehogg/HPL004DW.bmp",
+			"small" : "bastille/heroes/princehogg/HPS004DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "estates"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"gems" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}
+	}
+}
+

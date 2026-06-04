@@ -1,0 +1,76 @@
+{
+	"twArcane02":
+	{
+		"name" :
+		{
+			"plural" : "黄晶石像怪",
+			"singular" : "黄晶石像怪"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction": "tower",
+		"aiValue" : 202,
+		"fightValue" : 155,
+		"attack" : 7,
+		"defense" : 6,
+		"cost" :
+		{
+			"gold" : 160
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 4
+		},
+		"speed" : 8,
+		"upgrades": ["obsidianGargoyle"],
+		"graphics" :
+		{
+			"animation" : "creatures/tower/battle/CTW2-2.def",
+			"map" : "creatures/tower/map/AVWtw2.def",
+			"iconSmall" : "creatures/tower/iconsSmall/CPrSTW022.bmp",
+			"iconLarge" : "creatures/tower/iconsBig/CPrLTW022.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+		},
+		"hitPoints" : 18,
+		"growth" : 9,
+		"horde": 4,
+		"level" : 2,
+		"sound" :
+		{
+			"attack": "OGRGATTK.wav",
+			"defend": "OGRGDFND.wav",
+			"killed": "OGRGKILL.wav",
+			"move": "OGRGMOVE.wav",
+			"wince": "OGRGWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" :
+			{
+				"type" : "FLYING"
+			},
+			"nonLiving" : 
+			{ 
+				"type" : "GARGOYLE" 
+			},
+			"magicResistance" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any",
+				"val" : 20
+			}			
+		}
+	}
+}
+
+

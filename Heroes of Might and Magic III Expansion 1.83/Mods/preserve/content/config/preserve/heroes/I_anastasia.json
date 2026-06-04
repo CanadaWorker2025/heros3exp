@@ -1,0 +1,63 @@
+{
+	"i_anastasia" :
+	{
+		"class" : "bard",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "阿娜丝塔",
+			"biography" : "阿娜丝塔对自然中的一切都产生了极大的兴趣。大到无边的宇宙，小到昆虫的翅膀，都是她想要研究的对象。为了这份执着，她走遍了这片大陆的每一个角落。最终她决定在维尔宁定居，仅仅是因为这里有她感兴趣的生物。为此，她也不再思念家乡。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高德鲁伊和高阶德鲁伊的攻击力与防御力。",
+				"tooltip" : "Bonus: creature",
+				"name" : "德鲁伊"
+			}
+		},
+
+    "images": {
+      "specialtySmall": "preserve/heroes/anastasia/Un32Drud.bmp",
+      "specialtyLarge": "preserve/heroes/anastasia/Un44Drud.bmp",
+      "large": "preserve/heroes/anastasia/HPL000BR.bmp",
+      "small": "preserve/heroes/anastasia/HPS000BR.bmp"
+    },
+	
+	
+		"spellbook" :
+		[
+			"cure"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "fairybear"
+		}
+	}
+}

@@ -1,0 +1,79 @@
+{
+	"rStrn04"://Elder Orge 
+	{
+		"name" :
+		{
+			"plural" : "食人魔长老",
+			"singular" : "食人魔长老"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"faction": "stronghold",
+		"aiValue" : 673,
+		"fightValue" : 673,
+		"attack" : 12,
+		"defense" : 8,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"damage" :
+		{
+			"min" : 6,
+			"max" : 12
+		},
+		"speed" : 6,
+		"upgrades": ["ogreMage"],
+		"graphics" :
+		{
+			"animation" : "creatures/stronghold/battle/rStrn04B.def",
+			"map" : "creatures/stronghold/map/rStrn04M.def",
+			"iconSmall" : "creatures/stronghold/iconsSmall/rStrn04S.bmp",
+			"iconLarge" : "creatures/stronghold/iconsBig/rStrn04L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 55,
+		"growth" : 4,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "OGRMATTK.wav",
+			"defend": "OGRMDFND.wav",
+			"killed": "OGRMKILL.wav",
+			"move": "OGRMMOVE.wav",
+			"shoot": "OGRMSHOT.wav",
+			"wince": "OGRMWNCE.wav"
+		},
+		"abilities":
+		{
+			"castsBloodlust" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.precision",
+				"val" : 2,
+				"icon": "bonuses/precision2.png"
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 3
+			}
+		}
+	}
+}
+
+

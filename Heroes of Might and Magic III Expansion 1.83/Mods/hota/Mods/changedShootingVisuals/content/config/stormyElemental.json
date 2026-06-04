@@ -1,0 +1,15 @@
+{
+	"core:stormElemental" :
+	{
+		"abilities":
+		{
+			"stormIsComing" :
+			{
+				"hidden": true,
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.hotaStorm",
+				"val" : 1
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"seaBarrel"	: {
+		"name" : "木桶",
+		"handler": "configurable",
+		"types" : {
+			"seaBarrel" : {
+				"name":"木桶",
+				"rmg" : {
+					"value"		: 500,
+					"rarity"	: 400
+				},
+				"sounds" : {
+					"visit" : ["GENIE"],
+					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
+				},
+				"blockedVisitable" : true,
+				"rewards" :
+				[
+					{
+						"appearChance": 
+						{
+							"max" : 20
+						},
+						"message": "{木桶}\r\n\r\n这些木桶里全是海水，什么也没有发现。你一无所获，真是浪费时间。",
+						"removeObject": true
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 20
+						},
+						"resources" : [
+							{
+								"anyOf" : [ "mercury", "gems", "sulfur", "crystal" ],
+								"min" : 3,
+								"max" : 6
+							},
+							{
+								"type" : "gold",
+								"amount" : [ 400, 500, 600 ]
+							}
+						],
+						"message": "{木桶}\r\n\r\n搜寻这些漂浮在海水中的木桶，你发现了一些有用的东西。",
+						"removeObject": true
+					}
+				],
+				"visitMode" : "once",
+				"selectMode": "selectRandom",
+				"templates" : {
+					"AVAbrrlw" :
+					{
+						"animation" : "hota/seaBarrel/AVAbrrlw",
+						"visitableFrom" : [ "+++", "+++", "+++" ],
+						"mask" : [ "A"],
+						"allowedTerrains": [ "water" ]
+					}
+				}
+			}
+		}
+	}
+}

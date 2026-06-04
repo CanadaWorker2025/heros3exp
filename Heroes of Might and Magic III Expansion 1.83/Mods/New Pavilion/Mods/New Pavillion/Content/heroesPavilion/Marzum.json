@@ -1,0 +1,62 @@
+{
+	"marzum" :
+	{
+		"class" : "vizier",
+		"female" : false,
+		
+		"texts" :
+		{
+			"name" : "马尔祖姆",
+			"biography" : "马尔祖姆通过不断剥削他的属下而成为一个残酷而有影响力的人。据说，除了鞭子抽在人的皮肤上开裂的声音之外，他并无爱好。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高督工或监工的攻击力与防御力。",
+				"tooltip" : "Creature Bonus: Whippers",
+				"name" : "督工"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/un32Whip.bmp",
+			"specialtyLarge" : "speciconsPavilion/un44Whip.bmp",
+			"large" : "heroportraitsPavilion/Marzum.png",
+			"small" : "heroportraitsPavilion/MarzumSmall.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+            {
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "whipper"
+		}
+	}
+}

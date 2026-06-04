@@ -1,0 +1,16 @@
+{
+	"core:redwoodObservatory"	: {
+		"types" : {
+			"redwoodObservatory" : {
+					"templates" : {
+						"avwtobtw" : {
+							"animation" : "dunes objectFunc/tower",
+							"mask" : [ "VVV","VVV","VVA" ], 
+							"visitableFrom" : [ "---", "+++", "+++" ],
+							"allowedTerrains": [ "dunes" ]
+					}
+				}
+			}
+		}
+	}		
+}

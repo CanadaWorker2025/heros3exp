@@ -1,0 +1,156 @@
+{
+  "tartarcc": {
+    "name": {
+      "plural": "寒冰男爵",
+      "singular": "寒冰男爵"
+    },
+    "advMapAmount": {
+ "max" : 10,
+ "min" : 4
+    },
+    "faction": "tartarus",
+    "aiValue": 5228,
+    "attack": 20,
+    "cost": {
+      "gold": 2400,
+      "crystal": 1
+    },
+    "damage": {
+ "max" : 40,
+ "min" : 30
+    },
+    "defense": 21,
+    "fightValue": 4288,
+    "graphics": {
+      "animation": "tartarus/battle/creatures/Tar7.def",
+      "map": "tartarus/map/creatures/AVWTAR07.def",
+      "iconSmall": "tartarus/iconsSmall/creatures/Tar7iconS.bmp",
+      "iconLarge": "tartarus/iconsBig/creatures/T7icon.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 1,
+    "hitPoints": 180,
+    "level": 7,
+    "upgrades": [
+      "tartarcd"
+    ],
+    "sound": {
+      "attack": "tartarus/TAR7ATTK.wav",
+      "defend": "tartarus/TAR7DFND.wav",
+      "killed": "tartarus/TAR7KILL.wav",
+      "move": "DEVLMOVE.wav",
+      "wince": "tartarus/TAR7WNCE.wav",
+      "startMoving": "tartarus/TAR7EXT1.wav",
+      "endMoving": "tartarus/TAR7EXT2.wav"
+    },
+    "speed": 11,
+    "abilities": {
+	  "basicSlayer" : { "type" : "KING", "val": 2 },
+      "FLYING_ARMY": {
+        "type": "FLYING",
+        // type loaded from crtraits
+        "subtype": "movementTeleporting"
+      },
+	  "manaChannel" :
+			{
+				"type" : "MANA_CHANNELING",
+				"val" : 20
+			},
+      "extraRetaliation" :
+		{
+				"type" : "ADDITIONAL_RETALIATION",
+				"val" : 1,
+				"icon" : "NewOldSpells/e_retail1_iceDevil.png"
+		}
+    },
+    "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 2, 2, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+				"subtype" : "spellSchool.earth",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+				},
+				"values" : [ false, false, true, true, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MIND_IMMUNITY" //powinno być Not Immune Beneficial Mind Spells 
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : "spell.misfortune",
+					"addInfo" : [3, 0]
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]	
+			}
+		]
+  }	
+	}

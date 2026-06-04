@@ -1,0 +1,23 @@
+{
+	"core:sphereOfPermanence":
+	{
+		"bonuses" : {
+			"noDispel" : {
+				"subtype" : "dispel",
+				"type" : "SPELL_IMMUNITY",
+				"addInfo" : 1
+			},
+			"noDispelHelpful" : {
+				"subtype" : "dispelHelpful",
+				"type" : "SPELL_IMMUNITY",
+				"addInfo" : 1
+			},
+			"noCancel" :
+			{
+				"subtype" : "mdtCancel",
+				"type" : "SPELL_IMMUNITY",
+				"addInfo" : 1
+			}
+		}
+	}
+}

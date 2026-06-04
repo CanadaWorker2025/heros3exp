@@ -1,0 +1,75 @@
+{
+	"tarhero04" :
+	{
+    "class": "taHeroA",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "吉纳克斯",
+			"biography" : "在恶魔的眼中，吉纳克斯总是表现的不太聪明，但他令人印象深刻的身形和幽默感（当然，只有其他弗里根人可以理解）让恶魔们对其十分尊重。在战场上，吉纳克斯的巨大体型让他的对手都感到畏惧，以至于不敢与之为敌。",
+			"specialty" :
+			{
+				"description" : "使敌人士气-1。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "-1 士气"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero04/skill4.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero04/skills4.bmp",
+			"large" : "tartarus/heroes/tarhero04/tarH4.bmp",
+			"small" : "tartarus/heroes/tarhero04/tarH4S.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "demonicBlood"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty" : {
+		"bonuses" : {
+			"main" : {
+					"type" : "MORALE",
+					"valueType" : "ADDITIVE_VALUE",
+					"propagator":"BATTLE_WIDE",
+					"val":-1
+				},
+				"mainExtra" : {
+					"type" : "MORALE",
+					"valueType" : "ADDITIVE_VALUE",
+					"val":1
+				}
+		}
+	}
+	}
+}
+

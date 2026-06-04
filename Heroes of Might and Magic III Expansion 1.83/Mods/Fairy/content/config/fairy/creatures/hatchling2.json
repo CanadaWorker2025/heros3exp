@@ -1,0 +1,176 @@
+{
+	"ftHatchling2":
+	{
+		"name" :
+		{
+			"plural" : "女术士",
+			"singular" : "女术士"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction" : "fairy",
+		"aiValue" : 1074,
+		"attack" : 11,
+		"cost" :
+		{
+			"gold" : 600
+		},
+		"damage" :
+		{
+			"max" : 15,
+			"min" : 10
+		},
+		"defense" : 14,
+		"fightValue" : 954,
+		"graphics" :
+		{
+			"animation" : "fairy/battle/creatures/CFar10.def",
+			"map" : "fairy/map/creatures/maphatchling2.def",
+			"iconSmall" : "fairy/iconsSmall/creatures/fay10.bmp",
+			"iconLarge" : "fairy/iconsBig/creatures/fairy10.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "fairy/battle/creatures/projectile/zap2.DEF",
+				"attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+        },
+		"growth" : 3,
+		"hitPoints" : 40,
+		"shots": 20,
+		"level" : 5,
+		"sound" :
+		{
+			"attack": "FAERATTK.wav",
+			"defend": "FAERDFND.wav",
+			"killed": "fairy/ENTRKILL.wav",
+			"move": "fairy/ENTRMOVE.wav",
+			"shoot" : "fairy/ENTRSHOT.wav",
+			"wince": "fairy/ENTRWNCE.wav"
+		},
+		"speed" : 8,
+		"abilities":
+		{
+			 	"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"roseBolt" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.roseBolt",
+				"description" : "{花之箭}\n可以连锁伤害花环标记过的单位",
+				"icon" : "fairy/icons/bonuses/roseshot"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"noPenalty" : 
+			{
+				"type" : "NO_WALL_PENALTY"
+			},
+			"castsStoneSkin" :
+			{
+				"type" : "ENCHANTER",
+				"subtype" : "spell.stoneSkin",
+				"val" : 3,
+				"addInfo" : 3,
+				"description" : "{施法者}\n每回合群体施放{护体石肤}，{护体神盾}或{圣灵佑佐}",
+				"icon" : "fairy/icons/bonuses/fairyBonus01"
+			},
+			"castsBless" :
+			{
+				"type" : "ENCHANTER",
+				"subtype" : "spell.bless",
+				"val" : 3,
+				"addInfo" : 3,
+				"hidden":true
+			},
+			"castsSheild" :
+			{
+				"type" : "ENCHANTER",
+				"subtype" : "spell.shield",
+				"val" : 3,
+				"addInfo" : 3,
+				"hidden":true
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 5
+			}	
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+			}
+		]	
+	}
+}

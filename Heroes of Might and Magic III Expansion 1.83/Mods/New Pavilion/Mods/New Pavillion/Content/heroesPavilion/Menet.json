@@ -1,0 +1,66 @@
+{
+	"menet" :
+	{
+		"class" : "embalmer",
+		"female" : true,
+		
+		"texts" :
+		{
+			"name" : "梅内特",
+			"biography" : "据说梅内特是第一个经历大灾变的人。她像对待女儿一样对待其他女祭司，帮助和支持她们为谜影女神服务，她们也以实物报答她的恩情。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高谜影侍女或谜影圣女的攻击力与防御力。",
+				"tooltip" : "Creature Bonus: Priestesses",
+				"name" : "谜影侍女"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "speciconsPavilion/un32Sekh.bmp",
+			"specialtyLarge" : "speciconsPavilion/un44Sekh.bmp",
+			"large" : "heroportraitsPavilion/Menet.png",
+			"small" : "heroportraitsPavilion/MenetSmall.png"
+		},
+        "spellbook" :
+		[
+			"resurrection"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 18
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "sekhmet",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "sekhmet"
+		}
+	}
+}

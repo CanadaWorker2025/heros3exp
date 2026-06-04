@@ -1,0 +1,159 @@
+{
+	"puppetMaster":
+	{
+		"type": "combat", 
+		"name": "傀儡大师",
+		"school":
+		{
+			"air": true,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 12, 
+		"gainChance":
+		{
+			"tower": 20,
+			"necropolis": 16,
+			"inferno" : 16,
+			"conflux" : 0
+		},
+ 
+		"animation":{
+			"affect":["C10SPA0"]
+		},
+ 
+		"flags" : {"negative": true},
+ 
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {
+				"bonus.MIND_IMMUNITY": "normal",
+				"bonus.NON_LIVING": "normal",
+				"bonus.MECHANICAL" : "normal",
+				"bonus.UNDEAD": "normal",
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+	},	
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/puppetMBook.bmp",
+			"iconScroll": "NewOldSpells/puppetMScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/puppetMScenario.bmp",
+			"iconEffect": "NewOldSpells/puppetMEffect.bmp",
+			
+			"iconImmune": "NewOldSpells/puppetMImmune.bmp"
+		},
+
+		"sounds":
+		{
+			"cast":"NewOldSpells/sound.spell.puppet master.wav"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{傀儡大师}\n\n使一个敌方部队受到控制，持续2个回合。并降低50%的速度。受攻击后解除。\n",
+	 
+				"cost": 30,
+	 
+				"effects":
+				{
+					"undead":
+					{
+						"type": "HYPNOTIZED",
+						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
+						"turns": 2
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"val": -50,
+						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
+						"turns": 2
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级傀儡大师}\n\n使一个敌方部队受到控制，持续2个回合。并降低50%的速度。受攻击后解除。\n",				
+				"cost": 25,
+	 
+				"effects":
+				{
+				"undead":
+					{
+						"type": "HYPNOTIZED",
+						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
+						"turns": 2
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"val": -50,
+						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
+						"turns": 2
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级傀儡大师}\n\n使一个敌方部队受到控制，持续2个回合。并降低25%的速度。受攻击后解除。\n",
+	 
+				"cost": 25,
+	 
+				"effects":
+				{
+					"undead":
+					{
+						"type": "HYPNOTIZED",
+						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
+						"turns": 2
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"val": -25,
+						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
+						"turns": 2
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级傀儡大师}\n\n使一个敌方部队受到控制。持续3个回合。受攻击后解除。\n",
+	 
+				"cost": 25,
+	 
+				"effects":
+				{
+					"undead":
+					{
+						"type": "HYPNOTIZED",
+						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
+						"turns": 3
+					}
+				}
+			}
+		}
+	}
+ 
+}

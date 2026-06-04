@@ -1,0 +1,41 @@
+e-mail: baratorch@yandex.ru
+
+[HOMM3 HD LAUNCHER CRASH LOG]
+
+
+
+HOMM3 HD version: 5002221
+
+
+
+Time
+{
+   08/19/2024	17:37:01
+}
+
+Exception
+{
+   Module: 	HD_Launcher.exe
+   Adress:      0x008224DF
+   Code:        EXCEPTION_ACCESS_VIOLATION
+   Flags:       0x00000000
+   Information: read of address: 0x00000004
+}
+
+Call stack
+{
+                      ? called from before 0x00CA9414
+}
+
+Modules
+{
+   0x00820000: HD_Launcher.exe	 (size: 0x0011C000, entry point: 0x0082B5C2) - D:\h3VCMI\h3 rc??\HD_Launcher.exe
+}
+
+Command Line
+{
+   "D:\h3VCMI\h3 rc??\HD_Launcher.exe" 
+}
+
+}
+

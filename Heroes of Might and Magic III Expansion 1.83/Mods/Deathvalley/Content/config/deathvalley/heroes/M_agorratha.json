@@ -1,0 +1,69 @@
+{
+	"m_dvAgorratha" :
+	{
+		"class" : "dvNecropriest",
+		"female" : true,
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/agorratha/Un32Deat.bmp",
+			"specialtyLarge" : "deathvalley/heroes/agorratha/Un44Deat.bmp",
+			"large" : "deathvalley/heroes/agorratha/AgorrathaL.png",
+			"small" : "deathvalley/heroes/agorratha/AgorrathaS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "boneHook",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "mums",
+				"max" : 7,
+				"min" : 5
+			}
+		],
+		"spellbook" :
+		[
+			"deathRipple"
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"deathRipple" : {
+					"subtype" : "spell.deathRipple",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		},
+			
+		"texts" : {
+			"biography" : "据说阿哥拉达本身拥有死亡的力量，挥挥手就摧毁了大片草丛般的敌人。",
+			"name" : "阿哥拉达",
+			"specialty" : {
+				"description" : "使用死亡波纹魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Spell bonus: Death Ripple",
+				"name" : "死亡波纹"
+			}
+		}
+	}
+}
+

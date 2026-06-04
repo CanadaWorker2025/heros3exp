@@ -1,0 +1,257 @@
+{
+	"pactalHotA" :
+	{
+		"class" : "beastmaster",
+		"special" : true,
+		"female": false,
+		"images" :
+		{
+			"large" : "hota/fortress/heroes/special/icons/portraitLarge.png",
+			"small" : "hota/fortress/heroes/special/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/fortress/heroes/special/icons/Un44Defe",
+			"specialtySmall" : "hota/fortress/heroes/special/icons/Un32Defe"
+		},
+		"army" : [
+			{
+				"creature" : "gnoll",
+				"min" : 15,
+				"max" : 25
+			},
+			{
+				"creature" : "lizardman",
+				"min" : 4,
+				"max" : 7
+			},
+			{
+				"creature" : "serpentFly",
+				"min" : 3,
+				"max" : 4
+			}
+		],
+		"skills" : 
+		[
+			{
+				"level" : "advanced",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "帕克塔尔是夜行者部落的领袖，他狡诈而又残忍，而且拥有神器“空洞之眼”。因为他残忍地吞食蜥蜴人的幼崽，而被冠以“食子者”的绰号。在他的领导下，夜行者部落逐渐壮大，也因此奴役了血羽氏族的子民们。",
+			"name" : "帕克塔尔",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Learning",
+				"name" : "防御术",
+				"description" : "在防御术上每级得到5%的奖励。"
+			}
+		}
+	},
+	"areshrakHotA" :
+	{
+		"class" : "beastmaster",
+		"special" : true,
+		"female": false,
+		"images" :
+		{
+			"large" : "hota/fortress/heroes/special/icons/ashbigP.png",
+			"small" : "hota/fortress/heroes/special/icons/ashsmallP.png",
+			"specialtyLarge" : "hota/fortress/heroes/special/icons/Specialty_Ballista",
+			"specialtySmall" : "hota/fortress/heroes/special/icons/Specialty_Ballistas"
+		},
+		"army" : [
+			{
+				"creature" : "gnoll",
+				"min" : 15,
+				"max" : 25
+			},
+			{
+				"creature" : "ballista",
+				"min" : 1,
+				"max" : 1
+			},
+			{
+				"creature" : "serpentFly",
+				"min" : 3,
+				"max" : 4
+			}
+		],
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{ "skill" : "artillery", "level": "basic" }
+		],
+		
+		"specialty" : {
+			"creature" : "ballista"
+		},
+		"texts" : {
+			"biography" : "阿雷什拉克是来自贾达密海岸外的库阿特尔群岛的蜥蜴人。帕克塔尔的副手。他背叛前主人后篡夺了对飞龙、野牛和其他生物的控制权。他负责处理与当地毒龙的关系。",
+			"name" : "阿雷什拉克",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Learning",
+				"name" : "弩车",
+				"description" : "达到4级以后提高弩车的攻击力与防御力。"
+			}
+		}
+	},
+	"zogHotA" :
+	{
+		"class" : "battlemage",
+		"special" : true,
+		"female": false,
+		"images" :
+		{
+			"large" : "hota/fortress/heroes/special/icons/zogbigP.png",
+			"small" : "hota/fortress/heroes/special/icons/zogsmallP.png",
+			"specialtyLarge" : "hota/fortress/heroes/special/icons/Specialty_Ogres",
+			"specialtySmall" : "hota/fortress/heroes/special/icons/Specialty_Ogres_small"
+		},
+		"army" : [
+			{
+				"creature" : "goblin",
+				"min" : 15,
+				"max" : 25
+			},
+			{
+				"creature" : "goblinWolfRider",
+				"min" : 5,
+				"max" : 7
+			},
+			{
+				"creature" : "ogre",
+				"min" : 3,
+				"max" : 4
+			}
+		],
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+		],
+		"spellbook" : [ "slow" ],
+		"specialty" : {
+			"creature" : "ogre"
+		},
+		"texts" : {
+			"biography" : "残忍的佐格是食人魔在贾达密伯顿地区的首领，拥有“食人魔铁拳”的他的实力强大，让食人魔和兽人在这片荒地上不断肆虐，从而建立了自己的部落。",
+			"name" : "佐格",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Learning",
+				"name" : "食人魔",
+				"description" : "达到4级以后提高食人魔或食人魔王的攻击力与防御力。"
+			}
+		}
+	},
+	"gruezakHotA" :
+	{
+		"class" : "barbarian",
+		"special" : true,
+		"female": false,
+		"images" :
+		{
+			"large" : "hota/fortress/heroes/special/icons/gruL.png",
+			"small" : "hota/fortress/heroes/special/icons/gruS.png",
+			"specialtyLarge" : "hota/fortress/heroes/special/icons/Specialty_Ballista",
+			"specialtySmall" : "hota/fortress/heroes/special/icons/Specialty_Ballistas"
+		},
+		"army" : [
+			{
+				"creature" : "goblin",
+				"min" : 15,
+				"max" : 25
+			},
+			{
+				"creature" : "ballista",
+				"min" : 1,
+				"max" : 1
+			},
+			{
+				"creature" : "orc",
+				"min" : 4,
+				"max" : 6
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty": {
+			"creature": null,
+			"bonuses": {
+                "attack": {
+					"subtype": "primarySkill.attack",
+					"type": "PRIMARY_SKILL",
+					"val": 0,
+                    "targetSourceType" : "CREATURE_ABILITY",
+                    "valueType": "PERCENT_TO_TARGET_TYPE",
+                    "updater": {
+                        "valPer20" : 120,
+						"stepSize" : 1,
+                        "type": "GROWS_WITH_LEVEL"
+					},
+					"limiters": [
+						{
+							"creature": "ballista",
+							"type": "CREATURE_TYPE_LIMITER"
+						}
+					],
+				},
+                "defence": {
+					"subtype": "primarySkill.defence",
+					"type": "PRIMARY_SKILL",
+					"val": 0,
+                    "targetSourceType" : "CREATURE_ABILITY",
+                    "valueType": "PERCENT_TO_TARGET_TYPE",
+                    "updater": {
+                        "valPer20" : 120,
+						"stepSize" : 1,
+                        "type": "GROWS_WITH_LEVEL"
+					},
+					"limiters": [
+						{
+							"creature": "ballista",
+							"type": "CREATURE_TYPE_LIMITER"
+						}
+					]
+				}
+            }
+		},
+		"texts" : {
+			"biography" : "在科尔格的军队里，人人都要战斗，从酋长到最卑微的搬运工，就连厨师也不例外。他们的职责不仅包括烹饪，还包括挥舞巨大的屠刀。如果仔细观察格鲁扎克，你会惊讶地发现他竟然也拥有许多与普通厨师身份不符的战斗技能；但谁又会愿意去仔细审视一个普通的厨师，更何况他还是个兽人呢？",
+			"name" : "格鲁扎克",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Learning",
+				"name": "弩车",
+                "description": "每5级提高弩车30%的攻击力和防御力。"
+			}
+		}
+	}
+}

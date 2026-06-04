@@ -1,0 +1,49 @@
+{
+	"ironfistOfTheOgre" : {
+		"type" : [ "HERO" ],
+		"slot" : "RIGHT_HAND",
+		"class" : "RELIC",
+		"value" : 0,
+		"components" : [
+			"ogresClubOfHavoc",
+			"targOfTheRampagingOgre",
+			"tunicOfTheCyclopsKing",
+			"crownOfTheSupremeMagi"
+		],
+		"bonuses" : {
+			"spell1" : {
+				"type" : "OPENING_BATTLE_SPELL",
+				"subtype" : "haste",
+				"valueType" : "BASE_NUMBER",
+				"val" : 50
+			},
+			"spell2" : {
+				"type" : "OPENING_BATTLE_SPELL",
+				"subtype" : "bloodlust",
+				"valueType" : "BASE_NUMBER",
+				"val" : 50
+			},
+			"spell3" : {
+				"type" : "OPENING_BATTLE_SPELL",
+				"subtype" : "fireShield",
+				"val" : 50
+			},
+			"spell4" : {
+				"type" : "OPENING_BATTLE_SPELL",
+				"subtype" : "counterstrike",
+				"valueType" : "BASE_NUMBER",
+				"val" : 50
+			}
+		},
+		"graphics" : {
+			"image" : "hota/artifactsIcons/ironfistOfTheOgre",
+			"map" : "hota/artifactsMap/ironfistOfTheOgre",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/ironfistOfTheOgre"
+		},
+		"text" : {
+			"description" : "{食人魔铁拳}\r\n\r\n战斗开始后向本方所有部队施放攻击加速、嗜血奇术、烈火神盾和反戈一击这四个魔法，持续50轮。",
+			"event" : "当你经过一个洞穴时受到了独眼巨人的袭击。凭借出色的技巧，拿着铁锤的独眼巨人也不是你的对手。最后你杀了它，获得了一把武器。",
+			"name" : "食人魔铁拳"
+		}
+	}
+}

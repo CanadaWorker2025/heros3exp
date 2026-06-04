@@ -1,0 +1,83 @@
+{
+	"tarspell4" : {
+		"type": "combat", 
+		"targetType" : "CREATURE",
+		"name": "鲜血祭典",
+		"school":
+		{
+			"pavillionPrime": true
+		},
+		"level": 4,
+		"power": 1,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"animation":{
+			"affect":[{ "defName" : "NewOldSpells/bloodReAni", "transparency" : 0.5}]
+		},
+		"sounds": {
+			"cast": "ANIMDEAD"
+		},
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/Tarnew05.bmp",
+			"iconScroll": "NewOldSpells/Tarnew06.bmp",
+			"iconScenarioBonus": "NewOldSpells/Tarnew07.bmp",
+			"iconEffect": "NewOldSpells/BloodyMana.bmp",
+			"iconImmune": "NewOldSpells/confusionImmune.bmp"
+		},
+		"levels" : {
+			"base": {
+				"description" : "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物的{恶魔之力}提升一级。\n",
+				"power" : 1,
+				"targetModifier":{"smart":false},
+				"range" : "0",
+				"battleEffects":{
+					"demonSummon":{
+						"id":"tarSpirit",
+						"permanent":false,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+			"none":
+			{
+				"description": "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物的{恶魔之力}提升一级。\n",
+				"power" : 1,
+				"cost": 10
+	
+			},
+			"basic":
+			{
+				"description": "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物的{恶魔之力}提升一级。\n",
+				"power" : 1,
+				"cost": 10
+			},
+			"advanced":
+			{
+				"description": "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物的{恶魔之力}提升一级。\n",
+				"power" : 1,
+				"cost": 10
+			},
+			"expert":
+			{
+				"description": "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物的{恶魔之力}提升一级。\n",
+				"power" : 1,
+				"cost": 10
+			}
+		},
+		"flags" : {
+			"rising": true,
+			"nonMagical":true,
+			"positive": true,
+			"special": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.GARGOYLE" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		}
+	}
+}

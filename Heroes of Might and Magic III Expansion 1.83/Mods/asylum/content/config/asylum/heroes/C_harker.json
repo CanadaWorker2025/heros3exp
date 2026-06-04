@@ -1,0 +1,63 @@
+{
+	"c_harker" :
+	{
+    "class": "pathfinder",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "泰瑞恩",//Thyrion
+			"biography" : "泰瑞恩是贾达密森林里的一名黑暗精灵斥候，他和族人们生活在森林里已达数代。在森林中的枯燥生活让他对外界有所向往，等到时机成熟，他的族人们就会走出森林，寻找更大的地盘去生存。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高黑暗侍从和黑暗守卫的攻击力与防御力。",
+				"tooltip" : "Creature bonus: Dark Squires",
+				"name" : "黑暗侍从"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "asylum/heroes/harker/UN32T198.bmp",
+			"specialtyLarge" : "asylum/heroes/harker/UN44T198.bmp",
+			"large" : "asylum/heroes/harker/HPL002PF.bmp",
+			"small" : "asylum/heroes/harker/HPS002PF.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "darksquire",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "darksquire",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "darksquire",
+				"max" : 20,
+				"min" : 15
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+				"specialty" : {
+			"creature" : "darksquire"
+		}
+	}
+}
+

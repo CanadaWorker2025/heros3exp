@@ -1,0 +1,76 @@
+{
+ "tarSpAbility":
+	{
+		"type": "ability", 
+		"targetType": "CREATURE", 
+		"name": "鲜血祭典",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 1,
+		"power": 1, //this times spell power
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+		},
+ 
+		"flags" : { "damage": true, "negative" : true, "special" : true },
+
+ 
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconEffect": "NewOldSpells/BloodyMana.bmp"
+		},
+
+		"sounds": {
+			"cast": "FIREBLST"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 5,
+				"range": "0",
+				"power": 100, //base dmg
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"description": "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物补充一次施放{高级恶魔之力}。\n",
+	 
+				"battleEffects" : {
+					"directDamage" : {"type":"core:damage", "killByPercentage" : true},
+				},
+			},
+			"none":
+			{
+				"description": "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物补充一次施放{高级恶魔之力}。\n",
+			},
+			"basic":
+			{
+				"description": "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物补充一次施放{高级恶魔之力}。\n",
+			},
+			"advanced":
+			{
+				"description": "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物补充一次施放{高级恶魔之力}。\n",
+			},
+			"expert":
+			{
+				"description": "{鲜血祭典}\n\n将一个生灵或死灵的尸体献祭成恶魔之魂，献祭的尸体将永久消失，且恶魔之魂会在一个回合内自毁。但魂灵在该回合行动时，可以对所有恶魔血统影响的生物补充一次施放{高级恶魔之力}。\n",
+			}
+		}
+	}
+ 
+ 
+}

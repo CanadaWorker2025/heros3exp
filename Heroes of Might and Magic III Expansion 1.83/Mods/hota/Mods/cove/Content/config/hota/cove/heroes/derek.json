@@ -1,0 +1,51 @@
+{
+	"derek" : {
+		"class" : "captain",
+		"onlyOnMapWithoutWater" : true,
+		"images" : {
+			"large" : "hota/cove/heroes/derek/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/derek/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/derek/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/derek/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			}
+		],
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "basic"
+			},
+			{
+				"skill": "leadership",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"creature" : "hota.cove:crewmate"
+		},
+		"texts": {
+			"biography" : "德里克曾经是商船上众多奴隶的一员，他们被用铁链锁住了自由。但是有一天他带领其他奴隶们进行了反抗，杀死了他以前的主人并占领了船只。从那以后，戴瑞克和他的水手们加入了瑞格那（港口所在势力，同埃拉西亚，克鲁洛德等地）海盗的团队。他依然愿意和手下们一起工作，并且从来不惩罚他们，这使得他更加与众不同。",
+			"name" : "德里克",
+			"specialty" : {
+				"tooltip" : "Creature Bonus: Crew Mates",
+				"name" : "水手",
+				"description" : "达到2级以后提高水手和海员的攻击力与防御力。"
+			}
+		}
+	}
+}

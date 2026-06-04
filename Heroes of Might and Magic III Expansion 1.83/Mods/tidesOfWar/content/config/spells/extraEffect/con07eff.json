@@ -1,0 +1,81 @@
+{	
+	"con07eff":
+	{
+		"type": "ability", 
+		"name": "连结打击",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+		"targetType": "CREATURE",
+		"targetCondition" : {
+			"anyOf" : {
+				"spell.con06eff" : "absolute"
+			}
+		},
+
+		"animation":{
+			"affect":["spells/extraEffect/tw7Eff.def"]
+		},
+		"sounds": {
+			"cast": "GTITSHOT"
+		},
+		"flags" : {
+			"damage": true,
+			"indifferent": true
+		},
+		"graphics":
+		{
+			"iconEffect": "spells/extraEffect/tw4eff.bmp"
+		},
+		"levels" : {
+		"base":{
+				"range" : "0-16",
+				"battleEffects" : {
+					"directDamage" : {"type":"core:damage"}
+				},
+				"targetModifier":{"smart":true}
+			},
+		"none":
+			{
+				"description": "{连结打击}\r\n\r\n咒力连结打击。",
+	 
+				"cost": 0,
+				"power": 10
+			},
+			"basic":
+			{
+				"description": "{圣言}\r\n\r\n领唱者射击。",
+	 
+				"cost": 0,
+				"power": 10
+			},
+			"advanced":
+			{
+				"description": "{圣言}\r\n\r\n领唱者射击。",
+	 
+				"cost": 0,
+				"power": 10
+			},
+			"expert":
+			{
+				"description": "{圣言}\r\n\r\n领唱者射击。",
+	 
+				"cost": 0,
+				"power": 10
+			}
+			}
+	}
+}

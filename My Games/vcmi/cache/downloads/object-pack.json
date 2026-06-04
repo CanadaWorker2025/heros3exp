@@ -1,0 +1,90 @@
+{
+	"name" : "New objects pack",
+	"description" : "Pack of minimods contains new objects that can be found at adventure maps. PLEASE UNISTALL DUPLICATE MODS FROM LAUNCHER TO AVOID BUGS.",
+	"author" : "Various",
+	"version" : "1.1.2",
+	"contact" : "https://discord.gg/chBT42V",
+	"modType" : "Objects",
+	"compatibility" : {
+		"min" : "1.6.0"
+	},
+	"changelog" : {
+		"1.1.2" : [
+			"Modern Roads fix"
+		],
+		"1.1.1" : [
+			"Updated polish translation"
+		],
+		"1.1.0" : [
+			"Central warehouse fix"
+		],
+		"1.0.9" : [
+			"Updated polish translation"
+		],
+		"1.0.8" : [
+			"Updated Czech translation",
+			"Fixed Enahnced Ballista bank settings"
+		],
+		"1.0.7" : [
+			"Enhanced Ballista bank by George King"
+		],
+		"1.0.6" : [
+			"Updated Czech translation"
+		],
+		"1.0.5" : [
+			"Mod reorganisation with submods"
+		],
+		"1.0.4" : [
+			"Polish translation by FallainBlack"
+		],
+		"1.0.3" : [
+			"Czech translation by George King"
+		],
+		"1.0.2" : [
+			"Russian translation by Anton Sergeew"
+		],
+		"1.0.1" : [
+			"Chinese translation"
+		],
+		"1.0.0" : [
+			"Initial release"
+		]
+	},
+	"conflicts" : [
+		"abaddon-column",
+		"ballista-bank",
+		"central-warehouse",
+		"elemental-nodes",
+		"golem-factory",
+		"modern_roads-mod",
+		"wyrmsun-boats"
+	],
+	"chinese" : {
+		"name" : "新物体包",
+		"description" : "一系列包含新物体的小模组，这些物体能在冒险地图上被找到。",
+		"translations" : [
+			"translations/chinese.json"
+		]
+	},
+	"russian" : {
+		"name" : "New objects pack",
+		"description" : "Pack of minimods contains new objects that can be found at adventure maps.",
+		"translations" : [
+			"translations/russian.json"
+		]
+	},
+	"czech" : {
+		"name" : "Balíček nových objektů",
+		"description" : "Balíček přidává na dobrodružné mapy nové objekty, jako jsou Sloup zatracení s mocnými protivníky, Skladiště balist, centrální skladiště pro zásoby, elementální uzly posilující různé druhy magie, továrnu na golemy a různé typy lodí a moderních cest.",
+		"translations" : [
+			"translations/czech.json"
+		]
+	},
+	"polish" : {
+		"name" : "Paczka nowych obiektów",
+		"description" : "Paczka z minimodami zawierającymi nowe obiekty na mapie przygody.",
+		"translations" : [
+			"translations/polish.json"
+		]
+	}
+}

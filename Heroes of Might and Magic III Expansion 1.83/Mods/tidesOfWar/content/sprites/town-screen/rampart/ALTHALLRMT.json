@@ -1,0 +1,15 @@
+{
+    "basepath" : "town-screen/rampart/frames/",
+	"images" :
+	[
+		{ "frame" : 44, "file" : "TPREx1.bmp"},
+		{ "frame" : 45, "file" : "TPREx2.bmp"},
+		{ "frame" : 46, "file" : "TPREx3.bmp"},
+		{ "frame" : 47, "file" : "TPREx4.bmp"},
+		{ "frame" : 48, "file" : "TPREx5.bmp"},
+		{ "frame" : 49, "file" : "TPREx6.bmp"},
+		{ "frame" : 50, "file" : "TPREx7.bmp"},		
+		{ "frame" : 54, "file" : "DWRMP4A.PNG"},
+		{ "frame" : 61, "file" : "DWRMP4UA.PNG"}
+	]
+}

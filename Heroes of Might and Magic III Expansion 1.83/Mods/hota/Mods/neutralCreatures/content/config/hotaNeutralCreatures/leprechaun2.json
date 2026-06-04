@@ -1,0 +1,118 @@
+{
+	"redQueen":
+	{
+		"advMapAmount" :
+		{
+
+			"max" : 10,
+			"min" : 4
+		},
+			"name" :
+		{
+			"plural" : "红皇后",
+			"singular" : "红皇后"
+		},
+		"faction" : "neutral",
+		"aiValue" : 18308,
+		"special": true,
+		"doubleWide" : true,
+		"attack" : 21,
+		"cost" :
+		{
+			"gold" : 5000,
+			"crystal": 3
+		},
+		"damage" :
+		{
+			"max" : 40,
+			"min" : 30
+		},
+		"defense" : 20,
+		"fightValue" : 17138,
+		"graphics" :
+		{
+			"iconSmall" : "hota/creatures/iconsSmall/CsRedqueen.bmp",
+			"iconLarge" : "hota/creatures/iconsLarge/TwRedqueen.bmp",
+			"map" : "hota/creatures/adventureMap/avwqueen.def",
+			"mapMask" : [ "VV", "VA"],
+			"animation" : "hota/creatures/battle/redqueen.def",
+			"timeBetweenFidgets" : 1,
+			"missile" : {
+				"attackClimaxFrame" : 5,
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ],
+				"offset" : {
+					"lowerX" : 28,
+					"lowerY" : 3,
+					"middleX" : 62,
+					"middleY" : -53,
+					"upperX" : 37,
+					"upperY" : -98
+				},
+				"projectile" : "CPRZEAX.DEF"
+			},
+			"animationTime" :
+			{
+				"walk" : 1,
+				"idle" : 10.00,
+				"attack" : 1
+			}
+		},
+		"growth" : 1,
+		"shots" : 50,
+		"hitPoints" : 150,
+		"level" : 7,
+
+
+		"sound" :
+		{
+			"attack" : "ENCHSHOT.wav",
+			"defend" : "ENCHDFND.wav",
+			"killed" : "ENCHKILL.wav",
+			"move" : "MONKMOVE.wav",
+			"shoot" : "ENCHSHOT.wav",
+			"wince": "hota/creatures/leprechaun/QUENWNCE.wav",
+			"startMoving": "VAMPEXT1.wav",
+			"endMoving": "VAMPEXT2.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"canShoot" : { "type" : "SHOOTER" },
+			"PernamentShoot" : { "type" : "FREE_SHOOTING"},
+			"canFly" : 
+			{
+				"type" : "FLYING",
+				"subtype": "movementTeleporting"
+			},
+			"blindImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.forgetfulness"
+			},
+			"castsDisruptingRay" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.disruptingRay",
+				"val" : 100,
+				"addInfo" : [1,1],
+			},
+			"basicSlayer" : { "type" : "KING", "val": 2 },
+			"summonGuardians" :
+			{
+				"type" : "SUMMON_GUARDIANS",
+				"subtype" : "creature.leprechaun",
+				"val" : 500,
+			},
+			"decreaseLuck" :
+			{
+				"type" : "LUCK",
+				"val" : -1,
+				"stacking" : "面对红皇后",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			}			
+		}
+	}
+}
+
+

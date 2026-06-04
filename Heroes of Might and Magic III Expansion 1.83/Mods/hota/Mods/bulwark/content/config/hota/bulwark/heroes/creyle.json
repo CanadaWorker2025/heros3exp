@@ -1,0 +1,47 @@
+{
+	"05bulwarkCreyle" : {
+		"class" : "chieftain",
+		"female" : true,
+		"images" : {
+			"large" : "hota/bulwark/heroes/creyle/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/creyle/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/creyle/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/creyle/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "armorer",
+				"level" : "advanced"
+			}
+		],
+		"specialty" : {
+			"creature" : "bulwarkMammoth"
+		},
+		"texts" : {
+			"name" : "克蕾莉",
+			"biography" : "克蕾莉的父亲，也就是霜巨人的国王，拒绝让她继承王位。她深知与这个老顽固讲道理毫无意义，于是决定寻找其他愿意接受她领导的人。克蕾莉挑战了沃里最大的猛犸象群的首领：她赤手空拳将其制服，折断了它的象牙，并将其制成了一支战号。她吹响战号，带领着她自己的象群投入战斗。",
+			"specialty" : {
+				"name" : "猛犸",
+				"description" : "每6级提高猛犸及其升级形态20%的攻击力和防御力。速度+1。",
+				"tooltip" : "Creature Bonus: Mammoths"
+			}
+		}
+	}
+}

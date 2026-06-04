@@ -1,0 +1,114 @@
+{
+	"mdtIllithid" : {
+
+		"advMapAmount" : {"max" : 16, "min" : 8},
+		"aiValue" : 789,
+		"attack" : 14,
+		"cost" : { "gold" : 450 },
+		"damage" : {"max" : 16, "min" : 11},
+		"defense" : 9,
+		"faction" : "dungeon",
+		"description" : "{技能说明}： \n{蛊惑人心}： 3 回合控制对手，控制最多血量为 40*数量，不够则无法控制。",
+		"fightValue" : 748,
+		"graphics" : {
+			"animation" : "creatures/dungeon/battle/Clllithid.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"iconLarge" : "creatures/dungeon/iconsBig/illithidBig.png",
+			"iconSmall" : "creatures/dungeon/iconsSmall/illithidSmall.png",
+			"map" : "creatures/dungeon/map/mapillithid.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 3,
+		"hitPoints" : 30,
+		"level" : 5,
+		"name" : { "plural" : "摄魂怪", "singular" : "摄魂怪" },
+		"sound" : {
+			"attack" : "creatures/dungeon/illithid/ILLIATTACK.wav",
+			"defend" : "creatures/dungeon/illithid/ILLIDFND.wav",
+			"killed" : "creatures/dungeon/illithid/ILLIDEAD.wav",
+			"move" : "creatures/dungeon/illithid/ILLIMOVE.wav",
+			"wince" : "creatures/dungeon/illithid/ILLIHIT.wav"
+		},
+		"speed" : 5,
+		"upgrades" : [ "mdtAlhoon" ],
+		"abilities" :
+		{
+			"castsHypnotize" :
+			{
+					"type" : "SPELLCASTER",
+					"subtype" : "spell.hypnotize",
+					"val" : 1,
+					"addInfo" : 100,
+					"turns" : 3,
+					"icon": "bonuses/hypno2.png"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"spellpower" : 
+			{ 
+				"type" : "CREATURE_SPELL_POWER", 
+				"val" : 80 
+			}		
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.dispel",
+					"addInfo" : [0, 2] //35 - dispel
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

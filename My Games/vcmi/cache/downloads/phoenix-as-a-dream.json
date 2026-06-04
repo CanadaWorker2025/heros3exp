@@ -1,0 +1,116 @@
+{
+	"name" : "Phoenix as a dream",
+	"description" : "Add a series of new heroes.",
+	"author" : "kdmcser, Maestro & xiasimanniu",
+	"version" : "1.1.8",
+	"contact" : "",
+	"modType" : "Heroes",
+	"compatibility" : {
+		"min" : "1.7.0"
+	},
+	"changelog" : {
+		"1.0.0" : [
+			"Initial release"
+		],
+		"1.1.0" : [
+			"Add new heroes: Like Zheng and Henry Tao (use Maestro's def to Sleeping Dragon)"
+		],
+		"1.1.1" : [
+			"Hero balance, adding new bank Sacred Trial Ground (def is designed by xiasimanniu)."
+		],
+		"1.1.2" : [
+			"Added Chinese translation"
+		],
+		"1.1.3" : [
+			"Czech translation by George King"
+		],
+		"1.1.4" : [
+			"Fixed self-depency to allow mod deactivation"
+		],
+		"1.1.5" : [
+			"Polish translation by FallainBlack"
+		],
+		"1.1.6" : [
+			"Small changes"
+		],
+		"1.1.7" : [
+			"Crashfix"
+		],
+		"1.1.8" : [
+			"Update to vcmi-1.7 format"
+		]
+	},
+
+	"czech" : {
+		"name" : "Fénix jako sen",
+		"description" : "Fénix jako sen",
+		"translations" : [
+			"translation/phoenix-as-a-dream/czech.json"
+		]
+	},
+	"polish" : {
+		"name" : "Feniks jak ze snu",
+		"description" : "Feniks jak ze snu - nowa klasa bohaterów specjalizujących się w przywoływaniu Feniksów",
+		"translations" : [
+			"translation/phoenix-as-a-dream/polish.json"
+		]
+	},
+
+	"chinese" : {
+		"name" : "凤凰如梦",
+		"description" : "添加一系列新英雄。",
+		"translations" : [
+			"translation/phoenix-as-a-dream/chinese.json"
+		]
+	},
+
+	"artifacts" : [
+		"config/phoenix-as-a-dream/artifacts/phoenix_staff.json",
+		"config/phoenix-as-a-dream/artifacts/phoenix_spell_book.json",
+		"config/phoenix-as-a-dream/artifacts/phoenix_badge.json",
+		"config/phoenix-as-a-dream/artifacts/vcmi_enhancement_shield.json",
+		"config/phoenix-as-a-dream/artifacts/reprogramming_chip.json"
+	],
+
+	"creatures" : [
+		"config/phoenix-as-a-dream/creatures/hot_flame_element.json",
+		"config/phoenix-as-a-dream/creatures/golden_sun_element.json",
+		"config/phoenix-as-a-dream/creatures/sleeping_dragon_commander.json",
+		"config/phoenix-as-a-dream/creatures/young_phoenix_commander.json"
+	],
+
+	"heroClasses" : [
+		"config/phoenix-as-a-dream/classes/phoenix_class.json",
+		"config/phoenix-as-a-dream/classes/armageddon_judger.json",
+		"config/phoenix-as-a-dream/classes/fire_dominator_class.json"
+	],
+
+	"heroes" : [
+		"config/phoenix-as-a-dream/heroes/phoenix_as_a_dream.json",
+		"config/phoenix-as-a-dream/heroes/sleeping_dragon.json",
+		"config/phoenix-as-a-dream/heroes/young_phoenix.json"
+	],
+
+	"settings" : {
+		"heroes" : {
+			"minimalPrimarySkills" : [
+				0,
+				0,
+				0,
+				0
+			]
+		}
+	},
+	"skills" : [
+		"config/phoenix-as-a-dream/skills/phoenixs_bless.json",
+		"config/phoenix-as-a-dream/skills/fire_resist.json",
+		"config/phoenix-as-a-dream/skills/four_schools.json"
+	],
+
+	"spells" : [
+		"config/phoenix-as-a-dream/spells/summon_phoenix.json",
+		"config/phoenix-as-a-dream/spells/lesser_summon_phoenix.json",
+		"config/phoenix-as-a-dream/spells/always_first.json",
+		"config/phoenix-as-a-dream/spells/fire_vulnerable.json"
+	]
+}

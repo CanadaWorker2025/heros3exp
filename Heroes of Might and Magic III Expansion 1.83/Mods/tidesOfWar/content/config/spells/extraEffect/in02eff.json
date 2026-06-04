@@ -1,0 +1,82 @@
+{
+	"inf02":
+	{
+		"type": "ability", 
+		"name": "鞭笞",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+ 
+		//forgetfulness animation
+		"animation":{
+			"affect":["spells/extraEffect/in2Eff.def"]
+		},
+ 
+		"flags" : {"negative": true},
+ 
+		"graphics":
+		{
+			"iconEffect": "spells/extraEffect/in2eff.bmp"
+		},
+
+		"sounds":
+		{
+			"cast":"PFOEATTK"
+		},
+		"targetType" : "CREATURE",
+ 
+		"levels" : {
+			"base":{
+		
+				"range": "0",
+				"power": 1,
+				"cost": 0,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"battleEffects":{
+
+					"lifeEater" :
+					{
+					"type": "core:timed",
+					"cumulative": true,
+					"bonus":
+					{
+					"primarySkill" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -3,
+						"valueType" : "ADDITIVE_VALUE",
+						"duration" : "PERMANENT"
+						}
+					}
+				}
+				},
+				"description": "{鞭笞}\r\n\r\n每次受身使目标防御-3。",
+			},
+			"none":
+			{},
+			"basic":
+			{},
+			"advanced":
+			{},
+			"expert":
+			{}
+		}
+	}
+ 
+}

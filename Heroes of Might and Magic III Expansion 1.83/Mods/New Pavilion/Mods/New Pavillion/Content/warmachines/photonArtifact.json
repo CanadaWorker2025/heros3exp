@@ -1,0 +1,50 @@
+{
+	"photonCannon1":
+    {
+		"type" : ["HERO"],
+		"warMachine":"photonCannon1",
+        "class": "SPECIAL",
+        "value": 4000,
+        "slot":"MACH1",
+        "text":
+		{
+			"name": "  光子炮  ",
+			"description": "{  光子炮  }\r\n\r\n来自古代凡恩的秘密武器复制品，可以发出强大的光束打击敌人。",
+			"event": "光子炮是神秘的宝物，你很高兴发现了他。"
+		},
+		"graphics":
+		{
+			"image": "artifactsPavilion/photonS.bmp",
+			"scenarioBonus": "artifactsPavilion/photonB.bmp",
+			"map": "artifactsPavilion/pyraArtimap.def"
+		}
+	},
+	"photonCannon2":
+    {
+		"type" : ["HERO"],
+		"warMachine":"photonCannon2",
+        "class": "SPECIAL",
+        "value": 4750,
+        "slot":"MACH1",
+        "text":
+		{
+			"name": "强化光子炮",
+			"description": "{强化光子炮}\r\n\r\n来自古代凡恩的秘密武器复制品，可以发出强大的光束打击敌人。",
+			"event": "光子炮是神秘的宝物，你很高兴发现了他。"
+		},
+		"graphics":
+		{
+			"image": "artifactsPavilion/photonS.bmp",
+			"scenarioBonus": "artifactsPavilion/photonB.bmp",
+			"map": "artifactsPavilion/pyraArtimap.def"
+		},
+		"fusedComponents" : true,
+		"components":
+		[
+			"firstAidTent",
+			"photonCannon1"
+		],
+	}
+}
+
+

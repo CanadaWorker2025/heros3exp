@@ -1,0 +1,14 @@
+{
+	"cove" :
+	{
+		"name" : "港口",
+		"description" : "{港口}\n种族阵营： 中立，混乱\n种族地形： 沼泽\n所在地： 瑞格纳群岛-无尽海洋帝国\n港口势力是主要分布在瑞格纳，由海盗们组成。之前瑞格纳并没有形成统一的国度，而在彼得利完成统一之后，众多海盗也只是名义上臣服在这个国度的统治下。海盗的分布也并不仅限于瑞格纳，而是整片大陆有海洋的地区。",
+		"alignment" : "neutral",
+		"nativeTerrain" : "swamp",
+		"boat" : "boatCove",
+		"creatureBackground" : {
+			"120px" : "hota/cove/creaturebg120px",
+			"130px" : "hota/cove/creaturebg130px"
+		}
+	}
+}

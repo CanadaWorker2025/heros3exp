@@ -1,0 +1,113 @@
+{
+	"name" : "Bastille Town",
+	"description" : "New town made by Turbanellos, The Forgotten Fields",
+	
+	"author" : "FF Team, mod : Turbanellos",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "1.10",
+	"modType" : "Town",	
+	"depends" : ["hota.bulwark"],
+    "factions" : 
+	[ 
+		"config/bastille/town",
+		"config/bastille/bulwark"
+	],
+	
+	"chinese" : {
+		"name" : "堡垒（Bastion）",
+		"description" : "EXP中的堡垒种族"
+	},
+	
+	"creatures" :
+	[
+		"config/bastille/creatures/defender.json",
+		"config/bastille/creatures/mountainguard.json",
+		"config/bastille/creatures/javeliner.json",
+		"config/bastille/creatures/harpooner.json",
+		"config/bastille/creatures/brute.json",
+		"config/bastille/creatures/berserker.json",
+		"config/bastille/creatures/snowbird.json",
+		"config/bastille/creatures/blizzardbird.json",
+		"config/bastille/creatures/gladiator.json",
+		"config/bastille/creatures/flameglad.json",
+		"config/bastille/creatures/mammoth.json",
+		"config/bastille/creatures/mammothlord.json",
+		"config/bastille/creatures/bsfafnir.json",
+		"config/bastille/creatures/demonicfafnir.json",	
+		"config/bastille/dwarftank/tank.json",
+		"config/bastille/creatures/highAmazon.json",
+		"config/bastille/creatures/highValkyrie.json",
+		"config/bastille/creatures/bcommander.json",
+		"config/bastille/creatures/bulwarkEXT1.json",
+		"config/bastille/creatures/bulwarkEXT2.json"
+	],
+	
+	"heroClasses" :
+	[
+		"config/bastille/classes/warlord.json",
+		"config/bastille/classes/pyroma.json"
+	],
+
+	"heroes" :
+	[
+		"config/bastille/heroes/A_daive.json",
+		"config/bastille/heroes/B_richmond.json",
+		"config/bastille/heroes/C_harrigan.json",
+		"config/bastille/heroes/D_austin.json",
+		"config/bastille/heroes/E_princehogg.json",
+		"config/bastille/heroes/F_gestalt.json",
+		"config/bastille/heroes/G_aaron.json",
+		"config/bastille/heroes/H_craighill.json",
+		"config/bastille/heroes/I_aidan.json",
+		"config/bastille/heroes/J_barbara.json",
+		"config/bastille/heroes/K_cynthia.json",
+		"config/bastille/heroes/L_astride.json",
+		"config/bastille/heroes/M_mildura.json",
+		"config/bastille/heroes/N_renee.json",
+		"config/bastille/heroes/O_melisa.json",
+		"config/bastille/heroes/P_leslie.json",
+		"config/bastille/heroes/S_sylphine.json",
+	],
+	"artifacts" : 
+	[ 
+		"config/bastille/dwarftank/tankArt.json",
+		"config/bastille/artifacts/runeArtifacts.json"
+	],
+	"spells" :
+	[
+		//"config/bastille/NewOldSpells/nImmolation.json",
+		"config/bastille/NewOldSpells/fireBolt.json",
+		"config/bastille/NewOldSpells/iceFrozen.json",
+		"config/bastille/NewOldSpells/runeExtra.json",
+		"config/bastille/NewOldSpells/Barbarity.json",
+		"config/bastille/NewOldSpells/runeSpell.json",
+		"config/bastille/NewOldSpells/fireVulnerability.json"
+	],
+	"spellSchools" : {
+		"runeHighlands" : {
+			"name": "符文",
+			"schoolBookmark" : "bastille/bookmarks/runeBookmark.def",
+			"schoolBorders" : "bastille/bookmarks/runeSchoolFrames.json",
+			"schoolHeader" : "bastille/bookmarks/runeHeader.png"
+			
+		}
+	},
+	"skills":
+	[
+		"config/bastille/dwarftank/artillery.json",
+		"config/bastille/runes.json",
+	],
+	 "objects":
+    [
+		"config/bastille/dwellings.json",
+		"config/bastille/banks/dwarfHighBank.json"
+    ],
+		"changelog" :
+    {
+		"1.20"	:	["New Lv7 Creatures"],
+		"1.10"   : [ "Bug fixes" ],
+		"1.02"   : [ "Added new commander", "Cosmetic fixes" ],
+		"1.01"   : [ "Bug fixes" ],
+		"1.00"   : [ "Initial release" ]
+    }
+}

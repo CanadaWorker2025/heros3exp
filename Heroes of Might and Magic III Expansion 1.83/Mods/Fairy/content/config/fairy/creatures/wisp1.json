@@ -1,0 +1,106 @@
+{
+	"ftWisp1" : {
+		"abilities" : {
+			"enchanted" : 	
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.airShield",
+				"val" : 2,
+				"icon" : "fairy/icons/bonuses/enchantedairshield"
+			},
+			"canFly" :  
+			{ 
+				"type" : "FLYING",
+				"icon" : "fairy/icons/bonuses/e_fly3"
+			}
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 2, 3, 3, 4, 4, 5]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ATTACKS_ALL_ADJACENT"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 2, 2, 3, 4]
+			}
+		],
+		"advMapAmount" : { "max" : 20, "min" : 10 },
+		"aiValue" : 552,
+		"attack" : 9,
+		"cost" : { "gold" : 350 },
+		"damage" : { "max" : 9, "min" : 7 },
+		"defense" : 10,
+		"faction" : "fairy",
+		"fightValue" : 506,
+		"graphics" : {
+			"animation" : "fairy/battle/creatures/CFar07.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"iconSmall" : "fairy/iconsSmall/creatures/fay07.bmp",
+			"iconLarge" : "fairy/iconsBig/creatures/fairy07.bmp",
+			"map" : "fairy/map/creatures/mapwisp1.def",
+			"timeBetweenFidgets" : 10
+		},
+		"growth" : 4,
+		"hitPoints" : 30,
+		"level" : 4,
+		"name" : { "plural" : "风精灵", "singular" : "风精灵" },
+		"sound" : {
+			"attack": "GENIATTK.wav",
+			"defend": "GENIDFND.wav",
+			"killed": "fairy/SYLPKILL.wav",
+			"move": "GENIMOVE.wav",
+			"wince": "fairy/SYLPWNCE.wav"
+		},
+		"speed" : 7,
+		"upgrades" : [ "ftWisp2" ]
+	}
+}

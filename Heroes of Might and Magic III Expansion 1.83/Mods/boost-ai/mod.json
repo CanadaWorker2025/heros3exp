@@ -1,0 +1,14 @@
+{
+	"name" : "Boost AI",
+	"description" : "Rebalances difficulty system giving AI more advantages. Provides few options for boosting, you can control by enabling/disabling submods",
+	"version" : "0.3",
+	"author" : "Nordsoft, val-gaav",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"modType" : "AI",
+	"compatibility" :
+	{
+		"min" : "1.4.0"
+	}
+}

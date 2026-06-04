@@ -1,0 +1,75 @@
+{
+	"n_belinda" :
+	{
+		"class" : "bard",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "贝琳达",
+			"biography" : "贝琳达会说自己是个天生的作家。她喜欢四处收集趣闻，然后写在自己的故事中。有时她会认为静心写作会比冒险更加有趣。继续冒险的原因只是为了寻找更多的创作灵感。",
+			"specialty" :
+			{
+				"description" : "在智力技能上每级得到5%的额外奖励。",
+				"tooltip" : "Bonus: secondary skill",
+				"name" : "智力"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/belinda/UN32T193.bmp",
+			"specialtyLarge" : "preserve/heroes/belinda/UN44T193.bmp",
+			"large" : "preserve/heroes/belinda/HPL005BR.bmp",
+			"small" : "preserve/heroes/belinda/HPS005BR.bmp"
+		},
+
+		"spellbook" :
+		[
+			"bless"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"intelligence" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_PER_KNOWLEDGE_PERCENTAGE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

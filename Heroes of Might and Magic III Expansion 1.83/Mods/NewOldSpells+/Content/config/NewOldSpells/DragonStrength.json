@@ -1,0 +1,214 @@
+{
+	"dragonStrength":
+	{
+		"type": "combat", 
+		"name": "巨龙之力",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 5, 
+		"gainChance":
+		{
+			"rampart": 20,
+			"dungeon" : 15,
+			"tower": 10,
+			"inferno": 5,
+			"necropolis": 0,
+			"conflux": 0
+		},
+ 
+		"flags" : {"positive": true},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {
+				"core:bonus.DRAGON_NATURE": "normal",
+				"core:bonus.NON_LIVING" : "normal",
+				"core:bonus.GARGOYLE" : "normal",
+				"core:bonus.MECHANICAL" : "normal",
+				"core:bonus.UNDEAD" : "normal"
+			}
+		},
+ 
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/dragonSBook.bmp",
+			"iconScroll": "NewOldSpells/dragonSScroll.bmp",
+			"iconScenarioBonus": "NewOldSpells/dragonSScenario.bmp",
+			"iconEffect": "NewOldSpells/dragonSEffect.bmp"
+		},
+		
+		"animation":
+		{
+			"affect":["NewOldSpells/dragonSSpell.def"]
+		},
+
+		"sounds":
+		{
+			"cast": "NewOldSpells/sound.spell.dragon strength.wav"
+		},
+		
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{巨龙之力}\n\n提升目标生命值和伤害50%，对龙，无生命生物，亡灵生物无效。\n",
+	 
+				"cost": 30,
+	 
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": 50,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS"
+					},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 3000,
+						"valueType" : "BASE_NUMBER",
+						"duration" : [
+							"UNTIL_ATTACK",
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						]
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 50,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级巨龙之力}\n\n提升目标生命值和伤害50%，对龙，无生命生物，亡灵生物无效。\n",
+	 
+				"cost": 25,
+	 
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": 50,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS"
+					},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 3000,
+						"valueType" : "BASE_NUMBER",
+						"duration" : [
+							"UNTIL_ATTACK",
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						]
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 50,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级巨龙之力}\n\n提升目标生命值和伤害75%，对龙，无生命生物，亡灵生物无效。\n",
+	 
+				"cost": 25,
+	 
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": 75,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS"
+					},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 3000,
+						"valueType" : "BASE_NUMBER",
+						"duration" : [
+							"UNTIL_ATTACK",
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						]
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 75,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS"
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级巨龙之力}\n\n提升目标生命值和伤害100%，对龙，无生命生物，亡灵生物无效。\n",
+	 
+				"cost": 25,
+	 
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": 100,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS"
+					},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 3000,
+						"valueType" : "BASE_NUMBER",
+						"duration" : [
+							"UNTIL_ATTACK",
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						]
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 100,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS"
+					}
+				}
+			}
+		}
+	}
+ 
+}

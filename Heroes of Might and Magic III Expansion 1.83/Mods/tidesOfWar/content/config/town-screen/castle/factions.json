@@ -1,0 +1,195 @@
+{
+	"core:castle" :
+	{
+		"description" : "{城堡}\n种族阵营： 正义，中立\n种族地形： 草地\n所在地： 恩塔格瑞大陆-埃拉西亚王国\n城堡是埃拉西亚的正规军势力。作为中世纪骑士背景的势力，城堡由人类组成，也是所有势力中领土最大的，拥有埃拉西亚全境的领土和一些争议地区。他们与迪雅，克鲁罗德和塔塔利亚等地长期处于纷争之中。",
+		"town" :
+		{
+			"hallBackground": "town-screen/castle/CastleHallBg.BMP",
+			"buildingsIcons": "town-screen/castle/ALTHALLCSTL.DEF",
+			"hallSlots":
+			[
+			
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern", "special3" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4" ], [ "shipyard", "special1" ] ],
+				[ [ "special2" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1","dwellingUpEx1" ], [ "dwellingLvl2", "dwellingUpLvl2","dwellingUpEx2" ], [ "dwellingLvl3", "dwellingUpLvl3","dwellingUpEx3" ], [ "dwellingLvl4", "dwellingUpLvl4","dwellingUpEx4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5","dwellingUpEx5" ], [ "dwellingLvl6", "dwellingUpLvl6","dwellingUpEx6" ], [ "dwellingLvl7", "dwellingUpLvl7","dwellingUpEx7" ], [ "dwellingLvl8", "dwellingUpLvl8","dwellingUpEx8" ] ]
+			],
+			"horde" : [ 2, -1 ],
+			"creatures" :
+			[
+				["pikeman", "halberdier","ffpraetorian"],
+				["archer", "marksman","ffredcrossbowman"],
+				["griffin", "royalGriffin","ffbattlegriffin"],
+				["swordsman", "crusader","ffvindicator"],
+				["monk", "zealot","ffheretic"],
+				["cavalier", "champion","ffpaladin"],
+				["angel", "archangel","ffseraph"], 
+				["mdtTemplar", "mdtPaladin","mdtPaladin2"]
+			],
+
+			"structures" :
+			{
+				"dwellingUpEx1": { "animation" : "TBCSUP_0.def", "x" : 304, "y" : 65,  "border" : "TOCSPIK2.bmp", "area" : "TZCSPIK2.bmp" },
+				"dwellingUpEx2": { "animation" : "TBCSUP_1.def", "x" : 360, "y" : 115, "border" : "TOCSCRS2.bmp", "area" : "TZCSCRS2.bmp" },
+				"dwellingUpEx3": { "animation" : "TBCSHRD2.def", "x" : 76,  "y" : 35,  "z" : -1, "border" : "TOCSGR2H.bmp", "area" : "TZCSGR2H.bmp"},
+				"dwellingUpEx4": { "animation" : "TBCSUP_3.def", "x" : 176, "y" : 85,  "border" : "TOCSSWD2.bmp", "area" : "TZCSSWD2.bmp" },
+				"dwellingUpEx5": { "animation" : "TBCSUP_4.def", "x" : 563, "y" : 173, "z" : 1,  "border" : "TOCSMON2.bmp", "area" : "TZCSMON2.bmp" },
+				"dwellingUpEx6": { "animation" : "TBCSUP_5.def", "x" : 160, "y" : 190, "z" : -1, "border" : "TOCSCAV2.bmp", "area" : "TZCSCAV2.bmp" },
+				"dwellingUpEx7": { "animation" : "TBCSUP_6.def", "x" : 303, "y" : 0,   "z" : -1, "border" : "TOCSANG2.bmp", "area" : "TZCSANG2.bmp" },
+				"dwellingLvl8":   { "animation" : "town-screen/castle/TBCAlt7.def", "x" : 0, "y" : 0,   "z" : 1, "border" : "town-screen/castle/buildings-border/TBCAlt7border.bmp", "area" : "town-screen/castle/buildings-area/TBCAlt7area.bmp" },
+				"dwellingUpLvl8": { "animation" : "town-screen/castle/TBCAlt7UP.def", "x" : 0, "y" : 0,   "z" : 1, "border" : "town-screen/castle/buildings-border/TBCAlt7UPborder.bmp", "area" : "town-screen/castle/buildings-area/TBCAlt7UParea.bmp" },
+				"dwellingUpEx8": { "animation" : "town-screen/castle/TBCAlt7UP.def", "x" : 0, "y" : 0,   "z" : 1, "border" : "town-screen/castle/buildings-border/TBCAlt7UPborder.bmp", "area" : "town-screen/castle/buildings-area/TBCAlt7UParea.bmp" }
+			},
+
+			"buildings" :
+			{
+				"dwellingUpEx1": 
+				{ 
+				"name" : "高级岗楼",
+					"description" : "高级岗楼允许你招募戟兵和禁卫军，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"gold" : 1000
+					},
+				"id" : 44, 
+				"upgrades" : "dwellingUpLvl1",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx2": 
+				{ 
+				"name" : "高级射手塔楼",
+					"description" : "高级射手塔楼允许你招募神射手和十字弓手，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 1000
+					},
+				"id" : 45, 
+				"upgrades" : "dwellingUpLvl2",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx3": 
+				{ 
+				"name" : "高级狮鹫塔楼",
+					"description" : "高级狮鹫塔楼允许你招募皇家狮鹫和战斗狮鹫，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"gold" : 1000
+					},
+				"id" : 46, 
+				"upgrades" : "dwellingUpLvl3",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx4": 
+				{ 
+				"name" : "高级兵营",
+					"description" : "高级兵营允许你招募十字军和维护者，并且可以在城中进行转换。",
+					"cost" : {
+						"ore" : 5,
+						"crystal": 5,
+						"gold" : 2000
+					},
+				"id" : 47, 
+				"upgrades" : "dwellingUpLvl4",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx5": 
+				{ 
+				"name" : "高级寺院",
+					"description" : "高级寺院允许你招募祭司和狂热者，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 2,
+						"ore" : 2,
+						"sulfur": 2,
+						"gems": 2,
+						"crystal": 2,
+						"mercury": 2,
+						"gold" : 1000
+					},
+				"id" : 48, 
+				"upgrades" : "dwellingUpLvl5",
+				"mode" : "auto" 
+				},
+				"dwellingUpEx6": 
+				{ 
+				"name" : "高级训练场",
+					"description" : "高级训练场允许你招募骑士和圣殿骑士，并且可以在城中进行转换。",
+					"cost" : {
+						"wood" : 10,
+						"gold" : 3000
+					},
+				"id" : 49, 
+				"upgrades" : "dwellingUpLvl6",
+				"mode" : "auto"
+				},
+				"dwellingUpEx7": 
+				{ 
+				"name" : "高级云中城",
+					"description" : "高级云中城允许你招募大天使和炽天使，并且可以在城中进行转换。",
+					"cost" : {
+						"sulfur": 10,
+						"gems": 10,
+						"crystal": 10,
+						"mercury": 10,
+						"gold" : 20000
+					},
+				"id" : 50, 
+				"upgrades" : "dwellingUpLvl7",
+				"mode" : "auto" 
+				},
+				
+				"dwellingLvl7":   
+				{ 
+					"requires" : [ "allOf", [ "dwellingLvl5" ] ]
+				},
+				"dwellingUpLvl7":   
+				{ 
+					"requires" : [  "allOf", [ "dwellingLvl7" ]  ]
+				},
+				"dwellingLvl8" :
+				{
+					"name" : "大教堂",
+					"description" : "大教堂允许你招募圣堂武士。",
+					"cost" : {
+						"wood" : 5,
+						"gems" : 5,
+						"ore" : 5,
+						"gold" : 7500
+					}, 
+					"requires" : [ "allOf", [ "dwellingLvl4" ],[ "dwellingLvl5" ] ] 
+				},
+				"dwellingUpLvl8" :
+				{
+					"name" : "高级大教堂",
+					"description" : "高级大教堂允许你招募高阶圣武士。",
+					"cost" : {
+						"wood" : 10,
+						"gems" : 10,
+						"ore" : 10,
+						"gold" : 12000
+					}, 
+					"upgrades" : "dwellingLvl8"
+				},
+				"dwellingUpEx8" :
+				{
+					"name" : "高级大教堂",
+					"description" : "高级大教堂允许你招募高阶圣武士。",
+					"cost" : {
+						"wood" : 10,
+						"gems" : 10,
+						"ore" : 10,
+						"gold" : 12000
+					},
+					"id" : 152, 
+					"upgrades" : "dwellingUpLvl8",
+					"mode" : "auto" 
+				}
+			}
+		}
+	},
+	"core:neutral":
+	{
+		"name" : "中立",
+	}
+}

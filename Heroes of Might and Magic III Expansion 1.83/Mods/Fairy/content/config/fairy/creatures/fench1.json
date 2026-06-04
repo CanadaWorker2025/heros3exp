@@ -1,0 +1,144 @@
+{
+	"ftFench1":
+	{
+		"name" :
+		{
+			"plural" : "绿妖精",
+			"singular" : "绿妖精"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 16
+		},
+		"faction" : "fairy",
+		"aiValue" : 126,
+		"attack" : 7,
+		"cost" :
+		{
+			"gold" : 100
+		},
+		"damage" :
+		{
+			"max" : 4,
+			"min" : 3
+		},
+		"defense" : 4,
+		"hasDoubleWeek": true,
+		"fightValue" : 115,
+		"graphics" :
+		{
+			"animation" : "fairy/battle/creatures/CFar03.def",
+			"map" : "fairy/map/creatures/mapfench1.def",
+			"iconSmall" : "fairy/iconsSmall/creatures/fay03.bmp",
+			"iconLarge" : "fairy/iconsBig/creatures/fairy03.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "fairy/battle/creatures/projectile/zap1.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"growth" : 9,
+		"hitPoints" : 15,
+		"level" : 2,
+		"upgrades": [ "ftFench2" ],
+		"sound" :
+		{
+			"attack" : "fairy/LEPRATTK.wav",
+			"defend" : "fairy/LEPRDFND.wav",
+			"killed" : "fairy/LEPRKILL.wav",
+			"move"   : "fairy/LEPRMOVE.wav",
+			"wince"  : "fairy/LEPRWNCE.wav"
+		},
+		"speed" : 5,
+		"abilities" :
+		{
+			
+		},
+		"stackExperience" :
+
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.skeleton"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.skeletonWarrior"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+}

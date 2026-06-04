@@ -1,0 +1,67 @@
+{
+	"12_Todd" :
+	{
+    "class": "factoryMClass",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "托德",
+			"biography" : "很少有布拉卡达科学家真正见过、更不用说接触过锤子或熔炉了。然而，托德必须学习如何使用它们，无法将他深奥的想法传达给铁匠和铜匠。他在布拉卡达的研究也缺乏至关重要的仪器和材料。托德绕了半个世界去寻找，最终在伯顿找到了他想要的东西。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "自行机甲",
+				"description" : "达到4级以后提高自行机甲或守卫机甲的攻击力与防御力。"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "factory/heroes/12_Todd/smallS.bmp",
+			"specialtyLarge" : "factory/heroes/12_Todd/bigS.bmp",
+			"large" : "factory/heroes/12_Todd/bigP.bmp",
+			"small" : "factory/heroes/12_Todd/smallP.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halfling",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "automaton",
+				"max" : 5,
+				"min" : 3
+			},
+			{
+				"creature" : "armadillo",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"spellbook" :
+		[
+			"shield"
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "automaton"
+		}
+	}
+}
+

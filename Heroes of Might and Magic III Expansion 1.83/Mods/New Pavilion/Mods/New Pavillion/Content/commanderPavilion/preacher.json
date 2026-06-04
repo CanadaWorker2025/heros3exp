@@ -1,0 +1,113 @@
+{
+	"preacher":
+	{
+		"name" :
+		{
+			"plural" : "阿蒙祭司",
+			"singular" : "阿蒙祭司"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"faction" : "pavilion",
+		"aiValue" : 1000,
+		"special" : true,
+		"attack" : 5,
+		"damage" :
+		{
+			"max" : 15,
+			"min" : 7
+		},
+		"defense" : 5,
+		"fightValue" : 1000,
+		"level" : 5,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{
+			"animation" : "creaturedefsPavilion/preacher.def",
+//			"map" : "creaturedefsPavilion/preacherMap.def",
+			"iconSmall" : "creatureiconsPavilion/preacherSmall.bmp",
+			"iconLarge" : "creatureiconsPavilion/preacher.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile" : "creaturedefsPavilion/projectile/shot283.def",
+				"attackClimaxFrame" : 4,
+				"offset" :
+				{
+					"lowerX" : 62,
+					"lowerY" : -93,
+					"middleX" : 62,
+					"middleY" : -93,
+					"upperX" : 62,
+					"upperY" : -93
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"doubleWide" : false,
+		"growth" : 9,
+		"hasDoubleWeek": false,
+		"hitPoints" : 60,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack" : "Pavilion/preaAtt.wav",
+			"defend": "Pavilion/preaDef.wav",
+			"killed": "Pavilion/preaDie.wav",
+			"wince": "Pavilion/preaHit.wav",
+			"move": "AMAGMOVE.wav",
+			"shoot": "Pavilion/preaShoot.wav"
+		},
+		"speed" : 5,
+		"abilities" :
+		{
+
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.airShield",
+				"val" : 3
+			},
+//			"shooter" :
+//			{
+//				"type" : "SHOOTER"
+//			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+		}
+	}
+}

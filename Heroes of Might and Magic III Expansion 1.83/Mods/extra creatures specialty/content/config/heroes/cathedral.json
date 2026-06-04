@@ -1,0 +1,43 @@
+{
+
+	"cathedral:erika": {
+        "texts": {
+            "specialty": {
+                "name": "圣武士",
+                "description": "每6级提高圣武士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"cathedral:tarinus": {
+        "texts": {
+            "specialty": {
+                "name": "执事",
+                "description": "每5级提高执事及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"cathedral:nariko": {
+        "texts": {
+            "specialty": {
+                "name": "飞蛇",
+                "description": "每4级提高飞蛇及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"cathedral:patricia": {
+        "texts": {
+            "specialty": {
+                "name": "猎巫人",
+                "description": "每3级提高猎巫人及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"cathedral:kasumi": {
+        "texts": {
+            "specialty": {
+                "name": "屠杀者",
+                "description": "每2级提高屠杀者及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	}
+}

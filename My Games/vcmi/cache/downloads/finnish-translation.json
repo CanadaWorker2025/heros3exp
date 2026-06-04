@@ -1,0 +1,34 @@
+{	
+	"name" : "Finnish translation",
+	"description" : "Finnish translation of Heroes of Might and Magic III: Complete Edition",
+	"version" : "1.0.3",
+	"author" : "",
+	"contact" : "https://github.com/vcmi-mods/finnish-translation",
+	"modType" : "Translation",
+	"language" : "finnish",
+	"compatibility" :
+	{
+		"min" : "1.3.0"
+	},
+	"changelog" : 
+	{ 
+		"1.0.3" : [ "Restore custom fonts to avoid conflict with broken H3 complete fonts and reduce width to help some tranlations" ],
+		"1.0.2" : [ "A lot of changes, remove built-in custom font as no longer needed" ],
+		"1.0.1" : [ "png images" ],
+		"1.0.0" : [ "Initial release based on https://vesa.piittinen.name/suomeksi/heroes-3/" ]
+	},
+	"german" : {
+		"name" : "Finnische Übersetzung",
+		"description" : "Finnische Übersetzung von Heroes of Might and Magic III: Complete Edition"	
+	},
+	"finnish" : {
+		"name" : "Suomenkielinen käännös",
+		"description" : "Heroes of Might and Magic III: Complete Edition -elokuvan suomenkielinen käännös."	
+	},
+	"translations" : [
+		"config/vcmi-finnish/game.json",
+		"config/vcmi-finnish/maps.json",
+		"config/vcmi-finnish/chronicles.json",
+		"config/vcmi-finnish/campaigns.json"
+	]
+}

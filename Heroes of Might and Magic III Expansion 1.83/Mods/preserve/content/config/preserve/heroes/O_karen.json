@@ -1,0 +1,75 @@
+{
+	"o_karen" :
+	{
+    "class": "bard",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "凯伦",
+			"biography" : "凯伦曾经生活在遥远的岛屿上，为了生计她曾经当过船员，也做过一些贸易，但最后她选择在维尔宁定居并学习德鲁伊的法术，不管怎样，她的理财能力都给了她很好的帮助。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供350个金币。",
+				"tooltip" : "Bonus: resource",
+				"name" : "+350个金币"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/karen/UN32T194.bmp",
+			"specialtyLarge" : "preserve/heroes/karen/UN44T194.bmp",
+			"large" : "preserve/heroes/karen/HPL006BR.bmp",
+			"small" : "preserve/heroes/karen/HPS006BR.bmp"
+		},
+		
+		
+		"spellbook" :
+		[
+			"teleport"
+		],
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}
+	}
+}
+

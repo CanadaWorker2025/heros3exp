@@ -1,0 +1,15 @@
+{
+	"core:iceElemental" :
+	{
+		"abilities":
+		{
+			"iceIsComing" :
+			{
+				"hidden": true,
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.hotaIce",
+				"val" : 1
+			}
+		}
+	}
+}

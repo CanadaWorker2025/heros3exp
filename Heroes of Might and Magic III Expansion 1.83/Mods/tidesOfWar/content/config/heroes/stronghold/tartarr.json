@@ -1,0 +1,70 @@
+{
+  "mdtTartarr" :
+  {
+    "class" : "battlemage",
+    "female" : true,
+    "special" : false,
+	"spellbook": [ "shield" ],
+    "texts" :
+    {
+      "name" : "塔尔塔",
+      "biography" : "塔尔塔出生在一个贫穷的食人魔家庭，但她一直梦想着征服世界。由于早熟的外表和坚韧的性格，她在14岁时就成为了一名劫掠者。由于她在抵抗魔法方面的才能，这个嗜血的食人魔很容易获得她想要的一切。",
+      "specialty" :
+      {
+        "description" : "施放护体神盾时，当提升和目标生物等级相同个英雄等级时，受到魔法影响的单位的多受到10%的近战伤害减少。",
+        "tooltip" : "Spell bonus: Shield",
+        "name" : "护体神盾"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/stronghold/tartarr_spec-small.bmp", //placeholder
+      "specialtyLarge" : "heroes/stronghold/tartarr_spec-large.bmp", //placeholder
+      "large" : "heroes/stronghold/tartarr_portrait-large.bmp",
+      "small" : "heroes/stronghold/tartarr_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "goblin",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "goblinWolfRider",
+        "max" : 7,
+        "min" : 5
+      },
+      {
+        "creature" : "orc",
+        "max" : 6,
+        "min" : 4
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "wisdom"
+      },
+      {
+        "level" : "basic",
+        "skill" : "armorer"
+      }
+    ],
+    
+	"specialty" : {
+		"bonuses" : {
+			"shield" : {
+				"subtype" : "spell.shield",
+				"type" : "SPECIAL_SPELL_LEV",
+				"updater" : "TIMES_HERO_LEVEL",
+				"val" : 10
+			}
+		}
+	}
+  }
+}

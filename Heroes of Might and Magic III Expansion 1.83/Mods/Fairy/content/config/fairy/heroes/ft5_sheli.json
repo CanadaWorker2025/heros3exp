@@ -1,0 +1,63 @@
+{
+	"ftE_Sheli" :
+	{
+		"class" : "hunter",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "姆吉恩",
+			"biography" : "姆吉恩是唯一掌握高级魔法的丛林妖精。他的氏族和红妖精有着先天的仇恨。被红妖精驱赶的他最终投靠了花仙王国，并且成为唯一的男性英雄。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高绿妖精或丛林妖精的攻击力与防御力。",
+				"tooltip" : "{Fairy Enchantresses}\r\n\r\nIncreases the Attack and Defense skills of Fairy Sorceresses and Fairy Enchantresses.",
+				"name" : "绿妖精"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "fairy/heroes/shebali/un32hunt.png",
+			"specialtyLarge" : "fairy/heroes/shebali/un44hunt.png",
+			"large" : "fairy/heroes/shebali/hpl286.png",
+			"small" : "fairy/heroes/shebali/hps286.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "ftFench1",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 9,
+				"min" : 7
+			},
+			{
+				"creature" : "ftFench1",
+				"max" : 6,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			}
+		],
+		
+		"specialty": //special upgrade
+			{
+				"creature" : "ftFench1",
+			} 
+	}
+}

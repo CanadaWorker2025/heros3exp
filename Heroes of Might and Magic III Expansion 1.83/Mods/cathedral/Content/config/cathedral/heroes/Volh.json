@@ -1,0 +1,58 @@
+{
+	"volh" :
+	{
+		"class" : "cthbishop",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/volh/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/volh/spec-large.bmp",
+			"large" : "cathedral/heroes/volh/portrait-large.bmp",
+			"small" : "cathedral/heroes/volh/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "fireMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "让-塞萨",
+			"biography" : "让-塞萨的朋友在这场灾难中丧生。为此，这个曾经虔诚的男子性情大变。他不再认为需要对这个世界的恶人仁慈。从这之后，他变得越来越可怕，也越来越不可接近。人们都说复仇之念已经摧毁了他最后的人性。",
+			"specialty" :
+			{
+				"description" : "使用连珠火球魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Secondary Skill Bonus: luck",
+				"name" : "连珠火球"
+			}
+		},
+		"spellbook": [ "fireball" ],
+		"specialty" : {
+			"bonuses" : {
+				"fireball" : {
+					"subtype" : "spell.fireball",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}
+
+
+

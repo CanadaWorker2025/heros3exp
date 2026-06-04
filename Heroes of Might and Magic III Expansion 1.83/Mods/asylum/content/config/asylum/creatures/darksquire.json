@@ -1,0 +1,62 @@
+{
+  "darksquire": {
+    "name": {
+      "plural": "黑暗侍从",
+      "singular": "黑暗侍从"
+    },
+    "advMapAmount": {
+ "max" : 50,
+ "min" : 20
+    },
+    "faction": "asylum",
+    "aiValue": 93,
+    "attack": 3,
+    "cost": {
+      "gold": 50
+    },
+    "damage": {
+ "max" : 2,
+ "min" : 1
+    },
+    "defense": 2,
+    "fightValue": 101,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST1.def",
+      "map": "asylum/map/creatures/AVWC177.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS177Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL177Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 14,
+    "hitPoints": 8,
+    "horde": 6,
+    "level": 1,
+    "upgrades":
+		[
+			"darkguard"
+		],
+    "sound": {
+      "attack": "asylum/CPS1ATTK.wav",
+      "defend": "asylum/CPS1DFND.wav",
+      "killed": "asylum/CPS1KILL.wav",
+      "move": "asylum/CPS1MOVE.wav",
+      "wince": "asylum/CPS1WNCE.wav"
+    },
+    "speed": 6,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind" :
+			{
+				"type" : "MIND_IMMUNITY"
+			}
+    }
+		
+  }	
+	}

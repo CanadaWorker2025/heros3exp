@@ -1,0 +1,50 @@
+{
+	"core:creatureBank" :
+	{
+		"types" :
+		{
+			"evilTreeofKnowledge" :
+			{
+				"name" : "战争之树",
+				"aiValue" : 9000,
+				"templates" :
+				{
+					"highlands" :
+					{
+						"animation" : "fairy/map/banks/AVXTREK2.def",
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"mask" : [ "VVV", "VVV", "VAV"],
+						"allowedTerrains":[ "grass","swamp","dirt","highlands" ]
+					}
+				},
+				"sounds": {
+					"visit" : ["GAZEBO"]
+				},
+				"rmg" : {
+					"value" : 5000,
+					"rarity" : 20,
+					"zoneLimit" : 1
+				},
+				"onGuardedMessage" : "{战争之树}\r\n\r\n你靠近智慧树的时候它睁开眼睛，随后它的眼神变得凶狠，你知道这颗树似乎中了某种诅咒而变得暴虐起来。你要向它发起挑战吗？",
+				"onVisitedMessage" : "{战争之树}\r\n\r\n当你走近时，大树兴奋地睁开眼睛说道：“很高兴见到你，我的学生，希望我的知识能帮助你。",
+				"visitMode" : "hero",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "{战争之树}\r\n\r\n随着寄生在树干中的邪恶树精被消灭，这颗智慧树恢复了神智。当你走近时，大树兴奋地睁开眼睛说道：“啊哈，探险家，请让我把多年积累的知识传授给你。”",
+						"appearChance" : { "min" : 0, "max" : 100 },
+						"guards": [
+							{ "amount": 15, "type" : "dendroidSoldier" },
+							{ "amount": 15, "type" : "dendroidSoldier","upgradeChance": 100 },
+							{ "amount": 15, "type" : "dendroidSoldier","upgradeChance": 100 },
+							{ "amount": 15, "type" : "dendroidSoldier" },
+							{ "amount": 15, "type" : "dendroidSoldier" }
+						],
+							"heroLevel" : 1
+					}
+				]
+			}
+		}
+	}
+}

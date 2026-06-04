@@ -1,0 +1,58 @@
+{
+	"hexes" : {
+		"name" : "巫蛊术",
+//		"defaultGainChance" : 4,
+		"specialty" : [],
+		"gainChance" : {
+			"might" : 4,
+			"magic" : 6
+		},
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "LUCK",
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"val":-1
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small" : "skills/hexes/hexesSmallBasic",
+				"medium" : "skills/hexes/hexesMediumBasic",
+				"large" : "skills/hexes/hexesLargeBasic",
+				"scenarioBonus" : "skills/hexes/senarioExtra1.png"
+			},
+			"description" : "{初级巫蛊术}\n\n使敌方的运气降低1点。",
+			"effects" : {
+				"main" : { "val" : -1 }
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small" : "skills/hexes/HexesSmallAdvanced",
+				"medium" : "skills/hexes/HexesMediumAdvanced",
+				"large" : "skills/hexes/HexesLargeAdvanced",
+				"scenarioBonus" : "skills/hexes/senarioExtra2.png"
+			},
+			"description" : "{中级巫蛊术}\n\n使敌方的运气降低2点。",
+			"effects" : {
+				"main" : { "val" : -2 }
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small" : "skills/hexes/HexesSmallExpert",
+				"medium" : "skills/hexes/HexesMediumExpert",
+				"large" : "skills/hexes/HexesLargeExpert",
+				"scenarioBonus" : "skills/hexes/senarioExtra3.png"
+			},
+			"description" : "{高级巫蛊术}\n\n使敌方的运气降低3点。",
+			"effects" : {
+				"main" : { "val" : -3 }
+			}
+		}
+	}
+}

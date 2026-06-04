@@ -1,0 +1,58 @@
+{
+	"brooke" :
+	{
+		"class" : "redtemplar",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/brooke/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/brooke/spec-large.bmp",
+			"large" : "cathedral/heroes/brooke/portrait-large.bmp",
+			"small" : "cathedral/heroes/brooke/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+		],
+		"texts" :
+		{
+			"name" : "安德烈",
+			"biography" : "安德烈曾是埃拉西亚骑士团的一位骑士侍从，但他很快就离开了他所侍奉的骑士，因为对于他来说，成为一名候补骑士是毫无价值的事。现在的他投身于雇佣军团，他相信战斗是自己唯一的价值。",
+			"specialty" : 
+			{
+				"description" : "在进攻术上每级获得5%的奖励。",
+				"tooltip" : "特长进攻术",
+				"name" : "进攻术"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"offence" : {
+					"subtype" : "damageTypeMelee",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}
+	}
+}
+
+

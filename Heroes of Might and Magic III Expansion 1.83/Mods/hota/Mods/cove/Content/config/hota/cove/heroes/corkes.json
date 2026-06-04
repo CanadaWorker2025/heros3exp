@@ -1,0 +1,59 @@
+{
+	"01corkes" : {
+		"class" : "captain",
+		"images" : {
+			"large" : "hota/cove/heroes/corkes/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/corkes/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/corkes/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/corkes/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "basic"
+			},
+			{
+				"skill": "pathfinding",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"offence" : {
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "damageTypeMelee",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		},
+		"texts": {
+			"biography" : "库尔科斯是最具经验和残酷的海盗之一，他广为人知但是很少有人想成他的敌人，许多商人都知道如果库尔科斯想要抢劫他的商船，最好是乖乖地交出财物，因为反抗无异于自杀。他从来不取下他的眼罩，这也使人们更容易认出他来。",
+			"name" : "库尔科斯",
+			"specialty" : {
+				"tooltip" : "Secondary Skill Bonus: Offense",
+				"name" : "进攻术",
+				"description" : "在进攻术上每级得到5%的额外奖励。"
+			}
+		}
+	}
+}

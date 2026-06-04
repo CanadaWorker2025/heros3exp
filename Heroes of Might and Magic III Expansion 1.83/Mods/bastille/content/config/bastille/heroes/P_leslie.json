@@ -1,0 +1,75 @@
+{
+	"p_leslie" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "莱斯利",
+			"biography" : "莱斯利曾经嫁给矮人王的第四子，成为了弗里的贵族。作为曾经的平民女子，她并不会因为成为贵族而感到骄傲。她无时不刻不想念自己家乡的人们，也许那里才有她所珍视的美好。",
+			"specialty" :
+			{
+				"description" : "在后勤学上每级得到5%的额外奖励。",
+				"tooltip" : "Skill bonus: Logistics",
+				"name" : "后勤学"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "bastille/heroes/leslie/skill32-16.bmp",
+			"specialtyLarge" : "bastille/heroes/leslie/skill16.bmp",
+			"large" : "bastille/heroes/leslie/HPL007PY.bmp",
+			"small" : "bastille/heroes/leslie/HPS007PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"dispel" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+        "level": "basic",
+        "skill": "logistics"
+      }
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

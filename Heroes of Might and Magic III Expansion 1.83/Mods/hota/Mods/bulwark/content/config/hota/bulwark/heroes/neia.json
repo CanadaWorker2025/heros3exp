@@ -1,0 +1,47 @@
+{
+	"03bulwarkNeia" : {
+		"class" : "chieftain",
+		"female" : true,
+		"images" : {
+			"large" : "hota/bulwark/heroes/neia/portraitLarge.png",
+			"small" : "hota/bulwark/heroes/neia/portraitSmall.png",
+			"specialtyLarge" : "hota/bulwark/heroes/neia/specialtyLarge.png",
+			"specialtySmall" : "hota/bulwark/heroes/neia/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "bulwarkKobold",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "bulwarkMountainRam",
+				"min" : 6,
+				"max" : 8
+			},
+			{
+				"creature" : "bulwarkSnowElf",
+				"min" : 3,
+				"max" : 5
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "archery",
+				"level" : "advanced"
+			}
+		],
+		"specialty" : {
+			"secondary" : "archery"
+		},
+		"texts" : {
+			"name" : "妮娅",
+			"biography" : "如果在打猎时用尽全力投出标枪却不能击中猎物，那只会落得饿死的下场。 妮娅是沃里最严酷之地——沃里冰川的原住民，她对此深有体会。为此妮娅学会了射箭，她是沃里精灵中为数不多仍然偏爱弓箭而非威力强大的标枪的人之一，但妮娅的箭法精准无比，即使是轻盈的箭矢也足以致命。",
+			"specialty" : {
+				"name" : "箭术",
+				"description" : "在箭术技能上每级得到5%的额外奖励。",
+				"tooltip" : "Skill Bonus: Archery"
+			}
+		}
+	}
+}

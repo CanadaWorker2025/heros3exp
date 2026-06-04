@@ -1,0 +1,74 @@
+{
+	"iFor04"://basilisk queen
+	{
+		"name" :
+		{
+			"plural" : "女王蜥",
+			"singular" : "女王蜥"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"faction": "fortress",
+		"doubleWide" : true,
+		"aiValue" : 713,
+		"fightValue" : 560,
+		"attack" : 13,
+		"defense" : 11,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"damage" :
+		{
+			"min" : 6,
+			"max" : 10
+		},
+		"speed" : 7,
+		"upgrades": ["greaterBasilisk"],
+		"graphics" :
+		{
+			"animation" : "creatures/fortress/battle/iFor04B.def",
+			"map" : "creatures/fortress/map/iFor04M.def",
+			"iconSmall" : "creatures/fortress/iconsSmall/iFor04S.bmp",
+			"iconLarge" : "creatures/fortress/iconsBig/iFor04L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 40,
+		"growth" : 4,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "GBASATTK.wav",
+			"defend": "GBASDFND.wav",
+			"killed": "GBASKILL.wav",
+			"move": "GBASMOVE.wav",
+			"wince": "GBASWNCE.wav"
+		},
+		"abilities":
+		{
+			"petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.iFor04eff",
+				"val" : 20,
+				"icon": "bonuses/fort4.png"
+			},
+			"parafungusImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.iFor04eff"
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,63 @@
+{
+	"tarhero03" :
+	{
+    "class": "taHeroA",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "尼兹托夫",
+			"biography" : "冰恶魔中有非常严格的内部等级制度。尼兹托夫是最古老的冰恶魔后代，他拥有巨大的魔法力量。因此，他可能是这些昆虫般的恶魔中最重要的。怪异的冰恶魔也听从于尼兹托夫的指挥，这样有助于在族群中获得尊重。",
+			"specialty" :
+			{
+				"description" : "达到6级后提升冰恶魔和极冰恶魔的攻击力和防御力。",
+				"tooltip" : "Spell bonus: Blind",
+				"name" : "冰恶魔"
+			}
+		},
+
+		"images" :
+		{
+			"specialtyLarge" : "tartarus/heroes/tarhero03/skill3.bmp",
+			"specialtySmall" : "tartarus/heroes/tarhero03/skills3.bmp",
+			"large" : "tartarus/heroes/tarhero03/tarH3.bmp",
+			"small" : "tartarus/heroes/tarhero03/tarH3S.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "tartarc1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "tartarc3",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "tartarc5",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "demonicBlood"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			}
+		],
+		
+			"specialty" : {
+			"creature" : "tartarca"
+		}
+	}
+}
+

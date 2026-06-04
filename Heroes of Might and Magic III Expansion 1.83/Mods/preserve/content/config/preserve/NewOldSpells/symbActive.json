@@ -1,0 +1,107 @@
+{
+	"symbActive":
+	{
+		"type": "ability", 
+		"name": "咒力结界",
+		"targetType": "CREATURE",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"flags" : {
+			"negative": true,
+			"nonMagical":true
+		},
+		"level": 1,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance" :
+		{
+			"castle": 0,
+			"rampart": 0,
+			"conflux" : 0
+		},
+		"animation":{
+			"affect":["NewOldSpells/symbiosis.def"]
+		},
+ 
+		"targetCondition" : {
+		},
+		"graphics":
+		{
+			"iconBook": "NewOldSpells/USELESS.bmp",
+			"iconScroll": "NewOldSpells/USELESS2.bmp",
+			"iconScenarioBonus": "NewOldSpells/USELESS3.bmp",
+			"iconEffect": "NewOldSpells/IN4.bmp"
+		},
+		"sounds":
+		{
+			"cast": "SACRIF1"
+		},
+		"levels":
+		{
+			"base":
+			{
+				"description": "{咒力结界}\r\n\r\n使敌人多受25%的魔法伤害。", 
+				"range": "0-1",
+				"power": 10,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"cost": 0,
+				"effects" : {
+					"earthSusceptible" : {
+                                "type" : "SPELL_DAMAGE_REDUCTION",
+                                "val" : -25,
+                                "subtype" : "spellSchool.water",
+                                "duration" : "N_TURNS",
+								"turns": 4
+                            },
+					"earthSusceptible2" : {
+                                "type" : "SPELL_DAMAGE_REDUCTION",
+                                "val" : -25,
+                                "subtype" : "spellSchool.earth",
+                                "duration" : "N_TURNS",
+								"turns": 4
+                            },
+					"earthSusceptible3" : {
+                                "type" : "SPELL_DAMAGE_REDUCTION",
+                                "val" : -25,
+                                "subtype" : "spellSchool.fire",
+                                "duration" : "N_TURNS",
+								"turns": 4
+                            },
+					"earthSusceptible4" : {
+                                "type" : "SPELL_DAMAGE_REDUCTION",
+                                "val" : -25,
+                                "subtype" : "spellSchool.air",
+                                "duration" : "N_TURNS",
+								"turns": 4
+                            }
+				}
+			},
+			"none":
+			{
+				"cost": 18		
+			},
+			"basic":
+			{
+				"description": "{咒力结界}\r\n\r\n使敌人多受25%的魔法伤害。"
+				
+			},
+			"advanced":
+			{
+				"description": "{咒力结界}\r\n\r\n使敌人多受25%的魔法伤害。"
+			},
+			"expert":
+			{
+				"description": "{咒力结界}\r\n\r\n使敌人多受25%的魔法伤害。"
+				
+			}
+		}
+	}
+}

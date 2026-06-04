@@ -1,0 +1,60 @@
+{
+  "winddancer": {
+    "name": {
+      "plural": "风舞者",
+      "singular": "风舞者"
+    },
+    "advMapAmount": {
+ "max" : 30,
+ "min" : 16
+    },
+    "faction": "asylum",
+    "aiValue": 144,
+    "attack": 6,
+    "cost": {
+      "gold": 100
+    },
+    "damage": {
+ "max" : 3,
+ "min" : 2
+    },
+    "defense": 5,
+    "fightValue": 142,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST2.def",
+      "map": "asylum/map/creatures/AVWC179.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS179Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL179Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 9,
+    "hitPoints": 15,
+    "level": 2,
+    "upgrades":
+		[
+			"shadowdancer"
+		],
+    "sound": {
+      "attack": "asylum/CPS2ATTK.wav",
+      "defend": "asylum/CPS2DFND.wav",
+      "killed": "asylum/CPS2KILL.wav",
+      "move": "asylum/CPS2MOVE.wav",
+      "wince": "asylum/CPS2WNCE.wav"
+    },
+    "speed": 7,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind" :
+			{
+				"type" : "MIND_IMMUNITY"
+			}
+    },
+  }	
+	}

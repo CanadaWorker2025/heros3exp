@@ -1,0 +1,103 @@
+{
+	"rStrn05"://cloudbird 
+	{
+		"name" :
+		{
+			"plural" : "云鸟",
+			"singular" : "云鸟"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction": "stronghold",
+		"aiValue" : 1105,
+		"fightValue" : 868,
+		"doubleWide" : true,
+		"attack" : 13,
+		"defense" : 11,
+		"cost" :
+		{
+			"gold" : 700
+		},
+		"damage" :
+		{
+			"min" : 11,
+			"max" : 15
+		},
+		"speed" : 11,
+		"upgrades": ["thunderbird"],
+		"graphics" :
+		{
+			"animation" : "creatures/stronghold/battle/rStrn05B.def",
+			"map" : "creatures/stronghold/map/rStrn05M.def",
+			"iconSmall" : "creatures/stronghold/iconsSmall/rStrn05S.bmp",
+			"iconLarge" : "creatures/stronghold/iconsBig/rStrn05L.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 60,
+		"growth" : 3,
+		"level" : 5,
+		"sound" :
+		{
+			"attack": "TBRDATTK.wav",
+			"defend": "TBRDDFND.wav",
+			"killed": "TBRDKILL.wav",
+			"move": "TBRDMOVE.wav",
+			"wince": "TBRDWNCE.wav"
+		},
+		"abilities":
+		{
+			"canFly" :
+			{
+				"type" : "FLYING"
+			},
+			"lightningImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.lightningBolt",
+				"hidden" : true
+			},
+			"lightningChainImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.chainLightning",
+				"hidden" : true
+			},
+			"thunderImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.thunderbolt",
+				"description" : "{闪电免疫}\n该生物免疫{霹雳闪电}和{连锁闪电}",
+				"icon": "bonuses/str05.png"
+			},
+			"lightningMdtChainImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.mdtLightningboltWand",
+				"hidden" : true
+			},
+			"newAbilityImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.strn05"
+			},
+			"thunderOnAttack" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.strn05",
+				"val" : 30,
+				"icon": "bonuses/cloud.png"
+			}
+		}
+	}
+}
+
+

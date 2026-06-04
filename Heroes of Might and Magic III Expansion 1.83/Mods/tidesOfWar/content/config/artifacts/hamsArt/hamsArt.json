@@ -1,0 +1,34 @@
+{
+	"hamsArt1" : {
+		"class" : "MINOR",
+		"graphics" : { 
+			"image": "artifacts/iconsSmall/arti1S",
+			"scenarioBonus": "artifacts/iconsBig/arti1",
+			"map": "artifacts/map/arti1map"
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{无尽的面粉}\r\n\r\n使部队士气+1，开始战斗始会自动召唤一队仓鼠协助。",
+			"event" : "仓鼠指引你到它的洞穴中，你发现它们储存了足够多的粮食，为了换取你的保护，它们决定以一袋面粉作为交换。",
+			"name" : "无尽的面粉"
+		},
+		"bonuses" : {
+			"morale":
+			{
+				"type" : "MORALE",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+			},
+			"summonHam":
+			{
+				"subtype" : "spell.hamsSpell",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+
+		"type" : [ "HERO" ],
+		"value" : 3000
+	}
+}

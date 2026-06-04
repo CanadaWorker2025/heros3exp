@@ -1,0 +1,31 @@
+{
+	"name" : "New Pavilion Town",
+	"description" : "Modified and balanced version of the 'Bastion Town' ported to VCMI by edeksumo with help of Acid Cave modding community, originally conceptualised and created by New Town Group.",
+	
+	"author" : "Bastion New Town Group, edeksumo, New Pawulon Team, Acid Cave community",
+	"contact" : "madaosoul@gmail.com",
+	"version" : "2.9.0",
+	"modType" : "Town",	
+	"chinese" : {
+		"name" : "沙堡（Pavillion）",
+		"description" : "EXP中的沙堡种族"
+	},
+	"compatibility":
+	{
+		"min" : "1.3.0"
+	},	
+	"changelog" :
+    {
+		"2.9.0"   : [ "New sand terrain added", "Polish translation added" ],
+		"2.8.3"   : [ "Fixed Scroll of Wisdom" ],
+		"2.8.2"   : [ "French traslation added", "Fixed boat issues" ],
+		"2.8.1"   : [ "Converting to vcmi-1.3 version", "New boat added" ],
+		"2.8.0"   : [ "Minor fixes, working special buildings, new graphics for heroes and Camel Riders." ],
+		"2.7.2"   : [ "Chinese translation from https://www.h3wog.com/thread-77661-1-1.html" ],
+		"2.7.1"   : [ "Update to vcmi-1.2" ]
+    },
+	"conflicts" :
+	[
+	
+	]
+}

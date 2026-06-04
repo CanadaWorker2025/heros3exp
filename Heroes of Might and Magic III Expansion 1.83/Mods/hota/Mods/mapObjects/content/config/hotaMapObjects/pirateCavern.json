@@ -1,0 +1,81 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"pirateCavern" : 
+			{
+				"name" : "海盗巢穴",
+				"aiValue" : 3500,
+				"templates" :
+				{
+					"base" :
+					{
+						"animation" : "hota/banks/HAPCAVE.def",
+						"visitableFrom" : [ "---", "+++", "+++" ], 
+						"mask" : ["VVVV", "VBBB", "VBAB"],
+						"allowedTerrains":["rough", "sand"]
+					}
+				},
+				"sounds": {
+					"ambient": ["hota/LOOPPCAV.wav"]
+				},
+				"rmg" : {
+					"value"		: 3500,
+					"rarity"	: 100
+				},
+				"onGuardedMessage" : "{海盗巢穴}\r\n\r\n你听说海盗们喜欢饲养大海蛇作为海上航行时的护卫，但其实这群海蛇并不愿意受到海盗们的圈养。你要消灭海盗来解放这些海蛇吗？",
+				"onVisitedMessage" : "{海盗巢穴}\r\n\r\n这里是一座海盗们建造的据点，但似乎他们已经放弃了这里，你走进之后只见到几口干涸的水缸，不知道是做什么的。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 30 },
+						"guards": [
+							{ "amount": 10, "type" : "pirate"  },
+							{ "amount": 10, "type" : "corsair","upgradeChance": 50 },
+							{ "amount": 10, "type" : "corsair" },
+							{ "amount": 10, "type" : "pirate" }
+						],
+						"creatures": [ { "amount": 1, "type": "seaserpent" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 30, "max" : 60 },
+						"guards": [
+							{ "amount": 20, "type" : "pirate", },
+							{ "amount": 20, "type" : "corsair","upgradeChance": 50 },
+							{ "amount": 20, "type" : "corsair" },
+							{ "amount": 20, "type" : "pirate" }
+						],
+						"creatures": [ { "amount": 2, "type": "seaserpent" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 90 },
+						"guards": [
+							{ "amount": 30, "type" : "pirate" },
+							{ "amount": 30, "type" : "corsair", "upgradeChance": 50 },
+							{ "amount": 30, "type" : "corsair" },
+							{ "amount": 30, "type" : "pirate" }
+						],
+						"creatures": [ { "amount": 3, "type": "seaserpent" } ]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 90, "max" : 100 },
+						"guards": [
+							{ "amount": 40, "type" : "pirate" },
+							{ "amount": 40, "type" : "corsair", "upgradeChance": 50 },
+							{ "amount": 40, "type" : "corsair" },
+							{ "amount": 40, "type" : "pirate" }
+						],
+						"creatures": [ { "amount": 4, "type": "seaserpent" }  ]
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"cgSirensStar" : {
+		"bonuses" : { 
+			"redDefence" :{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"valueType" : "BASE_NUMBER",
+				"val": -2,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [ "OPPOSITE_SIDE" ]
+			}
+		},
+		"class" : "MAJOR",
+		"graphics" : { "image" : "star/sirensStar", "scenarioBonus" : "star/sirensStarL", "map" : "star/star" },
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{海妖之星}\r\n\r\n使对方英雄的防御力下降2。",
+			"event" : "你在野外想要借宿，一位老妇人热情地接待了你，你发现她家的墙上挂着一个奇怪的徽章。她很显然在掩饰她知道徽章作用的事实。晚上在你休息时，你发现一个长着翅膀的女妖试图接近并杀死你，你知道那正是那个白天和蔼可亲的老妇人。早有防备的你杀死了女妖，取走了这枚充满魔力的徽章。",
+			"name" : "海妖之星"
+		},
+		"type" : [ "HERO" ],
+		"value" : 5500
+	}
+}

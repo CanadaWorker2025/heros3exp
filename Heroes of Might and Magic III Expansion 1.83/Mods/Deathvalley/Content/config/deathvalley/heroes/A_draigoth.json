@@ -1,0 +1,66 @@
+{
+	"a_dvDraigoth" :
+	{
+		"class" : "dvDeathlord",
+		"female" : false,
+
+
+		"images" :
+		{
+			"specialtySmall" : "deathvalley/heroes/draigoth/Un32Hound.png",
+			"specialtyLarge" : "deathvalley/heroes/draigoth/Un44Hound.png",
+			"large" : "deathvalley/heroes/draigoth/DraigothL.png",
+			"small" : "deathvalley/heroes/draigoth/DraigothS.png"
+		},
+
+
+		"army" : [
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "skelh",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "skelh",
+				"max" : 15,
+				"min" : 10
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "dv_necromancy"
+			}
+		],
+		"specialty" : {
+			"base" : {
+				"type" : "SPECIAL_UPGRADE",
+				"addInfo" : "creature.leaper"
+			},
+			"bonuses" : {
+				"walkingDead2leaper" : { "subtype" : "creature.skeleton" },
+				"zombieLord2leaper" : { "subtype" : "creature.skeletonWarrior" }
+			}
+		},
+		"texts" : {
+			"biography" : "德拉戈斯在他的同伴中通常被称为“荒原之王”，这个词同时具有嘲讽和尊重的意义。尽管比起同龄人他更喜欢与“犬”同伴相处，但他并不在乎。",
+			"name" : "德拉戈斯",
+			"specialty" : {
+				"description" : "将骷髅兵或骷髅勇士转化为骷髅犬。",
+				"name" : "骷髅犬",
+				"tooltip" : "Free upgrades: Death Valleys' hounds"
+			}
+		}
+	}
+}
+

@@ -1,0 +1,45 @@
+{
+	"iceCrstPool" : {
+		"handler":"configurable",
+		"name" : "水晶池",
+		"types" : {
+			"object" : {
+				"rmg" : {
+					"value"	: 750,
+					"rarity" : 100,
+					"zoneLimit" : 2
+				},
+				"sounds" : {
+					"visit" : ["Expernce"]
+				},
+				"rewards" : [
+					{
+						"message" : "{水晶池}\r\n\r\n你发现寒冰的荒原中居然有这样美丽的水晶池，每周当你经过，都可以在这里收集到一些东西。",
+						"appearChance" : { "max" : 50 },
+						"resources" : { "crystal" : 5 }
+					},
+					{
+						"message" : "{水晶池}\r\n\r\n你发现寒冰的荒原中居然有这样美丽的水晶池，每周当你经过，都可以在这里收集到一些东西。",
+						"appearChance" : { "min" : 50 },
+						"resources" : { "gold" : 500 }
+					}
+				],
+				"onVisitedMessage": "{水晶池}\r\n\r\n这是每周都能带来资源的可爱水晶池，只是目前，你没有什么特别的发现。",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true,
+					"rewards" : true
+				},
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"templates" : {
+					"avtprosp" : { "animation" : "ice object/IceCrstPool", 
+						"mask" : [ "VVV", "BAB" ], 
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains": [ "icelands"]
+					}
+				}
+			}
+		}
+	}		
+}

@@ -1,0 +1,67 @@
+{
+	"havMhero15" :
+	{
+		"class" : "havMhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "安珀",
+			"biography" : "安珀和她的父亲安戴尔一切都非常相似，因为从小父亲就带着她做各种宝石和水晶的贸易。这个女孩可以说是个天生的生意头脑。由于不满父亲臣服于彼得利的统治，她决定离开父亲独自旅行。但探险时光并不能让她泯灭对父亲的记忆。",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "+1 宝石",
+				"description" : "每天为王国提供1宝石。"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero15/skill15S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero15/skill15.bmp",
+			"large" : "haven/heroes/havHero15/hero15.bmp",
+			"small" : "haven/heroes/havHero15/hero15S.bmp"
+		},
+		"spellbook": [ "haste" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 5
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"mercury" : {
+					"subtype" : "resource.gems",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}	
+	}
+}

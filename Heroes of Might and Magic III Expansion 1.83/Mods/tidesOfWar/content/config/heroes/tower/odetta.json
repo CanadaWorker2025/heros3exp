@@ -1,0 +1,69 @@
+{
+  "mdtOdetta" :
+  {
+    "class" : "wizard",
+    "female" : true,
+    "special" : false,
+	"spellbook": [ "mdtDivineArrows","precision" ],
+    "texts" :
+    {
+      "name" : "奥德塔",
+      "biography" : "奥德塔的视力极佳，但她还是设法通过魔法和技术的结合来进一步提高视力。到了现在，她甚至可以看到人类目力最远的距离，这使她步入最优秀战场指挥官的行列。",
+      "specialty" :
+      {
+        "description" : "使用百发百中魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+        "tooltip" : "Spell bonus: Precision",
+        "name" : "百发百中"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "heroes/tower/odetta_spec-small.bmp",
+      "specialtyLarge" : "heroes/tower/odetta_spec-big.bmp",
+      "large" : "heroes/tower/odetta_portrait-big.bmp",
+      "small" : "heroes/tower/odetta_portrait-small.bmp"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "gremlin",
+        "max" : 40,
+        "min" : 30
+      },
+      {
+        "creature" : "stoneGargoyle",
+        "max" : 5,
+        "min" : 3
+      },
+      {
+        "creature" : "ironGolem",
+        "max" : 3,
+        "min" : 2
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "wisdom"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "scouting"
+      }
+    ],
+    
+		"specialty" : {
+			"bonuses" : {
+				"precision" : {
+					"type" : "SPECIAL_PECULIAR_ENCHANT",
+					"subtype" : "spell.precision",
+					"addInfo" : 0
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"cgMagicSweaterSutra" : {
+		"bonuses": {
+			"blockMagic" : {
+				"type" : "BLOCK_MAGIC_BELOW", 
+				"propagator": "BATTLE_WIDE",
+				"valueType" : "INDEPENDENT_MIN",
+				"val" : 2 
+			}
+		},
+		"class" : "MAJOR",
+		"graphics" : { "image" : "sutra/sutra", "scenarioBonus" : "sutra/sutraL", "map" : "sutra/column" },
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{禁魔卷轴}\r\n\r\n禁魔卷轴使敌我双方都不能施放1级魔法。",
+			"event" : "在一个小寺庙里，你发现这里的僧侣们唱诵的并不是你熟悉的咏叹调，你走进这里想讨要一碗水喝，结果僧侣们不禁给了你水，还把来自神秘东方宗教的陀罗尼经卷送给了你，并希望你能够时常念诵它来获得神秘力量的祝福。",
+			"name" : "禁魔卷轴"
+		},
+		"type" : [ "HERO" ],
+		"value" : 8000
+	}
+}

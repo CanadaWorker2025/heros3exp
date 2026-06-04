@@ -1,0 +1,153 @@
+{
+	"name" : "Pavilion Town",
+	"description" : "Modified and balanced version of the 'Bastion Town' ported to VCMI by edeksumo with help of Acid Cave modding community, originally conceptualised and created by New Town Group.",
+	
+	"author" : "Bastion New Town Group, edeksumo, New Pawulon Team, Acid Cave community",
+	"contact" : "madaosoul@gmail.com",
+	"version" : "2.9.0",
+	"modType" : "Town",	
+	"compatibility":
+	{
+		"min" : "1.3.0"
+	},	
+	"changelog" :
+    {
+		"2.9.0"   : [ "New sand terrain added", "Polish translation added" ],
+		"2.8.3"   : [ "Fixed Scroll of Wisdom" ],
+		"2.8.2"   : [ "French traslation added", "Fixed boat issues" ],
+		"2.8.1"   : [ "Converting to vcmi-1.3 version", "New boat added" ],
+		"2.8.0"   : [ "Minor fixes, working special buildings, new graphics for heroes and Camel Riders." ],
+		"2.7.2"   : [ "Chinese translation from https://www.h3wog.com/thread-77661-1-1.html" ],
+		"2.7.1"   : [ "Update to vcmi-1.2" ]
+    },
+	"conflicts" :
+	[
+	
+	],
+	"depends" : ["new pavilion.dunes-terrain"],
+	
+	"factions" :
+	[
+		"townPavilion/structures.json",
+		"townPavilion/faction.json",
+		"townPavilion/buildings.json",
+		"townPavilion/siege.json",
+		"townPavilion/spells.json",
+		"townPavilion/puzzle.json" 
+
+	],
+	"spellSchools" : {
+		"pavillionPrime" : {
+			"name": "源力",
+			"schoolBookmark" : "spellsPyramids/bookmarks/primeBookmark.def",
+			"schoolBorders" : "spellsPyramids/bookmarks/primeSchoolFrames.json",
+			"schoolHeader" : "spellsPyramids/bookmarks/primeHeader.png"
+			
+		}
+	},
+	
+	"creatures" :
+	[
+        "creaturesPavilion/Whipper.json",  
+        "creaturesPavilion/Overseer.json",  
+        "creaturesPavilion/Wadjet.json",  
+		"creaturesPavilion/VenomousWadjet.json", 		
+        "creaturesPavilion/CamelRider.json",
+		"creaturesPavilion/DesertWarrior.json",
+		"creaturesPavilion/Sekhmet.json",
+        "creaturesPavilion/SekhmetPriestess.json",  
+        "creaturesPavilion/Ammut.json",
+        "creaturesPavilion/SunAmmut.json", 		
+        "creaturesPavilion/Sphinx.json",  
+        "creaturesPavilion/ElderSphinx.json",      		
+        "creaturesPavilion/Anubis.json", 
+        "creaturesPavilion/AnubisWarrior.json", 
+		"warmachines/pyramid01Creature.json", 
+        "warmachines/pyramid02Creature.json", 
+		"warmachines/photon01Creature.json", 
+        "warmachines/photon02Creature.json",
+		"commanderPavilion/preacher.json",
+		"creaturesPavilion/Scarab.json",
+
+		"creaturesPavilion/stackExp.json"
+	],
+	
+	"spells" :
+	[
+	  "spellsPavilion/BlessingSeal.json" ,
+	  "spellsPavilion/GodScaleAttack.json",
+	  "spellsPavilion/GodScaleDefence.json",
+	  "spellsPavilion/LifeEater.json",
+	  "spellsPavilion/LifeEater2.json",
+	  "spellsPavilion/LifeEater3.json",
+	  "spellsPavilion/specSlow.json",
+	  "spellsPavilion/tentBoost.json",
+	  "spellsPavilion/pyramid01Supply.json",
+	  "spellsPavilion/pyramid02Supply.json",
+	  "spellsPavilion/photonLight.json",
+	  "spellsPyramids/primeMissile",
+	  "spellsPyramids/manaFlare",
+	  "spellsPyramids/timeStasis",
+	  "spellsPyramids/curseOfPharaoh",
+	  "spellsPyramids/soulConflagration",
+	  "spellsPyramids/hourglassOfDeath",
+	  "spellsPavilion/moat.json"  
+	],
+	
+	"skills" :
+	[
+	  "spellsPavilion/tentBoostSkill.json", 
+	  "spellsPavilion/learningPyramids.json",
+		"warmachines/artillery.json", 	  
+	],
+    "heroClasses" :
+	[
+		"classesPavilion/Vizier.json",
+        "classesPavilion/Embalmer.json"
+	],
+	
+    "heroes" :
+	[
+
+        "heroesPavilion/Amanra.json",
+        "heroesPavilion/Amesh.json",
+        "heroesPavilion/Azarias.json",
+        "heroesPavilion/Cassandra.json",
+		"heroesPavilion/Elspeth.json",    
+        "heroesPavilion/Gideon.json",
+        "heroesPavilion/Jaffa.json",    
+        "heroesPavilion/Keila.json", 
+		"heroesPavilion/Ko-Eset.json",
+        "heroesPavilion/Marzum.json",
+        "heroesPavilion/Menet.json",
+        "heroesPavilion/Osir.json",   
+        "heroesPavilion/Peth-Shub.json",   
+        "heroesPavilion/Sekhem.json",
+        "heroesPavilion/Seref.json", 
+        "heroesPavilion/Zamonth.json",
+        "heroesPavilion/Ibrahim.json",
+        "heroesPavilion/Bast.json",                                             
+        "heroesPavilion/Varn.json"
+	],
+	
+    "objects" :
+    [ 
+		"objectsPavilion/dwellings.json",
+		"objectsPavilion/dunesSnakeTemple.json",
+		"objectsPavilion/dunesWarFactory.json",
+		"objectsPavilion/ziggurat.json"
+    ],
+	
+	"artifacts" :
+	[
+	  "artifactsPavilion/staffOfSand.json" ,
+	  "artifactsPavilion/goldenScarab.json",
+	  "artifactsPavilion/sunShield.json",
+	  "artifactsPavilion/lifeSpan.json",
+	  "warmachines/pyramidsArtifact.json",
+	  "warmachines/photonArtifact.json",
+	  "artifactsPavilion/scrollOfWisdom.json",
+	  "artifactsPavilion/maskOfTheDesertKing.json",
+	  "artifactsPavilion/fireRing.json" 
+	]
+}

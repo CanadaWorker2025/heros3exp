@@ -1,0 +1,958 @@
+{
+	"runeBas01":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "加速符文",
+		"school":
+		{
+			"runeHighlands": true
+		},
+		"level": 1,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName" : "bastiSpells/runes/runeE1", "transparency" : 0.6}]
+		},
+ 
+		"flags" : { "positive": true, "nonMagical": true, "special" : true },
+		"counters" : {
+			"spell.slow": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "bastiSpells/runes/runeMa01.png",
+			"iconEffect": "bastiSpells/runes/runeEffect01.png",
+			"iconScroll": "bastiSpells/runes/runeBook01.png",
+			"iconScenarioBonus": "bastiSpells/runes/runeBonus01.png",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "FRENZY"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{加速符文}\r\n\r\n使己方任意部队1回合内速度提升50%。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : 50,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns": 1
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级加速符文}\r\n\r\n使己方任意部队1回合内速度提升100%。",
+				
+				"cost": 0,
+	 
+				"effects" : {
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : 100,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns": 1
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级加速符文}\r\n\r\n使己方任意部队2回合内速度提升100%。",
+				
+				"cost": 0,
+	 
+				"effects" : {
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : 100,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns": 2
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级加速符文}\r\n\r\n使己方任意部队3回合内速度提升100%。",
+				
+				"cost": 0,
+	 
+				"effects" : {
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : 100,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS",
+						"turns": 3
+					}
+				}
+			}
+		}
+	},
+	"runeBas02":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "抗性符文",
+		"school":
+		{
+			"runeHighlands": true
+		},
+		"level": 1,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName" : "bastiSpells/runes/runeE2", "transparency" : 0.6}]
+		},
+ 
+		"flags" : { "positive": true, "nonMagical": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "bastiSpells/runes/runeMa02.png",
+			"iconEffect": "bastiSpells/runes/runeEffect02.png",
+			"iconScroll": "bastiSpells/runes/runeBook02.png",
+			"iconScenarioBonus": "bastiSpells/runes/runeBonus02.png",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "FRENZY"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{抗性符文}\r\n\r\n使己方任意部队受到魔法伤害减少20%。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"spellDamageReduction" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"duration" : "N_TURNS",
+						"val" : 20
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级抗性符文}\r\n\r\n使己方任意部队受到魔法伤害减少20%。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"spellDamageReduction" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"duration" : "N_TURNS",
+						"val" : 20
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级抗性符文}\r\n\r\n使己方任意部队受到魔法伤害减少30%。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"spellDamageReduction" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"duration" : "N_TURNS",
+						"val" : 30
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级抗性符文}\r\n\r\n使己方任意部队受到魔法伤害减少50%。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"spellDamageReduction" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"duration" : "N_TURNS",
+						"val" : 50
+					}
+				}
+			},
+		}
+	},
+	"runeBas03":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "治疗符文",
+		"school":
+		{
+			"runeHighlands": true
+		},
+		"level": 1,
+		"power": 20,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName" : "bastiSpells/runes/runeE3", "transparency" : 0.6}]
+		},
+ 
+		"flags" : { "positive": true,"nonMagical": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "bastiSpells/runes/runeMa03.png",
+			"iconEffect": "bastiSpells/runes/runeEffect03.png",
+			"iconScroll": "bastiSpells/runes/runeBook03.png",
+			"iconScenarioBonus": "bastiSpells/runes/runeBonus03.png",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "FRENZY"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{治疗符文}\r\n\r\n治疗并驱散己方部队的负面效果。",
+	 
+				"cost": 0,
+	 
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"heal",
+						"healPower":"permanent",
+						"optional":true
+					},
+					"cure":{
+						"type":"core:dispel",
+						"optional":true,
+						"dispelNegative":true,
+						"dispelNeutral":false,
+						"dispelPositive":false
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级治疗符文}\r\n\r\n治疗并驱散己方部队的负面效果。",
+	 
+				"cost": 0,
+	 
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"heal",
+						"healPower":"permanent",
+						"optional":true
+					},
+					"cure":{
+						"type":"core:dispel",
+						"optional":true,
+						"dispelNegative":true,
+						"dispelNeutral":false,
+						"dispelPositive":false
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级治疗符文}\r\n\r\n治疗并驱散己方部队的负面效果。",
+	 
+				"cost": 0,
+	 
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"heal",
+						"healPower":"permanent",
+						"optional":true
+					},
+					"cure":{
+						"type":"core:dispel",
+						"optional":true,
+						"dispelNegative":true,
+						"dispelNeutral":false,
+						"dispelPositive":false
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级治疗符文}\r\n\r\n治疗并驱散所有己方部队的负面效果。",
+	 
+				"cost": 0,
+				"range": "X",
+	 
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"heal",
+						"healPower":"permanent",
+						"optional":true
+					},
+					"cure":{
+						"type":"core:dispel",
+						"optional":true,
+						"dispelNegative":true,
+						"dispelNeutral":false,
+						"dispelPositive":false
+					}
+				}
+			}
+		}
+	},
+	"runeBas04":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "迅捷符文",
+		"school":
+		{
+			"runeHighlands": true
+		},
+		"level": 2,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName" : "bastiSpells/runes/runeE4", "transparency" : 0.6}]
+		},
+ 
+		"flags" : { "positive": true, "nonMagical": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "bastiSpells/runes/runeMa04.png",
+			"iconEffect": "bastiSpells/runes/runeEffect04.png",
+			"iconScroll": "bastiSpells/runes/runeBook04.png",
+			"iconScenarioBonus": "bastiSpells/runes/runeBonus04.png",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "FRENZY"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{迅捷符文}\r\n\r\n使己方任意部队该回合攻击次数增加1次。\n需要{中级符文学}。",
+			},
+			"basic":
+			{
+				"description": "{迅捷符文}\r\n\r\n使己方任意部队该回合攻击次数增加1次。\n需要{中级符文学}。",
+			},
+			"advanced":
+			{
+				"description": "{中级迅捷符文}\r\n\r\n使己方任意部队该回合攻击次数增加1次。",
+				"cost": 0,
+	 
+				"effects" : {
+					"extraAttacks":
+					{
+						"type": "ADDITIONAL_ATTACK",
+						"val": 1,
+						"duration": ["N_TURNS"],
+						"turns": 1
+						
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级迅捷符文}\r\n\r\n使己方任意部队2回合内攻击次数增加1次。",
+				"cost": 0,
+	 
+				"effects" : {
+					"extraAttacks":
+					{
+						"type": "ADDITIONAL_ATTACK",
+						"val": 1,
+						"duration": ["N_TURNS"],
+						"turns": 2
+						
+					}
+				}
+			}
+		}
+	},
+	"runeBas05":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "愤怒符文",
+		"school":
+		{
+			"runeHighlands": true
+		},
+		"level": 2,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName" : "bastiSpells/runes/runeE5", "transparency" : 0.6}]
+		},
+ 
+		"flags" : { "positive": true, "nonMagical": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "bastiSpells/runes/runeMa05.png",
+			"iconEffect": "bastiSpells/runes/runeEffect05.png",
+			"iconScroll": "bastiSpells/runes/runeBook05.png",
+			"iconScenarioBonus": "bastiSpells/runes/runeBonus05.png",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "FRENZY"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{愤怒符文}\r\n\r\n使己方任意部队2回合内伤害提升50%。\n需要{中级符文学}。",
+			},
+			"basic":
+			{
+				"description": "{愤怒符文}\r\n\r\n使己方任意部队2回合内伤害提升50%。\n需要{中级符文学}。",
+			},
+			"advanced":
+			{
+				"description": "{中级愤怒符文}\r\n\r\n使己方任意部队2回合内伤害提升50%。",
+				"cost": 0,
+	 
+				"effects" : {
+					"damageBoost":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 50,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS",
+						"turns": 2
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级愤怒符文}\r\n\r\n使己方任意部队3回合内伤害提升50%。",
+				"cost": 0,
+	 
+				"effects" : {
+					"damageBoost":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 50,
+						"valueType": "PERCENT_TO_ALL",
+						"duration": "N_TURNS",
+						"turns": 3
+					}
+				}
+			}
+		}
+	},
+	"runeBas06":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "空灵符文",
+		"school":
+		{
+			"runeHighlands": true
+		},
+		"level": 2,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName" : "bastiSpells/runes/runeE6", "transparency" : 0.6}]
+		},
+ 
+		"flags" : { "positive": true, "nonMagical": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "bastiSpells/runes/runeMa06.png",
+			"iconEffect": "bastiSpells/runes/runeEffect06.png",
+			"iconScroll": "bastiSpells/runes/runeBook06.png",
+			"iconScenarioBonus": "bastiSpells/runes/runeBonus06.png",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "FRENZY"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{空灵符文}\r\n\r\n提升己方部队的防御百分比。\n需要{中级符文学}。",
+			},
+			"basic":
+			{
+				"description": "{空灵符文}\r\n\r\n提升己方部队的防御百分比。\n需要{中级符文学}。",
+			},
+			"advanced":
+			{
+				"description": "{中级空灵符文}\r\n\r\n使己方任意部队该回合的防御力提升80%。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"boostDefense":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 80,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "N_TURNS",
+						"turns": 1
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级空灵符文}\r\n\r\n使己方任意部队2回合的防御力提升100%。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"boostDefense":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 100,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "N_TURNS",
+						"turns": 2
+					}
+				}
+			}
+		}
+	},
+	"runeBas07":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "龙形符文",
+		"school":
+		{
+			"runeHighlands": true
+		},
+		"level": 3,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName" : "bastiSpells/runes/runeE7", "transparency" : 0.6}]
+		},
+ 
+		"flags" : { "positive": true, "nonMagical": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "bastiSpells/runes/runeMa07.png",
+			"iconEffect": "bastiSpells/runes/runeEffect07.png",
+			"iconScroll": "bastiSpells/runes/runeBook07.png",
+			"iconScenarioBonus": "bastiSpells/runes/runeBonus07.png",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "FRENZY"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{龙形符文}\r\n\r\n使己方任意部队1回合内提升攻防指数100%，且不受任何魔法伤害。\n需要{中级符文学}。",
+			},
+			"basic":
+			{
+				"description": "{龙形符文}\r\n\r\n使己方任意部队1回合内提升攻防指数100%，且不受任何魔法伤害。\n需要{中级符文学}。",
+			},
+			"advanced":
+			{
+				"description": "{中级龙形符文}\r\n\r\n使己方任意部队1回合内提升攻防指数100%，且不受任何魔法伤害。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"boostAttack":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 100,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "N_TURNS",
+						"turns": 1
+					},
+					"boostDefense":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 100,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "N_TURNS",
+						"turns": 1
+					},
+					"spellDamageReduction" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"val" : 100,
+						"duration": "N_TURNS",
+						"turns": 1
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级龙形符文}\r\n\r\n使己方任意部队2回合内提升攻防指数100%，且不受任何魔法伤害。",
+	 
+				"cost": 0,
+	 
+				"effects" : {
+					"boostAttack":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 100,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "N_TURNS",
+						"turns": 2
+					},
+					"boostDefense":
+                    {
+                        "type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : 100,
+						"valueType" : "PERCENT_TO_ALL",
+                        "duration": "N_TURNS",
+						"turns": 2
+					},
+					"spellDamageReduction" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"val" : 100,
+						"duration": "N_TURNS",
+						"turns": 2
+					}
+				}
+			}
+		}
+	},
+	"runeBas08":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "复活符文",
+		"school":
+		{
+			"runeHighlands": true
+		},
+		"level": 3,
+		"power": 40,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":[{ "defName" : "bastiSpells/runes/runeE8", "transparency" : 0.5}]
+		},
+ 
+		"flags" : { "positive": true, "nonMagical": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.UNDEAD" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.GARGOYLE" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "bastiSpells/runes/runeMa08.png",
+			"iconEffect": "bastiSpells/runes/runeEffect08.png",
+			"iconScroll": "bastiSpells/runes/runeBook08.png",
+			"iconScenarioBonus": "bastiSpells/runes/runeBonus08.png",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "RESURECT"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 5,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{复活符文}\n\n补充阵亡部队的生命力，除战争机器，机械傀儡和亡灵生物均可复活。\n\n复活的数值是（P*40）+5，战后不会保留。",
+				
+				"cost": 0,
+				"power": 5,
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"resurrect",
+						"healPower":"oneBattle",
+						"minFullUnits" : 1
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{初级复活符文}\n\n补充阵亡部队的生命力，除战争机器，机械傀儡和亡灵生物均可复活。\n\n复活的数值是（P*40）+5，战后不会保留。",
+				
+				"cost": 0,
+				"power": 5,
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"resurrect",
+						"healPower":"oneBattle",
+						"minFullUnits" : 1
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{中级复活符文}\n\n补充阵亡部队的生命力，除战争机器，机械傀儡和亡灵生物均可复活。\n\n复活的数值是（P*40）+30，战后不会保留。",
+				
+				"cost": 0,
+				"power": 30,
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"resurrect",
+						"healPower":"oneBattle",
+						"minFullUnits" : 1
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{高级复活符文}\n\n补充阵亡部队的生命力，除战争机器，机械和亡灵生物均可复活。\n\n复活的数值是（P*40）+45，战后可以保留。",
+				
+				"cost": 0,
+				"power": 45,
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"resurrect",
+						"healPower":"permanent",
+						"minFullUnits" : 1
+					}
+				}
+			}
+		}
+	}
+
+}
+	
+ 

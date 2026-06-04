@@ -1,0 +1,66 @@
+{
+	"svetlana" :
+	{
+		"class" : "cthbishop",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/amanda/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/amanda/spec-large.bmp",
+			"large" : "cathedral/heroes/amanda/portrait-large.bmp",
+			"small" : "cathedral/heroes/amanda/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+		],
+		"texts" :
+		{
+			"name" : "阿曼达",
+			"biography" : "阿曼达在灾难发生之前，就被父母送去了埃拉西亚的神学院。当她回到家乡之时，却发现父母和妹妹都已经被亡灵所害。为此，她不再将神灵作为唯一的寄托。也许支持自己活下去的目的，仅仅是复仇。",
+			"specialty" :
+			{
+				"description" : "战斗中使敌人士气-1。",
+				"tooltip" : "Creature Bonus: Nerubians",
+				"name" : "-1士气"
+			}
+		},
+		"spellbook" :
+		[
+		       "curse"
+		],
+		"specialty": 
+			{
+				"bonuses":
+				{
+					"moraleReduce":
+					{
+					"type" : "MORALE",
+					"val" : -1,
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"stacking" : "面对-1士气特长的英雄"
+					}
+				}
+			}	
+	}
+}
+
+
+
+

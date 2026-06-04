@@ -1,0 +1,77 @@
+{
+  "shadowhunter": {
+    "name": {
+      "plural": "暗影猎手",
+      "singular": "暗影猎手"
+    },
+    "advMapAmount": {
+ "max" : 25,
+ "min" : 12
+    },
+    "faction": "asylum",
+    "aiValue": 283,
+    "attack": 8,
+    "cost": {
+      "gold": 220
+    },
+    "damage": {
+ "max" : 5,
+ "min" : 3
+    },
+    "defense": 8,
+    "fightValue": 281,
+    "graphics": {
+      "animation": "asylum/battle/creatures/CPST3.def",
+      "map": "asylum/map/creatures/AVWC181.def",
+      "iconSmall": "asylum/iconsSmall/creatures/CPRS181Y.bmp",
+      "iconLarge": "asylum/iconsBig/creatures/CPRL181Y.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      },
+    "missile": {
+      "projectile": "PELFX.DEF",
+      "attackClimaxFrame": 7,
+      "offset": {
+        "upperX": 38,
+        "upperY": -65,
+        "middleX": 36,
+        "middleY": -59,
+        "lowerX": 21,
+        "lowerY": -50
+      },
+      "frameAngles": [ 90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0 ]
+	}
+	},
+    "growth": 7,
+    "hitPoints": 15,
+    "shots": 12,
+    "level": 3,
+    "upgrades": [
+      "phantomhunter"
+    ],
+    "sound": {
+      "attack": "asylum/CPS3ATTK.wav",
+      "defend": "asylum/CPS3DFND.wav",
+      "killed": "asylum/CPS3KILL.wav",
+      "move": "asylum/CPS3MOVE.wav",
+      "shoot": "asylum/CPS3SHOT.wav",
+      "wince": "asylum/CPS3WNCE.wav"
+    },
+    "speed": 6,
+    "abilities": {
+      "noMorale": {
+        "type": "NO_MORALE"
+      },
+      "noMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "canShoot": {
+        "type": "SHOOTER"
+      }
+    }
+  }
+}
+	

@@ -1,0 +1,91 @@
+{
+	"nRP03":
+	{
+		"name" :
+		{
+			"plural" : "高地精灵", //Highland Elf
+			"singular" : "高地精灵"
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 12
+		},
+		"faction": "rampart",
+		"aiValue" : 330,
+		"fightValue" : 193,
+		"attack" : 9,
+		"defense" : 6,
+		"cost" :
+		{
+			"gold" : 225
+		},
+		"damage" :
+		{
+			"min" : 3,
+			"max" : 6
+		},
+		"speed" : 7,
+		"upgrades": ["grandElf"],
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/RP03.def",
+			"map" : "creatures/rampart/map/RP03S.def",
+			"iconSmall" : "creatures/rampart/iconsSmall/RP03S.bmp",
+			"iconLarge" : "creatures/rampart/iconsBig/RP03.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "PELFX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+		},
+		"hitPoints" : 15,
+		"shots": 12,
+		"growth" : 7,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "WELFATTK.wav",
+			"defend": "WELFDFND.wav",
+			"killed": "WELFKILL.wav",
+			"move": "WELFMOVE.wav",
+			"shoot": "WELFSHOT.wav",
+			"wince": "WELFWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canShoot":
+			{	
+				"type" : "SHOOTER"
+			},
+			"noDistancePenalty" :
+			{
+				"type" : "NO_DISTANCE_PENALTY"
+			},
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
+			}
+		}
+	}
+}
+
+

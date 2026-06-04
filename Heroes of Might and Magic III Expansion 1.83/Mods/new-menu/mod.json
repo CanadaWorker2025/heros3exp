@@ -1,0 +1,8 @@
+{
+	"name" : "new-menu",
+	"description" : "Game screens from all HoMM3 parts: RoE, AB, SoD, HotA",
+	"author" : "New World Computing, HotA Team. Port: avatar",
+	"version" : "1.0",
+	"modType" : "Graphical",	
+	"contact" : "http://forum.vcmi.eu/index.php"
+}

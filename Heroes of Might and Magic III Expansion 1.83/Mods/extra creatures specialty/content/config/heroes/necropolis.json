@@ -1,0 +1,90 @@
+{
+	"core:galthran":{
+		"specialty": {
+			"creature": "skeleton",
+			"stepSize" : 10
+		},
+        "texts": {
+            "specialty": {
+                "name": "骷髅兵",
+                "description": "每1级提高骷髅兵及其升级形态10%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:straker":{
+        "texts": {
+            "specialty": {
+                "name": "行尸",
+                "description": "每2级提高行尸及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:charna":{
+        "texts": {
+            "specialty": {
+                "name": "幽灵",
+                "description": "每3级提高幽灵及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:vokial":{
+        "texts": {
+            "specialty": {
+                "name": "吸血鬼",
+                "description": "每4级提高吸血鬼及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:moandor":{
+        "texts": {
+            "specialty": {
+                "name": "尸巫",
+                "description": "每5级提高尸巫及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:tamika":{
+        "texts": {
+            "specialty": {
+                "name": "暗黑骑士",
+                "description": "每6级提高暗黑骑士及其升级形态20%的攻击力和防御力。速度+1。"
+            }
+        }
+	},
+	"core:undeadHaart":{
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"type" : "CREATURE_TYPE_LIMITER",
+						"creature" : "blackKnight",
+						"includeUpgrades" : true
+					}
+				]
+			},
+			"bonuses" : {
+				"damage" : {
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE",
+					"val" : 10
+				},
+				"attack" : {
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				},
+				"defence" : {
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				}
+			}
+		},
+        "texts": {
+            "specialty": {
+                "name": "暗黑骑士",
+                "description": "使暗黑骑士及其升级形态攻击力+10，防御力+10，杀伤+10。"
+            }
+        }
+	}
+}

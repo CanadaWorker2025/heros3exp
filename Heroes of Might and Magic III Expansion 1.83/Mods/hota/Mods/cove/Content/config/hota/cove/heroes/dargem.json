@@ -1,0 +1,57 @@
+{
+	"16dargem" : {
+		"class" : "navigator",
+		"images" : {
+			"large" : "hota/cove/heroes/dargem/icons/portraitLarge.png",
+			"small" : "hota/cove/heroes/dargem/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/cove/heroes/dargem/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/cove/heroes/dargem/icons/specialtySmall.png"
+		},
+		"army": [
+			{
+				"creature": "nymph",
+				"min": 20,
+				"max": 30
+			},
+			{
+				"creature": "crewmate",
+				"min": 6,
+				"max": 9
+			},
+			{
+				"creature": "pirate",
+				"min": 4,
+				"max": 7
+			}
+		],
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "tactics",
+				"level": "basic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"airShield" : {
+					"type" : "SPECIAL_PECULIAR_ENCHANT",
+					"subtype" : "spell.airShield",
+					"addInfo" : 0
+				}
+			}
+		},
+		"spellbook" : [ "airShield" ],
+		"texts": {
+			"biography" : "达盖姆的身份就是一个传奇，他可以在不被箭塔伤害的情况下攻下一座城池。据说他曾经是尼根的地下城中一位年轻的巫师，但是他不愿提及他的历史。然而很多人都知道达盖姆在尼根学习的法术是他的杀手锏，因为对他的战船进行射击完全是徒劳的。",
+			"name" : "达盖姆",
+			"specialty" : {
+				"tooltip" : "Spell Bonus: Air Shield",
+				"name" : "大气神盾",
+				"description" : "使用大气神盾魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。"
+			}
+		}
+	}
+}

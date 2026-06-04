@@ -1,0 +1,134 @@
+{
+	
+	
+	"invPotion":
+	{
+		"type": "combat", 
+		"targetType": "CREATURE", 
+		"name": "保护药水",
+		"school":
+		{
+			"courtPotion": true
+		},
+		"level": 5,
+		"power": 1,
+		
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+
+ 
+		"animation":{
+			"affect":["courtyard/spells/Potions/icePotion/invP.def"]
+		},
+ 
+		"flags" : { "positive": true, "special" : true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "normal"
+			}
+		},
+
+		//graphics - OPTIONAL; object;
+		"graphics":
+		{
+			"iconBook": "courtyard/spells/Potions/icePotion/invP_Book1.png",
+			"iconEffect": "courtyard/spells/Potions/icePotion/invP_effect1",
+			"iconScroll": "courtyard/spells/Potions/icePotion/invP_Scroll1.png",
+			"iconScenarioBonus": "courtyard/spells/Potions/icePotion/invP_bonus1",
+			//  ! will be moved to bonus type config in next bonus config version
+			//  iconImmune - OPTIONAL; string; 
+			//resourse path of icon for SPELL_IMMUNITY bonus (relative to DATA or SPRITES)
+		},
+
+		"sounds": {
+			"cast": "courtyard/spells/TOUGHNESSPOT.wav"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{保护药水}\n\n选定部队三个回合内受到伤害不超过当前生命值的40%。",
+	 
+	 
+				"effects":
+				{
+					"increaseDamage" : {
+						"val" : 40,
+						"type" : "DAMAGE_RECEIVED_CAP",
+						"valueType": "INDEPENDENT_MIN",
+						"duration": "N_TURNS",
+						"turns": 3
+					}
+					
+				}
+			},
+			"basic":
+			{
+				"description": "{保护药水}\n\n选定部队三个回合内受到伤害不超过当前生命值的40%。",
+	 
+	 
+				"effects":
+				{
+					"increaseDamage" : {
+						"val" : 40,
+						"type" : "DAMAGE_RECEIVED_CAP",
+						"valueType": "INDEPENDENT_MIN",
+						"duration": "N_TURNS",
+						"turns": 3
+					}
+					
+				}				
+				
+			},
+			"advanced":
+			{
+				"description": "{保护药水}\n\n选定部队三个回合内受到伤害不超过当前生命值的40%。",
+	 
+	 
+				"effects":
+				{
+					"increaseDamage" : {
+						"val" : 40,
+						"type" : "DAMAGE_RECEIVED_CAP",
+						"valueType": "INDEPENDENT_MIN",
+						"duration": "N_TURNS",
+						"turns": 3
+					}
+					
+				}
+			},
+			"expert":
+			{
+				"description": "{保护药水}\n\n选定部队三个回合内受到伤害不超过当前生命值的40%。",
+	 
+	 
+				"effects":
+				{
+					"increaseDamage" : {
+						"val" : 40,
+						"type" : "DAMAGE_RECEIVED_CAP",
+						"valueType": "INDEPENDENT_MIN",
+						"duration": "N_TURNS",
+						"turns": 3
+					}
+					
+				}
+			}
+		}
+	}
+ 
+}

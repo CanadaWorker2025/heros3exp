@@ -1,0 +1,58 @@
+{
+	"susan" :
+	{
+		"class" : "cthbishop",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "cathedral/heroes/susan/spec-small.bmp",
+			"specialtyLarge" : "cathedral/heroes/susan/spec-large.bmp",
+			"large" : "cathedral/heroes/susan/portrait-large.bmp",
+			"small" : "cathedral/heroes/susan/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "cthAttackDog", "min" : 15, "max" : 25 },
+			{ "creature" : "cthSlayer", "min" :  6, "max" :  9 },
+			{ "creature" : "cthWitchHunter", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "卡梅莉娅",
+			"biography" : "卡梅莉娅的名字来自于庄园门前盛开的山茶花。她从小就在美丽的花园中成长，但是灾难改变了这一切。现在，作为一位幸存者的她，执行着教会的神罚。她坚信美丽的花园将会重现，当然是罪人都得到应有的惩罚之后。",
+			"specialty" :
+			{
+				"description" : "使用寒冰魔环魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Filling this blank",
+				"name" : "寒冰魔环"
+			}
+		},
+		"spellbook" :
+		[
+			"frostRing"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"frostRing" : {
+					"subtype" : "spell.frostRing",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}				
+	}
+}

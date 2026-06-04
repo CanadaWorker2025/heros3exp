@@ -1,0 +1,76 @@
+{
+	"hotaMaximus" : {
+		"class" : "deathknight",
+		"female" : false,
+		"special" : true,
+		"images" : {
+			"large" : "hota/necropolis/heroes/maximus/icons/portraitLarge.png",
+			"small" : "hota/necropolis/heroes/maximus/icons/portraitSmall.png",
+			"specialtyLarge" : "hota/necropolis/heroes/maximus/icons/specialtyLarge.png",
+			"specialtySmall" : "hota/necropolis/heroes/maximus/icons/specialtySmall.png"
+		},
+		"army" : [
+			{
+				"creature" : "skeleton",
+				"min" : 20,
+				"max" : 30
+			},
+			{
+				"creature" : "walkingDead",
+				"min" : 4,
+				"max" : 6
+			},
+			{
+				"creature" : "wight",
+				"min" : 4,
+				"max" : 6
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "necromancy",
+				"level" : "advanced"
+			}
+		],
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"creature" : "blackKnight",
+						"includeUpgrades" : true,
+						"type" : "CREATURE_TYPE_LIMITER"
+					}
+				]
+			},
+			"bonuses" : {
+				"damage" : {
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE",
+					"val" : 10
+				},
+				"attack" : {
+					"subtype" : "attack",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				},
+				"defence" : {
+					"subtype" : "defence",
+					"type" : "PRIMARY_SKILL",
+					"val" : 10
+				}
+			}
+		},
+		"spellbook" : [
+			"slow"
+		],
+		"texts" : {
+			"name" : "麦克西姆斯",
+			"biography" : "麦克西姆斯是卡斯托最亲密的伙伴之一，他是一位强大而凶猛的战士。卡斯托不在时，他负责亡灵法师国度的防御。",
+			"specialty" : {
+				"name" : "暗黑骑士",
+				"tooltip" : "Creature Bonus: Black Knight",
+				"description" : "提升暗黑骑士和恐怖骑士的攻击力，防御力+10。"
+			}
+		}
+	}
+}

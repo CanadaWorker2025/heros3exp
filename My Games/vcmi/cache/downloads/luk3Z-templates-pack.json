@@ -1,0 +1,26 @@
+{
+	"name" : "Templates pack NT",
+	"description" : "Original VCMI default templates with new terrains (NT).<br><br>To play these templates, you need to enable the following mods:<br>1. New terrains pack<br>2. Towns new views<br>3. Horn of the Abyss/Wasteland terrain submod<br>4. Pavilion Town/Dunes<br>5. Asphalt terrain",
+	"author" : "luk3Z",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "https://creativecommons.org/licenses/by-sa/4.0/",
+	"contact" : "luk3z [at] duck.com",
+	"version" : "1.2",
+	"modType" : "Templates",
+	"compatibility" :
+	{
+		"min" : "1.4"
+	},
+	"changelog" :
+    {
+        "1.0"   : [ "Initial release" ],
+		"1.1"   : [ "Added support for a new terrains in the Towns new views mod" ],
+		"1.2"   : [ "Czech translation by George King" ]
+    },
+	"keepDisabled" : false,
+	
+	"czech" : {
+		"name": "Balíček šablon",
+		"description": "Výchozí šablony VCMI s podporou nových terénů.<br><br>Pro hraní těchto šablon je potřeba povolit následující modifikace:<br>1. Nové terény <br>2. Nové pohledy na města<br>3. Modifikace Pustina z Horn of the Abyss<br>4. Město Pavilon včetně dun<br>5. Asfalt"
+	}
+}

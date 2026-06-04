@@ -1,0 +1,107 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"marbleHall" : {
+				"name" : "石雕馆",
+				"creatures" : [[ "cupid" ]],
+				"kingdomOverviewImage" : "courtyard/map/flagport/crt1.def",
+				"sounds" : {
+					"ambient" : ["courtyard/buildingsAmbients/LOOPDW1"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "courtyard/map/lv1",
+						"mask" : ["VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"alchemyTower" : {
+				"name" : "炼金塔",
+				"creatures" : [[ "homunculus" ]],
+				"kingdomOverviewImage" : "courtyard/map/flagport/crt2.def",
+				"sounds" : {
+					"ambient" : ["courtyard/buildingsAmbients/LOOPDW2"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "courtyard/map/lv2",
+						"mask" : ["VVV", "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"furnace" : {
+				"name" : "熔矿炉",
+				"creatures" : [[ "fireNewt" ]],
+				"kingdomOverviewImage" : "courtyard/map/flagport/crt3.def",
+				"sounds" : {
+					"ambient" : ["courtyard/buildingsAmbients/LOOPDW3"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "courtyard/map/lv3",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},			
+			"arsenal" : {
+				"name" : "兵工厂",
+				"creatures" : [[ "arquebusier" ]],
+				"kingdomOverviewImage" : "courtyard/map/flagport/crt4.def",
+				"sounds" : {
+					"ambient" : ["courtyard/buildingsAmbients/LOOPDW4"]
+				},
+				"templates" : {
+					"default" : {	
+						"animation" : "courtyard/map/lv4",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dodoBurgh" : {
+				"name" : "巨鸟之巢",
+				"creatures" : [[ "dodo" ]],
+				"guards" : true,	
+				"kingdomOverviewImage" : "courtyard/map/flagport/crt5.def",
+				"sounds" : {
+					"ambient" : ["courtyard/buildingsAmbients/LOOPDW5"]
+				},				
+				"templates" : {
+					"default" : {
+						"animation" : "courtyard/map/lv5",
+						"mask" : [ "VVV", "VBB", "VAB" ]
+					}
+				}
+			},
+			"arbours" : {
+				"name" : "藤蔓花园",
+				"creatures" : [[ "mandrake" ]],
+				"guards" : true,
+				"kingdomOverviewImage" : "courtyard/map/flagport/crt6.def",
+				"sounds" : {
+					"ambient" : ["courtyard/buildingsAmbients/LOOPDW6"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "courtyard/map/lv6",
+						"mask" : [ "VVV", "VVB", "VAB" ]
+					}
+				}
+			},
+			"scaryCavity" : {
+				"name" : "恐惧洞窟",
+				"creatures" : [[ "jabberwock" ]],
+				"guards" : true,
+				"kingdomOverviewImage" : "courtyard/map/flagport/crt7.def",
+				"sounds" : {
+					"ambient" : ["courtyard/buildingsAmbients/LOOPDW7"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "courtyard/map/lv7",
+						"mask" : [ "VVV", "VVV", "VBB", "VAB" ]
+					}
+				}
+			}
+		}		
+	}
+}

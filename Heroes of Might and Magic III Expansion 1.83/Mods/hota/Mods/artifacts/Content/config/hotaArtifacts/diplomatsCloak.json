@@ -1,0 +1,31 @@
+{
+	"diplomatsCloak" : {
+		"type" : [ "HERO" ],
+		"slot" : "SHOULDERS",
+		"class" : "RELIC",
+		"value" : 0,
+		"components" : [
+			"statesmansMedal",
+			"diplomatsRing",
+			"ambassadorsSash"
+		],
+		"graphics" : {
+			"image" : "hota/artifactsIcons/diplomatsCloak",
+			"map" : "hota/artifactsMap/diplomatsCloak",
+			"scenarioBonus" : "hota/artifactsCampaignBonuses/diplomatsCloak"
+		},
+		"bonuses":{
+			"diplomats":
+			{
+				"type" : "WANDERING_CREATURES_JOIN_BONUS",
+				"val" : 2,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		},
+		"text" : {
+			"description" : "{外交官斗篷}\r\n\r\n外交官斗篷可以使投降费用减少20%，并提高中立生物加入的几率（降低野外生物敌意2点）",
+			"event" : "今天你遇见一个不同寻常的稻草人，对乌鸦它理智地劝说他们离开田野而不是用恐吓。你同意帮助它找到最近的先知以换取这个秘密，于是这个稻草人给了你它的斗篷。",
+			"name" : "外交官斗篷"
+		}
+	}
+}

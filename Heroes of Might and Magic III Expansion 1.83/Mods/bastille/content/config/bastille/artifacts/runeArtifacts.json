@@ -1,0 +1,322 @@
+{
+	"runeArtifact01":
+	{
+		"type": ["HERO"],
+		"class": "SPECIAL",
+		"slot":	"MISC",
+		"value": 500,	
+		"text":
+		{
+			"name": "加速符文",
+			"description": "{加速符文石 初级}\r\n\r\n在战场上可以使用{加速符文}。\r\n习得{符文学}可以提升效果。\r\n次数耗尽后，符文石将会消失。",
+			"event": "你在旅行中发现了一个符文石头，你将它捡起来放进行囊。"
+		},
+		"graphics":
+		{
+			"image": "bastille/artifacts/runeLv1.png",
+			"scenarioBonus": "bastille/artifacts/rune1Bonus.png",
+			"map"  : "bastille/artifacts/runeMap1.def",
+		},
+		"bonuses":
+		{
+			"spellGain":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.runeBas01",
+				"limiters" : [
+				{
+					"type" : "HAS_CHARGES_LIMITER",
+					"parameters" : [1]
+				}
+				],
+				"hidden" : true
+			},
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 3
+		}
+	},
+	"runeArtifact02":
+	{
+		"type": ["HERO"],
+		"class": "SPECIAL",
+		"slot":	"MISC",
+		"value": 500,	
+		"text":
+		{
+			"name": "抗性符文",
+			"description": "{抗性符文石 初级}\r\n\r\n在战场上可以使用{抗性符文}。\r\n习得{符文学}可以提升效果。\r\n次数耗尽后，符文石将会消失。",
+			"event": "你在旅行中发现了一个符文石头，你将它捡起来放进行囊。"
+		},
+		"graphics":
+		{
+			"image": "bastille/artifacts/runeLv2.png",
+			"scenarioBonus": "bastille/artifacts/rune1Bonus.png",
+			"map"  : "bastille/artifacts/runeMap1.def",
+		},
+		"bonuses":
+		{
+			"spellGain":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.runeBas02",
+				"limiters" : [
+				{
+					"type" : "HAS_CHARGES_LIMITER",
+					"parameters" : [1]
+				}
+				],
+				"hidden" : true
+			},
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 3
+		}
+	},
+	"runeArtifact03":
+	{
+		"type": ["HERO"],
+		"class": "SPECIAL",
+		"slot":	"MISC",
+		"value": 500,	
+		"text":
+		{
+			"name": "治疗符文",
+			"description": "{治疗符文石 初级}\r\n\r\n在战场上可以使用{治疗符文}。\r\n习得{符文学}可以提升效果。\r\n次数耗尽后，符文石将会消失。",
+			"event": "你在旅行中发现了一个符文石头，你将它捡起来放进行囊。"
+		},
+		"graphics":
+		{
+			"image": "bastille/artifacts/runeLv3.png",
+			"scenarioBonus": "bastille/artifacts/rune1Bonus.png",
+			"map"  : "bastille/artifacts/runeMap1.def",
+		},
+		"bonuses":
+		{
+			"spellGain":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.runeBas03",
+				"limiters" : [
+				{
+					"type" : "HAS_CHARGES_LIMITER",
+					"parameters" : [1]
+				}
+				],
+				"hidden" : true
+			},
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 3
+		}
+	},
+	"runeArtifact04":
+	{
+		"type": ["HERO"],
+		"class": "SPECIAL",
+		"slot":	"MISC",
+		"value": 500,	
+		"text":
+		{
+			"name": "迅捷符文",
+			"description": "{迅捷符文石 中级}\r\n\r\n在战场上可以使用{迅捷符文}。\r\n使用需要掌握{中级符文学}，{符文学}等级增加可以提升效果。\r\n次数耗尽后，符文石将会消失。",
+			"event": "你在旅行中发现了一个符文石头，你将它捡起来放进行囊。"
+		},
+		"graphics":
+		{
+			"image": "bastille/artifacts/runeLv4.png",
+			"scenarioBonus": "bastille/artifacts/rune2Bonus.png",
+			"map"  : "bastille/artifacts/runeMap2.def",
+		},
+		"bonuses":
+		{
+			"spellGain":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.runeBas04",
+				"limiters" : [
+				{
+					"type" : "HAS_CHARGES_LIMITER",
+					"parameters" : [1]
+				}
+				],
+				"hidden" : true
+			},
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 3
+		}
+	},
+	"runeArtifact05":
+	{
+		"type": ["HERO"],
+		"class": "SPECIAL",
+		"slot":	"MISC",
+		"value": 500,	
+		"text":
+		{
+			"name": "愤怒符文",
+			"description": "{愤怒符文石 中级}\r\n\r\n在战场上可以使用{愤怒符文}。\r\n使用需要掌握{中级符文学}，{符文学}等级增加可以提升效果。\r\n次数耗尽后，符文石将会消失。",
+			"event": "你在旅行中发现了一个符文石头，你将它捡起来放进行囊。"
+		},
+		"graphics":
+		{
+			"image": "bastille/artifacts/runeLv5.png",
+			"scenarioBonus": "bastille/artifacts/rune2Bonus.png",
+			"map"  : "bastille/artifacts/runeMap2.def",
+		},
+		"bonuses":
+		{
+			"spellGain":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.runeBas05",
+				"limiters" : [
+				{
+					"type" : "HAS_CHARGES_LIMITER",
+					"parameters" : [1]
+				}
+				],
+				"hidden" : true
+			},
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 3
+		}
+	},
+	"runeArtifact06":
+	{
+		"type": ["HERO"],
+		"class": "SPECIAL",
+		"slot":	"MISC",
+		"value": 500,	
+		"text":
+		{
+			"name": "空灵符文",
+			"description": "{空灵符文石 中级}\r\n\r\n在战场上可以使用{空灵符文}。\r\n使用需要掌握{中级符文学}，{符文学}等级增加可以提升效果。\r\n次数耗尽后，符文石将会消失。",
+			"event": "你在旅行中发现了一个符文石头，你将它捡起来放进行囊。"
+		},
+		"graphics":
+		{
+			"image": "bastille/artifacts/runeLv6.png",
+			"scenarioBonus": "bastille/artifacts/rune2Bonus.png",
+			"map"  : "bastille/artifacts/runeMap2.def",
+		},
+		"bonuses":
+		{
+			"spellGain":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.runeBas06",
+				"limiters" : [
+				{
+					"type" : "HAS_CHARGES_LIMITER",
+					"parameters" : [1]
+				}
+				],
+				"hidden" : true
+			},
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 3
+		}
+	},
+	"runeArtifact07":
+	{
+		"type": ["HERO"],
+		"class": "SPECIAL",
+		"slot":	"MISC",
+		"value": 500,	
+		"text":
+		{
+			"name": "龙形符文",
+			"description": "{龙形符文石 高级}\r\n\r\n在战场上可以使用{龙形符文}。\r\n使用需要掌握{高级符文学}。\r\n次数耗尽后，符文石将会消失。",
+			"event": "你在旅行中发现了一个符文石头，你将它捡起来放进行囊。"
+		},
+		"graphics":
+		{
+			"image": "bastille/artifacts/runeLv7.png",
+			"scenarioBonus": "bastille/artifacts/rune3Bonus.png",
+			"map"  : "bastille/artifacts/runeMap3.def",
+		},
+		"bonuses":
+		{
+			"spellGain":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.runeBas07",
+				"limiters" : [
+				{
+					"type" : "HAS_CHARGES_LIMITER",
+					"parameters" : [1]
+				}
+				],
+				"hidden" : true
+			},
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 3
+		}
+	},
+	"runeArtifact08":
+	{
+		"type": ["HERO"],
+		"class": "SPECIAL",
+		"slot":	"MISC",
+		"value": 500,	
+		"text":
+		{
+			"name": "复活符文",
+			"description": "{复活符文石 高级}\r\n\r\n在战场上可以使用{复活符文}。\r\n掌握{高级符文学}可以使战后保留。\r\n次数耗尽后，符文石将会消失。",
+			"event": "你在旅行中发现了一个符文石头，你将它捡起来放进行囊。"
+		},
+		"graphics":
+		{
+			"image": "bastille/artifacts/runeLv8.png",
+			"scenarioBonus": "bastille/artifacts/rune3Bonus.png",
+			"map"  : "bastille/artifacts/runeMap3.def",
+		},
+		"bonuses":
+		{
+			"spellGain7":
+			{
+				"type": "SPELL",
+				"subtype" : "spell.runeBas08",
+				"limiters" : [
+				{
+					"type" : "HAS_CHARGES_LIMITER",
+					"parameters" : [1]
+				}
+				],
+				"hidden" : true
+			}
+		},
+		"charged" : 
+		{
+			"usageType" : "SPELLCAST",
+			"removeOnDepletion" : true,
+			"startingCharges" : 3
+		}
+	}
+}

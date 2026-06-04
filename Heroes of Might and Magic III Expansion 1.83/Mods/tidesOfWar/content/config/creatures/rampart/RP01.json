@@ -1,0 +1,63 @@
+{
+	"nRP01":
+	{
+		"name" :
+		{
+			"plural" : "精英半人马", //Centaur Champion
+			"singular" : "精英半人马"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction": "rampart",
+		"doubleWide" : true,
+		"aiValue" : 137,
+		"fightValue" : 113,
+		"upgrades": ["centaurCaptain"],
+		"attack" : 6,
+		"defense" : 3,
+		"cost" :
+		{
+			"gold" : 90
+		},
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 3
+		},
+		"speed" : 9,
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/RP01.def",
+			"map" : "creatures/rampart/map/RP01S.def",
+			"iconSmall" : "creatures/rampart/iconsSmall/RP01S.bmp",
+			"iconLarge" : "creatures/rampart/iconsBig/RP01.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.80,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"hitPoints" : 8,
+		"growth" : 14,
+		"level" : 1,
+		"sound" :
+		{
+			"attack": "ECNTATTK.wav",
+			"defend": "ECNTDFND.wav",
+			"killed": "ECNTKILL.wav",
+			"move": "ECNTMOVE.wav",
+			"wince": "ECNTWNCE.wav"
+		},
+		"abilities" :
+		{
+			
+		}
+	}
+}
+
+

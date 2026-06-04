@@ -1,0 +1,72 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"whiteQueenbank" : 
+			{
+				"name" : "白皇后的茶会",
+				"aiValue" : 8000,
+				"templates" :
+				{
+					"normal" :
+					{
+						"animation" : "banks/whiteqnBank",
+						"visitableFrom" : [ "+++", "+++", "+++" ], 
+						"mask" : [ "VVV", "VVV", "VAV" ]
+					}
+				},
+				"sounds": {
+					"ambient": ["LOOPMAGI"],
+					"visit": ["dwellings/banks/whitequeentheme"]
+				},
+				"rmg" : {
+					"value"		: 8000,
+					"rarity"	: 25,
+					"mapLimit" : 4,
+				},
+				"onGuardedMessage" : "{白皇后的茶会}\r\n\r\n你发现了一处梦幻般的地方，一群妖精与白皇后在魔光环绕的庭院优雅地品茶，你好奇并接近了其中，但妖精阻止了你的接近。是否要强行闯入？",
+				"onVisitedMessage" : "{白皇后的茶会}\r\n\r\n你的英雄靠近了梦幻般的庭院，想要寻找传说中的茶会，但经过苦苦寻搜，发现只是遗留的幻境。",
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "一切宛如泡影，归于宁静，对于你的强行打扰，妖精与白皇后无奈离开了，你细细搜寻了妖精与白皇后留下的物品，得到了一些宝物。",
+						"appearChance" : { "min" : 0, "max" : 50 },
+						"guards": [
+							{ "amount": 1, "type" : "ffWhiteQueen" },
+							{ "amount": 1, "type" : "ffWhiteQueen" },
+							{ "amount": 1, "type" : "ffWhiteQueen" },
+							{ "amount": 1, "type" : "ffWhiteQueen" },
+							{ "amount": 1, "type" : "ffWhiteQueen" }
+						], 
+							"resources": 
+							{
+								"gold" : 8000,
+								"gems": 10
+							},
+							"artifacts": [ { "class" : "MAJOR" } ]
+					},
+					{
+						"message" : "一切宛如泡影，归于宁静，对于你的强行打扰，妖精与白皇后无奈离开了，你细细搜寻了妖精与白皇后留下的物品，得到了一些宝物。",
+						"appearChance" : { "min" : 50, "max" : 100 },
+						"guards": [
+							{ "amount": 2, "type" : "ffWhiteQueen" },
+							{ "amount": 2, "type" : "ffWhiteQueen" },
+							{ "amount": 2, "type" : "ffWhiteQueen" },
+							{ "amount": 2, "type" : "ffWhiteQueen" },
+							{ "amount": 2, "type" : "ffWhiteQueen" }
+						], 
+							"resources": 
+							{
+								"gold" : 16000,
+								"gems": 20
+							},
+							"artifacts": [ { "class" : "RELIC" } ]
+					}
+				]
+			}
+		}
+	}
+}

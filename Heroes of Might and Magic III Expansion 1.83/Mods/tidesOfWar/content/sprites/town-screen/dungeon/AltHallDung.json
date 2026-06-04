@@ -1,0 +1,15 @@
+{
+    "basepath" : "town-screen/dungeon/frames/",
+	"images" :
+	[
+		{ "frame" : 44, "file" : "TPDEx1.bmp"},
+		{ "frame" : 45, "file" : "TPDEx2.bmp"},
+		{ "frame" : 46, "file" : "TPDEx3.bmp"},
+		{ "frame" : 47, "file" : "TPDEx4.bmp"},
+		{ "frame" : 48, "file" : "TPDEx5.bmp"},
+		{ "frame" : 49, "file" : "TPDEx6.bmp"},
+		{ "frame" : 50, "file" : "TPDEx7.bmp"},	
+		{ "frame" : 55, "file" : "TPDItd1.png"},
+		{ "frame" : 62, "file" : "TPDItd2.png"}
+	]
+}

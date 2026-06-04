@@ -1,0 +1,17 @@
+{
+	"name" : "Maps Collection",
+	"description" : "H3 Maps Collection from the Internet. Major part comes from 总上所述's collection.",
+	"version" : "1.0.0",
+	"author" : "总上所述 and kdmcser",
+	"contact" : "https://www.h3wog.com/",
+	"modType": "Maps",
+	"changelog" :
+    {
+		"1.0.0"   : [ "Initial release" ]
+    },
+	"language": "chinese",
+	"chinese" : {
+		"name" : "地图收集包",
+		"description" : "收集互联网上一系列英雄无敌3地图，主要来自总上所述大佬的地图收集包。"
+	}
+}
