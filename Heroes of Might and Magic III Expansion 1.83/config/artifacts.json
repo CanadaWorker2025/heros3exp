@@ -1951,17 +1951,17 @@
 			},
 			"walkingDead" : {
 				"type" : "IMPROVED_NECROMANCY",
-				"subtype" : "creature.walkingDead",
+				"subtype" : "creature.wight",
 				"addInfo" : 1
 			},
 			"wight" : {
 				"type" : "IMPROVED_NECROMANCY",
-				"subtype" : "creature.wight",
+				"subtype" : "creature.lich",
 				"addInfo" : 2
 			},
 			"lich" : {
 				"type" : "IMPROVED_NECROMANCY",
-				"subtype" : "creature.lich",
+				"subtype" : "creature.dreadKnight",
 				"addInfo" : 3
 			}
 		},
