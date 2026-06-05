@@ -1,3 +1,5 @@
+# vcmiskill
+
 vcmiskill pathfinding    获得 侦察/路径寻找（增加崎岖地形移动折扣）
 
 vcmiskill archery        获得 弓箭（远程伤害加成）
@@ -58,3 +60,13 @@ vcmiskill firstAid      获得 急救（特定治疗法术威力）
 说明：
 - 这些 `vcmiskill <skillID>` 命令可以通过 VCMI 的作弊控制台或聊天输入触发（前提是游戏允许作弊）。
 - 技能 ID 来自 `config/skills.json`，中文名称为简短描述，具体数值和等级由 `config/skills.json` 定义。
+
+新增扩展技能（Mod 中发现的可用 `vcmiskill` 技能 ID）：
+- `intimidation`：恐吓术（扩展技能，来自 `Mods\tidesOfWar`）
+- `dv_necromancy`：死灵术（扩展技能，来自 `Mods\Deathvalley`）
+- `demonicBlood`：恶魔血统 / 地狱的血统（扩展技能，来自 `Mods\tartarus`）
+- `hexes`：巫蛊术（扩展技能，来自 `Mods\tidesOfWar`）
+- `magicFader`：法术抑制（扩展技能，来自 `Mods\tidesOfWar`）
+- `runes`：符文学（扩展技能，来自 `Mods\hota\Mods\bulwark`）
+
+注意：`core:xxx` 形式的条目通常是 mod 对基础技能的覆盖或重定义，不是新的 `vcmiskill` 命令关键字。实际可用的基础技能 ID 仍然是 `archery`、`luck`、`leadership`、`sorcery` 等。

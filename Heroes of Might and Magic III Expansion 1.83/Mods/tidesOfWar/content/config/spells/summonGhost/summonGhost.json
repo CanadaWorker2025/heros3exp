@@ -53,7 +53,7 @@
 				"summon":{
 					"exclusive":false,
 					"id":"tidesofwar:mdtGhost",
-					"permanent":false,
+					"permanent":true,
 					"type":"core:summon"
 				}
 			}				
