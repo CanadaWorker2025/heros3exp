@@ -391,12 +391,12 @@
 			},
 			"advanced":{
 				"adventureEffect" : {
-					"castsPerDay" : 3
+					"castsPerDay" : 4
 				}
 			},
 			"expert":{
 				"adventureEffect" : {
-					"castsPerDay" : 4,
+					"castsPerDay" : 8,
 					"movementPointsTaken" : 200
 				}
 			}
