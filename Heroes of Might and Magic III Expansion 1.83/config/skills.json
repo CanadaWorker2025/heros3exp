@@ -72,7 +72,7 @@
 		},
 		"basic" : {
 			"effects" : {
-				"main" : { "val" : 10 }
+				"main" : { "val" : 20 }
 			}
 		},
 		"advanced" : {
@@ -82,7 +82,7 @@
 		},
 		"expert" : {
 			"effects" : {
-				"main" : { "val" : 30 }
+				"main" : { "val" : 40 }
 			}
 		}
 	},
@@ -111,7 +111,7 @@
 		},
 		"expert" : {
 			"effects" : {
-				"main" : { "val" : 3 }
+				"main" : { "val" : 4 }
 			}
 		}
 	},

@@ -9,7 +9,11 @@
 		"heroes" :
 		{
 			"tavernInvite"            : true,
-			"specialtyCreatureGrowth" : 20
+			"specialtyCreatureGrowth" : 40,
+			"specialtySecondarySkillGrowth" : 10,
+			"levelupTotalSkillsAmount" : 4,
+			"levelupUpgradedSkillsAmount" : 2,
+			"baseScoutingRange" : 7
 		},
 		"dwellings" : {
 			"accumulateWhenOwned" : true
