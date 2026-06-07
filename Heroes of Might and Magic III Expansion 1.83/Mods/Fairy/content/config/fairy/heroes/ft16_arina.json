@@ -10,8 +10,8 @@
 			"biography" : "据说埃莉娜是如此善良和友善，这片土地上这个时代的每一个将军都受过她的恩惠。因此在交战时许多人会比给其他人更容易给予她安全逃生的通道。",
 			"specialty" :
 			{
-				"description" : "在外交术技能上每级减少5%的投降费用。",
-				"tooltip" : "{Loyalty}\r\n\r\nCost of Surrender -40%",
+				"description" : "在外交术技能上每级减少5%的投降费用，并降低野外中立生物的敌意值3点。",
+				"tooltip" : "{Loyalty}\r\n\r\nCost of Surrender -40%\r\nNeutral creature hostility -3",
 				"name" : "外交术"
 			}
 		},
@@ -60,7 +60,15 @@
 			}
 		],
 		"specialty" : {
-			"secondary" : "diplomacy"
+			"secondary" : "diplomacy",
+			"bonuses" : {
+				"diplomaBonus" : {
+						"type" : "WANDERING_CREATURES_JOIN_BONUS",
+						"val" : 3,
+						"valueType" : "BASE_NUMBER"
+				   }
+					
+				}
 		}
 	}
 }

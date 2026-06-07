@@ -1,5 +1,26 @@
 # LSF Update Log
 
+## 2026-06-07 14:05:00
+
+### 5. Scholar skill and Arina diplomacy changes
+
+Source files:
+- [Heroes of Might and Magic III Expansion 1.83/config/skills.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/skills.json:551)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:7)
+
+Current `scholar` configuration:
+- `basic: LEARN_MEETING_SPELL_LIMIT = 3`
+- `advanced: LEARN_MEETING_SPELL_LIMIT = 4`
+- `expert: LEARN_MEETING_SPELL_LIMIT = 5`
+
+Current `Arina` diplomacy specialty configuration:
+- Base specialty remains `secondary: diplomacy`
+- Added custom bonus: `WANDERING_CREATURES_JOIN_BONUS +3`
+- Updated description to match the mechanic:
+  - Reduces surrender cost by `5% per level`
+  - Reduces neutral creature hostility by `3`
+- Updated tooltip to include both surrender discount and neutral-creature hostility reduction
+
 ## 2026-06-07 12:29:19
 
 ### 1. Hero system baseline reference
