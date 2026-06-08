@@ -21,23 +21,27 @@
 			"specialtySmall" : "fairy/heroes/suliss/Un32Scri.png",
 			"specialtyLarge" : "fairy/heroes/suliss/Un44Scri.png",
 			"large" : "fairy/heroes/suliss/hpl293.png",
-			"small" : "fairy/heroes/suliss/hps293.png",
+			"small" : "fairy/heroes/suliss/hps293.png"
 		},
 		
 		"spellbook" :
-		[
-			"magicArrow",
-			"haste",
-			"curse",
+		[			
 			"manaFlarePyra",
 			"primeMissile",
+			"timeStasis",
+			"sacrifice",
+			"mdtAuraOfPower",
+			"curseOfPharaoh","magicArrow",
+			"haste",
+			"curse",
 			"precision",
 			"bloodlust",
 			"protectFire",
+
 			"slow",
 			"disruptingRay",
 			"lightningBolt",
-			"luck",
+			"fortune",
 			"shield",
 			"stoneSkin",
 			"cure",
@@ -46,6 +50,7 @@
 			"blind",
 			"dispel",
 			"bless",
+			
 			"protectWater",
 			"mdtCancel",
 			"waspSwarm",
@@ -56,10 +61,8 @@
 			"fireball",
 			"landMine",
 			"quickStrikes",
-			"weakness",
-			"timeStasis",
-			"airShield",
-			"sacrifice",
+			"weakness",			
+			"airShield",			
 			"counterstrike",
 			"earthquake",
 			"hypnotize",
@@ -69,8 +72,7 @@
 			"animateDead",
 			"antiMagic",
 			"destroyUndead",
-			"misfortune",
-			"mdtAuraOfPower",
+			"misfortune",			
 			"reconstruction",
 			"protectEarth",
 			"enchantedWeapon",
@@ -79,8 +81,7 @@
 			"regeneration",
 			"confusion",
 			"forgetfulness",
-			"teleport",
-			"curseOfPharaoh"
+			"teleport"			
 		],
 
 		"army" :
