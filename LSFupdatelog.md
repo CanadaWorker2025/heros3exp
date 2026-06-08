@@ -1,5 +1,74 @@
 # LSF Update Log
 
+## 2026-06-07 14:32:00
+
+### 6. Elrisa starting spellbook cleanup
+
+Source file:
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json:27)
+
+Current `Elrisa` specialty text and spellbook setup:
+- Specialty description updated to `初始即掌握所有1-3级魔法`
+- Tooltip updated to `All 1-3 level spells in spellbook.`
+- Starting `spellbook` cleaned into a unique 1-3 level spell list
+
+Current `spellbook` now includes these confirmed spell ids:
+- `magicArrow`
+- `haste`
+- `curse`
+- `manaFlarePyra`
+- `primeMissile`
+- `precision`
+- `bloodlust`
+- `protectFire`
+- `slow`
+- `disruptingRay`
+- `lightningBolt`
+- `luck`
+- `shield`
+- `stoneSkin`
+- `cure`
+- `protectAir`
+- `fireWall`
+- `blind`
+- `dispel`
+- `bless`
+- `protectWater`
+- `mdtCancel`
+- `waspSwarm`
+- `quicksand`
+- `deathRipple`
+- `iceBolt`
+- `removeObstacle`
+- `fireball`
+- `landMine`
+- `quickStrikes`
+- `weakness`
+- `timeStasis`
+- `airShield`
+- `sacrifice`
+- `counterstrike`
+- `earthquake`
+- `hypnotize`
+- `levitation`
+- `mdtDivineArrows`
+- `mdtBind`
+- `animateDead`
+- `antiMagic`
+- `destroyUndead`
+- `misfortune`
+- `mdtAuraOfPower`
+- `reconstruction`
+- `protectEarth`
+- `enchantedWeapon`
+- `frostRing`
+- `mirth`
+- `regeneration`
+- `confusion`
+- `forgetfulness`
+- `teleport`
+- `curseOfPharaoh`
+
 ## 2026-06-07 14:05:00
 
 ### 5. Scholar skill and Arina diplomacy changes
