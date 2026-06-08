@@ -533,17 +533,17 @@
 			"skillPerHero" : 8,
 			
 			/// Base scouting range for hero without any range modifiers
-			"baseScoutingRange" : 5,
+			"baseScoutingRange" : 7,
 
 			/// Strength of generic secondary skill specialties ( "secondary" : "skillName" ) per level
-			"specialtySecondarySkillGrowth" : 5,
+			"specialtySecondarySkillGrowth" : 10,
 			/// Strength of generic creature specialties ( "creature" : "creatureName" ) per level
-			"specialtyCreatureGrowth" : 5,
+			"specialtyCreatureGrowth" : 40,
 
 			/// Maximum amount of skills that can be offered to hero on levelup
-			"levelupTotalSkillsAmount" : 2,
+			"levelupTotalSkillsAmount" : 4,
 			/// Maximum amount of advanced or expert skills that can be offered to hero on levelup
-			"levelupUpgradedSkillsAmount" : 1
+			"levelupUpgradedSkillsAmount" : 2
 		},
 
 		"towns":
