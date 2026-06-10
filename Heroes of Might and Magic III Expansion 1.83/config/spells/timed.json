@@ -678,6 +678,7 @@
 				}
 			},
 			"expert":{
+				"range" : "X",
 				"cumulativeEffects" : {
 					"primarySkill" : {
 						"val" : -5

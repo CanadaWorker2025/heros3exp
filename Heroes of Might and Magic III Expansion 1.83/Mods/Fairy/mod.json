@@ -6,7 +6,14 @@
 	"contact" : "http://forum.vcmi.eu/index.php",
 	"version" : "1.5",
 	"modType" : "Town",	
-	"depends" : ["hota.highlandsterrain"], 
+	"depends" : [
+		"hota.highlandsterrain",
+		"hota.factory",
+		"courtyard",
+		"newoldspells+",
+		"tidesofwar",
+		"new pavilion.new pavillion"
+	], 
 	
     "factions" : [ "config/fairy/town" ],
 	"chinese" : {
