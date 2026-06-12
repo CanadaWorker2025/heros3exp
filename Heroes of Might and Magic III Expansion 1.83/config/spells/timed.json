@@ -1099,6 +1099,7 @@
 				}
 			},
 			"expert":{
+				"range" : "x",
 				"effects" : {
 					"slayer" : {
 						"val" : 3

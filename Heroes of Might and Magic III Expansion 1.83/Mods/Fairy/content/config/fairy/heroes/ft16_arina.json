@@ -57,6 +57,10 @@
 			{
 				"level" : "basic",
 				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
 			}
 		],
 		"specialty" : {

@@ -28,7 +28,7 @@
 		},
 		"king":
 		{
-			"resources": { "wood" : 0, "mercury": 0, "ore": 0, "sulfur": 0, "crystal": 0, "gems": 0, "gold": 0 },
+			"resources": { "wood" : 90, "mercury": 90, "ore": 90, "sulfur": 90, "crystal": 90, "gems": 90, "gold": 999990 },
 			"globalBonuses": [],
 			"battleBonuses": []
 		}

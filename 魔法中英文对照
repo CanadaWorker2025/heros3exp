@@ -1,0 +1,90 @@
+魔法中英文对照
+
+格式：`Spell ID | 中文名`
+
+core:magicArrow | 魔法神箭
+core:haste | 攻击加速
+core:curse | 恶咒附身
+core:bless | 圣灵佑佐
+core:bloodlust | 嗜血奇术
+core:protectFire | 御火奇术
+core:shield | 护体神盾
+core:stoneSkin | 护体石肤
+core:cure | 疗伤
+core:protectAir | 御气奇术
+core:protectWater | 御水奇术
+core:protectEarth | 御土奇术
+core:dispel | 驱魔大法
+core:fortune | 幸运之神
+core:misfortune | 大难临头
+core:slow | 迟缓大法
+core:weakness | 虚弱无力
+core:viewAir | 透视大气
+core:viewEarth | 透视大地
+core:summonBoat | 召唤船只
+core:scuttleBoat | 摧毁船只
+core:visions | 幻视
+core:disguise | 伪装
+core:lightningBolt | 霹雳闪电
+core:iceBolt | 霹雳寒冰
+core:precision | 百发百中
+core:fireWall | 烈火魔墙
+core:blind | 双目失明
+core:quicksand | 流沙陷阱
+core:deathRipple | 死亡波纹
+core:removeObstacle | 驱除障碍
+core:fireball | 连珠火球
+core:landMine | 埋设地雷
+core:airShield | 大气神盾
+core:sorrow | 悲痛欲绝
+core:mirth | 欢欣鼓舞
+core:forgetfulness | 失忆大法
+core:frostRing | 寒冰魔环
+core:teleport | 瞬间移动
+core:hypnotize | 蛊惑人心
+core:slayer | 屠戮成性
+core:counterstrike | 大力神盾
+core:antiMagic | 抗魔大法
+core:earthquake | 地动山摇
+core:animateDead | 聚灵奇术
+core:destroyUndead | 亡灵杀手
+core:berserk | 丧心病狂
+core:frenzy | 狂暴
+core:prayer | 祈祷
+core:chainLightning | 连锁闪电
+core:meteorShower | 流星火雨
+core:inferno | 烈火炼狱
+core:implosion | 内爆术
+core:resurrection | 复活术
+core:armageddon | 末日审判
+core:clone | 复制
+core:magicMirror | 魔法神镜
+core:summonDemons | 召唤恶鬼
+core:waterWalk | 凌波微步
+core:fly | 飞行奇术
+core:townPortal | 时空之门
+core:dimensionDoor | 异次元之门
+core:airElemental | 召唤气元素
+core:earthElemental | 召唤土元素
+core:fireElemental | 召唤火元素
+core:waterElemental | 召唤水元素
+
+tidesofwar:mdtAuraOfPower | 力量光环
+tidesofwar:mdtBind | 禁足
+tidesofwar:mdtDivineArrows | 神圣之箭
+tidesofwar:mdtCancel | 废除
+tidesofwar:summonGhost | 召唤恶灵
+
+courtyard:quickStrikes | 无双乱舞
+courtyard:reconstruction | 修复
+courtyard:enchantedWeapon | 附魔武器
+
+new pavilion.new pavillion:manaFlarePyra | 魔力闪光
+new pavilion.new pavillion:primeMissile | 源力飞弹
+new pavilion.new pavillion:timeStasis | 时间停滞
+new pavilion.new pavillion:curseOfPharaoh | 法老诅咒
+
+newoldspells+:regeneration | 活力重生
+newoldspells+:confusion | 迷惑心智
+newoldspells+:levitation | 健步如飞
+newoldspells+:waspSwarm | 蜂群滋扰

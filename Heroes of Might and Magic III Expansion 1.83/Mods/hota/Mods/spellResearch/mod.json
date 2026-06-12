@@ -15,13 +15,13 @@
 		"towns" : {
 			"spellResearch" : true,
 			"spellResearchCostMultiplierPerReroll": [ 0, 0, 0, 0, 0 ],
-			"spellResearchPerDay": [ 10, 10, 10, 10, 10 ],
+			"spellResearchPerDay": [ 99, 99, 99, 99, 99 ],
 			"spellResearchCost": [
+				{ "gold": 1000, "mercury": 0, "sulfur": 0, "crystal": 0, "gems": 0 },
+				{ "gold": 1000, "mercury": 0, "sulfur": 0, "crystal": 0, "gems": 0 },
+				{ "gold": 1000, "mercury": 0, "sulfur": 0, "crystal": 0, "gems": 0 },
 				{ "gold": 1000, "mercury": 1, "sulfur": 1, "crystal": 1, "gems": 1 },
-				{ "gold": 1000, "mercury": 1, "sulfur": 1, "crystal": 1, "gems": 1 },
-				{ "gold": 1000, "mercury": 1, "sulfur": 1, "crystal": 1, "gems": 1 },
-				{ "gold": 1000, "mercury": 1, "sulfur": 2, "crystal": 1, "gems": 2 },
-				{ "gold": 1000, "mercury": 2, "sulfur": 2, "crystal": 2, "gems": 2 }
+				{ "gold": 1000, "mercury": 1, "sulfur": 1, "crystal": 1, "gems": 1 }
 			]
 		}
 	},

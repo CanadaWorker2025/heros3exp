@@ -10,7 +10,7 @@
 			"biography" : "赛丽娃出生之时就充斥着不祥的气息。虽然她长相美丽，但没什么人愿意去接近她。她眼下血红色的印记会让人打消对于花仙善良的幻想。",
 			"specialty" :
 			{
-				"description" : "所带领生物的最小伤害值和最大伤害值各增加1。",
+				"description" : "所带领生物的最小伤害值和最大伤害值各增加1。隐藏技能:幻影射手升级",
 				"tooltip" : "{Rage}\r\n\r\nAll creatures get +1 to damage.",
 				"name" : "战争狂人"
 			}
@@ -58,18 +58,28 @@
 				"skill" : "learning"
 			}
 		],
-		"specialty": //+1 dmg
+		"specialty": // +1 damage 
+		{
+			"base": 
 			{
-				"bonuses":{
-				"damage":
-					{
-						"type": "CREATURE_DAMAGE",
-						"subtype": "creatureDamageBoth",
-						"val" : 1,
-						"valueType" : "BASE_NUMBER"
-					}
-				}
+				"addInfo": "creature.sharpshooter",
+				"type": "SPECIAL_UPGRADE"
+			},
+			"bonuses": 
+			{
+				"damage": 
+				{
+				"type": "CREATURE_DAMAGE",
+				"subtype": "creatureDamageBoth",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+				},
+				"archer2sharpshooter": { "subtype": "creature.archer" },
+				"grandElf2sharpshooter": { "subtype": "creature.grandElf" },
+				"marksman2sharpshooter": { "subtype": "creature.marksman" },
+				"woodElf2sharpshooter": { "subtype": "creature.woodElf" }
 			}
+		}
 	}
 }
 

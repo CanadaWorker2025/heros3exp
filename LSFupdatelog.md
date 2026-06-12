@@ -69,6 +69,39 @@ Current `spellbook` now includes these confirmed spell ids:
 - `teleport`
 - `curseOfPharaoh`
 
+## 2026-06-09 22:42:21
+
+### 7. Fairy dependency, spell research, and Disrupting Ray update
+
+Source files:
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/mod.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/spellResearch/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/hota/Mods/spellResearch/mod.json:16)
+- [Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/spells/timed.json:648)
+
+Current `Fairy` mod dependency list:
+- `hota.highlandsterrain`
+- `hota.factory`
+- `courtyard`
+- `newoldspells+`
+- `tidesofwar`
+- `new pavilion.new pavillion`
+
+Current `HotA spellResearch` override:
+- `spellResearch: true`
+- `spellResearchCostMultiplierPerReroll: [0, 0, 0, 0, 0]`
+- `spellResearchPerDay: [10, 10, 10, 10, 10]`
+- `spellResearchCost` changed to:
+  - level 1: `1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
+  - level 2: `1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
+  - level 3: `1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
+  - level 4: `1000 gold + 1 mercury + 2 sulfur + 1 crystal + 2 gems`
+  - level 5: `1000 gold + 2 mercury + 2 sulfur + 2 crystal + 2 gems`
+
+Current `disruptingRay` expert-level behavior:
+- Added `range: "X"` under `expert`
+- Result: `毁灭之光 / disruptingRay` is now group-targeted at expert mastery
+- Base and advanced remain single-target with cumulative permanent defense reduction
+
 ## 2026-06-07 14:05:00
 
 ### 5. Scholar skill and Arina diplomacy changes
