@@ -292,4 +292,3 @@ Current spell configuration for `summonGhost` / `召唤恶灵`:
 Description text:
 
 - `"{召唤恶灵}\r\n\r\n召唤恶灵参战`
-
