@@ -212,3 +212,53 @@ Current spell configuration for `summonGhost` / `召唤恶灵`:
 
 Description text:
 - `"{召唤恶灵}\r\n\r\n召唤恶灵参战。"`
+
+## 2026-06-12
+
+### 8. Recent push changes
+
+Source files:
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/spellResearch/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/hota/Mods/spellResearch/mod.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/config/difficulty.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/difficulty.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/config/gameConfig.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/gameConfig.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/spells/timed.json:1)
+
+Current `Seliva` specialty configuration:
+- Retains the base effect: led creatures get `+1` to both minimum and maximum damage
+- Added Gelu-style hidden upgrade behavior through `SPECIAL_UPGRADE`
+- Upgrade mapping: `creature.archer`, `creature.marksman`, `creature.woodElf`, and `creature.grandElf` all upgrade into `creature.sharpshooter`
+- Specialty text now mentions the hidden sharpshooter-upgrade effect
+
+Current `Arina` starting skills:
+- `basic diplomacy`
+- `basic wisdom`
+- `basic logistics`
+
+Current `spellResearch` settings:
+- `spellResearchCostMultiplierPerReroll: [0, 0, 0, 0, 0]`
+- `spellResearchPerDay: [99, 99, 99, 99, 99]`
+- `spellResearchCost` level 1-3: `1000 gold`
+- `spellResearchCost` level 4-5: `1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
+
+Current `difficulty.json` `human.king.resources`:
+- `wood: 90`
+- `mercury: 90`
+- `ore: 90`
+- `sulfur: 90`
+- `crystal: 90`
+- `gems: 90`
+- `gold: 999990`
+
+Current `gameConfig.json` related values:
+- `heroes.baseScoutingRange: 7`
+- `heroes.specialtySecondarySkillGrowth: 10`
+- `heroes.specialtyCreatureGrowth: 40`
+- `heroes.levelupTotalSkillsAmount: 4`
+- `heroes.levelupUpgradedSkillsAmount: 2`
+- `towns.buildingsPerTurnCap: 5`
+
+Current `slayer` expert setting:
+- Added `range: "x"` under `expert`
+- This push records the actual committed config as-is
