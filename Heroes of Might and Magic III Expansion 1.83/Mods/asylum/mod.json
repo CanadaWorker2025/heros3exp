@@ -8,7 +8,7 @@
 	"modType" : "Town",	
 	
     "factions" : [ "config/asylum/town" ],
-	"depends" : ["newtown-terrains.stardustterrain"], 
+	"depends" : ["newtown-terrains.stardustterrain", "hota.neutralCreatures"], 
 	
 	"chinese" : {
 		"name" : "梦境（Asylum）",
@@ -71,7 +71,8 @@
 		"config/asylum/NewOldSpells/birthdayGift.json",
 		"config/asylum/NewOldSpells/summonJester.json",
 		"config/asylum/NewOldSpells/summonApps.json",
-		"config/asylum/NewOldSpells/seduce.json"
+		"config/asylum/NewOldSpells/seduce.json",
+		"config/asylum/NewOldSpells/hornSpell.json"
 	],
 	"changelog" :
     {

@@ -10,7 +10,7 @@
 			"biography" : "外表看起来蕾娜塔是个乐观而又活泼的女子，和她在一起的人都会觉得她能够带来喜悦的气氛。但是这并不代表她没有悲伤的往事。夜深之时有人会看到她独自弹奏曲子，寄予思念她从小失散的妹妹，琳恩。",
 			"specialty" :
 			{
-				"description" : "作战开场即施放欢欣鼓舞魔法。",
+				"description" : "作战开场即施放欢欣鼓舞魔法。隐藏技能:死骑攻防杀伤+15速度+2,同时可以把骑士升级为死骑",
 				"tooltip" : "Bonus: spell",
 				"name" : "欢欣鼓舞"
 			}
@@ -59,13 +59,23 @@
 		],
 		"specialty": 
 		{
+			"base" : {
+				"addInfo" : "creature.dreadKnight",
+				"type" : "SPECIAL_UPGRADE"
+			},
 			"bonuses":
 			{
+				"champion2dreadKnight": { "subtype": "creature.champion" },
+				"cavalier2dreadKnight": { "subtype": "creature.cavalier" },
+				//"ffpaladin2dreadKnight": { "subtype": "creature.ffpaladin" },
+				//"cthPaladin2dreadKnight": { "subtype": "creature.cthPaladin" },
+				//"cthTemplar2dreadKnight": { "subtype": "creature.cthTemplar" },
+
 				"choir":
 				{
 					"type": "OPENING_BATTLE_SPELL",
 					"subtype": "spell.mirth",
-					"val" : 3,
+					"val" : 10,
 					"valueType" : "BASE_NUMBER"
 				},
 				"bind" : 
@@ -74,7 +84,63 @@
 				"type" : "SPELL",
 				"val" : 1,
 				"valueType" : "BASE_NUMBER"
+				},
+					"damage" : 
+					{
+						"type" : "CREATURE_DAMAGE",
+						"subtype" : "creatureDamageBoth",
+						"val" : 15,
+						"limiters" : 
+						[
+							{
+								"type" : "CREATURE_TYPE_LIMITER",
+								"creature" : "blackKnight",
+								"includeUpgrades" : true
+							}
+						]
+					},
+				"attack" : 
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack",
+					"val" : 15,
+					"limiters" : 
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"defence" : 
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence",
+					"val" : 15,
+					"limiters" : 
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"speed" : 
+				{
+					"type" : "STACKS_SPEED",
+					"val" : 2,
+					"limiters" : 
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
 				}
+		}
 			}
 		}
 	}

@@ -26,7 +26,8 @@
 		
 		"spellbook" :
 		[
-			"hypnotize"
+			"hypnotize",
+			"asylum:hornSpell"
 		],
 
 		"army" :
@@ -50,7 +51,7 @@
 		"skills" :
 		[
 			{
-				"level" : "basic",
+				"level" : "expert",
 				"skill" : "wisdom"
 			},
 			{

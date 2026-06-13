@@ -1,5 +1,84 @@
 # LSF Update Log
 
+## 2026-06-13
+
+### 10. Asylum `K_viola` horn spell integration
+
+Source files:
+
+- [Heroes of Might and Magic III Expansion 1.83/Mods/asylum/content/config/asylum/heroes/K_viola.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/asylum/content/config/asylum/heroes/K_viola.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/asylum/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/asylum/mod.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json:1)
+
+Current `k_viola` setup:
+
+- Keeps original `hypnotize` specialty scaling:
+- `SPECIAL_SPELL_LEV`
+- `subtype: spell.hypnotize`
+- `updater: TIMES_HERO_LEVEL`
+- `val: 5`
+- Starting spellbook now contains:
+- `hypnotize`
+- `asylum:hornSpell`
+- Starting `wisdom` changed to `expert`
+
+Current `asylum` mod dependency and spell registration:
+
+- Added dependency: `hota.neutralCreatures`
+- Added local spell registration:
+- `config/asylum/NewOldSpells/hornSpell.json`
+
+Current local `asylum:hornSpell` configuration:
+
+- Converted from the HotA artifact spell into an `asylum` local combat spell
+- `type: combat`
+- `targetType: CREATURE`
+- `school: water`
+- `level: 5`
+- `levels.base.cost: 20`
+- `levels.base.power: 40`
+- `range: 0`
+- Uses `core:demonSummon`
+- Summons `hota.neutralcreatures:fangarm`
+- `permanent: true`
+- Target restrictions block `NON_LIVING`, `SIEGE_WEAPON`, `UNDEAD`, `GARGOYLE`, and `MECHANICAL`
+
+## 2026-06-12 03:15:00
+
+### 9. Preserve `P_renata` specialty rewrite
+
+Source file:
+
+- [Heroes of Might and Magic III Expansion 1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/preserve/content/config/preserve/heroes/P_renata.json:1)
+
+Current `p_renata` specialty configuration:
+
+- Keeps starting spellbook entry `mirth`
+- `base.type: SPECIAL_UPGRADE`
+- `base.addInfo: creature.dreadKnight`
+- Upgrade mapping currently enabled:
+- `creature.champion -> creature.dreadKnight`
+- `creature.cavalier -> creature.dreadKnight`
+- Additional planned mappings for `ffpaladin`, `cthPaladin`, and `cthTemplar` are present but commented out
+- Opening battle spell:
+- `type: OPENING_BATTLE_SPELL`
+- `subtype: spell.mirth`
+- `val: 10`
+- Spell binding bonus retained:
+- `type: SPELL`
+- `subtype: spell.mirth`
+- Fixed black knight specialty bonuses with `includeUpgrades: true`:
+- `CREATURE_DAMAGE creatureDamageBoth +15`
+- `PRIMARY_SKILL primarySkill.attack +15`
+- `PRIMARY_SKILL primarySkill.defence +15`
+- `STACKS_SPEED +2`
+
+Current specialty text intent:
+
+- Opening battle automatically casts `mirth`
+- Hidden effect grants dread knight combat bonuses
+- Hidden effect also allows selected knight-line units to upgrade into `dreadKnight`
+
 ## 2026-06-12
 
 ### 8. Recent push changes
