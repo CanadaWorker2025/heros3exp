@@ -2,6 +2,39 @@
 
 ## 2026-06-13
 
+### 11. Latest push `f9592afc` follow-up
+
+Source files:
+
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/preserve/content/config/preserve/heroes/P_renata.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/preserve/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/preserve/mod.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/spells/timed.json:1)
+
+Current committed changes from latest push:
+
+- `ft16_arina.json`: starting `wisdom` changed from `basic` to `expert`
+- `ft2_meri.json`: added starting `spellbook` entries `townPortal` and `dimensionDoor`
+- `preserve/mod.json`: added dependency list `["tidesOfWar", "cathedral"]`
+- `P_renata.json`: enabled extra `SPECIAL_UPGRADE` mappings:
+- `tidesofwar:ffpaladin -> creature.dreadKnight`
+- `cathedral:cthPaladin -> creature.dreadKnight`
+- `cathedral:cthTemplar -> creature.dreadKnight`
+
+Current `timed.json` changes recorded in this push:
+
+- `slayer.expert.range` was corrected from lowercase `x` to uppercase `X`
+- `antiMagic.expert.range` is currently set to lowercase `x`
+- `magicMirror` currently has `expert` nested inside `levels.base`, not as a sibling level block
+
+Risk note:
+
+- The `slayer` correction looks consistent with normal spell range notation
+- `antiMagic.expert.range: "x"` may be invalid if the engine expects uppercase `X`
+- `magicMirror.levels` currently looks structurally malformed and is a likely source of spell config issues
+- This section records the pushed state as committed, not a correctness guarantee
+
 ### 10. Asylum `K_viola` horn spell integration
 
 Source files:

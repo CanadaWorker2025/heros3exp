@@ -306,7 +306,6 @@
 				}
 			},
 			"expert":{
-				"range" : "x",
 				"battleEffects":{
 					"spellImmunity":{
 						"bonus":{
@@ -333,17 +332,15 @@
 			"cast": "BACKLASH"
 		},
 		"levels" : {
-				"base":{
-					"range" : "0",
-					"targetModifier":{"smart":true},
-					"effects" : {
-						"magicMirror" : {
-							"type" : "MAGIC_MIRROR",
-							"valueType" : "INDEPENDENT_MAX",
-							"duration" : "N_TURNS"
-						}
-					},
-					"expert":{"range" : "X"}
+			"base":{
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"magicMirror" : {
+						"type" : "MAGIC_MIRROR",
+						"valueType" : "INDEPENDENT_MAX",
+						"duration" : "N_TURNS"
+					}
 				}
 			}
 		},
