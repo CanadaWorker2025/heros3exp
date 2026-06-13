@@ -23,6 +23,11 @@
 			"large" : "fairy/heroes/mrimm/hpl285.png",
 			"small" : "fairy/heroes/mrimm/hps285.png"
 		},
+		"spellbook" :
+		[
+			"townPortal",
+			"dimensionDoor"
+		],
 
 		"army" :
 		[

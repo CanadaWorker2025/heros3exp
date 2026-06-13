@@ -67,9 +67,9 @@
 			{
 				"champion2dreadKnight": { "subtype": "creature.champion" },
 				"cavalier2dreadKnight": { "subtype": "creature.cavalier" },
-				//"ffpaladin2dreadKnight": { "subtype": "creature.ffpaladin" },
-				//"cthPaladin2dreadKnight": { "subtype": "creature.cthPaladin" },
-				//"cthTemplar2dreadKnight": { "subtype": "creature.cthTemplar" },
+				"ffpaladin2dreadKnight": { "subtype": "tidesofwar:ffpaladin" },
+				"cthPaladin2dreadKnight": { "subtype": "cathedral:cthPaladin" },
+				"cthTemplar2dreadKnight": { "subtype": "cathedral:cthTemplar" },
 
 				"choir":
 				{

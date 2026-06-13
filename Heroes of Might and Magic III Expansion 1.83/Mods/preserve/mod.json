@@ -11,6 +11,7 @@
 		"description" : "EXP中的禁林种族"
 	},
     "factions" : [ "config/preserve/town" ],
+	"depends" : ["tidesOfWar", "cathedral"],
 	
 	"creatures" :
 	[
