@@ -343,7 +343,9 @@
 						"duration" : "N_TURNS"
 					}
 				}
-			}
+			},
+			"advanced": { "range" : "X" },
+			"expert": { "range" : "X" }
 		},
 		"flags" : {
 			"positive": true
