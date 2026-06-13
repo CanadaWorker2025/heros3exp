@@ -306,6 +306,7 @@
 				}
 			},
 			"expert":{
+				"range" : "X",
 				"battleEffects":{
 					"spellImmunity":{
 						"bonus":{
