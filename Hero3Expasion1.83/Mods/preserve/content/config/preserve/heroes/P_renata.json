@@ -70,7 +70,7 @@
 				"ffpaladin2dreadKnight": { "subtype": "tidesofwar:ffpaladin" },
 				"cthPaladin2dreadKnight": { "subtype": "cathedral:cthPaladin" },
 				"cthTemplar2dreadKnight": { "subtype": "cathedral:cthTemplar" },
-				"blackKnight2dreadKnight": { "subtype": "blackKnight" },
+				"blackKnight2dreadKnight": { "subtype": "creature.blackKnight" },
 				"choir":
 				{
 					"type": "OPENING_BATTLE_SPELL",
