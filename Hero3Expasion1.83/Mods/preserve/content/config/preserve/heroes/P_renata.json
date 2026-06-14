@@ -3,7 +3,6 @@
 	{
 		"class" : "bard",
 		"female" : true,
-
 		"texts" :
 		{
 			"name" : "蕾娜塔",
@@ -15,19 +14,16 @@
 				"name" : "欢欣鼓舞"
 			}
 		},
-
-    "images": {
-      "specialtySmall": "preserve/heroes/renata/UN32T195.bmp",
-      "specialtyLarge": "preserve/heroes/renata/UN44T195.bmp",
-      "large": "preserve/heroes/renata/HPL007BR.bmp",
-      "small": "preserve/heroes/renata/HPS007BR.bmp"
-    },
-    
-    "spellbook" :
-		[
-			"mirth"
-		],
-
+		"images": {
+		"specialtySmall": "preserve/heroes/renata/UN32T195.bmp",
+		"specialtyLarge": "preserve/heroes/renata/UN44T195.bmp",
+		"large": "preserve/heroes/renata/HPL007BR.bmp",
+		"small": "preserve/heroes/renata/HPS007BR.bmp"
+		},
+		"spellbook" :
+			[
+				"mirth"
+			],
 		"army" :
 		[
 			{
@@ -144,6 +140,6 @@
 		}
 	}
 }
-}
+
 
 
