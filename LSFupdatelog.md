@@ -6,8 +6,8 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json](Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json:1)
-- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/spellsNew.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/spellsNew.json:1>)
+- [Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json](Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json)
+- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/spellsNew.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/spellsNew.json>)
 
 当前 `14Ekaterina` 配置确认如下：
 
@@ -49,11 +49,11 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:1)
-- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json:1)
-- [Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json:1)
-- [Hero3Expasion1.83/Mods/preserve/mod.json](Hero3Expasion1.83/Mods/preserve/mod.json:1)
-- [Hero3Expasion1.83/config/spells/timed.json](Hero3Expasion1.83/config/spells/timed.json:1)
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json)
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json)
+- [Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json)
+- [Hero3Expasion1.83/Mods/preserve/mod.json](Hero3Expasion1.83/Mods/preserve/mod.json)
+- [Hero3Expasion1.83/config/spells/timed.json](Hero3Expasion1.83/config/spells/timed.json)
 
 本次 push 已提交的改动记录：
 
@@ -82,9 +82,9 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/Mods/asylum/content/config/asylum/heroes/K_viola.json](Hero3Expasion1.83/Mods/asylum/content/config/asylum/heroes/K_viola.json:1)
-- [Hero3Expasion1.83/Mods/asylum/mod.json](Hero3Expasion1.83/Mods/asylum/mod.json:1)
-- [Hero3Expasion1.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json](Hero3Expasion1.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json:1)
+- [Hero3Expasion1.83/Mods/asylum/content/config/asylum/heroes/K_viola.json](Hero3Expasion1.83/Mods/asylum/content/config/asylum/heroes/K_viola.json)
+- [Hero3Expasion1.83/Mods/asylum/mod.json](Hero3Expasion1.83/Mods/asylum/mod.json)
+- [Hero3Expasion1.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json](Hero3Expasion1.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json)
 
 当前 `k_viola` 配置记录：
 
@@ -125,7 +125,7 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json:1)
+- [Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json)
 
 当前 `p_renata` 特长配置：
 
@@ -161,12 +161,12 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json:1)
-- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:1)
-- [Hero3Expasion1.83/Mods/hota/Mods/spellResearch/mod.json](Hero3Expasion1.83/Mods/hota/Mods/spellResearch/mod.json:1)
-- [Hero3Expasion1.83/config/difficulty.json](Hero3Expasion1.83/config/difficulty.json:1)
-- [Hero3Expasion1.83/config/gameConfig.json](Hero3Expasion1.83/config/gameConfig.json:1)
-- [Hero3Expasion1.83/config/spells/timed.json](Hero3Expasion1.83/config/spells/timed.json:1)
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json)
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json)
+- [Hero3Expasion1.83/Mods/hota/Mods/spellResearch/mod.json](Hero3Expasion1.83/Mods/hota/Mods/spellResearch/mod.json)
+- [Hero3Expasion1.83/config/difficulty.json](Hero3Expasion1.83/config/difficulty.json)
+- [Hero3Expasion1.83/config/gameConfig.json](Hero3Expasion1.83/config/gameConfig.json)
+- [Hero3Expasion1.83/config/spells/timed.json](Hero3Expasion1.83/config/spells/timed.json)
 
 当前 `Seliva` 特长配置：
 
@@ -218,9 +218,9 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/Mods/Fairy/mod.json](Hero3Expasion1.83/Mods/Fairy/mod.json:1)
-- [Hero3Expasion1.83/Mods/hota/Mods/spellResearch/mod.json](Hero3Expasion1.83/Mods/hota/Mods/spellResearch/mod.json:16)
-- [Hero3Expasion1.83/config/spells/timed.json](Hero3Expasion1.83/config/spells/timed.json:648)
+- [Hero3Expasion1.83/Mods/Fairy/mod.json](Hero3Expasion1.83/Mods/Fairy/mod.json)
+- [Hero3Expasion1.83/Mods/hota/Mods/spellResearch/mod.json](Hero3Expasion1.83/Mods/hota/Mods/spellResearch/mod.json)
+- [Hero3Expasion1.83/config/spells/timed.json](Hero3Expasion1.83/config/spells/timed.json)
 
 当前 `Fairy` 模组依赖列表：
 
@@ -255,7 +255,7 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json:27)
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json)
 
 当前 `Elrisa` 特长文本与 spellbook 设置：
 
@@ -327,8 +327,8 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/config/skills.json](Hero3Expasion1.83/config/skills.json:551)
-- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:7)
+- [Hero3Expasion1.83/config/skills.json](Hero3Expasion1.83/config/skills.json)
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json)
 
 当前 `scholar` 配置：
 
@@ -351,7 +351,7 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/config/gameConfig.json](Hero3Expasion1.83/config/gameConfig.json:507)
+- [Hero3Expasion1.83/config/gameConfig.json](Hero3Expasion1.83/config/gameConfig.json)
 
 当前 `gameConfig.json` 中 `heroes` 的基础默认值：
 
@@ -368,7 +368,7 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/Mods/hota/Mods/gameBalance/mod.json](Hero3Expasion1.83/Mods/hota/Mods/gameBalance/mod.json:8)
+- [Hero3Expasion1.83/Mods/hota/Mods/gameBalance/mod.json](Hero3Expasion1.83/Mods/hota/Mods/gameBalance/mod.json)
 
 当前 HotA 的 `heroes` 覆盖值：
 
@@ -388,7 +388,7 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/config/artifacts.json](Hero3Expasion1.83/config/artifacts.json:833)
+- [Hero3Expasion1.83/config/artifacts.json](Hero3Expasion1.83/config/artifacts.json)
 
 当前已记录的招魂相关宝物配置：
 
@@ -398,7 +398,7 @@
 
 组合宝物：
 
-- [cloakOfTheUndeadKing](Hero3Expasion1.83/config/artifacts.json:1944)
+- [cloakOfTheUndeadKing](Hero3Expasion1.83/config/artifacts.json)
 
 当前 `cloakOfTheUndeadKing` 的招魂升级链：
 
@@ -417,7 +417,7 @@
 
 涉及文件：
 
-- [Hero3Expasion1.83/Mods/tidesOfWar/content/config/spells/summonGhost/summonGhost.json](Hero3Expasion1.83/Mods/tidesOfWar/content/config/spells/summonGhost/summonGhost.json:1)
+- [Hero3Expasion1.83/Mods/tidesOfWar/content/config/spells/summonGhost/summonGhost.json](Hero3Expasion1.83/Mods/tidesOfWar/content/config/spells/summonGhost/summonGhost.json)
 
 当前 `summonGhost` / `召唤恶灵` 法术配置：
 
