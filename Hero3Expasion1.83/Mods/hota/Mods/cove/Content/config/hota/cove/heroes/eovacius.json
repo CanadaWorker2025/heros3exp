@@ -32,12 +32,16 @@
 			{
 				"skill": "mysticism",
 				"level": "basic"
+			},
+			{
+				"skill": "waterMagic",
+				"level": "basic"
 			}
 		],
 		"specialty" : {
 			"base" : {
 				"type" : "SPECIAL_UPGRADE",
-				"addInfo" : "creature.hotaGunmanUp"
+				"addInfo" : "hota.factory:hotaGunmanUp"
 			},
 			"bonuses" : {
 				"bountyHunter2headhunter" : {
@@ -73,12 +77,39 @@
 				"clone" : {
 					"type" : "SPELL",
 					"subtype" : "spell.specialClone"
+				},
+				"damage" : 
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageBoth",
+					"val" : 10,
+					"limiters" : 
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "hota.factory:hotaGunmanUp",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"speed" : 
+				{
+					"type" : "STACKS_SPEED",
+					"val" : 2,
+					"limiters" : 
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "hota.factory:hotaGunman",
+							"includeUpgrades" : true
+						}
+					]
 				}
 			}
 		},
 		"spellbook" : [ "clone" ],
 		"texts": {
-			"biography" : "埃瓦希斯的魔法才能不是来自学习，而是来自天赋。他少年时期就用自己独特的替身法术在闹市中做小偷。他不断地变得富有和强势，直到被当地统治者所厌恶。自此这位天赋极强的法师离开了他的家乡并且选择成为海盗。",
+			"biography" : "埃瓦希斯的魔法才能不是来自学习，而是来自天赋。他少年时期就用自己独特的替身法术在闹市中做小偷。他不断地变得富有和强势，直到被当地统治者所厌恶。自此这位天赋极强的法师离开了他的家乡并且选择成为海盗。(智慧/神秘/气/土/水/后勤/箭术/战术)",
 			"name" : "埃瓦希斯",
 			"specialty" : {
 				"tooltip" : "Spell Bonus: Clone",

@@ -2,6 +2,63 @@
 
 ## 2026-06-14
 
+### 13. `eovacius` 与 `P_renata` 当前配置更新记录
+
+涉及文件：
+
+- [Hero3Expasion1.83/Mods/hota/Mods/cove/Content/config/hota/cove/heroes/eovacius.json](Hero3Expasion1.83/Mods/hota/Mods/cove/Content/config/hota/cove/heroes/eovacius.json)
+- [Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json)
+
+当前 `eovacius` 配置记录：
+
+- 初始技能现为 `basic wisdom`、`basic mysticism`、`basic waterMagic`
+- 保留原有 `clone` 相关特长：`type: SPELL`, `subtype: spell.specialClone`
+- `specialty.base` 现为 `type: SPECIAL_UPGRADE`, `addInfo: hota.factory:hotaGunmanUp`
+- 当前可升级为 `hota.factory:hotaGunmanUp` 的兵种包括：
+- `haven:havC05`
+- `haven:havC06`
+- `hota.factory:hotaGunman`
+- `courtyard:arquebusier`
+- `courtyard:musketeer`
+- `cathedral:cthWitchHunter`
+- `cathedral:cthEvilHunter`
+- `creature.pirate`
+- `creature.corsair`
+- `creature.seadog`
+- 额外加成已写入：
+- `CREATURE_DAMAGE creatureDamageBoth +10`，限制到 `hota.factory:hotaGunmanUp` 及其升级
+- `STACKS_SPEED +2`，限制到 `hota.factory:hotaGunman` 及其升级
+- 传记文本末尾补充了技能备注：`(智慧/神秘/气/土/水/后勤/箭术/战术)`
+
+当前 `P_renata` 配置记录：
+
+- 初始技能现为 `basic wisdom`、`basic runes`、`basic airMagic`
+- 保留初始 `spellbook` 条目 `mirth`
+- `specialty.base` 维持为 `type: SPECIAL_UPGRADE`, `addInfo: creature.dreadKnight`
+- 当前启用的升级映射包括：
+- `creature.champion -> creature.dreadKnight`
+- `creature.cavalier -> creature.dreadKnight`
+- `tidesofwar:ffpaladin -> creature.dreadKnight`
+- `cathedral:cthPaladin -> creature.dreadKnight`
+- `cathedral:cthTemplar -> creature.dreadKnight`
+- 开场战斗施法仍为：
+- `type: OPENING_BATTLE_SPELL`
+- `subtype: spell.mirth`
+- `val: 10`
+- 法术绑定仍为：
+- `type: SPELL`
+- `subtype: spell.mirth`
+- 黑骑士系加成维持：
+- `CREATURE_DAMAGE creatureDamageBoth +15`
+- `PRIMARY_SKILL primarySkill.attack +15`
+- `PRIMARY_SKILL primarySkill.defence +15`
+- `STACKS_SPEED +2`
+
+校验记录：
+
+- `eovacius.json` 当前已通过 JSON 语法校验
+- `P_renata.json` 当前已通过 JSON 语法校验
+
 ### 12. Courtyard `14Ekaterina` 祈祷特长与开场施法确认
 
 涉及文件：

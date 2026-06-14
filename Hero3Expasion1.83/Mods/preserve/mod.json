@@ -11,7 +11,7 @@
 		"description" : "EXP中的禁林种族"
 	},
     "factions" : [ "config/preserve/town" ],
-	"depends" : ["tidesOfWar", "cathedral"],
+	"depends" : ["tidesOfWar", "cathedral", "hota.bulwark"]
 	
 	"creatures" :
 	[
