@@ -30,12 +30,46 @@
 				"level": "basic"
 			},
 			{
-				"skill": "intelligence",
+				"skill": "mysticism",
 				"level": "basic"
 			}
 		],
 		"specialty" : {
+			"base" : {
+				"type" : "SPECIAL_UPGRADE",
+				"addInfo" : "creature.hotaGunmanUp"
+			},
 			"bonuses" : {
+				"bountyHunter2headhunter" : {
+					"subtype" : "haven:havC05"
+				},
+				"treasureHunter2headhunter" : {
+					"subtype" : "haven:havC06"
+				},
+				"gunman2headhunter" : {
+					"subtype" : "hota.factory:hotaGunman"
+				},
+				"arquebusier2headhunter" : {
+					"subtype" : "courtyard:arquebusier"
+				},
+				"musketeer2headhunter" : {
+					"subtype" : "courtyard:musketeer"
+				},
+				"witchHunter2headhunter" : {
+					"subtype" : "cathedral:cthWitchHunter"
+				},
+				"evilHunter2headhunter" : {
+					"subtype" : "cathedral:cthEvilHunter"
+				},
+				"pirate2headhunter" : {
+					"subtype" : "creature.pirate"
+				},
+				"corsair2headhunter" : {
+					"subtype" : "creature.corsair"
+				},
+				"seadog2headhunter" : {
+					"subtype" : "creature.seadog"
+				},
 				"clone" : {
 					"type" : "SPELL",
 					"subtype" : "spell.specialClone"
@@ -49,7 +83,7 @@
 			"specialty" : {
 				"tooltip" : "Spell Bonus: Clone",
 				"name" : "镜像大法",
-				"description" : "使用镜像大法魔法时效果大增，战斗中首次施放镜像可以召唤2个镜像。"
+				"description" : "使用镜像大法魔法时效果大增，战斗中首次施放镜像可以召唤2个镜像。隐藏技能:将赏金猎人、宝藏猎人、快枪猎手、火枪手、步枪手、猎巫人、猎魔人、海贼、海盗和皇家海盗升级为快枪猎头者。"
 			}
 		}
 	}

@@ -85,20 +85,20 @@
 				"val" : 1,
 				"valueType" : "BASE_NUMBER"
 				},
-					"damage" : 
-					{
-						"type" : "CREATURE_DAMAGE",
-						"subtype" : "creatureDamageBoth",
-						"val" : 15,
-						"limiters" : 
-						[
-							{
-								"type" : "CREATURE_TYPE_LIMITER",
-								"creature" : "blackKnight",
-								"includeUpgrades" : true
-							}
-						]
-					},
+				"damage" : 
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageBoth",
+					"val" : 15,
+					"limiters" : 
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
 				"attack" : 
 				{
 					"type" : "PRIMARY_SKILL",
@@ -140,10 +140,10 @@
 						}
 					]
 				}
-		}
 			}
 		}
 	}
+}
 }
 
 

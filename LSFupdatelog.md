@@ -6,8 +6,8 @@
 
 涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/extra creatures specialty/content/config/spells/spellsNew.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/extra%20creatures%20specialty/content/config/spells/spellsNew.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json](Heroes of Might and Magic III Expansion 1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/extra creatures specialty/content/config/spells/spellsNew.json](Heroes of Might and Magic III Expansion 1.83/Mods/extra creatures specialty/content/config/spells/spellsNew.json:1)
 
 当前 `14Ekaterina` 配置确认如下：
 
@@ -45,68 +45,68 @@
 
 ## 2026-06-13
 
-### 11. Latest push `f9592afc` follow-up
+### 11. 最近一次 push `f9592afc` 后续记录
 
-Source files:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/preserve/content/config/preserve/heroes/P_renata.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/preserve/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/preserve/mod.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/spells/timed.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json](Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft2_meri.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](Heroes of Might and Magic III Expansion 1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/preserve/mod.json](Heroes of Might and Magic III Expansion 1.83/Mods/preserve/mod.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json](Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json:1)
 
-Current committed changes from latest push:
+本次 push 已提交的改动记录：
 
-- `ft16_arina.json`: starting `wisdom` changed from `basic` to `expert`
-- `ft2_meri.json`: added starting `spellbook` entries `townPortal` and `dimensionDoor`
-- `preserve/mod.json`: added dependency list `["tidesOfWar", "cathedral"]`
-- `P_renata.json`: enabled extra `SPECIAL_UPGRADE` mappings:
+- `ft16_arina.json`：初始 `wisdom` 从 `basic` 改为 `expert`
+- `ft2_meri.json`：新增初始 `spellbook` 条目 `townPortal` 与 `dimensionDoor`
+- `preserve/mod.json`：新增依赖列表 `["tidesOfWar", "cathedral"]`
+- `P_renata.json`：启用了额外的 `SPECIAL_UPGRADE` 映射：
 - `tidesofwar:ffpaladin -> creature.dreadKnight`
 - `cathedral:cthPaladin -> creature.dreadKnight`
 - `cathedral:cthTemplar -> creature.dreadKnight`
 
-Current `timed.json` changes recorded in this push:
+本次 push 中 `timed.json` 的记录如下：
 
-- `slayer.expert.range` was corrected from lowercase `x` to uppercase `X`
-- `antiMagic.expert.range` is currently set to lowercase `x`
-- `magicMirror` currently has `expert` nested inside `levels.base`, not as a sibling level block
+- `slayer.expert.range` 已从小写 `x` 修正为大写 `X`
+- `antiMagic.expert.range` 当前仍为小写 `x`
+- `magicMirror` 当前把 `expert` 写在了 `levels.base` 内部，而不是同级 level block
 
-Risk note:
+风险说明：
 
-- The `slayer` correction looks consistent with normal spell range notation
-- `antiMagic.expert.range: "x"` may be invalid if the engine expects uppercase `X`
-- `magicMirror.levels` currently looks structurally malformed and is a likely source of spell config issues
-- This section records the pushed state as committed, not a correctness guarantee
+- `slayer` 这项修正与常规法术范围写法一致
+- `antiMagic.expert.range: "x"` 如果引擎严格要求大写 `X`，则这里可能无效
+- `magicMirror.levels` 当前结构看起来不合法，是较可能的法术配置问题来源
+- 本条主要记录当时 push 的已提交状态，不代表已完成正确性验证
 
-### 10. Asylum `K_viola` horn spell integration
+### 10. Asylum `K_viola` 深渊号角法术接入
 
-Source files:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/Mods/asylum/content/config/asylum/heroes/K_viola.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/asylum/content/config/asylum/heroes/K_viola.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/asylum/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/asylum/mod.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/asylum/content/config/asylum/heroes/K_viola.json](Heroes of Might and Magic III Expansion 1.83/Mods/asylum/content/config/asylum/heroes/K_viola.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/asylum/mod.json](Heroes of Might and Magic III Expansion 1.83/Mods/asylum/mod.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json](Heroes of Might and Magic III Expansion 1.83/Mods/asylum/content/config/asylum/NewOldSpells/hornSpell.json:1)
 
-Current `k_viola` setup:
+当前 `k_viola` 配置记录：
 
-- Keeps original `hypnotize` specialty scaling:
+- 保留原有 `hypnotize` 特长成长：
 - `SPECIAL_SPELL_LEV`
 - `subtype: spell.hypnotize`
 - `updater: TIMES_HERO_LEVEL`
 - `val: 5`
-- Starting spellbook now contains:
+- 初始 `spellbook` 现包含：
 - `hypnotize`
 - `asylum:hornSpell`
-- Starting `wisdom` changed to `expert`
+- 初始 `wisdom` 改为 `expert`
 
-Current `asylum` mod dependency and spell registration:
+当前 `asylum` 模组依赖与法术注册：
 
-- Added dependency: `hota.neutralCreatures`
-- Added local spell registration:
+- 新增依赖：`hota.neutralCreatures`
+- 新增本地法术注册：
 - `config/asylum/NewOldSpells/hornSpell.json`
 
-Current local `asylum:hornSpell` configuration:
+当前本地 `asylum:hornSpell` 配置：
 
-- Converted from the HotA artifact spell into an `asylum` local combat spell
+- 将 HotA 的宝物附带法术改造成 `asylum` 本地普通战斗法术
 - `type: combat`
 - `targetType: CREATURE`
 - `school: water`
@@ -114,81 +114,81 @@ Current local `asylum:hornSpell` configuration:
 - `levels.base.cost: 20`
 - `levels.base.power: 40`
 - `range: 0`
-- Uses `core:demonSummon`
-- Summons `hota.neutralcreatures:fangarm`
+- 使用 `core:demonSummon`
+- 召唤单位为 `hota.neutralcreatures:fangarm`
 - `permanent: true`
-- Target restrictions block `NON_LIVING`, `SIEGE_WEAPON`, `UNDEAD`, `GARGOYLE`, and `MECHANICAL`
+- 目标限制排除了 `NON_LIVING`、`SIEGE_WEAPON`、`UNDEAD`、`GARGOYLE`、`MECHANICAL`
 
 ## 2026-06-12 03:15:00
 
-### 9. Preserve `P_renata` specialty rewrite
+### 9. Preserve `P_renata` 特长重写
 
-Source file:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/preserve/content/config/preserve/heroes/P_renata.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](Heroes of Might and Magic III Expansion 1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json:1)
 
-Current `p_renata` specialty configuration:
+当前 `p_renata` 特长配置：
 
-- Keeps starting spellbook entry `mirth`
+- 保留初始 `spellbook` 条目 `mirth`
 - `base.type: SPECIAL_UPGRADE`
 - `base.addInfo: creature.dreadKnight`
-- Upgrade mapping currently enabled:
+- 当前启用的升级映射：
 - `creature.champion -> creature.dreadKnight`
 - `creature.cavalier -> creature.dreadKnight`
-- Additional planned mappings for `ffpaladin`, `cthPaladin`, and `cthTemplar` are present but commented out
-- Opening battle spell:
+- 额外规划的 `ffpaladin`、`cthPaladin`、`cthTemplar` 映射已写入但仍处于注释状态
+- 开场战斗施法：
 - `type: OPENING_BATTLE_SPELL`
 - `subtype: spell.mirth`
 - `val: 10`
-- Spell binding bonus retained:
+- 保留法术绑定：
 - `type: SPELL`
 - `subtype: spell.mirth`
-- Fixed black knight specialty bonuses with `includeUpgrades: true`:
+- 黑骑士系特长加成修正为 `includeUpgrades: true`：
 - `CREATURE_DAMAGE creatureDamageBoth +15`
 - `PRIMARY_SKILL primarySkill.attack +15`
 - `PRIMARY_SKILL primarySkill.defence +15`
 - `STACKS_SPEED +2`
 
-Current specialty text intent:
+当前特长文本意图：
 
-- Opening battle automatically casts `mirth`
-- Hidden effect grants dread knight combat bonuses
-- Hidden effect also allows selected knight-line units to upgrade into `dreadKnight`
+- 战斗开场自动释放 `mirth`
+- 隐藏效果给予 `dreadKnight` 战斗加成
+- 隐藏效果同时允许选定的骑士系兵种升级为 `dreadKnight`
 
 ## 2026-06-12
 
-### 8. Recent push changes
+### 8. 最近一次 push 改动记录
 
-Source files:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/spellResearch/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/hota/Mods/spellResearch/mod.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/config/difficulty.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/difficulty.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/config/gameConfig.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/gameConfig.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/spells/timed.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json](Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/spellResearch/mod.json](Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/spellResearch/mod.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/config/difficulty.json](Heroes of Might and Magic III Expansion 1.83/config/difficulty.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/config/gameConfig.json](Heroes of Might and Magic III Expansion 1.83/config/gameConfig.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json](Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json:1)
 
-Current `Seliva` specialty configuration:
+当前 `Seliva` 特长配置：
 
-- Retains the base effect: led creatures get `+2` to both minimum and maximum damage
-- Added Gelu-style hidden upgrade behavior through `SPECIAL_UPGRADE`
-- Upgrade mapping: `creature.archer`, `creature.marksman`, `creature.woodElf`, and `creature.grandElf` all upgrade into `creature.sharpshooter`
-- Specialty text now mentions the hidden sharpshooter-upgrade effect
+- 保留原有效果：所带兵种最小与最大伤害都获得 `+2`
+- 通过 `SPECIAL_UPGRADE` 新增类似 Gelu 的隐藏升级效果
+- 升级映射为：`creature.archer`、`creature.marksman`、`creature.woodElf`、`creature.grandElf` 全部可升级为 `creature.sharpshooter`
+- 特长文本已补充该隐藏的神射手升级效果
 
-Current `Arina` starting skills:
+当前 `Arina` 初始技能：
 
 - `basic diplomacy`
 - `basic wisdom`
 - `basic logistics`
 
-Current `spellResearch` settings:
+当前 `spellResearch` 设置：
 
 - `spellResearchCostMultiplierPerReroll: [0, 0, 0, 0, 0]`
 - `spellResearchPerDay: [99, 99, 99, 99, 99]`
-- `spellResearchCost` level 1-3: `1000 gold`
-- `spellResearchCost` level 4-5: `1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
+- `spellResearchCost` 1-3级：`1000 gold`
+- `spellResearchCost` 4-5级：`1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
 
-Current `difficulty.json` `human.king.resources`:
+当前 `difficulty.json` 的 `human.king.resources`：
 
 - `wood: 90`
 - `mercury: 90`
@@ -198,7 +198,7 @@ Current `difficulty.json` `human.king.resources`:
 - `gems: 90`
 - `gold: 999990`
 
-Current `gameConfig.json` related values:
+当前 `gameConfig.json` 相关值：
 
 - `heroes.baseScoutingRange: 7`
 - `heroes.specialtySecondarySkillGrowth: 10`
@@ -207,22 +207,22 @@ Current `gameConfig.json` related values:
 - `heroes.levelupUpgradedSkillsAmount: 2`
 - `towns.buildingsPerTurnCap: 5`
 
-Current `slayer` expert setting:
+当前 `slayer` 的 expert 设置：
 
-- Added `range: "x"` under `expert`
-- This push records the actual committed config as-is
+- 在 `expert` 下新增了 `range: "x"`
+- 这里记录的是当时 push 的实际提交值，不代表该写法已经过正确性验证
 
 ## 2026-06-09 22:42:21
 
-### 7. Fairy dependency, spell research, and Disrupting Ray update
+### 7. Fairy 依赖、spellResearch 与 `disruptingRay` 更新
 
-Source files:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/mod.json:1)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/spellResearch/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/hota/Mods/spellResearch/mod.json:16)
-- [Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/spells/timed.json:648)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/mod.json](Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/mod.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/spellResearch/mod.json](Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/spellResearch/mod.json:16)
+- [Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json](Heroes of Might and Magic III Expansion 1.83/config/spells/timed.json:648)
 
-Current `Fairy` mod dependency list:
+当前 `Fairy` 模组依赖列表：
 
 - `hota.highlandsterrain`
 - `hota.factory`
@@ -231,39 +231,39 @@ Current `Fairy` mod dependency list:
 - `tidesofwar`
 - `new pavilion.new pavillion`
 
-Current `HotA spellResearch` override:
+当前 `HotA spellResearch` 覆盖：
 
 - `spellResearch: true`
 - `spellResearchCostMultiplierPerReroll: [0, 0, 0, 0, 0]`
 - `spellResearchPerDay: [10, 10, 10, 10, 10]`
-- `spellResearchCost` changed to:
-  - level 1: `1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
-  - level 2: `1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
-  - level 3: `1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
-  - level 4: `1000 gold + 1 mercury + 2 sulfur + 1 crystal + 2 gems`
-  - level 5: `1000 gold + 2 mercury + 2 sulfur + 2 crystal + 2 gems`
+- `spellResearchCost` 改为：
+- 1级：`1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
+- 2级：`1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
+- 3级：`1000 gold + 1 mercury + 1 sulfur + 1 crystal + 1 gems`
+- 4级：`1000 gold + 1 mercury + 2 sulfur + 1 crystal + 2 gems`
+- 5级：`1000 gold + 2 mercury + 2 sulfur + 2 crystal + 2 gems`
 
-Current `disruptingRay` expert-level behavior:
+当前 `disruptingRay` 的 expert 级行为：
 
-- Added `range: "X"` under `expert`
-- Result: `毁灭之光 / disruptingRay` is now group-targeted at expert mastery
-- Base and advanced remain single-target with cumulative permanent defense reduction
+- 在 `expert` 下新增 `range: "X"`
+- 结果是 `毁灭之光 / disruptingRay` 在 expert 时变为群体目标
+- `base` 与 `advanced` 仍保持单体，且持续累积永久减防
 
 ## 2026-06-07 14:32:00
 
-### 6. Elrisa starting spellbook cleanup
+### 6. Elrisa 初始 spellbook 清理
 
-Source file:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json:27)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json](Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json:27)
 
-Current `Elrisa` specialty text and spellbook setup:
+当前 `Elrisa` 特长文本与 spellbook 设置：
 
-- Specialty description updated to `初始即掌握所�?-3级魔法`
-- Tooltip updated to `All 1-3 level spells in spellbook.`
-- Starting `spellbook` cleaned into a unique 1-3 level spell list
+- 特长描述更新为 `初始即掌握所有1-3级魔法`
+- `tooltip` 更新为 `All 1-3 level spells in spellbook.`
+- 初始 `spellbook` 已清理为唯一且去重后的 1-3 级法术列表
 
-Current `spellbook` now includes these confirmed spell ids:
+当前 `spellbook` 已确认包含以下 spell id：
 
 - `magicArrow`
 - `haste`
@@ -323,37 +323,37 @@ Current `spellbook` now includes these confirmed spell ids:
 
 ## 2026-06-07 14:05:00
 
-### 5. Scholar skill and Arina diplomacy changes
+### 5. Scholar 技能与 Arina 外交特长调整
 
-Source files:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/config/skills.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/skills.json:551)
-- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:7)
+- [Heroes of Might and Magic III Expansion 1.83/config/skills.json](Heroes of Might and Magic III Expansion 1.83/config/skills.json:551)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Heroes of Might and Magic III Expansion 1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json:7)
 
-Current `scholar` configuration:
+当前 `scholar` 配置：
 
 - `basic: LEARN_MEETING_SPELL_LIMIT = 3`
 - `advanced: LEARN_MEETING_SPELL_LIMIT = 4`
 - `expert: LEARN_MEETING_SPELL_LIMIT = 5`
 
-Current `Arina` diplomacy specialty configuration:
+当前 `Arina` 外交特长配置：
 
-- Base specialty remains `secondary: diplomacy`
-- Added custom bonus: `WANDERING_CREATURES_JOIN_BONUS +3`
-- Updated description to match the mechanic:
-  - Reduces surrender cost by `5% per level`
-  - Reduces neutral creature hostility by `3`
-- Updated tooltip to include both surrender discount and neutral-creature hostility reduction
+- 基础特长仍为 `secondary: diplomacy`
+- 新增自定义 bonus：`WANDERING_CREATURES_JOIN_BONUS +3`
+- 描述已按实际机制更新：
+- 每级降低投降费用 `5%`
+- 使中立生物敌意值降低 `3`
+- `tooltip` 也已同步写入投降折扣与中立生物敌意降低效果
 
 ## 2026-06-07 12:29:19
 
-### 1. Hero system baseline reference
+### 1. 英雄系统基线参考
 
-Source file:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/config/gameConfig.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/gameConfig.json:507)
+- [Heroes of Might and Magic III Expansion 1.83/config/gameConfig.json](Heroes of Might and Magic III Expansion 1.83/config/gameConfig.json:507)
 
-Current base `heroes` defaults in `gameConfig.json`:
+当前 `gameConfig.json` 中 `heroes` 的基础默认值：
 
 - `tavernInvite: false`
 - `baseScoutingRange: 5`
@@ -362,15 +362,15 @@ Current base `heroes` defaults in `gameConfig.json`:
 - `levelupTotalSkillsAmount: 2`
 - `levelupUpgradedSkillsAmount: 1`
 
-This file is kept here as the engine baseline reference. Active gameplay behavior may still be overridden by enabled mods.
+这里保留的是引擎基线配置。实际游戏表现仍可能被已启用 mod 覆盖。
 
-### 2. HotA balance override
+### 2. HotA balance 覆盖
 
-Source file:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/gameBalance/mod.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/hota/Mods/gameBalance/mod.json:8)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/gameBalance/mod.json](Heroes of Might and Magic III Expansion 1.83/Mods/hota/Mods/gameBalance/mod.json:8)
 
-Current HotA `heroes` override:
+当前 HotA 的 `heroes` 覆盖值：
 
 - `tavernInvite: true`
 - `specialtyCreatureGrowth: 40`
@@ -379,71 +379,71 @@ Current HotA `heroes` override:
 - `levelupUpgradedSkillsAmount: 2`
 - `baseScoutingRange: 7`
 
-Notes:
+说明：
 
-- This override replaces the baseline values from `gameConfig.json` while the `hota.gamebalance` submod is enabled.
-- Earlier invalid field names such as `secondarySkillGrowth` and `creatureSpecialtyGrowth` were corrected to schema-valid names.
+- 只要 `hota.gamebalance` 子模组启用，这组覆盖值就会替代 `gameConfig.json` 中的基线值。
+- 之前错误使用的字段名 `secondarySkillGrowth` 与 `creatureSpecialtyGrowth` 已修正为 schema 可识别名称。
 
-### 3. Necromancy artifact changes
+### 3. 招魂相关宝物改动
 
-Source file:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/config/artifacts.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/artifacts.json:833)
+- [Heroes of Might and Magic III Expansion 1.83/config/artifacts.json](Heroes of Might and Magic III Expansion 1.83/config/artifacts.json:833)
 
-Necromancy-related artifact configuration currently present:
+当前已记录的招魂相关宝物配置：
 
 - `amuletOfTheUndertaker`: `UNDEAD_RAISE_PERCENTAGE +5`
 - `vampiresCowl`: `UNDEAD_RAISE_PERCENTAGE +10`
 - `deadMansBoots`: `UNDEAD_RAISE_PERCENTAGE +15`
 
-Combined artifact:
+组合宝物：
 
-- [cloakOfTheUndeadKing](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/config/artifacts.json:1944)
+- [cloakOfTheUndeadKing](Heroes of Might and Magic III Expansion 1.83/config/artifacts.json:1944)
 
-Current `cloakOfTheUndeadKing` necromancy upgrade chain:
+当前 `cloakOfTheUndeadKing` 的招魂升级链：
 
 - `skeleton -> creature.skeleton`
 - `walkingDead -> creature.wight`
 - `wight -> creature.lich`
 - `lich -> creature.dreadKnight`
 
-Artifact components:
+组合部件：
 
 - `amuletOfTheUndertaker`
 - `vampiresCowl`
 - `deadMansBoots`
 
-### 4. Summon Ghost spell changes
+### 4. `summonGhost` / 召唤恶灵 法术改动
 
-Source file:
+涉及文件：
 
-- [Heroes of Might and Magic III Expansion 1.83/Mods/tidesOfWar/content/config/spells/summonGhost/summonGhost.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/tidesOfWar/content/config/spells/summonGhost/summonGhost.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/tidesOfWar/content/config/spells/summonGhost/summonGhost.json](Heroes of Might and Magic III Expansion 1.83/Mods/tidesOfWar/content/config/spells/summonGhost/summonGhost.json:1)
 
-Current spell configuration for `summonGhost` / `召唤恶灵`:
+当前 `summonGhost` / `召唤恶灵` 法术配置：
 
-- Spell level: `5`
-- Base power: `10`
-- Base gain chance: `2`
-- Faction gain chance:
-  - `necropolis: 12`
-  - `dungeon: 6`
-  - `inferno: 6`
-- School flags:
-  - `earth: true`
-  - `air/fire/water: false`
-- Mana cost by mastery:
-  - `none: 25`
-  - `base: 20`
-- Summoned unit id: `tidesofwar:mdtGhost`
-- Summon type:
-  - `exclusive: false`
-  - `permanent: true`
-- Power scaling by mastery:
-  - `none: 1`
-  - `basic: 2`
-  - `advanced: 3`
-  - `expert: 4`
+- 法术等级：`5`
+- 基础威力：`10`
+- 基础出现概率：`2`
+- 阵营出现概率：
+- `necropolis: 12`
+- `dungeon: 6`
+- `inferno: 6`
+- 魔法学派标记：
+- `earth: true`
+- `air/fire/water: false`
+- 不同 mastery 的法力消耗：
+- `none: 25`
+- `base: 20`
+- 召唤单位 id：`tidesofwar:mdtGhost`
+- 召唤类型：
+- `exclusive: false`
+- `permanent: true`
+- 不同 mastery 的威力倍率：
+- `none: 1`
+- `basic: 2`
+- `advanced: 3`
+- `expert: 4`
 
-Description text:
+描述文本：
 
 - `"{召唤恶灵}\r\n\r\n召唤恶灵参战`
