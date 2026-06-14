@@ -344,8 +344,14 @@
 					}
 				}
 			},
-			"advanced": { "range" : "X" },
-			"expert": { "range" : "X" }
+			"advanced": { 
+				"val" : 80,
+				"range" : "X" 
+			},
+			"expert": { 
+				"val" : 99,
+				"range" : "X" 
+			}
 		},
 		"flags" : {
 			"positive": true

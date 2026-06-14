@@ -13,10 +13,10 @@
 			"specialtyLarge" : "courtyard/heroes/Ekaterina/speclarge1.png",
 			"specialtySmall" : "courtyard/heroes/Ekaterina/specsmall1.png"
 		},
-		"skills" : [ { "level" : "basic", "skill" : "wisdom" }, { "level" : "basic", "skill" : "scouting" } ],
+		"skills" : [ { "level" : "basic", "skill" : "wisdom" }, { "level" : "basic", "skill" : "logistics" } ],
 		"spellbook" :
 		[
-			"pacifism"
+			"pacifism","prayer"
 		],
 		"battleImage" :"courtyard/heroes/CourtAlice.def",
 		"specialty" : {
@@ -26,8 +26,27 @@
 					"type" : "SPELL",
 					"val" : 3,
 					"valueType" : "INDEPENDENT_MAX"
-				}				
-			}
-		},
+				},
+				"prayer" : {
+					"addInfo" : 0,
+					"subtype" : "spell.prayer",
+					"type" : "SPECIAL_PECULIAR_ENCHANT"
+				},
+				"choir":
+				{
+					"type": "OPENING_BATTLE_SPELL",
+					"subtype": "spell.prayer",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER"
+				},
+				"bind" : 
+				{
+				"subtype" : "spell.prayer",
+				"type" : "SPELL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+				}
+			}					
+		}
 	}
 }

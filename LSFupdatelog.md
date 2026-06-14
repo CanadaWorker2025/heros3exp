@@ -1,5 +1,48 @@
 # LSF Update Log
 
+## 2026-06-14
+
+### 12. Courtyard `14Ekaterina` 祈祷特长与开场施法确认
+
+涉及文件：
+
+- [Heroes of Might and Magic III Expansion 1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json:1)
+- [Heroes of Might and Magic III Expansion 1.83/Mods/extra creatures specialty/content/config/spells/spellsNew.json](/d:/coding/heros3exp/Heroes%20of%20Might%20and%20Magic%20III%20Expansion%201.83/Mods/extra%20creatures%20specialty/content/config/spells/spellsNew.json:1)
+
+当前 `14Ekaterina` 配置确认如下：
+
+- 初始技能为 `basic wisdom` 与 `basic logistics`
+- 初始 `spellbook` 包含 `pacifism` 与 `prayer`
+- `specialty.bonuses` 同时保留以下四项：
+- `pacifism`：`type: SPELL`, `subtype: spell.pacifism`
+- `prayer`：`type: SPECIAL_PECULIAR_ENCHANT`, `subtype: spell.prayer`
+- `choir`：`type: OPENING_BATTLE_SPELL`, `subtype: spell.prayer`, `val: 10`
+- `bind`：`type: SPELL`, `subtype: spell.prayer`, `val: 1`
+
+本次确认结论：
+
+- `Ekaterina` 现在已经可以在战斗开场自动释放 `prayer`
+- 该 `prayer` 会按当前工程里与 `Loynis` 相同的 prayer-specialty 规则生效
+- 不需要在 `spellHero.json` 再额外添加 `courtyard:14Ekaterina` 的 `specialty#override`
+- 之前尝试添加 hero-level `specialty#override` 会覆盖原有 `specialty.bonuses`，反而导致 `choir` / `bind` / `pacifism` / `SPECIAL_PECULIAR_ENCHANT` 被冲掉
+
+当前 prayer-specialty 的实际数值来源：
+
+- 来源不是单独的 hero override，而是 `extra creatures specialty` 对 `core:prayer` 的 spell-level patch
+- `spellsNew.json` 中 `core:prayer` 已按兵种等级分段写入固定加成
+- 对应判定依赖 `HAS_ANOTHER_BONUS_LIMITER` + `SPECIFIC_SPELL_DAMAGE` + `spell.prayer`
+
+当前 prayer-specialty 分段效果记录：
+
+- `none/basic`
+- `1-5级`：`attack/defence/speed +5`
+- `6级`：`attack/defence/speed +4`
+- `7级`：`attack/defence/speed +3`
+- `advanced/expert`
+- `1-5级`：`attack/defence/speed +7`
+- `6级`：`attack/defence/speed +6`
+- `7级`：`attack/defence/speed +5`
+
 ## 2026-06-13
 
 ### 11. Latest push `f9592afc` follow-up
