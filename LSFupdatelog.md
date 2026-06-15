@@ -1,5 +1,52 @@
 # LSF Update Log
 
+## 2026-06-15
+
+### 14. 最近一次 push `2b79bc80 feed pig` 更新记录
+
+涉及文件：
+
+- [Hero3Expasion1.83/Mods/asylum/content/config/asylum/creatures/shadowmare.json](Hero3Expasion1.83/Mods/asylum/content/config/asylum/creatures/shadowmare.json)
+- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/sacrificeSelfkill.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/sacrificeSelfkill.json>)
+- [Hero3Expasion1.83/Mods/extra creatures specialty/mod.json](<Hero3Expasion1.83/Mods/extra creatures specialty/mod.json>)
+- [Hero3Expasion1.83/Mods/hota/Mods/gameBalance/mod.json](Hero3Expasion1.83/Mods/hota/Mods/gameBalance/mod.json)
+- [Hero3Expasion1.83/config/creatures/inferno.json](Hero3Expasion1.83/config/creatures/inferno.json)
+
+本次 push 已提交的改动记录：
+
+- `shadowmare.json`
+- 阴影兽的 `SPECIFIC_SPELL_POWER` 对 `spell.summonApps` 的值从 `40` 改为 `4000000`
+- 这会极大抬高阴影兽对“驱役幽影”的可用生命额度上限
+
+- `inferno.json`
+- 邪神王的 `SPECIFIC_SPELL_POWER` 对 `spell.summonDemons` 的值从 `50` 改为 `5000000`
+- 这会极大抬高邪神王对“召唤恶鬼”的可用生命额度上限
+
+- `sacrificeSelfkill.json`
+- 新增 `core:sacrifice` 覆写文件
+- 将原版 `牺牲 / core:sacrifice` 改为直接伤害法术
+- 动画与音效改为霹雳闪电风格：`C03SPA0` / `C11SPA1` + `LIGHTBLT`
+- `battleEffects.sacrifice.type` 改为 `core:damage`
+- 启用 `killByPercentage: true`
+- 四档法术等级统一设为 `cost: 0`
+- 四档法术等级统一设为 `power: 10000`
+- `flags` 调整为负面伤害法术：`positive: false`, `rising: false`, `damage: true`, `negative: true`
+
+- `extra creatures specialty/mod.json`
+- 在 `spells` 列表中新增 `config/spells/sacrificeSelfkill.json`
+- 让 `extra creatures specialty` 启用时自动加载牺牲覆写
+- 顺手去掉了 `heroes` 列表末尾的多余尾逗号
+
+- `gameBalance/mod.json`
+- `heroes.levelupTotalSkillsAmount` 从 `4` 改为 `8`
+- 当前 HotA balance 的升级可选技能总槽位恢复为 `8`
+
+当前结论记录：
+
+- `牺牲` 的改版已转为并入 `extra creatures specialty` 加载，不再依赖单独测试 mod
+- 阴影兽与邪神王这两类“吃尸体转生物”的能力都被改成了极高生命额度版本
+- 实际召唤数量仍然会继续受目标尸体总生命值限制
+
 ## 2026-06-14
 
 ### 13. `eovacius` 与 `P_renata` 当前配置更新记录
