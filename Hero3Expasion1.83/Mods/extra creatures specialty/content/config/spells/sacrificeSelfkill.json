@@ -1,0 +1,62 @@
+{
+	"core:sacrifice" : {
+		"index" : 40,
+		"targetType" : "CREATURE",
+		"animation" : {
+			"affect" : [
+				{ "defName" : "C03SPA0", "verticalPosition" : "bottom" },
+				"C11SPA1"
+			]
+		},
+		"sounds" : {
+			"cast" : "LIGHTBLT"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"cost" : 0,
+				"power" : 10000,
+				"targetModifier" : {
+					"smart" : false
+				},
+				"battleEffects" : {
+					"sacrifice" : {
+						"type" : "core:damage",
+						"killByPercentage" : true
+					}
+				}
+			},
+			"none" : {
+				"cost" : 0,
+				"power" : 10000
+			},
+			"basic" : {
+				"cost" : 0,
+				"power" : 10000
+			},
+			"advanced" : {
+				"cost" : 0,
+				"power" : 10000
+			},
+			"expert" : {
+				"cost" : 0,
+				"power" : 10000
+			}
+		},
+		"flags" : {
+			"positive" : false,
+			"rising" : false,
+			"damage" : true,
+			"negative" : true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "absolute",
+				"bonus.GARGOYLE" : "absolute"
+			}
+		}
+	}
+}

@@ -62,7 +62,7 @@
 			{
 				"type" : "SPECIFIC_SPELL_POWER",
 				"subtype" : "spell.summonApps",
-				"val" : 40
+				"val" : 4000000
 			},
 			"resurrects" :
 			{

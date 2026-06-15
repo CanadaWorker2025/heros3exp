@@ -17,6 +17,7 @@
 	"spells":
 	[
 		"config/spells/spellsNew.json",
+		"config/spells/sacrificeSelfkill.json"
 	],
 	"creatures":
 	[
@@ -47,6 +48,6 @@
 		"config/heroes/conflux",
 		"config/heroes/tidesofwar",
 		"config/heroes/hotaextrehero",
-		"config/heroes/spellhero",
+		"config/heroes/spellhero"
 	]
 }

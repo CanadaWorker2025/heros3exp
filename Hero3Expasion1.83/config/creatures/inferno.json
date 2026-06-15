@@ -248,7 +248,7 @@
 			{
 				"type" : "SPECIFIC_SPELL_POWER",
 				"subtype" : "spell.summonDemons",
-				"val" : 50
+				"val" : 5000000
 			},
 			"resurrects" :
 			{
