@@ -1,5 +1,62 @@
 # LSF Update Log
 
+## 2026-06-17
+
+### 15. `P_renata` 死骑特长扩展、`preserve` 依赖确认与 JSON 清理
+
+涉及文件：
+
+- [Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json](Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json)
+- [Hero3Expasion1.83/Mods/preserve/mod.json](Hero3Expasion1.83/Mods/preserve/mod.json)
+
+本次更新记录：
+
+- `P_renata.json`
+- 将文件重写为可严格通过 JSON 解析的干净版本
+- 修复原先损坏的 `texts.name`、`texts.biography`、`texts.specialty.name`、`texts.specialty.description` 乱码与引号问题
+- 保留 `SPECIAL_UPGRADE -> creature.dreadKnight`
+- 保留并确认以下升级映射：
+- `creature.champion -> creature.dreadKnight`
+- `creature.cavalier -> creature.dreadKnight`
+- `tidesofwar:ffpaladin -> creature.dreadKnight`
+- `cathedral:cthPaladin -> creature.dreadKnight`
+- `cathedral:cthTemplar -> creature.dreadKnight`
+- `creature.blackKnight -> creature.dreadKnight`
+- `tidesofwar:gNec06 -> creature.dreadKnight`
+- 保留开场施法：
+- `OPENING_BATTLE_SPELL -> spell.mirth`
+- 保留法术绑定：
+- `SPELL -> spell.mirth`
+- 对 `blackKnight + includeUpgrades: true` 新增/保留以下特长 bonus：
+- `CREATURE_DAMAGE creatureDamageBoth +15`
+- `PRIMARY_SKILL primarySkill.attack +15`
+- `PRIMARY_SKILL primarySkill.defence +15`
+- `STACKS_SPEED +3`
+- `FIRST_STRIKE`
+- `BLOCKS_RETALIATION`
+- `LIFE_DRAIN 100`
+- `ATTACKS_ALL_ADJACENT`
+- `JOUSTING 5`
+- `DEATH_STARE deathStareGorgon 10`
+- `ADDITIONAL_ATTACK 1`
+- `FEROCITY 1`
+- `DESTRUCTION destructionKillPercentage 25, addInfo 20`
+
+- `preserve/mod.json`
+- 重写为可严格通过 JSON 解析的干净版本
+- 修复 `depends` 后缺失逗号导致的结构错误
+- 将 `chinese.name` 与 `chinese.description` 修正为正常 UTF-8 中文
+- 当前依赖确认如下：
+- 保留 `tidesOfWar`
+- 保留 `cathedral`
+- 保留 `hota.bulwark`
+- 不需要新增 `New Pavilion`
+
+校验记录：
+
+- `P_renata.json` 当前已通过严格 JSON 校验
+- `preserve/mod.json` 当前已通过严格 JSON 校验
+
 ## 2026-06-15
 
 ### 14. 最近一次 push `2b79bc80 feed pig` 更新记录
@@ -38,8 +95,8 @@
 - 顺手去掉了 `heroes` 列表末尾的多余尾逗号
 
 - `gameBalance/mod.json`
-- `heroes.levelupTotalSkillsAmount` 从 `4` 改为 `8`
-- 当前 HotA balance 的升级可选技能总槽位恢复为 `8`
+- `heroes.levelupTotalSkillsAmount` 从 `4` 改为 `16`
+- 当前 HotA balance 的升级可选技能总槽位恢复为 `16`
 
 当前结论记录：
 

@@ -6,24 +6,25 @@
 		"texts" :
 		{
 			"name" : "蕾娜塔",
-			"biography" : "外表看起来蕾娜塔是个乐观而又活泼的女子，和她在一起的人都会觉得她能够带来喜悦的气氛。但是这并不代表她没有悲伤的往事。夜深之时有人会看到她独自弹奏曲子，寄予思念她从小失散的妹妹，琳恩。",
+			"biography" : "蕾娜塔外表开朗活泼，总能为同伴带来轻松愉快的气氛。但在她的乐声背后，也藏着不愿轻易提起的往事。每当夜深人静时，她仍会独自奏起旧日的旋律，怀念那段再也无法回去的过去。",
 			"specialty" :
 			{
-				"description" : "作战开场即施放欢欣鼓舞魔法。隐藏技能:死骑攻防杀伤+15速度+2,同时可以把骑士升级为死骑",
+				"description" : "战斗开始时自动施放欢欣鼓舞。黑骑士及其升级形态攻击、防御、杀伤提高15，速度+3，并额外获得抢先反击、无反击、吸取生命、环击、勇士冲锋、死亡凝视、双击、顺势攻击与毁灭。同时可将多种骑士系兵种升级为恐怖骑士。",
 				"tooltip" : "Bonus: spell",
 				"name" : "欢欣鼓舞"
 			}
 		},
-		"images": {
-		"specialtySmall": "preserve/heroes/renata/UN32T195.bmp",
-		"specialtyLarge": "preserve/heroes/renata/UN44T195.bmp",
-		"large": "preserve/heroes/renata/HPL007BR.bmp",
-		"small": "preserve/heroes/renata/HPS007BR.bmp"
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/renata/UN32T195.bmp",
+			"specialtyLarge" : "preserve/heroes/renata/UN44T195.bmp",
+			"large" : "preserve/heroes/renata/HPL007BR.bmp",
+			"small" : "preserve/heroes/renata/HPS007BR.bmp"
 		},
 		"spellbook" :
-			[
-				"mirth"
-			],
+		[
+			"mirth"
+		],
 		"army" :
 		[
 			{
@@ -57,40 +58,42 @@
 				"skill" : "airMagic"
 			}
 		],
-		"specialty": 
+		"specialty" :
 		{
-			"base" : {
+			"base" :
+			{
 				"addInfo" : "creature.dreadKnight",
 				"type" : "SPECIAL_UPGRADE"
 			},
-			"bonuses":
+			"bonuses" :
 			{
-				"champion2dreadKnight": { "subtype": "creature.champion" },
-				"cavalier2dreadKnight": { "subtype": "creature.cavalier" },
-				"ffpaladin2dreadKnight": { "subtype": "tidesofwar:ffpaladin" },
-				"cthPaladin2dreadKnight": { "subtype": "cathedral:cthPaladin" },
-				"cthTemplar2dreadKnight": { "subtype": "cathedral:cthTemplar" },
-				"blackKnight2dreadKnight": { "subtype": "creature.blackKnight" },
-				"choir":
+				"champion2dreadKnight" : { "subtype" : "creature.champion" },
+				"cavalier2dreadKnight" : { "subtype" : "creature.cavalier" },
+				"ffpaladin2dreadKnight" : { "subtype" : "tidesofwar:ffpaladin" },
+				"cthPaladin2dreadKnight" : { "subtype" : "cathedral:cthPaladin" },
+				"cthTemplar2dreadKnight" : { "subtype" : "cathedral:cthTemplar" },
+				"blackKnight2dreadKnight" : { "subtype" : "creature.blackKnight" },
+				"gNec06toDreadKnight" : { "subtype" : "tidesofwar:gNec06" },
+				"choir" :
 				{
-					"type": "OPENING_BATTLE_SPELL",
-					"subtype": "spell.mirth",
+					"type" : "OPENING_BATTLE_SPELL",
+					"subtype" : "spell.mirth",
 					"val" : 10,
 					"valueType" : "BASE_NUMBER"
 				},
-				"bind" : 
+				"bind" :
 				{
-				"subtype" : "spell.mirth",
-				"type" : "SPELL",
-				"val" : 1,
-				"valueType" : "BASE_NUMBER"
+					"subtype" : "spell.mirth",
+					"type" : "SPELL",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER"
 				},
-				"damage" : 
+				"damage" :
 				{
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageBoth",
 					"val" : 15,
-					"limiters" : 
+					"limiters" :
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
@@ -99,12 +102,12 @@
 						}
 					]
 				},
-				"attack" : 
+				"attack" :
 				{
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.attack",
 					"val" : 15,
-					"limiters" : 
+					"limiters" :
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
@@ -113,12 +116,12 @@
 						}
 					]
 				},
-				"defence" : 
+				"defence" :
 				{
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.defence",
 					"val" : 15,
-					"limiters" : 
+					"limiters" :
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
@@ -127,11 +130,128 @@
 						}
 					]
 				},
-				"speed" : 
+				"speed" :
 				{
 					"type" : "STACKS_SPEED",
-					"val" : 2,
-					"limiters" : 
+					"val" : 3,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"firstStrike" :
+				{
+					"type" : "FIRST_STRIKE",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"noRetaliation" :
+				{
+					"type" : "BLOCKS_RETALIATION",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"lifeDrain" :
+				{
+					"type" : "LIFE_DRAIN",
+					"val" : 100,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"attackAllAdjacent" :
+				{
+					"type" : "ATTACKS_ALL_ADJACENT",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"jousting" :
+				{
+					"type" : "JOUSTING",
+					"val" : 5,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"deathStare" :
+				{
+					"type" : "DEATH_STARE",
+					"subtype" : "deathStareGorgon",
+					"val" : 10,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"additionalAttack" :
+				{
+					"type" : "ADDITIONAL_ATTACK",
+					"val" : 1,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"ferocity" :
+				{
+					"type" : "FEROCITY",
+					"val" : 1,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"destruction" :
+				{
+					"type" : "DESTRUCTION",
+					"subtype" : "destructionKillPercentage",
+					"val" : 25,
+					"addInfo" : 20,
+					"limiters" :
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
@@ -144,6 +264,3 @@
 		}
 	}
 }
-
-
-
