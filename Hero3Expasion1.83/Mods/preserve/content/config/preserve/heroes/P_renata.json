@@ -143,18 +143,6 @@
 						}
 					]
 				},
-				"firstStrike" :
-				{
-					"type" : "FIRST_STRIKE",
-					"limiters" :
-					[
-						{
-							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "blackKnight",
-							"includeUpgrades" : true
-						}
-					]
-				},
 				"noRetaliation" :
 				{
 					"type" : "BLOCKS_RETALIATION",
@@ -205,20 +193,6 @@
 						}
 					]
 				},
-				"deathStare" :
-				{
-					"type" : "DEATH_STARE",
-					"subtype" : "deathStareGorgon",
-					"val" : 10,
-					"limiters" :
-					[
-						{
-							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "blackKnight",
-							"includeUpgrades" : true
-						}
-					]
-				},
 				"additionalAttack" :
 				{
 					"type" : "ADDITIONAL_ATTACK",
@@ -251,6 +225,18 @@
 					"subtype" : "destructionKillPercentage",
 					"val" : 25,
 					"addInfo" : 20,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"firstStrike" :
+				{
+					"type" : "FIRST_STRIKE",
 					"limiters" :
 					[
 						{
