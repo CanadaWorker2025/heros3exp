@@ -582,7 +582,7 @@
 			// So matter what value is used for bias, actual probability for large (1000+) number of rolls is same as stated in description
 			// However, non-zero bias allows to prevent long streaks of "bad" rolls, and enforce actual probabilities even for small (10-20) number of rolls
 			// Recommended value is ~10-25. Excessively large values, like 100 can make rolls very predictable, for example rolling 20% ability every 5th roll
-			"abilityBias" : 25,
+			"abilityBias" : 0,
 
 			// defines dice chance and dice size of a morale roll, based on creature's morale.
 			// Resulting chance is chanceValue / diceSize. If list contains 0 values, option will be disabled

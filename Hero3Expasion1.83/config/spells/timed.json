@@ -783,7 +783,7 @@
 				"effects" : {
 					"morale" : {
 						"type" : "MORALE",
-						"val" : 1,
+						"val" : 2,
 						"duration" : "N_TURNS"
 					}
 				}
@@ -791,7 +791,7 @@
 			"advanced":{
 				"effects" : {
 					"morale" : {
-						"val" : 2
+						"val" : 4
 					}
 				}
 			},
@@ -799,7 +799,7 @@
 				"range" : "X",
 				"effects" : {
 					"morale" : {
-						"val" : 2
+						"val" : 8
 					}
 				}
 			}
@@ -837,7 +837,7 @@
 				"effects" : {
 					"morale" : {
 						"type" : "MORALE",
-						"val" : -1,
+						"val" : -2,
 						"duration" : "N_TURNS"
 					}
 				}
@@ -845,7 +845,7 @@
 			"advanced":{
 				"effects" : {
 					"morale" : {
-						"val" : -2
+						"val" : -4
 					}
 				}
 			},
@@ -853,7 +853,7 @@
 				"range" : "X",
 				"effects" : {
 					"morale" : {
-						"val" : -2
+						"val" : -8
 					}
 				}
 			}
@@ -891,7 +891,7 @@
 				"effects" : {
 					"luck" : {
 						"type" : "LUCK",
-						"val" : 1,
+						"val" : 2,
 						"duration" : "N_TURNS"
 					}
 				}
@@ -899,7 +899,7 @@
 			"advanced":{
 				"effects" : {
 					"luck" : {
-						"val" : 2
+						"val" : 4
 					}
 				}
 			},
@@ -907,7 +907,7 @@
 				"range" : "X",
 				"effects" : {
 					"luck" : {
-						"val" : 2
+						"val" : 8
 					}
 				}
 			}
@@ -936,7 +936,7 @@
 				"effects" : {
 					"luck" : {
 						"type" : "LUCK",
-						"val" : -1,
+						"val" : -2,
 						"duration" : "N_TURNS"
 					}
 				}
@@ -944,7 +944,7 @@
 			"advanced":{
 				"effects" : {
 					"luck" : {
-						"val" : -2
+						"val" : -4
 					}
 				}
 			},
@@ -952,7 +952,7 @@
 				"range" : "X",
 				"effects" : {
 					"luck" : {
-						"val" : -2
+						"val" : -8
 					}
 				}
 			}

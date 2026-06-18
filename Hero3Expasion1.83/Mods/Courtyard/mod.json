@@ -103,7 +103,7 @@
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
 	"modType" : "Town",
-	"depends" : ["hota.interference","hota.factory"], 
+	"depends" : ["hota.interference","hota.factory","hota.bulwark"], 
 	"name" : "Courtyard town",
 	"version" : "1.0"
 }
