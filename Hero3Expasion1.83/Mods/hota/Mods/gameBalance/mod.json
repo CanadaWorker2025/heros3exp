@@ -11,7 +11,7 @@
 			"tavernInvite"            : true,
 			"specialtyCreatureGrowth" : 40,
 			"specialtySecondarySkillGrowth" : 10,
-			"levelupTotalSkillsAmount" : 8,
+			"levelupTotalSkillsAmount" : 16,
 			"levelupUpgradedSkillsAmount" : 2,
 			"baseScoutingRange" : 7
 		},
