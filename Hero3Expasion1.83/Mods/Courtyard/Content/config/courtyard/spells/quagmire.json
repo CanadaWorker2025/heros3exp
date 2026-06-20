@@ -77,7 +77,7 @@
 					"noFleeing" : {
 						"type" : "BATTLE_NO_FLEEING",
 						"duration" : "N_TURNS",
-						"turns": 1,
+						"turns": 3,
 						"propagator" : "BATTLE_WIDE"
 					}
 				}
@@ -90,7 +90,7 @@
 					"noFleeing" : {
 						"type" : "BATTLE_NO_FLEEING",
 						"duration" : "N_TURNS",
-						"turns": 2,
+						"turns": 6,
 						"propagator" : "BATTLE_WIDE"
 					}
 				}
@@ -103,7 +103,7 @@
 					"noFleeing" : {
 						"type" : "BATTLE_NO_FLEEING",
 						"duration" : "N_TURNS",
-						"turns": 3,
+						"turns": 12,
 						"propagator" : "BATTLE_WIDE"
 						//"limiters" : [ "OPPOSITE_SIDE" ],
 					}

@@ -12,17 +12,17 @@
 		},
 		"basic" : {
 			"effects" : {
-				"main" : { "val" : 25 }
+				"main" : { "val" : 50 }
 			}
 		},
 		"advanced" : {
 			"effects" : {
-				"main" : { "val" : 50 }
+				"main" : { "val" : 75 }
 			}
 		},
 		"expert" : {
 			"effects" : {
-				"main" : { "val" : 75 }
+				"main" : { "val" : 100 }
 			}
 		}
 	},
@@ -42,17 +42,17 @@
 		},
 		"basic" : {
 			"effects" : {
-				"main" : { "val" : 10 }
+				"main" : { "val" : 15 }
 			}
 		},
 		"advanced" : {
 			"effects" : {
-				"main" : { "val" : 25 }
+				"main" : { "val" : 30 }
 			}
 		},
 		"expert" : {
 			"effects" : {
-				"main" : { "val" : 50 }
+				"main" : { "val" : 60 }
 			}
 		}
 	},
@@ -77,12 +77,12 @@
 		},
 		"advanced" : {
 			"effects" : {
-				"main" : { "val" : 20 }
+				"main" : { "val" : 40 }
 			}
 		},
 		"expert" : {
 			"effects" : {
-				"main" : { "val" : 40 }
+				"main" : { "val" : 80 }
 			}
 		}
 	},

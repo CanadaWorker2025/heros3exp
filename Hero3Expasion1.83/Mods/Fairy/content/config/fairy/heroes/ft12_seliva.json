@@ -3,32 +3,28 @@
 	{
 		"class" : "warden",
 		"female" : true,
-
 		"texts" :
 		{
 			"name" : "赛丽娃",
 			"biography" : "赛丽娃出生之时就充斥着不祥的气息。虽然她长相美丽，但没什么人愿意去接近她。她眼下血红色的印记会让人打消对于花仙善良的幻想。",
 			"specialty" :
 			{
-				"description" : "所带领生物的最小伤害值和最大伤害值各增加2。隐藏技能:幻影射手升级",
-				"tooltip" : "{Rage}\r\n\r\nAll creatures get +2 to damage.",
+				"description" : "所带领生物的最小伤害值和最大伤害值各增加2。可将弓箭手、神射手、木精灵、大精灵、骷髅护卫、骷髅法师、暗影猎手、魔影猎手升级为幻影射手。麾下远程单位获得吸取生命，并可在近战贴身时继续进行射击。",
+				"tooltip" : "{战争狂人}\r\n\r\nAll creatures get +2 damage. Archers can be upgraded into Sharpshooters. All shooters gain Life Drain and Point-Blank Shot.",
 				"name" : "战争狂人"
 			}
 		},
-		
 		"images" :
 		{
 			"specialtySmall" : "fairy/heroes/velve/UN32Blsh.png",
 			"specialtyLarge" : "fairy/heroes/velve/UN44Blsh.png",
 			"large" : "fairy/heroes/velve/hpl298.png",
-			"small" : "fairy/heroes/velve/hps298.png",
+			"small" : "fairy/heroes/velve/hps298.png"
 		},
-		
 		"spellbook" :
 		[
 			"bloodlust"
 		],
-
 		"army" :
 		[
 			{
@@ -58,29 +54,45 @@
 				"skill" : "learning"
 			}
 		],
-		"specialty": // +2 damage 
+		"specialty" :
 		{
-			"base": 
+			"base" :
 			{
-				"addInfo": "creature.sharpshooter",
-				"type": "SPECIAL_UPGRADE"
+				"addInfo" : "creature.sharpshooter",
+				"type" : "SPECIAL_UPGRADE"
 			},
-			"bonuses": 
+			"bonuses" :
 			{
-				"damage": 
+				"damage" :
 				{
-				"type": "CREATURE_DAMAGE",
-				"subtype": "creatureDamageBoth",
-				"val": 2,
-				"valueType": "BASE_NUMBER"
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageBoth",
+					"val" : 2,
+					"valueType" : "BASE_NUMBER"
 				},
-				"archer2sharpshooter": { "subtype": "creature.archer" },
-				"grandElf2sharpshooter": { "subtype": "creature.grandElf" },
-				"marksman2sharpshooter": { "subtype": "creature.marksman" },
-				"woodElf2sharpshooter": { "subtype": "creature.woodElf" }
+				"archer2sharpshooter" : { "subtype" : "creature.archer" },
+				"grandElf2sharpshooter" : { "subtype" : "creature.grandElf" },
+				"marksman2sharpshooter" : { "subtype" : "creature.marksman" },
+				"woodElf2sharpshooter" : { "subtype" : "creature.woodElf" },
+				"skel12sharpshooter" : { "subtype" : "deathvalley:boneHook" },
+				"skel22sharpshooter" : { "subtype" : "deathvalley:flayer" },
+				"shadowhunter2sharpshooter" : { "subtype" : "asylum:shadowhunter" },
+				"phantomhunter2sharpshooter" : { "subtype" : "asylum:phantomhunter" },
+				"lifeDrain" :
+				{
+					"type" : "LIFE_DRAIN",
+					"val" : 100,
+					"limiters" : ["SHOOTER_ONLY"]
+				},
+				"freeShooting" :
+				{
+					"type" : "FREE_SHOOTING",
+					"val" : 0,
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters" : ["SHOOTER_ONLY"]
+				}
+							
 			}
 		}
 	}
 }
-
-

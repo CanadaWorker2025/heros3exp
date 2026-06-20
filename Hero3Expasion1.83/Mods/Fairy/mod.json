@@ -12,7 +12,9 @@
 		"courtyard",
 		"newoldspells+",
 		"tidesofwar",
-		"new pavilion.new pavillion"
+		"new pavilion.new pavillion",
+		"asylum",
+		"deathvalley"
 	], 
 	
     "factions" : [ "config/fairy/town" ],
