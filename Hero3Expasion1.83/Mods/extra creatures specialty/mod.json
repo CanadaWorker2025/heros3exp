@@ -17,7 +17,8 @@
 	"spells":
 	[
 		"config/spells/spellsNew.json",
-		"config/spells/sacrificeSelfkill.json"
+		"config/spells/sacrificeSelfkill.json",
+		"config/spells/summonBoneHook.json"
 	],
 	"creatures":
 	[

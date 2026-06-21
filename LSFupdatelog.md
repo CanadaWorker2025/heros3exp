@@ -1,5 +1,145 @@
 # LSF Update Log
 
+## 2026-06-19
+
+### 17. `ft12_seliva` 幻影射手特长追加能力同步
+
+涉及文件：
+
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json)
+
+本次更新记录：
+
+- 重新确认 `hota.factory:hotaGunmanUp` 的“无限反击”原生写法不是 `ADDITIONAL_RETALIATION 99`
+- 当前引擎/模组已支持直接使用：
+- `UNLIMITED_RETALIATIONS`
+- `RANGED_RETALIATION`
+- `FIRST_STRIKE`
+
+- `ft12_seliva.json`
+- 明确采用“英雄特长给兵种加 bonus”的实现方式
+- 不改 `sharpshooter` 兵种本体
+- 只在 `ftL_Seliva.specialty.bonuses` 下通过 `CREATURE_TYPE_LIMITER creature=sharpshooter` 生效
+- 保留原有：
+- `CREATURE_DAMAGE creatureDamageBoth +2`
+- 升级来源：
+- `creature.archer`
+- `creature.marksman`
+- `creature.woodElf`
+- `creature.grandElf`
+- `deathvalley:boneHook`
+- `deathvalley:flayer`
+- `asylum:shadowhunter`
+- `asylum:phantomhunter`
+- 赛丽娃的幻影射手现追加：
+- `LIFE_DRAIN 100`
+- `FREE_SHOOTING`
+- `UNLIMITED_RETALIATIONS`
+- `RANGED_RETALIATION`
+- `FIRST_STRIKE`
+- `ENEMY_DEFENCE_REDUCTION 100`
+- `CATAPULT`
+- `STACK_HEALTH +10`
+
+- 文本已同步更新为当前实际效果：
+- `description` 改为中文实装说明
+- `tooltip` 改为英文实装说明
+- “骷髅护卫 / 骷髅法师” 文案同步修正为当前实际升级对象：
+- `白骨弓箭手`
+- `剥皮者`
+
+### 16. 最近一次 push `353602c5 update some` 更新记录
+
+涉及文件：
+
+- [Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/spells/quagmire.json](Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/spells/quagmire.json)
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json)
+- [Hero3Expasion1.83/Mods/Fairy/mod.json](Hero3Expasion1.83/Mods/Fairy/mod.json)
+- [Hero3Expasion1.83/Mods/New Pavilion/Mods/New Pavillion/Content/spellsPavilion/learningPyramids.json](<Hero3Expasion1.83/Mods/New Pavilion/Mods/New Pavillion/Content/spellsPavilion/learningPyramids.json>)
+- [Hero3Expasion1.83/Mods/hota/Mods/gameBalance/content/config/hotaGameBalance/skillHotA.json](Hero3Expasion1.83/Mods/hota/Mods/gameBalance/content/config/hotaGameBalance/skillHotA.json)
+- [Hero3Expasion1.83/Mods/hota/Mods/gameBalance/content/config/hotaGameBalance/skills.json](Hero3Expasion1.83/Mods/hota/Mods/gameBalance/content/config/hotaGameBalance/skills.json)
+- [Hero3Expasion1.83/Mods/tidesOfWar/content/config/skills/scouting.json](Hero3Expasion1.83/Mods/tidesOfWar/content/config/skills/scouting.json)
+- [Hero3Expasion1.83/config/skills.json](Hero3Expasion1.83/config/skills.json)
+
+本次 push 已提交的改动记录：
+
+- `quagmire.json`
+- `禁足 / quagmire` 的实际持续回合数改为：
+- `basic: 3`
+- `advanced: 6`
+- `expert: 12`
+- 当前描述文本仍写作 `1 / 2 / 3 回合`
+- 也就是说当前该法术存在“文本未同步到实际数值”的状态
+
+- `ft12_seliva.json`
+- `Seliva` 的特长文本与 tooltip 已更新为当前实际效果
+- 保留基础伤害加成：`CREATURE_DAMAGE creatureDamageBoth +2`
+- `SPECIAL_UPGRADE -> creature.sharpshooter` 的升级来源扩展为：
+- `creature.archer`
+- `creature.marksman`
+- `creature.woodElf`
+- `creature.grandElf`
+- `deathvalley:boneHook`
+- `deathvalley:flayer`
+- `asylum:shadowhunter`
+- `asylum:phantomhunter`
+- 对全部远程单位新增：
+- `LIFE_DRAIN 100`
+- `FREE_SHOOTING`
+
+- `Fairy/mod.json`
+- 新增依赖：
+- `asylum`
+- `deathvalley`
+
+- `learningPyramids.json`
+- `core:learning` 的经验加成改为：
+- `basic: 50%`
+- `advanced: 100%`
+- `expert: 200%`
+- 源力系赠送法术链仍保留：
+- `primeMissile`
+- `manaFlarePyra`
+- `timeStasis`
+- `curseOfPharaoh`
+
+- `skillHotA.json`
+- `core:pathfinding` 的 `BASE_TILE_MOVEMENT_COST` 进一步下调
+- 当前最低地格消耗描述与数值对应为：
+- `basic: 85`
+- `advanced: 70`
+- `expert: 65`
+- 对应 `main2` 调整为：
+- `-15 / -20 / -35`
+
+- `tidesOfWar/content/config/skills/scouting.json`
+- `core:necromancy` 的数值改为：
+- `basic: 15`
+- `advanced: 30`
+- `expert: 60`
+- `core:scouting` 仍保持：
+- 视野 `1 / 3 / 5`
+- 额外移动力 `100 / 200 / 300`
+
+- `config/skills.json`
+- 原版基线技能数值被改为：
+- `pathfinding: 50 / 75 / 100`
+- `archery: 15 / 30 / 60`
+- `logistics: 20 / 40 / 80`
+
+- `hotaGameBalance/skills.json`
+- 文件内也同步写入了 `core:logistics = 20 / 40 / 80`
+- 但当前仓库下 `gameBalance/mod.json` 没有把这个 `skills.json` 挂进 `skills` 加载列表
+- 因此这部分内容目前仅记录“文件已改”，不单独认定为最终一定生效
+
+当前结论记录：
+
+- 本次 push 同时改动了原版基线技能、Tides of War 技能覆盖、New Pavilion 的 learning 覆盖、以及 Fairy / Courtyard 的局部玩法配置
+- 其中 `禁足` 已改成超出原描述很多的长持续版本
+- `Seliva` 现在已是跨阵营射手升级 + 吸血 + 贴身射击的版本
+- `learning / necromancy / pathfinding / logistics / archery` 相关效果，需要按加载链分别判断最终生效值
+- `hotaGameBalance/skills.json` 当前仍属于“文件存在改动，但未确认进入加载链”的状态
+
 ## 2026-06-17
 
 ### 15. `P_renata` 死骑特长扩展、`preserve` 依赖确认与 JSON 清理
@@ -56,6 +196,65 @@
 
 - `P_renata.json` 当前已通过严格 JSON 校验
 - `preserve/mod.json` 当前已通过严格 JSON 校验
+
+### 补记. `3a4ab7cf` 与 `a932a0c7` 更新记录
+
+涉及文件：
+
+- [Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/classes/magicHero.json](Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/classes/magicHero.json)
+- [Hero3Expasion1.83/Mods/Courtyard/mod.json](Hero3Expasion1.83/Mods/Courtyard/mod.json)
+- [Hero3Expasion1.83/config/gameConfig.json](Hero3Expasion1.83/config/gameConfig.json)
+- [Hero3Expasion1.83/config/spells/timed.json](Hero3Expasion1.83/config/spells/timed.json)
+- [Hero3Expasion1.83/Mods/hota/Mods/gameBalance/mod.json](Hero3Expasion1.83/Mods/hota/Mods/gameBalance/mod.json)
+
+本次补充记录的是 2026-06-17 当晚较早两次提交：
+
+- `3a4ab7cf update`
+- `a932a0c7 Update mod.json`
+
+本次提交改动记录：
+
+- `Courtyard/classes/magicHero.json`
+- `philosopher` 职业的 `secondarySkills` 新增：
+- `"runes" : 4`
+
+- `Courtyard/mod.json`
+- 新增依赖：
+- `hota.bulwark`
+
+- `config/gameConfig.json`
+- `combat.abilityBias` 从 `25` 改为 `0`
+- 这会关闭基于历史结果的能力触发概率平滑修正
+- 结果是战斗特技触发改回完全独立随机
+
+- `config/spells/timed.json`
+- `mirth` 调整为：
+- `base: +2 morale`
+- `advanced: +4 morale`
+- `expert: +8 morale`
+- `sorrow` 调整为：
+- `base: -2 morale`
+- `advanced: -4 morale`
+- `expert: -8 morale`
+- `fortune` 调整为：
+- `base: +2 luck`
+- `advanced: +4 luck`
+- `expert: +8 luck`
+- `misfortune` 调整为：
+- `base: -2 luck`
+- `advanced: -4 luck`
+- `expert: -8 luck`
+
+- `hota/Mods/gameBalance/mod.json`
+- `heroes.levelupTotalSkillsAmount` 从 `8` 改为 `16`
+
+当前结论记录：
+
+- `philosopher` 现在已允许出现 `runes`
+- `Courtyard` 现在显式依赖 `hota.bulwark`
+- 战斗中的 `abilityBias` 已被关闭
+- 四个士气/幸运类 timed spell 当前都被改成了远高于原版的数值版本
+- `levelupTotalSkillsAmount = 16` 这一项后来也在后续日志中被再次记录，这里补的是最初提交来源
 
 ## 2026-06-15
 

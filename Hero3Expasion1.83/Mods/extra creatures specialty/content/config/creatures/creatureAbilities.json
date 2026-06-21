@@ -2269,6 +2269,24 @@
 				"type" : "SKELETON_TRANSFORMER_TARGET",
 				"subtype" : "boneHook",
 				"hidden": true
+			},
+			"summonBoneHookPower" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.summonBoneHook",
+				"val" : 4000000
+			},
+			"summonBoneHook" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.summonBoneHook",
+				"val" : 0,
+				"icon" : "asylum/NewOldSpells/summon.png"
+			},
+			"summonBoneHookCasts" :
+			{
+				"type" : "CASTS",
+				"val" : 1
 			}
 		}
 	},

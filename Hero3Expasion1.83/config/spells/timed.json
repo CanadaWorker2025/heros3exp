@@ -345,11 +345,11 @@
 				}
 			},
 			"advanced": { 
-				"val" : 80,
+				"power" : 80,
 				"range" : "X" 
 			},
 			"expert": { 
-				"val" : 99,
+				"power" : 99,
 				"range" : "X" 
 			}
 		},

@@ -1,0 +1,51 @@
+{
+	"summonBoneHook" : {
+		"type": "ability",
+		"targetType" : "CREATURE",
+		"name": "驱役白骨弓箭手",
+		"school" : {},
+		"level": 2,
+		"power": 50,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"animation":{
+			"affect":[{ "defName" : "C01SPE0", "transparency" : 0.5}]
+		},
+		"graphics" : { "iconEffect": "asylum/NewOldSpells/spp.png" },
+		"sounds": {
+			"cast": "ANIMDEAD"
+		},
+		"levels" : {
+			"base": {
+				"description" : "{驱役白骨弓箭手}\r\n\r\n从一队死去的我方单位上召唤白骨弓箭手，可以包括死灵单位。",
+				"power" : 40,
+				"cost" : 1,
+				"targetModifier":{"smart":true},
+				"range" : "0",
+				"battleEffects":{
+					"demonSummon":{
+						"id":"deathvalley:boneHook",
+						"permanent": true,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+			"none" :{},
+			"basic" :{},
+			"advanced" :{},
+			"expert" :{}
+		},
+		"flags" : {
+			"rising": true,
+			"positive": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.GARGOYLE" : "absolute"
+			}
+		}
+	}
+}

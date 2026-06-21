@@ -9,8 +9,8 @@
 			"biography" : "赛丽娃出生之时就充斥着不祥的气息。虽然她长相美丽，但没什么人愿意去接近她。她眼下血红色的印记会让人打消对于花仙善良的幻想。",
 			"specialty" :
 			{
-				"description" : "所带领生物的最小伤害值和最大伤害值各增加2。可将弓箭手、神射手、木精灵、大精灵、骷髅护卫、骷髅法师、暗影猎手、魔影猎手升级为幻影射手。麾下远程单位获得吸取生命，并可在近战贴身时继续进行射击。",
-				"tooltip" : "{战争狂人}\r\n\r\nAll creatures get +2 damage. Archers can be upgraded into Sharpshooters. All shooters gain Life Drain and Point-Blank Shot.",
+				"description" : "所带领生物的最小伤害值和最大伤害值各增加2。可将弓箭手、神射手、木精灵、大精灵、白骨弓箭手、剥皮者、暗影猎手、魔影猎手升级为幻影射手。赛丽娃麾下的幻影射手获得吸取生命、贴身射击、无限反击、远程反击、抢先反击、无视防御、可攻击城墙与生命值+10。",
+				"tooltip" : "{战争狂人}\r\n\r\nAll creatures get +2 damage. Archers can be upgraded into Sharpshooters. Seliva's Sharpshooters gain Life Drain, Point-Blank Shot, Unlimited Retaliations, Ranged Retaliation, First Strike, Ignore Defense, Wall Attack and +10 HP.",
 				"name" : "战争狂人"
 			}
 		},
@@ -82,14 +82,123 @@
 				{
 					"type" : "LIFE_DRAIN",
 					"val" : 100,
-					"limiters" : ["SHOOTER_ONLY"]
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "sharpshooter",
+							"includeUpgrades" : true
+						}
+					]
 				},
 				"freeShooting" :
 				{
 					"type" : "FREE_SHOOTING",
 					"val" : 0,
 					"valueType" : "ADDITIVE_VALUE",
-					"limiters" : ["SHOOTER_ONLY"]
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "sharpshooter",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"endlessRetaliation" :
+				{
+					"type" : "UNLIMITED_RETALIATIONS",
+					"icon" : "factory/icons/bonuses/e_retail2_bountyhunter.png",
+					"description" : "{远程无限反击}\n可以无限次反击敌人的远程攻击",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "sharpshooter",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"rangedRetaliation" :
+				{
+					"type" : "RANGED_RETALIATION",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "sharpshooter",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"firstStrike" :
+				{
+					"type" : "FIRST_STRIKE",
+					"subtype" : "damageTypeRanged",
+					"icon" : "factory/icons/bonuses/firststrike_ranged.png",
+					"description" : "{抢先攻击}\n可以在敌人远程攻击前进行反击",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "sharpshooter",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"ignoreDefence" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+					"val" : 100,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "sharpshooter",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"wallAttack" :
+				{
+					"type" : "CATAPULT",
+					"subtype" : "spell.cyclopsShot",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "sharpshooter",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"wallAttackExtraShot" :
+				{
+					"type" : "CATAPULT_EXTRA_SHOTS",
+					"subtype" : "spell.cyclopsShot",
+					"valueType" : "BASE_NUMBER",
+					"val" : 1,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "sharpshooter",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"healthBonus" :
+				{
+					"type" : "STACK_HEALTH",
+					"val" : 10,
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "sharpshooter",
+							"includeUpgrades" : true
+						}
+					]
 				}
 							
 			}

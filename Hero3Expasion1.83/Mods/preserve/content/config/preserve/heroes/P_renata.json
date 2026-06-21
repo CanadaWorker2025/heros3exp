@@ -9,7 +9,7 @@
 			"biography" : "蕾娜塔外表开朗活泼，总能为同伴带来轻松愉快的气氛。但在她的乐声背后，也藏着不愿轻易提起的往事。每当夜深人静时，她仍会独自奏起旧日的旋律，怀念那段再也无法回去的过去。",
 			"specialty" :
 			{
-				"description" : "战斗开始时自动施放欢欣鼓舞。黑骑士及其升级形态攻击、防御、杀伤提高15，速度+3，并额外获得抢先反击、无反击、吸取生命、环击、勇士冲锋、死亡凝视、双击、顺势攻击与毁灭。同时可将多种骑士系兵种升级为恐怖骑士。",
+				"description" : "战斗开始时自动施放欢欣鼓舞。黑骑士及其升级形态攻击、防御、杀伤提高15，速度+3，并额外获得抢先反击、无反击、无限反击、吸取生命、环击、勇士冲锋、死亡凝视、双击、顺势攻击、无视防御与毁灭。同时可将多种骑士系兵种升级为恐怖骑士。",
 				"tooltip" : "Bonus: spell",
 				"name" : "欢欣鼓舞"
 			}
@@ -23,7 +23,8 @@
 		},
 		"spellbook" :
 		[
-			"mirth"
+			"mirth",
+			"sorrow"
 		],
 		"army" :
 		[
@@ -81,9 +82,23 @@
 					"val" : 10,
 					"valueType" : "BASE_NUMBER"
 				},
+				"unchoir" :
+				{
+					"type" : "OPENING_BATTLE_SPELL",
+					"subtype" : "spell.sorrow",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER"
+				},
 				"bind" :
 				{
 					"subtype" : "spell.mirth",
+					"type" : "SPELL",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER"
+				},
+				"bind2" :
+				{
+					"subtype" : "spell.sorrow",
 					"type" : "SPELL",
 					"val" : 1,
 					"valueType" : "BASE_NUMBER"
@@ -146,6 +161,18 @@
 				"noRetaliation" :
 				{
 					"type" : "BLOCKS_RETALIATION",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"unlimitedRetaliations" :
+				{
+					"type" : "UNLIMITED_RETALIATIONS",
 					"limiters" :
 					[
 						{
@@ -237,6 +264,19 @@
 				"firstStrike" :
 				{
 					"type" : "FIRST_STRIKE",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "blackKnight",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"ignoreDefence" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+					"val" : 100,
 					"limiters" :
 					[
 						{
