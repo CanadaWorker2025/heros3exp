@@ -396,8 +396,10 @@
 			},
 			"expert":{
 				"adventureEffect" : {
+					"rangeX" : 20,
+					"rangeY" : 15,
 					"castsPerDay" : 8,
-					"movementPointsTaken" : 200
+					"movementPointsTaken" : 100
 				}
 			}
 		},

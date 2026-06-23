@@ -75,6 +75,8 @@
 				"cthTemplar2dreadKnight" : { "subtype" : "cathedral:cthTemplar" },
 				"blackKnight2dreadKnight" : { "subtype" : "creature.blackKnight" },
 				"gNec06toDreadKnight" : { "subtype" : "tidesofwar:gNec06" },
+				"ftWyvern12dreadKnight" : { "subtype" : "fairy:ftWyvern1" },
+				"ftWyvern22dreadKnight" : { "subtype" : "fairy:ftWyvern2" },
 				"choir" :
 				{
 					"type" : "OPENING_BATTLE_SPELL",

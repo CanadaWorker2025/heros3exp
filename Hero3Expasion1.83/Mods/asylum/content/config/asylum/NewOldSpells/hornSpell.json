@@ -41,7 +41,7 @@
 		"levels" : {
 			"base" : {
 				"description" : "{召唤夺心魔}\r\n\r\n从尸体上召唤一队夺心魔，战后不会消失。对亡灵和无生命的生物无效。",
-				"power" : 80,
+				"power" : 400000,
 				"cost" : 0,
 				"targetModifier" : {
 					"smart" : false

@@ -10,7 +10,7 @@
 		"description" : "EXP 中的禁林种族"
 	},
 	"factions" : [ "config/preserve/town" ],
-	"depends" : ["tidesOfWar", "cathedral", "hota.bulwark"],
+	"depends" : ["tidesOfWar", "cathedral", "hota.bulwark", "Fairy"],
 	"creatures" :
 	[
 		"config/preserve/creatures/halflings.json",
