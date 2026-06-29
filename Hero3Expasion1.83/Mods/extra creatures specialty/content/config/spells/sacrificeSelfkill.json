@@ -17,7 +17,7 @@
 				"cost" : 0,
 				"power" : 10000,
 				"targetModifier" : {
-					"smart" : false
+					"smart" : true
 				},
 				"battleEffects" : {
 					"sacrifice" : {
@@ -44,10 +44,10 @@
 			}
 		},
 		"flags" : {
-			"positive" : false,
+			"positive" : true,
 			"rising" : false,
 			"damage" : true,
-			"negative" : true
+			"negative" : false
 		},
 		"targetCondition" : {
 			"noneOf" : {
