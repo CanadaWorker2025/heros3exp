@@ -88,3 +88,106 @@ newoldspells+:regeneration | 活力重生
 newoldspells+:confusion | 迷惑心智
 newoldspells+:levitation | 健步如飞
 newoldspells+:waspSwarm | 蜂群滋扰
+
+遗漏补充（2026-07-05）
+
+newoldspells+:deepFreeze | 极度深寒
+newoldspells+:dragonStrength | 巨龙之力
+newoldspells+:oh3Fear | 惊恐万状
+newoldspells+:puppetMaster | 傀儡大师
+newoldspells+:vampirism | 吸血鬼化
+newoldspells+:vigour | 全神贯注
+tidesofwar:cas03eff | 攻击强化
+tidesofwar:cas07eff | 亡灵杀手
+tidesofwar:cas08eff | 狂热光环
+tidesofwar:con01eff | 呼唤
+tidesofwar:con03eff | 巨浪冲击
+tidesofwar:con06eff | 咒力连结
+tidesofwar:con07eff | 连结打击
+tidesofwar:cyclopsFury | 血之瞳
+tidesofwar:cyclopRangedShot | 巨石投掷
+tidesofwar:fungus | 感染
+tidesofwar:iFor01eff | 沼泽陷阱
+tidesofwar:iFor04eff | 腐蚀
+tidesofwar:iFor05eff | 魔之眼
+tidesofwar:iFor06eff | 酸毒
+tidesofwar:inf01 | 痛苦之雾
+tidesofwar:inf02 | 鞭笞
+tidesofwar:minosRage | 公牛之怒
+tidesofwar:nec03 | 绝望云
+tidesofwar:nec05 | 死亡波纹
+tidesofwar:nec06 | 恐惧
+tidesofwar:paraFungus | 感染传播
+tidesofwar:strn05 | 静电场
+tidesofwar:tw01eff | 瘫痪机械
+tidesofwar:tw04eff | 魔法破坏
+tidesofwar:tw07eff | 雷云风暴
+tidesofwar:hamsSpell | 召唤仓鼠
+tidesofwar:hamsSpell2 | 召唤松鼠
+tidesofwar:mdtHateSpike | 地狱尖刺
+tidesofwar:mdtIntervention | 神圣介入
+tidesofwar:blockAdv | 中级法术抑制
+tidesofwar:blockBas | 初级法术抑制
+tidesofwar:blockExp | 高级法术抑制
+tidesofwar:counterblock1 | 破除抑制
+tidesofwar:counterblock2 | 破除抑制
+tidesofwar:counterblock3 | 破除抑制
+tidesofwar:mdtRage | 怒气
+tidesofwar:mdtSummonDemilich1 | 召唤半巫妖
+tidesofwar:mdtSummonDemilich2 | 召唤半巫妖
+tidesofwar:mdtSummonDemilich3 | 召唤半巫妖
+tidesofwar:mdtSummonDemilich4 | 召唤半巫妖
+tidesofwar:symbiosis | 共生
+tidesofwar:symbiosis2 | 共生
+tidesofwar:mdtTrawl | 网缚
+tidesofwar:mdtVampirism | 吸血鬼之触
+tidesofwar:mdtCureWand | 治疗魔杖
+tidesofwar:mdtFireballWand | 连珠火球魔杖
+tidesofwar:mdtIceboltWand | 霹雳寒冰魔杖
+tidesofwar:mdtLightningboltWand | 霹雳闪电魔杖
+tidesofwar:mdtMeteorWand | 流星火雨魔杖
+tidesofwar:mdtShieldWand | 护体神盾魔杖
+courtyard:ageCamera | 老化
+courtyard:deathGrasp | 死亡触摸
+courtyard:dragonPotion | 龙血瓶
+courtyard:endurancePotion | 耐力药水
+courtyard:ephemeral | ??
+courtyard:etheralPotion | 以太提取物
+courtyard:icePotion | 寒冷药水
+courtyard:immolationCurse | 献祭
+courtyard:immolationDamage | 献祭
+courtyard:immortalPotion | 不朽药水
+courtyard:invPotion | 保护药水
+courtyard:pacifism | 和平之歌
+courtyard:potionSupply | 药剂供应
+courtyard:quagmire | 禁足
+courtyard:reflowElemental | 回流
+courtyard:regenerationPotion | 再生药水
+courtyard:stunAbility | 晕击
+courtyard:toughnessPotion | 强壮药水
+courtyard:vinesRevive | 再生
+courtyard:weaponPoisonPotion | 毒液瓶
+new pavilion.new pavillion:blessingSeal | 命运诅咒
+new pavilion.new pavillion:godScaleAttack | 神之制衡
+new pavilion.new pavillion:godScaleDefence | 神之制衡
+new pavilion.new pavillion:hotafirstaid | 急救术增益
+new pavilion.new pavillion:lifeEater | 吞食生命
+new pavilion.new pavillion:lifeEater2 | 创伤
+new pavilion.new pavillion:lifeEater3 | 血之怒
+new pavilion.new pavillion:pavilionMoatTrigger | 流沙坑
+new pavilion.new pavillion:pavilionMoat | 流沙坑
+new pavilion.new pavillion:photonLight | 光子发射
+new pavilion.new pavillion:specialSlowPav | 迟缓秘法
+new pavilion.new pavillion:tentBoost | 急救帐篷增益
+new pavilion.new pavillion:tentBoostRefill | 急救帐篷增益
+new pavilion.new pavillion:smellingSalts | 急救
+new pavilion.new pavillion:xxzy | 鲜血之源
+new pavilion.new pavillion:xxzy2 | 撕咬
+new pavilion.new pavillion:xxzy3 | 鲜血之源
+new pavilion.new pavillion:hourglassOfDeath | 死亡时计
+new pavilion.new pavillion:hourglass2 | 死亡时计
+new pavilion.new pavillion:hourglass3 | 死亡时计
+new pavilion.new pavillion:hourglass4 | 死亡时计
+new pavilion.new pavillion:hourglass5 | 死亡时计
+new pavilion.new pavillion:hourglass6 | 死亡时计
+new pavilion.new pavillion:soulConflagration | 灵魂烈焰
