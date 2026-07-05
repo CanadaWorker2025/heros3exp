@@ -1,5 +1,48 @@
 # LSF Update Log
 
+## 2026-07-05
+
+### 18. `havAhero05B / havAhero05special` 航海术英雄重做，`elspeth` 生命之源扩展
+
+涉及文件：
+- [Hero3Expasion1.83/Mods/haven/content/config/haven/heroes/havAhero05B.json](Hero3Expasion1.83/Mods/haven/content/config/haven/heroes/havAhero05B.json)
+- [Hero3Expasion1.83/Mods/New Pavilion/Mods/New Pavillion/Content/heroesPavilion/Elspeth.json](<Hero3Expasion1.83/Mods/New Pavilion/Mods/New Pavillion/Content/heroesPavilion/Elspeth.json>)
+
+本次更新记录：
+- `havAhero05B.json`
+- 统一整理 `Wesley / 艾伦` 文本与 JSON 结构，修正为干净可读版本
+- `Wesley`
+- 保留原有航海术成长特长：`MOVEMENT heroMovementSea`，`updater = TIMES_HERO_LEVEL`，`val = 5`，`valueType = PERCENT_TO_TARGET_TYPE`
+- `艾伦 / havAhero05special`
+- 在原有航海术成长基础上新增：
+- `FREE_SHIP_BOARDING`
+- `SIGHT_RADIUS +5`
+- `MOVEMENT heroMovementSea +5000`
+- `GENERATE_RESOURCE gold +5000`
+- `GENERATE_RESOURCE wood +5`
+- `GENERATE_RESOURCE ore +5`
+- `WHIRLPOOL_PROTECTION`
+- `MANA_REGENERATION +50`
+- `MANA_PERCENTAGE_REGENERATION +30`
+- `SPELLS_OF_SCHOOL water`
+- `MAGIC_SCHOOL_SKILL spellSchool.water = 3`
+- 同步更新艾伦特长说明，明确当前实际效果为：航海术强化、上下船免费、海上高机动、资源收益、漩涡免疫、每日法力恢复、直接掌握并专家化全部水系魔法
+
+- `Elspeth.json`
+- 保留 `health1 = STACK_HEALTH +1`
+- 将 `health2` 改为成长型生命特长：
+- `STACK_HEALTH`
+- `updater = TIMES_HERO_LEVEL`
+- `val = 4`
+- `valueType = PERCENT_TO_BASE`
+- 这意味着生命值百分比加成改为随英雄等级成长，而不是固定总值
+- 新增开场自动施法：
+- `OPENING_BATTLE_SPELL -> spell.slayer`
+- 新增火系法术掌握：
+- `SPELLS_OF_SCHOOL fire`
+- `MAGIC_SCHOOL_SKILL spellSchool.fire = 3`
+- 同步重写 `texts.specialty.description / tooltip`，使“生命之源”文本与当前配置一致
+
 ## 2026-06-19
 
 ### 17. `ft12_seliva` 幻影射手特长追加能力同步

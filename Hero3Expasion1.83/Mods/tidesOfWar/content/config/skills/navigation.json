@@ -27,7 +27,7 @@
 				"val" : 80,
 				"valueType" : "INDEPENDENT_MIN"
 			},
-			"freeShip" : {
+			"boarding" : {
 				"type" : "FREE_SHIP_BOARDING",
 				"val" : 0,
 				"valueType" : "BASE_NUMBER"

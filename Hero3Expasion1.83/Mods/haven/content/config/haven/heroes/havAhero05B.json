@@ -2,17 +2,17 @@
 	"havAhero05B" :
 	{
 		"class" : "havAhero",
-		"female": false,
+		"female" : false,
 		"onlyOnWaterMap" : true,
 		"texts" :
 		{
-			"name" : "维斯利", //Wesley the new navigation specialty
-			"biography" : "维斯利曾是哈雷克四世的总理大臣，而当国王驾崩之后，这位曾经的大臣却不再愿意为新王效力，从而拒绝了彼得利的邀请。他年事已高，只希望余生能带着自己的船完成年轻时的梦想，好好探索这片神秘的海域。",
+			"name" : "维斯利",
+			"biography" : "维斯利曾是哈雷克国王麾下的重要大臣。离开宫廷之后，他将余生投入到海上探索之中，试图完成年轻时未竟的梦想。",
 			"specialty" :
 			{
 				"tooltip" : "No description",
 				"name" : "航海术",
-				"description" : "在航海术上每级得到5%的奖励。"
+				"description" : "在航海术上每级得到 5% 的奖励。"
 			}
 		},
 		"images" :
@@ -22,7 +22,6 @@
 			"large" : "haven/heroes/havHero5/hero5B.bmp",
 			"small" : "haven/heroes/havHero5/hero5BS.bmp"
 		},
-
 		"army" :
 		[
 			{
@@ -41,7 +40,6 @@
 				"min" : 4
 			}
 		],
-
 		"skills" :
 		[
 			{
@@ -49,7 +47,6 @@
 				"skill" : "navigation"
 			}
 		],
-		
 		"specialty" : {
 			"bonuses" : {
 				"navigation" : {
@@ -61,22 +58,22 @@
 					"valueType" : "PERCENT_TO_TARGET_TYPE"
 				}
 			}
-		}	
+		}
 	},
 	"havAhero05special" :
 	{
 		"class" : "havAhero",
-		"female": false,
-		"special":true,
+		"female" : false,
+		"special" : true,
 		"texts" :
 		{
-			"name" : "艾伦", //Allen the new navigation specialty
-			"biography" : "曾经还是孩童的艾伦就迷上了海上生活。他从小以打渔为生，后来加入了海盗团队。但没人知道艾伦为什么会以海盗的身份生活。他看起来并不出众，但却总是能出其不意地展现他的才能。",
+			"name" : "艾伦",
+			"biography" : "艾伦自幼迷上海上生活，从打渔少年成长为经验老到的海上冒险者。他熟悉潮汐、航线与风暴，也擅长把一支舰队维持在最适合作战的状态。",
 			"specialty" :
 			{
 				"tooltip" : "No description",
 				"name" : "航海术",
-				"description" : "在航海术上每级得到5%的奖励。"
+				"description" : "提升航海术效果，并额外获得上下船不耗移动力、海上移动力 +5000、视野 +5、每日金币 +5000、木材 +5、矿石 +5、漩涡免疫、每日恢复 50 点与 30% 最大值法力，并直接掌握全部水系魔法且视为专家水系魔法。"
 			}
 		},
 		"images" :
@@ -86,7 +83,6 @@
 			"large" : "haven/heroes/havHero5/Allen.bmp",
 			"small" : "haven/heroes/havHero5/Allens.bmp"
 		},
-
 		"army" :
 		[
 			{
@@ -105,7 +101,6 @@
 				"min" : 4
 			}
 		],
-
 		"skills" :
 		[
 			{
@@ -117,7 +112,6 @@
 				"skill" : "navigation"
 			}
 		],
-		
 		"specialty" : {
 			"bonuses" : {
 				"navigation" : {
@@ -127,8 +121,69 @@
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 5,
 					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				},
+				"freeShipBoarding" : {
+					"type" : "FREE_SHIP_BOARDING",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER"
+				},
+				"seaSight" : {
+					"type" : "SIGHT_RADIUS",
+					"val" : 5,
+					"valueType" : "BASE_NUMBER"
+				},
+				"seaMoveFlat" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+					"val" : 5000,
+					"valueType" : "ADDITIVE_VALUE"
+				},
+				"goldIncome" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.gold",
+					"val" : 5000,
+					"valueType" : "BASE_NUMBER"
+				},
+				"woodIncome" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.wood",
+					"val" : 5,
+					"valueType" : "BASE_NUMBER"
+				},
+				"oreIncome" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "resource.ore",
+					"val" : 5,
+					"valueType" : "BASE_NUMBER"
+				},
+				"whirlpoolProtection" : {
+					"type" : "WHIRLPOOL_PROTECTION",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER"
+				},
+				"manaFlatRegen" : {
+					"type" : "MANA_REGENERATION",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER"
+				},
+				"manaPercentRegen" : {
+					"type" : "MANA_PERCENTAGE_REGENERATION",
+					"val" : 30,
+					"valueType" : "BASE_NUMBER"
+				},
+				"waterSpellsBook" : {
+					"type" : "SPELLS_OF_SCHOOL",
+					"subtype" : "water",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER"
+				},
+				"waterMagicExpert" : {
+					"type" : "MAGIC_SCHOOL_SKILL",
+					"subtype" : "spellSchool.water",
+					"val" : 3,
+					"valueType" : "BASE_NUMBER"
 				}
 			}
-		}	
+		}
 	}
 }

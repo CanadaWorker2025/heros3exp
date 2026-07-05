@@ -1,6 +1,6 @@
 # vcmiskill
 
-vcmiskill pathfinding    获得 侦察/路径寻找（增加崎岖地形移动折扣）
+vcmiskill pathfinding    获得 寻路（增加崎岖地形移动折扣）
 
 vcmiskill archery        获得 弓箭（远程伤害加成）
 
