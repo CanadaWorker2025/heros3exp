@@ -10,7 +10,7 @@
 			"specialty" :
 			{
 				"description" : "所带领的所有部队生命值上限获得成长加成，战斗开始时自动施放巨龙之力，并直接掌握全部火系魔法且视为专家火系魔法。",
-				"tooltip" : "HP growth + opening slayer + expert fire magic",
+				"tooltip" : "HP growth + opening dragon strength + expert fire magic",
 				"name" : "生命之源"
 			}
 		},
@@ -65,7 +65,7 @@
 					"valueType" : "PERCENT_TO_BASE"
 				},
 				"openingSlayer" : {
-					"subtype" : "spell.slayer",
+					"subtype" : "spell.dragonStrength",
 					"type" : "OPENING_BATTLE_SPELL",
 					"val" : 10,
 					"valueType" : "BASE_NUMBER"
