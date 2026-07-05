@@ -1,5 +1,4 @@
 魔法中英文对照
-
 格式：`Spell ID | 中文名`
 
 core:magicArrow | 魔法神箭
@@ -53,13 +52,13 @@ core:frenzy | 狂暴
 core:prayer | 祈祷
 core:chainLightning | 连锁闪电
 core:meteorShower | 流星火雨
-core:inferno | 烈火炼狱
+core:inferno | 烈火焚城
 core:implosion | 内爆术
 core:resurrection | 复活术
 core:armageddon | 末日审判
 core:clone | 复制
 core:magicMirror | 魔法神镜
-core:summonDemons | 召唤恶鬼
+core:summonDemons | 召唤恶魔
 core:waterWalk | 凌波微步
 core:fly | 飞行奇术
 core:townPortal | 时空之门
@@ -70,8 +69,8 @@ core:fireElemental | 召唤火元素
 core:waterElemental | 召唤水元素
 
 tidesofwar:mdtAuraOfPower | 力量光环
-tidesofwar:mdtBind | 禁足
-tidesofwar:mdtDivineArrows | 神圣之箭
+tidesofwar:mdtBind | 缠绕（特效：缠绕地面目标2回合，使其被束缚并大幅减速；飞行单位无效）
+tidesofwar:mdtDivineArrows | 神圣之矢
 tidesofwar:mdtCancel | 废除
 tidesofwar:summonGhost | 召唤恶灵
 
@@ -83,111 +82,109 @@ new pavilion.new pavillion:manaFlarePyra | 魔力闪光
 new pavilion.new pavillion:primeMissile | 源力飞弹
 new pavilion.new pavillion:timeStasis | 时间停滞
 new pavilion.new pavillion:curseOfPharaoh | 法老诅咒
-
 newoldspells+:regeneration | 活力重生
 newoldspells+:confusion | 迷惑心智
 newoldspells+:levitation | 健步如飞
 newoldspells+:waspSwarm | 蜂群滋扰
 
 遗漏补充（2026-07-05）
-
-newoldspells+:deepFreeze | 极度深寒
-newoldspells+:dragonStrength | 巨龙之力
-newoldspells+:oh3Fear | 惊恐万状
-newoldspells+:puppetMaster | 傀儡大师
-newoldspells+:vampirism | 吸血鬼化
-newoldspells+:vigour | 全神贯注
-tidesofwar:cas03eff | 攻击强化
-tidesofwar:cas07eff | 亡灵杀手
-tidesofwar:cas08eff | 狂热光环
-tidesofwar:con01eff | 呼唤
-tidesofwar:con03eff | 巨浪冲击
-tidesofwar:con06eff | 咒力连结
-tidesofwar:con07eff | 连结打击
-tidesofwar:cyclopsFury | 血之瞳
-tidesofwar:cyclopRangedShot | 巨石投掷
-tidesofwar:fungus | 感染
-tidesofwar:iFor01eff | 沼泽陷阱
-tidesofwar:iFor04eff | 腐蚀
-tidesofwar:iFor05eff | 魔之眼
-tidesofwar:iFor06eff | 酸毒
-tidesofwar:inf01 | 痛苦之雾
-tidesofwar:inf02 | 鞭笞
-tidesofwar:minosRage | 公牛之怒
-tidesofwar:nec03 | 绝望云
-tidesofwar:nec05 | 死亡波纹
-tidesofwar:nec06 | 恐惧
-tidesofwar:paraFungus | 感染传播
-tidesofwar:strn05 | 静电场
-tidesofwar:tw01eff | 瘫痪机械
-tidesofwar:tw04eff | 魔法破坏
-tidesofwar:tw07eff | 雷云风暴
-tidesofwar:hamsSpell | 召唤仓鼠
-tidesofwar:hamsSpell2 | 召唤松鼠
-tidesofwar:mdtHateSpike | 地狱尖刺
-tidesofwar:mdtIntervention | 神圣介入
-tidesofwar:blockAdv | 中级法术抑制
-tidesofwar:blockBas | 初级法术抑制
-tidesofwar:blockExp | 高级法术抑制
-tidesofwar:counterblock1 | 破除抑制
-tidesofwar:counterblock2 | 破除抑制
-tidesofwar:counterblock3 | 破除抑制
-tidesofwar:mdtRage | 怒气
-tidesofwar:mdtSummonDemilich1 | 召唤半巫妖
-tidesofwar:mdtSummonDemilich2 | 召唤半巫妖
-tidesofwar:mdtSummonDemilich3 | 召唤半巫妖
-tidesofwar:mdtSummonDemilich4 | 召唤半巫妖
-tidesofwar:symbiosis | 共生
-tidesofwar:symbiosis2 | 共生
-tidesofwar:mdtTrawl | 网缚
-tidesofwar:mdtVampirism | 吸血鬼之触
-tidesofwar:mdtCureWand | 治疗魔杖
-tidesofwar:mdtFireballWand | 连珠火球魔杖
-tidesofwar:mdtIceboltWand | 霹雳寒冰魔杖
-tidesofwar:mdtLightningboltWand | 霹雳闪电魔杖
-tidesofwar:mdtMeteorWand | 流星火雨魔杖
-tidesofwar:mdtShieldWand | 护体神盾魔杖
-courtyard:ageCamera | 老化
-courtyard:deathGrasp | 死亡触摸
-courtyard:dragonPotion | 龙血瓶
-courtyard:endurancePotion | 耐力药水
-courtyard:ephemeral | ??
-courtyard:etheralPotion | 以太提取物
-courtyard:icePotion | 寒冷药水
-courtyard:immolationCurse | 献祭
-courtyard:immolationDamage | 献祭
-courtyard:immortalPotion | 不朽药水
-courtyard:invPotion | 保护药水
-courtyard:pacifism | 和平之歌
-courtyard:potionSupply | 药剂供应
-courtyard:quagmire | 禁足
-courtyard:reflowElemental | 回流
-courtyard:regenerationPotion | 再生药水
-courtyard:stunAbility | 晕击
-courtyard:toughnessPotion | 强壮药水
-courtyard:vinesRevive | 再生
-courtyard:weaponPoisonPotion | 毒液瓶
-new pavilion.new pavillion:blessingSeal | 命运诅咒
-new pavilion.new pavillion:godScaleAttack | 神之制衡
-new pavilion.new pavillion:godScaleDefence | 神之制衡
-new pavilion.new pavillion:hotafirstaid | 急救术增益
-new pavilion.new pavillion:lifeEater | 吞食生命
-new pavilion.new pavillion:lifeEater2 | 创伤
-new pavilion.new pavillion:lifeEater3 | 血之怒
-new pavilion.new pavillion:pavilionMoatTrigger | 流沙坑
-new pavilion.new pavillion:pavilionMoat | 流沙坑
-new pavilion.new pavillion:photonLight | 光子发射
-new pavilion.new pavillion:specialSlowPav | 迟缓秘法
-new pavilion.new pavillion:tentBoost | 急救帐篷增益
-new pavilion.new pavillion:tentBoostRefill | 急救帐篷增益
-new pavilion.new pavillion:smellingSalts | 急救
-new pavilion.new pavillion:xxzy | 鲜血之源
-new pavilion.new pavillion:xxzy2 | 撕咬
-new pavilion.new pavillion:xxzy3 | 鲜血之源
-new pavilion.new pavillion:hourglassOfDeath | 死亡时计
-new pavilion.new pavillion:hourglass2 | 死亡时计
-new pavilion.new pavillion:hourglass3 | 死亡时计
-new pavilion.new pavillion:hourglass4 | 死亡时计
-new pavilion.new pavillion:hourglass5 | 死亡时计
-new pavilion.new pavillion:hourglass6 | 死亡时计
-new pavilion.new pavillion:soulConflagration | 灵魂烈焰
+newoldspells+:deepFreeze | 极度深寒（特效：强化冰冻/寒冰打击类法术，偏向控制与重创）
+newoldspells+:dragonStrength | 巨龙之力（特效：提升生命值与伤害，基础/中级/高级分别为+50%/+75%/+100%，并附带短暂回血；对龙类、无生命、机械、亡灵无效）
+newoldspells+:oh3Fear | 惊恐万状（特效：施加恐惧类负面，使敌军作战状态受压制）
+newoldspells+:puppetMaster | 傀儡大师（特效：控制敌方部队，为典型心智操控法术）
+newoldspells+:vampirism | 吸血鬼化（特效：赋予吸血效果，造成伤害时回复生命）
+newoldspells+:vigour | 全神贯注（特效：增益型强化法术，提升部队整体作战状态）
+tidesofwar:cas03eff | 攻击强化（特效：内部触发的攻击增益效果）
+tidesofwar:cas07eff | 亡灵杀手（特效：内部触发的对亡灵克制效果）
+tidesofwar:cas08eff | 狂热光环（特效：内部触发的范围强化/光环效果）
+tidesofwar:con01eff | 召唤（特效：内部触发的召唤效果）
+tidesofwar:con03eff | 巨浪冲击（特效：内部触发的水系冲击伤害）
+tidesofwar:con06eff | 咒力连接（特效：内部触发的联结/共享效果）
+tidesofwar:con07eff | 连接打击（特效：内部触发的连锁打击效果）
+tidesofwar:cyclopsFury | 血之愿（特效：内部触发的狂怒/强化效果）
+tidesofwar:cyclopRangedShot | 巨石投掷（特效：使独眼系单位发动远程巨石攻击）
+tidesofwar:fungus | 感染（特效：施加感染类异常状态）
+tidesofwar:iFor01eff | 沼泽陷阱（特效：内部触发的地形陷阱/束缚效果）
+tidesofwar:iFor04eff | 腐蚀（特效：削弱目标属性或护甲）
+tidesofwar:iFor05eff | 魔之眼（特效：内部触发的侦测/诅咒效果）
+tidesofwar:iFor06eff | 酸毒（特效：施加酸蚀/持续削弱）
+tidesofwar:inf01 | 痛苦之雾（特效：范围压制或持续伤害）
+tidesofwar:inf02 | 鞭笞（特效：单体惩戒/折磨伤害）
+tidesofwar:minosRage | 公牛之怒（特效：激怒自身，提升进攻能力）
+tidesofwar:nec03 | 绝望云（特效：施加绝望类负面，压制敌军状态）
+tidesofwar:nec05 | 死亡波纹（特效：对活体造成范围死亡伤害）
+tidesofwar:nec06 | 恐惧（特效：施加恐惧效果，压制敌军行动）
+tidesofwar:paraFungus | 感染传播（特效：内部触发的感染扩散效果）
+tidesofwar:strn05 | 静电场（特效：范围雷电/电场类伤害）
+tidesofwar:tw01eff | 瘫痪机械（特效：内部触发的瘫痪/禁用效果）
+tidesofwar:tw04eff | 魔法破坏（特效：驱散、破法或削弱施法能力）
+tidesofwar:tw07eff | 雷云风暴（特效：范围雷系打击）
+tidesofwar:hamsSpell | 召唤仓鼠（特效：召唤仓鼠类单位）
+tidesofwar:hamsSpell2 | 召唤松鼠（特效：召唤松鼠类单位）
+tidesofwar:mdtHateSpike | 地狱尖刺（特效：地刺/尖刺类伤害法术）
+tidesofwar:mdtIntervention | 神圣介入（特效：神圣系救援、保护或治疗效果）
+tidesofwar:blockAdv | 中级法术抑制（特效：中级版本的法术封锁/抑制）
+tidesofwar:blockBas | 初级法术抑制（特效：初级版本的法术封锁/抑制）
+tidesofwar:blockExp | 高级法术抑制（特效：高级版本的法术封锁/抑制）
+tidesofwar:counterblock1 | 解除抑制（特效：解除法术抑制的对策法术）
+tidesofwar:counterblock2 | 解除抑制（特效：解除法术抑制的对策法术）
+tidesofwar:counterblock3 | 解除抑制（特效：解除法术抑制的对策法术）
+tidesofwar:mdtRage | 怒气（特效：提高进攻性，偏向攻击/伤害强化）
+tidesofwar:mdtSummonDemilich1 | 召唤半巫妖（特效：召唤半巫妖，1级衍生版本）
+tidesofwar:mdtSummonDemilich2 | 召唤半巫妖（特效：召唤半巫妖，2级衍生版本）
+tidesofwar:mdtSummonDemilich3 | 召唤半巫妖（特效：召唤半巫妖，3级衍生版本）
+tidesofwar:mdtSummonDemilich4 | 召唤半巫妖（特效：召唤半巫妖，4级衍生版本）
+tidesofwar:symbiosis | 共生（特效：建立共生型增益，通常伴随恢复或联动）
+tidesofwar:symbiosis2 | 共生（特效：共生的衍生/触发版本）
+tidesofwar:mdtTrawl | 网缚（特效：撒网束缚或减速目标）
+tidesofwar:mdtVampirism | 吸血鬼之牙（特效：赋予吸血或生命汲取效果）
+tidesofwar:mdtCureWand | 治疗魔杖（特效：施放治疗/驱散效果）
+tidesofwar:mdtFireballWand | 连珠火球魔杖（特效：施放火球类范围伤害）
+tidesofwar:mdtIceboltWand | 霹雳寒冰魔杖（特效：施放寒冰箭类单体伤害）
+tidesofwar:mdtLightningboltWand | 霹雳闪电魔杖（特效：施放闪电箭类单体伤害）
+tidesofwar:mdtMeteorWand | 流星火雨魔杖（特效：施放流星火雨类范围伤害）
+tidesofwar:mdtShieldWand | 护体神盾魔杖（特效：为己方目标附加护体神盾，减少近战伤害；高级/专家为30%，专家可全体施放）
+courtyard:ageCamera | 老化（特效：施加老化类负面，削弱目标战斗能力）
+courtyard:deathGrasp | 死亡触摸（特效：高伤害或即死倾向的死亡系打击）
+courtyard:dragonPotion | 龙血瓶（特效：药剂型强化，偏向提升生命/攻击能力）
+courtyard:endurancePotion | 耐力药水（特效：提高耐久、减伤或续战能力）
+courtyard:ephemeral | ??（特效：名称未解析，疑似内部法术/待确认）
+courtyard:etheralPotion | 以太提取液（特效：以太化/灵体化倾向的药剂效果）
+courtyard:icePotion | 寒冷药水（特效：冰冻或减速类药剂效果）
+courtyard:immolationCurse | 献祭（特效：内部触发的献祭诅咒部分）
+courtyard:immolationDamage | 献祭（特效：内部触发的献祭伤害部分）
+courtyard:immortalPotion | 不朽药水（特效：提高生存力，可能包含免死/复原）
+courtyard:invPotion | 保护药水（特效：提供保护、抗性或减伤）
+courtyard:pacifism | 和平之歌（特效：限制进攻、使目标更难主动攻击）
+courtyard:potionSupply | 药剂供应（特效：补充药剂或提供战斗补给）
+courtyard:quagmire | 禁足（特效：战场禁逃，持续期间英雄不能逃跑或投降；基础3回合，中级6回合，高级12回合）
+courtyard:reflowElemental | 回流（特效：元素回流/能量回收类效果）
+courtyard:regenerationPotion | 再生药水（特效：持续回复生命）
+courtyard:stunAbility | 晕击（特效：使目标眩晕或失去行动机会）
+courtyard:toughnessPotion | 强韧药水（特效：提高生命、防御或抗打击能力）
+courtyard:vinesRevive | 再生（特效：藤蔓系复苏/复活效果）
+courtyard:weaponPoisonPotion | 毒液瓶（特效：使攻击附带中毒或持续伤害）
+new pavilion.new pavillion:blessingSeal | 命运诅咒（特效：祝福/诅咒混合型封印效果）
+new pavilion.new pavillion:godScaleAttack | 神之制裁（特效：偏攻击向的神圣制裁效果）
+new pavilion.new pavillion:godScaleDefence | 神之制裁（特效：偏防御向的神圣制裁效果）
+new pavilion.new pavillion:hotafirstaid | 急救术增益（特效：强化急救帐篷或治疗量）
+new pavilion.new pavillion:lifeEater | 吞食生命（特效：生命汲取主效果）
+new pavilion.new pavillion:lifeEater2 | 创伤（特效：吞噬生命的附带伤害/创伤效果）
+new pavilion.new pavillion:lifeEater3 | 血之源（特效：吞噬生命的恢复/续航衍生效果）
+new pavilion.new pavillion:pavilionMoatTrigger | 流沙坑（特效：城防壕沟的触发法术）
+new pavilion.new pavillion:pavilionMoat | 流沙坑（特效：制造流沙/壕沟陷阱）
+new pavilion.new pavillion:photonLight | 光子发射（特效：光系直射/魔法打击）
+new pavilion.new pavillion:specialSlowPav | 迟缓秘法（特效：减速敌军；基础-25%速度并对1-6级兵额外-10%，中级变为-50%，专家改为全体）
+new pavilion.new pavillion:tentBoost | 急救帐篷增益（特效：强化急救帐篷表现）
+new pavilion.new pavillion:tentBoostRefill | 急救帐篷增益（特效：补充或刷新急救帐篷增益）
+new pavilion.new pavillion:smellingSalts | 急救（特效：恢复、唤醒或解除异常）
+new pavilion.new pavillion:xxzy | 鲜血之源（特效：吸血/续航主效果）
+new pavilion.new pavillion:xxzy2 | 撕咬（特效：鲜血之源的附带攻击/撕咬效果）
+new pavilion.new pavillion:xxzy3 | 鲜血之源（特效：鲜血之源的衍生恢复效果）
+new pavilion.new pavillion:hourglassOfDeath | 死亡时计（特效：给己方全体附加死亡计时，命中同一敌军累计5次后直接灭杀，且无法复活）
+new pavilion.new pavillion:hourglass2 | 死亡时计（特效：内部倒计时，第1层标记）
+new pavilion.new pavillion:hourglass3 | 死亡时计（特效：内部倒计时，第2层标记）
+new pavilion.new pavillion:hourglass4 | 死亡时计（特效：内部倒计时，第3层标记，开始附带灭杀判定）
+new pavilion.new pavillion:hourglass5 | 死亡时计（特效：内部倒计时，第4层标记）
+new pavilion.new pavillion:hourglass6 | 死亡时计（特效：内部终结效果，直接按百分比灭杀目标且不可复活）
+new pavilion.new pavillion:soulConflagration | 灵魂烈焰（特效：灵魂/火焰类持续灼烧或爆发伤害）
