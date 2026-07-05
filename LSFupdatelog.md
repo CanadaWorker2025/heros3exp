@@ -37,7 +37,7 @@
 - `valueType = PERCENT_TO_BASE`
 - 这意味着生命值百分比加成改为随英雄等级成长，而不是固定总值
 - 新增开场自动施法：
-- `OPENING_BATTLE_SPELL -> spell.slayer`
+- `OPENING_BATTLE_SPELL -> spell.dragonStrength`
 - 新增火系法术掌握：
 - `SPELLS_OF_SCHOOL fire`
 - `MAGIC_SCHOOL_SKILL spellSchool.fire = 3`
