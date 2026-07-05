@@ -24,7 +24,7 @@
 	[
 	
 	],
-	"depends" : ["new pavilion.dunes-terrain"],
+	"depends" : ["new pavilion.dunes-terrain", "newoldspells+"]
 	
 	"factions" :
 	[
