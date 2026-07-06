@@ -26,6 +26,7 @@
 		"spellbook" :
 		[
 			"townPortal",
+			"fly",
 			"dimensionDoor"
 		],
 
