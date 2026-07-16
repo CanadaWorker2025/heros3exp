@@ -97,7 +97,7 @@ newoldspells+:vigour | 全神贯注（特效：增益型强化法术，提升部
 tidesofwar:cas03eff | 攻击强化（特效：内部触发的攻击增益效果）
 tidesofwar:cas07eff | 亡灵杀手（特效：内部触发的对亡灵克制效果）
 tidesofwar:cas08eff | 狂热光环（特效：内部触发的范围强化/光环效果）
-tidesofwar:con01eff | 召唤（特效：内部触发的召唤效果）
+tidesofwar:con01eff | 召唤（特效：内部触发，召唤妖精参战）
 tidesofwar:con03eff | 巨浪冲击（特效：内部触发的水系冲击伤害）
 tidesofwar:con06eff | 咒力连接（特效：内部触发的联结/共享效果）
 tidesofwar:con07eff | 连接打击（特效：内部触发的连锁打击效果）
@@ -161,7 +161,7 @@ courtyard:quagmire | 禁足（特效：战场禁逃，持续期间英雄不能�
 courtyard:reflowElemental | 回流（特效：元素回流/能量回收类效果）
 courtyard:regenerationPotion | 再生药水（特效：持续回复生命）
 courtyard:stunAbility | 晕击（特效：使目标眩晕或失去行动机会）
-courtyard:toughnessPotion | 强韧药水（特效：提高生命、防御或抗打击能力）
+courtyard:toughnessPotion | 强壮药水（特效：提高生命、防御或抗打击能力）
 courtyard:vinesRevive | 再生（特效：藤蔓系复苏/复活效果）
 courtyard:weaponPoisonPotion | 毒液瓶（特效：使攻击附带中毒或持续伤害）
 new pavilion.new pavillion:blessingSeal | 命运诅咒（特效：祝福/诅咒混合型封印效果）
@@ -188,3 +188,16 @@ new pavilion.new pavillion:hourglass4 | 死亡时计（特效：内部倒计时�
 new pavilion.new pavillion:hourglass5 | 死亡时计（特效：内部倒计时，第4层标记）
 new pavilion.new pavillion:hourglass6 | 死亡时计（特效：内部终结效果，直接按百分比灭杀目标且不可复活）
 new pavilion.new pavillion:soulConflagration | 灵魂烈焰（特效：灵魂/火焰类持续灼烧或爆发伤害）
+
+药剂魔法整理表
+药剂名 | ID | 解锁条件 | 效果 | 纯化版效果
+药剂供应 | courtyard:potionSupply | 拥有药剂车；随急救术等级逐步解锁更多药剂 | 作为药剂车的总入口，给战场提供再生药水、毒液瓶、龙血瓶、强壮药水、以太提取物等可施放药剂 | 无单独纯化版
+再生药水 | courtyard:regenerationPotion | 药剂车；基础即可用，急救术越高效果越强 | 基础每回合恢复5生命；初级15；中级30；高级回满 | 纯化再生药水：每回合恢复全部生命值
+毒液瓶 | courtyard:weaponPoisonPotion | 药剂车；基础即可用，急救术提高触发率 | 攻击时有10%几率使敌军中毒；初级15%；中级20%；高级30% | 纯化毒液瓶：攻击时30%几率使敌军中毒
+龙血瓶 | courtyard:dragonPotion | 药剂车 + 初级急救术 | 目标获得龙息特技和龙属性；攻击后追加“数量/2+15”伤害；中级变为+20，高级变为+25 | 纯化龙血瓶：攻击后追加“数量/2+30”伤害
+强壮药水 | courtyard:toughnessPotion | 药剂车 + 中级急救术 | 生命上限+25%，伤害+10%；高级后浓缩版为生命+40%、伤害+15%；蒸馏版为生命+40%、伤害+20% | 纯化强壮药水：生命上限+40%，伤害+25%
+以太提取物 | courtyard:etheralPotion | 药剂车 + 高级急救术 | 目标获得飞行，并减少20%所受伤害 | 纯化以太提取物：获得飞行，并减少30%所受伤害
+寒冷药水 | courtyard:icePotion | 可购买药剂/道具药剂 | 使敌军冻结，基础3回合无法行动；可对除战争机器外的任何生物使用；无视水系抗性 | 纯化寒冷药水：冻结5回合
+不朽药水 | courtyard:immortalPotion | 可购买药剂/道具药剂 | 补充阵亡部队生命力，本质偏复原/复活 | 纯化不朽药水：补充阵亡部队生命力，并驱除负面状态
+保护药水 | courtyard:invPotion | 可购买药剂/道具药剂 | 目标3回合内所受单次伤害不超过当前生命值的40% | 各等级描述基本一致，无额外纯化强化说明
+耐力药水 | courtyard:endurancePotion | 地图药剂/道具药剂 | 英雄在大地图上获得300点行动力 | 无纯化版

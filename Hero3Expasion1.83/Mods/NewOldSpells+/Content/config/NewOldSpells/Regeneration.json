@@ -60,6 +60,15 @@
 			{
 				"range": "0",
 				"power": 10,
+				"battleEffects":
+				{
+					"healNow":
+					{
+						"type":"core:heal",
+						"healLevel":"resurrect",
+						"healPower":"permanent"
+					}
+				},
 				"targetModifier":
 				{
 					"smart": true
