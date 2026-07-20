@@ -5,7 +5,7 @@
 		"index": 144,
 		"class" : "knight",
 		"female": false,
-		"special" : true,
+		"special" : false,
 		"skills":
 		[
 			{ "skill" : "leadership", "level": "advanced" }
@@ -53,7 +53,7 @@
 		"index": 147,
 		"class" : "wizard",
 		"female": false,
-		"special" : true,
+		"special" : false,
 		"spellbook": [ "haste" ],
 		"skills":
 		[

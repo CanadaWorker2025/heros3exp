@@ -3,7 +3,7 @@
 	{
 		"class" : "vizier",
 		"female" : false,
-		"special" : true,
+		"special" : false,
 
 		"texts" :
 		{

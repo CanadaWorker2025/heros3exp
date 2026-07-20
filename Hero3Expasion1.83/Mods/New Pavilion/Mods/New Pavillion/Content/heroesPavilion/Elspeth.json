@@ -67,7 +67,7 @@
 				"openingSlayer" : {
 					"subtype" : "spell.dragonStrength",
 					"type" : "OPENING_BATTLE_SPELL",
-					"val" : 10,
+					"val" : 50,
 					"valueType" : "BASE_NUMBER"
 				},
 				"fireSpellsBook" : {

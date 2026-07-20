@@ -3,13 +3,10 @@
 		"index" : 40,
 		"targetType" : "CREATURE",
 		"animation" : {
-			"affect" : [
-				{ "defName" : "C03SPA0", "verticalPosition" : "bottom" },
-				"C11SPA1"
-			]
+			"affect" : [{ "defName" : "C01SPE0", "transparency" : 0.5 }]
 		},
 		"sounds" : {
-			"cast" : "LIGHTBLT"
+			"cast" : "SACRIF1"
 		},
 		"levels" : {
 			"base" : {
@@ -51,10 +48,8 @@
 		},
 		"targetCondition" : {
 			"noneOf" : {
-				//"bonus.NON_LIVING" : "absolute",
 				"bonus.MECHANICAL" : "absolute",
 				"bonus.SIEGE_WEAPON" : "absolute",
-				//"bonus.UNDEAD" : "absolute",
 				"bonus.GARGOYLE" : "absolute"
 			}
 		}

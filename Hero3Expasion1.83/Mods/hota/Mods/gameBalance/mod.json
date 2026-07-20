@@ -12,8 +12,9 @@
 			"specialtyCreatureGrowth" : 40,
 			"specialtySecondarySkillGrowth" : 10,
 			"levelupTotalSkillsAmount" : 16,
-			"levelupUpgradedSkillsAmount" : 2,
-			"baseScoutingRange" : 7
+			"levelupUpgradedSkillsAmount" : 4,
+			"baseScoutingRange" : 7,
+			"skillPerHero" : 10
 		},
 		"dwellings" : {
 			"accumulateWhenOwned" : true

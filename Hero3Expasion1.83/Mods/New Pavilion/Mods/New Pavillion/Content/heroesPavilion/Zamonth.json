@@ -3,7 +3,7 @@
 	{
 		"class" : "embalmer",
 		"female" : false,
-		"special": true,
+		"special": false,
 
 		"texts" :
 		{
@@ -78,7 +78,12 @@
 				"blackKnight2mummy" : { "subtype" : "creature.blackKnight" },
 				"dreadKnight2mummy" : { "subtype" : "creature.dreadKnight" },
 				"boneDragon2mummy" : { "subtype" : "creature.boneDragon" },
-				"zombie2ghostDragon" : { "subtype" : "creature.ghostDragon" }
+				"zombie2ghostDragon" : { "subtype" : "creature.ghostDragon" },
+				"mummySpeed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 4,
+					"limiters" : [{ "type" : "CREATURE_TYPE_LIMITER", "creature" : "mummy", "includeUpgrades" : true }]
+				}
 			}
 		}	
 	}
