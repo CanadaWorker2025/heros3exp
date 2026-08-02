@@ -39,5 +39,36 @@
                 "description": "每2级提高屠杀者及其升级形态20%的攻击力和防御力。速度+1。"
             }
         }
+	},
+	"cathedral:sveneld": {
+		"specialty": {
+			"bonuses": {
+				"luckReduce": {
+					"type": "LUCK",
+					"val": -2,
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater": "BONUS_OWNER_UPDATER",
+					"limiters": [ "OPPOSITE_SIDE" ],
+					"stacking": "面对-1运气特长的英雄"
+				},
+				"vampirismMass": {
+					"type": "SPECIAL_PECULIAR_ENCHANT",
+					"subtype": "spell.vampirism",
+					"addInfo": 0
+				},
+				"openingVampirism": {
+					"type": "OPENING_BATTLE_SPELL",
+					"subtype": "spell.vampirism",
+					"val": 50,
+					"valueType": "BASE_NUMBER"
+				}
+			}
+		},
+		"texts": {
+			"specialty": {
+				"name": "-2运气",
+				"description": "战斗中使敌人运气-2。开局为己方全体释放吸血鬼化，持续50回合。"
+			}
+		}
 	}
 }

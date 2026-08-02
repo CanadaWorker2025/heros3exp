@@ -51,172 +51,172 @@
 				"wadjetAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "wadjet", "includeUpgrades": true }]
 				},
 				"wadjetDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "wadjet", "includeUpgrades": true }]
 				},
 				"wadjetSpeed": {
 					"type": "STACKS_SPEED",
-					"val": 1,
+					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "wadjet", "includeUpgrades": true }]
 				},
 				"serpentFlyAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "serpentFly", "includeUpgrades": true }]
 				},
 				"serpentFlyDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "serpentFly", "includeUpgrades": true }]
 				},
 				"serpentFlySpeed": {
 					"type": "STACKS_SPEED",
-					"val": 1,
+					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "serpentFly", "includeUpgrades": true }]
 				},
 				"nagaAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "naga", "includeUpgrades": true }]
 				},
 				"nagaDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "naga", "includeUpgrades": true }]
 				},
 				"nagaSpeed": {
 					"type": "STACKS_SPEED",
-					"val": 1,
+					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "naga", "includeUpgrades": true }]
 				},
 				"nagaOfficerAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "twArcane06", "includeUpgrades": true }]
 				},
 				"nagaOfficerDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "twArcane06", "includeUpgrades": true }]
 				},
 				"nagaOfficerSpeed": {
 					"type": "STACKS_SPEED",
-					"val": 1,
+					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "twArcane06", "includeUpgrades": true }]
 				},
 				"cathedralCouatlAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "cthCouatl", "includeUpgrades": true }]
 				},
 				"cathedralCouatlDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "cthCouatl", "includeUpgrades": true }]
 				},
 				"cathedralCouatlSpeed": {
 					"type": "STACKS_SPEED",
-					"val": 1,
+					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "cthCouatl", "includeUpgrades": true }]
 				},
 				"tidesCouatlAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "mdtCouatl", "includeUpgrades": true }]
 				},
 				"tidesCouatlDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "mdtCouatl", "includeUpgrades": true }]
 				},
 				"tidesCouatlSpeed": {
 					"type": "STACKS_SPEED",
-					"val": 1,
+					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "mdtCouatl", "includeUpgrades": true }]
 				},
 				"seaSerpentAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "seaserpent", "includeUpgrades": true }]
 				},
 				"seaSerpentDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "seaserpent", "includeUpgrades": true }]
 				},
 				"seaSerpentSpeed": {
 					"type": "STACKS_SPEED",
-					"val": 1,
+					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "seaserpent", "includeUpgrades": true }]
 				},
 				"leviathanAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "havC13", "includeUpgrades": true }]
 				},
 				"leviathanDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "havC13", "includeUpgrades": true }]
 				},
 				"leviathanSpeed": {
 					"type": "STACKS_SPEED",
-					"val": 1,
+					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "havC13", "includeUpgrades": true }]
 				},
 				"factoryCouatlAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "hotaCouatl", "includeUpgrades": true }]
 				},
 				"factoryCouatlDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
-					"val": 2,
+					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "hotaCouatl", "includeUpgrades": true }]
 				},
 				"factoryCouatlSpeed": {
 					"type": "STACKS_SPEED",
-					"val": 1,
+					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "hotaCouatl", "includeUpgrades": true }]
 				}
 			}

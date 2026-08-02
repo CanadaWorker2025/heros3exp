@@ -62,5 +62,112 @@
                 "description": "每3级提高火蜥蜴人及其升级形态20%的攻击力和防御力。速度+1。拥有正士气且接受火系有益魔法。被施加烈火神盾后火蜥蜴人攻击有33%的几率施放献祭。"
             }
         }
+	},
+	"courtyard:16aliceCourt": {
+		"specialty": {
+			"bonuses": {
+				"magicMirrorMass": {
+					"type": "SPECIAL_PECULIAR_ENCHANT",
+					"subtype": "spell.magicMirror",
+					"addInfo": 0
+				},
+				"openingMagicMirror": {
+					"type": "OPENING_BATTLE_SPELL",
+					"subtype": "spell.magicMirror",
+					"val": 50,
+					"valueType": "BASE_NUMBER"
+				},
+				"amazonHighHealth": {
+					"type": "STACK_HEALTH",
+					"val": 20,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "amazonHigh", "includeUpgrades": true }]
+				},
+				"amazonHighAttack": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "primarySkill.attack",
+					"val": 20,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "amazonHigh", "includeUpgrades": true }]
+				},
+				"amazonHighDefence": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "primarySkill.defence",
+					"val": 20,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "amazonHigh", "includeUpgrades": true }]
+				},
+				"amazonHighDamage": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageBoth",
+					"val": 10,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "amazonHigh", "includeUpgrades": true }]
+				},
+				"amazonHighSpeed": {
+					"type": "STACKS_SPEED",
+					"val": 3,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "amazonHigh", "includeUpgrades": true }]
+				},
+				"ftDrag1Health": {
+					"type": "STACK_HEALTH",
+					"val": 20,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftDrag1", "includeUpgrades": true }]
+				},
+				"ftDrag1Attack": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "primarySkill.attack",
+					"val": 20,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftDrag1", "includeUpgrades": true }]
+				},
+				"ftDrag1Defence": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "primarySkill.defence",
+					"val": 20,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftDrag1", "includeUpgrades": true }]
+				},
+				"ftDrag1Damage": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageBoth",
+					"val": 10,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftDrag1", "includeUpgrades": true }]
+				},
+				"ftDrag1Speed": {
+					"type": "STACKS_SPEED",
+					"val": 3,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftDrag1", "includeUpgrades": true }]
+				},
+				"ftHatchling1Health": {
+					"type": "STACK_HEALTH",
+					"val": 20,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftHatchling1", "includeUpgrades": true }]
+				},
+				"ftHatchling1Attack": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "primarySkill.attack",
+					"val": 20,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftHatchling1", "includeUpgrades": true }]
+				},
+				"ftHatchling1Defence": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "primarySkill.defence",
+					"val": 20,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftHatchling1", "includeUpgrades": true }]
+				},
+				"ftHatchling1Damage": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageBoth",
+					"val": 10,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftHatchling1", "includeUpgrades": true }]
+				},
+				"ftHatchling1Speed": {
+					"type": "STACKS_SPEED",
+					"val": 3,
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "ftHatchling1", "includeUpgrades": true }]
+				}
+			}
+		},
+		"texts": {
+			"specialty": {
+				"name": "魔法神镜",
+				"description": "开局释放全体魔法神镜。爱丽丝带领的女战士/女武神、彩虹女神/极光女神和女祭司/女术士生命+20，攻防+20，杀伤+10，速度+3。"
+			}
+		}
 	}
 }

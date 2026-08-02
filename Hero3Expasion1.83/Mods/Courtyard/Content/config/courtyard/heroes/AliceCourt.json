@@ -6,7 +6,7 @@
 			{ "creature" : "fireNewt", "max" : 5, "min" : 3 }
 		],
 		"class" : "philosopher",
-		"special" : true,
+		"special" : false,
 		"female" : true,
 		"images" : {
 			"large" : "courtyard/heroes/AliceCourt/AliceWonder.bmp",

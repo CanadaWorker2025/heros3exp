@@ -65,7 +65,7 @@
 			"airMagic"     : 4,
 			"waterMagic"   : 4,
 			"earthMagic"   : 6,
-			"scholar"      : 0,
+			"scholar"      : 1,
 			"tactics"      : 1,
 			"artillery"    : 4,
 			"learning"     : 1,

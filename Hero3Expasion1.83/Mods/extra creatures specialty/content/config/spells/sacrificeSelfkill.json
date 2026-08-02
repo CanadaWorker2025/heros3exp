@@ -19,6 +19,7 @@
 				"battleEffects" : {
 					"sacrifice" : {
 						"type" : "core:damage",
+						"ignoreImmunity" : true,
 						"killByPercentage" : true
 					}
 				}
