@@ -1,0 +1,117 @@
+{
+	"heroBansheeInvisibility":
+	{
+		"type": "combat",
+		"targetType": "CREATURE",
+		"name": "隐形",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 1,
+		"power": 1,
+		"defaultGainChance": 0,
+		"gainChance":
+		{
+		},
+		"animation":
+		{
+			"affect": [ "deathvalley/spells/skill4.def" ]
+		},
+		"targetCondition":
+		{
+			"noneOf":
+			{
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"flags":
+		{
+			"positive": true,
+			"nonMagical": true,
+			"indifferent": true
+		},
+		"graphics":
+		{
+			"iconBook": "deathvalley/spells/invisible.png",
+			"iconEffect": "deathvalley/spells/skill 4-2.bmp",
+			"iconScroll": "deathvalley/spells/invisible.png",
+			"iconScenarioBonus": "deathvalley/spells/invisible.png"
+		},
+		"sounds":
+		{
+			"cast": "SACBRETH"
+		},
+		"levels":
+		{
+			"base":
+			{
+				"cost": 8,
+				"range": "0",
+				"power": 1,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"effects":
+				{
+					"invincible":
+					{
+						"type": "INVINCIBLE",
+						"duration": [ "UNTIL_ATTACK", "N_TURNS" ],
+						"turns": 3
+					},
+					"damageReduction":
+					{
+						"type": "GENERAL_DAMAGE_REDUCTION",
+						"subtype": "damageTypeMelee",
+						"val": 100,
+						"duration": [ "UNTIL_ATTACK", "N_TURNS" ],
+						"turns": 3
+					},
+					"damageReductionShots":
+					{
+						"type": "GENERAL_DAMAGE_REDUCTION",
+						"subtype": "damageTypeRanged",
+						"val": 100,
+						"duration": [ "UNTIL_ATTACK", "N_TURNS" ],
+						"turns": 3
+					},
+					"magicDamageReduction":
+					{
+						"type": "SPELL_DAMAGE_REDUCTION",
+						"subtype": "spellSchool.any",
+						"val": 100,
+						"duration": [ "UNTIL_ATTACK", "N_TURNS" ],
+						"turns": 3
+					},
+					"noRetaliation":
+					{
+						"type": "NO_RETALIATION",
+						"duration": [ "UNTIL_ATTACK", "N_TURNS" ],
+						"turns": 3
+					}
+				}
+			},
+			"none":
+			{
+				"description": "{隐形}\n\n使目标部队隐形3回合，不受近战、远程和法术伤害，攻击不受反击。主动攻击后效果消失。"
+			},
+			"basic":
+			{
+				"description": "{初级隐形}\n\n使目标部队隐形3回合，不受近战、远程和法术伤害，攻击不受反击。主动攻击后效果消失。"
+			},
+			"advanced":
+			{
+				"description": "{中级隐形}\n\n使目标部队隐形3回合，不受近战、远程和法术伤害，攻击不受反击。主动攻击后效果消失。"
+			},
+			"expert":
+			{
+				"description": "{高级隐形}\n\n使目标部队隐形3回合，不受近战、远程和法术伤害，攻击不受反击。主动攻击后效果消失。"
+			}
+		}
+	}
+}

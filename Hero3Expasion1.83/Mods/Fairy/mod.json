@@ -76,7 +76,8 @@
 		"config/fairy/spells/fairyspell2.json",
 		"config/fairy/spells/fairyspell3.json",
 		"config/fairy/spells/fairyspell4.json",
-		"config/fairy/spells/shotspell1.json"
+		"config/fairy/spells/shotspell1.json",
+		"config/fairy/spells/heroBansheeInvisibility.json"
 	],
 	"artifacts":
 	[
