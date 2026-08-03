@@ -120,7 +120,7 @@
 			"expert":{
 				"effects" : {
 					"spellDamageReduction" : {
-						"val" : 50
+						"val" : 90
 					}
 				},
 				"range" : "X"
@@ -163,7 +163,7 @@
 			"expert":{
 				"effects" : {
 					"spellDamageReduction" : {
-						"val" : 50
+						"val" : 90
 					}
 				},
 				"range" : "X"
@@ -206,7 +206,7 @@
 			"expert":{
 				"effects" : {
 					"spellDamageReduction" : {
-						"val" : 50
+						"val" : 90
 					}
 				},
 				"range" : "X"
@@ -249,7 +249,7 @@
 			"expert":{
 				"effects" : {
 					"spellDamageReduction" : {
-						"val" : 50
+						"val" : 90
 					}
 				},
 				"range" : "X"
