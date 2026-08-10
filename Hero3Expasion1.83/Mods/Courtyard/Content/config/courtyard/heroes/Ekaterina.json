@@ -21,6 +21,11 @@
 		"battleImage" :"courtyard/heroes/CourtAlice.def",
 		"specialty" : {
 			"bonuses" : {
+				"diplomaBonus" : {
+						"type" : "WANDERING_CREATURES_JOIN_BONUS",
+						"val" : 4,
+						"valueType" : "BASE_NUMBER"
+				   },
 				"pacifism" : {
 					"subtype" : "spell.pacifism",
 					"type" : "SPELL",
@@ -36,7 +41,7 @@
 				{
 					"type": "OPENING_BATTLE_SPELL",
 					"subtype": "spell.prayer",
-					"val" : 10,
+					"val" : 50,
 					"valueType" : "BASE_NUMBER"
 				},
 				"bind" : 
