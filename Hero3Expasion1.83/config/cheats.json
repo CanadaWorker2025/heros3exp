@@ -2,7 +2,8 @@
 	//	                        VCMI                       VCMI simple        SoD/HotA                   AB                    RoE
 	"localCheats" : {
 		"color" :             [                            "vcmicolor",       "nwcphisherprice"                                                      ],
-		"gray" :              [                            "vcmigray"                                                                                ]
+		"gray" :              [                            "vcmigray"                                                                                 ],
+		"skill" :             [                            "vcmiskill"                                                                                ]
     },
 	"townTargetedCheats" : {
 		"buildTown" :         [ "vcmiarmenelos",           "vcmibuild",       "nwczion",                 "nwccoruscant",       "nwconlyamodel"       ]
@@ -32,7 +33,6 @@
 		"maxMorale" :         [                            "vcmimorale",      "nwcmorpheus",                                   "nwcmuchrejoicing"    ],
 		"god" :               [                            "vcmigod",         "nwctheone"                                                            ],
 		"giveScrolls" :       [                            "vcmiscrolls"                                                                             ],
-		"skill" :             [                            "vcmiskill"                                                                               ],
 		"teleport" :          [                            "vcmiteleport"                                                                            ],
 		"grail" :             [                            "vcmigrail",       "nwcarchitect"                                                         ]
     }
