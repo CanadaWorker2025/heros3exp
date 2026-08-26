@@ -56,6 +56,8 @@ vcmiskill resistance    获得 抵抗（魔法抗性）
 
 vcmiskill firstAid      获得 急救（特定治疗法术威力）
 
+举例 vcmiskill firstAid 1  获得初级急救，1初级2中级3高级0删除
+
 说明：
 这些 `vcmiskill <skillID>` 命令可以通过 VCMI 的作弊控制台或聊天输入触发（前提是游戏允许作弊）。
 技能 ID 来自 `config/skills.json`，中文名称为简短描述，具体数值和等级由 `config/skills.json` 定义。
