@@ -49,7 +49,33 @@
 					"subtype" : "spell.berserk",
 					"val" : 2,
 					"valueType" : "INDEPENDENT_MAX"
-				}			
+				},
+				"magicVulnerability" : {
+					"type" : "NEGATE_ALL_NATURAL_IMMUNITIES",
+					"subtype" : "immunityBattleWide",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+					"propagator" : "BATTLE_WIDE"
+				},
+				"magicVulnerability2" : {
+					"type" : "NEGATE_ALL_NATURAL_IMMUNITIES",
+					"subtype" : "immunityEnemyHero",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+					"propagator" : "BATTLE_WIDE"
+				},
+				"noResistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"val" : 0,
+					"valueType" : "INDEPENDENT_MIN",
+					"propagator" : "BATTLE_WIDE"
+				},
+				"noResistanceAura" : {
+					"type" : "SPELL_RESISTANCE_AURA",
+					"val" : 0,
+					"valueType" : "INDEPENDENT_MIN",
+					"propagator" : "BATTLE_WIDE"
+				}
 			}
 		},
 		
@@ -57,9 +83,9 @@
 			"biography" : "诺曼曾经是一位虔诚的牧师，他在反抗亡灵入侵时被邪恶巫师注入了死灵魔法契约，想让他成为仆从。虽然找到机会消灭了巫师，但他却不得不继续保留死灵魔法的契约，来维持自己只剩一半的生命。",
 			"name" : "诺曼",
 			"specialty" : {
-				"description" : "使用丧心病狂魔法时初始为中级火系效果。",
-				"tooltip" : "Spell bonus: Berserk",
-				"name" : "丧心病狂"
+				"description" : "使用丧心病狂魔法时初始为中级火系效果。战斗中获得毁灭之球的完整效果，消除所有生物的普通魔法免疫、心智免疫、魔法抗性与抗魔光环，但无法突破法术的绝对目标限制。",
+				"tooltip" : "丧心病狂与魔法易伤",
+				"name" : "魔法易伤丧心病狂"
 			}
 		}
 	}
