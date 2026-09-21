@@ -8,16 +8,16 @@
     },
 
     "advanced": {
-      "description": "{中级魔力}\n\n中级魔力使魔法的杀伤力提升20%。",
+      "description": "{中级魔力}\n\n中级魔力使魔法的杀伤力提升25%。",
       "effects": {
-        "main" : { "val" : 20 }
+        "main" : { "val" : 25 }
 			}
     },
 
     "expert": {
-      "description": "{高级魔力}\n\n高级魔力使魔法的杀伤力提升30%。",
+      "description": "{高级魔力}\n\n高级魔力使魔法的杀伤力提升50%。",
       "effects": {
-        "main" : { "val" : 30 }
+        "main" : { "val" : 50 }
 			}
       }
    }
