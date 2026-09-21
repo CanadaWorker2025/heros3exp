@@ -3,7 +3,7 @@
 	{
 		"class" : "bard",
 		"female" : true,
-		"special": true,
+		"special": false,
 
 		"texts" :
 		{
@@ -11,7 +11,7 @@
 			"biography" : "艾格瑞奈尔出生在一个位于森林边缘的村庄里，她的父母丧生于邻国发动的一次袭击中。为了通过歌曲让自己关于父母的记忆永存，也为了能够从普通人民的立场记载历史，艾格瑞奈尔选择成为一位吟游诗人。",
 			"specialty" :
 			{
-				"description" : "拥有吟唱魔法并且开场可以施放。",
+				"description" : "拥有吟唱魔法并在开场施放，持续17回合。每回合可施放2次魔法，此后每满15级再增加1次。",
 				"tooltip" : "Bonus: spell",
 				"name" : "吟唱"
 			}
@@ -67,7 +67,7 @@
 				{
 					"type": "OPENING_BATTLE_SPELL",
 					"subtype": "spell.choir",
-					"val" : 7,
+					"val" : 17,
 					"valueType" : "BASE_NUMBER"
 				},
 				"bind" : 
@@ -76,6 +76,19 @@
 				"type" : "SPELL",
 				"val" : 1,
 				"valueType" : "BASE_NUMBER"
+				},
+				"extraCast" :
+				{
+					"type" : "HERO_SPELL_CASTS_PER_COMBAT_TURN",
+					"val" : 1,
+					"valueType" : "ADDITIVE_VALUE"
+				},
+				"levelCast" :
+				{
+					"type" : "HERO_SPELL_CASTS_PER_COMBAT_TURN",
+					"val" : 1,
+					"valueType" : "ADDITIVE_VALUE",
+					"updater" : { "type" : "TIMES_HERO_LEVEL", "stepSize" : 15 }
 				}
 			}
 		}
