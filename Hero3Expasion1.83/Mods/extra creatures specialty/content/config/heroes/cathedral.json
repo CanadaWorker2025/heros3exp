@@ -43,18 +43,36 @@
 	"cathedral:sveneld": {
 		"specialty": {
 			"bonuses": {
+				"bless": {
+					"type": "GENERAL_DAMAGE_PREMY",
+					"limiters": [
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType": "SPELL_EFFECT",
+							"bonusSourceID": "spell.bless"
+						}
+					],
+					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
+					"val": 10
+				},
 				"luckReduce": {
 					"type": "LUCK",
 					"val": -2,
 					"propagator": "BATTLE_WIDE",
 					"propagationUpdater": "BONUS_OWNER_UPDATER",
 					"limiters": [ "OPPOSITE_SIDE" ],
-					"stacking": "面对-1运气特长的英雄"
+					"stacking": "面对-2运气特长的英雄"
 				},
 				"vampirismMass": {
 					"type": "SPECIAL_PECULIAR_ENCHANT",
 					"subtype": "spell.vampirism",
 					"addInfo": 0
+				},
+				"openingBless": {
+					"type": "OPENING_BATTLE_SPELL",
+					"subtype": "spell.bless",
+					"val": 50,
+					"valueType": "BASE_NUMBER"
 				},
 				"openingVampirism": {
 					"type": "OPENING_BATTLE_SPELL",
@@ -66,8 +84,8 @@
 		},
 		"texts": {
 			"specialty": {
-				"name": "-2运气",
-				"description": "战斗中使敌人运气-2。开局为己方全体释放吸血鬼化，持续50回合。"
+				"name": "圣灵血鬼",
+				"description": "战斗中使敌人运气-2。师从阿德拉的圣灵佑佐特长。开局依次为己方全体释放圣灵佑佐和吸血鬼化，均持续50回合。"
 			}
 		}
 	}
