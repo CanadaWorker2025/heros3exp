@@ -2,6 +2,188 @@
 
 本日志改为按系统模块维护。旧的 1-18 号记录不再作为单独流水尾巴保留，而是拆入对应模块；每条历史记录仍保留原编号、日期、涉及文件和关键细节。
 
+## 2026-08 至 2026-09 分类补记
+
+本节补录 `df8983f9`（2026-07-20）之后至 `659ed492`（2026-09-20）的已提交改动。记录按系统分类整理，不替换下方已有历史。
+
+### 英雄特长与可用性
+
+#### 爱丽丝、加布里埃尔与亚撒利雅
+
+来源提交：`b9376775`（2026-08-02）
+
+涉及文件：
+- [Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/heroes/AliceCourt.json](Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/heroes/AliceCourt.json)
+- [Hero3Expasion1.83/Mods/cathedral/Content/config/cathedral/classes/cthbishop.json](Hero3Expasion1.83/Mods/cathedral/Content/config/cathedral/classes/cthbishop.json)
+- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/cathedral.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/cathedral.json>)
+- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/courtyard.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/courtyard.json>)
+- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/pavilion.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/pavilion.json>)
+
+改动记录：
+- 爱丽丝 `special` 从 `true` 改为 `false`，允许进入常规英雄池；原英雄文件未直接重写特长，新增效果继续由 `extra creatures specialty` 覆盖层提供。
+- 爱丽丝开场为己方全体释放魔法神镜，配置持续 `50` 回合。
+- 爱丽丝强化女战士/女武神、彩虹女神/极光女神、女祭司/女术士及其升级形态：生命 `+20`、攻击 `+20`、防御 `+20`、杀伤 `+10`、速度 `+3`。
+- 主教职业的 `scholar` 学习权重从 `0` 改为 `1`，该职业现在可以随机学到学术。
+- 加布里埃尔增加敌方幸运 `-2`，并开场为己方全体释放吸血鬼化，持续 `50` 回合。
+- 亚撒利雅所有已列入的蛇类目标，攻防成长参数从 `2` 提高到 `9`，固定速度加成从 `+1` 提高到 `+2`；覆盖沙蛇、飞蛇、娜迦、各模组羽蛇、海蛇与利维坦等目标及升级形态。
+
+注意：
+- 亚撒利雅描述在该提交中仍写“速度+1”，与实际 `val: 2` 不一致，属于待同步文本。
+
+#### 埃莉娜与英雄可用版隐形
+
+来源提交：`f51e1724`（2026-08-02）
+
+涉及文件：
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft16_arina.json)
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/spells/heroBansheeInvisibility.json](Hero3Expasion1.83/Mods/Fairy/content/config/fairy/spells/heroBansheeInvisibility.json)
+- [Hero3Expasion1.83/Mods/Fairy/mod.json](Hero3Expasion1.83/Mods/Fairy/mod.json)
+
+改动记录：
+- 埃莉娜法术书加入 `courtyard:deathGrasp` 和 `heroBansheeInvisibility`。
+- 埃莉娜保留外交特长，并注册 `specialSlowPav` 的英雄法术加成。
+- 新增英雄可用版“隐形”：可选择任意非战争机器单位，持续 `3` 回合或直到主动攻击。
+- 隐形期间配置 `INVINCIBLE`、近战/远程伤害减免 `100%`、法术伤害减免 `100%`、攻击不受反击。
+- `Fairy/mod.json` 已将新法术文件加入 `spells` 加载列表。
+
+#### 叶卡捷琳娜外交与开场祈祷
+
+来源提交：`0fdf143e`（2026-08-09）
+
+涉及文件：
+- [Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json](Hero3Expasion1.83/Mods/Courtyard/Content/config/courtyard/heroes/Ekaterina.json)
+
+改动记录：
+- 增加 `WANDERING_CREATURES_JOIN_BONUS`，基础值为 `4`。
+- 开场群体祈祷持续时间从 `10` 提高到 `50` 回合。
+- 原有和平之歌和祈祷相关特长配置保留。
+
+#### 诺曼的毁灭之球效果
+
+来源提交：`12be5fe6`、`ae2a7980`（2026-09-14）
+
+涉及文件：
+- [Hero3Expasion1.83/Mods/Deathvalley/Content/config/deathvalley/heroes/M_norman.json](Hero3Expasion1.83/Mods/Deathvalley/Content/config/deathvalley/heroes/M_norman.json)
+
+改动记录：
+- 在原丧心病狂法术特长上增加两组 `NEGATE_ALL_NATURAL_IMMUNITIES`，分别覆盖战场普通免疫和敌方英雄侧免疫。
+- 增加战场范围的 `MAGIC_RESISTANCE = 0` 与 `SPELL_RESISTANCE_AURA = 0`，按 `INDEPENDENT_MIN` 清除魔法抗性和抗魔光环。
+- 特长名称更新为“毁灭丧心”，描述明确不能突破法术自身的 `absolute` 绝对目标限制。
+
+#### 加布里埃尔追加圣灵佑佐
+
+来源提交：`7fb29ac2`（2026-09-20）
+
+涉及文件：
+- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/cathedral.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/cathedral.json>)
+
+改动记录：
+- 在原全体吸血鬼化基础上追加开场全体圣灵佑佐，两种法术均持续 `50` 回合。
+- 增加随英雄等级和兵种等级成长的圣灵佑佐伤害加成，参数为 `GENERAL_DAMAGE_PREMY val: 10`。
+- 保留敌方幸运 `-2`，特长名称更新为“圣灵血鬼”。
+
+#### 艾格瑞奈尔多次施法
+
+来源提交：`5f3feea3`（2026-09-20）
+
+涉及文件：
+- [Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/S_Aegrenal.json](Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/S_Aegrenal.json)
+
+改动记录：
+- `special` 从 `true` 改为 `false`，允许进入常规英雄池。
+- 开场吟唱持续时间从 `7` 提高到 `17` 回合。
+- 增加 `HERO_SPELL_CASTS_PER_COMBAT_TURN +1`，使基础每回合施法次数提高到 `2`。
+- 再增加按英雄等级成长的同类 bonus，`stepSize: 15`，每满 `15` 级再增加一次施法次数，不设上限。
+- 描述同步为“每回合可施放2次魔法，此后每满15级再增加1次”。
+
+### 法术与二级技能
+
+#### 四系御魔专家效果
+
+来源提交：`7e77dfde`（2026-08-03）
+
+涉及文件：
+- [Hero3Expasion1.83/config/spells/timed.json](Hero3Expasion1.83/config/spells/timed.json)
+
+改动记录：
+- 御火、御水、御土、御气四种法术的专家级法术伤害减免从 `50%` 提高到 `90%`。
+- 专家级范围保持 `X`，即群体施放。
+
+#### 吟唱法术
+
+来源提交：`5f3feea3`（2026-09-20）
+
+涉及文件：
+- [Hero3Expasion1.83/Mods/preserve/content/config/preserve/NewOldSpells/choir.json](Hero3Expasion1.83/Mods/preserve/content/config/preserve/NewOldSpells/choir.json)
+
+改动记录：
+- 各熟练度效果统一迁移到 `battleEffects -> core:timed`。
+- 吟唱现在永久增加己方全体士气 `+1`、幸运 `+1`，并通过 `CHANGES_SPELL_COST_FOR_ALLY` 使己方英雄施法消耗固定减少 `5` 点。
+- `cumulative: false`，同一效果不重复叠加。
+- 各熟练度描述已同步；高级原先描述的士气/幸运 `+2/+3` 被统一为实际配置的 `+1`。
+
+#### 魔力技能
+
+来源提交：`659ed492`（2026-09-20）
+
+涉及文件：
+- [Hero3Expasion1.83/Mods/tidesOfWar/content/config/skills/sorcery.json](Hero3Expasion1.83/Mods/tidesOfWar/content/config/skills/sorcery.json)
+
+改动记录：
+- 初级魔力保持法术伤害 `+10%`。
+- 中级魔力从 `+20%` 提高到 `+25%`。
+- 高级魔力从 `+30%` 提高到 `+50%`。
+- 数值与中文描述已同步。
+
+### 引擎、AI 与开发工具
+
+#### BattleAI 法术抑制修复
+
+来源提交：`0ac2867b`（2026-08-26）
+
+涉及文件：
+- [Hero3Expasion1.83/AI/BattleAI.dll](Hero3Expasion1.83/AI/BattleAI.dll)
+- [Hero3Expasion1.83/AI/BattleAI.dll.bak](Hero3Expasion1.83/AI/BattleAI.dll.bak)
+
+改动记录：
+- 替换 `BattleAI.dll`，用于处理 AI 在法术等级抑制条件下反复选择不可释放法术而卡住的问题。
+- 同时保留替换前的 DLL 为 `BattleAI.dll.bak`。
+- 仓库只保存了编译后二进制；对应 VCMI 源码位于被 `.gitignore` 排除的 `temp` 工作目录，不在本仓库提交历史内。
+
+#### VS Code 搜索范围与技能命令文档
+
+来源提交：`0be8ded1`（2026-08-25）、`807c7503`（2026-09-07）
+
+涉及文件：
+- [.vscode/settings.json](.vscode/settings.json)
+- [vcmiskill用法.md](vcmiskill用法.md)
+
+改动记录：
+- 设置 `search.useIgnoreFiles: false`，VS Code 搜索不再自动跳过被 `.gitignore` 排除的文件。
+- 文档补充 `vcmiskill firstAid 1` 示例，并说明等级参数：`1` 初级、`2` 中级、`3` 高级、`0` 删除。
+- 文档补充 `!cheaters`，用于检查当前游戏是否已被标记为作弊状态。
+
+### 作弊配置、存档与仓库维护
+
+来源提交：`986a4991`（2026-08-25）
+
+涉及文件：
+- [.gitignore](.gitignore)
+- [Hero3Expasion1.83/config/cheats.json](Hero3Expasion1.83/config/cheats.json)
+- `My Games/vcmi/Saves/`
+
+改动记录：
+- 将 `/temp/` 加入 `.gitignore`，VCMI 临时源码和编译工作目录不再进入主仓库提交。
+- 将 `vcmiskill` 从 `heroTargetedCheats` 移到 `localCheats`，使技能修改命令不再按英雄目标作弊命令处理。
+- 清理一批旧自动存档，并补充当前测试用的快速存档、战役分关存档和修改前备份存档。
+
+### 待验证与已知不一致
+
+- 亚撒利雅当前实际速度加成为 `+2`，描述仍写 `+1`。
+- `specialSlowPav` 和部分由生物能力改作英雄法术的配置，是否完整执行仍以实战测试为准。
+- BattleAI 修复需要确认游戏实际加载的是新 `BattleAI.dll`；若后续替换整套 VCMI 文件，应避免把该 DLL 覆盖回旧版。
+- 自定义 `vcmiskill` 配置是否完全避免作弊标记，需要分别验证本地命令执行和存档载入后的状态。
+
 ## 全局规则与成长系统
 
 ### 当前未提交改动：英雄技能槽与升级候选
