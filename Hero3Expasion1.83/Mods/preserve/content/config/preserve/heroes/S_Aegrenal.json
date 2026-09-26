@@ -81,13 +81,15 @@
 				{
 					"type" : "HERO_SPELL_CASTS_PER_COMBAT_TURN",
 					"val" : 1,
-					"valueType" : "ADDITIVE_VALUE"
+					"valueType" : "ADDITIVE_VALUE",
+					"stacking" : "aegrenalExtraCast"
 				},
 				"levelCast" :
 				{
 					"type" : "HERO_SPELL_CASTS_PER_COMBAT_TURN",
 					"val" : 1,
 					"valueType" : "ADDITIVE_VALUE",
+					"stacking" : "aegrenalLevelCast",
 					"updater" : { "type" : "TIMES_HERO_LEVEL", "stepSize" : 15 }
 				}
 			}
