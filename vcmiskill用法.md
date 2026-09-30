@@ -70,5 +70,48 @@ vcmiskill demonicBlood  ：恶魔血统 / 地狱的血统（扩展技能，来�
 vcmiskill hexes  ：巫蛊术（扩展技能，来自 `Mods\tidesOfWar`）
 vcmiskill magicFader ：法术抑制（扩展技能，来自 `Mods\tidesOfWar`）
 vcmiskill runes ：符文学（扩展技能，来自 `Mods\hota\Mods\bulwark`）
+vcmiskill interference 干扰术
+
 
 注意：`core:xxx` 形式的条目通常是 mod 对基础技能的覆盖或重定义，不是新的 `vcmiskill` 命令关键字。实际可用的基础技能 ID 仍然是 `archery`、`luck`、`leadership`、`sorcery` 等。
+
+
+
+“干扰术”的完整技能 ID 是：
+
+```text
+hota.interference:interference
+```
+
+作弊命令建议使用：
+
+```text
+vcmiskill hota.interference:interference 1
+vcmiskill hota.interference:interference 2
+vcmiskill hota.interference:interference 3
+```
+
+其中 `1/2/3` 分别是初级、中级、高级，`0` 删除技能。定义位于 [interference.json](D:/coding/heros3exp/Hero3Expasion1.83/Mods/hota/Mods/interference/content/config/hotaInterference/interference.json:2)。
+
+
+
+1. 扩展技能最好记录完整 ID：
+
+```text
+deathvalley:dv_necromancy
+tartarus:demonicBlood
+tidesofwar:hexes
+tidesofwar:intimidation
+tidesofwar:magicFader
+hota.bulwark:runes
+hota.interference:interference
+```
+
+2. 还缺少批量命令：
+
+```text
+vcmiskill every      # 所有已注册技能升至高级
+vcmiskill every 0    # 删除所有二级技能
+```
+
+命令解析实现见 [PlayerMessageProcessor.cpp](D:/coding/heros3exp/temp/vcmi-source-1.7.4/server/processors/PlayerMessageProcessor.cpp:709)。它支持带命名空间的完整技能 ID；使用完整 ID 最稳妥。

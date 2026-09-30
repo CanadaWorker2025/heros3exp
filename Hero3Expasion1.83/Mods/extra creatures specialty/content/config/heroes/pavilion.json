@@ -105,24 +105,24 @@
 					"val": 2,
 					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "naga", "includeUpgrades": true }]
 				},
-				"nagaOfficerAttack": {
+				"medusaAttack": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.attack",
 					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
-					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "twArcane06", "includeUpgrades": true }]
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "medusa", "includeUpgrades": true }]
 				},
-				"nagaOfficerDefence": {
+				"medusaDefence": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "primarySkill.defence",
 					"val": 9,
 					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
-					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "twArcane06", "includeUpgrades": true }]
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "medusa", "includeUpgrades": true }]
 				},
-				"nagaOfficerSpeed": {
+				"medusaSpeed": {
 					"type": "STACKS_SPEED",
 					"val": 2,
-					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "twArcane06", "includeUpgrades": true }]
+					"limiters": [{ "type": "CREATURE_TYPE_LIMITER", "creature": "medusa", "includeUpgrades": true }]
 				},
 				"cathedralCouatlAttack": {
 					"type": "PRIMARY_SKILL",
@@ -224,7 +224,7 @@
         "texts": {
             "specialty": {
                 "name": "沙蛇",
-                "description": "每对应生物等级提高所有蛇类生物及其升级形态20%的攻击力和防御力。速度+1。"
+                "description": "每对应生物等级提高所有蛇类生物及其升级形态20%的攻击力和防御力。速度+2。"
             }
         }
 	},

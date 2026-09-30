@@ -387,6 +387,7 @@
 当前记录：
 - 亚撒利雅的“沙蛇”特长不再只覆盖 `wadjet`。
 - 已在 extra creatures specialty 覆盖层中扩展为所有蛇类/蛇形相关生物及升级形态。
+- 原“蛇妖礼官”独立组与娜迦升级链重复，现改为 `medusa` 并启用 `includeUpgrades`，覆盖美杜莎和美杜莎女王。
 - 每个目标生物获得：
 - 攻击成长：`PRIMARY_SKILL primarySkill.attack`，`val: 2`，`updater: TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL`
 - 防御成长：`PRIMARY_SKILL primarySkill.defence`，`val: 2`，`updater: TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL`
