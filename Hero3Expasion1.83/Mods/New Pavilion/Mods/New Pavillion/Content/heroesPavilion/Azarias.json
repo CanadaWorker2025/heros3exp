@@ -54,6 +54,18 @@
 				"skill" : "luck"
 			}
 		],
+
+		// 蛇类加成目标清单（实际扩展 bonus 定义在 extra creatures specialty/config/heroes/pavilion.json）。
+		// 每组均由基础生物 ID 配合 includeUpgrades: true，同时覆盖对应升级形态：
+		// 1. 沙蛇：new pavilion.new pavillion:wadjet -> 剧毒沙蛇：new pavilion.new pavillion:venomousWadjet
+		// 2. 飞龙蝇：core:serpentFly -> 龙蝇：core:dragonFly
+		// 3. 蛇妖：core:naga -> 蛇妖女王：core:nagaQueen
+		// 4. 美杜莎：core:medusa -> 美杜莎女王：core:medusaQueen
+		// 5. 飞蛇：cathedral:cthCouatl -> 血翼飞蛇：cathedral:cthBloodyCouatl
+		// 6. 风蛇：tidesofwar:mdtCouatl -> 风蛇王：tidesofwar:mdtQuetzalcouatl
+		// 7. 海蛇：hota.cove:seaserpent -> 深渊海蛇：hota.cove:haspid
+		// 8. 利维坦：haven:havC13 -> 帝王利维坦：haven:havC14
+		// 9. 羽蛇：hota.factory:hotaCouatl -> 绯红羽蛇：hota.factory:hotaCoutalUp
 		"specialty" : {
 			"creature" : "wadjet"
 		}
