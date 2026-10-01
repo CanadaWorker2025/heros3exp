@@ -154,8 +154,8 @@
        - resistance（抵抗）
        - firstAid（急救）
 
-18. vcmiteleport
-    功能：传送
+18. vcmiteleport x y z
+    功能：传送，地上z=0，地下z=1，ctrl显示坐标
     效果：英雄传送到指定位置
 
 19. vcmigrail / nwcarchitect
