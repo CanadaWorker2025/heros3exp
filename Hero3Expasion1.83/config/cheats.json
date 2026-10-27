@@ -3,7 +3,9 @@
 	"localCheats" : {
 		"color" :             [                            "vcmicolor",       "nwcphisherprice"                                                      ],
 		"gray" :              [                            "vcmigray"                                                                                 ],
-		"skill" :             [                            "vcmiskill"                                                                                ]
+		"skill" :             [                            "vcmiskill"                                                                                ],
+		"giveArtifacts" :     [ "vcmiforgeofnoldorking",   "vcmiartifacts"                                                                           ],
+		"victory" :           [ "vcmisilmaril",            "vcmiwin",         "nwcredpill",                                    "nwctrojanrabbit"     ]
     },
 	"townTargetedCheats" : {
 		"buildTown" :         [ "vcmiarmenelos",           "vcmibuild",       "nwczion",                 "nwccoruscant",       "nwconlyamodel"       ]
@@ -11,7 +13,6 @@
 	"playerTargetedCheats" : {
 		"resources" :         [ "vcmiformenos",            "vcmiresources",   "nwctheconstruct",         "nwcwatto",           "nwcshrubbery"        ],
 		"defeat" :            [ "vcmimelkor",              "vcmilose",        "nwcbluepill",                                   "nwcsirrobin"         ],
-		"victory" :           [ "vcmisilmaril",            "vcmiwin",         "nwcredpill",                                    "nwctrojanrabbit"     ],
 		"mapReveal" :         [ "vcmieagles",              "vcmimap",         "nwcwhatisthematrix",      "nwcrevealourselves", "nwcgeneraldirection" ],
 		"mapHide" :           [ "vcmiungoliant",           "vcmihidemap",     "nwcignoranceisbliss"                                                  ],
 		"revealPuzzle" :      [                            "vcmiobelisk",     "nwcoracle",               "nwcprophecy",        "nwcalreadygotone"    ]
@@ -27,7 +28,6 @@
 		"giveMachines" :      [ "vcminoldor",              "vcmimachines",    "nwclotsofguns",           "nwcr2d2",            "nwcantioch"          ],
 		"levelup" :           [ "vcmiglorfindel",          "vcmilevel",       "nwcneo",                  "nwcquigon",          "nwcigotbetter"       ],
 		"movement" :          [ "vcminahar",               "vcmimove",        "nwcnebuchadnezzar",       "nwcpodracer",        "nwccoconuts"         ],
-		"giveArtifacts" :     [ "vcmiforgeofnoldorking",   "vcmiartifacts"                                                                           ],
 		"experience" :        [ "vcmiolorin",              "vcmiexp"                                                                                 ],
 		"maxLuck" :           [                            "vcmiluck",        "nwcfollowthewhiterabbit",                       "nwccastleanthrax"    ],
 		"maxMorale" :         [                            "vcmimorale",      "nwcmorpheus",                                   "nwcmuchrejoicing"    ],

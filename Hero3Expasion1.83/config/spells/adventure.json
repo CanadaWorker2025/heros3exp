@@ -254,7 +254,18 @@
 					"objects" : {
 						"artifact" : true,
 						"hero" : true,
-						"town" : true
+						"town" : true,
+						"mercenaryCamp" : true,
+						"marlettoTower" : true,
+						"starAxis" : true,
+						"gardenOfRevelation" : true,
+						"arena" : true,
+						"libraryOfEnlightenment" : true,
+						"schoolOfWar" : true,
+						"schoolOfMagic" : true,
+						"scholar" : true,
+						"hota.mapobjects:colosseumOfTheMagi" : true,
+						"fairy:divinationHut" : true
 					}
 				}
 			}
