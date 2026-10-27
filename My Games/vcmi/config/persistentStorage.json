@@ -124,34 +124,138 @@
 		]
 	},
 	"completedCampaigns" : {
-		"DATA/GOOD1":true,
-		"DATA/EVIL1":true,
-		"DATA/GOOD2":true,
-		"DATA/NEUTRAL1":true,
-		"DATA/EVIL2":true,
-		"DATA/GOOD3":true,
-		"DATA/SECRET1":true,
-		"DATA/AB":true,
-		"DATA/BLOOD":true,
-		"DATA/SLAYER":true,
-		"DATA/FESTIVAL":true,
-		"DATA/FIRE":true,
-		"DATA/FOOL":true,
-		"DATA/GEM" : true,
-		"DATA/GELU" : true,
+		"DATA/AB" : true,
+		"DATA/BLOOD" : true,
 		"DATA/CRAG" : true,
-		"DATA/YOG" : true,
-		"DATA/SANDRO" : true,
+		"DATA/EVIL1" : true,
+		"DATA/EVIL2" : true,
+		"DATA/FESTIVAL" : true,
 		"DATA/FINAL" : true,
-		"DATA/SECRET" : true
+		"DATA/FIRE" : true,
+		"DATA/FOOL" : true,
+		"DATA/GELU" : true,
+		"DATA/GEM" : true,
+		"DATA/GOOD1" : true,
+		"DATA/GOOD2" : true,
+		"DATA/GOOD3" : true,
+		"DATA/NEUTRAL1" : true,
+		"DATA/SANDRO" : true,
+		"DATA/SECRET" : true,
+		"DATA/SECRET1" : true,
+		"DATA/SLAYER" : true,
+		"DATA/YOG" : true,
+		"MAPS/EXPANSION/CAMPAIGN-1" : true,
+		"MAPS/EXPANSION/CAMPAIGN-2" : true,
+		"MAPS/EXPANSION/CAMPAIGN-3" : true,
+		"MAPS/EXPANSION/CAMPAIGN-4" : true,
+		"MAPS/EXPANSION/CAMPAIGN-5" : true
+	},
+	"highscore" : {
+		"campaign" : [
+			{
+				"campaignName" : "暗影之心",
+				"datetime" : "2026-10-17 23:51",
+				"days" : 74,
+				"player" : "LSF",
+				"points" : 2351,
+				"posFlag" : null,
+				"statistic" : null
+			},
+			{
+				"campaignName" : "搁浅",
+				"datetime" : "2026-07-05 18:36",
+				"days" : 131,
+				"player" : "LSF",
+				"points" : 2322,
+				"posFlag" : null,
+				"statistic" : null
+			},
+			{
+				"campaignName" : "安魂曲",
+				"datetime" : "2026-09-14 01:24",
+				"days" : 84,
+				"player" : "LSF",
+				"points" : 2279,
+				"posFlag" : null,
+				"statistic" : null
+			},
+			{
+				"campaignName" : "和平之歌",
+				"datetime" : "2026-06-28 20:35",
+				"days" : 304,
+				"player" : "LSF",
+				"points" : 2279,
+				"posFlag" : null,
+				"statistic" : null
+			},
+			{
+				"campaignName" : "搁浅",
+				"datetime" : "2026-07-05 01:27",
+				"days" : 126,
+				"player" : "LSF",
+				"points" : 2272,
+				"posFlag" : null,
+				"statistic" : null
+			},
+			{
+				"campaignName" : "逐光而行",
+				"datetime" : "2026-08-25 01:13",
+				"days" : 151,
+				"player" : "LSF",
+				"points" : 2267,
+				"posFlag" : null,
+				"statistic" : null
+			},
+			{
+				"campaignName" : "逐光而行",
+				"datetime" : "2026-07-26 23:06",
+				"days" : 152,
+				"player" : "LSF",
+				"points" : 2267,
+				"posFlag" : null,
+				"statistic" : null
+			},
+			{
+				"campaignName" : "和平之歌",
+				"datetime" : "2026-09-13 01:59",
+				"days" : 238,
+				"player" : "LSF",
+				"points" : 2219,
+				"posFlag" : null,
+				"statistic" : null
+			},
+			{
+				"campaignName" : "作弊者！",
+				"datetime" : "2026-06-06 23:11",
+				"days" : 117,
+				"player" : "玩家",
+				"points" : 0,
+				"posFlag" : null,
+				"statistic" : null
+			}
+		]
+	},
+	"quickSpell" : {
+		"0" : "sacrifice",
+		"1" : "blind",
+		"10" : "",
+		"11" : "",
+		"2" : "dragonStrength",
+		"3" : "earthquake",
+		"4" : "chainLightning",
+		"5" : "resurrection",
+		"6" : "animateDead",
+		"7" : "clone",
+		"8" : "summonGhost",
+		"9" : "mdtVampirism"
 	},
 	"rmg" : {
 		"rmg" : {
 			"lastSettings" : {
-				"compOnlyPlayerCount" : -1,
+				"compOnlyPlayerCount" : 7,
 				"compOnlyTeamCount" : -1,
-				"height" : 144,
-				"humanOrCpuPlayerCount" : 5,
+				"height" : 216,
+				"humanOrCpuPlayerCount" : 1,
 				"levels" : 2,
 				"monsterStrength" : -2,
 				"roads" : [
@@ -160,8 +264,8 @@
 					"core:cobblestoneRoad"
 				],
 				"teamCount" : -1,
-				"waterContent" : 0,
-				"width" : 144
+				"waterContent" : -1,
+				"width" : 216
 			}
 		}
 	},

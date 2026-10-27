@@ -1,11 +1,13 @@
 {
 	"adventure" : {
 		"enemyMoveTime" : 25,
-		"heroMoveTime" : 50,
-		"scrollSpeedPixels" : 1200
+		"heroMoveTime" : 25,
+		"quickCombat" : true,
+		"scrollSpeedPixels" : 4800
 	},
 	"battle" : {
 		"cellBorders" : true,
+		"enableAutocombatSpells" : false,
 		"showHealthBar" : true,
 		"speedFactor" : 6
 	},
@@ -14,27 +16,41 @@
 		"skipBattleIntroMusic" : true
 	},
 	"general" : {
+		"audioMuteFocus" : true,
+		"autosaveCountLimit" : 20,
+		"enableDiscordRichPresence" : false,
 		"language" : "chinese",
 		"lastDifficulty" : 4,
-		"lastMap" : "MAPS/Good to Go",
-		"lastSave" : "SAVES/AUTOSAVE/2026-05-17_10-29_臣服/5",
+		"lastKindomInterface" : 1,
+		"lastMap" : "MAPS/[HotA] A New Day Tomorrow",
+		"lastSave" : "SAVES/QUICKSAVE",
 		"lastSettingsTab" : 2,
 		"multiPlayerNames" : [
 			"3"
 		],
-		"playerName" : "玩家"
+		"music" : 8,
+		"playerName" : "玩家",
+		"saveBeforeVisit" : true,
+		"sound" : 9
 	},
 	"launcher" : {
-		"setupCompleted" : true
+		"autoCheckRepositories" : false,
+		"defaultRepositoryEnabled" : false,
+		"setupCompleted" : true,
+		"updateOnStartup" : false
+	},
+	"lobby" : {
+		"port" : 3029
 	},
 	"video" : {
 		"fullscreen" : false,
 		"performanceOverlay" : {
 		},
 		"resolution" : {
-			"height" : 1440,
+			"height" : 1009,
 			"scaling" : 150,
 			"width" : 1920
-		}
+		},
+		"showIntro" : false
 	}
 }
