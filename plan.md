@@ -31,7 +31,30 @@ Implementation notes:
 
 ## Step 2: Right-Click Details
 
-Status: pending.
+Status: first implementation ready for compilation; runtime/visual validation pending.
+
+Implemented in the client only (no save/network format changes):
+
+- A bounded 520px scrolling popup reads town guild spells, university skills and CRewardableObject runtime configuration, including Pandora boxes, chests, scholars, witch huts and stat buildings.
+- Town spell count is limited by faction guild level and current library capacity; built and unbuilt guild levels are labelled separately.
+- Seer tasks show requirements, completion/deadline and reward options. Item removals and guards have separate sections.
+- Configured options are displayed even when the current hero does not qualify; conditions, selection mode and reset period are labelled. These are configured rewards, not a promise that already exhausted rewards can be claimed again.
+- Unknown special limiter fields and effects are explicitly marked as requiring the visit dialog; first version is not a full interpreter of every mod-specific effect.
+- Adventure options includes a default-on detailedObjectPreview checkbox. Missing setting also defaults on for old installations.
+- Visibility is checked through the player callback; multiple-human-player games fall back to the old popup.
+- English and Chinese localization included. Existing local arrow-generator/image edits were present before this step and were left untouched.
+- JSON syntax, unique keys, matching translation keys and diff whitespace checks passed. No local compiler was available; no compilation, in-game testing or cloud build was performed.
+- After compilation deploy the client plus updated settings schema/widget JSON and translation files together; preserve custom game configuration when copying resources.
+
+Acceptance checks before release:
+
+1. Toggle off/on and confirm original town/hero/monster popups remain available when disabled or unsupported.
+2. Inspect visible friendly/enemy towns, different guild levels and Tower library; compare each displayed spell with actual guild contents.
+3. Inspect telescope Seer hut before accepting, after accepting and after completing; compare requirements/reward and ensure quest state does not change on right-click.
+4. Inspect chest choices, guarded Pandora box, scholar, witch hut, university and previously visited stat buildings with/without a selected hero.
+5. Repeatedly open/scroll/close large popups at 800x600 and higher resolutions; confirm no clipping or setting-row overlap.
+6. Compare actual rewards and subsequent randomized outcomes against a control save with no preview clicks; confirm no reward/visitor/resource/RNG changes.
+7. Test fogged tiles and multiple-human-player games; expanded preview must not activate.
 
 - Add a separate setting; preview visible objects without Scouting by default.
 - Town: actual generated guild spells, separate built/future guild levels, exclude reserve spells beyond capacity.
