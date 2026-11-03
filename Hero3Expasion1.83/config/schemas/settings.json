@@ -463,6 +463,7 @@
 					"type" : "boolean",
 					"default" : false
 				},
+				"detailedObjectPreview": {"type": "boolean", "default": true},
 				"rightButtonDrag" : {
 					"type" : "boolean",
 					"default" : false
