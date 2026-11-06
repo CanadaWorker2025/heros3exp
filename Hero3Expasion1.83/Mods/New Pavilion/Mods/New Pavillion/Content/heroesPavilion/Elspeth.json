@@ -50,6 +50,29 @@
 				"skill" : "pathfinding"
 			}
 		],
+		// Permanently learned fire spells; unlike SPELLS_OF_SCHOOL these can be taught through Scholar.
+		"spellbook" : [
+			"core:armageddon",
+			"core:berserk",
+			"core:blind",
+			"core:bloodlust",
+			"core:curse",
+			"core:fireElemental",
+			"core:fireShield",
+			"core:fireWall",
+			"core:fireball",
+			"core:frenzy",
+			"core:inferno",
+			"core:landMine",
+			"core:magicArrow",
+			"core:misfortune",
+			"core:protectFire",
+			"core:sacrifice",
+			"core:slayer",
+			"core:visions",
+			"newoldspells+:dragonStrength",
+			"newoldspells+:vigour"
+		],
 		"specialty" :
 		{
 			"bonuses" : {

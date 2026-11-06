@@ -263,9 +263,7 @@
 						"libraryOfEnlightenment" : true,
 						"schoolOfWar" : true,
 						"schoolOfMagic" : true,
-						"scholar" : true,
-						"hota.mapobjects:colosseumOfTheMagi" : true,
-						"fairy:divinationHut" : true
+						"scholar" : true
 					}
 				}
 			}

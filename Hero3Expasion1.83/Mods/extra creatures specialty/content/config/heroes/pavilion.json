@@ -1,4 +1,17 @@
 {
+	"new pavilion.new pavillion:elspeth": {
+		"spellbook#override": [
+			"core:armageddon", "core:berserk", "core:blind", "core:bloodlust",
+			"core:curse", "core:fireElemental", "core:fireShield", "core:fireWall",
+			"core:fireball", "core:frenzy", "core:inferno", "core:landMine",
+			"core:magicArrow", "core:misfortune", "core:protectFire", "core:sacrifice",
+			"core:slayer", "core:visions",
+			"asylum:summonJester", "cathedral:confessionSong", "cathedral:divineRevenge",
+			"courtyard:immolationCurse", "courtyard:quickStrikes",
+			"newoldspells+:dragonStrength", "newoldspells+:vigour",
+			"reinforcements:reinforcements", "tidesofwar:mdtAuraOfPower"
+		]
+	},
 
 	"new pavilion.new pavillion:varn": {
         "texts": {

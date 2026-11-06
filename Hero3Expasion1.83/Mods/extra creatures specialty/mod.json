@@ -5,7 +5,7 @@
 	"version" : "0.01",
 	"contact" : "",
 	"modType" : "Mechanics",
-	"depends":["asylum","bastille","cathedral","Courtyard","Deathvalley","Fairy","haven","hota.cove","hota.Factory","hota.bulwark","New Pavilion.New Pavillion","preserve","tidesOfWar","tartarus","hota.heroes","hota.cannon","reinforcements","ensrick-portraits","combineGrail","NewOldSpells+"],
+	"depends":["asylum","bastille","cathedral","Courtyard","Deathvalley","Fairy","haven","hota.cove","hota.Factory","hota.bulwark","hota.mapobjects","New Pavilion.New Pavillion","preserve","tidesOfWar","tartarus","hota.heroes","hota.cannon","reinforcements","ensrick-portraits","combineGrail","NewOldSpells+"],
 	"chinese":
 	{
 		"name": "特长修改（必须先激活）",
@@ -21,6 +21,7 @@
 	"spells":
 	[
 		"config/spells/spellsNew.json",
+		"config/spells/viewAirStatBuildings.json",
 		"config/spells/sacrificeSelfkill.json",
 		"config/spells/summonBoneHook.json"
 	],

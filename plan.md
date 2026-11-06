@@ -84,7 +84,7 @@ Status: compiled and deployed on 2026-11-06 (83cda461f / Actions 42177684899); i
 
 ## Scholar Experience Instruction
 
-Status: source/resources implemented (2026-11-06); not compiled or deployed.
+Status: compiled and deployed with 67cc593 / Actions 42180943003 (2026-11-06); in-game query-stack verification pending.
 
 - Same-owner heroes only; strictly higher-level teacher, using the teacher's actual Scholar mastery.
 - Top up student total XP to floor(teacher total XP * 20/40/80%), respecting level caps.

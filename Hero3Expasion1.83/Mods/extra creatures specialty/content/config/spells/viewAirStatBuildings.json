@@ -1,0 +1,14 @@
+{
+	"core:viewAir": {
+		"levels": {
+			"expert": {
+				"adventureEffect": {
+					"objects": {
+						"hota.mapobjects:colosseumOfTheMagi": true,
+						"fairy:divinationHut": true
+					}
+				}
+			}
+		}
+	}
+}
