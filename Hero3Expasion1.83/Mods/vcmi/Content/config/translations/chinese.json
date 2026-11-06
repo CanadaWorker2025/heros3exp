@@ -1,4 +1,5 @@
 {
+	"vcmi.scholarExperience.learned": "%s 接受 %s 的学术指导，获得 %d 点经验。",
 	"vcmi.objectPreview.setting.hover": "右键详细预览",
 	"vcmi.objectPreview.setting.help": "单人游戏中，右键查看已可见地图对象的详细信息，不改变地图或任务状态。",
 	"vcmi.objectPreview.visited": "当前英雄或玩家已访问；下列内容为配置的奖励选项，不代表仍可领取。",

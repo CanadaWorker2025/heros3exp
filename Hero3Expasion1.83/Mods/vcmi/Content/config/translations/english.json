@@ -1,4 +1,5 @@
 {
+	"vcmi.scholarExperience.learned": "%s received instruction from %s and gained %d experience.",
 	"vcmi.objectPreview.setting.hover": "Detailed previews",
 	"vcmi.objectPreview.setting.help": "Show read-only details for visible map objects in single-player games.",
 	"vcmi.objectPreview.visited": "Already visited by the current hero/player; rewards below are configured options, not a claim guarantee.",

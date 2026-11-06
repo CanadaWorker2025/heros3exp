@@ -68,7 +68,7 @@ Acceptance checks before release:
 
 ## Step 3: Daily Backpack Artifact Bonus
 
-Status: source and Viola configuration implemented (2026-11-05); not compiled or deployed.
+Status: compiled and deployed on 2026-11-06 (83cda461f / Actions 42177684899); in-game verification pending.
 
 - The original nearby-map-object proposal is superseded by direct backpack grants.
 - Register a mod-defined `DAILY_RANDOM_ARTIFACT` bonus; do not renumber built-in bonuses.
@@ -79,8 +79,20 @@ Status: source and Viola configuration implemented (2026-11-05); not compiled or
 - Snapshot counts, enforce a safety bound and stable recipient order; do not grant on load/recruitment/movement.
 - Viola's existing hypnosis specialty is preserved in the active specialty override layer.
 - Old initialized heroes need a separately reviewed migration or a new map; loading alone does not add the bonus.
-- Local source/configuration checks passed. C++ policy checks are wired into x64 CI but not yet run.
-- Remaining: full engine compilation and in-game save/load, backpack, scroll/combination and multiplayer verification.
+- Local source/configuration checks and CI C++ policy checks passed. Matching x64 binaries were deployed and hash-verified; existing mod data was preserved.
+- Remaining: in-game save/load, backpack, scroll/combination and multiplayer verification; no existing-save migration has been applied.
+
+## Scholar Experience Instruction
+
+Status: source/resources implemented (2026-11-06); not compiled or deployed.
+
+- Same-owner heroes only; strictly higher-level teacher, using the teacher's actual Scholar mastery.
+- Top up student total XP to floor(teacher total XP * 20/40/80%), respecting level caps.
+- Preserve native spell exchange; no spellbook/Wisdom requirement for XP and no extra XP multiplier.
+- Defer until exchange/town reward queries complete; include town garrison/visitor swaps.
+- Keep the original gain helper behavior for all existing callers; instruction grants hero XP only.
+- No persistent pair records or hero reinitialization; repeated meetings naturally top up only the difference.
+- Static checks passed. C++ math checks are registered with x64 CI; runtime query-stack verification remains pending.
 
 ## Delivery
 
