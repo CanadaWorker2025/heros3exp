@@ -66,18 +66,21 @@ Acceptance checks before release:
 - Test unchanged RNG, resources, quests and visitor state after repeated right clicks.
 - Review visibility and multiplayer access; deploy client/library/server consistently if interfaces change.
 
-## Step 3: Daily Nearby Artifact Bonus
+## Step 3: Daily Backpack Artifact Bonus
 
-Status: pending.
+Status: source and Viola configuration implemented (2026-11-05); not compiled or deployed.
 
-- Implement a documented new bonus with configurable artifact classes, radius and daily count.
-- Run on the authoritative server at new day, using game RNG and normal map-object creation/sync.
-- Default to one per hero per new day; no initialization-day award; initially skip embarked/garrisoned heroes.
-- Search a bounded set of reachable empty land tiles; skip if none exist.
-- Respect map bans; exclude Grail, war machines, combination results and special scenario artifacts by default.
-- Define stacking and prevent duplicate generation across save/load, ownership changes and movement.
-- Review serialization versioning before adding fields/enums; old-engine save compatibility is not assumed.
-- Test consecutive days, save/load, blocked terrain, multiplayer/RNG determinism and artifact pickup.
+- The original nearby-map-object proposal is superseded by direct backpack grants.
+- Register a mod-defined `DAILY_RANDOM_ARTIFACT` bonus; do not renumber built-in bonuses.
+- Run once at global new day after object updates; use existing `NewArtifact` sync.
+- Default to one per hero per new day from day 2, including garrisoned/embarked owned heroes.
+- Ignore artifact bans per the user's updated rule; include normal combinations and valid scrolls.
+- Exclude SPECIAL scenario items (ordinary scrolls excepted) and war machines; skip empty pools/full backpacks.
+- Snapshot counts, enforce a safety bound and stable recipient order; do not grant on load/recruitment/movement.
+- Viola's existing hypnosis specialty is preserved in the active specialty override layer.
+- Old initialized heroes need a separately reviewed migration or a new map; loading alone does not add the bonus.
+- Local source/configuration checks passed. C++ policy checks are wired into x64 CI but not yet run.
+- Remaining: full engine compilation and in-game save/load, backpack, scroll/combination and multiplayer verification.
 
 ## Delivery
 

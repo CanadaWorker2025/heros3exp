@@ -1802,13 +1802,18 @@
 					"subtype" : "spell.hypnotize",
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 10
+				},
+				"dailyRandomArtifact" : {
+					"type" : "extra creatures specialty:DAILY_RANDOM_ARTIFACT",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER"
 				}
 			}
 		},
 		"texts": {
             "specialty": {
                 "name": "蛊惑人心",
-                "description": "施放蛊惑人心时，当提升和目标生物等级相同个英雄等级时，可以多影响10%血量的单位。"
+                "description": "施放蛊惑人心时，当提升和目标生物等级相同个英雄等级时，可以多影响10%血量的单位。从第二天起，每个新日向背包获得1件随机宝物；不受地图宝物禁用列表限制，包含普通组合宝物与随机法术卷轴。排除引擎标记为SPECIAL的特殊类宝物（普通卷轴除外，包括圣杯、魔法书等）以及战争机器；背包满时当天跳过，不补发。此效果需要支持每日宝物特技的新引擎。"
 						}
 				}
 	},

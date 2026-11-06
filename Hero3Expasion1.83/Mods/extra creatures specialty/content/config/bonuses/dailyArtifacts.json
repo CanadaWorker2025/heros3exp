@@ -1,0 +1,8 @@
+{
+	"DAILY_RANDOM_ARTIFACT":
+	{
+		"hidden": true,
+		"blockDescriptionPropagation": true,
+		"description": "从第二天起，每天向英雄背包发放 ${val} 件随机宝物。需要支持此效果的引擎。"
+	}
+}

@@ -14,6 +14,10 @@
 			"config/translations/chinese.json"
 		]
 	},
+	"bonuses":
+	[
+		"config/bonuses/dailyArtifacts.json"
+	],
 	"spells":
 	[
 		"config/spells/spellsNew.json",
