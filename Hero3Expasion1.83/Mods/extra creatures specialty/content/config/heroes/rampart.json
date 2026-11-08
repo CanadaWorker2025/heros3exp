@@ -1,4 +1,69 @@
 {
+	"core:gem": {
+		"specialty": {
+			"secondary": "firstAid",
+			"bonuses": {
+				"doubleArmorerGrowth": {
+					"type": "GENERAL_DAMAGE_REDUCTION",
+					"subtype": "damageTypeAll",
+					"val": 20,
+					"valueType": "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType": "SECONDARY_SKILL",
+					"updater": "TIMES_HERO_LEVEL"
+				},
+				"armyRegeneration": {
+					"type": "HP_REGENERATION",
+					"val": 50,
+					"valueType": "BASE_NUMBER"
+				},
+				"regenerationPotion": {
+					"type": "SPELL",
+					"subtype": "courtyard:spell.regenerationPotion",
+					"val": 3
+				},
+				"weaponPoisonPotion": {
+					"type": "SPELL",
+					"subtype": "courtyard:spell.weaponPoisonPotion",
+					"val": 3
+				},
+				"dragonPotion": {
+					"type": "SPELL",
+					"subtype": "courtyard:spell.dragonPotion",
+					"val": 3
+				},
+				"toughnessPotion": {
+					"type": "SPELL",
+					"subtype": "courtyard:spell.toughnessPotion",
+					"val": 3
+				},
+				"etheralPotion": {
+					"type": "SPELL",
+					"subtype": "courtyard:spell.etheralPotion",
+					"val": 3
+				},
+				"immortalPotion": {
+					"type": "SPELL",
+					"subtype": "courtyard:spell.immortalPotion",
+					"val": 3
+				},
+				"icePotion": {
+					"type": "SPELL",
+					"subtype": "courtyard:spell.icePotion",
+					"val": 3
+				},
+				"invPotion": {
+					"type": "SPELL",
+					"subtype": "courtyard:spell.invPotion",
+					"val": 3
+				}
+			}
+		},
+		"texts": {
+			"specialty": {
+				"name": "钢板与急救"
+			}
+		}
+	},
 	"core:ufretin":{
         "texts": {
             "specialty": {
