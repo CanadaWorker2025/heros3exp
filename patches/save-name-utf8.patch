@@ -1,0 +1,77 @@
+diff --git a/client/lobby/SelectionTab.cpp b/client/lobby/SelectionTab.cpp
+index 96750f86e..3eef7ddbf 100644
+--- a/client/lobby/SelectionTab.cpp
++++ b/client/lobby/SelectionTab.cpp
+@@ -773,7 +773,7 @@ void SelectionTab::select(int position)
+ 	if(inputName && inputName->isActive())
+ 	{
+ 		auto filename = *CResourceHandler::get()->getResourceName(ResourcePath(curItems[py]->fileURI, EResType::SAVEGAME));
+-		inputName->setText(filename.stem().string());
++		inputName->setText(TextOperations::filesystemPathToUtf8(filename.stem()));
+ 	}
+ 
+ 	updateListItems();
+diff --git a/test/CMakeLists.txt b/test/CMakeLists.txt
+index 6351e3435..d9d6ea899 100644
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -15,6 +15,7 @@ set(test_SRCS
+  		CMemoryBufferTest.cpp
+  		CVcmiTestConfig.cpp
+  		JsonComparer.cpp
++		TextOperationsTest.cpp
+ 
+  		battle/BattleHexTest.cpp
+  		battle/CBattleInfoCallbackTest.cpp
+diff --git a/test/TextOperationsTest.cpp b/test/TextOperationsTest.cpp
+new file mode 100644
+index 000000000..9ac6d3506
+--- /dev/null
++++ b/test/TextOperationsTest.cpp
+@@ -0,0 +1,46 @@
++/*
++ * TextOperationsTest.cpp, part of VCMI engine
++ *
++ * Authors: listed in file AUTHORS in main folder
++ *
++ * License: GNU General Public License v2.0 or later
++ * Full text of license available in license.txt file, in main folder
++ *
++ */
++#include "StdInc.h"
++
++#include "../lib/texts/TextOperations.h"
++
++#include <boost/filesystem/path.hpp>
++
++namespace test
++{
++
++TEST(TextOperationsTest, SaveNameStemPreservesUtf8)
++{
++	const std::vector<std::string> names = {
++		"Quicksave",
++		"\xe6\x9c\xab\xe6\x97\xa5\xe4\xb9\x8b\xe5\x88\x83",
++		"Save_\xe6\x9c\xab\xe6\x97\xa5 01",
++		"\xe6\x9c\xab\xe6\x97\xa5.backup",
++		"caf\xc3\xa9_\xf0\x9f\x90\x89"
++	};
++	for(const auto & name : names)
++	{
++		const auto path = TextOperations::Utf8TofilesystemPath("Saves/" + name + ".vsgm1");
++		const auto displayedName = TextOperations::filesystemPathToUtf8(path.stem());
++		EXPECT_EQ(name, displayedName);
++		EXPECT_TRUE(TextOperations::isValidUnicodeString(displayedName));
++	}
++}
++
++#ifdef VCMI_WINDOWS
++TEST(TextOperationsTest, NativeWindowsSaveNameUsesUtf8)
++{
++	const boost::filesystem::path path(L"Saves/\u672b\u65e5\u4e4b\u5203.vsgm1");
++	EXPECT_EQ("\xe6\x9c\xab\xe6\x97\xa5\xe4\xb9\x8b\xe5\x88\x83",
++		TextOperations::filesystemPathToUtf8(path.stem()));
++}
++#endif
++
++}

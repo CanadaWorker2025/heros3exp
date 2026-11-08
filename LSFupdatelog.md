@@ -1,5 +1,11 @@
 # LSF Update Log
 
+## 中文存档名回填乱码修复（2026-11-08）
+
+- 修正引擎 `client/lobby/SelectionTab.cpp`：选择存档后，将文件名填回保存输入框时，使用 `TextOperations::filesystemPathToUtf8(filename.stem())`，避免 Windows 本地编码被当成 UTF-8 显示。
+- 新增 `test/TextOperationsTest.cpp` 并注册到测试目标，覆盖中文、英文、混合字符、文件名中间带点及 Windows 原生宽字符路径；不改变存档格式或已有存档文件。
+- 源码位于被忽略的 `temp/vcmi-source-1.7.4`，可迁移补丁保存在 `patches/save-name-utf8.patch`。源码检查通过；本机缺少 CMake/MSVC，尚未编译、部署或进行游戏内验证，当前游戏程序仍需换成修复后的构建。
+
 ## 英雄初始魔法书：埃尔斯佩思（2026-11-05）
 
 - 加载日志发现跨模组法术引用缺少依赖：原英雄文件保留20个已有依赖可访问的法术，完整27项移至 `extra creatures specialty/content/config/heroes/pavilion.json` 的 `spellbook#override`，由覆盖模组的依赖解析。
