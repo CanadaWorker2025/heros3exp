@@ -38,7 +38,7 @@
 		"index": 146,
 		"class" : "knight",
 		"female": true,
-		"special" : true,
+		"special" : false,
 		"skills":
 		[
 			{ "skill" : "leadership", "level": "basic" },

@@ -1,0 +1,1227 @@
+{
+	"asylum:b_pauline": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高暗影猎手及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"asylum:d_sisElisa": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高风舞者及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"asylum:e_renner": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高幽影及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"asylum:f_judith": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高灵魂剑士及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"asylum:g_stacia": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高梦魇兽及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"bastille:b_richmond": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高雪雕及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"bastille:c_harrigan": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高标枪手及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"bastille:f_gestalt": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高狂暴者及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"bastille:h_craighill": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高角斗士及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"cathedral:erika": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高圣武士及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"cathedral:kasumi": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高屠杀者及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"cathedral:nariko": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高飞蛇及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"cathedral:patricia": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高猎巫人及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"cathedral:tarinus": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高执事及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"cathedral:zEsseni": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高飞蛇及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:aeris": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高飞马及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:ajit": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高邪眼及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:alkin": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高野牛及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:andra": {
+		"texts": {
+			"specialty": {
+				"description": "在智力技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:axsis": {
+		"texts": {
+			"specialty": {
+				"description": "在神秘术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:ayden": {
+		"texts": {
+			"specialty": {
+				"description": "在智力技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:boragus": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高食人魔及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:broghild": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高飞龙及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:bron": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高蜥蜴及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:calh": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高歌革及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:charna": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高幽灵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:clancy": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高独角兽及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:cragHack": {
+		"texts": {
+			"specialty": {
+				"description": "在进攻术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:dace": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高牛头怪及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:dessa": {
+		"texts": {
+			"specialty": {
+				"description": "在后勤学上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:dracon": {
+		"texts": {
+			"specialty": {
+				"description": "将僧侣、祭司、法师和大法师升级为魔幻法师。此外，还可将潮汐模组的狂热者、奥术法师升级为魔幻法师。"
+			}
+		}
+	},
+	"core:edric": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高狮鹫及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:elleshar": {
+		"texts": {
+			"specialty": {
+				"description": "在智力技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:fafner": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高蛇女及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:fiona": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高地狱猎犬及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:gelu": {
+		"texts": {
+			"specialty": {
+				"description": "将弓箭手、神射手、木精灵和大精灵升级为幻影射手。此外，还可将潮汐模组的十字弓手、高地精灵升级为幻影射手。"
+			}
+		}
+	},
+	"core:gem": {
+		"texts": {
+			"specialty": {
+				"description": "在急救术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:geon": {
+		"texts": {
+			"specialty": {
+				"description": "在鹰眼术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:gird": {
+		"texts": {
+			"specialty": {
+				"description": "在魔力技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:gundula": {
+		"texts": {
+			"specialty": {
+				"description": "在进攻术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:gunnar": {
+		"texts": {
+			"specialty": {
+				"description": "在后勤学上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:halon": {
+		"texts": {
+			"specialty": {
+				"description": "在神秘术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:ingham": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高僧侣及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:iona": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高神怪及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:isra": {
+		"texts": {
+			"specialty": {
+				"description": "在招魂术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:ivor": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高木精灵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:jabarkas": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高半兽人及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:jaegar": {
+		"texts": {
+			"specialty": {
+				"description": "在神秘术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:josephine": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高石人及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:korbac": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高毒蝇及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:krellion": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高食人魔及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:kyrre": {
+		"texts": {
+			"specialty": {
+				"description": "在后勤学上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:lordHaart": {
+		"texts": {
+			"specialty": {
+				"description": "在理财术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:lorelei": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高鹰身女妖及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:malcom": {
+		"texts": {
+			"specialty": {
+				"description": "在鹰眼术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:malekith": {
+		"texts": {
+			"specialty": {
+				"description": "在魔力技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:marius": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高恶鬼及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:mephala": {
+		"texts": {
+			"specialty": {
+				"description": "在防御术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:moandor": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高尸巫及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:neela": {
+		"texts": {
+			"specialty": {
+				"description": "在防御术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:nimbus": {
+		"texts": {
+			"specialty": {
+				"description": "在鹰眼术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:nymus": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高邪神及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:oris": {
+		"texts": {
+			"specialty": {
+				"description": "在鹰眼术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:orrin": {
+		"texts": {
+			"specialty": {
+				"description": "在箭术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:piquedram": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高石像鬼及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:rashka": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高火精灵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:rion": {
+		"texts": {
+			"specialty": {
+				"description": "在急救术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:roland": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高剑士及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:rosic": {
+		"texts": {
+			"specialty": {
+				"description": "在神秘术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:ryland": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高枯木卫士及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:sandro": {
+		"texts": {
+			"specialty": {
+				"description": "在魔力技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:sanya": {
+		"texts": {
+			"specialty": {
+				"description": "在鹰眼术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:serena": {
+		"texts": {
+			"specialty": {
+				"description": "在鹰眼术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:shiva": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高大雕及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:sorsha": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高剑士及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:straker": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高行尸及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:styg": {
+		"texts": {
+			"specialty": {
+				"description": "在魔力技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:synca": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高蝎狮及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:tamika": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高暗黑骑士及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:tazar": {
+		"texts": {
+			"specialty": {
+				"description": "在防御术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:thane": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高神怪及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:theodorus": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高法师及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:thorgrim": {
+		"texts": {
+			"specialty": {
+				"description": "在抵抗力上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:tiva": {
+		"texts": {
+			"specialty": {
+				"description": "在鹰眼术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:tyraxor": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高恶狼骑士及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:tyris": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高骑士及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:ufretin": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高矮人及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:valeska": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高弓箭手及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:verdish": {
+		"texts": {
+			"specialty": {
+				"description": "在急救术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:vey": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高食人魔及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:vidomina": {
+		"texts": {
+			"specialty": {
+				"description": "在招魂术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"core:vokial": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高吸血鬼及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:wystan": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高蜥蜴人及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:yog": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高独眼巨人及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"core:zydar": {
+		"texts": {
+			"specialty": {
+				"description": "在魔力技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"courtyard:00auk": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高陆行鸟及其升级形态40%的攻击力和防御力。速度+1。战斗巨鸟的抗魔光环加倍，华丽巨鸟的士气+2。"
+			}
+		}
+	},
+	"courtyard:02kanim": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高火枪手及其升级形态40%的攻击力和防御力。速度+1。并增加5发弹药。"
+			}
+		}
+	},
+	"courtyard:04dizheel": {
+		"texts": {
+			"specialty": {
+				"description": "每升一级可以使投降费用减少10%，且降低野外中立生物的敌意值1点。"
+			}
+		}
+	},
+	"courtyard:06ophrys": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高曼陀罗及其升级形态40%的攻击力和防御力。速度+1。召唤的藤护卫速度+1并获得先手反击技能。"
+			}
+		}
+	},
+	"courtyard:08audred": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高侏儒怪及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"courtyard:11nefefareen": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高火蜥蜴人及其升级形态40%的攻击力和防御力。速度+1。拥有正士气且接受火系有益魔法。被施加烈火神盾后火蜥蜴人攻击有33%的几率施放献祭。"
+			}
+		}
+	},
+	"courtyard:12hanester": {
+		"texts": {
+			"specialty": {
+				"description": "干扰术特长：初级、中级、高级干扰术的基础减力比例分别为10%、20%、30%。每个英雄等级将干扰术基础效果额外增强10%（相对增长，不是额外降低10个百分点）。敌方减力比例约为基础比例×（1+英雄等级×10%），实际按引擎取整并与其他效果合算；保留原有对自身干扰效果的抵消修正。"
+			}
+		}
+	},
+	"courtyard:14Ekaterina": {
+		"texts": {
+			"specialty": {
+				"description": "可以施放最高等级的和平之歌魔法；保留祈祷特长，开场为己方全体施放祈祷，持续50回合。游荡生物加入判定额外+4（不是加入概率提高4%）。"
+			}
+		}
+	},
+	"deathvalley:a_dvBarraka": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高死灵女妖及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"deathvalley:a_dvCrightoth": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高弩车40%的攻击力和防御力。"
+			}
+		}
+	},
+	"deathvalley:a_dvDreygo": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高腐尸怪及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"deathvalley:a_dvSylvanus": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高暗女巫及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"deathvalley:m_SdvdarkNova": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高收割者及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"fairy:ftA_Kylina": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高风精灵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"fairy:ftE_Sheli": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高绿妖精及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"fairy:ftF_Siniri": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高妖精贵族及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"fairy:ftG_Sinara": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高女祭司及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"fairy:ftP_Arina": {
+		"texts": {
+			"specialty": {
+				"description": "在外交术技能上每级减少10%的投降费用，并降低野外中立生物的敌意值3点。"
+			}
+		}
+	},
+	"fairy:special01Fairy": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高风精灵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"haven:havAhero03": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高巨龟及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"haven:havAhero06": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高水灵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"haven:havAhero07": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高赏金猎人及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"haven:havAheroS02": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高海魔法师及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"haven:havMhero09": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高美人鱼及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"haven:havMhero14": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高潜游者及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.bulwark:02bulwarkOidana": {
+		"texts": {
+			"specialty": {
+				"description": "在外交术技能上每级减少10%的投降费用。"
+			}
+		}
+	},
+	"hota.bulwark:03bulwarkNeia": {
+		"texts": {
+			"specialty": {
+				"description": "在箭术技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"hota.bulwark:07bulwarkKynr": {
+		"texts": {
+			"specialty": {
+				"description": "每1级提高狗头人及其升级形态10%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.bulwark:13bulwarkBiarma": {
+		"texts": {
+			"specialty": {
+				"description": "在急救术技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"hota.bulwark:14bulwarkHaugir": {
+		"texts": {
+			"specialty": {
+				"description": "在航海术上获得每级10%的奖励。"
+			}
+		}
+	},
+	"hota.bulwark:17bulwarkAllora": {
+		"texts": {
+			"specialty": {
+				"description": "在魔力技能上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"hota.cove:03illor": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高暴风鸟及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.cove:06anabel": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高海贼及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.cove:09casmetra": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高海洋女巫及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.cove:derek": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高水手及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.cove:tark": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高鱼人及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.factory:02_Sam": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高机械师及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.factory:03_Tancred": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高快枪猎手及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.factory:04_Melchior": {
+		"texts": {
+			"specialty": {
+				"description": "每升一级可以使投降费用降低10%。"
+			}
+		}
+	},
+	"hota.factory:11_Celestine": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高铠兽及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.factory:12_Todd": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高自行机甲及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.factory:13_Agar": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高沙虫及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.factory:s01_Jangaard": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高快枪猎手及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.factory:s02_Stina": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高机械师及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.factory:s05_Elderian": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高自行机甲及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.factory:s06_Umender": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高自行机甲及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.heroes:boyd": {
+		"texts": {
+			"specialty": {
+				"description": "每1级提高骷髅兵及其升级形态10%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.heroes:specialAthe": {
+		"texts": {
+			"specialty": {
+				"description": "在魔力上每级获得10%的奖励。"
+			}
+		}
+	},
+	"hota.heroes:specialKydoimos": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高火精灵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"hota.interference:giselle": {
+		"texts": {
+			"specialty": {
+				"description": "在干扰术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"new pavilion.new pavillion:amesh": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高人面狮及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"new pavilion.new pavillion:azarias": {
+		"texts": {
+			"specialty": {
+				"description": "强化沙蛇、飞龙蝇、蛇妖、美杜莎、圣堂飞蛇、风蛇、海蛇、利维坦、工厂羽蛇及其升级形态：额外攻防按英雄等级与目标生物等级计算，系数9；速度+2。沙蛇一系另保留通用兵种特长，每达到基础沙蛇等级的整数倍，基础攻防再提高40%，速度额外+1（合计+3）。实际数值按引擎取整。"
+			}
+		}
+	},
+	"new pavilion.new pavillion:cassandra": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高恐鳄及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"new pavilion.new pavillion:ibrahim": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高骆驼骑兵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"new pavilion.new pavillion:menet": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高谜影侍女及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"new pavilion.new pavillion:varn": {
+		"texts": {
+			"specialty": {
+				"description": "每7级提高冥神使及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"new pavilion.new pavillion:zamonth": {
+		"texts": {
+			"specialty": {
+				"description": "可将指定墓园亡灵转化为木乃伊：骷髅、行尸、阴魂、吸血鬼、巫妖、黑暗骑士、骨龙及其对应原版升级兵种。所率木乃伊及其升级形态速度+4。"
+			}
+		}
+	},
+	"preserve:b_julian": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高螳螂及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"preserve:d_terence": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高棕狼及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"preserve:f_ceretus": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高老虎及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"preserve:g_agnes": {
+		"texts": {
+			"specialty": {
+				"description": "在侦察术上每级得到10%的额外奖励。"
+			}
+		}
+	},
+	"preserve:h_lorenzo": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高蜂草及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"preserve:i_anastasia": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高德鲁伊及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tartarus:tarhero03": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高冰恶魔及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tartarus:tarhero07": {
+		"texts": {
+			"specialty": {
+				"description": "每2级提高冰傀儡及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tartarus:tarhero10": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高寒冰守卫及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tartarus:tarhero11": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高女妖及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tartarus:tarhero12": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高魔蛛及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:eyzeaDemoniac": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高魅魔及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:machamSp": {
+		"texts": {
+			"specialty": {
+				"description": "每1级提高枪兵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:mdtCharles": {
+		"texts": {
+			"specialty": {
+				"description": "每7级提高圣堂武士及其升级形态40%的攻击力和防御力并拥有正士气。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:mdtCollivea": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高美杜莎及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:mdtErgon": {
+		"texts": {
+			"specialty": {
+				"description": "每6级提高风蛇及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:mdtEurydis": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高林妖及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:mdtGaluum": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高摄魂怪及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:mdtIrrigus": {
+		"texts": {
+			"specialty": {
+				"description": "每3级提高海卫兵及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:mdtShroo": {
+		"texts": {
+			"specialty": {
+				"description": "每5级提高洞穴巫女及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:mdtThyroc": {
+		"texts": {
+			"specialty": {
+				"description": "每7级提高九头怪及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	},
+	"tidesofwar:mdtVerstan": {
+		"texts": {
+			"specialty": {
+				"description": "每7级提高傀儡龙及其升级形态40%的攻击力和防御力。速度+1。魔法抵抗力+10%。"
+			}
+		}
+	},
+	"tidesofwar:yaverrDeathknight": {
+		"texts": {
+			"specialty": {
+				"description": "每4级提高狼人及其升级形态40%的攻击力和防御力。速度+1。"
+			}
+		}
+	}
+}

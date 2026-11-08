@@ -24,10 +24,40 @@
         }
 	},
 	"core:catherine":{
+        "specialty": {
+            "creature": "swordsman",
+            "bonuses": {
+                "pikeman2crusader": {
+                    "type": "SPECIAL_UPGRADE",
+                    "subtype": "creature.pikeman",
+                    "addInfo": "creature.crusader"
+                },
+                "halberdier2crusader": {
+                    "type": "SPECIAL_UPGRADE",
+                    "subtype": "creature.halberdier",
+                    "addInfo": "creature.crusader"
+                },
+                "archer2crusader": {
+                    "type": "SPECIAL_UPGRADE",
+                    "subtype": "creature.archer",
+                    "addInfo": "creature.crusader"
+                },
+                "marksman2crusader": {
+                    "type": "SPECIAL_UPGRADE",
+                    "subtype": "creature.marksman",
+                    "addInfo": "creature.crusader"
+                },
+                "swordsman2crusader": {
+                    "type": "SPECIAL_UPGRADE",
+                    "subtype": "creature.swordsman",
+                    "addInfo": "creature.crusader"
+                }
+            }
+        },
         "texts": {
             "specialty": {
                 "name": "剑士",
-                "description": "每4级提高剑士及其升级形态20%的攻击力和防御力。速度+1。"
+                "description": "剑士及十字军随英雄等级提升攻击力和防御力，速度+1。\n\n可将枪兵、戟兵、弓箭手、神射手和剑士升级为十字军。"
             }
         }
 	},
