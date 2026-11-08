@@ -2,6 +2,8 @@
 
 ## 中文存档名回填乱码修复（2026-11-08）
 
+- 部署更新：Actions `42463657558` 已成功编译打包，引擎提交 `acc433e1e` 已应用到游戏目录；64个EXE/DLL的SHA-256及x64类型校验通过，12项关键资源完整备份且保持不变，未修改存档。备份位于 `temp/deployment-backups/before-acc433e-20261108-015649`。游戏内中文名称回填仍待验证；当前生产工作流未启用完整单元测试目标，不能将新增 `TextOperationsTest` 记为已执行通过。下方“尚未编译部署”为修复初始记录，现由本条更新状态。
+
 - 修正引擎 `client/lobby/SelectionTab.cpp`：选择存档后，将文件名填回保存输入框时，使用 `TextOperations::filesystemPathToUtf8(filename.stem())`，避免 Windows 本地编码被当成 UTF-8 显示。
 - 新增 `test/TextOperationsTest.cpp` 并注册到测试目标，覆盖中文、英文、混合字符、文件名中间带点及 Windows 原生宽字符路径；不改变存档格式或已有存档文件。
 - 源码位于被忽略的 `temp/vcmi-source-1.7.4`，可迁移补丁保存在 `patches/save-name-utf8.patch`。源码检查通过；本机缺少 CMake/MSVC，尚未编译、部署或进行游戏内验证，当前游戏程序仍需换成修复后的构建。

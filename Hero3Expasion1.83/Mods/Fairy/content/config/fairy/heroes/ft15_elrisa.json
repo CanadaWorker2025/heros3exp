@@ -26,6 +26,15 @@
 		
 		"spellbook" :
 		[			
+			"core:summonBoat",
+			"core:scuttleBoat",
+			"core:visions",
+			"core:viewEarth",
+			"core:disguise",
+			"core:viewAir",
+			"core:forceField",
+			"courtyard:quagmire",
+			"courtyard:immolationCurse",
 			"manaFlarePyra",
 			"primeMissile",
 			"timeStasis",
