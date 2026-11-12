@@ -296,28 +296,31 @@
 				},
 				"special1" : 
 				{
-					"description" : "学者小屋可以允许你以1000黄金的价格学习技能。包括{气系魔法}，{水系魔法}，{土系魔法}，{寻路术}，{幸运术}，{魔力}，{学术}，{智力}和{神秘术}。",
+					"description" : "学者小屋从气系魔法、水系魔法、土系魔法、寻路术、幸运术、魔力、学术、智力和神秘术中随机提供3种不同技能。每位英雄可支付1000黄金选择学习其中一项；已学会的技能不会显示。",
 					"name" : "学者小屋",
 					"manualHeroVisit" : true,
 					"configuration" : {
 					"visitMode" : "hero",
 					"variables" : {
 						"secondarySkill" : {
-							"gainedSkill" : { 
-								"anyOf" : ["airMagic", "waterMagic", "earthMagic", "pathfinding","luck","sorcery","intelligence","scholar","mysticism"]
+							"skill01" : {
+								"anyOf" : ["airMagic", "waterMagic", "earthMagic", "pathfinding", "luck", "sorcery", "intelligence", "scholar", "mysticism"]
+							},
+							"skill02" : {
+								"anyOf" : ["airMagic", "waterMagic", "earthMagic", "pathfinding", "luck", "sorcery", "intelligence", "scholar", "mysticism"],
+								"noneOf" : ["@skill01"]
+							},
+							"skill03" : {
+								"anyOf" : ["airMagic", "waterMagic", "earthMagic", "pathfinding", "luck", "sorcery", "intelligence", "scholar", "mysticism"],
+								"noneOf" : ["@skill01", "@skill02"]
 							}
 						}
-					},
-					"visitLimiter" : {
-					"secondary" : {
-						"@gainedSkill" : 1
-					}
 					},
 					"rewards" :
 					[    
                     {
 						"secondary" : {
-							"@gainedSkill" : 1
+							"@skill01" : 1
 						},
 						"resources" : {
 							"gold" : -1000
@@ -328,19 +331,39 @@
 							"noneOf" : [
 								{
 									"secondary" : {
-										"@gainedSkill" : 1
+										"@skill01" : 1
 									}
 								}
 							],
 							"resources" : {"gold" : 1000}
 						},
-						"message": "{学者小屋}\r\n\r\n你走进小屋，和一众学者进行交流，其中一位学者和你交谈后，得知你需要帮助，如果给学会捐助1000黄金，他就会教给你一项技能。"
-                    }
+						"message": "{学者小屋}\r\n\r\n你捐助了1000黄金，学者传授给你一项新的技能。"
+                    },
+						{
+							"secondary" : { "@skill02" : 1 },
+							"resources" : { "gold" : -1000 },
+							"limiter" : {
+								"canLearnSkills" : true,
+								"noneOf" : [{ "secondary" : { "@skill02" : 1 } }],
+								"resources" : { "gold" : 1000 }
+							},
+							"message" : "{学者小屋}\r\n\r\n你捐助了1000黄金，学者传授给你一项新的技能。"
+						},
+						{
+							"secondary" : { "@skill03" : 1 },
+							"resources" : { "gold" : -1000 },
+							"limiter" : {
+								"canLearnSkills" : true,
+								"noneOf" : [{ "secondary" : { "@skill03" : 1 } }],
+								"resources" : { "gold" : 1000 }
+							},
+							"message" : "{学者小屋}\r\n\r\n你捐助了1000黄金，学者传授给你一项新的技能。"
+						}
 
                 ],
-				"onSelectMessage" : "{学者小屋}\r\n\r\n你走进小屋，和一众学者进行交流，其中一位学者和你交谈后，得知你需要帮助，如果给学会捐助1000黄金，他就会教给你一项技能。",
-                "onVisitedMessage": "{学者小屋}\r\n\r\n你走进小屋，和一众学者进行交流，其中一位学者和你交谈后，他发现你早就在他擅长的领域上超过了他。为了缓解他的尴尬，你决定离开。",
-				"onEmptyMessage": "{学者小屋}\r\n\r\n你走进小屋，和一众学者进行交流，他们邀请你参加下一届的学术研讨会，但是你婉拒了他们的好意。",
+				"onSelectMessage" : "{学者小屋}\r\n\r\n学者们提供了三项不同的技能课程。请选择一项尚未掌握的技能，支付1000黄金学习。每位英雄在本小屋只能学习一次。",
+                "onVisitedMessage": "{学者小屋}\r\n\r\n你已经在这间学者小屋学习过一项技能，学者们祝你旅途顺利。",
+				"onEmptyMessage": "{学者小屋}\r\n\r\n当前没有可学习的课程：可能你已掌握所提供的技能、技能栏已满，或不足1000黄金。",
 				//"resetDuration" : 7,      
 				"canRefuse": true,
 				"selectMode" : "selectPlayer"

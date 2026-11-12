@@ -9,21 +9,21 @@
 			"biography" : "蕾娜塔外表开朗活泼，总能为同伴带来轻松愉快的气氛。但在她的乐声背后，也藏着不愿轻易提起的往事。每当夜深人静时，她仍会独自奏起旧日的旋律，怀念那段再也无法回去的过去。",
 			"specialty" :
 			{
-				"description" : "战斗开始时自动施放欢欣鼓舞。黑骑士及其升级形态攻击、防御、杀伤提高15，速度+3，并额外获得抢先反击、无反击、无限反击、吸取生命、环击、勇士冲锋、死亡凝视、双击、顺势攻击、无视防御与毁灭。同时可将多种骑士系兵种升级为恐怖骑士。",
-				"tooltip" : "Bonus: spell",
-				"name" : "欢欣鼓舞"
+				"description" : "战斗开始时自动施放专家级大难临头与悲痛欲绝，分别使符合条件的敌方全体幸运-8、士气-8，持续50回合；实际幸运与士气受游戏上下限限制。自身也可按专家级施放这两种法术。黑骑士及其升级形态攻击、防御、杀伤提高15，速度+3，并额外获得抢先反击、无反击、无限反击、吸取生命、环击、勇士冲锋、死亡凝视、双击、顺势攻击、无视防御与毁灭。同时可将多种骑士系兵种升级为恐怖骑士。",
+				"tooltip" : "开场自动施放专家级大难临头与悲痛欲绝，持续50回合。",
+				"name" : "灵魂战栗"
 			}
 		},
 		"images" :
 		{
-			"specialtySmall" : "preserve/heroes/renata/UN32T195.bmp",
-			"specialtyLarge" : "preserve/heroes/renata/UN44T195.bmp",
+			"specialtySmall" : "preserve/heroes/renata/soulConflagration32.png",
+			"specialtyLarge" : "preserve/heroes/renata/soulConflagration44.png",
 			"large" : "preserve/heroes/renata/HPL007BR.bmp",
 			"small" : "preserve/heroes/renata/HPS007BR.bmp"
 		},
 		"spellbook" :
 		[
-			"mirth",
+			"misfortune",
 			"sorrow"
 		],
 		"army" :
@@ -80,29 +80,31 @@
 				"choir" :
 				{
 					"type" : "OPENING_BATTLE_SPELL",
-					"subtype" : "spell.mirth",
-					"val" : 10,
+					"subtype" : "spell.misfortune",
+					"val" : 50,
+					"addInfo" : 3,
 					"valueType" : "BASE_NUMBER"
 				},
 				"unchoir" :
 				{
 					"type" : "OPENING_BATTLE_SPELL",
 					"subtype" : "spell.sorrow",
-					"val" : 10,
+					"val" : 50,
+					"addInfo" : 3,
 					"valueType" : "BASE_NUMBER"
 				},
 				"bind" :
 				{
-					"subtype" : "spell.mirth",
+					"subtype" : "spell.misfortune",
 					"type" : "SPELL",
-					"val" : 1,
+					"val" : 3,
 					"valueType" : "BASE_NUMBER"
 				},
 				"bind2" :
 				{
 					"subtype" : "spell.sorrow",
 					"type" : "SPELL",
-					"val" : 1,
+					"val" : 3,
 					"valueType" : "BASE_NUMBER"
 				},
 				"damage" :
