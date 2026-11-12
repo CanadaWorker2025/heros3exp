@@ -10,23 +10,23 @@
 			"biography" : "因为家乡的战乱，琳恩在很小的时候就和姐姐蕾娜塔失散了。在悲伤中度过童年的她将这种悲痛转换成了魔力。当然寻找姐姐也是她能够支撑自己活下去的目标。就算是和邪恶力量合作，她也不会犹豫。",
 			"specialty" :
 			{
-				"description" : "开场可以施放悲痛欲绝。",
-				"tooltip" : "Spell bonus: Sorrow",
-				"name" : "悲痛欲绝"
+				"description" : "战斗开始时自动施放专家级欢欣鼓舞，使符合条件的己方全体士气+8，持续3回合；实际士气受游戏上下限限制。自身也可施放欢欣鼓舞。",
+				"tooltip" : "开场自动施放专家级欢欣鼓舞，持续3回合。",
+				"name" : "欢欣鼓舞"
 			}
 		},
 
 		"images" :
 		{
-			"specialtySmall" : "asylum/heroes/lynn/UN32T211.bmp",
-			"specialtyLarge" : "asylum/heroes/lynn/UN44T211.bmp",
+			"specialtySmall" : "asylum/heroes/lynn/mirth32.png",
+			"specialtyLarge" : "asylum/heroes/lynn/mirth44.png",
 			"large" : "asylum/heroes/lynn/HPL007MN.bmp",
 			"small" : "asylum/heroes/lynn/HPS007MN.bmp"
 		},
 		
 		"spellbook" :
 		[
-			"sorrow"
+			"mirth"
 		],
 
 		"army" :
@@ -66,13 +66,14 @@
 				"choir":
 				{
 					"type": "OPENING_BATTLE_SPELL",
-					"subtype": "spell.sorrow",
+					"subtype": "spell.mirth",
 					"val" : 3,
+					"addInfo" : 3,
 					"valueType" : "BASE_NUMBER"
 				},
 				"bind" : 
 				{
-				"subtype" : "spell.sorrow",
+					"subtype" : "spell.mirth",
 				"type" : "SPELL",
 				"val" : 1,
 				"valueType" : "BASE_NUMBER"

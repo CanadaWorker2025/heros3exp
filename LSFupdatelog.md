@@ -1,12 +1,61 @@
 # LSF Update Log
 
+## 近期配置更新补记（2026-11-08 至 2026-11-12）
+
+本节按 2026-11-12 当前文件及最近提交核对补录。以下均为配置或图片资源修改，无需重新编译；除特别注明的用户反馈外，静态检查通过不代表游戏内验收通过，已有存档中的英雄和建筑可能保留初始化时的配置。
+
+### 凯瑟琳：十字军升级
+
+- 保留剑士及十字军的原有兵种特长，新增将枪兵、戟兵、弓箭手、神射手、剑士升级为十字军的五项 `SPECIAL_UPGRADE`；升级按现有机制支付费用。
+- `config/heroes/special.json` 中凯瑟琳的 `special` 改为 `false`，取消特殊英雄默认限制；地图禁用和酒馆可用性仍受地图规则影响。
+- 主配置：`Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/castle.json`。对应提交 `61910a66`；集中描述更正已在后文单独记录。
+
+### 珍妮：双倍防御成长、全军再生与药剂
+
+- 在 `Mods/extra creatures specialty/content/config/heroes/rampart.json` 中为 `core:gem` 保留标准急救术特长，新增防御术双倍成长：`GENERAL_DAMAGE_REDUCTION`、`damageTypeAll`、`val: 20`、`PERCENT_TO_TARGET_TYPE`，仅放大 `SECONDARY_SKILL` 来源的基础减伤，按 `TIMES_HERO_LEVEL` 成长；需要学会防御术，不是每级直接增加20个百分点减伤。
+- 专家防御术基础15%，10级理论减伤45%，20级75%，30级105%；本次未额外增加成长封顶，超过100%后的伤害结算不可解释为回血。
+- 新增全军 `HP_REGENERATION: 50`：各队每回合首次轮到行动前恢复存活个体的伤势，不复活阵亡数量。
+- 永久授予8种战斗药剂：`courtyard:regenerationPotion`、`weaponPoisonPotion`、`dragonPotion`、`toughnessPotion`、`etheralPotion`、`immortalPotion`、`icePotion`、`invPotion`。当前各项 `SPELL.val` 均为 `3`，按专家／纯化等级施放，不要求携带消耗型药剂，无药剂道具次数限制，仍占正常施法机会并遵守目标限制；未加入未注册的耐力药水或内部药剂供应能力。
+- 曾尝试给珍妮帐篷添加 `smellingSalts` 复活治疗，并限制普通 `HEALER` 优先级；用户反馈无效后，已删除两项帐篷 bonus、普通帐篷限制及对应说明，不应将当前版本记作“珍妮帐篷可以复活”。
+- 特长名称为“钢板与急救”，最终描述位于 `content/config/heroes/specialtyDescriptions.json`；未改变其他急救术特长英雄。当前描述未明确写出8种药剂全部为纯化级，以上述实际 `val: 3` 为准。对应提交 `7bc983db`。
+
+### 艾瑞莎：补齐初始魔法书
+
+- 文件：`Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft15_elrisa.json`，英雄 `fairy:ftO_Elrisa`。
+- 原55项魔法书补入9项：`core:summonBoat`、`core:scuttleBoat`、`core:visions`、`core:viewEarth`、`core:disguise`、`core:viewAir`、`core:forceField`、`courtyard:quagmire`、`courtyard:immolationCurse`，现共64项；明确排除英雄专属隐形 `fairy:heroBansheeInvisibility`。
+- 保留原有力量光环及其他法术，也未移除原名单中的4级反戈一击、5级牺牲。不是把全部低级药剂、符文、魔杖和内部触发效果一并加入。
+- 遗漏原因：手工名单未覆盖冒险法术，且旧对照表混淆了 `forceField` 与 `counterstrike`、`quagmire` 与 `mdtBind`、持续灼烧献祭与原版牺牲。法术ID、重复项和模组依赖核对通过；本次补齐包含于 `138763f2`。
+
+### 禁林学者小屋：随机三选一
+
+- 文件：`Hero3Expasion1.83/Mods/preserve/content/config/preserve/town.json`，建筑 `special1.configuration`。
+- 将原单一随机技能改为依次抽取 `skill01`、`skill02`、`skill03`，仍从气系、水系、土系、寻路、幸运、魔力、智力、学术、神秘术这9种技能中选择；后两个变量通过 `noneOf` 排除前面结果，保证3种不同。
+- 配置三项独立奖励，保留每项1000金币费用、足额金币检查、可学习技能检查及已学技能过滤；保留 `visitMode: hero`、`selectMode: selectPlayer` 和可拒绝，删除旧 `@gainedSkill` 的 `visitLimiter`，每位英雄在每间小屋只能选择学习一次。
+- 抽取在小屋初始化时确定，不会随来访英雄重抽；已学技能被过滤后可能只显示1至2项，金币不足或技能栏已满时不能购买。建筑、选择、已访问及无可用课程提示已更新。
+- JSON与抽取结构检查通过，504种有序抽取对应84种不同技能组合；尚未实机验证，也未迁移旧存档中的建筑配置。对应提交 `498be78f`。
+
+### 蕾娜塔：灵魂战栗与特长图标
+
+- 主文件：`Hero3Expasion1.83/Mods/preserve/content/config/preserve/heroes/P_renata.json`，英雄 `preserve:p_renata`，当前特长名“灵魂战栗”。
+- 开场法术改为大难临头 `misfortune` 与悲痛欲绝 `sorrow`；两项均设置 `val: 50` 表示持续50回合，并显式设置 `addInfo: 3` 表示专家级，对符合条件的敌方全体分别提供幸运-8、士气-8，最终数值受其他加成、免疫和全局上下限影响。
+- 修正公共 `specialty.base.addInfo: creature.dreadKnight` 被开场法术继承的问题：开场法术需要数字等级，不能把该兵种字符串当成未指定等级。用户截图曾显示敌方最终士气-1，与基础士气+1叠加普通级悲痛欲绝-2相符；显式等级修复后的游戏内结果仍待验证。
+- `bind` 与 `bind2` 同步授权 `misfortune`、`sorrow`，`SPELL.val` 均为3；初始魔法书同步替换欢欣鼓舞。保留黑骑士系强化及骑士系转恐怖骑士能力，更新特长名称、description与tooltip。
+- 复用灵魂烈焰原法术图案，等比例生成 `Mods/preserve/content/Sprites/preserve/heroes/renata/soulConflagration32.png` 和 `soulConflagration44.png`，分别用于大小特长图标；资源放在禁林模组本地，不增加跨模组图片依赖，不改变灵魂烈焰法术或英雄特长效果。
+- 配置、开场等级继承和资源尺寸检查通过，尚未实机验收。对应提交 `498be78f`。
+
+### 全局士气与幸运上限
+
+- 文件：`Hero3Expasion1.83/Mods/hota/Mods/gameBalance/mod.json` 的 `settings.combat`，对应提交 `56be0335`。
+- 正士气、正幸运概率表均为 `[1,2,3,4,5,6,7,8,9,10,11,24]`，负士气、负幸运概率表均为 `[2,4,6,8,10,12,14,16,18,20,22,24]`；骰子大小均为24，偏置参数均为8。
+- 由概率表长度将有效士气、幸运范围扩展至-12至+12；第12档对应24/24的判定概率。此项对全局生效，不只影响某位英雄；实际属性仍先合并法术、英雄、部队等来源再受上下限限制。未改动既有四种士气／幸运法术的2／4／8增减值。
+
 ## 中文存档名回填乱码修复（2026-11-08）
 
 - 部署更新：Actions `42463657558` 已成功编译打包，引擎提交 `acc433e1e` 已应用到游戏目录；64个EXE/DLL的SHA-256及x64类型校验通过，12项关键资源完整备份且保持不变，未修改存档。备份位于 `temp/deployment-backups/before-acc433e-20261108-015649`。游戏内中文名称回填仍待验证；当前生产工作流未启用完整单元测试目标，不能将新增 `TextOperationsTest` 记为已执行通过。下方“尚未编译部署”为修复初始记录，现由本条更新状态。
 
 - 修正引擎 `client/lobby/SelectionTab.cpp`：选择存档后，将文件名填回保存输入框时，使用 `TextOperations::filesystemPathToUtf8(filename.stem())`，避免 Windows 本地编码被当成 UTF-8 显示。
 - 新增 `test/TextOperationsTest.cpp` 并注册到测试目标，覆盖中文、英文、混合字符、文件名中间带点及 Windows 原生宽字符路径；不改变存档格式或已有存档文件。
-- 源码位于被忽略的 `temp/vcmi-source-1.7.4`，可迁移补丁保存在 `patches/save-name-utf8.patch`。源码检查通过；本机缺少 CMake/MSVC，尚未编译、部署或进行游戏内验证，当前游戏程序仍需换成修复后的构建。
+- 源码位于被忽略的 `temp/vcmi-source-1.7.4`，可迁移补丁保存在 `patches/save-name-utf8.patch`。本机缺少 CMake/MSVC，初始仅完成源码检查；后续已通过上述 Actions 构建并部署，当前状态为“已编译部署、完整单元测试及游戏内验证待完成”。
 
 ## 英雄初始魔法书：埃尔斯佩思（2026-11-05）
 
