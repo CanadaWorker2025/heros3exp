@@ -1,6 +1,6 @@
 # LSF 版本改动
 
-> 整理日期：2026-11-14。主游戏基准：`da29b328`（2026-11-12）；本地 `main` 与 `origin/main` 一致。
+> 整理日期：2026-11-15。历史梳理基准：`da29b328`（2026-11-12）；另含赛丽娃／驱役迁移及2026-11-15三位英雄配置集中维护的未提交更新，以当前工作区为准。
 
 ## 阅读说明
 
@@ -294,10 +294,11 @@
 
 **额外校对结论**：主描述已写圣灵佑佐、吸血鬼化及50回合，但tooltip仍指向旧的兵种特长“Nerubians”，没有同步当前特长名称。
 
-**文件与覆盖顺序**：
+**维护位置（2026-11-15）**：已将幸运-2、圣灵佑佐伤害成长、开场圣灵佑佐与吸血鬼化、特长名称和说明全部迁回原Sveneld.json；Cathedral/mod.json新增newoldspells+依赖以解析吸血鬼化。对应英雄覆盖已删除，能力和数值保持不变。这次仅调整配置来源，不重复计作新增能力。
+
+**当前生效文件**：
 
 - [Hero3Expasion1.83/Mods/cathedral/Content/config/cathedral/heroes/Sveneld.json](<Hero3Expasion1.83/Mods/cathedral/Content/config/cathedral/heroes/Sveneld.json>)
-- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/cathedral.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/cathedral.json>)
 
 <details>
 <summary>该英雄的逐次改动详情（旧值 → 新值）</summary>
@@ -439,10 +440,11 @@
 - 当前说明：剑士及十字军随英雄等级提升攻击力和防御力，速度+1。<br><br>可将枪兵、戟兵、弓箭手、神射手和剑士升级为十字军。
 - 当前tooltip：生物奖励：剑士
 
-**文件与覆盖顺序**：
+**维护位置（2026-11-15）**：五项十字军升级及特长名称／说明已迁回config/heroes/special.json的catherine节点，原有剑士特长和special=false保留。对应英雄覆盖已删除，不需要新增模组依赖，能力和数值保持不变。这次仅调整配置来源，不重复计作新增能力。
+
+**当前生效文件**：
 
 - [Hero3Expasion1.83/config/heroes/special.json](<Hero3Expasion1.83/config/heroes/special.json>)
-- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/castle.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/castle.json>)
 
 <details>
 <summary>该英雄的逐次改动详情（旧值 → 新值）</summary>
@@ -2463,51 +2465,59 @@
 
 **改动概况**
 
-- 赛丽娃可把多种指定射手升级成幻影射手，包括原版射手及白骨、梦境射手。
-- 她带领的幻影射手额外获得生命+10、吸血、远程无限反击、远程先攻、无视敌方防御和攻城等能力。
-- 这些强化只属于赛丽娃带队的幻影射手，不是所有幻影射手的兵种本体改动。
+- 指定射手的升级终点由幻影射手改为梦境的魔影猎手（`asylum:phantomhunter`）。
+- 移除“魔影猎手升级自身”的冗余选项，改为“幻影射手升级魔影猎手”；其他7个来源保留。
+- 原来只给幻影射手的生命+10和专属特技全部转给魔影猎手，并额外增加杀伤+10。
+- 原有全军杀伤+2保留，因此魔影猎手合计获得固定杀伤+12、生命+10。
+- 仅赛丽娃带领的魔影猎手，每队每场可驱役白骨弓箭手1次；其他英雄带同兵种、或赛丽娃带幻影射手，都不获得该能力。
 
-**改动性质**：配置／能力或可用性调整（含后续文字维护）。
+**本次配置更新**：2026-11-14，当前工作区未提交。无需编译；已完成配置与加载链静态检查，尚未游戏内验证。
 
-**最终效果与范围**：幻影射手特长保留杀伤+2与多兵种转幻影射手，追加生命+10、吸血100、不受近身阻挡射击、无限反击、远程反击、先攻、忽略敌方防御100和攻城能力。只强化本英雄带领的幻影射手，不修改兵种本体。
+**升级来源**：弓箭手、神射手、木精灵、大精灵、白骨弓箭手、剥皮者、暗影猎手、幻影射手，共8种，全部指向魔影猎手。费用按游戏升级差价结算，目标较便宜时可能免费；本次未提高魔影猎手招募价格。
 
-- 可用性：`special=false`（缺省按非特殊）；职业：`warden`。地图英雄白名单仍可能禁用。
-- 初始技能：[{"level":"basic","skill":"wisdom"},{"level":"basic","skill":"learning"}]。
-- 初始法术书：["bloodlust"]。授予整系施法权限与显式已学法术书不是同一件事。
+**专属特技**：吸血100、贴身射击、无限反击、远程反击、远程先攻、忽略敌方防御100、攻击城墙及额外攻城射击。所有原有专属限制器已从幻影射手转到魔影猎手；这些不是兵种本体的永久增强。
 
-| 特长项 | 中文解释与最终参数 |
+**驱役限制**：只通过英雄特长给予魔影猎手施法授权、召唤生命额度4000000和每场1次施法次数，保留原有尸体总生命与目标限制。召唤的白骨弓箭手战后保留，排除非生命、机械、战争机器和石像鬼目标。
+
+**维护位置**：升级映射、全军杀伤、专属属性／特技、驱役三项bonus和description／tooltip全部集中在[Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json](<Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json>)。没有新增赛丽娃的英雄覆盖层；专用法术由Fairy自己的manifest注册。
+- 本次静态核对：8种升级来源均指向魔影猎手，无自升级；专属加成及驱役三项bonus均带魔影猎手限制；幻影射手和魔影猎手本体均不自带驱役。无需编译，尚未实机验收；旧存档已初始化的英雄／部队可能保留旧数据，应新开地图核验。
+
+
+- 当前职业：`warden`；初始技能：`[{"level":"basic","skill":"wisdom"},{"level":"basic","skill":"learning"}]`。
+- 初始魔法书：`["bloodlust"]`；驱役是部队主动能力，不是英雄魔法书法术。
+
+| 特长项 | 当前参数 |
 |---|---|
-| `damage` | 最小／最大杀伤 `CREATURE_DAMAGE`；对象／属性：`"creatureDamageBoth"`；值：`2`；数值方式：`"BASE_NUMBER"`；附加参数：`"creature.sharpshooter"` |
-| `archer2sharpshooter` | 特殊兵种升级 `SPECIAL_UPGRADE`；对象／属性：`"creature.archer"`；附加参数：`"creature.sharpshooter"` |
-| `grandElf2sharpshooter` | 特殊兵种升级 `SPECIAL_UPGRADE`；对象／属性：`"creature.grandElf"`；附加参数：`"creature.sharpshooter"` |
-| `marksman2sharpshooter` | 特殊兵种升级 `SPECIAL_UPGRADE`；对象／属性：`"creature.marksman"`；附加参数：`"creature.sharpshooter"` |
-| `woodElf2sharpshooter` | 特殊兵种升级 `SPECIAL_UPGRADE`；对象／属性：`"creature.woodElf"`；附加参数：`"creature.sharpshooter"` |
-| `skel12sharpshooter` | 特殊兵种升级 `SPECIAL_UPGRADE`；对象／属性：`"deathvalley:boneHook"`；附加参数：`"creature.sharpshooter"` |
-| `skel22sharpshooter` | 特殊兵种升级 `SPECIAL_UPGRADE`；对象／属性：`"deathvalley:flayer"`；附加参数：`"creature.sharpshooter"` |
-| `shadowhunter2sharpshooter` | 特殊兵种升级 `SPECIAL_UPGRADE`；对象／属性：`"asylum:shadowhunter"`；附加参数：`"creature.sharpshooter"` |
-| `phantomhunter2sharpshooter` | 特殊兵种升级 `SPECIAL_UPGRADE`；对象／属性：`"asylum:phantomhunter"`；附加参数：`"creature.sharpshooter"` |
-| `lifeDrain` | 吸血 `LIFE_DRAIN`；值：`100`；附加参数：`"creature.sharpshooter"`；作用限制：`[{"type":"CREATURE_TYPE_LIMITER","creature":"sharpshooter","includeUpgrades":true}]` |
-| `freeShooting` | 不受近身阻挡射击 `FREE_SHOOTING`；值：`0`；数值方式：`"ADDITIVE_VALUE"`；附加参数：`"creature.sharpshooter"`；作用限制：`[{"type":"CREATURE_TYPE_LIMITER","creature":"sharpshooter","includeUpgrades":true}]` |
-| `endlessRetaliation` | 无限反击 `UNLIMITED_RETALIATIONS`；附加参数：`"creature.sharpshooter"`；作用限制：`[{"type":"CREATURE_TYPE_LIMITER","creature":"sharpshooter","includeUpgrades":true}]` |
-| `rangedRetaliation` | 远程反击 `RANGED_RETALIATION`；附加参数：`"creature.sharpshooter"`；作用限制：`[{"type":"CREATURE_TYPE_LIMITER","creature":"sharpshooter","includeUpgrades":true}]` |
-| `firstStrike` | 先攻 `FIRST_STRIKE`；对象／属性：`"damageTypeRanged"`；附加参数：`"creature.sharpshooter"`；作用限制：`[{"type":"CREATURE_TYPE_LIMITER","creature":"sharpshooter","includeUpgrades":true}]` |
-| `ignoreDefence` | 忽略敌方防御比例 `ENEMY_DEFENCE_REDUCTION`；值：`100`；附加参数：`"creature.sharpshooter"`；作用限制：`[{"type":"CREATURE_TYPE_LIMITER","creature":"sharpshooter","includeUpgrades":true}]` |
-| `wallAttack` | 攻城器械能力 `CATAPULT`；对象／属性：`"spell.cyclopsShot"`；附加参数：`"creature.sharpshooter"`；作用限制：`[{"type":"CREATURE_TYPE_LIMITER","creature":"sharpshooter","includeUpgrades":true}]` |
-| `wallAttackExtraShot` | 特殊效果 `CATAPULT_EXTRA_SHOTS`；对象／属性：`"spell.cyclopsShot"`；值：`1`；数值方式：`"BASE_NUMBER"`；附加参数：`"creature.sharpshooter"`；作用限制：`[{"type":"CREATURE_TYPE_LIMITER","creature":"sharpshooter","includeUpgrades":true}]` |
-| `healthBonus` | 生命值 `STACK_HEALTH`；值：`10`；附加参数：`"creature.sharpshooter"`；作用限制：`[{"type":"CREATURE_TYPE_LIMITER","creature":"sharpshooter","includeUpgrades":true}]` |
+| `damage` | `{"type":"CREATURE_DAMAGE","subtype":"creatureDamageBoth","val":2,"valueType":"BASE_NUMBER"}` |
+| `archer2phantomhunter` | `{"type":"SPECIAL_UPGRADE","subtype":"creature.archer","addInfo":"asylum:phantomhunter"}` |
+| `grandElf2phantomhunter` | `{"type":"SPECIAL_UPGRADE","subtype":"creature.grandElf","addInfo":"asylum:phantomhunter"}` |
+| `marksman2phantomhunter` | `{"type":"SPECIAL_UPGRADE","subtype":"creature.marksman","addInfo":"asylum:phantomhunter"}` |
+| `woodElf2phantomhunter` | `{"type":"SPECIAL_UPGRADE","subtype":"creature.woodElf","addInfo":"asylum:phantomhunter"}` |
+| `skel12phantomhunter` | `{"type":"SPECIAL_UPGRADE","subtype":"deathvalley:boneHook","addInfo":"asylum:phantomhunter"}` |
+| `skel22phantomhunter` | `{"type":"SPECIAL_UPGRADE","subtype":"deathvalley:flayer","addInfo":"asylum:phantomhunter"}` |
+| `shadowhunter2phantomhunter` | `{"type":"SPECIAL_UPGRADE","subtype":"asylum:shadowhunter","addInfo":"asylum:phantomhunter"}` |
+| `sharpshooter2phantomhunter` | `{"type":"SPECIAL_UPGRADE","subtype":"creature.sharpshooter","addInfo":"asylum:phantomhunter"}` |
+| `phantomDamageBonus` | `{"type":"CREATURE_DAMAGE","subtype":"creatureDamageBoth","val":10,"valueType":"BASE_NUMBER","limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `phantomBoneArcherPower` | `{"type":"SPECIFIC_SPELL_POWER","subtype":"spell.summonBoneHook","val":4000000,"limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `phantomBoneArcherCaster` | `{"type":"SPELLCASTER","subtype":"spell.summonBoneHook","val":0,"icon":"asylum/NewOldSpells/summon.png","limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `phantomBoneArcherCasts` | `{"type":"CASTS","val":1,"limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `lifeDrain` | `{"type":"LIFE_DRAIN","val":100,"limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `freeShooting` | `{"type":"FREE_SHOOTING","val":0,"valueType":"ADDITIVE_VALUE","limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `endlessRetaliation` | `{"type":"UNLIMITED_RETALIATIONS","icon":"factory/icons/bonuses/e_retail2_bountyhunter.png","description":"{远程无限反击}\n可以无限次反击敌人的远程攻击","limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `rangedRetaliation` | `{"type":"RANGED_RETALIATION","limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `firstStrike` | `{"type":"FIRST_STRIKE","subtype":"damageTypeRanged","icon":"factory/icons/bonuses/firststrike_ranged.png","description":"{抢先攻击}\n可以在敌人远程攻击前进行反击","limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `ignoreDefence` | `{"type":"ENEMY_DEFENCE_REDUCTION","val":100,"limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `wallAttack` | `{"type":"CATAPULT","subtype":"spell.cyclopsShot","limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `wallAttackExtraShot` | `{"type":"CATAPULT_EXTRA_SHOTS","subtype":"spell.cyclopsShot","valueType":"BASE_NUMBER","val":1,"limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
+| `healthBonus` | `{"type":"STACK_HEALTH","val":10,"limiters":[{"type":"CREATURE_TYPE_LIMITER","creature":"asylum:phantomhunter","includeUpgrades":true}]}` |
 
-**描述检查**：已读取最终覆盖后的描述；未发现本轮规则可确认的通用成长／文本缺失问题。复杂自定义特长仍需对照下方参数和实战，不等于完整验收。
+**描述检查**：当前description和tooltip已同步新的升级终点、额外杀伤、生命、特技与驱役限制。没有后续英雄覆盖改写这些配置。
 
-- 当前特长名：战争狂人。
-- 当前说明：所带领生物的最小伤害值和最大伤害值各增加2。可将弓箭手、神射手、木精灵、大精灵、白骨弓箭手、剥皮者、暗影猎手、魔影猎手升级为幻影射手。赛丽娃麾下的幻影射手获得吸取生命、贴身射击、无限反击、远程反击、抢先反击、无视防御、可攻击城墙与生命值+10。
-- 当前tooltip：{战争狂人}<br><br>All creatures get +2 damage. Archers can be upgraded into Sharpshooters. Seliva's Sharpshooters gain Life Drain, Point-Blank Shot, Unlimited Retaliations, Ranged Retaliation, First Strike, Ignore Defense, Wall Attack and +10 HP.
-
-**文件与覆盖顺序**：
-
-- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json](<Hero3Expasion1.83/Mods/Fairy/content/config/fairy/heroes/ft12_seliva.json>)
+- 当前说明：所带领生物的最小伤害值和最大伤害值各增加2。可将弓箭手、神射手、木精灵、大精灵、白骨弓箭手、剥皮者、暗影猎手、幻影射手升级为魔影猎手，费用按游戏升级差价规则结算。赛丽娃麾下的魔影猎手额外杀伤+10、生命值+10，并获得吸取生命、贴身射击、无限反击、远程反击、抢先反击、无视防御与攻击城墙的能力。每队魔影猎手每场战斗还可施放1次驱役白骨弓箭手，利用己方阵亡部队的尸体召唤白骨弓箭手，召唤部队战后保留，数量受尸体生命与目标条件限制。这些专属加成和驱役能力仅在赛丽娃带队时生效。
+- 当前tooltip：{战争狂人}<br><br>All creatures get +2 damage. Listed archers, including Sharpshooters, can upgrade into Phantom Hunters. Seliva's Phantom Hunters gain an extra +10 damage, +10 HP, Life Drain, Point-Blank Shot, Unlimited Retaliations, Ranged Retaliation, Ranged First Strike, Ignore Defense and Wall Attack. Each Phantom Hunter stack can summon permanent Bone Archers from an allied corpse once per battle, only while led by Seliva.
 
 <details>
-<summary>该英雄的逐次改动详情（旧值 → 新值）</summary>
+<summary>历史改动（旧版本，仅供追溯）</summary>
 
 - 2026-06-12 `15186f5b`：`specialty.base.addInfo`：`null` → `"creature.sharpshooter"`；`specialty.base.type`：`null` → `"SPECIAL_UPGRADE"`；`specialty.bonuses.archer2sharpshooter.subtype`：`null` → `"creature.archer"`；`specialty.bonuses.grandElf2sharpshooter.subtype`：`null` → `"creature.grandElf"`；`specialty.bonuses.marksman2sharpshooter.subtype`：`null` → `"creature.marksman"`；`specialty.bonuses.woodElf2sharpshooter.subtype`：`null` → `"creature.woodElf"`；`texts.specialty.description`：`"所带领生物的最小伤害值和最大伤害值各增加1。"` → `"所带领生物的最小伤害值和最大伤害值各增加1。隐藏技能:幻影射手升级"`。
 - 2026-06-12 `0d300d72`：`specialty.bonuses.damage.val`：`1` → `2`；`texts.specialty.description`：`"所带领生物的最小伤害值和最大伤害值各增加1。隐藏技能:幻影射手升级"` → `"所带领生物的最小伤害值和最大伤害值各增加2。隐藏技能:幻影射手升级"`；`texts.specialty.tooltip`：`"{Rage}\r\n\r\nAll creatures get +1 to damage."` → `"{Rage}\r\n\r\nAll creatures get +2 to damage."`。
@@ -2516,9 +2526,8 @@
 
 </details>
 
-
 <details>
-<summary>改动后的完整英雄静态定义（合并快照）</summary>
+<summary>当前完整英雄静态定义（2026-11-14）</summary>
 
 ```json
 {
@@ -2528,8 +2537,8 @@
   "name": "赛丽娃",
   "biography": "赛丽娃出生之时就充斥着不祥的气息。虽然她长相美丽，但没什么人愿意去接近她。她眼下血红色的印记会让人打消对于花仙善良的幻想。",
   "specialty": {
-   "description": "所带领生物的最小伤害值和最大伤害值各增加2。可将弓箭手、神射手、木精灵、大精灵、白骨弓箭手、剥皮者、暗影猎手、魔影猎手升级为幻影射手。赛丽娃麾下的幻影射手获得吸取生命、贴身射击、无限反击、远程反击、抢先反击、无视防御、可攻击城墙与生命值+10。",
-   "tooltip": "{战争狂人}\r\n\r\nAll creatures get +2 damage. Archers can be upgraded into Sharpshooters. Seliva's Sharpshooters gain Life Drain, Point-Blank Shot, Unlimited Retaliations, Ranged Retaliation, First Strike, Ignore Defense, Wall Attack and +10 HP.",
+   "description": "所带领生物的最小伤害值和最大伤害值各增加2。可将弓箭手、神射手、木精灵、大精灵、白骨弓箭手、剥皮者、暗影猎手、幻影射手升级为魔影猎手，费用按游戏升级差价规则结算。赛丽娃麾下的魔影猎手额外杀伤+10、生命值+10，并获得吸取生命、贴身射击、无限反击、远程反击、抢先反击、无视防御与攻击城墙的能力。每队魔影猎手每场战斗还可施放1次驱役白骨弓箭手，利用己方阵亡部队的尸体召唤白骨弓箭手，召唤部队战后保留，数量受尸体生命与目标条件限制。这些专属加成和驱役能力仅在赛丽娃带队时生效。",
+   "tooltip": "{战争狂人}\r\n\r\nAll creatures get +2 damage. Listed archers, including Sharpshooters, can upgrade into Phantom Hunters. Seliva's Phantom Hunters gain an extra +10 damage, +10 HP, Life Drain, Point-Blank Shot, Unlimited Retaliations, Ranged Retaliation, Ranged First Strike, Ignore Defense and Wall Attack. Each Phantom Hunter stack can summon permanent Bone Archers from an allied corpse once per battle, only while led by Seliva.",
    "name": "战争狂人"
   }
  },
@@ -2570,10 +2579,6 @@
   }
  ],
  "specialty": {
-  "base": {
-   "addInfo": "creature.sharpshooter",
-   "type": "SPECIAL_UPGRADE"
-  },
   "bonuses": {
    "damage": {
     "type": "CREATURE_DAMAGE",
@@ -2581,29 +2586,94 @@
     "val": 2,
     "valueType": "BASE_NUMBER"
    },
-   "archer2sharpshooter": {
-    "subtype": "creature.archer"
+   "archer2phantomhunter": {
+    "type": "SPECIAL_UPGRADE",
+    "subtype": "creature.archer",
+    "addInfo": "asylum:phantomhunter"
    },
-   "grandElf2sharpshooter": {
-    "subtype": "creature.grandElf"
+   "grandElf2phantomhunter": {
+    "type": "SPECIAL_UPGRADE",
+    "subtype": "creature.grandElf",
+    "addInfo": "asylum:phantomhunter"
    },
-   "marksman2sharpshooter": {
-    "subtype": "creature.marksman"
+   "marksman2phantomhunter": {
+    "type": "SPECIAL_UPGRADE",
+    "subtype": "creature.marksman",
+    "addInfo": "asylum:phantomhunter"
    },
-   "woodElf2sharpshooter": {
-    "subtype": "creature.woodElf"
+   "woodElf2phantomhunter": {
+    "type": "SPECIAL_UPGRADE",
+    "subtype": "creature.woodElf",
+    "addInfo": "asylum:phantomhunter"
    },
-   "skel12sharpshooter": {
-    "subtype": "deathvalley:boneHook"
+   "skel12phantomhunter": {
+    "type": "SPECIAL_UPGRADE",
+    "subtype": "deathvalley:boneHook",
+    "addInfo": "asylum:phantomhunter"
    },
-   "skel22sharpshooter": {
-    "subtype": "deathvalley:flayer"
+   "skel22phantomhunter": {
+    "type": "SPECIAL_UPGRADE",
+    "subtype": "deathvalley:flayer",
+    "addInfo": "asylum:phantomhunter"
    },
-   "shadowhunter2sharpshooter": {
-    "subtype": "asylum:shadowhunter"
+   "shadowhunter2phantomhunter": {
+    "type": "SPECIAL_UPGRADE",
+    "subtype": "asylum:shadowhunter",
+    "addInfo": "asylum:phantomhunter"
    },
-   "phantomhunter2sharpshooter": {
-    "subtype": "asylum:phantomhunter"
+   "sharpshooter2phantomhunter": {
+    "type": "SPECIAL_UPGRADE",
+    "subtype": "creature.sharpshooter",
+    "addInfo": "asylum:phantomhunter"
+   },
+   "phantomDamageBonus": {
+    "type": "CREATURE_DAMAGE",
+    "subtype": "creatureDamageBoth",
+    "val": 10,
+    "valueType": "BASE_NUMBER",
+    "limiters": [
+     {
+      "type": "CREATURE_TYPE_LIMITER",
+      "creature": "asylum:phantomhunter",
+      "includeUpgrades": true
+     }
+    ]
+   },
+   "phantomBoneArcherPower": {
+    "type": "SPECIFIC_SPELL_POWER",
+    "subtype": "spell.summonBoneHook",
+    "val": 4000000,
+    "limiters": [
+     {
+      "type": "CREATURE_TYPE_LIMITER",
+      "creature": "asylum:phantomhunter",
+      "includeUpgrades": true
+     }
+    ]
+   },
+   "phantomBoneArcherCaster": {
+    "type": "SPELLCASTER",
+    "subtype": "spell.summonBoneHook",
+    "val": 0,
+    "icon": "asylum/NewOldSpells/summon.png",
+    "limiters": [
+     {
+      "type": "CREATURE_TYPE_LIMITER",
+      "creature": "asylum:phantomhunter",
+      "includeUpgrades": true
+     }
+    ]
+   },
+   "phantomBoneArcherCasts": {
+    "type": "CASTS",
+    "val": 1,
+    "limiters": [
+     {
+      "type": "CREATURE_TYPE_LIMITER",
+      "creature": "asylum:phantomhunter",
+      "includeUpgrades": true
+     }
+    ]
    },
    "lifeDrain": {
     "type": "LIFE_DRAIN",
@@ -2611,7 +2681,7 @@
     "limiters": [
      {
       "type": "CREATURE_TYPE_LIMITER",
-      "creature": "sharpshooter",
+      "creature": "asylum:phantomhunter",
       "includeUpgrades": true
      }
     ]
@@ -2623,7 +2693,7 @@
     "limiters": [
      {
       "type": "CREATURE_TYPE_LIMITER",
-      "creature": "sharpshooter",
+      "creature": "asylum:phantomhunter",
       "includeUpgrades": true
      }
     ]
@@ -2635,7 +2705,7 @@
     "limiters": [
      {
       "type": "CREATURE_TYPE_LIMITER",
-      "creature": "sharpshooter",
+      "creature": "asylum:phantomhunter",
       "includeUpgrades": true
      }
     ]
@@ -2645,7 +2715,7 @@
     "limiters": [
      {
       "type": "CREATURE_TYPE_LIMITER",
-      "creature": "sharpshooter",
+      "creature": "asylum:phantomhunter",
       "includeUpgrades": true
      }
     ]
@@ -2658,7 +2728,7 @@
     "limiters": [
      {
       "type": "CREATURE_TYPE_LIMITER",
-      "creature": "sharpshooter",
+      "creature": "asylum:phantomhunter",
       "includeUpgrades": true
      }
     ]
@@ -2669,7 +2739,7 @@
     "limiters": [
      {
       "type": "CREATURE_TYPE_LIMITER",
-      "creature": "sharpshooter",
+      "creature": "asylum:phantomhunter",
       "includeUpgrades": true
      }
     ]
@@ -2680,7 +2750,7 @@
     "limiters": [
      {
       "type": "CREATURE_TYPE_LIMITER",
-      "creature": "sharpshooter",
+      "creature": "asylum:phantomhunter",
       "includeUpgrades": true
      }
     ]
@@ -2693,7 +2763,7 @@
     "limiters": [
      {
       "type": "CREATURE_TYPE_LIMITER",
-      "creature": "sharpshooter",
+      "creature": "asylum:phantomhunter",
       "includeUpgrades": true
      }
     ]
@@ -2704,7 +2774,7 @@
     "limiters": [
      {
       "type": "CREATURE_TYPE_LIMITER",
-      "creature": "sharpshooter",
+      "creature": "asylum:phantomhunter",
       "includeUpgrades": true
      }
     ]
@@ -3645,7 +3715,7 @@
 
 **改动性质**：配置／能力或可用性调整（含后续文字维护）。
 
-**最终效果与范围**：生命之源：全军固定生命+1，并按每英雄等级增加基础生命4%；开场全体巨龙之力 dragonStrength 持续50回合。授予全部火系法术的使用权限及专家火系，并以覆盖层显式写入27项已学法术供学术传授。注意巨龙之力不是 slayer（屠龙）。
+**最终效果与范围**：生命之源：全军固定生命+1，并按每英雄等级增加基础生命4%；开场全体巨龙之力 dragonStrength 持续50回合。授予全部火系法术的使用权限及专家火系，并在原英雄文件中显式写入27项已学法术供学术传授。注意巨龙之力不是 slayer（屠龙）。
 
 - 可用性：`special=false`（缺省按非特殊）；职业：`vizier`。地图英雄白名单仍可能禁用。
 - 初始技能：[{"level":"basic","skill":"logistics"},{"level":"basic","skill":"pathfinding"}]。
@@ -3665,10 +3735,11 @@
 - 当前说明：所带领的所有部队生命值上限获得成长加成，战斗开始时自动施放巨龙之力，并直接掌握全部火系魔法且视为专家火系魔法。
 - 当前tooltip：HP growth + opening dragon strength + expert fire magic
 
-**文件与覆盖顺序**：
+**维护位置（2026-11-15）**：完整27项初始魔法书已迁回原Elspeth.json，生命成长、开场巨龙之力及专家火系也继续在同一文件维护。New Pavilion新增asylum、cathedral、courtyard、reinforcements、tidesofwar依赖；pavilion.json中的spellbook#override条目已删除，最终书单和能力保持不变。这次仅调整配置来源，不重复计作新增能力。
+
+**当前生效文件**：
 
 - [Hero3Expasion1.83/Mods/New Pavilion/Mods/New Pavillion/Content/heroesPavilion/Elspeth.json](<Hero3Expasion1.83/Mods/New Pavilion/Mods/New Pavillion/Content/heroesPavilion/Elspeth.json>)
-- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/pavilion.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/pavilion.json>)
 
 <details>
 <summary>该英雄的逐次改动详情（旧值 → 新值）</summary>
@@ -7394,15 +7465,17 @@
 
 </details>
 
-### 驱役白骨弓箭手（`extra creatures specialty:summonBoneHook`）
+### 驱役白骨弓箭手（`fairy:summonBoneHook`）
 
 **改动概况**
 
-- 新增“驱役白骨弓箭手”生物能力，供幻影射手施放，不是普通英雄可学魔法。
+- 驱役已迁入Fairy，当前ID为`fairy:summonBoneHook`，只授权给赛丽娃带领的魔影猎手。
 - 利用己方阵亡部队的尸体召唤白骨弓箭手，召唤部队战后保留。
 - 数量受尸体生命限制，排除非生命、机械、战争机器和石像鬼。
 
-**最终效果与范围**：已改动字段和实际分级效果见下表及历史；不从中文名称推断隐藏规则。
+**本次配置更新**：2026-11-14，当前工作区未提交。法术文件从特长修改模组迁到Fairy，并在Fairy/mod.json注册；原注册项及旧文件删除。法术仍为生物能力，不加入普通英雄魔法书，效果和尸体限制不变。
+
+**当前授权位置**：赛丽娃原定义文件中的`phantomBoneArcherCaster`、`phantomBoneArcherPower`、`phantomBoneArcherCasts`，每队每场战斗1次。
 
 | 熟练度 | 消耗 | power | 范围 | 效果 | 当前描述 |
 |---|---|---|---|---|---|
@@ -7417,10 +7490,10 @@
 
 **文件与覆盖顺序**：
 
-- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/summonBoneHook.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/summonBoneHook.json>)
+- [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/spells/summonBoneHook.json](<Hero3Expasion1.83/Mods/Fairy/content/config/fairy/spells/summonBoneHook.json>)
 
 <details>
-<summary>法术改动历史</summary>
+<summary>历史改动（旧作用域；2026-11-14已迁至Fairy）</summary>
 
 - 2026-06-20 `d20e3775`：`animation.affect`：`null` → `[{"defName":"C01SPE0","transparency":0.5}]`；`defaultGainChance`：`null` → `0`；`flags.positive`：`null` → `true`；`flags.rising`：`null` → `true`；`graphics.iconEffect`：`null` → `"asylum/NewOldSpells/spp.png"`；`level`：`null` → `2`；`levels.base.battleEffects.demonSummon.id`：`null` → `"deathvalley:boneHook"`；`levels.base.battleEffects.demonSummon.permanent`：`null` → `true`；`levels.base.battleEffects.demonSummon.type`：`null` → `"core:demonSummon"`；`levels.base.cost`：`null` → `1`；`levels.base.description`：`null` → `"{驱役白骨弓箭手}\r\n\r\n从一队死去的我方单位上召唤白骨弓箭手，可以包括死灵单位。"`；`levels.base.power`：`null` → `40`；`levels.base.range`：`null` → `"0"`；`levels.base.targetModifier.smart`：`null` → `true`；`name`：`null` → `"驱役白骨弓箭手"`；`power`：`null` → `50`；`sounds.cast`：`null` → `"ANIMDEAD"`；`targetCondition.noneOf.bonus.GARGOYLE`：`null` → `"absolute"`；`targetCondition.noneOf.bonus.MECHANICAL`：`null` → `"absolute"`；`targetCondition.noneOf.bonus.NON_LIVING`：`null` → `"absolute"`；`targetCondition.noneOf.bonus.SIEGE_WEAPON`：`null` → `"absolute"`；`targetType`：`null` → `"CREATURE"`；`type`：`null` → `"ability"`。
 
@@ -7428,7 +7501,7 @@
 
 
 <details>
-<summary>当前完整法术定义</summary>
+<summary>当前完整法术定义（Fairy作用域）</summary>
 
 ```json
 {
@@ -9320,31 +9393,27 @@
 
 </details>
 
-### sharpshooter（`core:sharpshooter`）
+### 幻影射手（`core:sharpshooter`）
 
 **改动概况**
 
-- 每场战斗可使用1次“驱役白骨弓箭手”，利用己方阵亡部队的尸体召唤白骨弓箭手。
-- 召唤部队战后保留，召唤额度大幅提高，但数量仍受尸体总生命限制。
-- 排除非生命、机械、战争机器和石像鬼目标。
-- 这是幻影射手本体能力；赛丽娃额外给予的吸血、反击等属于另一套英雄特长。
+- 取消幻影射手本体的“驱役白骨弓箭手”，不再让所有英雄带领的幻影射手都能召唤。
+- 施法授权、施法次数、召唤额度全部移除，原有射击及骷髅转换场目标规则保留。
+- 驱役已转为赛丽娃的英雄特长，只赋给她带领的魔影猎手；其他英雄的魔影猎手本体也不自带。
 
-**作用范围**：兵种本体／宝物本体配置，区别于仅某位英雄所带部队。历史及完整快照如下。
+**本次配置更新**：2026-11-14，当前工作区未提交。删除的三项兵种bonus为`summonBoneHook`、`summonBoneHookCasts`、`summonBoneHookPower`；没有给魔影猎手的生物定义直接增加施法能力。
 
-- [Hero3Expasion1.83/config/creatures/neutral.json](<Hero3Expasion1.83/config/creatures/neutral.json>)
-- [Hero3Expasion1.83/Mods/hota/Mods/newGraphics/Content/config/hota/newGraphics/neutrals/newCreatureAnimations.json](<Hero3Expasion1.83/Mods/hota/Mods/newGraphics/Content/config/hota/newGraphics/neutrals/newCreatureAnimations.json>)
-- [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/creatures/creatureAbilities.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/creatures/creatureAbilities.json>)
+文件：[Hero3Expasion1.83/Mods/extra creatures specialty/content/config/creatures/creatureAbilities.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/creatures/creatureAbilities.json>)。
 
 <details>
-<summary>逐次改动</summary>
+<summary>历史改动（旧版本，仅供追溯）</summary>
 
 - 2026-06-20 `d20e3775`：`abilities.summonBoneHook.icon`：`null` → `"asylum/NewOldSpells/summon.png"`；`abilities.summonBoneHook.subtype`：`null` → `"spell.summonBoneHook"`；`abilities.summonBoneHook.type`：`null` → `"SPELLCASTER"`；`abilities.summonBoneHook.val`：`null` → `0`；`abilities.summonBoneHookCasts.type`：`null` → `"CASTS"`；`abilities.summonBoneHookCasts.val`：`null` → `1`；`abilities.summonBoneHookPower.subtype`：`null` → `"spell.summonBoneHook"`；`abilities.summonBoneHookPower.type`：`null` → `"SPECIFIC_SPELL_POWER"`；`abilities.summonBoneHookPower.val`：`null` → `4000000`。
 
 </details>
 
-
 <details>
-<summary>当前完整定义与描述</summary>
+<summary>当前完整定义与描述（已移除驱役）</summary>
 
 ```json
 {
@@ -9370,21 +9439,6 @@
    "type": "SKELETON_TRANSFORMER_TARGET",
    "subtype": "boneHook",
    "hidden": true
-  },
-  "summonBoneHookPower": {
-   "type": "SPECIFIC_SPELL_POWER",
-   "subtype": "spell.summonBoneHook",
-   "val": 4000000
-  },
-  "summonBoneHook": {
-   "type": "SPELLCASTER",
-   "subtype": "spell.summonBoneHook",
-   "val": 0,
-   "icon": "asylum/NewOldSpells/summon.png"
-  },
-  "summonBoneHookCasts": {
-   "type": "CASTS",
-   "val": 1
   }
  },
  "graphics": {
@@ -9587,14 +9641,14 @@ Actions `42463657558`已构建并部署；历史记录称64个EXE／DLL哈希及
 **改动概况**
 
 - 为新增能力补齐模组注册和依赖，避免文件存在却没有加载，或跨模组引用找不到。
-- 埃尔斯佩思完整27项火系书单由覆盖层加载；不能只看原英雄文件的20项。
+- 埃尔斯佩思完整27项火系书单现已集中在原Elspeth.json，旧书单覆盖已删除；所属模组已补齐依赖。
 - 未注册的航海术、领导术方案仍不算当前生效改动。
 
-- 牺牲伤害版、白骨弓箭手召唤、每日宝物bonus、集中描述及透视建筑补丁均由extra creatures specialty的manifest注册。局部文件存在不代表自动加载。
+- 牺牲伤害版、每日宝物bonus、集中描述及透视建筑补丁由extra creatures specialty注册。驱役白骨弓箭手现已迁至Fairy注册，不再依赖特长修改模组提供该法术；赛丽娃的升级、加成和驱役授权统一维护在原英雄文件中。局部文件存在不代表自动加载。
 - 当前潮汐navigation.json和leadership.json未列入其skills加载清单，前者的水上行走／免费上下船、后者的领导术＋箭术魔杖联动都不能记作当前有效技能。艾伦直接拥有的FREE_SHIP_BOARDING不受此文件未注册影响。
 - 未注册`hotaGameBalance/skills.json`不是当前后勤80%的加载来源；已注册的是skillHotA.json，当前核心后勤本身就为20／40／80。
 - preserve依赖修复、中文UTF-8清理，及Fairy加入asylum／deathvalley、Courtyard加入hota.bulwark／哲学家runes权重4、主教学术权重0→1，均属依赖或职业抽取规则，不是单英雄直接学会技能。
-- 埃尔斯佩思原文件保留20项可访问火系法术，完整27项书单移至覆盖模组pavilion.json的spellbook#override，解决跨模组引用依赖；不把原文件20项误记为最终漏7项。
+- 2026-11-15：埃尔斯佩思、加布里埃尔、凯瑟琳三位的新增配置和对应名称／说明均已集中回原英雄定义，删除对应覆盖条目；其他英雄原有覆盖与集中描述保持原样。新增依赖会调整加载顺序，但按引擎排序规则静态对比，全部合并实体和全局设置均保持一致；尚未重新启动游戏实测。
 
 ### 参数中文速查
 
@@ -11205,7 +11259,7 @@ Actions `42463657558`已构建并部署；历史记录称64个EXE／DLL哈希及
 | 法术 `core:slayer` | 范围已修为X；专家群体范围未在原版说明完整体现。 |
 | 法术 `core:sorrow` | 未同步：继承描述与-2／-4／-8的新数值不一致。 |
 | 法术 `courtyard:quagmire` | 未同步：效果持续3／6／12回合，描述1／2／3回合。 |
-| 法术 `extra creatures specialty:summonBoneHook` | 需复核：描述允许死灵，但仍排除NON_LIVING；对同时带此标记的死灵目标不可用。 |
+| 法术 `fairy:summonBoneHook` | 需复核：描述允许死灵，但仍排除NON_LIVING；对同时带此标记的死灵目标不可用。 |
 | 法术 `newoldspells+:regeneration` | 配置混用新旧效果格式，不能认定持续再生生效；说明仍承诺再生且漏写即时复活治疗。 |
 | 法术 `preserve:choir` | 各熟练度已同步为士气+1、幸运+1、减耗5。 |
 
@@ -11340,7 +11394,8 @@ Actions `42463657558`已构建并部署；历史记录称64个EXE／DLL哈希及
 | [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/rampart.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/rampart.json>) | `7bc983db`(M) | extra creatures specialty/heroes |
 | [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/spellHero.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/heroes/spellHero.json>) | `e6be84b8`(M) | extra creatures specialty/heroes |
 | [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/sacrificeSelfkill.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/sacrificeSelfkill.json>) | `2b79bc80`(A)、`3b04a75d`(M)、`74f7de15`(M)、`df8983f9`(M)、`b9376775`(M) | extra creatures specialty/spells |
-| [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/summonBoneHook.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/summonBoneHook.json>) | `d20e3775`(A) | extra creatures specialty/spells |
+| `Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/summonBoneHook.json`（旧路径，已删除） | `d20e3775`(A)；2026-11-14迁移，未提交 | 旧注册已移除；当前见下行 |
+| [Hero3Expasion1.83/Mods/Fairy/content/config/fairy/spells/summonBoneHook.json](<Hero3Expasion1.83/Mods/Fairy/content/config/fairy/spells/summonBoneHook.json>) | 2026-11-14从旧文件迁入，未提交 | fairy/spells，由Fairy/mod.json注册 |
 | [Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/viewAirStatBuildings.json](<Hero3Expasion1.83/Mods/extra creatures specialty/content/config/spells/viewAirStatBuildings.json>) | `29bcb8b8`(A) | extra creatures specialty/spells |
 | [Hero3Expasion1.83/Mods/extra creatures specialty/mod.json](<Hero3Expasion1.83/Mods/extra creatures specialty/mod.json>) | `2b79bc80`(M)、`d20e3775`(M)、`e6be84b8`(M)、`29bcb8b8`(M)、`61910a66`(M) | manifest／全局／资源或其他非实体入口，不能直接按实体列表判断 |
 | [Hero3Expasion1.83/Mods/haven/content/config/haven/heroes/havAhero05B.json](<Hero3Expasion1.83/Mods/haven/content/config/haven/heroes/havAhero05B.json>) | `c319c49b`(M) | haven/heroes |

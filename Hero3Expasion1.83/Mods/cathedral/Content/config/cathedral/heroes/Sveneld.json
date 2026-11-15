@@ -35,9 +35,9 @@
 			"biography" : "加布里埃尔是一位牧师的女儿。当年还是孩子的她就目睹了这场灾难。在漆黑的小屋中，她整整度过了几个星期。没有人比她更痛恨罪恶。她选择成为一名牧师，当然是为了惩罚所有的罪恶者。",
 			"specialty" :
 			{
-				"description" : "战斗中使敌人运气-1。",
+				"description" : "战斗中使敌人运气-2。师从阿德拉的圣灵佑佐特长。开局依次为己方全体释放圣灵佑佐和吸血鬼化，均持续50回合。",
 				"tooltip" : "Creature Bonus: Nerubians",
-				"name" : "-1运气"
+				"name" : "圣灵血鬼"
 			}
 		},
 		"spellbook" :
@@ -51,11 +51,36 @@
 					"luckReduce":
 					{
 					"type" : "LUCK",
-					"val" : -1,
+					"val" : -2,
 					"propagator": "BATTLE_WIDE",
 					"propagationUpdater" : "BONUS_OWNER_UPDATER",
 					"limiters" : [ "OPPOSITE_SIDE" ],
-					"stacking" : "面对-1运气特长的英雄"
+					"stacking" : "面对-2运气特长的英雄"
+					},
+					"bless": {
+						"type": "GENERAL_DAMAGE_PREMY",
+						"limiters": [
+							{ "type": "HAS_ANOTHER_BONUS_LIMITER", "bonusSourceType": "SPELL_EFFECT", "bonusSourceID": "spell.bless" }
+						],
+						"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
+						"val": 10
+					},
+					"vampirismMass": {
+						"type": "SPECIAL_PECULIAR_ENCHANT",
+						"subtype": "spell.vampirism",
+						"addInfo": 0
+					},
+					"openingBless": {
+						"type": "OPENING_BATTLE_SPELL",
+						"subtype": "spell.bless",
+						"val": 50,
+						"valueType": "BASE_NUMBER"
+					},
+					"openingVampirism": {
+						"type": "OPENING_BATTLE_SPELL",
+						"subtype": "spell.vampirism",
+						"val": 50,
+						"valueType": "BASE_NUMBER"
 					}
 				}
 			}		

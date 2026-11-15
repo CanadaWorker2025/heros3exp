@@ -5,6 +5,7 @@
 	"version" : "1.10",
 	"contact": "mail: benyan9110@gmail.com",
 	"modType" : "Town",
+	"depends" : ["newoldspells+"],
 	"factions" :
 	[
 	"config/cathedral/town/buildings.json",

@@ -22,8 +22,7 @@
 	[
 		"config/spells/spellsNew.json",
 		"config/spells/viewAirStatBuildings.json",
-		"config/spells/sacrificeSelfkill.json",
-		"config/spells/summonBoneHook.json"
+		"config/spells/sacrificeSelfkill.json"
 	],
 	"creatures":
 	[

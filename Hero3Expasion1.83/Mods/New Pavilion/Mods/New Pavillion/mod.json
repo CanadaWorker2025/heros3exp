@@ -24,7 +24,7 @@
 	[
 	
 	],
-	"depends" : ["new pavilion.dunes-terrain", "newoldspells+"]
+	"depends" : ["new pavilion.dunes-terrain", "newoldspells+", "asylum", "cathedral", "courtyard", "reinforcements", "tidesofwar"],
 	
 	"factions" :
 	[

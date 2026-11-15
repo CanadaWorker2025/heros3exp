@@ -70,8 +70,15 @@
 			"core:sacrifice",
 			"core:slayer",
 			"core:visions",
+			"asylum:summonJester",
+			"cathedral:confessionSong",
+			"cathedral:divineRevenge",
+			"courtyard:immolationCurse",
+			"courtyard:quickStrikes",
 			"newoldspells+:dragonStrength",
-			"newoldspells+:vigour"
+			"newoldspells+:vigour",
+			"reinforcements:reinforcements",
+			"tidesofwar:mdtAuraOfPower"
 		],
 		"specialty" :
 		{

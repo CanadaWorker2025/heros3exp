@@ -9,8 +9,8 @@
 			"biography" : "赛丽娃出生之时就充斥着不祥的气息。虽然她长相美丽，但没什么人愿意去接近她。她眼下血红色的印记会让人打消对于花仙善良的幻想。",
 			"specialty" :
 			{
-				"description" : "所带领生物的最小伤害值和最大伤害值各增加2。可将弓箭手、神射手、木精灵、大精灵、白骨弓箭手、剥皮者、暗影猎手、魔影猎手升级为幻影射手。赛丽娃麾下的幻影射手获得吸取生命、贴身射击、无限反击、远程反击、抢先反击、无视防御、可攻击城墙与生命值+10。",
-				"tooltip" : "{战争狂人}\r\n\r\nAll creatures get +2 damage. Archers can be upgraded into Sharpshooters. Seliva's Sharpshooters gain Life Drain, Point-Blank Shot, Unlimited Retaliations, Ranged Retaliation, First Strike, Ignore Defense, Wall Attack and +10 HP.",
+				"description" : "所带领生物的最小伤害值和最大伤害值各增加2。可将弓箭手、神射手、木精灵、大精灵、白骨弓箭手、剥皮者、暗影猎手、幻影射手升级为魔影猎手，费用按游戏升级差价规则结算。赛丽娃麾下的魔影猎手额外杀伤+10、生命值+10，并获得吸取生命、贴身射击、无限反击、远程反击、抢先反击、无视防御与攻击城墙的能力。每队魔影猎手每场战斗还可施放1次驱役白骨弓箭手，利用己方阵亡部队的尸体召唤白骨弓箭手，召唤部队战后保留，数量受尸体生命与目标条件限制。这些专属加成和驱役能力仅在赛丽娃带队时生效。",
+				"tooltip" : "{战争狂人}\r\n\r\nAll creatures get +2 damage. Listed archers, including Sharpshooters, can upgrade into Phantom Hunters. Seliva's Phantom Hunters gain an extra +10 damage, +10 HP, Life Drain, Point-Blank Shot, Unlimited Retaliations, Ranged Retaliation, Ranged First Strike, Ignore Defense and Wall Attack. Each Phantom Hunter stack can summon permanent Bone Archers from an allied corpse once per battle, only while led by Seliva.",
 				"name" : "战争狂人"
 			}
 		},
@@ -56,11 +56,6 @@
 		],
 		"specialty" :
 		{
-			"base" :
-			{
-				"addInfo" : "creature.sharpshooter",
-				"type" : "SPECIAL_UPGRADE"
-			},
 			"bonuses" :
 			{
 				"damage" :
@@ -70,14 +65,59 @@
 					"val" : 2,
 					"valueType" : "BASE_NUMBER"
 				},
-				"archer2sharpshooter" : { "subtype" : "creature.archer" },
-				"grandElf2sharpshooter" : { "subtype" : "creature.grandElf" },
-				"marksman2sharpshooter" : { "subtype" : "creature.marksman" },
-				"woodElf2sharpshooter" : { "subtype" : "creature.woodElf" },
-				"skel12sharpshooter" : { "subtype" : "deathvalley:boneHook" },
-				"skel22sharpshooter" : { "subtype" : "deathvalley:flayer" },
-				"shadowhunter2sharpshooter" : { "subtype" : "asylum:shadowhunter" },
-				"phantomhunter2sharpshooter" : { "subtype" : "asylum:phantomhunter" },
+				"archer2phantomhunter" : { "type" : "SPECIAL_UPGRADE", "subtype" : "creature.archer", "addInfo" : "asylum:phantomhunter" },
+				"grandElf2phantomhunter" : { "type" : "SPECIAL_UPGRADE", "subtype" : "creature.grandElf", "addInfo" : "asylum:phantomhunter" },
+				"marksman2phantomhunter" : { "type" : "SPECIAL_UPGRADE", "subtype" : "creature.marksman", "addInfo" : "asylum:phantomhunter" },
+				"woodElf2phantomhunter" : { "type" : "SPECIAL_UPGRADE", "subtype" : "creature.woodElf", "addInfo" : "asylum:phantomhunter" },
+				"skel12phantomhunter" : { "type" : "SPECIAL_UPGRADE", "subtype" : "deathvalley:boneHook", "addInfo" : "asylum:phantomhunter" },
+				"skel22phantomhunter" : { "type" : "SPECIAL_UPGRADE", "subtype" : "deathvalley:flayer", "addInfo" : "asylum:phantomhunter" },
+				"shadowhunter2phantomhunter" : { "type" : "SPECIAL_UPGRADE", "subtype" : "asylum:shadowhunter", "addInfo" : "asylum:phantomhunter" },
+				"sharpshooter2phantomhunter" : { "type" : "SPECIAL_UPGRADE", "subtype" : "creature.sharpshooter", "addInfo" : "asylum:phantomhunter" },
+				"phantomDamageBonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageBoth",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER",
+					"limiters" :
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "asylum:phantomhunter",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"phantomBoneArcherPower" :
+				{
+					"type" : "SPECIFIC_SPELL_POWER",
+					"subtype" : "spell.summonBoneHook",
+					"val" : 4000000,
+					"limiters" :
+					[
+						{ "type" : "CREATURE_TYPE_LIMITER", "creature" : "asylum:phantomhunter", "includeUpgrades" : true }
+					]
+				},
+				"phantomBoneArcherCaster" :
+				{
+					"type" : "SPELLCASTER",
+					"subtype" : "spell.summonBoneHook",
+					"val" : 0,
+					"icon" : "asylum/NewOldSpells/summon.png",
+					"limiters" :
+					[
+						{ "type" : "CREATURE_TYPE_LIMITER", "creature" : "asylum:phantomhunter", "includeUpgrades" : true }
+					]
+				},
+				"phantomBoneArcherCasts" :
+				{
+					"type" : "CASTS",
+					"val" : 1,
+					"limiters" :
+					[
+						{ "type" : "CREATURE_TYPE_LIMITER", "creature" : "asylum:phantomhunter", "includeUpgrades" : true }
+					]
+				},
 				"lifeDrain" :
 				{
 					"type" : "LIFE_DRAIN",
@@ -86,7 +126,7 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "sharpshooter",
+							"creature" : "asylum:phantomhunter",
 							"includeUpgrades" : true
 						}
 					]
@@ -100,7 +140,7 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "sharpshooter",
+							"creature" : "asylum:phantomhunter",
 							"includeUpgrades" : true
 						}
 					]
@@ -114,7 +154,7 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "sharpshooter",
+							"creature" : "asylum:phantomhunter",
 							"includeUpgrades" : true
 						}
 					]
@@ -126,7 +166,7 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "sharpshooter",
+							"creature" : "asylum:phantomhunter",
 							"includeUpgrades" : true
 						}
 					]
@@ -141,7 +181,7 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "sharpshooter",
+							"creature" : "asylum:phantomhunter",
 							"includeUpgrades" : true
 						}
 					]
@@ -154,7 +194,7 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "sharpshooter",
+							"creature" : "asylum:phantomhunter",
 							"includeUpgrades" : true
 						}
 					]
@@ -167,7 +207,7 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "sharpshooter",
+							"creature" : "asylum:phantomhunter",
 							"includeUpgrades" : true
 						}
 					]
@@ -182,7 +222,7 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "sharpshooter",
+							"creature" : "asylum:phantomhunter",
 							"includeUpgrades" : true
 						}
 					]
@@ -195,7 +235,7 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "sharpshooter",
+							"creature" : "asylum:phantomhunter",
 							"includeUpgrades" : true
 						}
 					]
