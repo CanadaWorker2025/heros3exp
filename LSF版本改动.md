@@ -9634,6 +9634,20 @@ Actions `42463657558`已构建并部署；历史记录称64个EXE／DLL哈希及
 
 独立Windows工作流`.github/workflows/msvc-x64-only.yml`只构建MSVC x64，不启动完整多平台矩阵。主要部署序列：`41335105647`（初版预览）→`41791162749`（预览修复）→`42177684899`（每日宝物）→`42180943003`（学术）→`42463657558`（UTF-8保存名）。后包包含前述功能；没有把编译成功当作实战验收。
 
+### iOS独立未签名IPA构建（2026-11-18）
+
+**改动概况**
+
+- 新增仅编译iPhone／iPad ARM64的GitHub Actions，不运行Windows、Android或桌面Mac的多平台矩阵。
+- 构建现有定制引擎分支，输出未签名IPA和SHA-256校验文件；不包含主游戏资源及自定义Mods，不等于已经完成手机安装。
+- 不上传Apple证书或账号密码；IPA需要另行签名、侧载，手机实机效果尚未验收。
+
+**维护位置**：独立引擎仓库`CanadaWorker2025/vcmi`的`.github/workflows/ios-unsigned-only.yml`，本地`temp/vcmi-source-1.7.4/.github/workflows/ios-unsigned-only.yml`。新增提交`e5f5e30035b547a92b7b8ec0931a470d8701bd74`，后续`319baa31b30475c0977b6282cedd695004e8d3d7`统一构建／打包目录并自动取消同分支过期任务；基于已有`acc433e1e`定制引擎，不包含本地尚未提交的图标修改。
+
+**构建规则**：macOS 15云端运行器、Xcode 26.2、现有`ios-release-conan-ccache`预设和iOS预编译依赖；显式禁用代码签名，应用标识前缀`com.canadaworker2025.lsf`。支持手动触发；当前定制分支修改此工作流文件时自动触发。任务最长180分钟，产物保留30天；打包后检查`Payload/*.app/Info.plist`及不存在签名目录／描述文件，生成SHA-256。此结构检查不代替签名有效性或真机验证。
+
+**验证状态**：本地YAML、单任务／权限／触发规则及内嵌Python语法静态检查通过。首次GitHub构建44264512526通过Apple工具链检查后，被目录修正提交替代；最新[GitHub构建44264696440](https://github.com/CanadaWorker2025/vcmi/actions/runs/44264696440)已启动，当前仍在构建中，尚未确认生成IPA、签名安装或手机实机运行。未改变Windows程序、现有游戏配置及存档；根目录自定义config的数据迁移仍需另行处理。
+
 ## 加载与维护
 
 ### 注册与依赖

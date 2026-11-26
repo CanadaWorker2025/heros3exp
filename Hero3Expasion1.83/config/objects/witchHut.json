@@ -18,7 +18,7 @@
 				},
 				"compatibilityIdentifiers" : [ "object" ],
 				
-				"visitMode" : "limiter",
+				"visitMode" : "hero",
 				"visitedTooltip" : 354,
 				"description" : "@core.xtrainfo.12",
 				"showScoutedPreview" : true,
@@ -33,19 +33,17 @@
 						}
 					}
 				},
-				"visitLimiter" : {
-					"secondary" : {
-						"@gainedSkill" : 1
-					}
-				},
 				"rewards" : [
 					{
 						"limiter" : {
-							"canLearnSkills" : true,
+							"anyOf" : [
+								{ "canLearnSkills" : true },
+								{ "secondary" : { "@gainedSkill" : 1 } }
+							],
 							"noneOf" : [
 								{
 									"secondary" : {
-										"@gainedSkill" : 1
+										"@gainedSkill" : 3
 									}
 								}
 							]
@@ -57,8 +55,8 @@
 						"message" : 171 // Witch teaches you skill
 					}
 				],
-				"onVisitedMessage" : 172, // You already known this skill
-				"onEmptyMessage" : 173 // You know too much (no free slots)
+				"onVisitedMessage" : "你已经在这座女巫小屋学习过，无法再次学习。",
+				"onEmptyMessage" : "你已精通这项技能，或没有空余技能槽学习新技能。"
 			}
 		}
 	}
